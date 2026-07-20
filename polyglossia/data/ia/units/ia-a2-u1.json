@@ -1,0 +1,48 @@
+{
+  "id": "ia-a2-u1",
+  "title": "Verbos",
+  "level": "A2",
+  "summary": "A verb toolkit: speak, see, hear, go, love.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Parlar, vider, audir",
+      "teach": [
+        { "target": "parlar", "roman": "parlar", "english": "to speak", "note": "io parla, tu parla…" },
+        { "target": "vider", "roman": "vider", "english": "to see", "note": "io vide" },
+        { "target": "audir", "roman": "audir", "english": "to hear", "note": "io audi" },
+        { "target": "Io parla interlingua!", "roman": "io parla interlingua", "english": "I speak Interlingua!" },
+        { "target": "Tu vide le can?", "roman": "tu vide le can", "english": "Do you see the dog?", "note": "Questions can be just intonation — no word-order gymnastics needed." }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "\"Audir\" means…", "choices": ["to hear", "to see", "to speak", "to go"], "answer": 0, "tts": "audir" },
+        { "type": "type", "prompt": "Translate: \"I speak Interlingua\"", "answer": "io parla interlingua", "tts": "io parla interlingua" },
+        { "type": "listen", "ttsText": "tu vide le can", "prompt": "What did you hear?", "choices": ["Tu vide le can?", "Io audi le can.", "Illa parla."], "answer": 0 },
+        { "type": "mc", "prompt": "Fill the blank: \"Nos ___ le musica.\" (We hear the music)", "choices": ["audi", "audir", "vide", "parla"], "answer": 0 },
+        { "type": "match", "prompt": "Match infinitive to present", "pairs": [["parlar", "parla"], ["vider", "vide"], ["audir", "audi"], ["biber", "bibe"]] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Vader e amar",
+      "teach": [
+        { "target": "vader", "roman": "vader", "english": "to go", "note": "io vade a casa — I go home." },
+        { "target": "amar", "roman": "amar", "english": "to love" },
+        { "target": "apprender", "roman": "apprender", "english": "to learn" },
+        { "target": "Io ama apprender linguas.", "roman": "io ama apprender linguas", "english": "I love learning languages." },
+        { "target": "Nos vade al parco.", "roman": "nos vade al parco", "english": "We go to the park.", "note": "a + le = al." }
+      ],
+      "grammar": {
+        "title": "Chaining verbs",
+        "body": "Use a conjugated verb + an infinitive, exactly like English:\n| Io ama **apprender**. | I love **to learn**. |\n| Io vole **parlar**. | I want **to speak**. |\nAnd two tiny contractions: **a + le = al** (to the), **de + le = del** (of the)."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "\"Apprender\" means…", "choices": ["to learn", "to love", "to go", "to teach"], "answer": 0, "tts": "apprender" },
+        { "type": "type", "prompt": "Translate: \"We go to the park.\"", "answer": "nos vade al parco", "tts": "nos vade al parco" },
+        { "type": "listen", "ttsText": "io ama apprender linguas", "prompt": "What did you hear?", "choices": ["Io ama apprender linguas.", "Io vole biber aqua.", "Nos vade al parco."], "answer": 0 },
+        { "type": "mc", "prompt": "\"a + le\" contracts to…", "choices": ["al", "au", "ale", "la"], "answer": 0 },
+        { "type": "match", "prompt": "Match the verbs", "pairs": [["vader", "to go"], ["amar", "to love"], ["apprender", "to learn"], ["parlar", "to speak"]] }
+      ]
+    }
+  ]
+}

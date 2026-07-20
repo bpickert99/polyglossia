@@ -1,0 +1,47 @@
+{
+  "id": "a2-u1",
+  "title": "Food & Drink",
+  "level": "A2",
+  "summary": "Everyday food words and saying you're hungry.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "At the table",
+      "teach": [
+        { "target": "ᎦᏚ", "roman": "gadu", "english": "bread" },
+        { "target": "ᏎᎷ", "roman": "selu", "english": "corn", "note": "Also the name of Corn Mother in Cherokee tradition." },
+        { "target": "ᎧᏫ", "roman": "kawi", "english": "coffee" },
+        { "target": "ᎤᏅᏗ", "roman": "unvdi", "english": "milk" },
+        { "target": "ᎠᎩᏲᏏᎭ", "roman": "agiyosiha", "english": "I am hungry" }
+      ],
+      "culture": {
+        "title": "Selu, the Corn Mother",
+        "body": "**ᏎᎷ** (Selu) is more than the word for corn — in Cherokee tradition Selu is the Corn Mother, the first woman, whose story explains where corn came from and why it must be treated with respect. Her husband **Kanati** is the Lucky Hunter. Corn, beans, and squash — grown together — anchored traditional Cherokee agriculture."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᏎᎷ (selu) mean?", "choices": ["corn", "bread", "milk", "coffee"], "answer": 0, "tts": "selu" },
+        { "type": "listen", "ttsText": "agiyosiha", "prompt": "Which phrase did you hear?", "choices": ["ᎠᎩᏲᏏᎭ (I am hungry)", "ᎦᏚ (bread)", "ᎧᏫ (coffee)"], "answer": 0 },
+        { "type": "type", "prompt": "Type the romanization of ᎦᏚ (bread)", "answer": "gadu", "tts": "gadu" },
+        { "type": "mc", "prompt": "In Cherokee tradition, Selu is…", "choices": ["the Corn Mother", "the god of rain", "a warrior chief", "the word for kitchen"], "answer": 0 },
+        { "type": "match", "prompt": "Match the food words", "pairs": [["ᎦᏚ", "bread"], ["ᏎᎷ", "corn"], ["ᎧᏫ", "coffee"], ["ᎤᏅᏗ", "milk"]] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "More food",
+      "teach": [
+        { "target": "ᏒᎦᏔ", "roman": "svgata", "english": "apple" },
+        { "target": "ᎭᏫᏯ", "roman": "hawiya", "english": "meat" },
+        { "target": "ᎠᎹ ᎠᏆᏚᎵᎭ", "roman": "ama aquaduliha", "english": "I want water", "note": "ᎠᏆᏚᎵᎭ (aquaduliha) = 'I want it'." },
+        { "target": "ᎤᎦᎾᏍᏛ", "roman": "uganasdv", "english": "sweet", "note": "Handy for fruit — and frybread." }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᏒᎦᏔ (svgata) mean?", "choices": ["apple", "meat", "sweet", "water"], "answer": 0, "tts": "svgata" },
+        { "type": "listen", "ttsText": "hawiya", "prompt": "Which word did you hear?", "choices": ["ᎭᏫᏯ (meat)", "ᏒᎦᏔ (apple)", "ᎤᎦᎾᏍᏛ (sweet)"], "answer": 0 },
+        { "type": "mc", "prompt": "How would you say 'I want water'?", "choices": ["ᎠᎹ ᎠᏆᏚᎵᎭ", "ᎠᎹ ᏩᏙ", "ᎠᎩᏲᏏᎭ", "ᎦᏚ ᎠᏆᏚᎵᎭ"], "answer": 0, "tts": "ama aquaduliha" },
+        { "type": "type", "prompt": "Type the romanization of ᎭᏫᏯ (meat)", "answer": "hawiya", "tts": "hawiya" },
+        { "type": "match", "prompt": "Match the words", "pairs": [["ᏒᎦᏔ", "apple"], ["ᎭᏫᏯ", "meat"], ["ᎤᎦᎾᏍᏛ", "sweet"], ["ᎠᎹ", "water"]] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ia-a1-u5",
+  "title": "Mangiar e biber",
+  "level": "A1",
+  "summary": "Food, drink, and saying what you want.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "At the table",
+      "teach": [
+        { "target": "le aqua", "roman": "le aqua", "english": "the water" },
+        { "target": "le pan", "roman": "le pan", "english": "the bread" },
+        { "target": "le lacte", "roman": "le lacte", "english": "the milk" },
+        { "target": "le caffe", "roman": "le caffe", "english": "the coffee" },
+        { "target": "Io vole aqua, per favor.", "roman": "io vole aqua per favor", "english": "I want water, please.", "note": "vole = want(s) — invariable like every verb." }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "\"Le lacte\" means…", "choices": ["the milk", "the water", "the bread", "the coffee"], "answer": 0, "tts": "le lacte" },
+        { "type": "listen", "ttsText": "le pan", "prompt": "Which did you hear?", "choices": ["le pan", "le caffe", "le aqua"], "answer": 0 },
+        { "type": "type", "prompt": "Translate: \"I want water, please.\"", "answer": "io vole aqua per favor", "accept": ["io vole aqua, per favor"], "tts": "io vole aqua per favor" },
+        { "type": "mc", "prompt": "Fill the blank: \"Tu ___ caffe?\" (Do you want coffee?)", "choices": ["vole", "es", "ha", "sta"], "answer": 0 },
+        { "type": "match", "prompt": "Match the words", "pairs": [["le aqua", "the water"], ["le pan", "the bread"], ["le lacte", "the milk"], ["le caffe", "the coffee"]] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Mangiar",
+      "teach": [
+        { "target": "mangiar", "roman": "mangiar", "english": "to eat" },
+        { "target": "biber", "roman": "biber", "english": "to drink" },
+        { "target": "le pomo", "roman": "le pomo", "english": "the apple" },
+        { "target": "le caseo", "roman": "le caseo", "english": "the cheese" },
+        { "target": "Io mangia un pomo.", "roman": "io mangia un pomo", "english": "I am eating an apple.", "note": "Present tense = infinitive minus -r: mangiar → mangia." }
+      ],
+      "grammar": {
+        "title": "Every verb, one rule",
+        "body": "Take the infinitive, drop the final **-r**, and you have the present tense for all persons:\n| mangiar (to eat) | io mangia, tu mangia, nos mangia |\n| biber (to drink) | io bibe, illa bibe |\n| voler (to want) | io vole |\nYou now know how to conjugate every verb in the language."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "\"Illa bibe lacte\" means…", "choices": ["She drinks milk", "She eats bread", "He wants milk", "She has milk"], "answer": 0, "tts": "illa bibe lacte" },
+        { "type": "type", "prompt": "Present of \"biber\" (to drink): io ___", "answer": "bibe", "tts": "bibe" },
+        { "type": "listen", "ttsText": "le pomo", "prompt": "Which did you hear?", "choices": ["le pomo", "le caseo", "le pan"], "answer": 0 },
+        { "type": "mc", "prompt": "Fill the blank: \"Nos ___ caseo.\" (We eat cheese)", "choices": ["mangia", "mangiar", "bibe", "vole"], "answer": 0 },
+        { "type": "match", "prompt": "Match the words", "pairs": [["mangiar", "to eat"], ["biber", "to drink"], ["le pomo", "the apple"], ["le caseo", "the cheese"]] }
+      ]
+    }
+  ]
+}
