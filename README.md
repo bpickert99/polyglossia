@@ -1,112 +1,95 @@
 # 🌐 Polyglossia
 
-A free, open, **document-driven** language-learning platform for the languages the big
-apps don't offer — Duolingo-style lessons, generated from documents *you* upload, aligned
-to the CEFR scale.
+A free, open, adaptive language-learning platform for languages the big apps overlook.
+Duolingo-style, but built around a real adaptive engine instead of fixed lesson scripts.
 
 **Live site:** https://bpickert99.github.io/polyglossia/
 
-## How it works
+## What makes it different
+
+Lessons are **not pre-written**. Each time you start a skill on the path, the app assembles
+a fresh lesson on the spot from the learner model:
 
 ```
-sources/<lang>/*.pdf|txt|md      you upload documents here
-        │
-        ▼   GitHub Action + Claude API
-data/<lang>/course.json          CEFR-aligned skill tree
-data/<lang>/units/*.json         lessons: vocab, grammar, exercises
-data/<lang>/script.json          script inventory for drawing practice
-data/<lang>/culture.json         cultural background articles
-        │
-        ▼   GitHub Pages
-the site                         static app — no backend, progress in localStorage
+        your answers ─┐
+                       ▼
+        ┌── Birdbrain ──────────────┐   ┌── FSRS ─────────────┐
+        │ ability θ (per language)  │   │ per-word memory      │
+        │ difficulty δ (per word)   │   │ half-life scheduling │
+        │ P(correct)=σ(θ−δ) → aim   │   │ → what's due to      │
+        │ every exercise at ~80%    │   │   review, when       │
+        └───────────┬───────────────┘   └──────────┬──────────┘
+                    └──────────► lesson builder ◄───┘
+                                     │
+                    a few NEW words (throttled when you're
+                    struggling or behind) + interleaved REVIEW,
+                    exercise types aimed by predicted success
 ```
 
-1. **Upload documents** — grammars, word lists, phrasebooks, readers — to
-   `sources/<language-code>/` (easiest: GitHub web UI → *Add file → Upload files*).
-2. On push, the **Build course from sources** workflow sends the documents to Claude,
-   which designs (or incrementally updates) the course: honest CEFR placement, lessons
-   with vocabulary/grammar/exercises, cultural notes, and a full script inventory for
-   non-Latin scripts.
-3. The result is committed to `data/`, which triggers the **Deploy to GitHub Pages**
-   workflow. New documents → updated tree, automatically.
+- **Adaptive difficulty — Birdbrain-style.** Modeled on Duolingo's
+  [Birdbrain](https://blog.duolingo.com/learning-how-to-help-you-learn-introducing-birdbrain/)
+  and its published [half-life regression](https://research.duolingo.com/papers/settles.acl16.pdf)
+  work: the app estimates your ability and each word's difficulty, predicts your chance of
+  getting an item right, and keeps exercises in the "zone of proximal development" — around an
+  **80% success rate**. Struggle with a word and it gives you gentle recognition; master it and
+  you get harder production and trickier distractors.
+- **Spaced repetition (FSRS).** Every answer reschedules that word for review right before
+  you'd forget it (FSRS-4.5, the modern Anki scheduler).
+- **Dynamic lessons.** Start the same skill twice, get two different lessons. New material is
+  throttled when your review backlog is high or your ability is shaky.
+- **Accurate pronunciation + IPA.** Audio comes from **eSpeak NG** (a phonemic synthesizer,
+  vendored as WebAssembly) — it sounds robotic but pronounces the *actual* target sounds, and
+  every word shows its IPA transcription derived from the same phonetic model. Interlingua has a
+  native eSpeak voice, so pronunciation and IPA are correct. Accuracy over polish, by design.
+- **Cultural notes** and a **script-drawing tab** (tracing + self-scoring) for non-Latin writing.
+- **Optional accounts.** Progress lives in your browser by default; sign in from the Stats tab
+  (email code, or Google once configured) to back it up and sync across devices via Supabase.
 
-## One-time setup after cloning/forking
+## Repo layout
 
-1. **Add your Anthropic API key**: *Settings → Secrets and variables → Actions →
-   New repository secret*, name `ANTHROPIC_API_KEY`. (Rebuilds cost roughly cents to a
-   few dollars depending on document size — the builder only regenerates what changed.)
-2. **Enable GitHub Pages**: the deploy workflow enables it automatically on first run;
-   if it fails, set *Settings → Pages → Source* to **GitHub Actions** and re-run.
+```
+index.html            app shell
+js/                   ES modules (no build step)
+  birdbrain.js        adaptive ability/difficulty model
+  srs.js              FSRS spaced-repetition scheduler
+  lesson-builder.js   assembles a fresh lesson from the learner model
+  exercises.js        exercise generation (difficulty aimed by Birdbrain)
+  practice.js         review sessions
+  lesson.js           lesson session runner (UI)
+  tts.js              eSpeak NG audio + IPA (Web Speech fallback)
+  storage.js          progress + learner model (localStorage)
+  sync.js             optional cloud sync (Supabase)
+  stats.js, main.js, culture.js, script-practice.js, data.js, config.js
+  vendor/espeak/      eSpeak NG WebAssembly (lazy-loaded, cached)
+data/<lang>/          course.json + units/*.json (item pools) + culture.json
+.github/workflows/    deploy.yml (GitHub Pages)
+```
 
-That's it. The bundled Cherokee starter course works with zero setup.
+## Adding or extending a course
 
-## How the learning engine works
-
-The app maintains a per-word learner model and schedules everything around it:
-
-- **Spaced repetition (FSRS)** — every exercise result updates the word's *stability*
-  and *difficulty* using the FSRS-4.5 algorithm (the modern scheduler behind Anki).
-  Words come due for review just before you'd forget them; research shows this class of
-  scheduler reaches the same retention as classic SM-2 with ~20–30% fewer reviews.
-- **Error targeting** — words you get wrong are re-queued within the session, boosted to
-  the front of the practice queue, and listed under "Needs attention" on the Stats page.
-- **Retrieval practice** — young words get recognition exercises (multiple choice,
-  listening); as a word matures the engine switches to production (typing), which builds
-  stronger memories.
-- **Interleaving** — every lesson opens with a short spaced-review warm-up of older
-  material, and Practice sessions deliberately mix units and topics.
-- **Controlled introduction** — lessons introduce at most a handful of new items, and
-  CEFR sections stay locked until the material below them exists.
-
-The **Stats** tab shows the whole model: words tracked/mastered, due-now counts, a
-review forecast, accuracy, streaks, daily-goal progress, and your weakest words.
-
-## Accounts & cloud sync
-
-Progress lives in your browser by default. Optionally, sign in from the **Stats** tab to
-back it up and sync across devices (Supabase, row-level security — each user can only
-touch their own row):
-
-- **Email code** sign-in works out of the box.
-- **Google** sign-in: enable the Google provider in the Supabase dashboard
-  (*Authentication → Providers → Google*, paste a Google OAuth client ID/secret) and the
-  existing "Continue with Google" button starts working — no code changes needed.
-
-## Features
-
-- 📚 **Skill tree** — units grouped into CEFR sections A1→C2; sections stay locked until
-  the source material can honestly support them
-- 📝 **Lesson engine** — teach cards, grammar notes, and four exercise types
-  (multiple choice, listening, typing, matching) with wrong-answer requeuing, XP, and streaks
-- ✍️ **Script practice** — for non-Latin scripts: a drawing canvas with glyph tracing,
-  hint toggle, and a self-check score
-- 🏛️ **Culture tab** — background articles generated from the same documents
-- 🔊 **Audio everywhere** — browser TTS on every word and sentence. For languages with no
-  real TTS voice (most under-served languages, including Cherokee), audio uses the closest
-  available voice with per-language phonetic substitutions and is clearly labeled
-  **approximate**
-- 🔒 **Private by design** — static site, no accounts; progress lives in your browser
-
-## Adding a new language
-
-Create `sources/<code>/` (use the ISO 639 code, e.g. `nv` for Navajo, `haw` for Hawaiian),
-upload documents, push. The builder creates `data/<code>/` and adds the language to the
-site's language index. Multiple languages coexist happily.
+Courses are authored with Claude and committed under `data/<code>/`. A unit file is a pool of
+items (`teach` entries: target word, romanization, English, an optional note, grammar/culture
+notes); the app generates the actual lessons and exercises from that pool at runtime. Add a
+language by adding `data/<code>/` and an entry in `data/languages.json`.
 
 ## Local development
 
 ```bash
-# serve the site
-python3 -m http.server 8080          # then open http://localhost:8080
-
-# rebuild a course locally
-ANTHROPIC_API_KEY=sk-... npm install && npm run build-course
+python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
-## A note on accuracy and respect
+No build step — everything is plain ES modules and static JSON. The eSpeak wasm (~18 MB) is
+lazy-loaded on first audio/IPA use and cached by the browser thereafter.
 
-The bundled Cherokee starter course was seeded from public reference material so the
-platform works out of the box. It is illustrative, not authoritative: spelling, dialect,
-and usage vary between communities, and Indigenous communities are the owners of their
-languages. Prefer materials from language keepers — the whole point of this project is
-that **your uploaded documents become the course**.
+## Accounts & sync (optional)
+
+`js/config.js` holds the Supabase URL + publishable key (safe to ship — row-level security
+means each signed-in user can only read/write their own progress row). Email-code sign-in works
+out of the box. To enable Google, add a Google OAuth client in the Supabase dashboard
+(*Authentication → Providers → Google*); the "Continue with Google" button then activates.
+
+## Credits & accuracy
+
+Pronunciation and IPA come from [eSpeak NG](https://github.com/espeak-ng/espeak-ng) (GPLv3).
+Course content is authored with Claude; as with any learning material, prefer resources from
+native speakers and language communities where they exist.

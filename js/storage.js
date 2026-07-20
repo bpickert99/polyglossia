@@ -2,6 +2,7 @@
 // (see sync.js). All reads/writes go through this module; anything that
 // changes state notifies subscribers so the sync layer can push.
 import { review } from "./srs.js";
+import { updateRatings, seedDifficulty } from "./birdbrain.js";
 
 const KEY = "polyglossia.v1";
 
@@ -24,6 +25,7 @@ state.streak = state.streak || { count: 0, lastDate: null };
 state.items = state.items || {};   // "<lang>:<key>" -> FSRS item + display data
 state.days = state.days || {};     // "YYYY-MM-DD" -> XP earned that day
 state.dailyGoal = state.dailyGoal || 50;
+state.ability = state.ability || {}; // "<lang>" -> Birdbrain ability (logits)
 
 const listeners = new Set();
 export function onChange(fn) {
@@ -111,16 +113,30 @@ export function touchItem(lang, key, display = {}) {
   return state.items[id];
 }
 
-// Record one exercise result against an item; updates the FSRS schedule.
+// Record one exercise result against an item. Updates BOTH the FSRS schedule
+// (when to review) and the Birdbrain ratings (learner ability + item difficulty,
+// i.e. how hard to pitch the next exercise).
 export function recordResult(lang, key, correct, display = {}) {
   const item = touchItem(lang, key, display);
   review(item, correct);
+  // Birdbrain: seed item difficulty from its CEFR level on first sight, then
+  // nudge both the item's difficulty and the learner's ability.
+  if (item.bd === undefined) item.bd = seedDifficulty(item.level);
+  const next = updateRatings(state.ability[lang] ?? 0, item.bd, correct);
+  state.ability[lang] = next.ability;
+  item.bd = next.difficulty;
   save();
   return item;
 }
 
 export function getItems(lang) {
   return Object.values(state.items).filter((i) => i.lang === lang);
+}
+
+// ---------- Birdbrain ability ----------
+
+export function getAbility(lang) {
+  return state.ability[lang] ?? 0;
 }
 
 // ---------- language selection ----------
@@ -146,6 +162,10 @@ export function mergeRemoteState(remote) {
   if (!remote || typeof remote !== "object") return;
   state.xp = Math.max(state.xp || 0, remote.xp || 0);
   state.dailyGoal = remote.dailyGoal || state.dailyGoal;
+  for (const [lang, a] of Object.entries(remote.ability || {})) {
+    // Favor the more-practiced (further-from-zero) ability estimate.
+    if (Math.abs(a) > Math.abs(state.ability[lang] ?? 0)) state.ability[lang] = a;
+  }
   for (const [d, xp] of Object.entries(remote.days || {})) {
     state.days[d] = Math.max(state.days[d] || 0, xp);
   }

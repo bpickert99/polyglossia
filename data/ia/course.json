@@ -9,10 +9,11 @@
     "nonLatin": false
   },
   "tts": {
-    "mode": "approximate",
-    "preferredLangs": ["ia", "it", "es", "en"],
+    "engine": "espeak",
+    "voice": "ia",
     "rate": 0.9,
-    "note": "No dedicated Interlingua voice exists in browsers; Italian and Spanish voices read it almost natively.",
+    "note": "eSpeak NG has a native Interlingua voice, so pronunciation and IPA are phonemically correct.",
+    "preferredLangs": ["it", "es", "en"],
     "substitutions": []
   },
   "sections": [

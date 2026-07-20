@@ -1,5 +1,6 @@
-import { getItems, getDays, getXP, getStreak, getDailyGoal, todayXP } from "./storage.js";
+import { getItems, getDays, getXP, getStreak, getDailyGoal, todayXP, getAbility } from "./storage.js";
 import { isDue, isMastered, strength, accuracy } from "./srs.js";
+import { abilityBand, predictP, seedDifficulty } from "./birdbrain.js";
 import { renderSyncCard } from "./sync.js";
 
 function esc(s) {
@@ -35,11 +36,24 @@ export function renderStats(app, course) {
 
   const goalPct = Math.min(100, Math.round((todayXP() / getDailyGoal()) * 100));
 
+  const ability = course ? getAbility(course.code) : 0;
+  const band = abilityBand(ability);
+  // Predicted success on a fresh average word at this ability, for display.
+  const predPct = Math.round(predictP(ability, seedDifficulty("A2")) * 100);
+  const abilityPct = Math.max(4, Math.min(100, Math.round(((ability + 2) / 4) * 100)));
+
   app.innerHTML = `
     <div class="lang-hero">
       <h1>📊 Your learning${course ? ` — ${esc(course.name)}` : ""}</h1>
-      <p>Powered by spaced repetition (FSRS): every answer you give reschedules that word
-      for review right before you'd forget it.</p>
+      <p>The engine tracks your ability and each word's difficulty (Birdbrain-style), schedules
+      reviews with spaced repetition (FSRS), and aims every exercise near an 80% success rate.</p>
+    </div>
+
+    <div class="article">
+      <h2>Estimated ability</h2>
+      <p><b>${esc(band.label)}</b> · around CEFR <b>${esc(band.cefr)}</b></p>
+      <div class="goalbar"><div style="width:${abilityPct}%;background:var(--blue)"></div></div>
+      <p class="muted">${tracked.length ? `On a typical A2 word you'd get about ${predPct}% right. As this rises, lessons introduce harder words and tougher exercises.` : "Complete a few exercises and your ability estimate will appear here."}</p>
     </div>
 
     <div class="stat-grid">

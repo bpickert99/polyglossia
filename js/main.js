@@ -1,12 +1,14 @@
 import { loadLanguages, loadCourse, loadUnit, findUnit } from "./data.js";
-import { getXP, getStreak, getLang, setLang, unitProgress, isLessonComplete } from "./storage.js";
+import { getXP, getStreak, getLang, setLang, getItems } from "./storage.js";
 import { renderLessonSession } from "./lesson.js";
 import { renderScriptPractice } from "./script-practice.js";
 import { renderCulture } from "./culture.js";
 import { renderStats } from "./stats.js";
-import { buildPracticeSession, buildWarmup, dueCount } from "./practice.js";
+import { buildPracticeSession, dueCount } from "./practice.js";
+import { buildLesson, unitMastery, poolFromUnit } from "./lesson-builder.js";
+import { strength } from "./srs.js";
 import { initSync } from "./sync.js";
-import { ttsMode } from "./tts.js";
+import { ttsMode, primeTTS } from "./tts.js";
 
 const app = document.getElementById("app");
 
@@ -41,7 +43,8 @@ async function viewLanguagePicker() {
   const langs = await loadLanguages();
   app.innerHTML = `
     <div class="lang-hero"><h1>Choose a language</h1>
-    <p>Courses are generated from documents in this project's <code>sources/</code> folder.</p></div>
+    <p>Courses for languages the big apps overlook. New courses are authored with Claude
+    and added to the tree.</p></div>
     <div class="lang-picker">
       ${langs.languages.map((l) => `
         <a class="lesson-card" href="#/" data-pick="${esc(l.code)}">
@@ -58,23 +61,27 @@ async function viewCourseMap() {
   setNav("learn");
   const course = await currentCourse();
   if (!course) {
-    app.innerHTML = `<div class="lang-hero"><h1>No courses yet</h1>
-      <p>Upload documents to <code>sources/&lt;language&gt;/</code> and the course builder will create one.</p></div>`;
+    app.innerHTML = `<div class="lang-hero"><h1>No course selected</h1>
+      <p><a href="#/languages">Choose a language</a> to begin.</p></div>`;
     return;
   }
+  primeTTS(); // warm up the audio engine while the map renders
 
   const mode = ttsMode(course);
-  const ttsNote = mode === "approximate"
-    ? `<p>🔊 Audio uses your browser's closest available voice — it is <b>approximate</b>, not a native speaker.</p>`
-    : mode === "none" ? `<p>🔇 Your browser has no speech voices available; audio is disabled.</p>` : "";
+  const ttsNote = mode === "accurate"
+    ? `<p>🔊 Audio is phonemic (eSpeak) — it sounds robotic but pronounces the actual sounds, and every word shows its IPA.</p>`
+    : mode === "approximate"
+    ? `<p>🔊 Audio uses your browser's closest available voice — approximate pronunciation.</p>`
+    : "";
 
+  const multiLang = (await loadLanguages()).languages.length > 1;
   const due = dueCount(course.code);
   let html = `
     <div class="lang-hero">
       <h1>${esc(course.name)} <span class="native">${esc(course.nativeName || "")}</span></h1>
       <p>${esc(course.description || "")}</p>
       ${ttsNote}
-      <p><a href="#/languages" class="switch-link">🌍 Switch language</a></p>
+      ${multiLang ? `<p><a href="#/languages" class="switch-link">🌍 Switch language</a></p>` : ""}
     </div>
     <a class="practice-banner ${due ? "hot" : ""}" href="#/practice">
       <span class="pb-ico">🏋️</span>
@@ -89,7 +96,7 @@ async function viewCourseMap() {
   const unitsData = new Map();
   for (const section of course.sections) {
     for (const u of section.units || []) {
-      try { unitsData.set(u.id, await loadUnit(course.code, u.file)); } catch { /* missing unit file */ }
+      try { unitsData.set(u.id, await loadUnit(course.code, u.file)); } catch { /* missing */ }
     }
   }
 
@@ -98,15 +105,14 @@ async function viewCourseMap() {
     html += `
       <div class="section-header sec-${esc(section.level)} ${locked ? "locked" : ""}">
         <span class="lvl">${esc(section.level)}</span>
-        <span class="sh-text">${esc(section.title)}<small>${locked ? "Unlocks as more source material is added" : esc(section.description || "")}</small></span>
+        <span class="sh-text">${esc(section.title)}<small>${locked ? "Unlocks as the course grows" : esc(section.description || "")}</small></span>
       </div>`;
     if (locked) continue;
     html += `<div class="unit-path">`;
     for (const u of section.units) {
       const data = unitsData.get(u.id);
-      const lessonIds = data ? data.lessons.map((l) => l.id) : [];
-      const prog = unitProgress(course.code, u.id, lessonIds);
-      const done = prog >= 1;
+      const prog = data ? unitMastery(course.code, data) : 0;
+      const done = prog >= 0.95;
       const circumference = 2 * Math.PI * 43;
       html += `
         <a class="unit-node" href="#/unit/${esc(u.id)}">
@@ -133,38 +139,48 @@ async function viewUnit(unitId) {
   const found = findUnit(course, unitId);
   if (!found) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
+  const pool = poolFromUnit(data);
+  const records = new Map(getItems(course.code).map((i) => [i.key, i]));
+  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.85; }).length;
+  const started = pool.filter((i) => records.get(i.key)?.reps).length;
+  const label = started === 0 ? "Start lesson" : "Continue — new lesson";
 
   app.innerHTML = `
     <div class="lang-hero">
       <h1>${esc(found.unit.icon || "")} ${esc(data.title)}</h1>
       <p><b>${esc(found.section.level)}</b> · ${esc(data.summary || "")}</p>
+      <p class="muted">${mastered} of ${pool.length} words mastered · ${started} started</p>
     </div>
-    <div class="lesson-list">
-      ${data.lessons.map((l, i) => {
-        const done = isLessonComplete(course.code, unitId, l.id);
-        return `
-          <a class="lesson-card ${done ? "done" : ""}" href="#/lesson/${esc(unitId)}/${i}">
-            <span class="lc-ico">${done ? "🏅" : "📖"}</span>
-            <span>${esc(l.title)}
-              <span class="lc-sub">${l.grammar ? "grammar · " : ""}${l.teach?.length ? l.teach.length + " new items · " : ""}${l.exercises.length} exercises</span>
-            </span>
-            ${done ? `<span class="lc-check">✓</span>` : ""}
-          </a>`;
+    <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
+    <p class="muted" style="text-align:center;margin:10px 0 4px">Each lesson is built fresh: new words, plus review of what you're about to forget.</p>
+    <div class="word-pool">
+      ${pool.map((i) => {
+        const r = records.get(i.key);
+        const s = r ? strength(r) : 0;
+        return `<div class="word-row">
+          <span class="target">${esc(i.target)}</span>
+          <span class="muted">${esc(i.english)}</span>
+          <span class="strengthbar"><i style="width:${Math.round(s * 100)}%"></i></span>
+        </div>`;
       }).join("")}
     </div>
-    <div style="margin-top:20px"><a class="btn ghost wide" href="#/">← Back to course</a></div>`;
+    <div style="margin-top:18px"><a class="btn ghost wide" href="#/">← Back to course</a></div>`;
 }
 
-async function viewLesson(unitId, lessonIdx) {
+async function viewLesson(unitId) {
   const course = await currentCourse();
   const found = findUnit(course, unitId);
   if (!found) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
-  const lesson = data.lessons[Number(lessonIdx)];
-  if (!lesson) { location.hash = `#/unit/${unitId}`; return; }
-  // Interleave: lessons open with up to 3 spaced-review exercises.
-  const warmup = buildWarmup(course.code, 3);
-  renderLessonSession(app, course, unitId, lesson, updateStats, { warmup });
+  const lesson = buildLesson(course, data);
+  if (lesson.empty) {
+    app.innerHTML = `<div class="lang-hero"><h1>🏅 ${esc(data.title)}</h1>
+      <p>You've worked through everything in this skill. Keep it fresh from the
+      <a href="#/practice">Practice</a> queue, or explore another skill.</p>
+      <a class="btn wide" href="#/unit/${esc(unitId)}">Back</a></div>`;
+    return;
+  }
+  renderLessonSession(app, course, unitId, lesson, updateStats, { backHref: `#/unit/${esc(unitId)}` });
 }
 
 async function viewPractice() {
@@ -173,8 +189,8 @@ async function viewPractice() {
   const session = buildPracticeSession(course.code);
   if (!session) {
     app.innerHTML = `<div class="lang-hero"><h1>🏋️ Practice</h1>
-      <p>Nothing to practice yet — complete a lesson or two first, then this becomes a smart
-      review session targeting exactly the words you're about to forget.</p>
+      <p>Nothing to practice yet — start a lesson first, then this becomes a smart review
+      session targeting exactly the words you're about to forget.</p>
       <a class="btn" href="#/">Back to course</a></div>`;
     return;
   }
@@ -207,23 +223,26 @@ function viewAbout() {
   app.innerHTML = `
     <div class="lang-hero about">
       <h1>About Polyglossia</h1>
-      <p>Polyglossia is an open, Duolingo-style learning platform for languages that mainstream
-      apps don't offer. Courses are <b>generated from documents</b>: drop grammars, word lists,
-      readers, or lesson notes into the repository's <code>sources/&lt;language&gt;/</code> folder,
-      and a Claude-powered build pipeline turns them into a CEFR-aligned course — updating the
-      skill tree whenever new documents are added.</p>
+      <p>Polyglossia is an open, Duolingo-style platform for languages the mainstream apps
+      overlook. It's built around a genuine adaptive engine rather than fixed lesson scripts.</p>
       <ul>
-        <li><b>CEFR alignment</b> — every unit is placed on the A1–C2 scale; sections unlock as the source material supports them.</li>
-        <li><b>Script practice</b> — languages with non-Latin scripts get a drawing tab with tracing and self-scoring.</li>
-        <li><b>Cultural notes</b> — courses include cultural context extracted from the source documents.</li>
-        <li><b>Audio</b> — sentences can be heard via your browser's speech engine. For languages without
-        real TTS voices the audio is a clearly-labeled <b>approximation</b>, not a native speaker.</li>
-        <li><b>Private</b> — progress is stored only in your browser (localStorage). No accounts, no tracking.</li>
+        <li><b>Lessons built on the fly</b> — nothing is pre-scripted. Each time you start a skill,
+        the app assembles a fresh lesson: a few new words (throttled when you're struggling or
+        behind), interleaved with review of what you're about to forget.</li>
+        <li><b>Adaptive difficulty (Birdbrain-style)</b> — like Duolingo's Birdbrain, the app tracks
+        your ability and each word's difficulty, and aims every exercise at roughly an 80% success
+        rate — the sweet spot for learning. Weak words get gentle recognition; solid words get
+        harder production and trickier choices.</li>
+        <li><b>Spaced repetition (FSRS)</b> — every answer reschedules that word for review right
+        before you'd forget it.</li>
+        <li><b>Accurate pronunciation + IPA</b> — audio comes from a phonemic synthesizer (eSpeak NG)
+        that pronounces the actual target sounds, and every word shows its IPA transcription. It
+        sounds robotic, but it's correct — accuracy over polish.</li>
+        <li><b>Cultural notes</b> and a <b>script-drawing tab</b> for languages with non-Latin writing.</li>
+        <li><b>Optional accounts</b> — progress lives in your browser by default; sign in from the
+        Stats tab to back it up and sync across devices.</li>
       </ul>
-      <p><b>A note on accuracy:</b> the bundled starter course was seeded from public reference
-      material and is illustrative. Spelling, dialect, and usage vary between communities —
-      always prefer materials from language keepers and replace the seed course by uploading
-      authoritative documents.</p>
+      <p class="muted">Course content is authored with Claude and can be extended at any time.</p>
     </div>`;
 }
 
@@ -236,7 +255,7 @@ async function route() {
   try {
     if (parts[0] === "languages") return await viewLanguagePicker();
     if (parts[0] === "unit") return await viewUnit(parts[1]);
-    if (parts[0] === "lesson") return await viewLesson(parts[1], parts[2]);
+    if (parts[0] === "lesson") return await viewLesson(parts[1]);
     if (parts[0] === "script") return await viewScript();
     if (parts[0] === "culture") return await viewCulture();
     if (parts[0] === "practice") return await viewPractice();
