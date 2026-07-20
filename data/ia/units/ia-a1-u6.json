@@ -104,10 +104,46 @@
       "Nos es felice."
     ],
     "questions": [
-      { "prompt": "How old is the sister in the story?", "choices": ["Ten", "Eight", "Five", "Two"], "answer": 0 },
-      { "prompt": "What color is the dog?", "choices": ["Brown", "Blue", "Red", "Green"], "answer": 0 },
-      { "prompt": "What is the dog's name?", "choices": ["Rex", "Marco", "Anna", "Leo"], "answer": 0 },
-      { "prompt": "Who is Marco?", "choices": ["The father", "The brother", "The dog", "A friend"], "answer": 0 }
+      {
+        "prompt": "How old is the sister in the story?",
+        "choices": [
+          "Ten",
+          "Eight",
+          "Five",
+          "Two"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What color is the dog?",
+        "choices": [
+          "Brown",
+          "Blue",
+          "Red",
+          "Green"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What is the dog's name?",
+        "choices": [
+          "Rex",
+          "Marco",
+          "Anna",
+          "Leo"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Who is Marco?",
+        "choices": [
+          "The father",
+          "The brother",
+          "The dog",
+          "A friend"
+        ],
+        "answer": 0
+      }
     ]
   }
 }

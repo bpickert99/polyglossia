@@ -19,7 +19,8 @@
       "en"
     ],
     "substitutions": [],
-    "piperVoice": "es_ES-davefx-medium"
+    "piperVoice": "es_ES-davefx-medium",
+    "speed": 0.85
   },
   "sections": [
     {

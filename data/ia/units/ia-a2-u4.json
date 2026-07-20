@@ -98,10 +98,46 @@
       "Proque? Proque illa ama isto!"
     ],
     "questions": [
-      { "prompt": "Where does Anna go every day?", "choices": ["School", "Work", "The city", "Home"], "answer": 0 },
-      { "prompt": "Who did she speak with yesterday?", "choices": ["Her friend Marco", "Her mother", "Her brother", "A stranger"], "answer": 0 },
-      { "prompt": "What will she do tomorrow?", "choices": ["Learn Interlingua at school", "Go to work", "Travel", "Sleep"], "answer": 0 },
-      { "prompt": "Why does she love it?", "choices": ["Because she loves learning", "Because it's easy", "Because of money", "No reason given"], "answer": 0 }
+      {
+        "prompt": "Where does Anna go every day?",
+        "choices": [
+          "School",
+          "Work",
+          "The city",
+          "Home"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Who did she speak with yesterday?",
+        "choices": [
+          "Her friend Marco",
+          "Her mother",
+          "Her brother",
+          "A stranger"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What will she do tomorrow?",
+        "choices": [
+          "Learn Interlingua at school",
+          "Go to work",
+          "Travel",
+          "Sleep"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Why does she love it?",
+        "choices": [
+          "Because she loves learning",
+          "Because it's easy",
+          "Because of money",
+          "No reason given"
+        ],
+        "answer": 0
+      }
     ]
   }
 }
