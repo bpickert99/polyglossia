@@ -8,41 +8,222 @@
       "id": "l1",
       "title": "Matre e patre",
       "teach": [
-        { "target": "le matre", "roman": "le matre", "english": "the mother" },
-        { "target": "le patre", "roman": "le patre", "english": "the father" },
-        { "target": "le fratre", "roman": "le fratre", "english": "the brother" },
-        { "target": "le soror", "roman": "le soror", "english": "the sister" },
-        { "target": "un infante", "roman": "un infante", "english": "a child" }
+        {
+          "target": "le matre",
+          "roman": "le matre",
+          "english": "the mother",
+          "ipa": "le mˈatre",
+          "audio": "audio/le-matre.wav"
+        },
+        {
+          "target": "le patre",
+          "roman": "le patre",
+          "english": "the father",
+          "ipa": "le pˈatre",
+          "audio": "audio/le-patre.wav"
+        },
+        {
+          "target": "le fratre",
+          "roman": "le fratre",
+          "english": "the brother",
+          "ipa": "le frˈatre",
+          "audio": "audio/le-fratre.wav"
+        },
+        {
+          "target": "le soror",
+          "roman": "le soror",
+          "english": "the sister",
+          "ipa": "le sorˈor",
+          "audio": "audio/le-soror.wav"
+        },
+        {
+          "target": "un infante",
+          "roman": "un infante",
+          "english": "a child",
+          "ipa": "un infˈante",
+          "audio": "audio/un-infante.wav"
+        }
       ],
       "grammar": {
         "title": "Two articles, one plural rule",
         "body": "**le** = the, **un** = a/an — invariable, for every noun.\nPlural: add **-s** (after a vowel) or **-es** (after a consonant):\n| le matre | le matres | the mothers |\n| le soror | le sorores | the sisters |\nNo gender agreement, no der/die/das, no el/la. That's the entire article-and-plural system."
       },
       "exercises": [
-        { "type": "mc", "prompt": "\"Le soror\" means…", "choices": ["the sister", "the brother", "the mother", "a child"], "answer": 0, "tts": "le soror" },
-        { "type": "type", "prompt": "Make it plural: \"le matre\" →", "answer": "le matres", "tts": "le matres" },
-        { "type": "listen", "ttsText": "le fratre", "prompt": "Which did you hear?", "choices": ["le fratre", "le patre", "le matre"], "answer": 0 },
-        { "type": "mc", "prompt": "What is the plural of \"le soror\"?", "choices": ["le sorores", "le sorors", "les soror", "le sorora"], "answer": 0 },
-        { "type": "match", "prompt": "Match the family", "pairs": [["le matre", "the mother"], ["le patre", "the father"], ["le fratre", "the brother"], ["le soror", "the sister"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Le soror\" means…",
+          "choices": [
+            "the sister",
+            "the brother",
+            "the mother",
+            "a child"
+          ],
+          "answer": 0,
+          "tts": "le soror"
+        },
+        {
+          "type": "type",
+          "prompt": "Make it plural: \"le matre\" →",
+          "answer": "le matres",
+          "tts": "le matres"
+        },
+        {
+          "type": "listen",
+          "ttsText": "le fratre",
+          "prompt": "Which did you hear?",
+          "choices": [
+            "le fratre",
+            "le patre",
+            "le matre"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "prompt": "What is the plural of \"le soror\"?",
+          "choices": [
+            "le sorores",
+            "le sorors",
+            "les soror",
+            "le sorora"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the family",
+          "pairs": [
+            [
+              "le matre",
+              "the mother"
+            ],
+            [
+              "le patre",
+              "the father"
+            ],
+            [
+              "le fratre",
+              "the brother"
+            ],
+            [
+              "le soror",
+              "the sister"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "l2",
       "title": "Filios e amicos",
       "teach": [
-        { "target": "le filio", "roman": "le filio", "english": "the son" },
-        { "target": "le filia", "roman": "le filia", "english": "the daughter" },
-        { "target": "le granpatre", "roman": "le granpatre", "english": "the grandfather" },
-        { "target": "le granmatre", "roman": "le granmatre", "english": "the grandmother" },
-        { "target": "le amico", "roman": "le amico", "english": "the friend", "note": "amica for a female friend." },
-        { "target": "Mi familia es grande.", "roman": "mi familia es grande", "english": "My family is big." }
+        {
+          "target": "le filio",
+          "roman": "le filio",
+          "english": "the son",
+          "ipa": "le fˈiljo",
+          "audio": "audio/le-filio.wav"
+        },
+        {
+          "target": "le filia",
+          "roman": "le filia",
+          "english": "the daughter",
+          "ipa": "le fˈilja",
+          "audio": "audio/le-filia.wav"
+        },
+        {
+          "target": "le granpatre",
+          "roman": "le granpatre",
+          "english": "the grandfather",
+          "ipa": "le ɡranpˈatre",
+          "audio": "audio/le-granpatre.wav"
+        },
+        {
+          "target": "le granmatre",
+          "roman": "le granmatre",
+          "english": "the grandmother",
+          "ipa": "le ɡranmˈatre",
+          "audio": "audio/le-granmatre.wav"
+        },
+        {
+          "target": "le amico",
+          "roman": "le amico",
+          "english": "the friend",
+          "note": "amica for a female friend.",
+          "ipa": "le amˈiko",
+          "audio": "audio/le-amico.wav"
+        },
+        {
+          "target": "Mi familia es grande.",
+          "roman": "mi familia es grande",
+          "english": "My family is big.",
+          "ipa": "mi famˈilja es ɡrˈande",
+          "audio": "audio/mi-familia-es-grande.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "\"Le filia\" means…", "choices": ["the daughter", "the son", "the friend", "the family"], "answer": 0, "tts": "le filia" },
-        { "type": "listen", "ttsText": "le granmatre", "prompt": "Which did you hear?", "choices": ["le granmatre", "le granpatre", "le matre"], "answer": 0 },
-        { "type": "type", "prompt": "Translate: \"My family is big.\"", "answer": "mi familia es grande", "tts": "mi familia es grande" },
-        { "type": "mc", "prompt": "Fill the blank: \"Mi ___ es mi amico.\" (my brother is my friend)", "choices": ["fratre", "filia", "granmatre", "soror"], "answer": 0 },
-        { "type": "match", "prompt": "Match the family", "pairs": [["le filio", "the son"], ["le filia", "the daughter"], ["le granpatre", "the grandfather"], ["le amico", "the friend"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Le filia\" means…",
+          "choices": [
+            "the daughter",
+            "the son",
+            "the friend",
+            "the family"
+          ],
+          "answer": 0,
+          "tts": "le filia"
+        },
+        {
+          "type": "listen",
+          "ttsText": "le granmatre",
+          "prompt": "Which did you hear?",
+          "choices": [
+            "le granmatre",
+            "le granpatre",
+            "le matre"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"My family is big.\"",
+          "answer": "mi familia es grande",
+          "tts": "mi familia es grande"
+        },
+        {
+          "type": "mc",
+          "prompt": "Fill the blank: \"Mi ___ es mi amico.\" (my brother is my friend)",
+          "choices": [
+            "fratre",
+            "filia",
+            "granmatre",
+            "soror"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the family",
+          "pairs": [
+            [
+              "le filio",
+              "the son"
+            ],
+            [
+              "le filia",
+              "the daughter"
+            ],
+            [
+              "le granpatre",
+              "the grandfather"
+            ],
+            [
+              "le amico",
+              "the friend"
+            ]
+          ]
+        }
       ]
     }
   ]

@@ -8,36 +8,211 @@
       "id": "l1",
       "title": "Casa e labor",
       "teach": [
-        { "target": "le casa", "roman": "le casa", "english": "the house / home" },
-        { "target": "le labor", "roman": "le labor", "english": "the work / job" },
-        { "target": "le schola", "roman": "le schola", "english": "the school" },
-        { "target": "le urbe", "roman": "le urbe", "english": "the city" },
-        { "target": "Io vade al labor omne die.", "roman": "io vade al labor omne die", "english": "I go to work every day.", "note": "omne die = every day." }
+        {
+          "target": "le casa",
+          "roman": "le casa",
+          "english": "the house / home",
+          "ipa": "le kˈasa",
+          "audio": "audio/le-casa.wav"
+        },
+        {
+          "target": "le labor",
+          "roman": "le labor",
+          "english": "the work / job",
+          "ipa": "le labˈor",
+          "audio": "audio/le-labor.wav"
+        },
+        {
+          "target": "le schola",
+          "roman": "le schola",
+          "english": "the school",
+          "ipa": "le stʃˈola",
+          "audio": "audio/le-schola.wav"
+        },
+        {
+          "target": "le urbe",
+          "roman": "le urbe",
+          "english": "the city",
+          "ipa": "le ˈurbe",
+          "audio": "audio/le-urbe.wav"
+        },
+        {
+          "target": "Io vade al labor omne die.",
+          "roman": "io vade al labor omne die",
+          "english": "I go to work every day.",
+          "note": "omne die = every day.",
+          "ipa": "ˈiʲo vˈade al labˈor ˈomne dˈiʲe",
+          "audio": "audio/io-vade-al-labor-omne-die.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "\"Le urbe\" means…", "choices": ["the city", "the house", "the school", "the work"], "answer": 0, "tts": "le urbe" },
-        { "type": "listen", "ttsText": "le schola", "prompt": "Which did you hear?", "choices": ["le schola", "le casa", "le urbe"], "answer": 0 },
-        { "type": "type", "prompt": "Translate: \"I go to work every day.\"", "answer": "io vade al labor omne die", "tts": "io vade al labor omne die" },
-        { "type": "mc", "prompt": "Fill the blank: \"Le infantes vade al ___.\" (The children go to school)", "choices": ["schola", "urbe", "labor", "pomo"], "answer": 0 },
-        { "type": "match", "prompt": "Match the places", "pairs": [["le casa", "the house"], ["le labor", "the work"], ["le schola", "the school"], ["le urbe", "the city"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Le urbe\" means…",
+          "choices": [
+            "the city",
+            "the house",
+            "the school",
+            "the work"
+          ],
+          "answer": 0,
+          "tts": "le urbe"
+        },
+        {
+          "type": "listen",
+          "ttsText": "le schola",
+          "prompt": "Which did you hear?",
+          "choices": [
+            "le schola",
+            "le casa",
+            "le urbe"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"I go to work every day.\"",
+          "answer": "io vade al labor omne die",
+          "tts": "io vade al labor omne die"
+        },
+        {
+          "type": "mc",
+          "prompt": "Fill the blank: \"Le infantes vade al ___.\" (The children go to school)",
+          "choices": [
+            "schola",
+            "urbe",
+            "labor",
+            "pomo"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the places",
+          "pairs": [
+            [
+              "le casa",
+              "the house"
+            ],
+            [
+              "le labor",
+              "the work"
+            ],
+            [
+              "le schola",
+              "the school"
+            ],
+            [
+              "le urbe",
+              "the city"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "l2",
       "title": "Tempore",
       "teach": [
-        { "target": "hodie", "roman": "hodie", "english": "today" },
-        { "target": "le die", "roman": "le die", "english": "the day" },
-        { "target": "le nocte", "roman": "le nocte", "english": "the night" },
-        { "target": "sempre", "roman": "sempre", "english": "always" },
-        { "target": "Hodie es un bon die.", "roman": "hodie es un bon die", "english": "Today is a good day." }
+        {
+          "target": "hodie",
+          "roman": "hodie",
+          "english": "today",
+          "ipa": "hˈodje",
+          "audio": "audio/hodie.wav"
+        },
+        {
+          "target": "le die",
+          "roman": "le die",
+          "english": "the day",
+          "ipa": "le dˈiʲe",
+          "audio": "audio/le-die.wav"
+        },
+        {
+          "target": "le nocte",
+          "roman": "le nocte",
+          "english": "the night",
+          "ipa": "le nˈokte",
+          "audio": "audio/le-nocte.wav"
+        },
+        {
+          "target": "sempre",
+          "roman": "sempre",
+          "english": "always",
+          "ipa": "sˈempre",
+          "audio": "audio/sempre.wav"
+        },
+        {
+          "target": "Hodie es un bon die.",
+          "roman": "hodie es un bon die",
+          "english": "Today is a good day.",
+          "ipa": "hˈodje es un bˈon dˈiʲe",
+          "audio": "audio/hodie-es-un-bon-die.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "\"Hodie\" means…", "choices": ["today", "tomorrow", "yesterday", "night"], "answer": 0, "tts": "hodie" },
-        { "type": "listen", "ttsText": "hodie es un bon die", "prompt": "What did you hear?", "choices": ["Hodie es un bon die.", "Le nocte es nigre.", "Deman io parlara."], "answer": 0 },
-        { "type": "mc", "prompt": "Order the day-words: heri, hodie, ___", "choices": ["deman", "sempre", "nocte", "die"], "answer": 0 },
-        { "type": "type", "prompt": "Translate: \"always\"", "answer": "sempre", "tts": "sempre" },
-        { "type": "match", "prompt": "Match the time words", "pairs": [["hodie", "today"], ["heri", "yesterday"], ["deman", "tomorrow"], ["sempre", "always"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Hodie\" means…",
+          "choices": [
+            "today",
+            "tomorrow",
+            "yesterday",
+            "night"
+          ],
+          "answer": 0,
+          "tts": "hodie"
+        },
+        {
+          "type": "listen",
+          "ttsText": "hodie es un bon die",
+          "prompt": "What did you hear?",
+          "choices": [
+            "Hodie es un bon die.",
+            "Le nocte es nigre.",
+            "Deman io parlara."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "prompt": "Order the day-words: heri, hodie, ___",
+          "choices": [
+            "deman",
+            "sempre",
+            "nocte",
+            "die"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"always\"",
+          "answer": "sempre",
+          "tts": "sempre"
+        },
+        {
+          "type": "match",
+          "prompt": "Match the time words",
+          "pairs": [
+            [
+              "hodie",
+              "today"
+            ],
+            [
+              "heri",
+              "yesterday"
+            ],
+            [
+              "deman",
+              "tomorrow"
+            ],
+            [
+              "sempre",
+              "always"
+            ]
+          ]
+        }
       ]
     }
   ]

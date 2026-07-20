@@ -8,40 +8,222 @@
       "id": "l1",
       "title": "Ma, e, o",
       "teach": [
-        { "target": "e", "roman": "e", "english": "and" },
-        { "target": "ma", "roman": "ma", "english": "but" },
-        { "target": "o", "roman": "o", "english": "or" },
-        { "target": "si", "roman": "si", "english": "if", "note": "Same spelling as 'yes' — context makes it clear, like 'si' in Spanish/Italian." },
-        { "target": "Io parla interlingua, ma io ancora apprende.", "roman": "io parla interlingua ma io ancora apprende", "english": "I speak Interlingua, but I'm still learning.", "note": "ancora = still/yet." }
+        {
+          "target": "e",
+          "roman": "e",
+          "english": "and",
+          "ipa": "ˈe",
+          "audio": "audio/e.wav"
+        },
+        {
+          "target": "ma",
+          "roman": "ma",
+          "english": "but",
+          "ipa": "mˈa",
+          "audio": "audio/ma.wav"
+        },
+        {
+          "target": "o",
+          "roman": "o",
+          "english": "or",
+          "ipa": "ˈo",
+          "audio": "audio/o.wav"
+        },
+        {
+          "target": "si",
+          "roman": "si",
+          "english": "if",
+          "note": "Same spelling as 'yes' — context makes it clear, like 'si' in Spanish/Italian.",
+          "ipa": "sˈi",
+          "audio": "audio/si.wav"
+        },
+        {
+          "target": "Io parla interlingua, ma io ancora apprende.",
+          "roman": "io parla interlingua ma io ancora apprende",
+          "english": "I speak Interlingua, but I'm still learning.",
+          "note": "ancora = still/yet.",
+          "ipa": "ˈiʲo pˈarla ˌinterlˈiŋɡwa mˈa ˈiʲo ankˈora aprˈende",
+          "audio": "audio/io-parla-interlingua-ma-io-ancora-apprende.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "\"Ma\" means…", "choices": ["but", "and", "or", "if"], "answer": 0, "tts": "ma" },
-        { "type": "type", "prompt": "Translate: \"coffee or milk\"", "answer": "caffe o lacte", "tts": "caffe o lacte" },
-        { "type": "listen", "ttsText": "io parla interlingua ma io ancora apprende", "prompt": "What did you hear?", "choices": ["Io parla interlingua, ma io ancora apprende.", "Io ama apprender linguas.", "Tote essera ben."], "answer": 0 },
-        { "type": "mc", "prompt": "Fill the blank: \"___ tu vole, nos vade al parco.\" (If you want, we'll go to the park)", "choices": ["Si", "Ma", "E", "O"], "answer": 0 },
-        { "type": "match", "prompt": "Match the connectors", "pairs": [["e", "and"], ["ma", "but"], ["o", "or"], ["si", "if"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Ma\" means…",
+          "choices": [
+            "but",
+            "and",
+            "or",
+            "if"
+          ],
+          "answer": 0,
+          "tts": "ma"
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"coffee or milk\"",
+          "answer": "caffe o lacte",
+          "tts": "caffe o lacte"
+        },
+        {
+          "type": "listen",
+          "ttsText": "io parla interlingua ma io ancora apprende",
+          "prompt": "What did you hear?",
+          "choices": [
+            "Io parla interlingua, ma io ancora apprende.",
+            "Io ama apprender linguas.",
+            "Tote essera ben."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "prompt": "Fill the blank: \"___ tu vole, nos vade al parco.\" (If you want, we'll go to the park)",
+          "choices": [
+            "Si",
+            "Ma",
+            "E",
+            "O"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the connectors",
+          "pairs": [
+            [
+              "e",
+              "and"
+            ],
+            [
+              "ma",
+              "but"
+            ],
+            [
+              "o",
+              "or"
+            ],
+            [
+              "si",
+              "if"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "l2",
       "title": "Keeping it going",
       "teach": [
-        { "target": "Io non comprende.", "roman": "io non comprende", "english": "I don't understand.", "note": "non before the verb negates it." },
-        { "target": "Pote tu repeter?", "roman": "pote tu repeter", "english": "Can you repeat?", "note": "poter = to be able; pote = can." },
-        { "target": "Como se dice ... in interlingua?", "roman": "como se dice in interlingua", "english": "How do you say ... in Interlingua?" },
-        { "target": "Naturalmente!", "roman": "naturalmente", "english": "Of course!", "note": "Adverbs end in -mente, like Romance languages." },
-        { "target": "Multo ben!", "roman": "multo ben", "english": "Very good!" }
+        {
+          "target": "Io non comprende.",
+          "roman": "io non comprende",
+          "english": "I don't understand.",
+          "note": "non before the verb negates it.",
+          "ipa": "ˈiʲo nˈon komprˈende",
+          "audio": "audio/io-non-comprende.wav"
+        },
+        {
+          "target": "Pote tu repeter?",
+          "roman": "pote tu repeter",
+          "english": "Can you repeat?",
+          "note": "poter = to be able; pote = can.",
+          "ipa": "pˈote tˈu rˌepetˈer",
+          "audio": "audio/pote-tu-repeter.wav"
+        },
+        {
+          "target": "Como se dice ... in interlingua?",
+          "roman": "como se dice in interlingua",
+          "english": "How do you say ... in Interlingua?",
+          "ipa": "kˈomo sˈe dˈitse ˈin ˌinterlˈiŋɡwa",
+          "audio": "audio/como-se-dice-in-interlingua.wav"
+        },
+        {
+          "target": "Naturalmente!",
+          "roman": "naturalmente",
+          "english": "Of course!",
+          "note": "Adverbs end in -mente, like Romance languages.",
+          "ipa": "nˌaturalmˈente",
+          "audio": "audio/naturalmente.wav"
+        },
+        {
+          "target": "Multo ben!",
+          "roman": "multo ben",
+          "english": "Very good!",
+          "ipa": "mˈulto bˈen",
+          "audio": "audio/multo-ben.wav"
+        }
       ],
       "grammar": {
         "title": "Negation and adverbs",
         "body": "Negate any verb with **non** before it: io comprende → io **non** comprende.\nMake adverbs with **-mente** on the adjective: natural → natural**mente** (naturally), felice → felice**mente** (happily).\nWith connectors, questions, three tenses, and negation, you can now improvise real conversations — the rest is vocabulary."
       },
       "exercises": [
-        { "type": "mc", "prompt": "How do you negate \"io comprende\"?", "choices": ["io non comprende", "io comprende non", "non io comprende", "io no comprende"], "answer": 0, "tts": "io non comprende" },
-        { "type": "type", "prompt": "Translate: \"Can you repeat?\"", "answer": "pote tu repeter", "accept": ["pote tu repeter?"], "tts": "pote tu repeter" },
-        { "type": "listen", "ttsText": "como se dice in interlingua", "prompt": "What did you hear?", "choices": ["Como se dice ... in interlingua?", "Pote tu repeter?", "Io non comprende."], "answer": 0 },
-        { "type": "mc", "prompt": "The adverb of \"felice\" (happy) is…", "choices": ["felicemente", "felicemento", "felicely", "felicima"], "answer": 0 },
-        { "type": "match", "prompt": "Match the phrases", "pairs": [["Io non comprende.", "I don't understand."], ["Pote tu repeter?", "Can you repeat?"], ["Naturalmente!", "Of course!"], ["Multo ben!", "Very good!"]] }
+        {
+          "type": "mc",
+          "prompt": "How do you negate \"io comprende\"?",
+          "choices": [
+            "io non comprende",
+            "io comprende non",
+            "non io comprende",
+            "io no comprende"
+          ],
+          "answer": 0,
+          "tts": "io non comprende"
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"Can you repeat?\"",
+          "answer": "pote tu repeter",
+          "accept": [
+            "pote tu repeter?"
+          ],
+          "tts": "pote tu repeter"
+        },
+        {
+          "type": "listen",
+          "ttsText": "como se dice in interlingua",
+          "prompt": "What did you hear?",
+          "choices": [
+            "Como se dice ... in interlingua?",
+            "Pote tu repeter?",
+            "Io non comprende."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "prompt": "The adverb of \"felice\" (happy) is…",
+          "choices": [
+            "felicemente",
+            "felicemento",
+            "felicely",
+            "felicima"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the phrases",
+          "pairs": [
+            [
+              "Io non comprende.",
+              "I don't understand."
+            ],
+            [
+              "Pote tu repeter?",
+              "Can you repeat?"
+            ],
+            [
+              "Naturalmente!",
+              "Of course!"
+            ],
+            [
+              "Multo ben!",
+              "Very good!"
+            ]
+          ]
+        }
       ]
     }
   ]

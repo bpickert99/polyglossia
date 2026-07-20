@@ -8,40 +8,219 @@
       "id": "l1",
       "title": "First colors",
       "teach": [
-        { "target": "rubie", "roman": "rubie", "english": "red", "note": "Think 'ruby'." },
-        { "target": "blau", "roman": "blau", "english": "blue" },
-        { "target": "verde", "roman": "verde", "english": "green" },
-        { "target": "jalne", "roman": "jalne", "english": "yellow", "note": "j sounds like the s in 'measure'." },
-        { "target": "un pomo rubie", "roman": "un pomo rubie", "english": "a red apple", "note": "Adjectives usually follow the noun." }
+        {
+          "target": "rubie",
+          "roman": "rubie",
+          "english": "red",
+          "note": "Think 'ruby'.",
+          "ipa": "rˈubje",
+          "audio": "audio/rubie.wav"
+        },
+        {
+          "target": "blau",
+          "roman": "blau",
+          "english": "blue",
+          "ipa": "blˈaʊ",
+          "audio": "audio/blau.wav"
+        },
+        {
+          "target": "verde",
+          "roman": "verde",
+          "english": "green",
+          "ipa": "vˈerde",
+          "audio": "audio/verde.wav"
+        },
+        {
+          "target": "jalne",
+          "roman": "jalne",
+          "english": "yellow",
+          "note": "j sounds like the s in 'measure'.",
+          "ipa": "ʒˈalne",
+          "audio": "audio/jalne.wav"
+        },
+        {
+          "target": "un pomo rubie",
+          "roman": "un pomo rubie",
+          "english": "a red apple",
+          "note": "Adjectives usually follow the noun.",
+          "ipa": "un pˈomo rˈubje",
+          "audio": "audio/un-pomo-rubie.wav"
+        }
       ],
       "grammar": {
         "title": "Invariable adjectives",
         "body": "Adjectives never change for gender or number:\n| un pomo rubie | a red apple |\n| duo pomos rubie | two red apples |\n| un casa rubie | a red house |\nThey normally follow the noun (pomo rubie), though short common ones may precede it (un bon idea)."
       },
       "exercises": [
-        { "type": "mc", "prompt": "\"Verde\" means…", "choices": ["green", "red", "blue", "yellow"], "answer": 0, "tts": "verde" },
-        { "type": "listen", "ttsText": "jalne", "prompt": "Which color did you hear?", "choices": ["jalne", "blau", "rubie"], "answer": 0 },
-        { "type": "type", "prompt": "Translate: \"a red apple\"", "answer": "un pomo rubie", "tts": "un pomo rubie" },
-        { "type": "mc", "prompt": "\"Duo pomos ___\" (two red apples) — the adjective is…", "choices": ["rubie", "rubies", "rubia", "rubios"], "answer": 0 },
-        { "type": "match", "prompt": "Match the colors", "pairs": [["rubie", "red"], ["blau", "blue"], ["verde", "green"], ["jalne", "yellow"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Verde\" means…",
+          "choices": [
+            "green",
+            "red",
+            "blue",
+            "yellow"
+          ],
+          "answer": 0,
+          "tts": "verde"
+        },
+        {
+          "type": "listen",
+          "ttsText": "jalne",
+          "prompt": "Which color did you hear?",
+          "choices": [
+            "jalne",
+            "blau",
+            "rubie"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"a red apple\"",
+          "answer": "un pomo rubie",
+          "tts": "un pomo rubie"
+        },
+        {
+          "type": "mc",
+          "prompt": "\"Duo pomos ___\" (two red apples) — the adjective is…",
+          "choices": [
+            "rubie",
+            "rubies",
+            "rubia",
+            "rubios"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "match",
+          "prompt": "Match the colors",
+          "pairs": [
+            [
+              "rubie",
+              "red"
+            ],
+            [
+              "blau",
+              "blue"
+            ],
+            [
+              "verde",
+              "green"
+            ],
+            [
+              "jalne",
+              "yellow"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "l2",
       "title": "More colors",
       "teach": [
-        { "target": "blanc", "roman": "blanc", "english": "white" },
-        { "target": "nigre", "roman": "nigre", "english": "black" },
-        { "target": "brun", "roman": "brun", "english": "brown" },
-        { "target": "Le nocte es nigre.", "roman": "le nocte es nigre", "english": "The night is black." },
-        { "target": "Que color es le celo?", "roman": "que color es le celo", "english": "What color is the sky?", "note": "celo = sky. Answer: Le celo es blau!" }
+        {
+          "target": "blanc",
+          "roman": "blanc",
+          "english": "white",
+          "ipa": "blˈank",
+          "audio": "audio/blanc.wav"
+        },
+        {
+          "target": "nigre",
+          "roman": "nigre",
+          "english": "black",
+          "ipa": "nˈiɡre",
+          "audio": "audio/nigre.wav"
+        },
+        {
+          "target": "brun",
+          "roman": "brun",
+          "english": "brown",
+          "ipa": "brˈun",
+          "audio": "audio/brun.wav"
+        },
+        {
+          "target": "Le nocte es nigre.",
+          "roman": "le nocte es nigre",
+          "english": "The night is black.",
+          "ipa": "le nˈokte es nˈiɡre",
+          "audio": "audio/le-nocte-es-nigre.wav"
+        },
+        {
+          "target": "Que color es le celo?",
+          "roman": "que color es le celo",
+          "english": "What color is the sky?",
+          "note": "celo = sky. Answer: Le celo es blau!",
+          "ipa": "kˈe kolˈor es le tsˈelo",
+          "audio": "audio/que-color-es-le-celo.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "\"Nigre\" means…", "choices": ["black", "white", "brown", "blue"], "answer": 0, "tts": "nigre" },
-        { "type": "listen", "ttsText": "blanc", "prompt": "Which color did you hear?", "choices": ["blanc", "brun", "blau"], "answer": 0 },
-        { "type": "mc", "prompt": "\"Que color es le celo?\" — the natural answer is…", "choices": ["Le celo es blau.", "Le celo es un pomo.", "Io es verde.", "Gratias."], "answer": 0, "tts": "le celo es blau" },
-        { "type": "type", "prompt": "Translate: \"The night is black.\"", "answer": "le nocte es nigre", "tts": "le nocte es nigre" },
-        { "type": "match", "prompt": "Match the colors", "pairs": [["blanc", "white"], ["nigre", "black"], ["brun", "brown"], ["verde", "green"]] }
+        {
+          "type": "mc",
+          "prompt": "\"Nigre\" means…",
+          "choices": [
+            "black",
+            "white",
+            "brown",
+            "blue"
+          ],
+          "answer": 0,
+          "tts": "nigre"
+        },
+        {
+          "type": "listen",
+          "ttsText": "blanc",
+          "prompt": "Which color did you hear?",
+          "choices": [
+            "blanc",
+            "brun",
+            "blau"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "prompt": "\"Que color es le celo?\" — the natural answer is…",
+          "choices": [
+            "Le celo es blau.",
+            "Le celo es un pomo.",
+            "Io es verde.",
+            "Gratias."
+          ],
+          "answer": 0,
+          "tts": "le celo es blau"
+        },
+        {
+          "type": "type",
+          "prompt": "Translate: \"The night is black.\"",
+          "answer": "le nocte es nigre",
+          "tts": "le nocte es nigre"
+        },
+        {
+          "type": "match",
+          "prompt": "Match the colors",
+          "pairs": [
+            [
+              "blanc",
+              "white"
+            ],
+            [
+              "nigre",
+              "black"
+            ],
+            [
+              "brun",
+              "brown"
+            ],
+            [
+              "verde",
+              "green"
+            ]
+          ]
+        }
       ]
     }
   ]

@@ -13,8 +13,13 @@
     "voice": "ia",
     "rate": 0.9,
     "note": "eSpeak NG has a native Interlingua voice, so pronunciation and IPA are phonemically correct.",
-    "preferredLangs": ["it", "es", "en"],
-    "substitutions": []
+    "preferredLangs": [
+      "it",
+      "es",
+      "en"
+    ],
+    "substitutions": [],
+    "piperVoice": "es_ES-davefx-medium"
   },
   "sections": [
     {
@@ -22,12 +27,42 @@
       "title": "Beginner",
       "description": "Greetings, esser, and first sentences",
       "units": [
-        { "id": "ia-a1-u1", "title": "Salutes", "icon": "👋", "file": "units/ia-a1-u1.json" },
-        { "id": "ia-a1-u2", "title": "To Be & Pronouns", "icon": "🧍", "file": "units/ia-a1-u2.json" },
-        { "id": "ia-a1-u3", "title": "Numeros 1–10", "icon": "🔢", "file": "units/ia-a1-u3.json" },
-        { "id": "ia-a1-u4", "title": "Le familia", "icon": "👪", "file": "units/ia-a1-u4.json" },
-        { "id": "ia-a1-u5", "title": "Mangiar e biber", "icon": "🍞", "file": "units/ia-a1-u5.json" },
-        { "id": "ia-a1-u6", "title": "Colores", "icon": "🎨", "file": "units/ia-a1-u6.json" }
+        {
+          "id": "ia-a1-u1",
+          "title": "Salutes",
+          "icon": "👋",
+          "file": "units/ia-a1-u1.json"
+        },
+        {
+          "id": "ia-a1-u2",
+          "title": "To Be & Pronouns",
+          "icon": "🧍",
+          "file": "units/ia-a1-u2.json"
+        },
+        {
+          "id": "ia-a1-u3",
+          "title": "Numeros 1–10",
+          "icon": "🔢",
+          "file": "units/ia-a1-u3.json"
+        },
+        {
+          "id": "ia-a1-u4",
+          "title": "Le familia",
+          "icon": "👪",
+          "file": "units/ia-a1-u4.json"
+        },
+        {
+          "id": "ia-a1-u5",
+          "title": "Mangiar e biber",
+          "icon": "🍞",
+          "file": "units/ia-a1-u5.json"
+        },
+        {
+          "id": "ia-a1-u6",
+          "title": "Colores",
+          "icon": "🎨",
+          "file": "units/ia-a1-u6.json"
+        }
       ]
     },
     {
@@ -35,10 +70,30 @@
       "title": "Elementary",
       "description": "Verbs, questions, and daily life",
       "units": [
-        { "id": "ia-a2-u1", "title": "Verbos", "icon": "🏃", "file": "units/ia-a2-u1.json" },
-        { "id": "ia-a2-u2", "title": "Questiones", "icon": "❓", "file": "units/ia-a2-u2.json" },
-        { "id": "ia-a2-u3", "title": "Passato e futuro", "icon": "⏳", "file": "units/ia-a2-u3.json" },
-        { "id": "ia-a2-u4", "title": "Le vita quotidian", "icon": "🏙️", "file": "units/ia-a2-u4.json" }
+        {
+          "id": "ia-a2-u1",
+          "title": "Verbos",
+          "icon": "🏃",
+          "file": "units/ia-a2-u1.json"
+        },
+        {
+          "id": "ia-a2-u2",
+          "title": "Questiones",
+          "icon": "❓",
+          "file": "units/ia-a2-u2.json"
+        },
+        {
+          "id": "ia-a2-u3",
+          "title": "Passato e futuro",
+          "icon": "⏳",
+          "file": "units/ia-a2-u3.json"
+        },
+        {
+          "id": "ia-a2-u4",
+          "title": "Le vita quotidian",
+          "icon": "🏙️",
+          "file": "units/ia-a2-u4.json"
+        }
       ]
     },
     {
@@ -46,11 +101,34 @@
       "title": "Intermediate",
       "description": "Connected speech",
       "units": [
-        { "id": "ia-b1-u1", "title": "Conversation", "icon": "💬", "file": "units/ia-b1-u1.json" }
+        {
+          "id": "ia-b1-u1",
+          "title": "Conversation",
+          "icon": "💬",
+          "file": "units/ia-b1-u1.json"
+        }
       ]
     },
-    { "level": "B2", "title": "Upper Intermediate", "description": "", "locked": true, "units": [] },
-    { "level": "C1", "title": "Advanced", "description": "", "locked": true, "units": [] },
-    { "level": "C2", "title": "Mastery", "description": "", "locked": true, "units": [] }
+    {
+      "level": "B2",
+      "title": "Upper Intermediate",
+      "description": "",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "C1",
+      "title": "Advanced",
+      "description": "",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "C2",
+      "title": "Mastery",
+      "description": "",
+      "locked": true,
+      "units": []
+    }
   ]
 }

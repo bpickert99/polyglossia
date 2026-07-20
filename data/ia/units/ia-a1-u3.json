@@ -8,35 +8,208 @@
       "id": "l1",
       "title": "Un a cinque",
       "teach": [
-        { "target": "un", "roman": "un", "english": "one" },
-        { "target": "duo", "roman": "duo", "english": "two" },
-        { "target": "tres", "roman": "tres", "english": "three" },
-        { "target": "quatro", "roman": "quatro", "english": "four" },
-        { "target": "cinque", "roman": "cinque", "english": "five" }
+        {
+          "target": "un",
+          "roman": "un",
+          "english": "one",
+          "ipa": "ˈun",
+          "audio": "audio/un.wav"
+        },
+        {
+          "target": "duo",
+          "roman": "duo",
+          "english": "two",
+          "ipa": "dˈuo",
+          "audio": "audio/duo.wav"
+        },
+        {
+          "target": "tres",
+          "roman": "tres",
+          "english": "three",
+          "ipa": "trˈes",
+          "audio": "audio/tres.wav"
+        },
+        {
+          "target": "quatro",
+          "roman": "quatro",
+          "english": "four",
+          "ipa": "kwˈatro",
+          "audio": "audio/quatro.wav"
+        },
+        {
+          "target": "cinque",
+          "roman": "cinque",
+          "english": "five",
+          "ipa": "tsˈiŋkwe",
+          "audio": "audio/cinque.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "What is \"tres\"?", "choices": ["three", "two", "four", "five"], "answer": 0, "tts": "tres" },
-        { "type": "listen", "ttsText": "quatro", "prompt": "Which number did you hear?", "choices": ["quatro", "cinque", "duo"], "answer": 0 },
-        { "type": "type", "prompt": "Type the Interlingua for \"five\"", "answer": "cinque", "tts": "cinque" },
-        { "type": "match", "prompt": "Match the numbers", "pairs": [["un", "1"], ["duo", "2"], ["tres", "3"], ["quatro", "4"], ["cinque", "5"]] }
+        {
+          "type": "mc",
+          "prompt": "What is \"tres\"?",
+          "choices": [
+            "three",
+            "two",
+            "four",
+            "five"
+          ],
+          "answer": 0,
+          "tts": "tres"
+        },
+        {
+          "type": "listen",
+          "ttsText": "quatro",
+          "prompt": "Which number did you hear?",
+          "choices": [
+            "quatro",
+            "cinque",
+            "duo"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Type the Interlingua for \"five\"",
+          "answer": "cinque",
+          "tts": "cinque"
+        },
+        {
+          "type": "match",
+          "prompt": "Match the numbers",
+          "pairs": [
+            [
+              "un",
+              "1"
+            ],
+            [
+              "duo",
+              "2"
+            ],
+            [
+              "tres",
+              "3"
+            ],
+            [
+              "quatro",
+              "4"
+            ],
+            [
+              "cinque",
+              "5"
+            ]
+          ]
+        }
       ]
     },
     {
       "id": "l2",
       "title": "Sex a dece",
       "teach": [
-        { "target": "sex", "roman": "sex", "english": "six" },
-        { "target": "septe", "roman": "septe", "english": "seven" },
-        { "target": "octo", "roman": "octo", "english": "eight" },
-        { "target": "novem", "roman": "novem", "english": "nine" },
-        { "target": "dece", "roman": "dece", "english": "ten" }
+        {
+          "target": "sex",
+          "roman": "sex",
+          "english": "six",
+          "ipa": "sˈeks",
+          "audio": "audio/sex.wav"
+        },
+        {
+          "target": "septe",
+          "roman": "septe",
+          "english": "seven",
+          "ipa": "sˈepte",
+          "audio": "audio/septe.wav"
+        },
+        {
+          "target": "octo",
+          "roman": "octo",
+          "english": "eight",
+          "ipa": "ˈokto",
+          "audio": "audio/octo.wav"
+        },
+        {
+          "target": "novem",
+          "roman": "novem",
+          "english": "nine",
+          "ipa": "nˈovem",
+          "audio": "audio/novem.wav"
+        },
+        {
+          "target": "dece",
+          "roman": "dece",
+          "english": "ten",
+          "ipa": "dˈetse",
+          "audio": "audio/dece.wav"
+        }
       ],
       "exercises": [
-        { "type": "mc", "prompt": "What is \"octo\"?", "choices": ["eight", "six", "nine", "ten"], "answer": 0, "tts": "octo" },
-        { "type": "listen", "ttsText": "septe", "prompt": "Which number did you hear?", "choices": ["septe", "sex", "dece"], "answer": 0 },
-        { "type": "type", "prompt": "Type the Interlingua for \"ten\"", "answer": "dece", "tts": "dece" },
-        { "type": "mc", "prompt": "\"Io ha septe canes\" means I have ___ dogs.", "choices": ["seven", "six", "eight", "nine"], "answer": 0, "tts": "io ha septe canes" },
-        { "type": "match", "prompt": "Match the numbers", "pairs": [["sex", "6"], ["septe", "7"], ["octo", "8"], ["novem", "9"], ["dece", "10"]] }
+        {
+          "type": "mc",
+          "prompt": "What is \"octo\"?",
+          "choices": [
+            "eight",
+            "six",
+            "nine",
+            "ten"
+          ],
+          "answer": 0,
+          "tts": "octo"
+        },
+        {
+          "type": "listen",
+          "ttsText": "septe",
+          "prompt": "Which number did you hear?",
+          "choices": [
+            "septe",
+            "sex",
+            "dece"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "type",
+          "prompt": "Type the Interlingua for \"ten\"",
+          "answer": "dece",
+          "tts": "dece"
+        },
+        {
+          "type": "mc",
+          "prompt": "\"Io ha septe canes\" means I have ___ dogs.",
+          "choices": [
+            "seven",
+            "six",
+            "eight",
+            "nine"
+          ],
+          "answer": 0,
+          "tts": "io ha septe canes"
+        },
+        {
+          "type": "match",
+          "prompt": "Match the numbers",
+          "pairs": [
+            [
+              "sex",
+              "6"
+            ],
+            [
+              "septe",
+              "7"
+            ],
+            [
+              "octo",
+              "8"
+            ],
+            [
+              "novem",
+              "9"
+            ],
+            [
+              "dece",
+              "10"
+            ]
+          ]
+        }
       ]
     }
   ]
