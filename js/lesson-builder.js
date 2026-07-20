@@ -82,7 +82,11 @@ export function buildLesson(course, unitData, size = 12) {
   const newKeys = new Set(newItems.map((i) => i.key));
   const skillSeen = pool
     .filter((i) => !newKeys.has(i.key) && records.has(i.key))
-    .map((i) => records.get(i.key))
+    // Content (target/roman/english/ipa/audio) always comes from the pool —
+    // the current source of truth — even if the stored record predates it
+    // (e.g. a word taught before audio was generated for this course).
+    .map((i) => ({ ...records.get(i.key), target: i.target, roman: i.roman,
+      english: i.english, note: i.note, ipa: i.ipa, audio: i.audio, level: i.level }))
     .sort((a, b) => strength(a) - strength(b));
   const globalDue = reviewQueue(lang).filter((i) => !newKeys.has(i.key));
   const reviewItems = [];
@@ -129,8 +133,8 @@ export function buildLesson(course, unitData, size = 12) {
     id: `${unitData.id}-gen-${Date.now()}`,
     title: unitData.title,
     unitId: unitData.id,
-    teach: newItems.map(({ key, target, roman, english, note, level }) => ({
-      key, target, roman, english, note, level,
+    teach: newItems.map(({ key, target, roman, english, note, level, ipa, audio }) => ({
+      key, target, roman, english, note, level, ipa, audio,
     })),
     grammar,
     culture,
