@@ -92,14 +92,33 @@ function produce(item) {
   };
 }
 
+// Sentence word-order: build a multi-word target from a shuffled tile bank.
+// Only eligible for phrase/sentence items (skip single words — nothing to order).
+const tokensOf = (item) => (item.roman || item.target).replace(/[.!?]+$/, "").split(/\s+/);
+
+function order(item) {
+  const tokens = tokensOf(item);
+  if (tokens.length < 3) return null;
+  return {
+    type: "order",
+    key: item.key,
+    prompt: `Build the sentence: "${item.english}"`,
+    tokens: shuffled(tokens),
+    answer: tokens,
+    tts: spoken(item),
+    audio: item.audio,
+    ipa: item.ipa,
+  };
+}
+
 // Generate one exercise for an item, aimed by predicted success pCorrect.
 export function generateExercise(item, pool, pCorrect) {
   const demand = exerciseDemand(pCorrect);
   const hardness = distractorHardness(pCorrect);
   const ladder = {
     recognize: [() => mc(item, pool, "t2e", hardness), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
-    listen: [() => listen(item, pool, hardness), () => mc(item, pool, "e2t", hardness), () => produce(item)],
-    produce: [() => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
+    listen: [() => listen(item, pool, hardness), () => mc(item, pool, "e2t", hardness), () => order(item), () => produce(item)],
+    produce: [() => order(item), () => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
   }[demand];
   for (const make of ladder) {
     const ex = make();

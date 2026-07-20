@@ -50,71 +50,7 @@
       "grammar": {
         "title": "Past tense: add -va",
         "body": "Drop the -r of the infinitive and add **-va**:\n| parlar | parlava | spoke |\n| vider | videva | saw |\n| audir | audiva | heard |\nSame form for every person: io parlava, nos parlava, illes parlava."
-      },
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Esseva\" means…",
-          "choices": [
-            "was/were",
-            "is",
-            "will be",
-            "has"
-          ],
-          "answer": 0,
-          "tts": "esseva"
-        },
-        {
-          "type": "type",
-          "prompt": "Past tense of \"vider\" (to see):",
-          "answer": "videva",
-          "tts": "videva"
-        },
-        {
-          "type": "listen",
-          "ttsText": "heri io mangiava un pomo",
-          "prompt": "What did you hear?",
-          "choices": [
-            "Heri io mangiava un pomo.",
-            "Io mangia un pomo.",
-            "Illa esseva felice."
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "Fill the blank: \"Nos ___ un can.\" (We had a dog)",
-          "choices": [
-            "habeva",
-            "ha",
-            "habera",
-            "haber"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match present to past",
-          "pairs": [
-            [
-              "parla",
-              "parlava"
-            ],
-            [
-              "es",
-              "esseva"
-            ],
-            [
-              "ha",
-              "habeva"
-            ],
-            [
-              "vide",
-              "videva"
-            ]
-          ]
-        }
-      ]
+      }
     },
     {
       "id": "l2",
@@ -156,67 +92,6 @@
           "english": "Everything will be fine.",
           "ipa": "tˈote esˈera bˈen",
           "audio": "audio/tote-essera-ben.wav"
-        }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Essera\" means…",
-          "choices": [
-            "will be",
-            "was",
-            "is",
-            "would be"
-          ],
-          "answer": 0,
-          "tts": "essera"
-        },
-        {
-          "type": "type",
-          "prompt": "Future of \"mangiar\" (to eat):",
-          "answer": "mangiara",
-          "tts": "mangiara"
-        },
-        {
-          "type": "listen",
-          "ttsText": "deman io parlara con te",
-          "prompt": "What did you hear?",
-          "choices": [
-            "Deman io parlara con te.",
-            "Heri io parlava.",
-            "Tote essera ben."
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "\"Deman\" means…",
-          "choices": [
-            "tomorrow",
-            "yesterday",
-            "today",
-            "always"
-          ],
-          "answer": 0,
-          "tts": "deman"
-        },
-        {
-          "type": "match",
-          "prompt": "Match the tenses of parlar",
-          "pairs": [
-            [
-              "parla",
-              "speaks (now)"
-            ],
-            [
-              "parlava",
-              "spoke (past)"
-            ],
-            [
-              "parlara",
-              "will speak (future)"
-            ]
-          ]
         }
       ]
     }

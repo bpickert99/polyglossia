@@ -1,0 +1,78 @@
+{
+  "id": "ia-b1-u2",
+  "title": "Le perfecto",
+  "level": "B1",
+  "summary": "Say what you've done: the perfect tense (ha + past participle).",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le participio passate",
+      "teach": [
+        {
+          "target": "parlate",
+          "roman": "parlate",
+          "english": "spoken",
+          "note": "-ar verbs form the past participle with -ate: parlar → parlate."
+        },
+        {
+          "target": "vidite",
+          "roman": "vidite",
+          "english": "seen",
+          "note": "-er/-ir verbs use -ite: vider → vidite, audir → audite."
+        },
+        {
+          "target": "mangiate",
+          "roman": "mangiate",
+          "english": "eaten"
+        },
+        {
+          "target": "Io ha parlate con illa.",
+          "roman": "io ha parlate con illa",
+          "english": "I have spoken with her.",
+          "note": "The perfect tense: ha (have) + past participle, same pattern as English."
+        },
+        {
+          "target": "Nos ha mangiate le pan.",
+          "roman": "nos ha mangiate le pan",
+          "english": "We have eaten the bread."
+        }
+      ],
+      "grammar": {
+        "title": "The perfect tense",
+        "body": "Interlingua's perfect tense works just like English \"have done\": the auxiliary **ha** plus a past participle.\nForm the past participle from the infinitive: **-ar → -ate**, **-er/-ir → -ite**.\nparlar → parlate, mangiar → mangiate, vider → vidite, audir → audite.\nOne form for every person: io ha parlate, tu ha parlate, nos ha parlate — the auxiliary never changes."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Ja e ancora",
+      "teach": [
+        {
+          "target": "ja",
+          "roman": "ja",
+          "english": "already"
+        },
+        {
+          "target": "audite",
+          "roman": "audite",
+          "english": "heard"
+        },
+        {
+          "target": "Io ha ja vidite isto.",
+          "roman": "io ha ja vidite isto",
+          "english": "I have already seen this."
+        },
+        {
+          "target": "Illa ha audite le musica.",
+          "roman": "illa ha audite le musica",
+          "english": "She has heard the music."
+        },
+        {
+          "target": "Tu ha ja apprendite multo!",
+          "roman": "tu ha ja apprendite multo",
+          "english": "You've already learned a lot!",
+          "note": "apprender is -er, so its participle is apprendite."
+        }
+      ]
+    }
+  ]
+}

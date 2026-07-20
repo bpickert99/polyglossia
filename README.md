@@ -37,6 +37,17 @@ a fresh lesson on the spot from the learner model:
   you'd forget it (FSRS-4.5, the modern Anki scheduler).
 - **Dynamic lessons.** Start the same skill twice, get two different lessons. New material is
   throttled when your review backlog is high or your ability is shaky.
+- **Sentence-focused, not word drills.** Vocabulary items are frequently full phrases/sentences,
+  not just isolated words — so the same adaptive engine that generates multiple-choice and typing
+  drills for a word also generates **sentence word-order exercises** (tap tiles to build the
+  sentence) for phrases, at the harder end of the difficulty ladder. The goal is usage and
+  comprehension, not rote memorization of a word list.
+- **Reading comprehension.** Once you know enough of a unit's words, its "📖 Reading practice"
+  unlocks: a short original passage built only from vocabulary you've already met, with
+  comprehension questions — not tied to the per-word SRS queue, just reading for understanding.
+- **Units gate sequentially.** A unit unlocks once you've reasonably mastered the previous one
+  (see `UNIT_UNLOCK_THRESHOLD` in `js/lesson-builder.js`) — no skipping ahead to material built on
+  words you haven't learned yet.
 - **Natural pronunciation + IPA.** Two-tier audio: **Piper** (a small neural TTS engine) renders
   natural-sounding audio offline for every course word, driven by **eSpeak NG**'s real
   letter-to-sound rules for that language — so the natural voice speaks the *actual* target
@@ -61,7 +72,8 @@ js/                   ES modules (no build step)
   lesson-builder.js   assembles a fresh lesson from the learner model
   exercises.js        exercise generation (difficulty aimed by Birdbrain)
   practice.js         review sessions
-  lesson.js           lesson session runner (UI)
+  lesson.js           lesson session runner (UI): mc/listen/type/match/order exercises
+  reading.js          reading-comprehension sessions (unit-gated, not SRS-tracked)
   tts.js              audio playback: pre-rendered Piper > live eSpeak > Web Speech
   storage.js          progress + learner model (localStorage)
   sync.js             optional cloud sync (Supabase)

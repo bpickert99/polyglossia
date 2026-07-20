@@ -61,6 +61,21 @@ export function unitMastery(lang, unitData) {
   return total / keys.length;
 }
 
+// Progression gating: a unit counts as "done" (unlocking the next one) once
+// its mastery clears this bar. Also used to gate the reading-comprehension
+// passage — reading is worth attempting a bit earlier, once you'd actually
+// recognize most of the words on the page.
+export const UNIT_UNLOCK_THRESHOLD = 0.6;
+export const READING_UNLOCK_THRESHOLD = 0.4;
+
+export function isUnitDone(lang, unitData) {
+  return unitMastery(lang, unitData) >= UNIT_UNLOCK_THRESHOLD;
+}
+
+export function readingUnlocked(lang, unitData) {
+  return unitMastery(lang, unitData) >= READING_UNLOCK_THRESHOLD;
+}
+
 // Build a lesson object (shape consumed by lesson.js) for a unit/skill.
 export function buildLesson(course, unitData, size = 12) {
   const lang = course.code;

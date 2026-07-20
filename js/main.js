@@ -5,10 +5,11 @@ import { renderScriptPractice } from "./script-practice.js";
 import { renderCulture } from "./culture.js";
 import { renderStats } from "./stats.js";
 import { buildPracticeSession, dueCount } from "./practice.js";
-import { buildLesson, unitMastery, poolFromUnit } from "./lesson-builder.js";
+import { buildLesson, unitMastery, poolFromUnit, isUnitDone, readingUnlocked } from "./lesson-builder.js";
 import { strength } from "./srs.js";
 import { initSync } from "./sync.js";
 import { ttsMode, primeTTS } from "./tts.js";
+import { renderReadingSession, isReadingComplete } from "./reading.js";
 
 const app = document.getElementById("app");
 
@@ -35,6 +36,24 @@ async function currentCourse() {
     if (code) setLang(code);
   }
   return code ? loadCourse(code) : null;
+}
+
+// Progression gating: a unit unlocks once the previous one is done (see
+// lesson-builder.js's isUnitDone). Returns the set of unit ids still locked.
+async function computeLocked(course) {
+  const locked = new Set();
+  let prevDone = true;
+  for (const section of course.sections) {
+    if (section.locked) continue;
+    for (const u of section.units || []) {
+      let data = null;
+      try { data = await loadUnit(course.code, u.file); } catch { /* missing */ }
+      if (!data) continue;
+      if (!prevDone) locked.add(u.id);
+      prevDone = isUnitDone(course.code, data);
+    }
+  }
+  return locked;
 }
 
 // ---------- views ----------
@@ -101,6 +120,7 @@ async function viewCourseMap() {
       try { unitsData.set(u.id, await loadUnit(course.code, u.file)); } catch { /* missing */ }
     }
   }
+  const lockedUnits = await computeLocked(course);
 
   for (const section of course.sections) {
     const locked = section.locked || !(section.units || []).length;
@@ -115,11 +135,12 @@ async function viewCourseMap() {
       const data = unitsData.get(u.id);
       const prog = data ? unitMastery(course.code, data) : 0;
       const done = prog >= 0.95;
+      const isLocked = lockedUnits.has(u.id);
       const circumference = 2 * Math.PI * 43;
       html += `
-        <a class="unit-node" href="#/unit/${esc(u.id)}">
+        <a class="unit-node ${isLocked ? "locked" : ""}" href="${isLocked ? "#" : `#/unit/${esc(u.id)}`}">
           <span class="unit-bubble ${done ? "done" : ""}">
-            ${esc(u.icon || "⭐")}
+            ${isLocked ? "🔒" : esc(u.icon || "⭐")}
             <svg class="unit-ring" viewBox="0 0 94 94">
               <circle class="track" cx="47" cy="47" r="43"></circle>
               <circle class="prog" cx="47" cy="47" r="43"
@@ -127,7 +148,7 @@ async function viewCourseMap() {
                 stroke-dashoffset="${circumference * (1 - prog)}"></circle>
             </svg>
           </span>
-          <span class="unit-label">${esc(u.title)}</span>
+          <span class="unit-label">${esc(u.title)}${isLocked ? ' <small class="lock-hint">finish the previous unit</small>' : ""}</span>
         </a>`;
     }
     html += `</div>`;
@@ -140,12 +161,20 @@ async function viewUnit(unitId) {
   const course = await currentCourse();
   const found = findUnit(course, unitId);
   if (!found) { location.hash = "#/"; return; }
+  if ((await computeLocked(course)).has(unitId)) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
   const pool = poolFromUnit(data);
   const records = new Map(getItems(course.code).map((i) => [i.key, i]));
   const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.85; }).length;
   const started = pool.filter((i) => records.get(i.key)?.reps).length;
   const label = started === 0 ? "Start lesson" : "Continue — new lesson";
+
+  const hasReading = !!data.reading;
+  const readingReady = hasReading && readingUnlocked(course.code, data);
+  const readingDone = hasReading && isReadingComplete(course.code, unitId);
+  const readingCard = !hasReading ? "" : readingReady
+    ? `<a class="btn wide ghost" href="#/reading/${esc(unitId)}">📖 ${readingDone ? "Read again" : "Reading practice"}${readingDone ? "" : ""}</a>`
+    : `<div class="btn wide ghost disabled">📖 Reading practice <small>— learn a few more words first</small></div>`;
 
   app.innerHTML = `
     <div class="lang-hero">
@@ -154,7 +183,8 @@ async function viewUnit(unitId) {
       <p class="muted">${mastered} of ${pool.length} words mastered · ${started} started</p>
     </div>
     <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
-    <p class="muted" style="text-align:center;margin:10px 0 4px">Each lesson is built fresh: new words, plus review of what you're about to forget.</p>
+    ${readingCard}
+    <p class="muted" style="text-align:center;margin:10px 0 4px">Each lesson is built fresh: new words and sentences, plus review of what you're about to forget.</p>
     <div class="word-pool">
       ${pool.map((i) => {
         const r = records.get(i.key);
@@ -169,10 +199,20 @@ async function viewUnit(unitId) {
     <div style="margin-top:18px"><a class="btn ghost wide" href="#/">← Back to course</a></div>`;
 }
 
+async function viewReading(unitId) {
+  const course = await currentCourse();
+  const found = findUnit(course, unitId);
+  if (!found) { location.hash = "#/"; return; }
+  const data = await loadUnit(course.code, found.unit.file);
+  if (!data.reading || !readingUnlocked(course.code, data)) { location.hash = `#/unit/${unitId}`; return; }
+  renderReadingSession(app, course, unitId, data.reading, updateStats, `#/unit/${esc(unitId)}`);
+}
+
 async function viewLesson(unitId) {
   const course = await currentCourse();
   const found = findUnit(course, unitId);
   if (!found) { location.hash = "#/"; return; }
+  if ((await computeLocked(course)).has(unitId)) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
   const lesson = buildLesson(course, data);
   if (lesson.empty) {
@@ -258,6 +298,7 @@ async function route() {
     if (parts[0] === "languages") return await viewLanguagePicker();
     if (parts[0] === "unit") return await viewUnit(parts[1]);
     if (parts[0] === "lesson") return await viewLesson(parts[1]);
+    if (parts[0] === "reading") return await viewReading(parts[1]);
     if (parts[0] === "script") return await viewScript();
     if (parts[0] === "culture") return await viewCulture();
     if (parts[0] === "practice") return await viewPractice();

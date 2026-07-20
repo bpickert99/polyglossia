@@ -48,71 +48,7 @@
       "grammar": {
         "title": "No conjugation. Ever.",
         "body": "In Interlingua a verb has **one present form for all persons**:\n| io es | I am |\n| tu es | you are |\n| ille/illa es | he/she is |\n| nos es | we are |\nCompare Spanish (soy/eres/es/somos/sois/son) — Interlingua deleted the whole table. What you save in memorization you can spend on vocabulary."
-      },
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Illa es felice\" means…",
-          "choices": [
-            "She is happy",
-            "He is happy",
-            "I am happy",
-            "You are happy"
-          ],
-          "answer": 0,
-          "tts": "illa es felice"
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"I am\"",
-          "answer": "io es",
-          "tts": "io es"
-        },
-        {
-          "type": "listen",
-          "ttsText": "tu es",
-          "prompt": "Which did you hear?",
-          "choices": [
-            "tu es",
-            "io es",
-            "ille es"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "How does \"es\" change with different subjects?",
-          "choices": [
-            "It never changes",
-            "It adds -s for you",
-            "It changes for each person",
-            "It has 6 forms"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the pronouns",
-          "pairs": [
-            [
-              "io",
-              "I"
-            ],
-            [
-              "tu",
-              "you"
-            ],
-            [
-              "ille",
-              "he"
-            ],
-            [
-              "illa",
-              "she"
-            ]
-          ]
-        }
-      ]
+      }
     },
     {
       "id": "l2",
@@ -153,70 +89,6 @@
           "english": "We have a dog.",
           "ipa": "nˈos ha un kˈan",
           "audio": "audio/nos-ha-un-can.wav"
-        }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Illes ha un can\" means…",
-          "choices": [
-            "They have a dog",
-            "We have a cat",
-            "He has a dog",
-            "You have a dog"
-          ],
-          "answer": 0,
-          "tts": "illes ha un can"
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"we have\"",
-          "answer": "nos ha",
-          "tts": "nos ha"
-        },
-        {
-          "type": "listen",
-          "ttsText": "vos",
-          "prompt": "Which pronoun did you hear?",
-          "choices": [
-            "vos",
-            "nos",
-            "illes"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "Fill the blank: \"Nos ___ felice.\"",
-          "choices": [
-            "es",
-            "ha",
-            "io",
-            "tu"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the pronouns",
-          "pairs": [
-            [
-              "nos",
-              "we"
-            ],
-            [
-              "vos",
-              "you (pl.)"
-            ],
-            [
-              "illes",
-              "they"
-            ],
-            [
-              "ha",
-              "have"
-            ]
-          ]
         }
       ]
     }

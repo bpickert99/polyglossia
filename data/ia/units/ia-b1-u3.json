@@ -1,0 +1,72 @@
+{
+  "id": "ia-b1-u3",
+  "title": "Comparationes",
+  "level": "B1",
+  "summary": "Bigger, smaller, as good as — comparing things.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Plus e minus",
+      "teach": [
+        {
+          "target": "grande",
+          "roman": "grande",
+          "english": "big"
+        },
+        {
+          "target": "le catto",
+          "roman": "le catto",
+          "english": "the cat"
+        },
+        {
+          "target": "Le can es plus grande que le catto.",
+          "roman": "le can es plus grande que le catto",
+          "english": "The dog is bigger than the cat.",
+          "note": "plus ... que = more ... than. minus ... que = less ... than."
+        },
+        {
+          "target": "Le catto es plus parve que le can.",
+          "roman": "le catto es plus parve que le can",
+          "english": "The cat is smaller than the dog.",
+          "note": "parve = small."
+        }
+      ],
+      "grammar": {
+        "title": "Comparing things",
+        "body": "**plus ... que** = more ... than: Marco es plus alte que Anna (Marco is taller than Anna).\n**minus ... que** = less ... than: Le catto es minus grande que le can.\n**tanto ... como** = as ... as: Illa es tanto felice como ille (she's as happy as he is).\nAdjectives stay invariable in comparisons too — no special comparative form to memorize."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Tanto como",
+      "teach": [
+        {
+          "target": "alte",
+          "roman": "alte",
+          "english": "tall"
+        },
+        {
+          "target": "bon",
+          "roman": "bon",
+          "english": "good"
+        },
+        {
+          "target": "mal",
+          "roman": "mal",
+          "english": "bad"
+        },
+        {
+          "target": "Mi soror es tanto alte como mi fratre.",
+          "roman": "mi soror es tanto alte como mi fratre",
+          "english": "My sister is as tall as my brother."
+        },
+        {
+          "target": "Iste caffe es bon, ma iste pan es mal.",
+          "roman": "iste caffe es bon ma iste pan es mal",
+          "english": "This coffee is good, but this bread is bad.",
+          "note": "iste = this."
+        }
+      ]
+    }
+  ]
+}

@@ -44,70 +44,6 @@
           "ipa": "ˈiʲo vˈade al labˈor ˈomne dˈiʲe",
           "audio": "audio/io-vade-al-labor-omne-die.wav"
         }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Le urbe\" means…",
-          "choices": [
-            "the city",
-            "the house",
-            "the school",
-            "the work"
-          ],
-          "answer": 0,
-          "tts": "le urbe"
-        },
-        {
-          "type": "listen",
-          "ttsText": "le schola",
-          "prompt": "Which did you hear?",
-          "choices": [
-            "le schola",
-            "le casa",
-            "le urbe"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"I go to work every day.\"",
-          "answer": "io vade al labor omne die",
-          "tts": "io vade al labor omne die"
-        },
-        {
-          "type": "mc",
-          "prompt": "Fill the blank: \"Le infantes vade al ___.\" (The children go to school)",
-          "choices": [
-            "schola",
-            "urbe",
-            "labor",
-            "pomo"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the places",
-          "pairs": [
-            [
-              "le casa",
-              "the house"
-            ],
-            [
-              "le labor",
-              "the work"
-            ],
-            [
-              "le schola",
-              "the school"
-            ],
-            [
-              "le urbe",
-              "the city"
-            ]
-          ]
-        }
       ]
     },
     {
@@ -149,71 +85,23 @@
           "ipa": "hˈodje es un bˈon dˈiʲe",
           "audio": "audio/hodie-es-un-bon-die.wav"
         }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Hodie\" means…",
-          "choices": [
-            "today",
-            "tomorrow",
-            "yesterday",
-            "night"
-          ],
-          "answer": 0,
-          "tts": "hodie"
-        },
-        {
-          "type": "listen",
-          "ttsText": "hodie es un bon die",
-          "prompt": "What did you hear?",
-          "choices": [
-            "Hodie es un bon die.",
-            "Le nocte es nigre.",
-            "Deman io parlara."
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "Order the day-words: heri, hodie, ___",
-          "choices": [
-            "deman",
-            "sempre",
-            "nocte",
-            "die"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"always\"",
-          "answer": "sempre",
-          "tts": "sempre"
-        },
-        {
-          "type": "match",
-          "prompt": "Match the time words",
-          "pairs": [
-            [
-              "hodie",
-              "today"
-            ],
-            [
-              "heri",
-              "yesterday"
-            ],
-            [
-              "deman",
-              "tomorrow"
-            ],
-            [
-              "sempre",
-              "always"
-            ]
-          ]
-        }
       ]
     }
-  ]
+  ],
+  "reading": {
+    "title": "Un die in le vita de Anna",
+    "passage": [
+      "Anna vade al schola omne die.",
+      "Heri illa parlava con su amico Marco.",
+      "Deman illa apprendera interlingua in le schola.",
+      "Illa ama apprender linguas.",
+      "Proque? Proque illa ama isto!"
+    ],
+    "questions": [
+      { "prompt": "Where does Anna go every day?", "choices": ["School", "Work", "The city", "Home"], "answer": 0 },
+      { "prompt": "Who did she speak with yesterday?", "choices": ["Her friend Marco", "Her mother", "Her brother", "A stranger"], "answer": 0 },
+      { "prompt": "What will she do tomorrow?", "choices": ["Learn Interlingua at school", "Go to work", "Travel", "Sleep"], "answer": 0 },
+      { "prompt": "Why does she love it?", "choices": ["Because she loves learning", "Because it's easy", "Because of money", "No reason given"], "answer": 0 }
+    ]
+  }
 }

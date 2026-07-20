@@ -45,70 +45,6 @@
           "ipa": "ˈiʲo pˈarla ˌinterlˈiŋɡwa mˈa ˈiʲo ankˈora aprˈende",
           "audio": "audio/io-parla-interlingua-ma-io-ancora-apprende.wav"
         }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Ma\" means…",
-          "choices": [
-            "but",
-            "and",
-            "or",
-            "if"
-          ],
-          "answer": 0,
-          "tts": "ma"
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"coffee or milk\"",
-          "answer": "caffe o lacte",
-          "tts": "caffe o lacte"
-        },
-        {
-          "type": "listen",
-          "ttsText": "io parla interlingua ma io ancora apprende",
-          "prompt": "What did you hear?",
-          "choices": [
-            "Io parla interlingua, ma io ancora apprende.",
-            "Io ama apprender linguas.",
-            "Tote essera ben."
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "Fill the blank: \"___ tu vole, nos vade al parco.\" (If you want, we'll go to the park)",
-          "choices": [
-            "Si",
-            "Ma",
-            "E",
-            "O"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the connectors",
-          "pairs": [
-            [
-              "e",
-              "and"
-            ],
-            [
-              "ma",
-              "but"
-            ],
-            [
-              "o",
-              "or"
-            ],
-            [
-              "si",
-              "if"
-            ]
-          ]
-        }
       ]
     },
     {
@@ -157,74 +93,24 @@
       "grammar": {
         "title": "Negation and adverbs",
         "body": "Negate any verb with **non** before it: io comprende → io **non** comprende.\nMake adverbs with **-mente** on the adjective: natural → natural**mente** (naturally), felice → felice**mente** (happily).\nWith connectors, questions, three tenses, and negation, you can now improvise real conversations — the rest is vocabulary."
-      },
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "How do you negate \"io comprende\"?",
-          "choices": [
-            "io non comprende",
-            "io comprende non",
-            "non io comprende",
-            "io no comprende"
-          ],
-          "answer": 0,
-          "tts": "io non comprende"
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"Can you repeat?\"",
-          "answer": "pote tu repeter",
-          "accept": [
-            "pote tu repeter?"
-          ],
-          "tts": "pote tu repeter"
-        },
-        {
-          "type": "listen",
-          "ttsText": "como se dice in interlingua",
-          "prompt": "What did you hear?",
-          "choices": [
-            "Como se dice ... in interlingua?",
-            "Pote tu repeter?",
-            "Io non comprende."
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "The adverb of \"felice\" (happy) is…",
-          "choices": [
-            "felicemente",
-            "felicemento",
-            "felicely",
-            "felicima"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the phrases",
-          "pairs": [
-            [
-              "Io non comprende.",
-              "I don't understand."
-            ],
-            [
-              "Pote tu repeter?",
-              "Can you repeat?"
-            ],
-            [
-              "Naturalmente!",
-              "Of course!"
-            ],
-            [
-              "Multo ben!",
-              "Very good!"
-            ]
-          ]
-        }
-      ]
+      }
     }
-  ]
+  ],
+  "reading": {
+    "title": "In le tren",
+    "passage": [
+      "Anna: Bon die! Como sta tu?",
+      "Marco: Io sta ben, gratias! E tu?",
+      "Anna: Io es felice hodie.",
+      "Marco: Proque?",
+      "Anna: Proque deman io vadera al parco con mi amico.",
+      "Marco: Multo ben! Ma io non pote vader — io ha labor deman."
+    ],
+    "questions": [
+      { "prompt": "How does Marco say he's doing?", "choices": ["Well", "Bad", "Tired", "Sick"], "answer": 0 },
+      { "prompt": "Why is Anna happy today?", "choices": ["She's going to the park with her friend tomorrow", "She got a new job", "It's her birthday", "She's on vacation"], "answer": 0 },
+      { "prompt": "Why can't Marco go?", "choices": ["He has work tomorrow", "He's sick", "He doesn't like parks", "He's busy today"], "answer": 0 },
+      { "prompt": "What does \"Multo ben!\" mean?", "choices": ["Very good!", "Very bad", "See you later", "I'm sorry"], "answer": 0 }
+    ]
+  }
 }

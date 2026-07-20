@@ -50,71 +50,7 @@
       "grammar": {
         "title": "Invariable adjectives",
         "body": "Adjectives never change for gender or number:\n| un pomo rubie | a red apple |\n| duo pomos rubie | two red apples |\n| un casa rubie | a red house |\nThey normally follow the noun (pomo rubie), though short common ones may precede it (un bon idea)."
-      },
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Verde\" means…",
-          "choices": [
-            "green",
-            "red",
-            "blue",
-            "yellow"
-          ],
-          "answer": 0,
-          "tts": "verde"
-        },
-        {
-          "type": "listen",
-          "ttsText": "jalne",
-          "prompt": "Which color did you hear?",
-          "choices": [
-            "jalne",
-            "blau",
-            "rubie"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"a red apple\"",
-          "answer": "un pomo rubie",
-          "tts": "un pomo rubie"
-        },
-        {
-          "type": "mc",
-          "prompt": "\"Duo pomos ___\" (two red apples) — the adjective is…",
-          "choices": [
-            "rubie",
-            "rubies",
-            "rubia",
-            "rubios"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "match",
-          "prompt": "Match the colors",
-          "pairs": [
-            [
-              "rubie",
-              "red"
-            ],
-            [
-              "blau",
-              "blue"
-            ],
-            [
-              "verde",
-              "green"
-            ],
-            [
-              "jalne",
-              "yellow"
-            ]
-          ]
-        }
-      ]
+      }
     },
     {
       "id": "l2",
@@ -156,72 +92,22 @@
           "ipa": "kˈe kolˈor es le tsˈelo",
           "audio": "audio/que-color-es-le-celo.wav"
         }
-      ],
-      "exercises": [
-        {
-          "type": "mc",
-          "prompt": "\"Nigre\" means…",
-          "choices": [
-            "black",
-            "white",
-            "brown",
-            "blue"
-          ],
-          "answer": 0,
-          "tts": "nigre"
-        },
-        {
-          "type": "listen",
-          "ttsText": "blanc",
-          "prompt": "Which color did you hear?",
-          "choices": [
-            "blanc",
-            "brun",
-            "blau"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mc",
-          "prompt": "\"Que color es le celo?\" — the natural answer is…",
-          "choices": [
-            "Le celo es blau.",
-            "Le celo es un pomo.",
-            "Io es verde.",
-            "Gratias."
-          ],
-          "answer": 0,
-          "tts": "le celo es blau"
-        },
-        {
-          "type": "type",
-          "prompt": "Translate: \"The night is black.\"",
-          "answer": "le nocte es nigre",
-          "tts": "le nocte es nigre"
-        },
-        {
-          "type": "match",
-          "prompt": "Match the colors",
-          "pairs": [
-            [
-              "blanc",
-              "white"
-            ],
-            [
-              "nigre",
-              "black"
-            ],
-            [
-              "brun",
-              "brown"
-            ],
-            [
-              "verde",
-              "green"
-            ]
-          ]
-        }
       ]
     }
-  ]
+  ],
+  "reading": {
+    "title": "Mi familia",
+    "passage": [
+      "Io ha un familia. Mi patre es Marco e mi matre es Anna.",
+      "Io ha un fratre e un soror. Mi fratre ha octo annos e mi soror ha dece annos.",
+      "Nos ha un can brun. Le can se appella Rex.",
+      "Nos es felice."
+    ],
+    "questions": [
+      { "prompt": "How old is the sister in the story?", "choices": ["Ten", "Eight", "Five", "Two"], "answer": 0 },
+      { "prompt": "What color is the dog?", "choices": ["Brown", "Blue", "Red", "Green"], "answer": 0 },
+      { "prompt": "What is the dog's name?", "choices": ["Rex", "Marco", "Anna", "Leo"], "answer": 0 },
+      { "prompt": "Who is Marco?", "choices": ["The father", "The brother", "The dog", "A friend"], "answer": 0 }
+    ]
+  }
 }
