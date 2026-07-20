@@ -56,6 +56,63 @@ async function computeLocked(course) {
   return locked;
 }
 
+// ---------- unit box (popup on the course map, or a small page when linked directly) ----------
+
+function unitStats(course, data) {
+  const pool = poolFromUnit(data);
+  const records = new Map(getItems(course.code).map((i) => [i.key, i]));
+  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.85; }).length;
+  const started = pool.filter((i) => records.get(i.key)?.reps).length;
+  return { pool, mastered, started };
+}
+
+function unitBoxHtml(course, section, data, unitId) {
+  const { pool, mastered, started } = unitStats(course, data);
+  const label = started === 0 ? "START" : "CONTINUE";
+  const hasReading = !!data.reading;
+  const readingReady = hasReading && readingUnlocked(course.code, data);
+  const readingDone = hasReading && isReadingComplete(course.code, unitId);
+  return `
+    <div class="popup-stats">
+      <div class="popup-stat"><span>Level</span><b>${esc(section.level)}</b></div>
+      <div class="popup-stat"><span>Completed</span><b>${mastered}/${pool.length}</b></div>
+    </div>
+    <div class="popup-actions">
+      <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
+      ${!hasReading ? "" : readingReady
+        ? `<a class="popup-icon-btn" href="#/reading/${esc(unitId)}" title="${readingDone ? "Read again" : "Reading practice"}">📖</a>`
+        : `<span class="popup-icon-btn disabled" title="Learn a few more words first">📖</span>`}
+    </div>`;
+}
+
+let openPopup = null;
+function closePopup() {
+  if (!openPopup) return;
+  openPopup.remove();
+  openPopup = null;
+  document.removeEventListener("click", onDocClick, true);
+}
+function onDocClick(e) {
+  if (openPopup && !openPopup.contains(e.target) && !e.target.closest(".unit-node")) closePopup();
+}
+function openUnitPopup(nodeEl, course, section, data, unitId) {
+  if (openPopup && openPopup.dataset.for === unitId) { closePopup(); return; }
+  closePopup();
+  const pop = document.createElement("div");
+  pop.className = "unit-popup";
+  pop.dataset.for = unitId;
+  pop.innerHTML = unitBoxHtml(course, section, data, unitId);
+  document.body.appendChild(pop);
+  const rect = nodeEl.getBoundingClientRect();
+  const top = rect.bottom + window.scrollY + 14;
+  let left = rect.left + window.scrollX + rect.width / 2 - pop.offsetWidth / 2;
+  left = Math.max(12, Math.min(left, window.innerWidth - pop.offsetWidth - 12));
+  pop.style.top = `${top}px`;
+  pop.style.left = `${left}px`;
+  openPopup = pop;
+  setTimeout(() => document.addEventListener("click", onDocClick, true), 0);
+}
+
 // ---------- views ----------
 
 async function viewLanguagePicker() {
@@ -138,7 +195,7 @@ async function viewCourseMap() {
       const isLocked = lockedUnits.has(u.id);
       const circumference = 2 * Math.PI * 43;
       html += `
-        <a class="unit-node ${isLocked ? "locked" : ""}" href="${isLocked ? "#" : `#/unit/${esc(u.id)}`}">
+        <button type="button" class="unit-node ${isLocked ? "locked" : ""}" data-unit="${esc(u.id)}" ${isLocked ? "disabled" : ""}>
           <span class="unit-bubble ${done ? "done" : ""}">
             ${isLocked ? "🔒" : esc(u.icon || "⭐")}
             <svg class="unit-ring" viewBox="0 0 94 94">
@@ -149,11 +206,20 @@ async function viewCourseMap() {
             </svg>
           </span>
           <span class="unit-label">${esc(u.title)}${isLocked ? ' <small class="lock-hint">finish the previous unit</small>' : ""}</span>
-        </a>`;
+        </button>`;
     }
     html += `</div>`;
   }
   app.innerHTML = html;
+
+  app.querySelectorAll(".unit-node:not(.locked)").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const unitId = btn.dataset.unit;
+      const found = findUnit(course, unitId);
+      const data = unitsData.get(unitId);
+      if (found && data) openUnitPopup(btn, course, found.section, data, unitId);
+    });
+  });
 }
 
 async function viewUnit(unitId) {
@@ -163,39 +229,14 @@ async function viewUnit(unitId) {
   if (!found) { location.hash = "#/"; return; }
   if ((await computeLocked(course)).has(unitId)) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
-  const pool = poolFromUnit(data);
-  const records = new Map(getItems(course.code).map((i) => [i.key, i]));
-  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.85; }).length;
-  const started = pool.filter((i) => records.get(i.key)?.reps).length;
-  const label = started === 0 ? "Start lesson" : "Continue — new lesson";
-
-  const hasReading = !!data.reading;
-  const readingReady = hasReading && readingUnlocked(course.code, data);
-  const readingDone = hasReading && isReadingComplete(course.code, unitId);
-  const readingCard = !hasReading ? "" : readingReady
-    ? `<a class="btn wide ghost" href="#/reading/${esc(unitId)}">📖 ${readingDone ? "Read again" : "Reading practice"}${readingDone ? "" : ""}</a>`
-    : `<div class="btn wide ghost disabled">📖 Reading practice <small>— learn a few more words first</small></div>`;
 
   app.innerHTML = `
     <div class="lang-hero">
       <h1>${esc(found.unit.icon || "")} ${esc(data.title)}</h1>
       <p><b>${esc(found.section.level)}</b> · ${esc(data.summary || "")}</p>
-      <p class="muted">${mastered} of ${pool.length} words mastered · ${started} started</p>
     </div>
-    <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
-    ${readingCard}
-    <p class="muted" style="text-align:center;margin:10px 0 4px">Each lesson is built fresh: new words and sentences, plus review of what you're about to forget.</p>
-    <div class="word-pool">
-      ${pool.map((i) => {
-        const r = records.get(i.key);
-        const s = r ? strength(r) : 0;
-        return `<div class="word-row">
-          <span class="target">${esc(i.target)}</span>
-          <span class="muted">${esc(i.english)}</span>
-          <span class="strengthbar"><i style="width:${Math.round(s * 100)}%"></i></span>
-        </div>`;
-      }).join("")}
-    </div>
+    <div class="unit-box">${unitBoxHtml(course, found.section, data, unitId)}</div>
+    <p class="muted" style="text-align:center;margin:14px 0 4px">Each lesson is built fresh: new words and sentences, plus review of what you're about to forget.</p>
     <div style="margin-top:18px"><a class="btn ghost wide" href="#/">← Back to course</a></div>`;
 }
 
@@ -291,6 +332,7 @@ function viewAbout() {
 // ---------- router ----------
 
 async function route() {
+  closePopup();
   const hash = location.hash || "#/";
   const parts = hash.slice(2).split("/").filter(Boolean);
   updateStats();

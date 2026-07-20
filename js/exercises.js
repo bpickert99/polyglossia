@@ -96,14 +96,26 @@ function produce(item) {
 // Only eligible for phrase/sentence items (skip single words — nothing to order).
 const tokensOf = (item) => (item.roman || item.target).replace(/[.!?]+$/, "").split(/\s+/);
 
-function order(item) {
+function order(item, pool, hardness = 0.5) {
   const tokens = tokensOf(item);
   if (tokens.length < 3) return null;
+  // Red herrings: single words pulled from OTHER pool items, so the bank has
+  // a few tiles that don't belong in this sentence. Harder sessions get more.
+  const tokenSet = new Set(tokens.map((t) => t.toLowerCase()));
+  const candidates = [];
+  for (const p of pool || []) {
+    if (p.key === item.key) continue;
+    for (const w of tokensOf(p)) {
+      if (w.length < 2 || tokenSet.has(w.toLowerCase())) continue;
+      candidates.push(w);
+    }
+  }
+  const herrings = shuffled(candidates).slice(0, Math.min(candidates.length, hardness > 0.55 ? 3 : 2));
   return {
     type: "order",
     key: item.key,
     prompt: `Build the sentence: "${item.english}"`,
-    tokens: shuffled(tokens),
+    tokens: shuffled([...tokens, ...herrings]),
     answer: tokens,
     tts: spoken(item),
     audio: item.audio,
@@ -117,8 +129,8 @@ export function generateExercise(item, pool, pCorrect) {
   const hardness = distractorHardness(pCorrect);
   const ladder = {
     recognize: [() => mc(item, pool, "t2e", hardness), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
-    listen: [() => listen(item, pool, hardness), () => mc(item, pool, "e2t", hardness), () => order(item), () => produce(item)],
-    produce: [() => order(item), () => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
+    listen: [() => listen(item, pool, hardness), () => mc(item, pool, "e2t", hardness), () => order(item, pool, hardness), () => produce(item)],
+    produce: [() => order(item, pool, hardness), () => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
   }[demand];
   for (const make of ladder) {
     const ex = make();
