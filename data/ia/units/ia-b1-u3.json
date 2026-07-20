@@ -11,24 +11,32 @@
         {
           "target": "grande",
           "roman": "grande",
-          "english": "big"
+          "english": "big",
+          "ipa": "ɡrˈande",
+          "audio": "audio/grande.wav"
         },
         {
           "target": "le catto",
           "roman": "le catto",
-          "english": "the cat"
+          "english": "the cat",
+          "ipa": "le kˈato",
+          "audio": "audio/le-catto.wav"
         },
         {
           "target": "Le can es plus grande que le catto.",
           "roman": "le can es plus grande que le catto",
           "english": "The dog is bigger than the cat.",
-          "note": "plus ... que = more ... than. minus ... que = less ... than."
+          "note": "plus ... que = more ... than. minus ... que = less ... than.",
+          "ipa": "le kˈan es plˈus ɡrˈande kˈe le kˈato",
+          "audio": "audio/le-can-es-plus-grande-que-le-catto.wav"
         },
         {
           "target": "Le catto es plus parve que le can.",
           "roman": "le catto es plus parve que le can",
           "english": "The cat is smaller than the dog.",
-          "note": "parve = small."
+          "note": "parve = small.",
+          "ipa": "le kˈato es plˈus pˈarve kˈe le kˈan",
+          "audio": "audio/le-catto-es-plus-parve-que-le-can.wav"
         }
       ],
       "grammar": {
@@ -43,28 +51,38 @@
         {
           "target": "alte",
           "roman": "alte",
-          "english": "tall"
+          "english": "tall",
+          "ipa": "ˈalte",
+          "audio": "audio/alte.wav"
         },
         {
           "target": "bon",
           "roman": "bon",
-          "english": "good"
+          "english": "good",
+          "ipa": "bˈon",
+          "audio": "audio/bon.wav"
         },
         {
           "target": "mal",
           "roman": "mal",
-          "english": "bad"
+          "english": "bad",
+          "ipa": "mˈal",
+          "audio": "audio/mal.wav"
         },
         {
           "target": "Mi soror es tanto alte como mi fratre.",
           "roman": "mi soror es tanto alte como mi fratre",
-          "english": "My sister is as tall as my brother."
+          "english": "My sister is as tall as my brother.",
+          "ipa": "mi sorˈor es tˈanto ˈalte kˈomo mi frˈatre",
+          "audio": "audio/mi-soror-es-tanto-alte-como-mi-fratre.wav"
         },
         {
           "target": "Iste caffe es bon, ma iste pan es mal.",
           "roman": "iste caffe es bon ma iste pan es mal",
           "english": "This coffee is good, but this bread is bad.",
-          "note": "iste = this."
+          "note": "iste = this.",
+          "ipa": "ˈiste kˈafe es bˈon mˈa ˈiste pˈan es mˈal",
+          "audio": "audio/iste-caffe-es-bon-ma-iste-pan-es-mal.wav"
         }
       ]
     }

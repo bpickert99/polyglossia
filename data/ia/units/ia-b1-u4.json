@@ -12,29 +12,39 @@
           "target": "Veni!",
           "roman": "veni",
           "english": "Come!",
-          "note": "The imperative is the infinitive minus -r, no pronoun: venir → veni."
+          "note": "The imperative is the infinitive minus -r, no pronoun: venir → veni.",
+          "ipa": "vˈeni",
+          "audio": "audio/veni.wav"
         },
         {
           "target": "Audi!",
           "roman": "audi",
-          "english": "Listen!"
+          "english": "Listen!",
+          "ipa": "ˈaʊdi",
+          "audio": "audio/audi.wav"
         },
         {
           "target": "rapide",
           "roman": "rapide",
-          "english": "fast"
+          "english": "fast",
+          "ipa": "rˈapide",
+          "audio": "audio/rapide.wav"
         },
         {
           "target": "Parla plus lente, per favor.",
           "roman": "parla plus lente per favor",
           "english": "Speak more slowly, please.",
-          "note": "lente = slow(ly)."
+          "note": "lente = slow(ly).",
+          "ipa": "pˈarla plˈus lˈente pˈer favˈor",
+          "audio": "audio/parla-plus-lente-per-favor.wav"
         },
         {
           "target": "Non parla tanto rapide!",
           "roman": "non parla tanto rapide",
           "english": "Don't speak so fast!",
-          "note": "Negate a command the same way as any verb: non before it."
+          "note": "Negate a command the same way as any verb: non before it.",
+          "ipa": "nˈon pˈarla tˈanto rˈapide",
+          "audio": "audio/non-parla-tanto-rapide.wav"
         }
       ],
       "grammar": {
@@ -49,28 +59,38 @@
         {
           "target": "intrar",
           "roman": "intrar",
-          "english": "to enter, to come in"
+          "english": "to enter, to come in",
+          "ipa": "intrˈar",
+          "audio": "audio/intrar.wav"
         },
         {
           "target": "Intra, per favor!",
           "roman": "intra per favor",
-          "english": "Come in, please!"
+          "english": "Come in, please!",
+          "ipa": "ˈintra pˈer favˈor",
+          "audio": "audio/intra-per-favor.wav"
         },
         {
           "target": "prender",
           "roman": "prender",
-          "english": "to take"
+          "english": "to take",
+          "ipa": "prendˈer",
+          "audio": "audio/prender.wav"
         },
         {
           "target": "Da me le pan, per favor.",
           "roman": "da me le pan per favor",
           "english": "Give me the bread, please.",
-          "note": "da = give (imperative of dar); me = me, the object form of io."
+          "note": "da = give (imperative of dar); me = me, the object form of io.",
+          "ipa": "dˈa mˈe le pˈan pˈer favˈor",
+          "audio": "audio/da-me-le-pan-per-favor.wav"
         },
         {
           "target": "Prende un pomo, si tu vole.",
           "roman": "prende un pomo si tu vole",
-          "english": "Take an apple, if you want."
+          "english": "Take an apple, if you want.",
+          "ipa": "prˈende un pˈomo sˈi tˈu vˈole",
+          "audio": "audio/prende-un-pomo-si-tu-vole.wav"
         }
       ]
     }
