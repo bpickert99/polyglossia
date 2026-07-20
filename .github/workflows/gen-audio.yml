@@ -38,9 +38,10 @@ jobs:
         with:
           python-version: "3.11"
           cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
 
       - name: Install Piper
-        run: pip install --quiet piper-tts
+        run: pip install --quiet -r scripts/requirements.txt
 
       - name: Cache Piper voice models
         uses: actions/cache@v4
