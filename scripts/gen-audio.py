@@ -99,7 +99,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("lang", help="course language code, e.g. ia")
     ap.add_argument("--voice", help="Piper voice id, e.g. es_ES-davefx-medium")
-    ap.add_argument("--speed", type=float, default=1.0, help="length_scale multiplier; >1 = slower")
+    ap.add_argument("--speed", type=float, default=None,
+                     help="length_scale multiplier override; <1 = faster, >1 = slower. "
+                          "Persists to course.json['tts']['speed'] once set, so future runs keep it "
+                          "without needing to pass it again.")
     args = ap.parse_args()
 
     course_dir, course = load_course(args.lang)
@@ -107,8 +110,9 @@ def main():
     piper_voice_name = args.voice or course.get("tts", {}).get("piperVoice") or DEFAULT_PIPER_VOICE.get(espeak_voice)
     if not piper_voice_name:
         sys.exit(f"No Piper voice configured for '{args.lang}' (espeak voice '{espeak_voice}'). Pass --voice.")
+    speed = args.speed if args.speed is not None else course.get("tts", {}).get("speed", 1.0)
 
-    print(f"Language: {args.lang} | eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name}")
+    print(f"Language: {args.lang} | eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name} | Speed: {speed}")
 
     VOICE_CACHE.mkdir(parents=True, exist_ok=True)
     model_path = VOICE_CACHE / f"{piper_voice_name}.onnx"
@@ -117,7 +121,7 @@ def main():
         download_voice(piper_voice_name, VOICE_CACHE)
     voice_obj = PiperVoice.load(model_path)
     phonemizer = EspeakPhonemizer()
-    syn_config = SynthesisConfig(length_scale=1.0 / args.speed if args.speed else None)
+    syn_config = SynthesisConfig(length_scale=1.0 / speed if speed else None)
 
     audio_dir = course_dir / "audio"
     manifest_path = course_dir / "audio-manifest.json"
@@ -137,7 +141,9 @@ def main():
                     continue
                 total_words += 1
                 spoken_text = item.get("roman") or target
-                key = f"{args.lang}:{spoken_text}"
+                # Speed is part of the cache key: changing it must invalidate
+                # every cached file, or a speed change would silently no-op.
+                key = f"{args.lang}:{speed}:{spoken_text}"
 
                 phoneme_lists = phonemizer.phonemize(espeak_voice, spoken_text)
                 phoneme_str = phonemes_to_str(phoneme_lists)
@@ -161,8 +167,10 @@ def main():
 
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
 
-    # Record which Piper voice rendered this course's audio, for the UI credit line.
+    # Record which Piper voice + speed rendered this course's audio, so future
+    # runs (even without explicit flags) reuse the same settings.
     course.setdefault("tts", {})["piperVoice"] = piper_voice_name
+    course["tts"]["speed"] = speed
     (course_dir / "course.json").write_text(json.dumps(course, indent=2, ensure_ascii=False) + "\n")
 
     print(f"Done. {total_words} words seen, {generated} audio files (re)generated, {changed_units} unit files updated.")

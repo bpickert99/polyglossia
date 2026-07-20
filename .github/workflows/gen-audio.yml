@@ -17,9 +17,8 @@ on:
         description: "Piper voice id override (optional, e.g. es_ES-davefx-medium)"
         required: false
       speed:
-        description: "Speech speed multiplier (1.0 = normal, 0.85 = slower)"
+        description: "Speech speed multiplier override (optional, e.g. 0.85 = slower). Persists to course.json once set — omit to reuse whatever was last used."
         required: false
-        default: "1.0"
 
 permissions:
   contents: write
@@ -53,7 +52,7 @@ jobs:
         run: |
           python3 scripts/gen-audio.py "${{ github.event.inputs.lang }}" \
             ${{ github.event.inputs.voice && format('--voice {0}', github.event.inputs.voice) || '' }} \
-            --speed "${{ github.event.inputs.speed }}"
+            ${{ github.event.inputs.speed && format('--speed {0}', github.event.inputs.speed) || '' }}
 
       - name: Report output size
         run: du -sh "data/${{ github.event.inputs.lang }}/audio" || true
