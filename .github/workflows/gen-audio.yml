@@ -1,0 +1,70 @@
+# Renders natural-sounding word audio with Piper (neural TTS), driven by
+# eSpeak NG's phonemes for the course's language — see scripts/gen-audio.py
+# for why (short version: correct phonemes, natural voice, best of both).
+#
+# Runs here rather than locally because it needs to download a Piper voice
+# model (~60-100MB) from Hugging Face. Free — no API keys, no per-run cost.
+name: Generate course audio (Piper)
+
+on:
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: "Course language code (e.g. ia)"
+        required: true
+        default: "ia"
+      voice:
+        description: "Piper voice id override (optional, e.g. es_ES-davefx-medium)"
+        required: false
+      speed:
+        description: "Speech speed multiplier (1.0 = normal, 0.85 = slower)"
+        required: false
+        default: "1.0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gen-audio-${{ github.event.inputs.lang }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Piper
+        run: pip install --quiet piper-tts
+
+      - name: Cache Piper voice models
+        uses: actions/cache@v4
+        with:
+          path: .piper-voices
+          key: piper-voices-${{ github.event.inputs.lang }}-${{ github.event.inputs.voice }}
+
+      - name: Generate audio
+        run: |
+          python3 scripts/gen-audio.py "${{ github.event.inputs.lang }}" \
+            ${{ github.event.inputs.voice && format('--voice {0}', github.event.inputs.voice) || '' }} \
+            --speed "${{ github.event.inputs.speed }}"
+
+      - name: Report output size
+        run: du -sh "data/${{ github.event.inputs.lang }}/audio" || true
+
+      - name: Commit generated audio
+        run: |
+          git config user.name "polyglossia-audio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "data/${{ github.event.inputs.lang }}/"
+          if git diff --cached --quiet; then
+            echo "No audio changes to commit."
+          else
+            git commit -m "Generate Piper audio for ${{ github.event.inputs.lang }}"
+            git push
+          fi

@@ -68,7 +68,9 @@ async function viewCourseMap() {
   primeTTS(); // warm up the audio engine while the map renders
 
   const mode = ttsMode(course);
-  const ttsNote = mode === "accurate"
+  const ttsNote = mode === "natural"
+    ? `<p>🔊 Audio is a natural neural voice (Piper), driven by real phonemic transcription — words without pre-rendered audio fall back to phonemic (robotic but correct) speech. Every word shows its IPA.</p>`
+    : mode === "accurate"
     ? `<p>🔊 Audio is phonemic (eSpeak) — it sounds robotic but pronounces the actual sounds, and every word shows its IPA.</p>`
     : mode === "approximate"
     ? `<p>🔊 Audio uses your browser's closest available voice — approximate pronunciation.</p>`

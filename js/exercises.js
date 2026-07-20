@@ -57,6 +57,8 @@ function mc(item, pool, direction, hardness) {
     choices,
     answer: choices.indexOf(item[field]),
     tts: direction === "t2e" ? spoken(item) : undefined,
+    audio: direction === "t2e" ? item.audio : undefined,
+    ipa: direction === "t2e" ? item.ipa : undefined,
   };
 }
 
@@ -69,6 +71,7 @@ function listen(item, pool, hardness) {
     key: item.key,
     prompt: "Which one did you hear?",
     ttsText: spoken(item),
+    audio: item.audio,
     choices,
     answer: choices.indexOf(item.target),
   };
@@ -84,6 +87,8 @@ function produce(item) {
     answer,
     accept,
     tts: spoken(item),
+    audio: item.audio,
+    ipa: item.ipa,
   };
 }
 

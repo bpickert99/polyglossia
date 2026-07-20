@@ -35,6 +35,8 @@ export function poolFromUnit(unitData) {
         english: t.english,
         note: t.note,
         level: unitData.level,
+        ipa: t.ipa,     // pre-computed phonemic transcription, if generated
+        audio: t.audio, // pre-rendered natural audio file, if generated
         _grammar: idx === 0 ? lesson.grammar : undefined,
         _culture: idx === 0 ? lesson.culture : undefined,
       });

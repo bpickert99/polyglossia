@@ -1,16 +1,21 @@
-// Text-to-speech and IPA, powered by eSpeak NG (vendored WebAssembly).
+// Text-to-speech and IPA.
 //
-// Why eSpeak instead of the browser's built-in voices: browser voices only
-// exist for a handful of major languages, and forcing (say) a Spanish voice to
-// read another language mispronounces it badly. eSpeak NG is a phonemic
-// synthesizer with real letter-to-sound rules for 100+ languages — including a
-// correct Interlingua voice ("ia"). It sounds robotic, but it says the RIGHT
-// sounds, and it derives the IPA transcription from the very same phonetic
-// model, so what you SEE (IPA) always matches what you HEAR.
+// Two audio sources, preferred in this order:
+//   1. PRE-RENDERED NATURAL AUDIO (Piper neural TTS, see scripts/gen-audio.py).
+//      Generated offline: eSpeak phonemizes the word with the course's real
+//      letter-to-sound rules, then those exact phonemes are fed into a Piper
+//      neural voice from a related language — natural-sounding, phonemically
+//      correct, and guaranteed to match the displayed IPA (same phonemes drove
+//      both). Passed in as `audioUrl` by the caller when a course item has one.
+//   2. LIVE eSpeak NG SYNTHESIS (vendored WebAssembly), for anything not yet
+//      pre-rendered. Sounds robotic, but has real letter-to-sound rules for
+//      100+ languages — including a correct Interlingua voice ("ia") — so it's
+//      never just "guessing" with the wrong language's pronunciation.
+// If both fail (offline, blocked), we fall back to the browser's own speech
+// synthesis so the app still talks, least accurately.
 //
-// The wasm is ~18MB; it is lazy-loaded on first use and cached by the browser
-// thereafter. If it fails to load (offline, blocked), we fall back to the
-// browser's own speech synthesis so the app still talks.
+// The eSpeak wasm is ~18MB; it is lazy-loaded on first use and cached by the
+// browser thereafter.
 
 const WASM_URL = new URL("./vendor/espeak/espeak-ng.wasm", import.meta.url);
 const JS_URL = new URL("./vendor/espeak/espeak-ng.js", import.meta.url);
@@ -80,8 +85,12 @@ async function run(args, capture) {
 const voiceOf = (course) => course?.tts?.voice || course?.code || "en";
 const wpm = (course) => Math.round((course?.tts?.rate ?? 0.85) * 175);
 
-// IPA transcription for a word/phrase, from eSpeak's phonemizer. Cached.
-export async function ipaFor(text, course) {
+// IPA transcription for a word/phrase. If the course data already has a
+// pre-computed transcription (from scripts/gen-audio.py — the same phonemes
+// that drove the natural audio), use it directly, no engine load needed.
+// Otherwise derive it live from eSpeak's phonemizer. Cached either way.
+export async function ipaFor(text, course, stored) {
+  if (stored) return stored;
   if (!text) return "";
   const voice = voiceOf(course);
   const key = voice + "|" + text;
@@ -117,6 +126,16 @@ function playWav(bytes) {
       src.onended = resolve;
       src.start();
     }, () => resolve());
+  });
+}
+
+// Play a pre-rendered natural-audio file (Piper output).
+function playUrl(url) {
+  return new Promise((resolve, reject) => {
+    const audio = new Audio(url);
+    audio.addEventListener("ended", resolve, { once: true });
+    audio.addEventListener("error", () => reject(new Error(`failed to load ${url}`)), { once: true });
+    audio.play().catch(reject);
   });
 }
 
@@ -156,17 +175,25 @@ function speakFallback(text, course) {
 // ---------- public API ----------
 
 export function ttsAvailable() {
-  return true; // eSpeak or system speech; something will talk.
+  return true; // pre-rendered audio, eSpeak, or system speech; something will talk.
 }
 
-// "accurate" once the phonemic engine is loaded/loading, else "approximate".
+// "natural" = at least some items in this course have pre-rendered Piper
+// audio; "accurate" = live eSpeak (correct phonemes, robotic voice);
+// "approximate"/"none" = eSpeak failed to load, browser voices as last resort.
 export function ttsMode(course) {
+  if (course?.tts?.piperVoice) return "natural";
   if (engineFailed) return window.speechSynthesis ? "approximate" : "none";
   return "accurate";
 }
 
-// Speak a word or phrase in the course's language.
-export async function speak(text, course) {
+// Speak a word or phrase. `audioUrl`, when given, is a pre-rendered natural
+// audio file (preferred); falls back to live eSpeak, then system speech.
+export async function speak(text, course, audioUrl) {
+  if (audioUrl) {
+    try { return await playUrl(audioUrl); }
+    catch (e) { console.warn("pre-rendered audio failed, falling back:", e); }
+  }
   if (!text) return;
   try {
     const make = await loadEngine();

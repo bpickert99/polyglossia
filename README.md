@@ -37,10 +37,16 @@ a fresh lesson on the spot from the learner model:
   you'd forget it (FSRS-4.5, the modern Anki scheduler).
 - **Dynamic lessons.** Start the same skill twice, get two different lessons. New material is
   throttled when your review backlog is high or your ability is shaky.
-- **Accurate pronunciation + IPA.** Audio comes from **eSpeak NG** (a phonemic synthesizer,
-  vendored as WebAssembly) — it sounds robotic but pronounces the *actual* target sounds, and
-  every word shows its IPA transcription derived from the same phonetic model. Interlingua has a
-  native eSpeak voice, so pronunciation and IPA are correct. Accuracy over polish, by design.
+- **Natural pronunciation + IPA.** Two-tier audio: **Piper** (a small neural TTS engine) renders
+  natural-sounding audio offline for every course word, driven by **eSpeak NG**'s real
+  letter-to-sound rules for that language — so the natural voice speaks the *actual* target
+  sounds, not a guess. Anything not yet pre-rendered (or if Piper generation hasn't run for a
+  language) falls back to live eSpeak synthesis in the browser — robotic but still phonemically
+  correct, never silently wrong. Every word shows its IPA transcription, generated from the same
+  phonemes that drove the audio, so what you see always matches what you hear.
+  See `scripts/gen-audio.py` for how audio is generated (run via the **Generate course audio
+  (Piper)** GitHub Action — it needs open network access to download voice models, so it runs in
+  CI, not locally).
 - **Cultural notes** and a **script-drawing tab** (tracing + self-scoring) for non-Latin writing.
 - **Optional accounts.** Progress lives in your browser by default; sign in from the Stats tab
   (email code, or Google once configured) to back it up and sync across devices via Supabase.
@@ -56,13 +62,18 @@ js/                   ES modules (no build step)
   exercises.js        exercise generation (difficulty aimed by Birdbrain)
   practice.js         review sessions
   lesson.js           lesson session runner (UI)
-  tts.js              eSpeak NG audio + IPA (Web Speech fallback)
+  tts.js              audio playback: pre-rendered Piper > live eSpeak > Web Speech
   storage.js          progress + learner model (localStorage)
   sync.js             optional cloud sync (Supabase)
   stats.js, main.js, culture.js, script-practice.js, data.js, config.js
-  vendor/espeak/      eSpeak NG WebAssembly (lazy-loaded, cached)
-data/<lang>/          course.json + units/*.json (item pools) + culture.json
-.github/workflows/    deploy.yml (GitHub Pages)
+  vendor/espeak/      eSpeak NG WebAssembly (lazy-loaded, cached; live-synthesis fallback)
+scripts/
+  gen-audio.py         phonemizes with eSpeak, synthesizes with Piper (run via CI, not locally)
+data/<lang>/          course.json + units/*.json (item pools + ipa/audio once generated) +
+                       audio/*.wav (pre-rendered) + audio-manifest.json + culture.json
+.github/workflows/
+  deploy.yml           GitHub Pages
+  gen-audio.yml        Piper audio generation (workflow_dispatch; needs open network, runs in CI)
 ```
 
 ## Adding or extending a course
