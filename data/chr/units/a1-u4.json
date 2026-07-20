@@ -1,0 +1,52 @@
+{
+  "id": "a1-u4",
+  "title": "People & Family",
+  "level": "A1",
+  "summary": "Words for the people around you.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Family",
+      "teach": [
+        { "target": "ᎡᏙᏓ", "roman": "edoda", "english": "father", "note": "Used when addressing or referring to your father." },
+        { "target": "ᎡᏥ", "roman": "etsi", "english": "mother" },
+        { "target": "ᎡᎵᏏ", "roman": "elisi", "english": "grandmother", "note": "Specifically your mother's mother in traditional usage." },
+        { "target": "ᎡᏚᏓ", "roman": "eduda", "english": "grandfather" },
+        { "target": "ᎤᏍᏗ", "roman": "usdi", "english": "baby / little one", "note": "Also an affectionate word for anything small." }
+      ],
+      "grammar": {
+        "title": "Family words are always 'someone's'",
+        "body": "In Cherokee you can't just say 'mother' in the abstract — kinship terms always belong to someone. The forms here (**ᎡᏥ** etsi, **ᎡᏙᏓ** edoda) are the everyday forms you use for *your own* family.\nCherokee families are traditionally **matrilineal**: clan identity passes through the mother, which is why terms like ᎡᎵᏏ (elisi, maternal grandmother) are so central."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᎡᏥ (etsi) mean?", "choices": ["mother", "father", "grandmother", "baby"], "answer": 0, "tts": "etsi" },
+        { "type": "listen", "ttsText": "elisi", "prompt": "Which family member did you hear?", "choices": ["ᎡᎵᏏ (grandmother)", "ᎡᏚᏓ (grandfather)", "ᎡᏙᏓ (father)"], "answer": 0 },
+        { "type": "type", "prompt": "Type the romanization of ᎡᏙᏓ (father)", "answer": "edoda", "tts": "edoda" },
+        { "type": "match", "prompt": "Match family words", "pairs": [["ᎡᏙᏓ", "father"], ["ᎡᏥ", "mother"], ["ᎡᎵᏏ", "grandmother"], ["ᎤᏍᏗ", "baby"]] },
+        { "type": "mc", "prompt": "Cherokee clan identity traditionally passes through…", "choices": ["the mother", "the father", "the eldest child", "the village chief"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "People",
+      "teach": [
+        { "target": "ᎠᏍᎦᏯ", "roman": "asgaya", "english": "man" },
+        { "target": "ᎠᎨᏯ", "roman": "agehya", "english": "woman" },
+        { "target": "ᎠᏧᏣ", "roman": "atsutsa", "english": "boy" },
+        { "target": "ᎠᎨᏳᏣ", "roman": "agehyutsa", "english": "girl", "note": "Notice: ᎠᎨᏯ (woman) + the ending from ᎠᏧᏣ (boy)." },
+        { "target": "ᎠᏂᏴᏫᏯ", "roman": "aniyvwiya", "english": "the Principal People", "note": "The Cherokee name for themselves." }
+      ],
+      "culture": {
+        "title": "Aniyvwiya — the Principal People",
+        "body": "The word 'Cherokee' comes from other languages. In their own language, Cherokee people call themselves **ᎠᏂᏴᏫᏯ** (Aniyvwiya), 'the Principal People' or 'Real People', and the language **ᏣᎳᎩ** (Tsalagi). Today Cherokee is spoken in three federally recognized tribes: the Cherokee Nation and the United Keetoowah Band in Oklahoma, and the Eastern Band of Cherokee Indians in North Carolina."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᎠᎨᏯ (agehya) mean?", "choices": ["woman", "man", "girl", "boy"], "answer": 0, "tts": "agehya" },
+        { "type": "listen", "ttsText": "asgaya", "prompt": "Which word did you hear?", "choices": ["ᎠᏍᎦᏯ (man)", "ᎠᎨᏯ (woman)", "ᎠᏧᏣ (boy)"], "answer": 0 },
+        { "type": "mc", "prompt": "ᎠᏂᏴᏫᏯ (Aniyvwiya) means…", "choices": ["the Principal People", "the mountain people", "the seven clans", "hello friends"], "answer": 0 },
+        { "type": "match", "prompt": "Match the words", "pairs": [["ᎠᏍᎦᏯ", "man"], ["ᎠᎨᏯ", "woman"], ["ᎠᏧᏣ", "boy"], ["ᎠᎨᏳᏣ", "girl"]] },
+        { "type": "type", "prompt": "Type the romanization of ᎠᏍᎦᏯ (man)", "answer": "asgaya", "tts": "asgaya" }
+      ]
+    }
+  ]
+}

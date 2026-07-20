@@ -1,0 +1,45 @@
+{
+  "id": "a1-u5",
+  "title": "Animals",
+  "level": "A1",
+  "summary": "Animals of the home and the forest.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Close to home",
+      "teach": [
+        { "target": "ᎩᏟ", "roman": "gitli", "english": "dog" },
+        { "target": "ᏪᏌ", "roman": "wesa", "english": "cat", "note": "Likely borrowed long ago from the Spanish 'gato' → English 'puss' family of words." },
+        { "target": "ᏐᏈᎵ", "roman": "soquili", "english": "horse" },
+        { "target": "ᏥᏍᏆ", "roman": "tsisqua", "english": "bird" }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᎩᏟ (gitli) mean?", "choices": ["dog", "cat", "horse", "bird"], "answer": 0, "tts": "gitli" },
+        { "type": "listen", "ttsText": "soquili", "prompt": "Which animal did you hear?", "choices": ["ᏐᏈᎵ (horse)", "ᏥᏍᏆ (bird)", "ᏪᏌ (cat)"], "answer": 0 },
+        { "type": "type", "prompt": "Type the romanization of ᏪᏌ (cat)", "answer": "wesa", "tts": "wesa" },
+        { "type": "match", "prompt": "Match the animals", "pairs": [["ᎩᏟ", "dog"], ["ᏪᏌ", "cat"], ["ᏐᏈᎵ", "horse"], ["ᏥᏍᏆ", "bird"]] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "In the forest",
+      "teach": [
+        { "target": "ᏲᎾ", "roman": "yona", "english": "bear" },
+        { "target": "ᎠᏫ", "roman": "awi", "english": "deer" },
+        { "target": "ᏩᏯ", "roman": "waya", "english": "wolf", "note": "The Wolf Clan (Aniwaya) is the largest of the seven clans." },
+        { "target": "ᎠᏣᏗ", "roman": "atsadi", "english": "fish" }
+      ],
+      "culture": {
+        "title": "Animals in the clan system",
+        "body": "Several of the seven Cherokee clans carry animal names — **ᎠᏂᏩᏯ** (Aniwaya, Wolf Clan), the Deer Clan (Anikawi), and the Bird Clan (Anitsisqua). Clan animals are not 'mascots': they reflect traditional responsibilities, such as the Deer Clan's role as fast runners and hunters, and the Bird Clan's role as messengers."
+      },
+      "exercises": [
+        { "type": "mc", "prompt": "What does ᏲᎾ (yona) mean?", "choices": ["bear", "wolf", "deer", "fish"], "answer": 0, "tts": "yona" },
+        { "type": "listen", "ttsText": "waya", "prompt": "Which animal did you hear?", "choices": ["ᏩᏯ (wolf)", "ᏲᎾ (bear)", "ᎠᏫ (deer)"], "answer": 0 },
+        { "type": "mc", "prompt": "Aniwaya is the clan of the…", "choices": ["wolf", "bear", "fish", "horse"], "answer": 0 },
+        { "type": "type", "prompt": "Type the romanization of ᎠᏫ (deer)", "answer": "awi", "tts": "awi" },
+        { "type": "match", "prompt": "Match the animals", "pairs": [["ᏲᎾ", "bear"], ["ᎠᏫ", "deer"], ["ᏩᏯ", "wolf"], ["ᎠᏣᏗ", "fish"]] }
+      ]
+    }
+  ]
+}

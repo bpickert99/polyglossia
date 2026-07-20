@@ -1,0 +1,24 @@
+{
+  "articles": [
+    {
+      "title": "What is Interlingua?",
+      "body": "Interlingua is an **international auxiliary language** — a language designed to be a neutral second language for speakers of different mother tongues. Unlike Esperanto, which invents much of its grammar and word-building, Interlingua is *naturalistic*: a word enters the language only if it already exists, in recognizable form, across its control languages (English, French, Italian, Spanish/Portuguese, with German and Russian as backups).\nThe result is a language that hundreds of millions of people can read on first sight. Scientific abstracts were published in Interlingua for decades precisely because doctors and researchers across Europe and the Americas could understand it without studying it.",
+      "tags": ["overview"]
+    },
+    {
+      "title": "IALA and Alexander Gode",
+      "body": "Interlingua was published in 1951 by the **International Auxiliary Language Association** (IALA), founded in 1924 by Alice Vanderbilt Morris. IALA spent decades comparing existing auxiliary languages and extracting the common 'international vocabulary' hiding inside the major European languages.\nThe final dictionary and grammar were completed under the direction of the German-American linguist **Alexander Gode**. His idea was radical in its modesty: don't invent a language — *register* the one that already exists implicitly in the shared Greco-Latin vocabulary of science, law, and daily life.",
+      "tags": ["history"]
+    },
+    {
+      "title": "The community today",
+      "body": "Interlingua is maintained by the **Union Mundial pro Interlingua** (UMI), which holds international conferences, and by national societies across Europe and the Americas. The magazine **Panorama in Interlingua** has been published continuously for decades, and there are active online communities, podcasts, and a sizable Interlingua Wikipedia.\nThe community is small compared to Esperanto's, but Interlingua's readability gives it an unusual property: material written in it is useful even to people who never formally learn it.",
+      "tags": ["today", "community"]
+    },
+    {
+      "title": "Why learn an auxiliary language at all?",
+      "body": "Learning Interlingua pays a strange double dividend. First, it's probably the fastest language an English speaker can reach conversational level in — the grammar fits on a postcard and most of the vocabulary is already yours.\nSecond, it's a stepping stone: Interlingua is essentially the common core of the Romance languages, so after learning it you'll find you can read a surprising amount of Spanish, Italian, Portuguese, and French. Studies of 'intercomprehension' teaching suggest this bridge effect is real — you're learning the pattern that 800 million Romance speakers share.",
+      "tags": ["learning", "motivation"]
+    }
+  ]
+}

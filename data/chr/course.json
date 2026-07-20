@@ -1,0 +1,53 @@
+{
+  "code": "chr",
+  "name": "Cherokee",
+  "nativeName": "ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ",
+  "direction": "ltr",
+  "description": "Cherokee (Tsalagi) is an Iroquoian language written in the syllabary invented by Sequoyah in the 1820s. This starter course covers CEFR A1–A2; higher levels unlock as more source documents are added.",
+  "script": {
+    "name": "Cherokee Syllabary",
+    "nonLatin": true
+  },
+  "tts": {
+    "mode": "approximate",
+    "preferredLangs": ["chr", "es", "it", "en"],
+    "rate": 0.8,
+    "note": "No commercial TTS voice exists for Cherokee; audio is a phonetic approximation of the romanization.",
+    "substitutions": [
+      ["v", "uh"],
+      ["qu", "kw"],
+      ["hn", "n"],
+      ["tl", "tl"],
+      ["j", "ts"]
+    ]
+  },
+  "sections": [
+    {
+      "level": "A1",
+      "title": "Beginner",
+      "description": "Syllabary, greetings, and first words",
+      "units": [
+        { "id": "a1-u1", "title": "The Syllabary I", "icon": "🔤", "file": "units/a1-u1.json" },
+        { "id": "a1-u2", "title": "Greetings", "icon": "👋", "file": "units/a1-u2.json" },
+        { "id": "a1-u3", "title": "Numbers 1–10", "icon": "🔢", "file": "units/a1-u3.json" },
+        { "id": "a1-u4", "title": "People & Family", "icon": "👪", "file": "units/a1-u4.json" },
+        { "id": "a1-u5", "title": "Animals", "icon": "🐺", "file": "units/a1-u5.json" },
+        { "id": "a1-u6", "title": "Colors", "icon": "🎨", "file": "units/a1-u6.json" }
+      ]
+    },
+    {
+      "level": "A2",
+      "title": "Elementary",
+      "description": "Everyday topics and verb basics",
+      "units": [
+        { "id": "a2-u1", "title": "Food & Drink", "icon": "🌽", "file": "units/a2-u1.json" },
+        { "id": "a2-u2", "title": "Speaking & Doing", "icon": "🗣️", "file": "units/a2-u2.json" },
+        { "id": "a2-u3", "title": "Weather & Nature", "icon": "🌦️", "file": "units/a2-u3.json" }
+      ]
+    },
+    { "level": "B1", "title": "Intermediate", "description": "", "locked": true, "units": [] },
+    { "level": "B2", "title": "Upper Intermediate", "description": "", "locked": true, "units": [] },
+    { "level": "C1", "title": "Advanced", "description": "", "locked": true, "units": [] },
+    { "level": "C2", "title": "Mastery", "description": "", "locked": true, "units": [] }
+  ]
+}

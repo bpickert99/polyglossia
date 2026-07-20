@@ -1,0 +1,44 @@
+{
+  "id": "ia-a2-u2",
+  "title": "Questiones",
+  "level": "A2",
+  "summary": "Ask anything: where, when, what, who, why.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Ubi, que, qui",
+      "teach": [
+        { "target": "ubi", "roman": "ubi", "english": "where" },
+        { "target": "que", "roman": "que", "english": "what" },
+        { "target": "qui", "roman": "qui", "english": "who" },
+        { "target": "Ubi es le station?", "roman": "ubi es le station", "english": "Where is the station?" },
+        { "target": "Que es isto?", "roman": "que es isto", "english": "What is this?", "note": "isto = this (thing)." }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "\"Ubi\" means…", "choices": ["where", "what", "who", "when"], "answer": 0, "tts": "ubi" },
+        { "type": "type", "prompt": "Translate: \"What is this?\"", "answer": "que es isto", "accept": ["que es isto?"], "tts": "que es isto" },
+        { "type": "listen", "ttsText": "ubi es le station", "prompt": "What did you hear?", "choices": ["Ubi es le station?", "Que es isto?", "Qui es tu?"], "answer": 0 },
+        { "type": "mc", "prompt": "Fill the blank: \"___ es tu?\" (Who are you?)", "choices": ["Qui", "Que", "Ubi", "Como"], "answer": 0 },
+        { "type": "match", "prompt": "Match the question words", "pairs": [["ubi", "where"], ["que", "what"], ["qui", "who"]] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Quando, proque, como",
+      "teach": [
+        { "target": "quando", "roman": "quando", "english": "when" },
+        { "target": "proque", "roman": "proque", "english": "why (also: because)", "note": "One word does both jobs — context decides." },
+        { "target": "como", "roman": "como", "english": "how" },
+        { "target": "Quando veni tu?", "roman": "quando veni tu", "english": "When are you coming?", "note": "venir = to come." },
+        { "target": "Proque? Proque io ama isto!", "roman": "proque proque io ama isto", "english": "Why? Because I love it!" }
+      ],
+      "exercises": [
+        { "type": "mc", "prompt": "\"Quando\" means…", "choices": ["when", "why", "how", "where"], "answer": 0, "tts": "quando" },
+        { "type": "listen", "ttsText": "quando veni tu", "prompt": "What did you hear?", "choices": ["Quando veni tu?", "Como sta tu?", "Ubi es tu?"], "answer": 0 },
+        { "type": "mc", "prompt": "\"Proque\" can mean…", "choices": ["both why and because", "only why", "only because", "how"], "answer": 0 },
+        { "type": "type", "prompt": "Translate: \"how\"", "answer": "como", "tts": "como" },
+        { "type": "match", "prompt": "Match the question words", "pairs": [["quando", "when"], ["proque", "why"], ["como", "how"], ["qui", "who"]] }
+      ]
+    }
+  ]
+}

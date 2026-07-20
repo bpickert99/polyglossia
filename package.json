@@ -1,0 +1,13 @@
+{
+  "name": "polyglossia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Document-driven, CEFR-aligned language learning platform for under-served languages",
+  "scripts": {
+    "build-course": "node scripts/build-course.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}
