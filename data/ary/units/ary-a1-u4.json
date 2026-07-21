@@ -21,7 +21,7 @@
           "roman": "mama",
           "arabic": "مَامَا",
           "english": "mom",
-          "ipa": "mˈaːman",
+          "ipa": "mˈaːmaː",
           "audio": "audio/mama.wav"
         },
         {
@@ -29,7 +29,7 @@
           "roman": "kho",
           "arabic": "خُو",
           "english": "brother",
-          "ipa": "χˈau",
+          "ipa": "χˈuː",
           "audio": "audio/kho.wav"
         },
         {
@@ -37,7 +37,7 @@
           "roman": "khti",
           "arabic": "خْتِي",
           "english": "sister",
-          "ipa": "χˈatiː",
+          "ipa": "χtˈiː",
           "audio": "audio/khti.wav"
         },
         {
@@ -45,7 +45,7 @@
           "roman": "weld",
           "arabic": "وِلْد",
           "english": "son / boy",
-          "ipa": "wˈalid",
+          "ipa": "wˈild",
           "audio": "audio/weld.wav"
         },
         {
@@ -67,7 +67,7 @@
           "roman": "jedd",
           "arabic": "جَدّ",
           "english": "grandfather",
-          "ipa": "dʒˈad",
+          "ipa": "dʒˈadː",
           "audio": "audio/jedd.wav"
         },
         {
@@ -75,7 +75,7 @@
           "roman": "jedda",
           "arabic": "جَدَّا",
           "english": "grandmother",
-          "ipa": "dʒˈudːat",
+          "ipa": "dʒˈadːaː",
           "audio": "audio/jedda.wav"
         },
         {
@@ -84,7 +84,7 @@
           "arabic": "عَمِّي",
           "english": "uncle (father's brother)",
           "note": "Darija distinguishes which side of the family an aunt/uncle is from — 3mmi is paternal, khalti (below) is maternal.",
-          "ipa": "ʕˈammiː",
+          "ipa": "ʕˈammi",
           "audio": "audio/3mmi.wav"
         },
         {
@@ -92,7 +92,7 @@
           "roman": "khalti",
           "arabic": "خَالْتِي",
           "english": "aunt (mother's sister)",
-          "ipa": "χˈaːllatˌiː",
+          "ipa": "χˈaːltiː",
           "audio": "audio/khalti.wav"
         }
       ]

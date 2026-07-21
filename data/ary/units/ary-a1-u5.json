@@ -22,7 +22,7 @@
           "roman": "qahwa",
           "arabic": "قَهْوَا",
           "english": "coffee",
-          "ipa": "qˈahwat",
+          "ipa": "qˈahwaː",
           "audio": "audio/qahwa.wav"
         },
         {
@@ -31,7 +31,7 @@
           "arabic": "خُبْز",
           "english": "bread",
           "note": "Bread comes with nearly every meal and doubles as the eating utensil.",
-          "ipa": "χˈabz",
+          "ipa": "χˈubz",
           "audio": "audio/khobz.wav"
         },
         {
@@ -47,7 +47,7 @@
           "roman": "7lib",
           "arabic": "حْلِيب",
           "english": "milk",
-          "ipa": "ħˈaliːb",
+          "ipa": "ħlˈiːb",
           "audio": "audio/7lib.wav"
         }
       ]
@@ -61,7 +61,7 @@
           "roman": "lham",
           "arabic": "لْحَم",
           "english": "meat",
-          "ipa": "laħm",
+          "ipa": "lħˈam",
           "audio": "audio/lham.wav"
         },
         {
@@ -77,7 +77,7 @@
           "roman": "khodra",
           "arabic": "خُضْرَا",
           "english": "vegetables",
-          "ipa": "χadˤˈa.rat",
+          "ipa": "χˈudˤraː",
           "audio": "audio/khodra.wav"
         },
         {
@@ -85,7 +85,7 @@
           "roman": "fakia",
           "arabic": "فَاكِيَا",
           "english": "fruit",
-          "ipa": "faːkˈiːat",
+          "ipa": "faːkˌiːaː",
           "audio": "audio/fakia.wav"
         },
         {
@@ -93,7 +93,7 @@
           "roman": "3sel",
           "arabic": "عْسَل",
           "english": "honey",
-          "ipa": "ʕˈasal",
+          "ipa": "ʕsˈal",
           "audio": "audio/3sel.wav"
         }
       ]

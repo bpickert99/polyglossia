@@ -22,7 +22,7 @@
           "roman": "sbah lkhir",
           "arabic": "صْبَاح لْخِير",
           "english": "good morning",
-          "ipa": "s̪ˈa.baːħˌu alχˈair",
+          "ipa": "s̪bˈaːħ lχˈiːr",
           "audio": "audio/sbah-lkhir.wav"
         },
         {
@@ -30,7 +30,7 @@
           "roman": "msa lkhir",
           "arabic": "مْسَا لْخِير",
           "english": "good evening",
-          "ipa": "mˈasaː alχˈair",
+          "ipa": "msˈaː lχˈiːr",
           "audio": "audio/msa-lkhir.wav"
         },
         {
@@ -38,7 +38,7 @@
           "roman": "shukran",
           "arabic": "شُكْرًا",
           "english": "thank you",
-          "ipa": "ʃˈakran",
+          "ipa": "ʃˈukran",
           "audio": "audio/shukran.wav"
         },
         {
@@ -47,7 +47,7 @@
           "arabic": "عَفَاكْ",
           "english": "please",
           "note": "The 3 stands for ع (ayn), a throat sound Latin script has no letter for — this Arabizi digit convention (2, 3, 7, 9...) is what Moroccans actually type.",
-          "ipa": "ʕˈiffaːkˌa",
+          "ipa": "ʕˈafaːk",
           "audio": "audio/3afak.wav"
         }
       ],
@@ -74,7 +74,7 @@
           "roman": "la",
           "arabic": "لَا",
           "english": "no",
-          "ipa": "lˈaː",
+          "ipa": "laː",
           "audio": "audio/la.wav"
         },
         {
@@ -82,7 +82,7 @@
           "roman": "bslama",
           "arabic": "بْسْلَامَا",
           "english": "goodbye",
-          "ipa": "bisalˈaːmat",
+          "ipa": "bslˈaːmaː",
           "audio": "audio/bslama.wav"
         },
         {
@@ -90,7 +90,7 @@
           "roman": "smehli",
           "arabic": "سْمَحْلِي",
           "english": "sorry / excuse me",
-          "ipa": "samħˌaliː",
+          "ipa": "smˈaħliː",
           "audio": "audio/smehli.wav"
         },
         {
@@ -99,7 +99,7 @@
           "arabic": "لَابَاسْ",
           "english": "how are you? (lit. 'no harm?')",
           "note": "The standard how-are-you. Answer is usually the same word back: Labas, lhamdullah — 'fine, thank God'.",
-          "ipa": "liˌaːbːaːs",
+          "ipa": "laːbˌaːs",
           "audio": "audio/labas.wav"
         }
       ]
@@ -113,7 +113,7 @@
           "roman": "smiti",
           "arabic": "سْمِيتِي",
           "english": "my name is...",
-          "ipa": "summˌiːatˌiː",
+          "ipa": "smˈiːtiː",
           "audio": "audio/smiti.wav"
         },
         {
@@ -121,7 +121,7 @@
           "roman": "ash smitek",
           "arabic": "آش سْمِيتَك",
           "english": "what's your name?",
-          "ipa": "ʔˈaʃʃa simmˌiːatˌaka",
+          "ipa": "ʔˈaːʃ smˈiːtakˌa",
           "audio": "audio/ash-smitek.wav"
         },
         {
@@ -129,7 +129,7 @@
           "roman": "mtsharfin",
           "arabic": "مْتْشَرْفِين",
           "english": "nice to meet you",
-          "ipa": "mˌutaʃˈarrifˌiːn",
+          "ipa": "mtʃˈarfiːn",
           "audio": "audio/mtsharfin.wav"
         },
         {
@@ -137,7 +137,7 @@
           "roman": "wakha",
           "arabic": "وَاخَا",
           "english": "okay",
-          "ipa": "wˈaːχan",
+          "ipa": "wˈaːχaː",
           "audio": "audio/wakha.wav"
         }
       ]

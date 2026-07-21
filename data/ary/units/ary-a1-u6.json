@@ -13,7 +13,7 @@
           "roman": "7mer",
           "arabic": "حْمَر",
           "english": "red",
-          "ipa": "ħˈamr",
+          "ipa": "ħmˈar",
           "audio": "audio/7mer.wav"
         },
         {
@@ -29,7 +29,7 @@
           "roman": "byed",
           "arabic": "بْيَض",
           "english": "white",
-          "ipa": "baˌidˤ",
+          "ipa": "bjˈadˤ",
           "audio": "audio/byed.wav"
         },
         {
@@ -37,7 +37,7 @@
           "roman": "khder",
           "arabic": "خْضَر",
           "english": "green",
-          "ipa": "χˈadˤa.r",
+          "ipa": "χdˤˈa.r",
           "audio": "audio/khder.wav"
         },
         {
@@ -45,7 +45,7 @@
           "roman": "zrq",
           "arabic": "زْرَق",
           "english": "blue",
-          "ipa": "zˈariq",
+          "ipa": "zrˈaq",
           "audio": "audio/zrq.wav"
         }
       ]
@@ -59,7 +59,7 @@
           "roman": "sfer",
           "arabic": "صْفَر",
           "english": "yellow",
-          "ipa": "s̪ˈi.fr",
+          "ipa": "s̪fˈar",
           "audio": "audio/sfer.wav"
         },
         {
@@ -68,7 +68,7 @@
           "arabic": "وَرْدِي",
           "english": "pink",
           "note": "From werda — 'rose flower'.",
-          "ipa": "wˈaradˌiː",
+          "ipa": "wˈardiː",
           "audio": "audio/werdi.wav"
         },
         {
@@ -77,7 +77,7 @@
           "arabic": "بْرْتْقَالِي",
           "english": "orange",
           "note": "From brtqal — the fruit itself, 'orange'.",
-          "ipa": "burtˌuqaːlˌiː",
+          "ipa": "brtqˈaːliː",
           "audio": "audio/brtqali.wav"
         }
       ]

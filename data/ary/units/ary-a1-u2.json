@@ -22,7 +22,7 @@
           "arabic": "جُوج",
           "english": "two",
           "note": "Not from Arabic 'ithnan' at all — jouj is a Darija-specific word.",
-          "ipa": "dʒˈaudʒ",
+          "ipa": "dʒˈuːdʒ",
           "audio": "audio/jouj.wav"
         },
         {
@@ -30,7 +30,7 @@
           "roman": "tlata",
           "arabic": "تْلَاتَا",
           "english": "three",
-          "ipa": "talˈaːtat",
+          "ipa": "tlˈaːtaː",
           "audio": "audio/tlata.wav"
         },
         {
@@ -38,7 +38,7 @@
           "roman": "rb3a",
           "arabic": "رْبْعَا",
           "english": "four",
-          "ipa": "rabˈaʕat",
+          "ipa": "rbʕˈaː",
           "audio": "audio/rb3a.wav"
         },
         {
@@ -46,7 +46,7 @@
           "roman": "khamsa",
           "arabic": "خَمْسَا",
           "english": "five",
-          "ipa": "χˈamsat",
+          "ipa": "χˈamsaː",
           "audio": "audio/khamsa.wav"
         }
       ],
@@ -64,7 +64,7 @@
           "roman": "stta",
           "arabic": "سْتْتَا",
           "english": "six",
-          "ipa": "sitːˌat",
+          "ipa": "sttˈaː",
           "audio": "audio/stta.wav"
         },
         {
@@ -72,7 +72,7 @@
           "roman": "sb3a",
           "arabic": "سْبْعَا",
           "english": "seven",
-          "ipa": "sabʕˌat",
+          "ipa": "sbʕˈaː",
           "audio": "audio/sb3a.wav"
         },
         {
@@ -80,7 +80,7 @@
           "roman": "tmnya",
           "arabic": "تْمْنِيَا",
           "english": "eight",
-          "ipa": "timnˈiːat",
+          "ipa": "tmnˈiːaː",
           "audio": "audio/tmnya.wav"
         },
         {
@@ -88,7 +88,7 @@
           "roman": "tsa3a",
           "arabic": "تْسْعَا",
           "english": "nine",
-          "ipa": "tˈisʕat",
+          "ipa": "tsʕˈaː",
           "audio": "audio/tsa3a.wav"
         },
         {
@@ -96,7 +96,7 @@
           "roman": "3achra",
           "arabic": "عَشْرَا",
           "english": "ten",
-          "ipa": "ʕaʃˈarat",
+          "ipa": "ʕˈaʃraː",
           "audio": "audio/3achra.wav"
         }
       ]
