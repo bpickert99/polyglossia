@@ -82,6 +82,15 @@ export function readingUnlocked(lang, unitData) {
   return unitMastery(lang, unitData) >= READING_UNLOCK_THRESHOLD;
 }
 
+// New items always start at a gentle "recognize" tier — but how gentle scales
+// with overall ability, so a confident learner isn't babied on easy material.
+// Capped well below the "produce" threshold (0.8): a totally new word can at
+// most reach "listen" (audio recognition), never full production, on its
+// very first exposure.
+function newItemP(ability) {
+  return Math.max(0.2, Math.min(0.6, 0.3 + (ability ?? 0) * 0.15));
+}
+
 // Build a lesson object (shape consumed by lesson.js) for a unit/skill.
 export function buildLesson(course, unitData, size = 12) {
   const lang = course.code;
@@ -99,7 +108,8 @@ export function buildLesson(course, unitData, size = 12) {
   const newItems = pool.filter(isNew).slice(0, newItemBudget({ ability, dueCount: due }));
 
   // 2. REVIEW items: this skill's already-seen items that are shaky, plus a few
-  //    due items from anywhere (interleaving across skills).
+  //    due items from anywhere (interleaving across skills). Already sorted
+  //    most-urgent-first, so the front of this list doubles as the warm-up.
   const newKeys = new Set(newItems.map((i) => i.key));
   const skillSeen = pool
     .filter((i) => !newKeys.has(i.key) && records.has(i.key))
@@ -125,16 +135,29 @@ export function buildLesson(course, unitData, size = 12) {
     ...getItems(lang).filter(hasWord),
   ].filter(hasWord);
 
-  // 3. Exercises. New items get a gentle first retrieval right after their teach
-  //    card; review items are aimed by predicted success.
-  const exercises = [];
-  for (const item of newItems) {
-    const ex = generateExercise({ ...item }, distractorPool, 0.25); // low p → recognize
-    if (ex) exercises.push(ex);
-  }
-  for (const item of reviewItems) {
+  const makeReviewExercise = (item) => {
     const p = predictP(ability, item.bd ?? seedDifficulty(item.level));
     const ex = generateExercise(item, distractorPool, p);
+    return ex ? { ...ex, review: true } : null;
+  };
+
+  // A couple of the most urgent review items go first, before the wall of new
+  // teach cards — so the session opens with something familiar, not five new
+  // words in a row. Everything here is still real review, just front-loaded.
+  const WARMUP_SIZE = newItems.length > 0 ? Math.min(3, reviewItems.length) : 0;
+  const warmupSource = reviewItems.slice(0, WARMUP_SIZE);
+  const restReview = reviewItems.slice(WARMUP_SIZE);
+  const warmup = warmupSource.map(makeReviewExercise).filter(Boolean);
+
+  // 3. Exercises. New items get a gentle first retrieval right after their teach
+  //    card; the rest of the review items are aimed by predicted success.
+  const exercises = [];
+  for (const item of newItems) {
+    const ex = generateExercise({ ...item }, distractorPool, newItemP(ability));
+    if (ex) exercises.push(ex);
+  }
+  for (const item of restReview) {
+    const ex = makeReviewExercise(item);
     if (ex) exercises.push(ex);
   }
 
@@ -146,9 +169,13 @@ export function buildLesson(course, unitData, size = 12) {
   const match = matchExercise(matchItems);
   if (match) interleaved.splice(Math.floor(interleaved.length / 2), 0, match);
 
-  // First grammar/culture note among the newly-introduced items.
-  const grammar = newItems.find((i) => i._grammar)?._grammar;
-  const culture = newItems.find((i) => i._culture)?._culture;
+  // Every grammar/culture note among the newly-introduced items — not just
+  // the first. A session can genuinely introduce vocabulary from more than
+  // one authored lesson at once, and each one's note deserves to surface;
+  // an item that's already been taught never becomes "new" again, so a note
+  // skipped here would otherwise be lost for good.
+  const grammar = newItems.map((i) => i._grammar).filter(Boolean);
+  const culture = newItems.map((i) => i._culture).filter(Boolean);
 
   return {
     id: `${unitData.id}-gen-${Date.now()}`,
@@ -159,7 +186,10 @@ export function buildLesson(course, unitData, size = 12) {
     })),
     grammar,
     culture,
+    warmup,
     exercises: interleaved,
+    newCount: newItems.length,
+    reviewCount: warmup.length + interleaved.filter((ex) => ex.review).length,
     // If there's nothing new AND nothing to review, the caller shows a message.
     empty: newItems.length === 0 && reviewItems.length === 0,
   };

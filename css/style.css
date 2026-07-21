@@ -356,6 +356,18 @@ body {
   color: var(--blue); font-size: 0.72rem; font-weight: 900; border-radius: 8px;
   padding: 3px 10px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;
 }
+.retry-chip {
+  display: inline-block; background: color-mix(in srgb, var(--gold) 20%, transparent);
+  color: #8a6300; font-size: 0.72rem; font-weight: 900; border-radius: 8px;
+  padding: 3px 10px; margin-bottom: 10px; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+@media (prefers-color-scheme: dark) { .retry-chip { color: var(--gold); } }
+:root[data-theme="dark"] .retry-chip { color: var(--gold); }
+
+.session-shape {
+  text-align: center; color: var(--ink-soft); font-weight: 800; font-size: 0.78rem;
+  margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.4px;
+}
 
 /* ---------- stats ---------- */
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }

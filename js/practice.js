@@ -48,14 +48,3 @@ export function buildPracticeSession(lang, size = 12) {
 
   return { id: `practice-${Date.now()}`, title: "Practice", teach: [], exercises };
 }
-
-// Short warm-up for the start of a lesson: the 2–3 most urgent review items,
-// so new material is always interleaved with old.
-export function buildWarmup(lang, max = 3) {
-  const pool = getItems(lang).filter(hasWord);
-  return reviewQueue(lang)
-    .slice(0, max)
-    .map((i) => exerciseForReview(i, pool, lang))
-    .filter(Boolean)
-    .map((ex) => ({ ...ex, review: true }));
-}
