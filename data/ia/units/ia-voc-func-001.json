@@ -1,0 +1,29 @@
+{
+  "id": "ia-voc-func-001",
+  "title": "Parolas 1",
+  "level": "B1",
+  "summary": "More parolas vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Parolas 1 1",
+      "teach": [
+        {
+          "target": "sin",
+          "roman": "sin",
+          "english": "without",
+          "ipa": "sˈin"
+        },
+        {
+          "target": "usque",
+          "roman": "usque",
+          "english": "till / until",
+          "ipa": "ˈuske"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 2 more parolas (B1-band vocabulary)"
+  ]
+}

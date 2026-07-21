@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-008",
+  "title": "Verbos 8",
+  "level": "C1",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 8 1",
+      "teach": [
+        {
+          "target": "stupefacer",
+          "roman": "stupefacer",
+          "english": "to astonish",
+          "note": "io stupeface — present tense, infinitive minus -r.",
+          "ipa": "stˌupefatsˈer"
+        },
+        {
+          "target": "considerar",
+          "roman": "considerar",
+          "english": "to consider",
+          "note": "io considera — present tense, infinitive minus -r.",
+          "ipa": "kˌonsiderˈar"
+        },
+        {
+          "target": "reimplaciar",
+          "roman": "reimplaciar",
+          "english": "to replace",
+          "note": "io reimplacia — present tense, infinitive minus -r.",
+          "ipa": "rˌeɪmplatsjˈar"
+        },
+        {
+          "target": "determinar",
+          "roman": "determinar",
+          "english": "to determine",
+          "note": "io determina — present tense, infinitive minus -r.",
+          "ipa": "dˌeterminˈar"
+        },
+        {
+          "target": "incoragiar",
+          "roman": "incoragiar",
+          "english": "to encourage",
+          "note": "io incoragia — present tense, infinitive minus -r.",
+          "ipa": "ˌinkoraʒˈar"
+        },
+        {
+          "target": "introducer",
+          "roman": "introducer",
+          "english": "to introduce",
+          "note": "io introduce — present tense, infinitive minus -r.",
+          "ipa": "ˌintrodutsˈer"
+        },
+        {
+          "target": "pronunciar",
+          "roman": "pronunciar",
+          "english": "to pronounce",
+          "note": "io pronuncia — present tense, infinitive minus -r.",
+          "ipa": "prˌonuntsjˈar"
+        },
+        {
+          "target": "circumferer",
+          "roman": "circumferer",
+          "english": "to surround",
+          "note": "io circumfere — present tense, infinitive minus -r.",
+          "ipa": "tsˌirkumferˈer"
+        },
+        {
+          "target": "Io stupeface.",
+          "roman": "io stupeface",
+          "english": "I astonish.",
+          "ipa": "ˈio stˌupefˈatse"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 8 2",
+      "teach": [
+        {
+          "target": "tractar",
+          "roman": "tractar",
+          "english": "to deal / treat",
+          "note": "io tracta — present tense, infinitive minus -r.",
+          "ipa": "traktˈar"
+        },
+        {
+          "target": "multiplicar",
+          "roman": "multiplicar",
+          "english": "to multiply",
+          "note": "io multiplica — present tense, infinitive minus -r.",
+          "ipa": "mˌultiplikˈar"
+        },
+        {
+          "target": "interrumper",
+          "roman": "interrumper",
+          "english": "to interrupt",
+          "note": "io interrumpe — present tense, infinitive minus -r.",
+          "ipa": "ˌinterumpˈer"
+        },
+        {
+          "target": "seliger",
+          "roman": "seliger",
+          "english": "to pick / choose",
+          "note": "io selige — present tense, infinitive minus -r.",
+          "ipa": "sˌeliɡˈer"
+        },
+        {
+          "target": "recognoscer",
+          "roman": "recognoscer",
+          "english": "to recognize",
+          "note": "io recognosce — present tense, infinitive minus -r.",
+          "ipa": "rˌekoɡnostsˈer"
+        },
+        {
+          "target": "recommendar",
+          "roman": "recommendar",
+          "english": "to recommend",
+          "note": "io recommenda — present tense, infinitive minus -r.",
+          "ipa": "rˌekomendˈar"
+        },
+        {
+          "target": "guastar",
+          "roman": "guastar",
+          "english": "to spoil / ficar",
+          "note": "io guasta — present tense, infinitive minus -r.",
+          "ipa": "ɡwastˈar"
+        },
+        {
+          "target": "particular",
+          "roman": "particular",
+          "english": "to particular",
+          "note": "io particula — present tense, infinitive minus -r.",
+          "ipa": "pˌartikulˈar"
+        },
+        {
+          "target": "Io tracta.",
+          "roman": "io tracta",
+          "english": "I deal / treat.",
+          "ipa": "ˈio trˈakta"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 8 3",
+      "teach": [
+        {
+          "target": "distinguer",
+          "roman": "distinguer",
+          "english": "to distinguish",
+          "note": "io distingue — present tense, infinitive minus -r.",
+          "ipa": "dˌistiŋɡwˈer"
+        },
+        {
+          "target": "evitar",
+          "roman": "evitar",
+          "english": "to avoid / prevent",
+          "note": "io evita — present tense, infinitive minus -r.",
+          "ipa": "ˌevitˈar"
+        },
+        {
+          "target": "suffrer",
+          "roman": "suffrer",
+          "english": "to stand / suffer",
+          "note": "io suffre — present tense, infinitive minus -r.",
+          "ipa": "sufrˈer"
+        },
+        {
+          "target": "disappunctar",
+          "roman": "disappunctar",
+          "english": "to disappoint",
+          "note": "io disappuncta — present tense, infinitive minus -r.",
+          "ipa": "dˌisapunktˈar"
+        },
+        {
+          "target": "decider",
+          "roman": "decider",
+          "english": "to settle / decide",
+          "note": "io decide — present tense, infinitive minus -r.",
+          "ipa": "dˌetsidˈer"
+        },
+        {
+          "target": "amusar",
+          "roman": "amusar",
+          "english": "to amuse / entertain",
+          "note": "io amusa — present tense, infinitive minus -r.",
+          "ipa": "ˌamusˈar"
+        },
+        {
+          "target": "permitter",
+          "roman": "permitter",
+          "english": "to allow / permit",
+          "note": "io permitte — present tense, infinitive minus -r.",
+          "ipa": "pˌermitˈer"
+        },
+        {
+          "target": "fornir",
+          "roman": "fornir",
+          "english": "to furnish / provide",
+          "note": "io forni — present tense, infinitive minus -r.",
+          "ipa": "fornˈir"
+        },
+        {
+          "target": "Io distingue.",
+          "roman": "io distingue",
+          "english": "I distinguish.",
+          "ipa": "ˈio distˈiŋɡwe"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 8 4",
+      "teach": [
+        {
+          "target": "colliger",
+          "roman": "colliger",
+          "english": "to gather / collect",
+          "note": "io collige — present tense, infinitive minus -r.",
+          "ipa": "kˌoliɡˈer"
+        },
+        {
+          "target": "pardonar",
+          "roman": "pardonar",
+          "english": "to pardon / forgive",
+          "note": "io pardona — present tense, infinitive minus -r.",
+          "ipa": "pˌardonˈar"
+        },
+        {
+          "target": "tirar",
+          "roman": "tirar",
+          "english": "to drag / draw / shoot",
+          "note": "io tira — present tense, infinitive minus -r.",
+          "ipa": "tirˈar"
+        },
+        {
+          "target": "extender",
+          "roman": "extender",
+          "english": "to extend / stretch",
+          "note": "io extende — present tense, infinitive minus -r.",
+          "ipa": "ˌekstendˈer"
+        },
+        {
+          "target": "includer",
+          "roman": "includer",
+          "english": "to enclose / include",
+          "note": "io include — present tense, infinitive minus -r.",
+          "ipa": "ˌinkludˈer"
+        },
+        {
+          "target": "representar",
+          "roman": "representar",
+          "english": "to perform / represent",
+          "note": "io representa — present tense, infinitive minus -r.",
+          "ipa": "rˌepresentˈar"
+        },
+        {
+          "target": "demandar",
+          "roman": "demandar",
+          "english": "to ask / enquire / inquire",
+          "note": "io demanda — present tense, infinitive minus -r.",
+          "ipa": "dˌemandˈar"
+        },
+        {
+          "target": "recommendar con insistentia",
+          "roman": "recommendar con insistentia",
+          "english": "to urge",
+          "note": "io recommendar con insistentia — present tense, infinitive minus -r.",
+          "ipa": "rˌekomendˈar kˈon ˌinsistˈentja"
+        },
+        {
+          "target": "Io collige.",
+          "roman": "io collige",
+          "english": "I gather / collect.",
+          "ipa": "ˈio kolˈiɡe"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (C1-band vocabulary)"
+  ]
+}

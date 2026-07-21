@@ -1,0 +1,137 @@
+{
+  "id": "ia-voc-nationalitates",
+  "title": "Nationalitates",
+  "level": "B1",
+  "summary": "Countries and nationalities.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nationalitates 1",
+      "teach": [
+        {
+          "target": "le Anglaterra",
+          "roman": "le Anglaterra",
+          "english": "the england",
+          "ipa": "le ˌaŋɡlatˈera"
+        },
+        {
+          "target": "le Francia",
+          "roman": "le Francia",
+          "english": "the france",
+          "ipa": "le frˈantsja"
+        },
+        {
+          "target": "le Germania",
+          "roman": "le Germania",
+          "english": "the germany",
+          "ipa": "le ɡermˈanja"
+        },
+        {
+          "target": "le Espania",
+          "roman": "le Espania",
+          "english": "the spain",
+          "ipa": "le espˈanja"
+        },
+        {
+          "target": "le porcellana",
+          "roman": "le porcellana",
+          "english": "the china",
+          "ipa": "le pˌortselˈana"
+        },
+        {
+          "target": "le Japon",
+          "roman": "le Japon",
+          "english": "the japan",
+          "ipa": "le ʒapˈon"
+        },
+        {
+          "target": "le Russia",
+          "roman": "le Russia",
+          "english": "the russia",
+          "ipa": "le rˈusja"
+        },
+        {
+          "target": "Io vide le Anglaterra.",
+          "roman": "io vide le Anglaterra",
+          "english": "I see the england.",
+          "ipa": "ˈio vˈide le ˌaŋɡlatˈera"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nationalitates 2",
+      "teach": [
+        {
+          "target": "le Scotia",
+          "roman": "le Scotia",
+          "english": "the scotland",
+          "ipa": "le skˈotja"
+        },
+        {
+          "target": "le Irlanda",
+          "roman": "le Irlanda",
+          "english": "the ireland",
+          "ipa": "le irlˈanda"
+        },
+        {
+          "target": "le Galles",
+          "roman": "le Galles",
+          "english": "the wales",
+          "ipa": "le ɡˈales"
+        },
+        {
+          "target": "german",
+          "roman": "german",
+          "english": "german",
+          "ipa": "ɡermˈan"
+        },
+        {
+          "target": "italian",
+          "roman": "italian",
+          "english": "italian",
+          "ipa": "ˌitaljˈan"
+        },
+        {
+          "target": "le chinese",
+          "roman": "le chinese",
+          "english": "the chinese",
+          "ipa": "le ʃinˈese"
+        },
+        {
+          "target": "le pais",
+          "roman": "le pais",
+          "english": "the country",
+          "ipa": "le pˈaɪs"
+        },
+        {
+          "target": "Mi amico es german.",
+          "roman": "mi amico es german",
+          "english": "My friend is german.",
+          "ipa": "mi amˈiko es ɡermˈan"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nationalitates 3",
+      "teach": [
+        {
+          "target": "le nation",
+          "roman": "le nation",
+          "english": "the nation",
+          "ipa": "le natjˈon"
+        },
+        {
+          "target": "Io vide le nation.",
+          "roman": "io vide le nation",
+          "english": "I see the nation.",
+          "ipa": "ˈio vˈide le natjˈon"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 15 more words about countries and nationalities"
+  ]
+}

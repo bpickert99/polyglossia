@@ -1,0 +1,66 @@
+{
+  "id": "ia-voc-communication",
+  "title": "Communication",
+  "level": "B1",
+  "summary": "Communication.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Communication 1",
+      "teach": [
+        {
+          "target": "le littera",
+          "roman": "le littera",
+          "english": "the letter",
+          "ipa": "le lˈitera"
+        },
+        {
+          "target": "le phrase",
+          "roman": "le phrase",
+          "english": "the sentence",
+          "ipa": "le frˈase"
+        },
+        {
+          "target": "le message",
+          "roman": "le message",
+          "english": "the message",
+          "ipa": "le mesˈaʒe"
+        },
+        {
+          "target": "le jornal",
+          "roman": "le jornal",
+          "english": "the newspaper",
+          "ipa": "le ʒornˈal"
+        },
+        {
+          "target": "le novas",
+          "roman": "le novas",
+          "english": "the news",
+          "ipa": "le nˈovas"
+        },
+        {
+          "target": "le reporto",
+          "roman": "le reporto",
+          "english": "the report",
+          "ipa": "le repˈorto"
+        },
+        {
+          "target": "traducer",
+          "roman": "traducer",
+          "english": "to translate",
+          "note": "io traduce — present tense, infinitive minus -r.",
+          "ipa": "trˌadutsˈer"
+        },
+        {
+          "target": "Io traduce.",
+          "roman": "io traduce",
+          "english": "I translate.",
+          "ipa": "ˈio tradˈutse"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 7 more words about communication"
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-002",
+  "title": "Verbos 2",
+  "level": "B1",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 2 1",
+      "teach": [
+        {
+          "target": "junger",
+          "roman": "junger",
+          "english": "to join",
+          "note": "io junge — present tense, infinitive minus -r.",
+          "ipa": "ʒuŋɡˈer"
+        },
+        {
+          "target": "calcar",
+          "roman": "calcar",
+          "english": "to kick",
+          "note": "io calca — present tense, infinitive minus -r.",
+          "ipa": "kalkˈar"
+        },
+        {
+          "target": "poter",
+          "roman": "poter",
+          "english": "to power",
+          "note": "io pote — present tense, infinitive minus -r.",
+          "ipa": "potˈer"
+        },
+        {
+          "target": "precar",
+          "roman": "precar",
+          "english": "to pray",
+          "note": "io preca — present tense, infinitive minus -r.",
+          "ipa": "prekˈar"
+        },
+        {
+          "target": "salvar",
+          "roman": "salvar",
+          "english": "to save",
+          "note": "io salva — present tense, infinitive minus -r.",
+          "ipa": "salvˈar"
+        },
+        {
+          "target": "rasar",
+          "roman": "rasar",
+          "english": "to shave",
+          "note": "io rasa — present tense, infinitive minus -r.",
+          "ipa": "rasˈar"
+        },
+        {
+          "target": "lucer",
+          "roman": "lucer",
+          "english": "to shine",
+          "note": "io luce — present tense, infinitive minus -r.",
+          "ipa": "lutsˈer"
+        },
+        {
+          "target": "restar",
+          "roman": "restar",
+          "english": "to stay",
+          "note": "io resta — present tense, infinitive minus -r.",
+          "ipa": "restˈar"
+        },
+        {
+          "target": "Io junge.",
+          "roman": "io junge",
+          "english": "I join.",
+          "ipa": "ˈio ʒˈuŋɡe"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 2 2",
+      "teach": [
+        {
+          "target": "furar",
+          "roman": "furar",
+          "english": "to steal",
+          "note": "io fura — present tense, infinitive minus -r.",
+          "ipa": "furˈar"
+        },
+        {
+          "target": "tumer",
+          "roman": "tumer",
+          "english": "to swell",
+          "note": "io tume — present tense, infinitive minus -r.",
+          "ipa": "tumˈer"
+        },
+        {
+          "target": "tender",
+          "roman": "tender",
+          "english": "to tend",
+          "note": "io tende — present tense, infinitive minus -r.",
+          "ipa": "tendˈer"
+        },
+        {
+          "target": "texer",
+          "roman": "texer",
+          "english": "to weave",
+          "note": "io texe — present tense, infinitive minus -r.",
+          "ipa": "teksˈer"
+        },
+        {
+          "target": "arguer",
+          "roman": "arguer",
+          "english": "to argue",
+          "note": "io argue — present tense, infinitive minus -r.",
+          "ipa": "arɡwˈer"
+        },
+        {
+          "target": "trair",
+          "roman": "trair",
+          "english": "to betray",
+          "note": "io trai — present tense, infinitive minus -r.",
+          "ipa": "trˈaɪr"
+        },
+        {
+          "target": "montar",
+          "roman": "montar",
+          "english": "to climb",
+          "note": "io monta — present tense, infinitive minus -r.",
+          "ipa": "montˈar"
+        },
+        {
+          "target": "dinar",
+          "roman": "dinar",
+          "english": "to dinner",
+          "note": "io dina — present tense, infinitive minus -r.",
+          "ipa": "dˈinar"
+        },
+        {
+          "target": "Io fura.",
+          "roman": "io fura",
+          "english": "I steal.",
+          "ipa": "ˈio fˈura"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 2 3",
+      "teach": [
+        {
+          "target": "eliger",
+          "roman": "eliger",
+          "english": "to elect",
+          "note": "io elige — present tense, infinitive minus -r.",
+          "ipa": "ˌeliɡˈer"
+        },
+        {
+          "target": "appoiar",
+          "roman": "appoiar",
+          "english": "to lean",
+          "note": "io appoia — present tense, infinitive minus -r.",
+          "ipa": "ˌapoɪˈar"
+        },
+        {
+          "target": "reparar",
+          "roman": "reparar",
+          "english": "to mend",
+          "note": "io repara — present tense, infinitive minus -r.",
+          "ipa": "rˌeparˈar"
+        },
+        {
+          "target": "altiar",
+          "roman": "altiar",
+          "english": "to raise",
+          "note": "io altia — present tense, infinitive minus -r.",
+          "ipa": "altjˈar"
+        },
+        {
+          "target": "rostir",
+          "roman": "rostir",
+          "english": "to roast",
+          "note": "io rosti — present tense, infinitive minus -r.",
+          "ipa": "rostˈir"
+        },
+        {
+          "target": "sever",
+          "roman": "sever",
+          "english": "to severe",
+          "note": "io seve — present tense, infinitive minus -r.",
+          "ipa": "sevˈer"
+        },
+        {
+          "target": "essugar",
+          "roman": "essugar",
+          "english": "to wipe",
+          "note": "io essuga — present tense, infinitive minus -r.",
+          "ipa": "ˌesuɡˈar"
+        },
+        {
+          "target": "preter",
+          "roman": "preter",
+          "english": "to along",
+          "note": "io prete — present tense, infinitive minus -r.",
+          "ipa": "prˈeter"
+        },
+        {
+          "target": "Io elige.",
+          "roman": "io elige",
+          "english": "I elect.",
+          "ipa": "ˈio elˈiɡe"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 2 4",
+      "teach": [
+        {
+          "target": "pulsar",
+          "roman": "pulsar",
+          "english": "to drive",
+          "note": "io pulsa — present tense, infinitive minus -r.",
+          "ipa": "pulsˈar"
+        },
+        {
+          "target": "occider",
+          "roman": "occider",
+          "english": "to kill",
+          "note": "io occide — present tense, infinitive minus -r.",
+          "ipa": "ˌotsidˈer"
+        },
+        {
+          "target": "prestar",
+          "roman": "prestar",
+          "english": "to lend",
+          "note": "io presta — present tense, infinitive minus -r.",
+          "ipa": "prestˈar"
+        },
+        {
+          "target": "emitter",
+          "roman": "emitter",
+          "english": "to omit",
+          "note": "io emitte — present tense, infinitive minus -r.",
+          "ipa": "ˌemitˈer"
+        },
+        {
+          "target": "punir",
+          "roman": "punir",
+          "english": "to punish",
+          "note": "io puni — present tense, infinitive minus -r.",
+          "ipa": "punˈir"
+        },
+        {
+          "target": "solver",
+          "roman": "solver",
+          "english": "to solve",
+          "note": "io solve — present tense, infinitive minus -r.",
+          "ipa": "solvˈer"
+        },
+        {
+          "target": "scopar",
+          "roman": "scopar",
+          "english": "to sweep",
+          "note": "io scopa — present tense, infinitive minus -r.",
+          "ipa": "skopˈar"
+        },
+        {
+          "target": "jectar",
+          "roman": "jectar",
+          "english": "to throw",
+          "note": "io jecta — present tense, infinitive minus -r.",
+          "ipa": "ʒektˈar"
+        },
+        {
+          "target": "Io pulsa.",
+          "roman": "io pulsa",
+          "english": "I drive.",
+          "ipa": "ˈio pˈulsa"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B1-band vocabulary)"
+  ]
+}

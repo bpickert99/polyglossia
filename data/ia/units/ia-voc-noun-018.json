@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-018",
+  "title": "Nomines 18",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 18 1",
+      "teach": [
+        {
+          "target": "le Austria",
+          "roman": "le Austria",
+          "english": "the austria",
+          "ipa": "le ˈawstrja"
+        },
+        {
+          "target": "le nascentia",
+          "roman": "le nascentia",
+          "english": "the birth",
+          "ipa": "le nastsˈentja"
+        },
+        {
+          "target": "le vantar se",
+          "roman": "le vantar se",
+          "english": "the boast",
+          "ipa": "le vantˈar sˈe"
+        },
+        {
+          "target": "le bottilia",
+          "roman": "le bottilia",
+          "english": "the bottle",
+          "ipa": "le botˈilja"
+        },
+        {
+          "target": "le castello",
+          "roman": "le castello",
+          "english": "the castle",
+          "ipa": "le kastˈelo"
+        },
+        {
+          "target": "le ecclesia",
+          "roman": "le ecclesia",
+          "english": "the church",
+          "ipa": "le eklˈesja"
+        },
+        {
+          "target": "le periculo",
+          "roman": "le periculo",
+          "english": "the danger",
+          "ipa": "le perˈikulo"
+        },
+        {
+          "target": "le disfacta",
+          "roman": "le disfacta",
+          "english": "the defeat",
+          "ipa": "le disfˈakta"
+        },
+        {
+          "target": "Io vide le Austria.",
+          "roman": "io vide le Austria",
+          "english": "I see the austria.",
+          "ipa": "ˈio vˈide le ˈawstrja"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 18 2",
+      "teach": [
+        {
+          "target": "le defensa",
+          "roman": "le defensa",
+          "english": "the defence",
+          "ipa": "le defˈensa"
+        },
+        {
+          "target": "le delecto",
+          "roman": "le delecto",
+          "english": "the delight",
+          "ipa": "le delˈekto"
+        },
+        {
+          "target": "le Danmark",
+          "roman": "le Danmark",
+          "english": "the denmark",
+          "ipa": "le danmˈark"
+        },
+        {
+          "target": "le facilitate",
+          "roman": "le facilitate",
+          "english": "the ease",
+          "ipa": "le fˌatsilitˈate"
+        },
+        {
+          "target": "le expensa",
+          "roman": "le expensa",
+          "english": "the expense",
+          "ipa": "le ekspˈensa"
+        },
+        {
+          "target": "le martello",
+          "roman": "le martello",
+          "english": "the hammer",
+          "ipa": "le martˈelo"
+        },
+        {
+          "target": "le sanitate",
+          "roman": "le sanitate",
+          "english": "the health",
+          "ipa": "le sˌanitˈate"
+        },
+        {
+          "target": "le altitude",
+          "roman": "le altitude",
+          "english": "the height",
+          "ipa": "le ˌaltitˈude"
+        },
+        {
+          "target": "Io vide le defensa.",
+          "roman": "io vide le defensa",
+          "english": "I see the defence.",
+          "ipa": "ˈio vˈide le defˈensa"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 18 3",
+      "teach": [
+        {
+          "target": "le immense",
+          "roman": "le immense",
+          "english": "the immense",
+          "ipa": "le imˈense"
+        },
+        {
+          "target": "le musico",
+          "roman": "le musico",
+          "english": "the musician",
+          "ipa": "le mˈusiko"
+        },
+        {
+          "target": "le io mesme",
+          "roman": "le io mesme",
+          "english": "the myself",
+          "ipa": "le ˈio mˈesme"
+        },
+        {
+          "target": "le possessor",
+          "roman": "le possessor",
+          "english": "the owner",
+          "ipa": "le pˌosesˈor"
+        },
+        {
+          "target": "le passage",
+          "roman": "le passage",
+          "english": "the passage",
+          "ipa": "le pasˈaʒe"
+        },
+        {
+          "target": "le currero",
+          "roman": "le currero",
+          "english": "the postman",
+          "ipa": "le kurˈero"
+        },
+        {
+          "target": "le precaria",
+          "roman": "le precaria",
+          "english": "the prayer",
+          "ipa": "le prekˈarja"
+        },
+        {
+          "target": "le reserva",
+          "roman": "le reserva",
+          "english": "the reserve",
+          "ipa": "le resˈerva"
+        },
+        {
+          "target": "Io vide le immense.",
+          "roman": "io vide le immense",
+          "english": "I see the immense.",
+          "ipa": "ˈio vˈide le imˈense"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 18 4",
+      "teach": [
+        {
+          "target": "le paisage",
+          "roman": "le paisage",
+          "english": "the scenery",
+          "ipa": "le paɪsˈaʒe"
+        },
+        {
+          "target": "le refugio",
+          "roman": "le refugio",
+          "english": "the shelter",
+          "ipa": "le refˈuɡjo"
+        },
+        {
+          "target": "le lubric",
+          "roman": "le lubric",
+          "english": "the slippery",
+          "ipa": "le lˈubrik"
+        },
+        {
+          "target": "le calcea",
+          "roman": "le calcea",
+          "english": "the stocking",
+          "ipa": "le kaltsˈea"
+        },
+        {
+          "target": "le pensata",
+          "roman": "le pensata",
+          "english": "the thought",
+          "ipa": "le pensˈata"
+        },
+        {
+          "target": "le tonitro",
+          "roman": "le tonitro",
+          "english": "the thunder",
+          "ipa": "le tˈonitro"
+        },
+        {
+          "target": "le tempore",
+          "roman": "le tempore",
+          "english": "the weather",
+          "ipa": "le tˈempore"
+        },
+        {
+          "target": "le de ligno",
+          "roman": "le de ligno",
+          "english": "the wooden",
+          "ipa": "le de lˈiɡno"
+        },
+        {
+          "target": "Io vide le paisage.",
+          "roman": "io vide le paisage",
+          "english": "I see the scenery.",
+          "ipa": "ˈio vˈide le paɪsˈaʒe"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

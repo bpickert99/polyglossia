@@ -1,0 +1,245 @@
+{
+  "id": "ia-voc-noun-001",
+  "title": "Nomines 1",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 1 1",
+      "teach": [
+        {
+          "target": "le un",
+          "roman": "le un",
+          "english": "the a",
+          "ipa": "le ˈun"
+        },
+        {
+          "target": "le of",
+          "roman": "le of",
+          "english": "the rid",
+          "ipa": "le ˈof"
+        },
+        {
+          "target": "le deo",
+          "roman": "le deo",
+          "english": "the god",
+          "ipa": "le ðˈeo"
+        },
+        {
+          "target": "le non",
+          "roman": "le non",
+          "english": "the not",
+          "ipa": "le nˈon"
+        },
+        {
+          "target": "le uso",
+          "roman": "le uso",
+          "english": "the use",
+          "ipa": "le ˈuso"
+        },
+        {
+          "target": "le de",
+          "roman": "le de",
+          "english": "the from",
+          "ipa": "le dˈe"
+        },
+        {
+          "target": "le gas",
+          "roman": "le gas",
+          "english": "the gas",
+          "ipa": "le ɡˈas"
+        },
+        {
+          "target": "le gai",
+          "roman": "le gai",
+          "english": "the gay",
+          "ipa": "le ɡˈaɪ"
+        },
+        {
+          "target": "Io vide le un.",
+          "roman": "io vide le un",
+          "english": "I see the a.",
+          "ipa": "ˈio vˈide le ˈun"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 1 2",
+      "teach": [
+        {
+          "target": "le the",
+          "roman": "le the",
+          "english": "the tea",
+          "ipa": "le tˈe"
+        },
+        {
+          "target": "le acto",
+          "roman": "le acto",
+          "english": "the act",
+          "ipa": "le ˈakto"
+        },
+        {
+          "target": "le arte",
+          "roman": "le arte",
+          "english": "the art",
+          "ipa": "le ˈarte"
+        },
+        {
+          "target": "le baia",
+          "roman": "le baia",
+          "english": "the bay",
+          "ipa": "le bˈaɪa"
+        },
+        {
+          "target": "le lege",
+          "roman": "le lege",
+          "english": "the law",
+          "ipa": "le lˈeɡe"
+        },
+        {
+          "target": "le rar",
+          "roman": "le rar",
+          "english": "the rare",
+          "ipa": "le rˈar"
+        },
+        {
+          "target": "le ego",
+          "roman": "le ego",
+          "english": "the self",
+          "ipa": "le ˈeɡo"
+        },
+        {
+          "target": "le suer",
+          "roman": "le suer",
+          "english": "the sew",
+          "ipa": "le swˈer"
+        },
+        {
+          "target": "Io vide le the.",
+          "roman": "io vide le the",
+          "english": "I see the tea.",
+          "ipa": "ˈio vˈide le tˈe"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 1 3",
+      "teach": [
+        {
+          "target": "le sexo",
+          "roman": "le sexo",
+          "english": "the sex",
+          "ipa": "le sˈekso"
+        },
+        {
+          "target": "le tu",
+          "roman": "le tu",
+          "english": "the anque",
+          "ipa": "le tˈu"
+        },
+        {
+          "target": "le ver",
+          "roman": "le ver",
+          "english": "the true",
+          "ipa": "le vˈer"
+        },
+        {
+          "target": "le van",
+          "roman": "le van",
+          "english": "the vain",
+          "ipa": "le vˈan"
+        },
+        {
+          "target": "le ala",
+          "roman": "le ala",
+          "english": "the wing",
+          "ipa": "le ˈala"
+        },
+        {
+          "target": "le aere",
+          "roman": "le aere",
+          "english": "the air",
+          "ipa": "le ˈaere"
+        },
+        {
+          "target": "le nunc",
+          "roman": "le nunc",
+          "english": "the now",
+          "ipa": "le nˈunk"
+        },
+        {
+          "target": "Io vide le sexo.",
+          "roman": "io vide le sexo",
+          "english": "I see the sex.",
+          "ipa": "ˈio vˈide le sˈekso"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 1 4",
+      "teach": [
+        {
+          "target": "le par",
+          "roman": "le par",
+          "english": "the pair",
+          "ipa": "le pˈar"
+        },
+        {
+          "target": "le pur",
+          "roman": "le pur",
+          "english": "the pure",
+          "ipa": "le pˈur"
+        },
+        {
+          "target": "le cera",
+          "roman": "le cera",
+          "english": "the wax",
+          "ipa": "le tsˈera"
+        },
+        {
+          "target": "le capo",
+          "roman": "le capo",
+          "english": "the cape",
+          "ipa": "le kˈapo"
+        },
+        {
+          "target": "le club",
+          "roman": "le club",
+          "english": "the club",
+          "ipa": "le klˈab"
+        },
+        {
+          "target": "le eque",
+          "roman": "le eque",
+          "english": "the fair",
+          "ipa": "le ˈekwe"
+        },
+        {
+          "target": "le fato",
+          "roman": "le fato",
+          "english": "the fate",
+          "ipa": "le fˈato"
+        },
+        {
+          "target": "le musca",
+          "roman": "le musca",
+          "english": "the fly",
+          "ipa": "le mˈuska"
+        },
+        {
+          "target": "Io vide le par.",
+          "roman": "io vide le par",
+          "english": "I see the pair.",
+          "ipa": "ˈio vˈide le pˈar"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

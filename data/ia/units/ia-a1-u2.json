@@ -47,12 +47,14 @@
         {
           "target": "le homine",
           "roman": "le homine",
-          "english": "the man"
+          "english": "the man",
+          "ipa": "le hˈomine"
         },
         {
           "target": "le femina",
           "roman": "le femina",
-          "english": "the woman"
+          "english": "the woman",
+          "ipa": "le fˈemina"
         }
       ],
       "grammar": {
@@ -103,7 +105,8 @@
         {
           "target": "le catto",
           "roman": "le catto",
-          "english": "the cat"
+          "english": "the cat",
+          "ipa": "le kˈato"
         }
       ]
     }

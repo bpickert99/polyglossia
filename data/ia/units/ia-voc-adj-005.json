@@ -1,0 +1,233 @@
+{
+  "id": "ia-voc-adj-005",
+  "title": "Adjectivos 5",
+  "level": "C1",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 5 1",
+      "teach": [
+        {
+          "target": "terribile",
+          "roman": "terribile",
+          "english": "terrible",
+          "ipa": "terˈibile"
+        },
+        {
+          "target": "republica",
+          "roman": "republica",
+          "english": "republic",
+          "ipa": "repˈublika"
+        },
+        {
+          "target": "adjective",
+          "roman": "adjective",
+          "english": "adjective",
+          "ipa": "ˌadʒektˈive"
+        },
+        {
+          "target": "negligente",
+          "roman": "negligente",
+          "english": "careless",
+          "ipa": "nˌeɡliɡˈente"
+        },
+        {
+          "target": "abundante",
+          "roman": "abundante",
+          "english": "plentiful",
+          "ipa": "ˌabundˈante"
+        },
+        {
+          "target": "rational",
+          "roman": "rational",
+          "english": "reasonable",
+          "ipa": "rˌatjonˈal"
+        },
+        {
+          "target": "Le casa es terribile.",
+          "roman": "le casa es terribile",
+          "english": "The house is terrible.",
+          "ipa": "le kˈasa es terˈibile"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 5 2",
+      "teach": [
+        {
+          "target": "qualcunque",
+          "roman": "qualcunque",
+          "english": "whatever",
+          "ipa": "kwalkˈuŋkwe"
+        },
+        {
+          "target": "simile",
+          "roman": "simile",
+          "english": "like / alike",
+          "ipa": "sˈimile"
+        },
+        {
+          "target": "brasilian",
+          "roman": "brasilian",
+          "english": "brazilian",
+          "ipa": "brˌasiljˈan"
+        },
+        {
+          "target": "extensive",
+          "roman": "extensive",
+          "english": "extensive",
+          "ipa": "ˌekstensˈive"
+        },
+        {
+          "target": "mechanic",
+          "roman": "mechanic",
+          "english": "mechanical",
+          "ipa": "mekˈanik"
+        },
+        {
+          "target": "religiose",
+          "roman": "religiose",
+          "english": "religious",
+          "ipa": "rˌeliɡjˈose"
+        },
+        {
+          "target": "miserabile",
+          "roman": "miserabile",
+          "english": "miserable",
+          "ipa": "mˌiserˈabile"
+        },
+        {
+          "target": "dece-none",
+          "roman": "dece-none",
+          "english": "nineteenth",
+          "ipa": "dˈetsenˈone"
+        },
+        {
+          "target": "Le can es qualcunque.",
+          "roman": "le can es qualcunque",
+          "english": "The dog is whatever.",
+          "ipa": "le kˈan es kwalkˈuŋkwe"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 5 3",
+      "teach": [
+        {
+          "target": "dece-sexte",
+          "roman": "dece-sexte",
+          "english": "sixteenth",
+          "ipa": "dˈetsesˈekste"
+        },
+        {
+          "target": "succedite",
+          "roman": "succedite",
+          "english": "successful",
+          "ipa": "sˌutsedˈite"
+        },
+        {
+          "target": "convenibile",
+          "roman": "convenibile",
+          "english": "suitable",
+          "ipa": "kˌonvenˈibile"
+        },
+        {
+          "target": "agradabile",
+          "roman": "agradabile",
+          "english": "agreeable",
+          "ipa": "ˌaɡradˈabile"
+        },
+        {
+          "target": "consciente",
+          "roman": "consciente",
+          "english": "conscious",
+          "ipa": "konstsjˈente"
+        },
+        {
+          "target": "periculose",
+          "roman": "periculose",
+          "english": "dangerous",
+          "ipa": "pˌerikulˈose"
+        },
+        {
+          "target": "sin dubita",
+          "roman": "sin dubita",
+          "english": "doubtless",
+          "ipa": "sˈin dˈubita"
+        },
+        {
+          "target": "Le citate es rapide.",
+          "roman": "le citate es rapide",
+          "english": "The city is rapid / quick.",
+          "ipa": "le tsitˈate es rˈapide"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adjectivos 5 4",
+      "teach": [
+        {
+          "target": "parve",
+          "roman": "parve",
+          "english": "small / little",
+          "ipa": "pˈarve"
+        },
+        {
+          "target": "dece-secunde",
+          "roman": "dece-secunde",
+          "english": "twelfth",
+          "ipa": "dˈetsesekˈunde"
+        },
+        {
+          "target": "calme",
+          "roman": "calme",
+          "english": "calm / composed",
+          "ipa": "kˈalme"
+        },
+        {
+          "target": "honorabile",
+          "roman": "honorabile",
+          "english": "honourable",
+          "ipa": "hˌonorˈabile"
+        },
+        {
+          "target": "australian",
+          "roman": "australian",
+          "english": "australian",
+          "ipa": "ˌaʊstraljˈan"
+        },
+        {
+          "target": "mysteriose",
+          "roman": "mysteriose",
+          "english": "mysterious",
+          "ipa": "mˌisterjˈose"
+        },
+        {
+          "target": "scientific",
+          "roman": "scientific",
+          "english": "scientific",
+          "ipa": "stsjentˈifik"
+        },
+        {
+          "target": "meraviliose",
+          "roman": "meraviliose",
+          "english": "wonderful",
+          "ipa": "mˌeraviljˈose"
+        },
+        {
+          "target": "Le libro es parve.",
+          "roman": "le libro es parve",
+          "english": "The book is small / little.",
+          "ipa": "le lˈibro es pˈarve"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adjectivos (C1-band vocabulary)"
+  ]
+}

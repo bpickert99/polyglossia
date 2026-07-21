@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-020",
+  "title": "Nomines 20",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 20 1",
+      "teach": [
+        {
+          "target": "le silentio",
+          "roman": "le silentio",
+          "english": "the silence",
+          "ipa": "le silˈentjo"
+        },
+        {
+          "target": "le dece-sex",
+          "roman": "le dece-sex",
+          "english": "the sixteen",
+          "ipa": "le dˈetsesˈeks"
+        },
+        {
+          "target": "le habilitate",
+          "roman": "le habilitate",
+          "english": "the skill",
+          "ipa": "le hˌabilitˈate"
+        },
+        {
+          "target": "le pelle",
+          "roman": "le pelle",
+          "english": "the fur / skin",
+          "ipa": "le pˈele"
+        },
+        {
+          "target": "le parlator",
+          "roman": "le parlator",
+          "english": "the speaker",
+          "ipa": "le pˌarlatˈor"
+        },
+        {
+          "target": "le velocitate",
+          "roman": "le velocitate",
+          "english": "the speed",
+          "ipa": "le vˌelotsitˈate"
+        },
+        {
+          "target": "le diffusion",
+          "roman": "le diffusion",
+          "english": "the spread",
+          "ipa": "le dˌifusjˈon"
+        },
+        {
+          "target": "le primavera",
+          "roman": "le primavera",
+          "english": "the spring",
+          "ipa": "le prˌimavˈera"
+        },
+        {
+          "target": "Io vide le silentio.",
+          "roman": "io vide le silentio",
+          "english": "I see the silence.",
+          "ipa": "ˈio vˈide le silˈentjo"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 20 2",
+      "teach": [
+        {
+          "target": "le successo",
+          "roman": "le successo",
+          "english": "the success",
+          "ipa": "le sutsˈeso"
+        },
+        {
+          "target": "le supporto",
+          "roman": "le supporto",
+          "english": "the support",
+          "ipa": "le supˈorto"
+        },
+        {
+          "target": "le tourista",
+          "roman": "le tourista",
+          "english": "the tourist",
+          "ipa": "le turˈista"
+        },
+        {
+          "target": "le vertical",
+          "roman": "le vertical",
+          "english": "the upright",
+          "ipa": "le vˌertikˈal"
+        },
+        {
+          "target": "le victoria",
+          "roman": "le victoria",
+          "english": "the victory",
+          "ipa": "le viktˈorja"
+        },
+        {
+          "target": "le violente",
+          "roman": "le violente",
+          "english": "the violent",
+          "ipa": "le vjolˈente"
+        },
+        {
+          "target": "le rendimento",
+          "roman": "le rendimento",
+          "english": "the yield",
+          "ipa": "le rˌendimˈento"
+        },
+        {
+          "target": "le retro",
+          "roman": "le retro",
+          "english": "the ago / back",
+          "ipa": "le rˈetro"
+        },
+        {
+          "target": "Io vide le successo.",
+          "roman": "io vide le successo",
+          "english": "I see the success.",
+          "ipa": "ˈio vˈide le sutsˈeso"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 20 3",
+      "teach": [
+        {
+          "target": "le balancia",
+          "roman": "le balancia",
+          "english": "the balance",
+          "ipa": "le balˈantsja"
+        },
+        {
+          "target": "le brillante",
+          "roman": "le brillante",
+          "english": "the bright",
+          "ipa": "le brilˈante"
+        },
+        {
+          "target": "le selection",
+          "roman": "le selection",
+          "english": "the choice",
+          "ipa": "le sˌelektjˈon"
+        },
+        {
+          "target": "le citatano",
+          "roman": "le citatano",
+          "english": "the citizen",
+          "ipa": "le tsˌitatˈano"
+        },
+        {
+          "target": "le pretension",
+          "roman": "le pretension",
+          "english": "the claim",
+          "ipa": "le prˌetensjˈon"
+        },
+        {
+          "target": "le controlo",
+          "roman": "le controlo",
+          "english": "the control",
+          "ipa": "le kontrˈolo"
+        },
+        {
+          "target": "le consilio",
+          "roman": "le consilio",
+          "english": "the council",
+          "ipa": "le konsˈiljo"
+        },
+        {
+          "target": "le decadentia",
+          "roman": "le decadentia",
+          "english": "the decay",
+          "ipa": "le dˌekadˈentja"
+        },
+        {
+          "target": "Io vide le balancia.",
+          "roman": "io vide le balancia",
+          "english": "I see the balance.",
+          "ipa": "ˈio vˈide le balˈantsja"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 20 4",
+      "teach": [
+        {
+          "target": "le exigentia",
+          "roman": "le exigentia",
+          "english": "the demand",
+          "ipa": "le ˌeksiɡˈentja"
+        },
+        {
+          "target": "le hollandese",
+          "roman": "le hollandese",
+          "english": "the dutch",
+          "ipa": "le hˌolandˈese"
+        },
+        {
+          "target": "le escappata",
+          "roman": "le escappata",
+          "english": "the escape",
+          "ipa": "le ˌeskapˈata"
+        },
+        {
+          "target": "le evenimento",
+          "roman": "le evenimento",
+          "english": "the event",
+          "ipa": "le ˌevenimˈento"
+        },
+        {
+          "target": "le amplitude",
+          "roman": "le amplitude",
+          "english": "the extent",
+          "ipa": "le ˌamplitˈude"
+        },
+        {
+          "target": "le inundation",
+          "roman": "le inundation",
+          "english": "the flood",
+          "ipa": "le ˌinundatjˈon"
+        },
+        {
+          "target": "le divertimento",
+          "roman": "le divertimento",
+          "english": "the fun",
+          "ipa": "le dˌivertimˈento"
+        },
+        {
+          "target": "le berillos",
+          "roman": "le berillos",
+          "english": "the glasses",
+          "ipa": "le berˈilos"
+        },
+        {
+          "target": "Io vide le exigentia.",
+          "roman": "io vide le exigentia",
+          "english": "I see the demand.",
+          "ipa": "ˈio vˈide le ˌeksiɡˈentja"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

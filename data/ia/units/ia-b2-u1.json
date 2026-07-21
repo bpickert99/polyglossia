@@ -11,29 +11,34 @@
         {
           "target": "pensar",
           "roman": "pensar",
-          "english": "to think"
+          "english": "to think",
+          "ipa": "pensˈar"
         },
         {
           "target": "creder",
           "roman": "creder",
-          "english": "to believe"
+          "english": "to believe",
+          "ipa": "kredˈer"
         },
         {
           "target": "le opinion",
           "roman": "le opinion",
-          "english": "the opinion"
+          "english": "the opinion",
+          "ipa": "le ˌopinjˈon"
         },
         {
           "target": "Io pensa que Interlingua es facile.",
           "roman": "io pensa que interlingua es facile",
           "english": "I think that Interlingua is easy.",
-          "note": "que introduces a clause, like English 'that' — Interlingua just uses the normal verb form here, no subjunctive."
+          "note": "que introduces a clause, like English 'that' — Interlingua just uses the normal verb form here, no subjunctive.",
+          "ipa": "ˈio pˈensa kˈe ˌinterlˈiŋɡwa es fˈatsile"
         },
         {
           "target": "Secundo me, ...",
           "roman": "secundo me",
           "english": "In my opinion, ...",
-          "note": "secundo = according to."
+          "note": "secundo = according to.",
+          "ipa": "sekˈundo mˈe"
         }
       ],
       "grammar": {
@@ -48,28 +53,33 @@
         {
           "target": "esser de accordo",
           "roman": "esser de accordo",
-          "english": "to agree"
+          "english": "to agree",
+          "ipa": "esˈer de akˈordo"
         },
         {
           "target": "Io es de accordo.",
           "roman": "io es de accordo",
-          "english": "I agree."
+          "english": "I agree.",
+          "ipa": "ˈio es de akˈordo"
         },
         {
           "target": "Io non es de accordo.",
           "roman": "io non es de accordo",
-          "english": "I disagree."
+          "english": "I disagree.",
+          "ipa": "ˈio nˈon es de akˈordo"
         },
         {
           "target": "possibile",
           "roman": "possibile",
-          "english": "possible"
+          "english": "possible",
+          "ipa": "posˈibile"
         },
         {
           "target": "Es possibile que ille ha ration.",
           "roman": "es possibile que ille ha ration",
           "english": "It's possible that he's right.",
-          "note": "haber ration = to be right, literally 'to have reason' — the same haber-idiom as haber fame/haber sete."
+          "note": "haber ration = to be right, literally 'to have reason' — the same haber-idiom as haber fame/haber sete.",
+          "ipa": "es posˈibile kˈe ˈile ha ratjˈon"
         }
       ]
     }

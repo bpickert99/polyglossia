@@ -1,0 +1,46 @@
+{
+  "id": "ia-b1-u8",
+  "title": "Superlativos",
+  "level": "B1",
+  "summary": "The biggest, the smallest, the best.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le plus, le minus",
+      "teach": [
+        {
+          "target": "le plus",
+          "roman": "le plus",
+          "english": "the most",
+          "ipa": "le plˈus"
+        },
+        {
+          "target": "le minus",
+          "roman": "le minus",
+          "english": "the least",
+          "ipa": "le mˈinus"
+        },
+        {
+          "target": "Le catto es le plus parve.",
+          "roman": "le catto es le plus parve",
+          "english": "The cat is the smallest.",
+          "note": "Reuses parve/catto from Comparationes.",
+          "ipa": "le kˈato es le plˈus pˈarve"
+        },
+        {
+          "target": "Iste question es le minus importante.",
+          "roman": "iste question es le minus importante",
+          "english": "This question is the least important.",
+          "ipa": "ˈiste kwestjˈon es le mˈinus ˌimportˈante"
+        }
+      ],
+      "grammar": {
+        "title": "Superlatives",
+        "body": "Just add **le** in front of the comparative: plus grande (bigger) → le plus grande (the biggest). Same for minus: minus importante → le minus importante (the least important).\nNo separate superlative form to memorize — comparative + le does the whole job."
+      }
+    }
+  ],
+  "canDo": [
+    "Say something is the biggest, smallest, best, or least important"
+  ]
+}

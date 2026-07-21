@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-028",
+  "title": "Nomines 28",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 28 1",
+      "teach": [
+        {
+          "target": "le kilogramma",
+          "roman": "le kilogramma",
+          "english": "the kilogram",
+          "ipa": "le kˌiloɡrˈama"
+        },
+        {
+          "target": "le kilometro",
+          "roman": "le kilometro",
+          "english": "the kilometre",
+          "ipa": "le kilˈometro"
+        },
+        {
+          "target": "le bibliotheca",
+          "roman": "le bibliotheca",
+          "english": "the library",
+          "ipa": "le bˌibljotˈeka"
+        },
+        {
+          "target": "le objection",
+          "roman": "le objection",
+          "english": "the objection",
+          "ipa": "le ˌobʒektjˈon"
+        },
+        {
+          "target": "le passagero",
+          "roman": "le passagero",
+          "english": "the passenger",
+          "ipa": "le pˌasaʒˈero"
+        },
+        {
+          "target": "le politico",
+          "roman": "le politico",
+          "english": "the politician",
+          "ipa": "le polˈitiko"
+        },
+        {
+          "target": "le punition",
+          "roman": "le punition",
+          "english": "the punishment",
+          "ipa": "le pˌunitjˈon"
+        },
+        {
+          "target": "le quantitate",
+          "roman": "le quantitate",
+          "english": "the quantity",
+          "ipa": "le kwˌantitˈate"
+        },
+        {
+          "target": "Io vide le kilogramma.",
+          "roman": "io vide le kilogramma",
+          "english": "I see the kilogram.",
+          "ipa": "ˈio vˈide le kˌiloɡrˈama"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 28 2",
+      "teach": [
+        {
+          "target": "le alleviamento",
+          "roman": "le alleviamento",
+          "english": "the relief",
+          "ipa": "le ˌalevjamˈento"
+        },
+        {
+          "target": "le pauco commun",
+          "roman": "le pauco commun",
+          "english": "the scarce",
+          "ipa": "le pˈawko komˈun"
+        },
+        {
+          "target": "le universal",
+          "roman": "le universal",
+          "english": "the universal",
+          "ipa": "le ˌuniversˈal"
+        },
+        {
+          "target": "le debilitate",
+          "roman": "le debilitate",
+          "english": "the weakness",
+          "ipa": "le dˌebilitˈate"
+        },
+        {
+          "target": "le jardin zoologic",
+          "roman": "le jardin zoologic",
+          "english": "the zoo",
+          "ipa": "le ʒardˈin zˌoolˈoɡik"
+        },
+        {
+          "target": "le al estraniero",
+          "roman": "le al estraniero",
+          "english": "the abroad",
+          "ipa": "le al ˌestranjˈero"
+        },
+        {
+          "target": "le to secundo",
+          "roman": "le to secundo",
+          "english": "the according",
+          "ipa": "le tˈo sekˈundo"
+        },
+        {
+          "target": "le avantiamento",
+          "roman": "le avantiamento",
+          "english": "the advance",
+          "ipa": "le ˌavantjamˈento"
+        },
+        {
+          "target": "Io vide le alleviamento.",
+          "roman": "io vide le alleviamento",
+          "english": "I see the relief.",
+          "ipa": "ˈio vˈide le ˌalevjamˈento"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 28 3",
+      "teach": [
+        {
+          "target": "le color",
+          "roman": "le color",
+          "english": "the paint / colour",
+          "ipa": "le kolˈor"
+        },
+        {
+          "target": "le concurso",
+          "roman": "le concurso",
+          "english": "the competition",
+          "ipa": "le konkˈurso"
+        },
+        {
+          "target": "le desiro",
+          "roman": "le desiro",
+          "english": "the wish / desire",
+          "ipa": "le desˈiro"
+        },
+        {
+          "target": "le differente",
+          "roman": "le differente",
+          "english": "the different",
+          "ipa": "le dˌiferˈente"
+        },
+        {
+          "target": "le discoperta",
+          "roman": "le discoperta",
+          "english": "the discovery",
+          "ipa": "le dˌiskopˈerta"
+        },
+        {
+          "target": "le motor",
+          "roman": "le motor",
+          "english": "the motor / engine",
+          "ipa": "le motˈor"
+        },
+        {
+          "target": "le fide",
+          "roman": "le fide",
+          "english": "the faith / loyalty",
+          "ipa": "le fˈide"
+        },
+        {
+          "target": "le dece-quatro",
+          "roman": "le dece-quatro",
+          "english": "the fourteen",
+          "ipa": "le dˈetsekwˈatro"
+        },
+        {
+          "target": "Io vide le color.",
+          "roman": "io vide le color",
+          "english": "I see the paint / colour.",
+          "ipa": "ˈio vˈide le kolˈor"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 28 4",
+      "teach": [
+        {
+          "target": "le influentia",
+          "roman": "le influentia",
+          "english": "the influence",
+          "ipa": "le inflwˈentja"
+        },
+        {
+          "target": "le ingerer se",
+          "roman": "le ingerer se",
+          "english": "the interfere",
+          "ipa": "le ˌiŋɡerˈer sˈe"
+        },
+        {
+          "target": "le perdita",
+          "roman": "le perdita",
+          "english": "the loss / waste",
+          "ipa": "le pˈerdita"
+        },
+        {
+          "target": "le machineria",
+          "roman": "le machineria",
+          "english": "the machinery",
+          "ipa": "le mˌakinerˈia"
+        },
+        {
+          "target": "le membro",
+          "roman": "le membro",
+          "english": "the limb / member",
+          "ipa": "le mˈembro"
+        },
+        {
+          "target": "le infortuna",
+          "roman": "le infortuna",
+          "english": "the misfortune",
+          "ipa": "le ˌinfortˈuna"
+        },
+        {
+          "target": "le permanente",
+          "roman": "le permanente",
+          "english": "the permanent",
+          "ipa": "le pˌermanˈente"
+        },
+        {
+          "target": "le prejudicio",
+          "roman": "le prejudicio",
+          "english": "the prejudice",
+          "ipa": "le prˌeʒudˈitsjo"
+        },
+        {
+          "target": "Io vide le influentia.",
+          "roman": "io vide le influentia",
+          "english": "I see the influence.",
+          "ipa": "ˈio vˈide le inflwˈentja"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

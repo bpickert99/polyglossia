@@ -1,0 +1,78 @@
+{
+  "id": "ia-a2-u11",
+  "title": "Demonstrativos",
+  "level": "A2",
+  "summary": "This, that, this one, that one.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Iste e ille",
+      "teach": [
+        {
+          "target": "iste",
+          "roman": "iste",
+          "english": "this",
+          "ipa": "ˈiste"
+        },
+        {
+          "target": "ille",
+          "roman": "ille",
+          "english": "that",
+          "note": "Same word as 'he' — context tells them apart, just like tu above.",
+          "ipa": "ˈile"
+        },
+        {
+          "target": "Iste can es mi can.",
+          "roman": "iste can es mi can",
+          "english": "This dog is my dog.",
+          "ipa": "ˈiste kˈan es mi kˈan"
+        },
+        {
+          "target": "Ille libro es interessante.",
+          "roman": "ille libro es interessante",
+          "english": "That book is interesting.",
+          "ipa": "ˈile lˈibro es ˌinteresˈante"
+        }
+      ],
+      "grammar": {
+        "title": "This vs. that",
+        "body": "**iste** (this) and **ille** (that) go before the noun, invariable as always.\nWithout a noun, use **isto** / **illo** instead: Isto es bon (this is good), Illo es interessante (that's interesting)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Isto e illo",
+      "teach": [
+        {
+          "target": "isto",
+          "roman": "isto",
+          "english": "this (one)",
+          "note": "Stands alone, without a noun.",
+          "ipa": "ˈisto"
+        },
+        {
+          "target": "illo",
+          "roman": "illo",
+          "english": "that (one)",
+          "ipa": "ˈilo"
+        },
+        {
+          "target": "Isto es multo bon.",
+          "roman": "isto es multo bon",
+          "english": "This is very good.",
+          "ipa": "ˈisto es mˈulto bˈon"
+        },
+        {
+          "target": "Que es illo?",
+          "roman": "que es illo",
+          "english": "What is that?",
+          "ipa": "kˈe es ˈilo"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Point out 'this' vs 'that'",
+    "Say 'this one' or 'that one' without repeating the noun"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-adj-001",
+  "title": "Adjectivos 1",
+  "level": "B1",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 1 1",
+      "teach": [
+        {
+          "target": "sic",
+          "roman": "sic",
+          "english": "dry",
+          "ipa": "sˈik"
+        },
+        {
+          "target": "tal",
+          "roman": "tal",
+          "english": "such",
+          "ipa": "tˈal"
+        },
+        {
+          "target": "omne",
+          "roman": "omne",
+          "english": "all",
+          "ipa": "ˈomne"
+        },
+        {
+          "target": "apte",
+          "roman": "apte",
+          "english": "fit",
+          "ipa": "ˈapte"
+        },
+        {
+          "target": "dur",
+          "roman": "dur",
+          "english": "hard",
+          "ipa": "dˈur"
+        },
+        {
+          "target": "basse",
+          "roman": "basse",
+          "english": "low",
+          "ipa": "bˈase"
+        },
+        {
+          "target": "cata",
+          "roman": "cata",
+          "english": "each",
+          "ipa": "kˈata"
+        },
+        {
+          "target": "avar",
+          "roman": "avar",
+          "english": "mean",
+          "ipa": "avˈar"
+        },
+        {
+          "target": "Le casa es sic.",
+          "roman": "le casa es sic",
+          "english": "The house is dry.",
+          "ipa": "le kˈasa es sˈik"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 1 2",
+      "teach": [
+        {
+          "target": "clar",
+          "roman": "clar",
+          "english": "clear",
+          "ipa": "klˈar"
+        },
+        {
+          "target": "tarde",
+          "roman": "tarde",
+          "english": "late",
+          "ipa": "tˈarde"
+        },
+        {
+          "target": "none",
+          "roman": "none",
+          "english": "ninth",
+          "ipa": "nˈone"
+        },
+        {
+          "target": "sorta",
+          "roman": "sorta",
+          "english": "sort",
+          "ipa": "sˈorta"
+        },
+        {
+          "target": "debite",
+          "roman": "debite",
+          "english": "due",
+          "ipa": "dˈebite"
+        },
+        {
+          "target": "firme",
+          "roman": "firme",
+          "english": "firm",
+          "ipa": "fˈirme"
+        },
+        {
+          "target": "juste",
+          "roman": "juste",
+          "english": "just",
+          "ipa": "ʒˈuste"
+        },
+        {
+          "target": "multe",
+          "roman": "multe",
+          "english": "much",
+          "ipa": "mˈulte"
+        },
+        {
+          "target": "Le can es clar.",
+          "roman": "le can es clar",
+          "english": "The dog is clear.",
+          "ipa": "le kˈan es klˈar"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 1 3",
+      "teach": [
+        {
+          "target": "secur",
+          "roman": "secur",
+          "english": "safe",
+          "ipa": "sekˈur"
+        },
+        {
+          "target": "humide",
+          "roman": "humide",
+          "english": "wet",
+          "ipa": "hˈumide"
+        },
+        {
+          "target": "vacue",
+          "roman": "vacue",
+          "english": "empty",
+          "ipa": "vˈakwe"
+        },
+        {
+          "target": "libere",
+          "roman": "libere",
+          "english": "free",
+          "ipa": "lˈibere"
+        },
+        {
+          "target": "grave",
+          "roman": "grave",
+          "english": "grave",
+          "ipa": "ɡrˈave"
+        },
+        {
+          "target": "cave",
+          "roman": "cave",
+          "english": "hollow",
+          "ipa": "kˈave"
+        },
+        {
+          "target": "ultime",
+          "roman": "ultime",
+          "english": "last",
+          "ipa": "ˈultime"
+        },
+        {
+          "target": "ronde",
+          "roman": "ronde",
+          "english": "round",
+          "ipa": "rˈonde"
+        },
+        {
+          "target": "Le citate es secur.",
+          "roman": "le citate es secur",
+          "english": "The city is safe.",
+          "ipa": "le tsitˈate es sekˈur"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adjectivos 1 4",
+      "teach": [
+        {
+          "target": "human",
+          "roman": "human",
+          "english": "human",
+          "ipa": "humˈan"
+        },
+        {
+          "target": "pejor",
+          "roman": "pejor",
+          "english": "worse",
+          "ipa": "peʒˈor"
+        },
+        {
+          "target": "distante",
+          "roman": "distante",
+          "english": "far",
+          "ipa": "distˈante"
+        },
+        {
+          "target": "legal",
+          "roman": "legal",
+          "english": "lawful",
+          "ipa": "leɡˈal"
+        },
+        {
+          "target": "mascule",
+          "roman": "mascule",
+          "english": "male",
+          "ipa": "mˈaskule"
+        },
+        {
+          "target": "proxime",
+          "roman": "proxime",
+          "english": "next",
+          "ipa": "prˈoksime"
+        },
+        {
+          "target": "lateral",
+          "roman": "lateral",
+          "english": "side",
+          "ipa": "lˌaterˈal"
+        },
+        {
+          "target": "de seta",
+          "roman": "de seta",
+          "english": "silk",
+          "ipa": "de sˈeta"
+        },
+        {
+          "target": "Le libro es human.",
+          "roman": "le libro es human",
+          "english": "The book is human.",
+          "ipa": "le lˈibro es humˈan"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adjectivos (B1-band vocabulary)"
+  ]
+}

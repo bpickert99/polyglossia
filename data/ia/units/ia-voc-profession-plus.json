@@ -1,0 +1,113 @@
+{
+  "id": "ia-voc-profession-plus",
+  "title": "Profession plus",
+  "level": "B1",
+  "summary": "More professions.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Profession plus 1",
+      "teach": [
+        {
+          "target": "le advocato",
+          "roman": "le advocato",
+          "english": "the lawyer",
+          "ipa": "le ˌadvokˈato"
+        },
+        {
+          "target": "le judice",
+          "roman": "le judice",
+          "english": "the judge",
+          "ipa": "le ʒˈuditse"
+        },
+        {
+          "target": "le soldato",
+          "roman": "le soldato",
+          "english": "the soldier",
+          "ipa": "le soldˈato"
+        },
+        {
+          "target": "le marinero",
+          "roman": "le marinero",
+          "english": "the sailor",
+          "ipa": "le mˌarinˈero"
+        },
+        {
+          "target": "le fermero",
+          "roman": "le fermero",
+          "english": "the farmer",
+          "ipa": "le fermˈero"
+        },
+        {
+          "target": "le gerente",
+          "roman": "le gerente",
+          "english": "the manager",
+          "ipa": "le ɡerˈente"
+        },
+        {
+          "target": "le secretario",
+          "roman": "le secretario",
+          "english": "the secretary",
+          "ipa": "le sˌekretˈarjo"
+        },
+        {
+          "target": "Io vide le advocato.",
+          "roman": "io vide le advocato",
+          "english": "I see the lawyer.",
+          "ipa": "ˈio vˈide le ˌadvokˈato"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Profession plus 2",
+      "teach": [
+        {
+          "target": "le infirmera",
+          "roman": "le infirmera",
+          "english": "the nurse",
+          "ipa": "le ˌinfirmˈera"
+        },
+        {
+          "target": "le prestre",
+          "roman": "le prestre",
+          "english": "the priest",
+          "ipa": "le prˈestre"
+        },
+        {
+          "target": "le rege",
+          "roman": "le rege",
+          "english": "the king",
+          "ipa": "le rˈeɡe"
+        },
+        {
+          "target": "le regina",
+          "roman": "le regina",
+          "english": "the queen",
+          "ipa": "le reɡˈina"
+        },
+        {
+          "target": "le officiero",
+          "roman": "le officiero",
+          "english": "the officer",
+          "ipa": "le ˌofitsjˈero"
+        },
+        {
+          "target": "le actor",
+          "roman": "le actor",
+          "english": "the actor",
+          "ipa": "le aktˈor"
+        },
+        {
+          "target": "Io vide le infirmera.",
+          "roman": "io vide le infirmera",
+          "english": "I see the nurse.",
+          "ipa": "ˈio vˈide le ˌinfirmˈera"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 13 more words about more professions"
+  ]
+}

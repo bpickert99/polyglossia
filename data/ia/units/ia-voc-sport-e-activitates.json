@@ -1,0 +1,111 @@
+{
+  "id": "ia-voc-sport-e-activitates",
+  "title": "Sport e activitates",
+  "level": "B1",
+  "summary": "Sports and leisure.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Sport e activitates 1",
+      "teach": [
+        {
+          "target": "le sport",
+          "roman": "le sport",
+          "english": "the sport",
+          "ipa": "le spˈort"
+        },
+        {
+          "target": "le football",
+          "roman": "le football",
+          "english": "the football",
+          "ipa": "le futbˈol"
+        },
+        {
+          "target": "le dansa",
+          "roman": "le dansa",
+          "english": "the dance",
+          "ipa": "le dˈansa"
+        },
+        {
+          "target": "natar",
+          "roman": "natar",
+          "english": "to swim",
+          "note": "io nata — present tense, infinitive minus -r.",
+          "ipa": "natˈar"
+        },
+        {
+          "target": "currer",
+          "roman": "currer",
+          "english": "to run",
+          "note": "io curre — present tense, infinitive minus -r.",
+          "ipa": "kurˈer"
+        },
+        {
+          "target": "cantar",
+          "roman": "cantar",
+          "english": "to sing",
+          "note": "io canta — present tense, infinitive minus -r.",
+          "ipa": "kantˈar"
+        },
+        {
+          "target": "le pellicula",
+          "roman": "le pellicula",
+          "english": "the film",
+          "ipa": "le pelˈikula"
+        },
+        {
+          "target": "Io nata.",
+          "roman": "io nata",
+          "english": "I swim.",
+          "ipa": "ˈio nˈata"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Sport e activitates 2",
+      "teach": [
+        {
+          "target": "le theatro",
+          "roman": "le theatro",
+          "english": "the theatre",
+          "ipa": "le teˈatro"
+        },
+        {
+          "target": "le balla",
+          "roman": "le balla",
+          "english": "the ball",
+          "ipa": "le bˈala"
+        },
+        {
+          "target": "le equipa",
+          "roman": "le equipa",
+          "english": "the team",
+          "ipa": "le ekwˈipa"
+        },
+        {
+          "target": "vincer",
+          "roman": "vincer",
+          "english": "to win",
+          "note": "io vince — present tense, infinitive minus -r.",
+          "ipa": "vintsˈer"
+        },
+        {
+          "target": "le exercitio",
+          "roman": "le exercitio",
+          "english": "the exercise",
+          "ipa": "le ˌeksertsˈitjo"
+        },
+        {
+          "target": "Io vince.",
+          "roman": "io vince",
+          "english": "I win.",
+          "ipa": "ˈio vˈintse"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 12 more words about sports and leisure"
+  ]
+}

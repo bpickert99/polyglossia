@@ -1,0 +1,90 @@
+{
+  "id": "ia-voc-sanitate",
+  "title": "Sanitate",
+  "level": "B1",
+  "summary": "Health and illness.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Sanitate 1",
+      "teach": [
+        {
+          "target": "le dolor",
+          "roman": "le dolor",
+          "english": "the pain",
+          "ipa": "le dolˈor"
+        },
+        {
+          "target": "le medicamento",
+          "roman": "le medicamento",
+          "english": "the medicine",
+          "ipa": "le mˌedikamˈento"
+        },
+        {
+          "target": "le hospital",
+          "roman": "le hospital",
+          "english": "the hospital",
+          "ipa": "le hˌospitˈal"
+        },
+        {
+          "target": "le febre",
+          "roman": "le febre",
+          "english": "the fever",
+          "ipa": "le fˈebre"
+        },
+        {
+          "target": "le san",
+          "roman": "le san",
+          "english": "the healthy",
+          "ipa": "le sˈan"
+        },
+        {
+          "target": "le mal de capite",
+          "roman": "le mal de capite",
+          "english": "the headache",
+          "ipa": "le mˈal de kˈapite"
+        },
+        {
+          "target": "le fatigate",
+          "roman": "le fatigate",
+          "english": "the tired",
+          "ipa": "le fˌatiɡˈate"
+        },
+        {
+          "target": "Io vide le dolor.",
+          "roman": "io vide le dolor",
+          "english": "I see the pain.",
+          "ipa": "ˈio vˈide le dolˈor"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Sanitate 2",
+      "teach": [
+        {
+          "target": "le reposo",
+          "roman": "le reposo",
+          "english": "the rest",
+          "ipa": "le repˈoso"
+        },
+        {
+          "target": "respirar",
+          "roman": "respirar",
+          "english": "to breathe",
+          "note": "io respira — present tense, infinitive minus -r.",
+          "ipa": "rˌespirˈar"
+        },
+        {
+          "target": "Io respira.",
+          "roman": "io respira",
+          "english": "I breathe.",
+          "ipa": "ˈio respˈira"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 9 more words about health and illness"
+  ]
+}

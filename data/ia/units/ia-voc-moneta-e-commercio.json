@@ -1,0 +1,145 @@
+{
+  "id": "ia-voc-moneta-e-commercio",
+  "title": "Moneta e commercio",
+  "level": "B1",
+  "summary": "Money and business.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Moneta e commercio 1",
+      "teach": [
+        {
+          "target": "le ripa",
+          "roman": "le ripa",
+          "english": "the bank",
+          "ipa": "le rˈipa"
+        },
+        {
+          "target": "le precio",
+          "roman": "le precio",
+          "english": "the price",
+          "ipa": "le prˈetsjo"
+        },
+        {
+          "target": "comptar",
+          "roman": "comptar",
+          "english": "to buy",
+          "note": "io compta — present tense, infinitive minus -r.",
+          "ipa": "komptˈar"
+        },
+        {
+          "target": "vender",
+          "roman": "vender",
+          "english": "to sell",
+          "note": "io vende — present tense, infinitive minus -r.",
+          "ipa": "vendˈer"
+        },
+        {
+          "target": "le paga",
+          "roman": "le paga",
+          "english": "the pay",
+          "ipa": "le pˈaɡa"
+        },
+        {
+          "target": "le costo",
+          "roman": "le costo",
+          "english": "the cost",
+          "ipa": "le kˈosto"
+        },
+        {
+          "target": "le boteca",
+          "roman": "le boteca",
+          "english": "the shop",
+          "ipa": "le botˈeka"
+        },
+        {
+          "target": "Io compta.",
+          "roman": "io compta",
+          "english": "I buy.",
+          "ipa": "ˈio kˈompta"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Moneta e commercio 2",
+      "teach": [
+        {
+          "target": "le mercato",
+          "roman": "le mercato",
+          "english": "the market",
+          "ipa": "le merkˈato"
+        },
+        {
+          "target": "le affaires",
+          "roman": "le affaires",
+          "english": "the business",
+          "ipa": "le afˈers"
+        },
+        {
+          "target": "le taxa",
+          "roman": "le taxa",
+          "english": "the tax",
+          "ipa": "le tˈaksa"
+        },
+        {
+          "target": "le salario",
+          "roman": "le salario",
+          "english": "the salary",
+          "ipa": "le salˈarjo"
+        },
+        {
+          "target": "le location",
+          "roman": "le location",
+          "english": "the rent",
+          "ipa": "le lˌokatjˈon"
+        },
+        {
+          "target": "le povre",
+          "roman": "le povre",
+          "english": "the poor",
+          "ipa": "le pˈovre"
+        },
+        {
+          "target": "le numisma",
+          "roman": "le numisma",
+          "english": "the coin",
+          "ipa": "le numˈisma"
+        },
+        {
+          "target": "Io vide le mercato.",
+          "roman": "io vide le mercato",
+          "english": "I see the market.",
+          "ipa": "ˈio vˈide le merkˈato"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Moneta e commercio 3",
+      "teach": [
+        {
+          "target": "le debita",
+          "roman": "le debita",
+          "english": "the debt",
+          "ipa": "le dˈebita"
+        },
+        {
+          "target": "le profito",
+          "roman": "le profito",
+          "english": "the profit",
+          "ipa": "le profˈito"
+        },
+        {
+          "target": "Io vide le debita.",
+          "roman": "io vide le debita",
+          "english": "I see the debt.",
+          "ipa": "ˈio vˈide le dˈebita"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 16 more words about money and business"
+  ]
+}

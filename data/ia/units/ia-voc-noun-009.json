@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-009",
+  "title": "Nomines 9",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 9 1",
+      "teach": [
+        {
+          "target": "le pectine",
+          "roman": "le pectine",
+          "english": "the comb",
+          "ipa": "le pˈektine"
+        },
+        {
+          "target": "le corona",
+          "roman": "le corona",
+          "english": "the crown",
+          "ipa": "le korˈona"
+        },
+        {
+          "target": "le incision",
+          "roman": "le incision",
+          "english": "the cut",
+          "ipa": "le ˌintsisjˈon"
+        },
+        {
+          "target": "le moda",
+          "roman": "le moda",
+          "english": "the fashion",
+          "ipa": "le mˈoda"
+        },
+        {
+          "target": "le favor",
+          "roman": "le favor",
+          "english": "the favour",
+          "ipa": "le favˈor"
+        },
+        {
+          "target": "le quadro",
+          "roman": "le quadro",
+          "english": "the frame",
+          "ipa": "le kwˈadro"
+        },
+        {
+          "target": "le gratia",
+          "roman": "le gratia",
+          "english": "the grace",
+          "ipa": "le ɡrˈatja"
+        },
+        {
+          "target": "le gruppo",
+          "roman": "le gruppo",
+          "english": "the group",
+          "ipa": "le ɡrˈupo"
+        },
+        {
+          "target": "Io vide le pectine.",
+          "roman": "io vide le pectine",
+          "english": "I see the comb.",
+          "ipa": "ˈio vˈide le pˈektine"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 9 2",
+      "teach": [
+        {
+          "target": "le guarda",
+          "roman": "le guarda",
+          "english": "the guard",
+          "ipa": "le ɡwˈarda"
+        },
+        {
+          "target": "le honor",
+          "roman": "le honor",
+          "english": "the honour",
+          "ipa": "le honˈor"
+        },
+        {
+          "target": "le hospice",
+          "roman": "le hospice",
+          "english": "the host",
+          "ipa": "le hospˈitse"
+        },
+        {
+          "target": "le scale",
+          "roman": "le scale",
+          "english": "the ladder",
+          "ipa": "le skˈale"
+        },
+        {
+          "target": "le camion",
+          "roman": "le camion",
+          "english": "the lorry",
+          "ipa": "le kamjˈon"
+        },
+        {
+          "target": "le amante",
+          "roman": "le amante",
+          "english": "the lover",
+          "ipa": "le amˈante"
+        },
+        {
+          "target": "le nepto",
+          "roman": "le nepto",
+          "english": "the nephew",
+          "ipa": "le nˈepto"
+        },
+        {
+          "target": "le nobile",
+          "roman": "le nobile",
+          "english": "the noble",
+          "ipa": "le nˈobile"
+        },
+        {
+          "target": "Io vide le guarda.",
+          "roman": "io vide le guarda",
+          "english": "I see the guard.",
+          "ipa": "ˈio vˈide le ɡwˈarda"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 9 3",
+      "teach": [
+        {
+          "target": "le meridie",
+          "roman": "le meridie",
+          "english": "the noon",
+          "ipa": "le merˈidje"
+        },
+        {
+          "target": "le ordine",
+          "roman": "le ordine",
+          "english": "the order",
+          "ipa": "le ˈordine"
+        },
+        {
+          "target": "le organo",
+          "roman": "le organo",
+          "english": "the organ",
+          "ipa": "le ˈorɡano"
+        },
+        {
+          "target": "le pressa",
+          "roman": "le pressa",
+          "english": "the press",
+          "ipa": "le prˈesa"
+        },
+        {
+          "target": "le premio",
+          "roman": "le premio",
+          "english": "the prize",
+          "ipa": "le prˈemjo"
+        },
+        {
+          "target": "le grandor",
+          "roman": "le grandor",
+          "english": "the size",
+          "ipa": "le ɡrandˈor"
+        },
+        {
+          "target": "le sclavo",
+          "roman": "le sclavo",
+          "english": "the slave",
+          "ipa": "le sklˈavo"
+        },
+        {
+          "target": "le stadio",
+          "roman": "le stadio",
+          "english": "the stage",
+          "ipa": "le stˈadjo"
+        },
+        {
+          "target": "Io vide le meridie.",
+          "roman": "io vide le meridie",
+          "english": "I see the noon.",
+          "ipa": "ˈio vˈide le merˈidje"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 9 4",
+      "teach": [
+        {
+          "target": "le timbro",
+          "roman": "le timbro",
+          "english": "the stamp",
+          "ipa": "le tˈimbro"
+        },
+        {
+          "target": "le studio",
+          "roman": "le studio",
+          "english": "the study",
+          "ipa": "le stˈudjo"
+        },
+        {
+          "target": "le termino",
+          "roman": "le termino",
+          "english": "the term",
+          "ipa": "le tˈermino"
+        },
+        {
+          "target": "le spisse",
+          "roman": "le spisse",
+          "english": "the thick",
+          "ipa": "le spˈise"
+        },
+        {
+          "target": "le visita",
+          "roman": "le visita",
+          "english": "the visit",
+          "ipa": "le visˈita"
+        },
+        {
+          "target": "le largor",
+          "roman": "le largor",
+          "english": "the width",
+          "ipa": "le larɡˈor"
+        },
+        {
+          "target": "le salvage",
+          "roman": "le salvage",
+          "english": "the wild",
+          "ipa": "le salvˈaʒe"
+        },
+        {
+          "target": "le juvene",
+          "roman": "le juvene",
+          "english": "the young",
+          "ipa": "le ʒˈuvene"
+        },
+        {
+          "target": "Io vide le timbro.",
+          "roman": "io vide le timbro",
+          "english": "I see the stamp.",
+          "ipa": "ˈio vˈide le tˈimbro"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

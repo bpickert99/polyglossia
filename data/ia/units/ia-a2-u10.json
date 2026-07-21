@@ -1,0 +1,90 @@
+{
+  "id": "ia-a2-u10",
+  "title": "Possessivos",
+  "level": "A2",
+  "summary": "My, your, his, her, our, their.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Mi, tu, su",
+      "teach": [
+        {
+          "target": "mi",
+          "roman": "mi",
+          "english": "my",
+          "ipa": "mˈi"
+        },
+        {
+          "target": "tu",
+          "roman": "tu",
+          "english": "your (informal)",
+          "note": "Same word as 'you' — context makes it clear which one is meant.",
+          "ipa": "tˈu"
+        },
+        {
+          "target": "su",
+          "roman": "su",
+          "english": "his / her / its / your (formal)",
+          "note": "One form covers all three — 'su nomine' can mean his, her, its, or your (formal) name depending on context.",
+          "ipa": "sˈu"
+        },
+        {
+          "target": "Mi can es grande.",
+          "roman": "mi can es grande",
+          "english": "My dog is big.",
+          "ipa": "mi kˈan es ɡrˈande"
+        },
+        {
+          "target": "Su nomine es Anna.",
+          "roman": "su nomine es anna",
+          "english": "Her name is Anna.",
+          "ipa": "su nˈomine es ˈana"
+        }
+      ],
+      "grammar": {
+        "title": "Possessives",
+        "body": "Possessives go **before** the noun and never change form: mi patre, mi matre, mi amicos — one word, no agreement, whatever's owned.\nYou've actually been reading these all along (mi familia, su nomine) — this just makes them official vocabulary."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Nostre, vostre, lor",
+      "teach": [
+        {
+          "target": "nostre",
+          "roman": "nostre",
+          "english": "our",
+          "ipa": "nˈostre"
+        },
+        {
+          "target": "vostre",
+          "roman": "vostre",
+          "english": "your (plural/formal)",
+          "ipa": "vˈostre"
+        },
+        {
+          "target": "lor",
+          "roman": "lor",
+          "english": "their",
+          "ipa": "lˈor"
+        },
+        {
+          "target": "Nostre familia es grande.",
+          "roman": "nostre familia es grande",
+          "english": "Our family is big.",
+          "ipa": "nˌostre famˈilja es ɡrˈande"
+        },
+        {
+          "target": "Lor casa es nove.",
+          "roman": "lor casa es nove",
+          "english": "Their house is new.",
+          "ipa": "lor kˈasa es nˈove"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Say something is mine, yours, or someone else's",
+    "Talk about our, your, or their things"
+  ]
+}

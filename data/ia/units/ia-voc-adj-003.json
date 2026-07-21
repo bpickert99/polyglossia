@@ -1,0 +1,239 @@
+{
+  "id": "ia-voc-adj-003",
+  "title": "Adjectivos 3",
+  "level": "B2",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 3 1",
+      "teach": [
+        {
+          "target": "critico",
+          "roman": "critico",
+          "english": "critic",
+          "ipa": "krˈitiko"
+        },
+        {
+          "target": "directe",
+          "roman": "directe",
+          "english": "direct",
+          "ipa": "dirˈekte"
+        },
+        {
+          "target": "celebre",
+          "roman": "celebre",
+          "english": "famous",
+          "ipa": "tsˈelebre"
+        },
+        {
+          "target": "corpulente",
+          "roman": "corpulente",
+          "english": "fat",
+          "ipa": "kˌorpulˈente"
+        },
+        {
+          "target": "inope",
+          "roman": "inope",
+          "english": "helpless",
+          "ipa": "ˈinope"
+        },
+        {
+          "target": "del nord",
+          "roman": "del nord",
+          "english": "north",
+          "ipa": "del nˈord"
+        },
+        {
+          "target": "feminin",
+          "roman": "feminin",
+          "english": "female",
+          "ipa": "fˌeminˈin"
+        },
+        {
+          "target": "liquide",
+          "roman": "liquide",
+          "english": "liquid",
+          "ipa": "lˈikwide"
+        },
+        {
+          "target": "Le casa es critico.",
+          "roman": "le casa es critico",
+          "english": "The house is critic.",
+          "ipa": "le kˈasa es krˈitiko"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 3 2",
+      "teach": [
+        {
+          "target": "secrete",
+          "roman": "secrete",
+          "english": "secret",
+          "ipa": "sekrˈete"
+        },
+        {
+          "target": "recte",
+          "roman": "recte",
+          "english": "straight",
+          "ipa": "rˈekte"
+        },
+        {
+          "target": "de palea",
+          "roman": "de palea",
+          "english": "straw",
+          "ipa": "de palˈea"
+        },
+        {
+          "target": "critic",
+          "roman": "critic",
+          "english": "critical",
+          "ipa": "krˈitik"
+        },
+        {
+          "target": "curiose",
+          "roman": "curiose",
+          "english": "curious",
+          "ipa": "kurjˈose"
+        },
+        {
+          "target": "private",
+          "roman": "private",
+          "english": "private",
+          "ipa": "privˈate"
+        },
+        {
+          "target": "seriose",
+          "roman": "seriose",
+          "english": "serious",
+          "ipa": "serjˈose"
+        },
+        {
+          "target": "Le can es quarte.",
+          "roman": "le can es quarte",
+          "english": "The dog is quarter.",
+          "ipa": "le kˈan es kwˈarte"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 3 3",
+      "teach": [
+        {
+          "target": "septime",
+          "roman": "septime",
+          "english": "seventh",
+          "ipa": "sˈeptime"
+        },
+        {
+          "target": "quadrate",
+          "roman": "quadrate",
+          "english": "square",
+          "ipa": "kwadrˈate"
+        },
+        {
+          "target": "normal",
+          "roman": "normal",
+          "english": "standard",
+          "ipa": "normˈal"
+        },
+        {
+          "target": "inutile",
+          "roman": "inutile",
+          "english": "useless",
+          "ipa": "ˌinutˈile"
+        },
+        {
+          "target": "african",
+          "roman": "african",
+          "english": "african",
+          "ipa": "ˌafrikˈan"
+        },
+        {
+          "target": "alte voce",
+          "roman": "alte voce",
+          "english": "aloud",
+          "ipa": "ˈalte vˈotse"
+        },
+        {
+          "target": "incostose",
+          "roman": "incostose",
+          "english": "cheap",
+          "ipa": "ˌinkostˈose"
+        },
+        {
+          "target": "medical",
+          "roman": "medical",
+          "english": "medical",
+          "ipa": "mˌedikˈal"
+        },
+        {
+          "target": "Le citate es septime.",
+          "roman": "le citate es septime",
+          "english": "The city is seventh.",
+          "ipa": "le tsitˈate es sˈeptime"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adjectivos 3 4",
+      "teach": [
+        {
+          "target": "musical",
+          "roman": "musical",
+          "english": "musical",
+          "ipa": "mˌusikˈal"
+        },
+        {
+          "target": "plus basse",
+          "roman": "plus basse",
+          "english": "lower",
+          "ipa": "plˈus bˈase"
+        },
+        {
+          "target": "perfecte",
+          "roman": "perfecte",
+          "english": "perfect",
+          "ipa": "perfˈekte"
+        },
+        {
+          "target": "presente",
+          "roman": "presente",
+          "english": "present",
+          "ipa": "presˈente"
+        },
+        {
+          "target": "egoistic",
+          "roman": "egoistic",
+          "english": "selfish",
+          "ipa": "ˌeɡoɪstˈik"
+        },
+        {
+          "target": "subjecte",
+          "roman": "subjecte",
+          "english": "subject",
+          "ipa": "subʒˈekte"
+        },
+        {
+          "target": "fundo",
+          "roman": "fundo",
+          "english": "thoroughly",
+          "ipa": "fˈundo"
+        },
+        {
+          "target": "Le libro es musical.",
+          "roman": "le libro es musical",
+          "english": "The book is musical.",
+          "ipa": "le lˈibro es mˌusikˈal"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adjectivos (B2-band vocabulary)"
+  ]
+}

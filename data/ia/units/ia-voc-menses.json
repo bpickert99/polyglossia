@@ -1,0 +1,113 @@
+{
+  "id": "ia-voc-menses",
+  "title": "Menses",
+  "level": "A2",
+  "summary": "Months of the year.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Menses 1",
+      "teach": [
+        {
+          "target": "le januario",
+          "roman": "le januario",
+          "english": "the january",
+          "ipa": "le ʒanwˈarjo"
+        },
+        {
+          "target": "le februario",
+          "roman": "le februario",
+          "english": "the february",
+          "ipa": "le febrwˈarjo"
+        },
+        {
+          "target": "le marcha",
+          "roman": "le marcha",
+          "english": "the march",
+          "ipa": "le mˈarʃa"
+        },
+        {
+          "target": "le april",
+          "roman": "le april",
+          "english": "the april",
+          "ipa": "le aprˈil"
+        },
+        {
+          "target": "le junio",
+          "roman": "le junio",
+          "english": "the june",
+          "ipa": "le ʒˈunjo"
+        },
+        {
+          "target": "julio",
+          "roman": "julio",
+          "english": "july",
+          "ipa": "ʒˈuljo"
+        },
+        {
+          "target": "le augusto",
+          "roman": "le augusto",
+          "english": "the august",
+          "ipa": "le aʊɡˈusto"
+        },
+        {
+          "target": "Io vide le januario.",
+          "roman": "io vide le januario",
+          "english": "I see the january.",
+          "ipa": "ˈio vˈide le ʒanwˈarjo"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Menses 2",
+      "teach": [
+        {
+          "target": "le septembre",
+          "roman": "le septembre",
+          "english": "the september",
+          "ipa": "le septˈembre"
+        },
+        {
+          "target": "le octobre",
+          "roman": "le octobre",
+          "english": "the october",
+          "ipa": "le oktˈobre"
+        },
+        {
+          "target": "le novembre",
+          "roman": "le novembre",
+          "english": "the november",
+          "ipa": "le novˈembre"
+        },
+        {
+          "target": "le decembre",
+          "roman": "le decembre",
+          "english": "the december",
+          "ipa": "le detsˈembre"
+        },
+        {
+          "target": "le mense",
+          "roman": "le mense",
+          "english": "the month",
+          "ipa": "le mˈense"
+        },
+        {
+          "target": "le saison",
+          "roman": "le saison",
+          "english": "the season",
+          "ipa": "le sezˈon"
+        },
+        {
+          "target": "Io vide le septembre.",
+          "roman": "io vide le septembre",
+          "english": "I see the september.",
+          "ipa": "ˈio vˈide le septˈembre"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 13 more words about months of the year"
+  ]
+}

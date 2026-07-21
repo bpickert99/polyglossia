@@ -1,0 +1,276 @@
+{
+  "id": "ia-voc-verb-003",
+  "title": "Verbos 3",
+  "level": "B1",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 3 1",
+      "teach": [
+        {
+          "target": "fatigar",
+          "roman": "fatigar",
+          "english": "to tire",
+          "note": "io fatiga — present tense, infinitive minus -r.",
+          "ipa": "fˌatiɡˈar"
+        },
+        {
+          "target": "vagar",
+          "roman": "vagar",
+          "english": "to wander",
+          "note": "io vaga — present tense, infinitive minus -r.",
+          "ipa": "vaɡˈar"
+        },
+        {
+          "target": "adoptar",
+          "roman": "adoptar",
+          "english": "to adopt",
+          "note": "io adopta — present tense, infinitive minus -r.",
+          "ipa": "ˌadoptˈar"
+        },
+        {
+          "target": "irritar",
+          "roman": "irritar",
+          "english": "to annoy",
+          "note": "io irrita — present tense, infinitive minus -r.",
+          "ipa": "ˌiritˈar"
+        },
+        {
+          "target": "interrar",
+          "roman": "interrar",
+          "english": "to bury",
+          "note": "io interra — present tense, infinitive minus -r.",
+          "ipa": "ˌinterˈar"
+        },
+        {
+          "target": "sequer",
+          "roman": "sequer",
+          "english": "to follow",
+          "note": "io seque — present tense, infinitive minus -r.",
+          "ipa": "sekwˈer"
+        },
+        {
+          "target": "salutar",
+          "roman": "salutar",
+          "english": "to greet",
+          "note": "io saluta — present tense, infinitive minus -r.",
+          "ipa": "sˌalutˈar"
+        },
+        {
+          "target": "Io fatiga.",
+          "roman": "io fatiga",
+          "english": "I tire.",
+          "ipa": "ˈio fatˈiɡa"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 3 2",
+      "teach": [
+        {
+          "target": "ingagiar",
+          "roman": "ingagiar",
+          "english": "to hire",
+          "note": "io ingagia — present tense, infinitive minus -r.",
+          "ipa": "ˌinɡaʒˈar"
+        },
+        {
+          "target": "referer",
+          "roman": "referer",
+          "english": "to refer",
+          "note": "io refere — present tense, infinitive minus -r.",
+          "ipa": "rˌeferˈer"
+        },
+        {
+          "target": "souper",
+          "roman": "souper",
+          "english": "to supper",
+          "note": "io soupe — present tense, infinitive minus -r.",
+          "ipa": "supˈe"
+        },
+        {
+          "target": "attender",
+          "roman": "attender",
+          "english": "to wait",
+          "note": "io attende — present tense, infinitive minus -r.",
+          "ipa": "ˌatendˈer"
+        },
+        {
+          "target": "dollar",
+          "roman": "dollar",
+          "english": "to dollar",
+          "note": "io dolla — present tense, infinitive minus -r.",
+          "ipa": "dˈolar"
+        },
+        {
+          "target": "exister",
+          "roman": "exister",
+          "english": "to exist",
+          "note": "io existe — present tense, infinitive minus -r.",
+          "ipa": "ˌeksistˈer"
+        },
+        {
+          "target": "flottar",
+          "roman": "flottar",
+          "english": "to float",
+          "note": "io flotta — present tense, infinitive minus -r.",
+          "ipa": "flotˈar"
+        },
+        {
+          "target": "evenir",
+          "roman": "evenir",
+          "english": "to happen",
+          "note": "io eveni — present tense, infinitive minus -r.",
+          "ipa": "ˌevenˈir"
+        },
+        {
+          "target": "Io ingagia.",
+          "roman": "io ingagia",
+          "english": "I hire.",
+          "ipa": "ˈio iŋɡˈaɡja"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 3 3",
+      "teach": [
+        {
+          "target": "scholar",
+          "roman": "scholar",
+          "english": "to pupil",
+          "note": "io schola — present tense, infinitive minus -r.",
+          "ipa": "stʃolˈar"
+        },
+        {
+          "target": "narrar",
+          "roman": "narrar",
+          "english": "to relate",
+          "note": "io narra — present tense, infinitive minus -r.",
+          "ipa": "narˈar"
+        },
+        {
+          "target": "legier",
+          "roman": "legier",
+          "english": "to slight",
+          "note": "io legie — present tense, infinitive minus -r.",
+          "ipa": "leʒˈer"
+        },
+        {
+          "target": "diriger",
+          "roman": "diriger",
+          "english": "to steer",
+          "note": "io dirige — present tense, infinitive minus -r.",
+          "ipa": "dˌiriɡˈer"
+        },
+        {
+          "target": "prevenir",
+          "roman": "prevenir",
+          "english": "to warn",
+          "note": "io preveni — present tense, infinitive minus -r.",
+          "ipa": "prˌevenˈir"
+        },
+        {
+          "target": "scriber",
+          "roman": "scriber",
+          "english": "to write",
+          "note": "io scribe — present tense, infinitive minus -r.",
+          "ipa": "skribˈer"
+        },
+        {
+          "target": "accusar",
+          "roman": "accusar",
+          "english": "to accuse",
+          "note": "io accusa — present tense, infinitive minus -r.",
+          "ipa": "ˌakusˈar"
+        },
+        {
+          "target": "admirar",
+          "roman": "admirar",
+          "english": "to admire",
+          "note": "io admira — present tense, infinitive minus -r.",
+          "ipa": "ˌadmirˈar"
+        },
+        {
+          "target": "Io schola.",
+          "roman": "io schola",
+          "english": "I pupil.",
+          "ipa": "ˈio stʃˈola"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 3 4",
+      "teach": [
+        {
+          "target": "admitter",
+          "roman": "admitter",
+          "english": "to admit",
+          "note": "io admitte — present tense, infinitive minus -r.",
+          "ipa": "ˌadmitˈer"
+        },
+        {
+          "target": "apparer",
+          "roman": "apparer",
+          "english": "to appear",
+          "note": "io appare — present tense, infinitive minus -r.",
+          "ipa": "ˌaparˈer"
+        },
+        {
+          "target": "applicar",
+          "roman": "applicar",
+          "english": "to apply",
+          "note": "io applica — present tense, infinitive minus -r.",
+          "ipa": "ˌaplikˈar"
+        },
+        {
+          "target": "provenir",
+          "roman": "provenir",
+          "english": "to arise",
+          "note": "io proveni — present tense, infinitive minus -r.",
+          "ipa": "prˌovenˈir"
+        },
+        {
+          "target": "devenir",
+          "roman": "devenir",
+          "english": "to become",
+          "note": "io deveni — present tense, infinitive minus -r.",
+          "ipa": "dˌevenˈir"
+        },
+        {
+          "target": "divider",
+          "roman": "divider",
+          "english": "to divide",
+          "note": "io divide — present tense, infinitive minus -r.",
+          "ipa": "dˌividˈer"
+        },
+        {
+          "target": "emplear",
+          "roman": "emplear",
+          "english": "to employ",
+          "note": "io emplea — present tense, infinitive minus -r.",
+          "ipa": "ˌempleˈar"
+        },
+        {
+          "target": "distinger",
+          "roman": "distinger",
+          "english": "to fade",
+          "note": "io distinge — present tense, infinitive minus -r.",
+          "ipa": "dˌistiŋɡˈer"
+        },
+        {
+          "target": "Io admitte.",
+          "roman": "io admitte",
+          "english": "I admit.",
+          "ipa": "ˈio admˈite"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B1-band vocabulary)"
+  ]
+}

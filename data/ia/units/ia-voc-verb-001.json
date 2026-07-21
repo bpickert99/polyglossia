@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-001",
+  "title": "Verbos 1",
+  "level": "B1",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 1 1",
+      "teach": [
+        {
+          "target": "ir",
+          "roman": "ir",
+          "english": "to ride",
+          "note": "io i — present tense, infinitive minus -r.",
+          "ipa": "ˈir"
+        },
+        {
+          "target": "adder",
+          "roman": "adder",
+          "english": "to add",
+          "note": "io adde — present tense, infinitive minus -r.",
+          "ipa": "adˈer"
+        },
+        {
+          "target": "peter",
+          "roman": "peter",
+          "english": "to beg",
+          "note": "io pete — present tense, infinitive minus -r.",
+          "ipa": "petˈer"
+        },
+        {
+          "target": "morir",
+          "roman": "morir",
+          "english": "to die",
+          "note": "io mori — present tense, infinitive minus -r.",
+          "ipa": "morˈir"
+        },
+        {
+          "target": "robar",
+          "roman": "robar",
+          "english": "to rob",
+          "note": "io roba — present tense, infinitive minus -r.",
+          "ipa": "robˈar"
+        },
+        {
+          "target": "fixar",
+          "roman": "fixar",
+          "english": "to fix",
+          "note": "io fixa — present tense, infinitive minus -r.",
+          "ipa": "fiksˈar"
+        },
+        {
+          "target": "ligar",
+          "roman": "ligar",
+          "english": "to bind",
+          "note": "io liga — present tense, infinitive minus -r.",
+          "ipa": "liɡˈar"
+        },
+        {
+          "target": "celar",
+          "roman": "celar",
+          "english": "to hide",
+          "note": "io cela — present tense, infinitive minus -r.",
+          "ipa": "tselˈar"
+        },
+        {
+          "target": "Io i.",
+          "roman": "io i",
+          "english": "I ride.",
+          "ipa": "ˈio ˈi"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 1 2",
+      "teach": [
+        {
+          "target": "miscer",
+          "roman": "miscer",
+          "english": "to mix",
+          "note": "io misce — present tense, infinitive minus -r.",
+          "ipa": "mistsˈer"
+        },
+        {
+          "target": "leger",
+          "roman": "leger",
+          "english": "to read",
+          "note": "io lege — present tense, infinitive minus -r.",
+          "ipa": "leɡˈer"
+        },
+        {
+          "target": "fricar",
+          "roman": "fricar",
+          "english": "to rub",
+          "note": "io frica — present tense, infinitive minus -r.",
+          "ipa": "frikˈar"
+        },
+        {
+          "target": "parer",
+          "roman": "parer",
+          "english": "to seem",
+          "note": "io pare — present tense, infinitive minus -r.",
+          "ipa": "parˈer"
+        },
+        {
+          "target": "fugir",
+          "roman": "fugir",
+          "english": "to flee",
+          "note": "io fugi — present tense, infinitive minus -r.",
+          "ipa": "fuɡˈir"
+        },
+        {
+          "target": "sanar",
+          "roman": "sanar",
+          "english": "to heal",
+          "note": "io sana — present tense, infinitive minus -r.",
+          "ipa": "sanˈar"
+        },
+        {
+          "target": "lassar",
+          "roman": "lassar",
+          "english": "to let",
+          "note": "io lassa — present tense, infinitive minus -r.",
+          "ipa": "lasˈar"
+        },
+        {
+          "target": "mover",
+          "roman": "mover",
+          "english": "to move",
+          "note": "io move — present tense, infinitive minus -r.",
+          "ipa": "movˈer"
+        },
+        {
+          "target": "Io misce.",
+          "roman": "io misce",
+          "english": "I mix.",
+          "ipa": "ˈio mˈistse"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 1 3",
+      "teach": [
+        {
+          "target": "dicer",
+          "roman": "dicer",
+          "english": "to tell",
+          "note": "io dice — present tense, infinitive minus -r.",
+          "ipa": "ditsˈer"
+        },
+        {
+          "target": "batter",
+          "roman": "batter",
+          "english": "to beat",
+          "note": "io batte — present tense, infinitive minus -r.",
+          "ipa": "batˈer"
+        },
+        {
+          "target": "reper",
+          "roman": "reper",
+          "english": "to creep",
+          "note": "io repe — present tense, infinitive minus -r.",
+          "ipa": "repˈer"
+        },
+        {
+          "target": "excavar",
+          "roman": "excavar",
+          "english": "to dig",
+          "note": "io excava — present tense, infinitive minus -r.",
+          "ipa": "ˌekskavˈar"
+        },
+        {
+          "target": "faller",
+          "roman": "faller",
+          "english": "to fail",
+          "note": "io falle — present tense, infinitive minus -r.",
+          "ipa": "falˈer"
+        },
+        {
+          "target": "nutrir",
+          "roman": "nutrir",
+          "english": "to feed",
+          "note": "io nutri — present tense, infinitive minus -r.",
+          "ipa": "nutrˈir"
+        },
+        {
+          "target": "sentir",
+          "roman": "sentir",
+          "english": "to feel",
+          "note": "io senti — present tense, infinitive minus -r.",
+          "ipa": "sentˈir"
+        },
+        {
+          "target": "moler",
+          "roman": "moler",
+          "english": "to grind",
+          "note": "io mole — present tense, infinitive minus -r.",
+          "ipa": "molˈer"
+        },
+        {
+          "target": "Io dice.",
+          "roman": "io dice",
+          "english": "I tell.",
+          "ipa": "ˈio dˈitse"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 1 4",
+      "teach": [
+        {
+          "target": "funder",
+          "roman": "funder",
+          "english": "to melt",
+          "note": "io funde — present tense, infinitive minus -r.",
+          "ipa": "fundˈer"
+        },
+        {
+          "target": "sasir",
+          "roman": "sasir",
+          "english": "to seize",
+          "note": "io sasi — present tense, infinitive minus -r.",
+          "ipa": "sasˈir"
+        },
+        {
+          "target": "inviar",
+          "roman": "inviar",
+          "english": "to send",
+          "note": "io invia — present tense, infinitive minus -r.",
+          "ipa": "invjˈar"
+        },
+        {
+          "target": "jurar",
+          "roman": "jurar",
+          "english": "to swear",
+          "note": "io jura — present tense, infinitive minus -r.",
+          "ipa": "ʒurˈar"
+        },
+        {
+          "target": "bullir",
+          "roman": "bullir",
+          "english": "to boil",
+          "note": "io bulli — present tense, infinitive minus -r.",
+          "ipa": "bulˈir"
+        },
+        {
+          "target": "necar",
+          "roman": "necar",
+          "english": "to drown",
+          "note": "io neca — present tense, infinitive minus -r.",
+          "ipa": "nekˈar"
+        },
+        {
+          "target": "ganiar",
+          "roman": "ganiar",
+          "english": "to earn",
+          "note": "io gania — present tense, infinitive minus -r.",
+          "ipa": "ɡanjˈar"
+        },
+        {
+          "target": "plenar",
+          "roman": "plenar",
+          "english": "to fill",
+          "note": "io plena — present tense, infinitive minus -r.",
+          "ipa": "plenˈar"
+        },
+        {
+          "target": "Io funde.",
+          "roman": "io funde",
+          "english": "I melt.",
+          "ipa": "ˈio fˈunde"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B1-band vocabulary)"
+  ]
+}

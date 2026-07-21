@@ -1,0 +1,47 @@
+{
+  "id": "ia-voc-noun-036",
+  "title": "Nomines 36",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 36 1",
+      "teach": [
+        {
+          "target": "le company societate anonyme",
+          "roman": "le company societate anonyme",
+          "english": "the limited",
+          "ipa": "le kompˈani sˌotsjetˈate anˈonime"
+        },
+        {
+          "target": "le consideration",
+          "roman": "le consideration",
+          "english": "the sake / consideration",
+          "ipa": "le kˌonsidˌeratjˈon"
+        },
+        {
+          "target": "le conscientia",
+          "roman": "le conscientia",
+          "english": "the conscience / consciousness",
+          "ipa": "le konstsjˈentja"
+        },
+        {
+          "target": "le direction",
+          "roman": "le direction",
+          "english": "the direction / leadership / management",
+          "ipa": "le dˌirektjˈon"
+        },
+        {
+          "target": "Io vide le company societate anonyme.",
+          "roman": "io vide le company societate anonyme",
+          "english": "I see the limited.",
+          "ipa": "ˈio vˈide le kompˈani sˌotsjetˈate anˈonime"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 4 more nomines (C1-band vocabulary)"
+  ]
+}

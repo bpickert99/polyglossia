@@ -1,0 +1,67 @@
+{
+  "id": "ia-b2-u6",
+  "title": "Formation de parolas",
+  "level": "B2",
+  "summary": "Build new words from ones you know: suffixes and prefixes.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Suffixos",
+      "teach": [
+        {
+          "target": "-ista",
+          "roman": "-ista",
+          "english": "suffix: a person who ___s / believes in ___",
+          "note": "arte (art) → artista (artist), already known. Same suffix as English -ist."
+        },
+        {
+          "target": "-ion",
+          "roman": "-ion",
+          "english": "suffix: turns a verb into an abstract noun",
+          "note": "ager (to act) → action (action). Matches English -tion/-sion almost exactly."
+        },
+        {
+          "target": "-abile",
+          "roman": "-abile",
+          "english": "suffix: capable of being ___ed",
+          "note": "possibile already uses this shape; compare English -able/-ible."
+        }
+      ],
+      "grammar": {
+        "title": "Interlingua is buildable, not just memorizable",
+        "body": "Interlingua's vocabulary was deliberately drawn from the international scientific/Latinate words shared by English, French, Spanish, Italian — which means its word-building suffixes mostly work exactly like the English ones already in your head:\n**-ista** (artist, dentist), **-ion** (action, nation), **-abile/-ibile** (possible, terrible), **-mente** (adverbs, already known).\nOnce you know a root and a suffix, you can often *construct* a word you were never explicitly taught — and be right."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Prefixos: in-, dis-",
+      "teach": [
+        {
+          "target": "impossibile",
+          "roman": "impossibile",
+          "english": "impossible",
+          "note": "in- + possibile — the negating prefix, same as English im-/in-.",
+          "ipa": "ˌimposˈibile"
+        },
+        {
+          "target": "dishoneste",
+          "roman": "dishoneste",
+          "english": "dishonest",
+          "note": "dis- + honeste — same pattern as English dis-.",
+          "ipa": "dˌiʃonˈeste"
+        },
+        {
+          "target": "Es impossibile trovar un solution.",
+          "roman": "es impossibile trovar un solution",
+          "english": "It's impossible to find a solution.",
+          "ipa": "es ˌimposˈibile trovˈar un sˌolutjˈon"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize -ista, -ion, and -abile suffixes",
+    "Negate a word with in-/dis-",
+    "Guess the meaning of an untaught Interlingua word from its parts"
+  ]
+}

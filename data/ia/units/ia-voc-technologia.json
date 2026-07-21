@@ -1,0 +1,84 @@
+{
+  "id": "ia-voc-technologia",
+  "title": "Technologia",
+  "level": "B2",
+  "summary": "Technology.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Technologia 1",
+      "teach": [
+        {
+          "target": "le telephono",
+          "roman": "le telephono",
+          "english": "the telephone",
+          "ipa": "le telˈefono"
+        },
+        {
+          "target": "le television",
+          "roman": "le television",
+          "english": "the television",
+          "ipa": "le tˌelevisjˈon"
+        },
+        {
+          "target": "le machina",
+          "roman": "le machina",
+          "english": "the machine",
+          "ipa": "le mˈakina"
+        },
+        {
+          "target": "le electricitate",
+          "roman": "le electricitate",
+          "english": "the electricity",
+          "ipa": "le ˌelektrˌitsitˈate"
+        },
+        {
+          "target": "le signal",
+          "roman": "le signal",
+          "english": "the signal",
+          "ipa": "le siɡnˈal"
+        },
+        {
+          "target": "le pannello de projection",
+          "roman": "le pannello de projection",
+          "english": "the screen",
+          "ipa": "le panˈelo de prˌoʒektjˈon"
+        },
+        {
+          "target": "inventar",
+          "roman": "inventar",
+          "english": "to invent",
+          "note": "io inventa — present tense, infinitive minus -r.",
+          "ipa": "ˌinventˈar"
+        },
+        {
+          "target": "Io inventa.",
+          "roman": "io inventa",
+          "english": "I invent.",
+          "ipa": "ˈio invˈenta"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Technologia 2",
+      "teach": [
+        {
+          "target": "le instrumento",
+          "roman": "le instrumento",
+          "english": "the instrument",
+          "ipa": "le ˌinstrumˈento"
+        },
+        {
+          "target": "Io vide le instrumento.",
+          "roman": "io vide le instrumento",
+          "english": "I see the instrument.",
+          "ipa": "ˈio vˈide le ˌinstrumˈento"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 8 more words about technology"
+  ]
+}

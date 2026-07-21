@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-010",
+  "title": "Nomines 10",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 10 1",
+      "teach": [
+        {
+          "target": "le agente",
+          "roman": "le agente",
+          "english": "the agent",
+          "ipa": "le aɡˈente"
+        },
+        {
+          "target": "le avante",
+          "roman": "le avante",
+          "english": "the ahead",
+          "ipa": "le avˈante"
+        },
+        {
+          "target": "le vigile",
+          "roman": "le vigile",
+          "english": "the awake",
+          "ipa": "le vˈiɡile"
+        },
+        {
+          "target": "le pecietta",
+          "roman": "le pecietta",
+          "english": "the bit",
+          "ipa": "le petsjˈeta"
+        },
+        {
+          "target": "le morsura",
+          "roman": "le morsura",
+          "english": "the bite",
+          "ipa": "le morsˈura"
+        },
+        {
+          "target": "le blasmo",
+          "roman": "le blasmo",
+          "english": "the blame",
+          "ipa": "le blˈasmo"
+        },
+        {
+          "target": "le corpore",
+          "roman": "le corpore",
+          "english": "the body",
+          "ipa": "le kˈorpore"
+        },
+        {
+          "target": "le hardite",
+          "roman": "le hardite",
+          "english": "the bold",
+          "ipa": "le hardˈite"
+        },
+        {
+          "target": "Io vide le agente.",
+          "roman": "io vide le agente",
+          "english": "I see the agent.",
+          "ipa": "ˈio vˈide le aɡˈente"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 10 2",
+      "teach": [
+        {
+          "target": "le nascite",
+          "roman": "le nascite",
+          "english": "the born",
+          "ipa": "le nastsˈite"
+        },
+        {
+          "target": "le ponte",
+          "roman": "le ponte",
+          "english": "the bridge",
+          "ipa": "le pˈonte"
+        },
+        {
+          "target": "le catena",
+          "roman": "le catena",
+          "english": "the chain",
+          "ipa": "le katˈena"
+        },
+        {
+          "target": "le charme",
+          "roman": "le charme",
+          "english": "the charm",
+          "ipa": "le ʃˈarme"
+        },
+        {
+          "target": "le argilla",
+          "roman": "le argilla",
+          "english": "the clay",
+          "ipa": "le arɡˈila"
+        },
+        {
+          "target": "le cupro",
+          "roman": "le cupro",
+          "english": "the copper",
+          "ipa": "le kˈupro"
+        },
+        {
+          "target": "le grado",
+          "roman": "le grado",
+          "english": "the degree",
+          "ipa": "le ɡrˈado"
+        },
+        {
+          "target": "le dubita",
+          "roman": "le dubita",
+          "english": "the doubt",
+          "ipa": "le dˈubita"
+        },
+        {
+          "target": "Io vide le nascite.",
+          "roman": "io vide le nascite",
+          "english": "I see the born.",
+          "ipa": "ˈio vˈide le nastsˈite"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 10 3",
+      "teach": [
+        {
+          "target": "le dozena",
+          "roman": "le dozena",
+          "english": "the dozen",
+          "ipa": "le dozˈena"
+        },
+        {
+          "target": "le alacre",
+          "roman": "le alacre",
+          "english": "the eager",
+          "ipa": "le ˈalakre"
+        },
+        {
+          "target": "le exacte",
+          "roman": "le exacte",
+          "english": "the exact",
+          "ipa": "le eksˈakte"
+        },
+        {
+          "target": "le flamma",
+          "roman": "le flamma",
+          "english": "the flame",
+          "ipa": "le flˈama"
+        },
+        {
+          "target": "le gloria",
+          "roman": "le gloria",
+          "english": "the glory",
+          "ipa": "le ɡlˈorja"
+        },
+        {
+          "target": "le minor",
+          "roman": "le minor",
+          "english": "the lesser",
+          "ipa": "le minˈor"
+        },
+        {
+          "target": "le mendacio",
+          "roman": "le mendacio",
+          "english": "the lie",
+          "ipa": "le mendˈatsjo"
+        },
+        {
+          "target": "le repasto",
+          "roman": "le repasto",
+          "english": "the meal",
+          "ipa": "le repˈasto"
+        },
+        {
+          "target": "Io vide le dozena.",
+          "roman": "io vide le dozena",
+          "english": "I see the dozen.",
+          "ipa": "ˈio vˈide le dozˈena"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 10 4",
+      "teach": [
+        {
+          "target": "le pallide",
+          "roman": "le pallide",
+          "english": "the pale",
+          "ipa": "le pˈalide"
+        },
+        {
+          "target": "le stilo",
+          "roman": "le stilo",
+          "english": "the pencil",
+          "ipa": "le stˈilo"
+        },
+        {
+          "target": "le puncto",
+          "roman": "le puncto",
+          "english": "the point",
+          "ipa": "le pˈunkto"
+        },
+        {
+          "target": "le laude",
+          "roman": "le laude",
+          "english": "the praise",
+          "ipa": "le lˈaʊde"
+        },
+        {
+          "target": "le pulsata",
+          "roman": "le pulsata",
+          "english": "the push",
+          "ipa": "le pulsˈata"
+        },
+        {
+          "target": "le sacre",
+          "roman": "le sacre",
+          "english": "the sacred",
+          "ipa": "le sˈakre"
+        },
+        {
+          "target": "le sella",
+          "roman": "le sella",
+          "english": "the saddle",
+          "ipa": "le sˈela"
+        },
+        {
+          "target": "le vendita",
+          "roman": "le vendita",
+          "english": "the sale",
+          "ipa": "le vˈendita"
+        },
+        {
+          "target": "Io vide le pallide.",
+          "roman": "io vide le pallide",
+          "english": "I see the pale.",
+          "ipa": "ˈio vˈide le pˈalide"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

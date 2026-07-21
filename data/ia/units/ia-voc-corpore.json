@@ -1,0 +1,191 @@
+{
+  "id": "ia-voc-corpore",
+  "title": "Corpore",
+  "level": "A2",
+  "summary": "Body parts.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Corpore 1",
+      "teach": [
+        {
+          "target": "le bracio",
+          "roman": "le bracio",
+          "english": "the arm",
+          "ipa": "le brˈatsjo"
+        },
+        {
+          "target": "le gamba",
+          "roman": "le gamba",
+          "english": "the leg",
+          "ipa": "le ɡˈamba"
+        },
+        {
+          "target": "le mano",
+          "roman": "le mano",
+          "english": "the hand",
+          "ipa": "le mˈano"
+        },
+        {
+          "target": "le pede",
+          "roman": "le pede",
+          "english": "the foot",
+          "ipa": "le pˈede"
+        },
+        {
+          "target": "le aure",
+          "roman": "le aure",
+          "english": "the ear",
+          "ipa": "le ˈawre"
+        },
+        {
+          "target": "le naso",
+          "roman": "le naso",
+          "english": "the nose",
+          "ipa": "le nˈaso"
+        },
+        {
+          "target": "le oculo",
+          "roman": "le oculo",
+          "english": "the eye",
+          "ipa": "le ˈokulo"
+        },
+        {
+          "target": "Io vide le bracio.",
+          "roman": "io vide le bracio",
+          "english": "I see the arm.",
+          "ipa": "ˈio vˈide le brˈatsjo"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Corpore 2",
+      "teach": [
+        {
+          "target": "le capillo",
+          "roman": "le capillo",
+          "english": "the hair",
+          "ipa": "le kapˈilo"
+        },
+        {
+          "target": "le capite",
+          "roman": "le capite",
+          "english": "the head",
+          "ipa": "le kˈapite"
+        },
+        {
+          "target": "le collo",
+          "roman": "le collo",
+          "english": "the neck",
+          "ipa": "le kˈolo"
+        },
+        {
+          "target": "le spatula",
+          "roman": "le spatula",
+          "english": "the shoulder",
+          "ipa": "le spˈatula"
+        },
+        {
+          "target": "le stomacho",
+          "roman": "le stomacho",
+          "english": "the stomach",
+          "ipa": "le stˈomako"
+        },
+        {
+          "target": "le corde",
+          "roman": "le corde",
+          "english": "the heart",
+          "ipa": "le kˈorde"
+        },
+        {
+          "target": "le sanguine",
+          "roman": "le sanguine",
+          "english": "the blood",
+          "ipa": "le sˈanɡwine"
+        },
+        {
+          "target": "Io vide le capillo.",
+          "roman": "io vide le capillo",
+          "english": "I see the hair.",
+          "ipa": "ˈio vˈide le kapˈilo"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Corpore 3",
+      "teach": [
+        {
+          "target": "le osso",
+          "roman": "le osso",
+          "english": "the bone",
+          "ipa": "le ˈoso"
+        },
+        {
+          "target": "le dente",
+          "roman": "le dente",
+          "english": "the tooth",
+          "ipa": "le dˈente"
+        },
+        {
+          "target": "le gorge",
+          "roman": "le gorge",
+          "english": "the throat",
+          "ipa": "le ɡˈorɡe"
+        },
+        {
+          "target": "le pectore",
+          "roman": "le pectore",
+          "english": "the chest",
+          "ipa": "le pˈektore"
+        },
+        {
+          "target": "le genu",
+          "roman": "le genu",
+          "english": "the knee",
+          "ipa": "le ɡˈenu"
+        },
+        {
+          "target": "le facie",
+          "roman": "le facie",
+          "english": "the face",
+          "ipa": "le fˈatsje"
+        },
+        {
+          "target": "le bucca",
+          "roman": "le bucca",
+          "english": "the mouth",
+          "ipa": "le bˈuka"
+        },
+        {
+          "target": "Io vide le osso.",
+          "roman": "io vide le osso",
+          "english": "I see the bone.",
+          "ipa": "ˈio vˈide le ˈoso"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Corpore 4",
+      "teach": [
+        {
+          "target": "le labio",
+          "roman": "le labio",
+          "english": "the lip",
+          "ipa": "le lˈabjo"
+        },
+        {
+          "target": "Io vide le labio.",
+          "roman": "io vide le labio",
+          "english": "I see the lip.",
+          "ipa": "ˈio vˈide le lˈabjo"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 22 more words about body parts"
+  ]
+}

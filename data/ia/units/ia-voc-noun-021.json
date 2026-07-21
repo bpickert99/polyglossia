@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-021",
+  "title": "Nomines 21",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 21 1",
+      "teach": [
+        {
+          "target": "le chassator",
+          "roman": "le chassator",
+          "english": "the hunter",
+          "ipa": "le ʃˌasatˈor"
+        },
+        {
+          "target": "le guardiano",
+          "roman": "le guardiano",
+          "english": "the keeper",
+          "ipa": "le ɡwardjˈano"
+        },
+        {
+          "target": "le manieras",
+          "roman": "le manieras",
+          "english": "the manners",
+          "ipa": "le manjˈeras"
+        },
+        {
+          "target": "le maritar se",
+          "roman": "le maritar se",
+          "english": "the marry",
+          "ipa": "le mˌaritˈar sˈe"
+        },
+        {
+          "target": "le flammifero",
+          "roman": "le flammifero",
+          "english": "the match",
+          "ipa": "le flamˈifero"
+        },
+        {
+          "target": "le mysterio",
+          "roman": "le mysterio",
+          "english": "the mystery",
+          "ipa": "le mistˈerjo"
+        },
+        {
+          "target": "le Pacifico",
+          "roman": "le Pacifico",
+          "english": "the pacific",
+          "ipa": "le patsˈifiko"
+        },
+        {
+          "target": "le povressa",
+          "roman": "le povressa",
+          "english": "the poverty",
+          "ipa": "le povrˈesa"
+        },
+        {
+          "target": "Io vide le chassator.",
+          "roman": "io vide le chassator",
+          "english": "I see the hunter.",
+          "ipa": "ˈio vˈide le ʃˌasatˈor"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 21 2",
+      "teach": [
+        {
+          "target": "le silentiose",
+          "roman": "le silentiose",
+          "english": "the quiet",
+          "ipa": "le sˌilentjˈose"
+        },
+        {
+          "target": "le ferrovia",
+          "roman": "le ferrovia",
+          "english": "the railway",
+          "ipa": "le fˌerovˈia"
+        },
+        {
+          "target": "le requesta",
+          "roman": "le requesta",
+          "english": "the request",
+          "ipa": "le rekwˈesta"
+        },
+        {
+          "target": "le respecto",
+          "roman": "le respecto",
+          "english": "the respect",
+          "ipa": "le respˈekto"
+        },
+        {
+          "target": "le resultato",
+          "roman": "le resultato",
+          "english": "the result",
+          "ipa": "le rˌesultˈato"
+        },
+        {
+          "target": "le parte in",
+          "roman": "le parte in",
+          "english": "the prender",
+          "ipa": "le pˈarte ˈin"
+        },
+        {
+          "target": "le fraga",
+          "roman": "le fraga",
+          "english": "the strawberry",
+          "ipa": "le frˈaɡa"
+        },
+        {
+          "target": "le ricchessa",
+          "roman": "le ricchessa",
+          "english": "the wealth",
+          "ipa": "le ritʃˈesa"
+        },
+        {
+          "target": "Io vide le silentiose.",
+          "roman": "io vide le silentiose",
+          "english": "I see the quiet.",
+          "ipa": "ˈio vˈide le sˌilentjˈose"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 21 3",
+      "teach": [
+        {
+          "target": "le gallese",
+          "roman": "le gallese",
+          "english": "the welshman",
+          "ipa": "le ɡalˈese"
+        },
+        {
+          "target": "le meravilia",
+          "roman": "le meravilia",
+          "english": "the wonder",
+          "ipa": "le mˌeravˈilja"
+        },
+        {
+          "target": "le vt involver",
+          "roman": "le vt involver",
+          "english": "the wrap",
+          "ipa": "le vˌetˈe ˌinvolvˈer"
+        },
+        {
+          "target": "le ancora un",
+          "roman": "le ancora un",
+          "english": "the another",
+          "ipa": "le ankˈora ˈun"
+        },
+        {
+          "target": "le alicun",
+          "roman": "le alicun",
+          "english": "the any / some",
+          "ipa": "le ˈalikun"
+        },
+        {
+          "target": "le creatura",
+          "roman": "le creatura",
+          "english": "the creature",
+          "ipa": "le krˌeatˈura"
+        },
+        {
+          "target": "le critica",
+          "roman": "le critica",
+          "english": "the criticism",
+          "ipa": "le krˈitika"
+        },
+        {
+          "target": "le crito",
+          "roman": "le crito",
+          "english": "the cry / shout",
+          "ipa": "le krˈito"
+        },
+        {
+          "target": "Io vide le gallese.",
+          "roman": "io vide le gallese",
+          "english": "I see the welshman.",
+          "ipa": "ˈio vˈide le ɡalˈese"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 21 4",
+      "teach": [
+        {
+          "target": "le malediction",
+          "roman": "le malediction",
+          "english": "the curse",
+          "ipa": "le mˌalediktjˈon"
+        },
+        {
+          "target": "le director",
+          "roman": "le director",
+          "english": "the director",
+          "ipa": "le dˌirektˈor"
+        },
+        {
+          "target": "le division",
+          "roman": "le division",
+          "english": "the division",
+          "ipa": "le dˌivisjˈon"
+        },
+        {
+          "target": "le election",
+          "roman": "le election",
+          "english": "the election",
+          "ipa": "le ˌelektjˈon"
+        },
+        {
+          "target": "le empleato",
+          "roman": "le empleato",
+          "english": "the employee",
+          "ipa": "le ˌempleˈato"
+        },
+        {
+          "target": "le fin",
+          "roman": "le fin",
+          "english": "the end / purpose",
+          "ipa": "le fˈin"
+        },
+        {
+          "target": "le facto",
+          "roman": "le facto",
+          "english": "the fact / deed",
+          "ipa": "le fˈakto"
+        },
+        {
+          "target": "le in avante",
+          "roman": "le in avante",
+          "english": "the forward",
+          "ipa": "le ˈin avˈante"
+        },
+        {
+          "target": "Io vide le malediction.",
+          "roman": "io vide le malediction",
+          "english": "I see the curse.",
+          "ipa": "ˈio vˈide le mˌalediktjˈon"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

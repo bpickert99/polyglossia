@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-011",
+  "title": "Nomines 11",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 11 1",
+      "teach": [
+        {
+          "target": "le scuto",
+          "roman": "le scuto",
+          "english": "the shield",
+          "ipa": "le skˈuto"
+        },
+        {
+          "target": "le monstra",
+          "roman": "le monstra",
+          "english": "the show",
+          "ipa": "le mˈonstra"
+        },
+        {
+          "target": "le baston",
+          "roman": "le baston",
+          "english": "the stick",
+          "ipa": "le bastˈon"
+        },
+        {
+          "target": "le rigide",
+          "roman": "le rigide",
+          "english": "the stiff",
+          "ipa": "le rˈiɡide"
+        },
+        {
+          "target": "le lacrima",
+          "roman": "le lacrima",
+          "english": "the tear",
+          "ipa": "le lˈakrima"
+        },
+        {
+          "target": "le humor",
+          "roman": "le humor",
+          "english": "the temper",
+          "ipa": "le humˈor"
+        },
+        {
+          "target": "le trunco",
+          "roman": "le trunco",
+          "english": "the trunk",
+          "ipa": "le trˈunko"
+        },
+        {
+          "target": "le melodia",
+          "roman": "le melodia",
+          "english": "the tune",
+          "ipa": "le mˌelodˈia"
+        },
+        {
+          "target": "Io vide le scuto.",
+          "roman": "io vide le scuto",
+          "english": "I see the shield.",
+          "ipa": "ˈio vˈide le skˈuto"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 11 2",
+      "teach": [
+        {
+          "target": "le unitate",
+          "roman": "le unitate",
+          "english": "the unit",
+          "ipa": "le ˌunitˈate"
+        },
+        {
+          "target": "le portate",
+          "roman": "le portate",
+          "english": "the worn",
+          "ipa": "le portˈate"
+        },
+        {
+          "target": "le action",
+          "roman": "le action",
+          "english": "the action",
+          "ipa": "le aktjˈon"
+        },
+        {
+          "target": "le animal",
+          "roman": "le animal",
+          "english": "the animal",
+          "ipa": "le ˌanimˈal"
+        },
+        {
+          "target": "le occupate",
+          "roman": "le occupate",
+          "english": "the busy",
+          "ipa": "le ˌokupˈate"
+        },
+        {
+          "target": "le Canada",
+          "roman": "le Canada",
+          "english": "the canada",
+          "ipa": "le kˌanadˈa"
+        },
+        {
+          "target": "le virgula",
+          "roman": "le virgula",
+          "english": "the comma",
+          "ipa": "le vˈirɡula"
+        },
+        {
+          "target": "le commun",
+          "roman": "le commun",
+          "english": "the common",
+          "ipa": "le komˈun"
+        },
+        {
+          "target": "Io vide le unitate.",
+          "roman": "io vide le unitate",
+          "english": "I see the unit.",
+          "ipa": "ˈio vˈide le ˌunitˈate"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 11 3",
+      "teach": [
+        {
+          "target": "le cosino",
+          "roman": "le cosino",
+          "english": "the cousin",
+          "ipa": "le kosˈino"
+        },
+        {
+          "target": "le crimine",
+          "roman": "le crimine",
+          "english": "the crime",
+          "ipa": "le krˈimine"
+        },
+        {
+          "target": "le diabolo",
+          "roman": "le diabolo",
+          "english": "the devil",
+          "ipa": "le djˈabolo"
+        },
+        {
+          "target": "le immunde",
+          "roman": "le immunde",
+          "english": "the dirty",
+          "ipa": "le imˈunde"
+        },
+        {
+          "target": "le inimico",
+          "roman": "le inimico",
+          "english": "the enemy",
+          "ipa": "le ˌinimˈiko"
+        },
+        {
+          "target": "le defecto",
+          "roman": "le defecto",
+          "english": "the fault",
+          "ipa": "le defˈekto"
+        },
+        {
+          "target": "le pluma",
+          "roman": "le pluma",
+          "english": "the feather",
+          "ipa": "le plˈuma"
+        },
+        {
+          "target": "le alimento",
+          "roman": "le alimento",
+          "english": "the food",
+          "ipa": "le ˌalimˈento"
+        },
+        {
+          "target": "Io vide le cosino.",
+          "roman": "io vide le cosino",
+          "english": "I see the cousin.",
+          "ipa": "ˈio vˈide le kosˈino"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 11 4",
+      "teach": [
+        {
+          "target": "le terror",
+          "roman": "le terror",
+          "english": "the fright",
+          "ipa": "le terˈor"
+        },
+        {
+          "target": "le carentia",
+          "roman": "le carentia",
+          "english": "the lack",
+          "ipa": "le karˈentja"
+        },
+        {
+          "target": "le mercede",
+          "roman": "le mercede",
+          "english": "the mercy",
+          "ipa": "le mertsˈede"
+        },
+        {
+          "target": "le allegre",
+          "roman": "le allegre",
+          "english": "the merry",
+          "ipa": "le alˈeɡre"
+        },
+        {
+          "target": "le minator",
+          "roman": "le minator",
+          "english": "the miner",
+          "ipa": "le mˌinatˈor"
+        },
+        {
+          "target": "le error",
+          "roman": "le error",
+          "english": "the mistake",
+          "ipa": "le erˈor"
+        },
+        {
+          "target": "le modello",
+          "roman": "le modello",
+          "english": "the model",
+          "ipa": "le modˈelo"
+        },
+        {
+          "target": "le natura",
+          "roman": "le natura",
+          "english": "the nature",
+          "ipa": "le natˈura"
+        },
+        {
+          "target": "Io vide le terror.",
+          "roman": "io vide le terror",
+          "english": "I see the fright.",
+          "ipa": "ˈio vˈide le terˈor"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

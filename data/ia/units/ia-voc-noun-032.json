@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-032",
+  "title": "Nomines 32",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 32 1",
+      "teach": [
+        {
+          "target": "le viage",
+          "roman": "le viage",
+          "english": "the voyage / journey",
+          "ipa": "le vjˈaʒe"
+        },
+        {
+          "target": "le complicate",
+          "roman": "le complicate",
+          "english": "the complicated",
+          "ipa": "le kˌomplikˈate"
+        },
+        {
+          "target": "le concernente",
+          "roman": "le concernente",
+          "english": "the concerning",
+          "ipa": "le kˌontsernˈente"
+        },
+        {
+          "target": "le conferentia",
+          "roman": "le conferentia",
+          "english": "the conference",
+          "ipa": "le kˌonferˈentja"
+        },
+        {
+          "target": "le omne personas",
+          "roman": "le omne personas",
+          "english": "the everyone",
+          "ipa": "le ˈomne persˈonas"
+        },
+        {
+          "target": "le excitamento",
+          "roman": "le excitamento",
+          "english": "the excitement",
+          "ipa": "le ˌekstsitamˈento"
+        },
+        {
+          "target": "le experientia",
+          "roman": "le experientia",
+          "english": "the experience",
+          "ipa": "le ˌeksperjˈentja"
+        },
+        {
+          "target": "le experimento",
+          "roman": "le experimento",
+          "english": "the experiment",
+          "ipa": "le ˌeksperimˈento"
+        },
+        {
+          "target": "Io vide le viage.",
+          "roman": "io vide le viage",
+          "english": "I see the voyage / journey.",
+          "ipa": "ˈio vˈide le vjˈaʒe"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 32 2",
+      "teach": [
+        {
+          "target": "le importantia",
+          "roman": "le importantia",
+          "english": "the importance",
+          "ipa": "le ˌimportˈantja"
+        },
+        {
+          "target": "le accrescimento",
+          "roman": "le accrescimento",
+          "english": "the increase",
+          "ipa": "le ˌakrestsimˈento"
+        },
+        {
+          "target": "le motocycletta",
+          "roman": "le motocycletta",
+          "english": "the motorbike",
+          "ipa": "le mˌototsiklˈeta"
+        },
+        {
+          "target": "le in nulle parte",
+          "roman": "le in nulle parte",
+          "english": "the nowhere",
+          "ipa": "le ˈin nˈule pˈarte"
+        },
+        {
+          "target": "le resistentia",
+          "roman": "le resistentia",
+          "english": "the resistance",
+          "ipa": "le rˌesistˈentja"
+        },
+        {
+          "target": "le restaurante",
+          "roman": "le restaurante",
+          "english": "the restaurant",
+          "ipa": "le rˌestaʊrˈante"
+        },
+        {
+          "target": "le pluvia passager",
+          "roman": "le pluvia passager",
+          "english": "the shower",
+          "ipa": "le plˈuvja pˌasaʒˈer"
+        },
+        {
+          "target": "le publicitate",
+          "roman": "le publicitate",
+          "english": "the advertising",
+          "ipa": "le pˌublitsitˈate"
+        },
+        {
+          "target": "Io vide le importantia.",
+          "roman": "io vide le importantia",
+          "english": "I see the importance.",
+          "ipa": "ˈio vˈide le ˌimportˈantja"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 32 3",
+      "teach": [
+        {
+          "target": "le responsa",
+          "roman": "le responsa",
+          "english": "the reply / answer",
+          "ipa": "le respˈonsa"
+        },
+        {
+          "target": "le comenciamento",
+          "roman": "le comenciamento",
+          "english": "the beginning",
+          "ipa": "le kˌomentsjamˈento"
+        },
+        {
+          "target": "le attention",
+          "roman": "le attention",
+          "english": "the care / notice",
+          "ipa": "le ˌatentjˈon"
+        },
+        {
+          "target": "le habile",
+          "roman": "le habile",
+          "english": "the clever / skilful",
+          "ipa": "le hˈabile"
+        },
+        {
+          "target": "le destruction",
+          "roman": "le destruction",
+          "english": "the destruction",
+          "ipa": "le dˌestruktjˈon"
+        },
+        {
+          "target": "le difficultate",
+          "roman": "le difficultate",
+          "english": "the difficulty",
+          "ipa": "le dˌifikultˈate"
+        },
+        {
+          "target": "le fortia",
+          "roman": "le fortia",
+          "english": "the force / strength",
+          "ipa": "le fˈortja"
+        },
+        {
+          "target": "le information",
+          "roman": "le information",
+          "english": "the information",
+          "ipa": "le ˌinformatjˈon"
+        },
+        {
+          "target": "Io vide le responsa.",
+          "roman": "io vide le responsa",
+          "english": "I see the reply / answer.",
+          "ipa": "ˈio vˈide le respˈonsa"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 32 4",
+      "teach": [
+        {
+          "target": "le instruction",
+          "roman": "le instruction",
+          "english": "the instruction",
+          "ipa": "le ˌinstruktjˈon"
+        },
+        {
+          "target": "le ingerentia",
+          "roman": "le ingerentia",
+          "english": "the interference",
+          "ipa": "le ˌiŋɡerˈentja"
+        },
+        {
+          "target": "le photographia",
+          "roman": "le photographia",
+          "english": "the photograph",
+          "ipa": "le phˌotoɡrafˈia"
+        },
+        {
+          "target": "le preparation",
+          "roman": "le preparation",
+          "english": "the preparation",
+          "ipa": "le prˌeparatjˈon"
+        },
+        {
+          "target": "le recognition",
+          "roman": "le recognition",
+          "english": "the recognition",
+          "ipa": "le rˌekoɡnitjˈon"
+        },
+        {
+          "target": "le simplicitate",
+          "roman": "le simplicitate",
+          "english": "the simplicity",
+          "ipa": "le sˌimplitsitˈate"
+        },
+        {
+          "target": "le forte",
+          "roman": "le forte",
+          "english": "the strong / strongly",
+          "ipa": "le fˈorte"
+        },
+        {
+          "target": "le affaire",
+          "roman": "le affaire",
+          "english": "the affair / matter",
+          "ipa": "le afˈer"
+        },
+        {
+          "target": "Io vide le instruction.",
+          "roman": "io vide le instruction",
+          "english": "I see the instruction.",
+          "ipa": "ˈio vˈide le ˌinstruktjˈon"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

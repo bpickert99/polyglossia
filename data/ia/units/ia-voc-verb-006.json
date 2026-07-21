@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-006",
+  "title": "Verbos 6",
+  "level": "B2",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 6 1",
+      "teach": [
+        {
+          "target": "consiliar",
+          "roman": "consiliar",
+          "english": "to advise",
+          "note": "io consilia — present tense, infinitive minus -r.",
+          "ipa": "kˌonsiljˈar"
+        },
+        {
+          "target": "attraher",
+          "roman": "attraher",
+          "english": "to attract",
+          "note": "io attrahe — present tense, infinitive minus -r.",
+          "ipa": "ˌatrahˈer"
+        },
+        {
+          "target": "componer",
+          "roman": "componer",
+          "english": "to compose",
+          "note": "io compone — present tense, infinitive minus -r.",
+          "ipa": "kˌomponˈer"
+        },
+        {
+          "target": "continer",
+          "roman": "continer",
+          "english": "to contain",
+          "note": "io contine — present tense, infinitive minus -r.",
+          "ipa": "kˌontinˈer"
+        },
+        {
+          "target": "declarar",
+          "roman": "declarar",
+          "english": "to declare",
+          "note": "io declara — present tense, infinitive minus -r.",
+          "ipa": "dˌeklarˈar"
+        },
+        {
+          "target": "examinar",
+          "roman": "examinar",
+          "english": "to examine",
+          "note": "io examina — present tense, infinitive minus -r.",
+          "ipa": "ˌeksaminˈar"
+        },
+        {
+          "target": "explicar",
+          "roman": "explicar",
+          "english": "to explain",
+          "note": "io explica — present tense, infinitive minus -r.",
+          "ipa": "ˌeksplikˈar"
+        },
+        {
+          "target": "exprimer",
+          "roman": "exprimer",
+          "english": "to express",
+          "note": "io exprime — present tense, infinitive minus -r.",
+          "ipa": "ˌeksprimˈer"
+        },
+        {
+          "target": "Io consilia.",
+          "roman": "io consilia",
+          "english": "I advise.",
+          "ipa": "ˈio konsˈilja"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 6 2",
+      "teach": [
+        {
+          "target": "facer mal a",
+          "roman": "facer mal a",
+          "english": "to hurt",
+          "note": "io facer mal a — present tense, infinitive minus -r.",
+          "ipa": "fatsˈer mˈal ˈa"
+        },
+        {
+          "target": "imaginar",
+          "roman": "imaginar",
+          "english": "to imagine",
+          "note": "io imagina — present tense, infinitive minus -r.",
+          "ipa": "ˌimaɡinˈar"
+        },
+        {
+          "target": "tener se",
+          "roman": "tener se",
+          "english": "to retener",
+          "note": "io tener se — present tense, infinitive minus -r.",
+          "ipa": "tenˈer sˈe"
+        },
+        {
+          "target": "observar",
+          "roman": "observar",
+          "english": "to observe",
+          "note": "io observa — present tense, infinitive minus -r.",
+          "ipa": "ˌobservˈar"
+        },
+        {
+          "target": "posseder",
+          "roman": "posseder",
+          "english": "to possess",
+          "note": "io possede — present tense, infinitive minus -r.",
+          "ipa": "pˌosedˈer"
+        },
+        {
+          "target": "proponer",
+          "roman": "proponer",
+          "english": "to propose",
+          "note": "io propone — present tense, infinitive minus -r.",
+          "ipa": "prˌoponˈer"
+        },
+        {
+          "target": "proteger",
+          "roman": "proteger",
+          "english": "to protect",
+          "note": "io protege — present tense, infinitive minus -r.",
+          "ipa": "prˌoteɡˈer"
+        },
+        {
+          "target": "alleviar",
+          "roman": "alleviar",
+          "english": "to relieve",
+          "note": "io allevia — present tense, infinitive minus -r.",
+          "ipa": "ˌalevjˈar"
+        },
+        {
+          "target": "Io facer mal a.",
+          "roman": "io facer mal a",
+          "english": "I hurt.",
+          "ipa": "ˈio fatsˈer mˈal ˈa"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 6 3",
+      "teach": [
+        {
+          "target": "memorar",
+          "roman": "memorar",
+          "english": "to remember",
+          "note": "io memora — present tense, infinitive minus -r.",
+          "ipa": "mˌemorˈar"
+        },
+        {
+          "target": "rememorar",
+          "roman": "rememorar",
+          "english": "to remind",
+          "note": "io rememora — present tense, infinitive minus -r.",
+          "ipa": "rˌememorˈar"
+        },
+        {
+          "target": "debilitar",
+          "roman": "debilitar",
+          "english": "to weaken",
+          "note": "io debilita — present tense, infinitive minus -r.",
+          "ipa": "dˌebilitˈar"
+        },
+        {
+          "target": "appunctar",
+          "roman": "appunctar",
+          "english": "to appoint",
+          "note": "io appuncta — present tense, infinitive minus -r.",
+          "ipa": "ˌapunktˈar"
+        },
+        {
+          "target": "arrangiar",
+          "roman": "arrangiar",
+          "english": "to arrange",
+          "note": "io arrangia — present tense, infinitive minus -r.",
+          "ipa": "ˌaranʒˈar"
+        },
+        {
+          "target": "commandar",
+          "roman": "commandar",
+          "english": "to command",
+          "note": "io commanda — present tense, infinitive minus -r.",
+          "ipa": "kˌomandˈar"
+        },
+        {
+          "target": "concurrer",
+          "roman": "concurrer",
+          "english": "to compete",
+          "note": "io concurre — present tense, infinitive minus -r.",
+          "ipa": "kˌonkurˈer"
+        },
+        {
+          "target": "disgustar",
+          "roman": "disgustar",
+          "english": "to disgust",
+          "note": "io disgusta — present tense, infinitive minus -r.",
+          "ipa": "dˌisɡustˈar"
+        },
+        {
+          "target": "Io memora.",
+          "roman": "io memora",
+          "english": "I remember.",
+          "ipa": "ˈio memˈora"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 6 4",
+      "teach": [
+        {
+          "target": "disturbar",
+          "roman": "disturbar",
+          "english": "to disturb",
+          "note": "io disturba — present tense, infinitive minus -r.",
+          "ipa": "dˌisturbˈar"
+        },
+        {
+          "target": "familiar",
+          "roman": "familiar",
+          "english": "to familiar",
+          "note": "io familia — present tense, infinitive minus -r.",
+          "ipa": "fˌamiljˈar"
+        },
+        {
+          "target": "crescer",
+          "roman": "crescer",
+          "english": "to vi / grow",
+          "note": "io cresce — present tense, infinitive minus -r.",
+          "ipa": "krestsˈer"
+        },
+        {
+          "target": "tener",
+          "roman": "tener",
+          "english": "to hold / keep",
+          "note": "io tene — present tense, infinitive minus -r.",
+          "ipa": "tenˈer"
+        },
+        {
+          "target": "reflecter",
+          "roman": "reflecter",
+          "english": "to reflect",
+          "note": "io reflecte — present tense, infinitive minus -r.",
+          "ipa": "rˌeflektˈer"
+        },
+        {
+          "target": "suspectar",
+          "roman": "suspectar",
+          "english": "to suspect",
+          "note": "io suspecta — present tense, infinitive minus -r.",
+          "ipa": "sˌuspektˈar"
+        },
+        {
+          "target": "circular",
+          "roman": "circular",
+          "english": "to circular",
+          "note": "io circula — present tense, infinitive minus -r.",
+          "ipa": "tsˌirkulˈar"
+        },
+        {
+          "target": "confessar",
+          "roman": "confessar",
+          "english": "to confess",
+          "note": "io confessa — present tense, infinitive minus -r.",
+          "ipa": "kˌonfesˈar"
+        },
+        {
+          "target": "Io disturba.",
+          "roman": "io disturba",
+          "english": "I disturb.",
+          "ipa": "ˈio distˈurba"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B2-band vocabulary)"
+  ]
+}

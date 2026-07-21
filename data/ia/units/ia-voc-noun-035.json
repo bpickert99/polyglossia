@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-035",
+  "title": "Nomines 35",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 35 1",
+      "teach": [
+        {
+          "target": "le libertate",
+          "roman": "le libertate",
+          "english": "the freedom / liberty",
+          "ipa": "le lˌibertˈate"
+        },
+        {
+          "target": "le international",
+          "roman": "le international",
+          "english": "the international",
+          "ipa": "le ˌinternˌatjonˈal"
+        },
+        {
+          "target": "le bordo",
+          "roman": "le bordo",
+          "english": "the edge / shore / border",
+          "ipa": "le bˈordo"
+        },
+        {
+          "target": "le extraordinari",
+          "roman": "le extraordinari",
+          "english": "the extraordinary",
+          "ipa": "le ˌekstraˌordinˈari"
+        },
+        {
+          "target": "le lista",
+          "roman": "le lista",
+          "english": "the list / strip / stripe",
+          "ipa": "le lˈista"
+        },
+        {
+          "target": "le agente de policia",
+          "roman": "le agente de policia",
+          "english": "the policeman",
+          "ipa": "le aɡˈente de pˌolitsˈia"
+        },
+        {
+          "target": "le effective",
+          "roman": "le effective",
+          "english": "the actual / effective",
+          "ipa": "le ˌefektˈive"
+        },
+        {
+          "target": "le companion",
+          "roman": "le companion",
+          "english": "the fellow / companion",
+          "ipa": "le kˌompanjˈon"
+        },
+        {
+          "target": "Io vide le libertate.",
+          "roman": "io vide le libertate",
+          "english": "I see the freedom / liberty.",
+          "ipa": "ˈio vˈide le lˌibertˈate"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 35 2",
+      "teach": [
+        {
+          "target": "le camera a mangiar",
+          "roman": "le camera a mangiar",
+          "english": "the dining-room",
+          "ipa": "le kˈamera a manʒˈar"
+        },
+        {
+          "target": "le grande",
+          "roman": "le grande",
+          "english": "the grand / great / large",
+          "ipa": "le ɡrˈande"
+        },
+        {
+          "target": "le comprender mal",
+          "roman": "le comprender mal",
+          "english": "the misunderstand",
+          "ipa": "le kˌomprendˈer mˈal"
+        },
+        {
+          "target": "le necessitate",
+          "roman": "le necessitate",
+          "english": "the need / necessity",
+          "ipa": "le nˌetsesitˈate"
+        },
+        {
+          "target": "le substantia",
+          "roman": "le substantia",
+          "english": "the stuff / substance",
+          "ipa": "le substˈantja"
+        },
+        {
+          "target": "le representante",
+          "roman": "le representante",
+          "english": "the representative",
+          "ipa": "le rˌepresentˈante"
+        },
+        {
+          "target": "le machina a scriber",
+          "roman": "le machina a scriber",
+          "english": "the typewriter",
+          "ipa": "le mˈakina a skribˈer"
+        },
+        {
+          "target": "le States a statounitese",
+          "roman": "le States a statounitese",
+          "english": "the united",
+          "ipa": "le stˈates a stˌatoˌunitˈese"
+        },
+        {
+          "target": "Io vide le camera a mangiar.",
+          "roman": "io vide le camera a mangiar",
+          "english": "I see the dining-room.",
+          "ipa": "ˈio vˈide le kˈamera a manʒˈar"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 35 3",
+      "teach": [
+        {
+          "target": "le permission",
+          "roman": "le permission",
+          "english": "the leave / permission",
+          "ipa": "le pˌermisjˈon"
+        },
+        {
+          "target": "le sensation",
+          "roman": "le sensation",
+          "english": "the feeling / sensation",
+          "ipa": "le sˌensatjˈon"
+        },
+        {
+          "target": "le that a condition que",
+          "roman": "le that a condition que",
+          "english": "the provided",
+          "ipa": "le tˈat a kˌonditjˈon kˈe"
+        },
+        {
+          "target": "le governamento",
+          "roman": "le governamento",
+          "english": "the rule / government",
+          "ipa": "le ɡˌovernamˈento"
+        },
+        {
+          "target": "le production",
+          "roman": "le production",
+          "english": "the output / production",
+          "ipa": "le prˌoduktjˈon"
+        },
+        {
+          "target": "le confidentia",
+          "roman": "le confidentia",
+          "english": "the trust / confidence",
+          "ipa": "le kˌonfidˈentja"
+        },
+        {
+          "target": "le quartiero general",
+          "roman": "le quartiero general",
+          "english": "the headquarters",
+          "ipa": "le kwartjˈero ɡˌenerˈal"
+        },
+        {
+          "target": "le go visitar le botecas",
+          "roman": "le go visitar le botecas",
+          "english": "the shopping",
+          "ipa": "le ɡˈo vˌisitˈar le botˈekas"
+        },
+        {
+          "target": "Io vide le permission.",
+          "roman": "io vide le permission",
+          "english": "I see the leave / permission.",
+          "ipa": "ˈio vˈide le pˌermisjˈon"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 35 4",
+      "teach": [
+        {
+          "target": "le de un modo o un altere",
+          "roman": "le de un modo o un altere",
+          "english": "the somehow",
+          "ipa": "le de un mˈodo ˈo un ˈaltere"
+        },
+        {
+          "target": "le estraniero",
+          "roman": "le estraniero",
+          "english": "the stranger / foreigner",
+          "ipa": "le ˌestranjˈero"
+        },
+        {
+          "target": "le fortuna",
+          "roman": "le fortuna",
+          "english": "the luck / chance / fortune",
+          "ipa": "le fortˈuna"
+        },
+        {
+          "target": "le occasion",
+          "roman": "le occasion",
+          "english": "the occasion / opportunity",
+          "ipa": "le ˌokasjˈon"
+        },
+        {
+          "target": "le presidente",
+          "roman": "le presidente",
+          "english": "the chairman / president",
+          "ipa": "le prˌesidˈente"
+        },
+        {
+          "target": "le stricte",
+          "roman": "le stricte",
+          "english": "the tight / narrow / strict",
+          "ipa": "le strˈikte"
+        },
+        {
+          "target": "le responsabilitate",
+          "roman": "le responsabilitate",
+          "english": "the responsibility",
+          "ipa": "le rˌesponsˌabilitˈate"
+        },
+        {
+          "target": "le conversation",
+          "roman": "le conversation",
+          "english": "the talk / conversation",
+          "ipa": "le kˌonversatjˈon"
+        },
+        {
+          "target": "Io vide le de un modo o un altere.",
+          "roman": "io vide le de un modo o un altere",
+          "english": "I see the somehow.",
+          "ipa": "ˈio vˈide le de un mˈodo ˈo un ˈaltere"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

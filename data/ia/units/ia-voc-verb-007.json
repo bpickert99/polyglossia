@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-007",
+  "title": "Verbos 7",
+  "level": "C1",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 7 1",
+      "teach": [
+        {
+          "target": "confunder",
+          "roman": "confunder",
+          "english": "to confuse",
+          "note": "io confunde — present tense, infinitive minus -r.",
+          "ipa": "kˌonfundˈer"
+        },
+        {
+          "target": "connecter",
+          "roman": "connecter",
+          "english": "to connect",
+          "note": "io connecte — present tense, infinitive minus -r.",
+          "ipa": "kˌonektˈer"
+        },
+        {
+          "target": "conquirer",
+          "roman": "conquirer",
+          "english": "to conquer",
+          "note": "io conquire — present tense, infinitive minus -r.",
+          "ipa": "kˌoŋkwirˈer"
+        },
+        {
+          "target": "diminuer",
+          "roman": "diminuer",
+          "english": "to decrease",
+          "note": "io diminue — present tense, infinitive minus -r.",
+          "ipa": "dˌiminwˈer"
+        },
+        {
+          "target": "descender",
+          "roman": "descender",
+          "english": "to descend",
+          "note": "io descende — present tense, infinitive minus -r.",
+          "ipa": "dˌestsendˈer"
+        },
+        {
+          "target": "trottoir",
+          "roman": "trottoir",
+          "english": "to pavement",
+          "note": "io trottoi — present tense, infinitive minus -r.",
+          "ipa": "trotwˈar"
+        },
+        {
+          "target": "peculiar",
+          "roman": "peculiar",
+          "english": "to peculiar",
+          "note": "io peculia — present tense, infinitive minus -r.",
+          "ipa": "pˌekuljˈar"
+        },
+        {
+          "target": "retirar se",
+          "roman": "retirar se",
+          "english": "to retire",
+          "note": "io retirar se — present tense, infinitive minus -r.",
+          "ipa": "rˌetirˈar sˈe"
+        },
+        {
+          "target": "Io confunde.",
+          "roman": "io confunde",
+          "english": "I confuse.",
+          "ipa": "ˈio konfˈunde"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 7 2",
+      "teach": [
+        {
+          "target": "dispersar",
+          "roman": "dispersar",
+          "english": "to scatter",
+          "note": "io dispersa — present tense, infinitive minus -r.",
+          "ipa": "dˌispersˈar"
+        },
+        {
+          "target": "menaciar",
+          "roman": "menaciar",
+          "english": "to threaten",
+          "note": "io menacia — present tense, infinitive minus -r.",
+          "ipa": "mˌenatsjˈar"
+        },
+        {
+          "target": "calcular",
+          "roman": "calcular",
+          "english": "to calculate",
+          "note": "io calcula — present tense, infinitive minus -r.",
+          "ipa": "kˌalkulˈar"
+        },
+        {
+          "target": "cultivar",
+          "roman": "cultivar",
+          "english": "to cultivate",
+          "note": "io cultiva — present tense, infinitive minus -r.",
+          "ipa": "kˌultivˈar"
+        },
+        {
+          "target": "developpar",
+          "roman": "developpar",
+          "english": "to develop",
+          "note": "io developpa — present tense, infinitive minus -r.",
+          "ipa": "dˌevelopˈar"
+        },
+        {
+          "target": "disparer",
+          "roman": "disparer",
+          "english": "to disappear",
+          "note": "io dispare — present tense, infinitive minus -r.",
+          "ipa": "dˌisparˈer"
+        },
+        {
+          "target": "colpar",
+          "roman": "colpar",
+          "english": "to hit / knock",
+          "note": "io colpa — present tense, infinitive minus -r.",
+          "ipa": "kolpˈar"
+        },
+        {
+          "target": "administrar",
+          "roman": "administrar",
+          "english": "to manage",
+          "note": "io administra — present tense, infinitive minus -r.",
+          "ipa": "ˌadministrˈar"
+        },
+        {
+          "target": "Io dispersa.",
+          "roman": "io dispersa",
+          "english": "I scatter.",
+          "ipa": "ˈio dispˈersa"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 7 3",
+      "teach": [
+        {
+          "target": "organisar",
+          "roman": "organisar",
+          "english": "to organize",
+          "note": "io organisa — present tense, infinitive minus -r.",
+          "ipa": "ˌorɡanisˈar"
+        },
+        {
+          "target": "persuader",
+          "roman": "persuader",
+          "english": "to persuade",
+          "note": "io persuade — present tense, infinitive minus -r.",
+          "ipa": "pˌerswadˈer"
+        },
+        {
+          "target": "preservar",
+          "roman": "preservar",
+          "english": "to preserve",
+          "note": "io preserva — present tense, infinitive minus -r.",
+          "ipa": "prˌeservˈar"
+        },
+        {
+          "target": "comprender",
+          "roman": "comprender",
+          "english": "to realise",
+          "note": "io comprende — present tense, infinitive minus -r.",
+          "ipa": "kˌomprendˈer"
+        },
+        {
+          "target": "precipitar se",
+          "roman": "precipitar se",
+          "english": "to rush",
+          "note": "io precipitar se — present tense, infinitive minus -r.",
+          "ipa": "prˌetsipitˈar sˈe"
+        },
+        {
+          "target": "describer",
+          "roman": "describer",
+          "english": "to describe",
+          "note": "io describe — present tense, infinitive minus -r.",
+          "ipa": "dˌeskribˈer"
+        },
+        {
+          "target": "practicar",
+          "roman": "practicar",
+          "english": "to practise",
+          "note": "io practica — present tense, infinitive minus -r.",
+          "ipa": "prˌaktikˈar"
+        },
+        {
+          "target": "provar",
+          "roman": "provar",
+          "english": "to try / prove",
+          "note": "io prova — present tense, infinitive minus -r.",
+          "ipa": "provˈar"
+        },
+        {
+          "target": "Io organisa.",
+          "roman": "io organisa",
+          "english": "I organize.",
+          "ipa": "ˈio ˌorɡanˈisa"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 7 4",
+      "teach": [
+        {
+          "target": "satisfacer",
+          "roman": "satisfacer",
+          "english": "to satisfy",
+          "note": "io satisface — present tense, infinitive minus -r.",
+          "ipa": "sˌatisfatsˈer"
+        },
+        {
+          "target": "accostumar",
+          "roman": "accostumar",
+          "english": "to accustom",
+          "note": "io accostuma — present tense, infinitive minus -r.",
+          "ipa": "ˌakostumˈar"
+        },
+        {
+          "target": "annunciar",
+          "roman": "annunciar",
+          "english": "to advertise",
+          "note": "io annuncia — present tense, infinitive minus -r.",
+          "ipa": "ˌanuntsjˈar"
+        },
+        {
+          "target": "portar",
+          "roman": "portar",
+          "english": "to wear / carry",
+          "note": "io porta — present tense, infinitive minus -r.",
+          "ipa": "portˈar"
+        },
+        {
+          "target": "discoperir",
+          "roman": "discoperir",
+          "english": "to discover",
+          "note": "io discoperi — present tense, infinitive minus -r.",
+          "ipa": "dˌiskoperˈir"
+        },
+        {
+          "target": "espaventar",
+          "roman": "espaventar",
+          "english": "to frighten",
+          "note": "io espaventa — present tense, infinitive minus -r.",
+          "ipa": "ˌespaventˈar"
+        },
+        {
+          "target": "saper",
+          "roman": "saper",
+          "english": "to know / namely",
+          "note": "io sape — present tense, infinitive minus -r.",
+          "ipa": "sapˈer"
+        },
+        {
+          "target": "orthographiar",
+          "roman": "orthographiar",
+          "english": "to spell",
+          "note": "io orthographia — present tense, infinitive minus -r.",
+          "ipa": "ˌortoɡrafjˈar"
+        },
+        {
+          "target": "Io satisface.",
+          "roman": "io satisface",
+          "english": "I satisfy.",
+          "ipa": "ˈio sˌatisfˈatse"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (C1-band vocabulary)"
+  ]
+}

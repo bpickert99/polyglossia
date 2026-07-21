@@ -1,0 +1,143 @@
+{
+  "id": "ia-voc-adv-002",
+  "title": "Adverbios 2",
+  "level": "C1",
+  "summary": "More adverbios vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adverbios 2 1",
+      "teach": [
+        {
+          "target": "pesantemente",
+          "roman": "pesantemente",
+          "english": "heavily",
+          "ipa": "pˌesantemˈente"
+        },
+        {
+          "target": "belle",
+          "roman": "belle",
+          "english": "lovely / pretty",
+          "ipa": "bˈele"
+        },
+        {
+          "target": "tosto",
+          "roman": "tosto",
+          "english": "soon / promptly",
+          "ipa": "tˈosto"
+        },
+        {
+          "target": "correctemente",
+          "roman": "correctemente",
+          "english": "properly",
+          "ipa": "kˌorektemˈente"
+        },
+        {
+          "target": "effectivemente",
+          "roman": "effectivemente",
+          "english": "actually",
+          "ipa": "ˌefektˌivemˈente"
+        },
+        {
+          "target": "presto",
+          "roman": "presto",
+          "english": "loan / instantly",
+          "ipa": "prˈesto"
+        },
+        {
+          "target": "in grande parte",
+          "roman": "in grande parte",
+          "english": "largely",
+          "ipa": "ˈin ɡrˈande pˈarte"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adverbios 2 2",
+      "teach": [
+        {
+          "target": "de bon voluntate",
+          "roman": "de bon voluntate",
+          "english": "gladly",
+          "ipa": "de bˈon vˌoluntˈate"
+        },
+        {
+          "target": "con intention",
+          "roman": "con intention",
+          "english": "purposely",
+          "ipa": "kˈon ˌintentjˈon"
+        },
+        {
+          "target": "approximativemente",
+          "roman": "approximativemente",
+          "english": "about",
+          "ipa": "ˌaproksˌimatˌivemˈente"
+        },
+        {
+          "target": "absolutemente",
+          "roman": "absolutemente",
+          "english": "absolutely",
+          "ipa": "ˌabsolˌutemˈente"
+        },
+        {
+          "target": "certo",
+          "roman": "certo",
+          "english": "surely / certainly",
+          "ipa": "tsˈerto"
+        },
+        {
+          "target": "infra",
+          "roman": "infra",
+          "english": "beneath / underneath",
+          "ipa": "ˈinfra"
+        },
+        {
+          "target": "in consequentia",
+          "roman": "in consequentia",
+          "english": "accordingly",
+          "ipa": "ˈin kˌonsekwˈentja"
+        },
+        {
+          "target": "multo",
+          "roman": "multo",
+          "english": "highly / greatly / extremely",
+          "ipa": "mˈulto"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adverbios 2 3",
+      "teach": [
+        {
+          "target": "completemente",
+          "roman": "completemente",
+          "english": "entirely / altogether",
+          "ipa": "kˌompletemˈente"
+        },
+        {
+          "target": "quasi",
+          "roman": "quasi",
+          "english": "nearly / almost / practically",
+          "ipa": "kwˈasi"
+        },
+        {
+          "target": "particularmente",
+          "roman": "particularmente",
+          "english": "especially / particularly",
+          "ipa": "pˌartikˌularmˈente"
+        },
+        {
+          "target": "de tempore in tempore",
+          "roman": "de tempore in tempore",
+          "english": "sometimes / occasionally",
+          "ipa": "de tˈempore ˈin tˈempore"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 20 more adverbios (C1-band vocabulary)"
+  ]
+}

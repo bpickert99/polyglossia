@@ -1,0 +1,82 @@
+{
+  "id": "ia-a2-u12",
+  "title": "Plus numeros",
+  "level": "A2",
+  "summary": "Hundreds, thousands, and more ordinals.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Centos e milles",
+      "teach": [
+        {
+          "target": "duo centos",
+          "roman": "duo centos",
+          "english": "two hundred",
+          "ipa": "dˈuo tsˈentos"
+        },
+        {
+          "target": "cinque centos",
+          "roman": "cinque centos",
+          "english": "five hundred",
+          "ipa": "tsˈiŋkwe tsˈentos"
+        },
+        {
+          "target": "mille",
+          "roman": "mille",
+          "english": "thousand",
+          "ipa": "mˈile"
+        },
+        {
+          "target": "million",
+          "roman": "million",
+          "english": "million",
+          "ipa": "miljˈon"
+        },
+        {
+          "target": "Nos ha mille libros in le schola.",
+          "roman": "nos ha mille libros in le schola",
+          "english": "We have a thousand books in the school.",
+          "ipa": "nˈos ha mˈile lˈibros ˈin le stʃˈola"
+        }
+      ],
+      "grammar": {
+        "title": "Bigger numbers",
+        "body": "Round hundreds just add **-s** to cento: duo centos (200), tres centos (300), cinque centos (500) — same plural rule as everything else.\n**mille** (1000) doesn't change for a plural count: duo mille (2000). **million** does: duo milliones (two million)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Plus ordinales",
+      "teach": [
+        {
+          "target": "tertie",
+          "roman": "tertie",
+          "english": "third",
+          "ipa": "tˈertje"
+        },
+        {
+          "target": "quarte",
+          "roman": "quarte",
+          "english": "fourth",
+          "ipa": "kwˈarte"
+        },
+        {
+          "target": "quinte",
+          "roman": "quinte",
+          "english": "fifth",
+          "ipa": "kwˈinte"
+        },
+        {
+          "target": "Illa es le tertie in su classe.",
+          "roman": "illa es le tertie in su classe",
+          "english": "She is third in her class.",
+          "ipa": "ˈila es le tˈertje ˈin su klˈase"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Count in hundreds and thousands",
+    "Use ordinals beyond first and second"
+  ]
+}

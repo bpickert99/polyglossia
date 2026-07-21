@@ -1,0 +1,113 @@
+{
+  "id": "ia-voc-manciar-plus",
+  "title": "Manciar plus",
+  "level": "A2",
+  "summary": "More food and drink.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Manciar plus 1",
+      "teach": [
+        {
+          "target": "le frumento",
+          "roman": "le frumento",
+          "english": "the wheat",
+          "ipa": "le frumˈento"
+        },
+        {
+          "target": "le cereales",
+          "roman": "le cereales",
+          "english": "the corn",
+          "ipa": "le tsˌereˈales"
+        },
+        {
+          "target": "le grano",
+          "roman": "le grano",
+          "english": "the grain",
+          "ipa": "le ɡrˈano"
+        },
+        {
+          "target": "le farina",
+          "roman": "le farina",
+          "english": "the flour",
+          "ipa": "le farˈina"
+        },
+        {
+          "target": "le butyro",
+          "roman": "le butyro",
+          "english": "the butter",
+          "ipa": "le bˈutiro"
+        },
+        {
+          "target": "le sucro",
+          "roman": "le sucro",
+          "english": "the sugar",
+          "ipa": "le sˈukro"
+        },
+        {
+          "target": "le sal",
+          "roman": "le sal",
+          "english": "the salt",
+          "ipa": "le sˈal"
+        },
+        {
+          "target": "Io vide le frumento.",
+          "roman": "io vide le frumento",
+          "english": "I see the wheat.",
+          "ipa": "ˈio vˈide le frumˈento"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Manciar plus 2",
+      "teach": [
+        {
+          "target": "le ovo",
+          "roman": "le ovo",
+          "english": "the egg",
+          "ipa": "le ˈovo"
+        },
+        {
+          "target": "le oleo",
+          "roman": "le oleo",
+          "english": "the oil",
+          "ipa": "le olˈeo"
+        },
+        {
+          "target": "le bira",
+          "roman": "le bira",
+          "english": "the beer",
+          "ipa": "le bˈira"
+        },
+        {
+          "target": "le vino",
+          "roman": "le vino",
+          "english": "the wine",
+          "ipa": "le vˈino"
+        },
+        {
+          "target": "le fructo",
+          "roman": "le fructo",
+          "english": "the fruit",
+          "ipa": "le frˈukto"
+        },
+        {
+          "target": "le orange",
+          "roman": "le orange",
+          "english": "the orange",
+          "ipa": "le orˈanʒe"
+        },
+        {
+          "target": "Io vide le ovo.",
+          "roman": "io vide le ovo",
+          "english": "I see the egg.",
+          "ipa": "ˈio vˈide le ˈovo"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 13 more words about more food and drink"
+  ]
+}

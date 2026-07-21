@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-029",
+  "title": "Nomines 29",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 29 1",
+      "teach": [
+        {
+          "target": "le proprie",
+          "roman": "le proprie",
+          "english": "the own / proper",
+          "ipa": "le prˈoprje"
+        },
+        {
+          "target": "le proprietate",
+          "roman": "le proprietate",
+          "english": "the property",
+          "ipa": "le prˌoprjetˈate"
+        },
+        {
+          "target": "le proposition",
+          "roman": "le proposition",
+          "english": "the proposal",
+          "ipa": "le prˌopositjˈon"
+        },
+        {
+          "target": "le referentia",
+          "roman": "le referentia",
+          "english": "the reference",
+          "ipa": "le rˌeferˈentja"
+        },
+        {
+          "target": "le reflexion",
+          "roman": "le reflexion",
+          "english": "the reflection",
+          "ipa": "le rˌefleksjˈon"
+        },
+        {
+          "target": "le dece-septe",
+          "roman": "le dece-septe",
+          "english": "the seventeen",
+          "ipa": "le dˈetsesˈepte"
+        },
+        {
+          "target": "le umbra",
+          "roman": "le umbra",
+          "english": "the shade / shadow",
+          "ipa": "le ˈumbra"
+        },
+        {
+          "target": "le scala",
+          "roman": "le scala",
+          "english": "the scale / stairs",
+          "ipa": "le skˈala"
+        },
+        {
+          "target": "Io vide le proprie.",
+          "roman": "io vide le proprie",
+          "english": "I see the own / proper.",
+          "ipa": "ˈio vˈide le prˈoprje"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 29 2",
+      "teach": [
+        {
+          "target": "le suffrentia",
+          "roman": "le suffrentia",
+          "english": "the suffering",
+          "ipa": "le sufrˈentja"
+        },
+        {
+          "target": "le poner del sol",
+          "roman": "le poner del sol",
+          "english": "the sunset",
+          "ipa": "le ponˈer del sˈol"
+        },
+        {
+          "target": "le certe",
+          "roman": "le certe",
+          "english": "the sure / certain",
+          "ipa": "le tsˈerte"
+        },
+        {
+          "target": "le in alto",
+          "roman": "le in alto",
+          "english": "the up / upwards",
+          "ipa": "le ˈin ˈalto"
+        },
+        {
+          "target": "le lamina",
+          "roman": "le lamina",
+          "english": "the blade / sheet",
+          "ipa": "le lˈamina"
+        },
+        {
+          "target": "le planca",
+          "roman": "le planca",
+          "english": "the board / shelf",
+          "ipa": "le plˈanka"
+        },
+        {
+          "target": "le cigarretta",
+          "roman": "le cigarretta",
+          "english": "the cigarette",
+          "ipa": "le tsˌiɡarˈeta"
+        },
+        {
+          "target": "le connexion",
+          "roman": "le connexion",
+          "english": "the connection",
+          "ipa": "le kˌoneksjˈon"
+        },
+        {
+          "target": "Io vide le suffrentia.",
+          "roman": "io vide le suffrentia",
+          "english": "I see the suffering.",
+          "ipa": "ˈio vˈide le sufrˈentja"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 29 3",
+      "teach": [
+        {
+          "target": "le cabana",
+          "roman": "le cabana",
+          "english": "the hut / cottage",
+          "ipa": "le kabˈana"
+        },
+        {
+          "target": "le obscuritate",
+          "roman": "le obscuritate",
+          "english": "the darkness",
+          "ipa": "le ˌobskuritˈate"
+        },
+        {
+          "target": "le car",
+          "roman": "le car",
+          "english": "the dear / expensive",
+          "ipa": "le kˈar"
+        },
+        {
+          "target": "le pauco brillante",
+          "roman": "le pauco brillante",
+          "english": "the dull",
+          "ipa": "le pˈawko brilˈante"
+        },
+        {
+          "target": "le excellente",
+          "roman": "le excellente",
+          "english": "the excellent",
+          "ipa": "le ˌekstselˈente"
+        },
+        {
+          "target": "le existentia",
+          "roman": "le existentia",
+          "english": "the existence",
+          "ipa": "le ˌeksistˈentja"
+        },
+        {
+          "target": "le dulce",
+          "roman": "le dulce",
+          "english": "the sweet / gentle",
+          "ipa": "le dˈultse"
+        },
+        {
+          "target": "le frequentemente",
+          "roman": "le frequentemente",
+          "english": "the often",
+          "ipa": "le frˌekwentemˈente"
+        },
+        {
+          "target": "Io vide le cabana.",
+          "roman": "io vide le cabana",
+          "english": "I see the hut / cottage.",
+          "ipa": "ˈio vˈide le kabˈana"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 29 4",
+      "teach": [
+        {
+          "target": "le libra sterling",
+          "roman": "le libra sterling",
+          "english": "the pound",
+          "ipa": "le lˈibra sterlˈiŋɡ"
+        },
+        {
+          "target": "le sacrificio",
+          "roman": "le sacrificio",
+          "english": "the sacrifice",
+          "ipa": "le sˌakrifˈitsjo"
+        },
+        {
+          "target": "le scientista",
+          "roman": "le scientista",
+          "english": "the scientist",
+          "ipa": "le stsjentˈista"
+        },
+        {
+          "target": "le scandalisate",
+          "roman": "le scandalisate",
+          "english": "the shocked",
+          "ipa": "le skˌandalisˈate"
+        },
+        {
+          "target": "le telegrapho",
+          "roman": "le telegrapho",
+          "english": "the telegraph",
+          "ipa": "le telˈeɡrafo"
+        },
+        {
+          "target": "le iste vespera",
+          "roman": "le iste vespera",
+          "english": "the tonight",
+          "ipa": "le ˈiste vˈespera"
+        },
+        {
+          "target": "le torquimento",
+          "roman": "le torquimento",
+          "english": "the twisting",
+          "ipa": "le tˌorkwimˈento"
+        },
+        {
+          "target": "le conto",
+          "roman": "le conto",
+          "english": "the story / account",
+          "ipa": "le kˈonto"
+        },
+        {
+          "target": "Io vide le libra sterling.",
+          "roman": "io vide le libra sterling",
+          "english": "I see the pound.",
+          "ipa": "ˈio vˈide le lˈibra sterlˈiŋɡ"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

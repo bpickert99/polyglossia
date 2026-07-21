@@ -86,12 +86,14 @@
         {
           "target": "hic",
           "roman": "hic",
-          "english": "here"
+          "english": "here",
+          "ipa": "hˈik"
         },
         {
           "target": "ibi",
           "roman": "ibi",
-          "english": "there"
+          "english": "there",
+          "ipa": "ˈibi"
         }
       ]
     }

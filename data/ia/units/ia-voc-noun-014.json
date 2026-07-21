@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-014",
+  "title": "Nomines 14",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 14 1",
+      "teach": [
+        {
+          "target": "le pollice",
+          "roman": "le pollice",
+          "english": "the thumb",
+          "ipa": "le pˈolitse"
+        },
+        {
+          "target": "le torte",
+          "roman": "le torte",
+          "english": "the twisted",
+          "ipa": "le tˈorte"
+        },
+        {
+          "target": "le vigilia",
+          "roman": "le vigilia",
+          "english": "the watch",
+          "ipa": "le viɡˈilja"
+        },
+        {
+          "target": "le teste",
+          "roman": "le teste",
+          "english": "the witness",
+          "ipa": "le tˈeste"
+        },
+        {
+          "target": "le obrero",
+          "roman": "le obrero",
+          "english": "the worker",
+          "ipa": "le obrˈero"
+        },
+        {
+          "target": "le absente",
+          "roman": "le absente",
+          "english": "the absent",
+          "ipa": "le absˈente"
+        },
+        {
+          "target": "le arresto",
+          "roman": "le arresto",
+          "english": "the arrest",
+          "ipa": "le arˈesto"
+        },
+        {
+          "target": "le beltate",
+          "roman": "le beltate",
+          "english": "the beauty",
+          "ipa": "le beltˈate"
+        },
+        {
+          "target": "Io vide le pollice.",
+          "roman": "io vide le pollice",
+          "english": "I see the thumb.",
+          "ipa": "ˈio vˈide le pˈolitse"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 14 2",
+      "teach": [
+        {
+          "target": "le carro",
+          "roman": "le carro",
+          "english": "the carriage",
+          "ipa": "le kˈaro"
+        },
+        {
+          "target": "le commisso",
+          "roman": "le commisso",
+          "english": "the clerk",
+          "ipa": "le komˈiso"
+        },
+        {
+          "target": "le costume",
+          "roman": "le costume",
+          "english": "the custom",
+          "ipa": "le kostˈume"
+        },
+        {
+          "target": "le detalio",
+          "roman": "le detalio",
+          "english": "the detail",
+          "ipa": "le detˈaljo"
+        },
+        {
+          "target": "le octanta",
+          "roman": "le octanta",
+          "english": "the eighty",
+          "ipa": "le oktˈanta"
+        },
+        {
+          "target": "le imperio",
+          "roman": "le imperio",
+          "english": "the empire",
+          "ipa": "le impˈerjo"
+        },
+        {
+          "target": "le quaranta",
+          "roman": "le quaranta",
+          "english": "the forty",
+          "ipa": "le kwarˈanta"
+        },
+        {
+          "target": "le de auro",
+          "roman": "le de auro",
+          "english": "the golden",
+          "ipa": "le de ˈaʊro"
+        },
+        {
+          "target": "Io vide le carro.",
+          "roman": "io vide le carro",
+          "english": "I see the carriage.",
+          "ipa": "ˈio vˈide le kˈaro"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 14 3",
+      "teach": [
+        {
+          "target": "le verdura",
+          "roman": "le verdura",
+          "english": "the greens",
+          "ipa": "le verdˈura"
+        },
+        {
+          "target": "le invitato",
+          "roman": "le invitato",
+          "english": "the guest",
+          "ipa": "le ˌinvitˈato"
+        },
+        {
+          "target": "le honeste",
+          "roman": "le honeste",
+          "english": "the honest",
+          "ipa": "le honˈeste"
+        },
+        {
+          "target": "le interior",
+          "roman": "le interior",
+          "english": "the inner",
+          "ipa": "le ˌinterjˈor"
+        },
+        {
+          "target": "le insulto",
+          "roman": "le insulto",
+          "english": "the insult",
+          "ipa": "le insˈulto"
+        },
+        {
+          "target": "le indolente",
+          "roman": "le indolente",
+          "english": "the lazy",
+          "ipa": "le ˌindolˈente"
+        },
+        {
+          "target": "le maniera",
+          "roman": "le maniera",
+          "english": "the manner",
+          "ipa": "le manjˈera"
+        },
+        {
+          "target": "le memoria",
+          "roman": "le memoria",
+          "english": "the memory",
+          "ipa": "le memˈorja"
+        },
+        {
+          "target": "Io vide le verdura.",
+          "roman": "io vide le verdura",
+          "english": "I see the greens.",
+          "ipa": "ˈio vˈide le verdˈura"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 14 4",
+      "teach": [
+        {
+          "target": "le miseria",
+          "roman": "le miseria",
+          "english": "the misery",
+          "ipa": "le misˈerja"
+        },
+        {
+          "target": "le origine",
+          "roman": "le origine",
+          "english": "the origin",
+          "ipa": "le orˈiɡine"
+        },
+        {
+          "target": "le le nostre",
+          "roman": "le le nostre",
+          "english": "the ours",
+          "ipa": "le le nˈostre"
+        },
+        {
+          "target": "le jocator",
+          "roman": "le jocator",
+          "english": "the player",
+          "ipa": "le ʒˌokatˈor"
+        },
+        {
+          "target": "le prision",
+          "roman": "le prision",
+          "english": "the prison",
+          "ipa": "le prisjˈon"
+        },
+        {
+          "target": "le recente",
+          "roman": "le recente",
+          "english": "the recent",
+          "ipa": "le retsˈente"
+        },
+        {
+          "target": "le ascension",
+          "roman": "le ascension",
+          "english": "the rise",
+          "ipa": "le ˌastsensjˈon"
+        },
+        {
+          "target": "le soverano",
+          "roman": "le soverano",
+          "english": "the ruler",
+          "ipa": "le sˌoverˈano"
+        },
+        {
+          "target": "Io vide le miseria.",
+          "roman": "io vide le miseria",
+          "english": "I see the misery.",
+          "ipa": "ˈio vˈide le misˈerja"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

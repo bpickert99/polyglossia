@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-004",
+  "title": "Verbos 4",
+  "level": "B2",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 4 1",
+      "teach": [
+        {
+          "target": "oblidar",
+          "roman": "oblidar",
+          "english": "to forget",
+          "note": "io oblida — present tense, infinitive minus -r.",
+          "ipa": "ˌoblidˈar"
+        },
+        {
+          "target": "impedir",
+          "roman": "impedir",
+          "english": "to hinder",
+          "note": "io impedi — present tense, infinitive minus -r.",
+          "ipa": "ˌimpedˈir"
+        },
+        {
+          "target": "invitar",
+          "roman": "invitar",
+          "english": "to invite",
+          "note": "io invita — present tense, infinitive minus -r.",
+          "ipa": "ˌinvitˈar"
+        },
+        {
+          "target": "incontrar",
+          "roman": "incontrar",
+          "english": "to meet",
+          "note": "io incontra — present tense, infinitive minus -r.",
+          "ipa": "ˌinkontrˈar"
+        },
+        {
+          "target": "operar",
+          "roman": "operar",
+          "english": "to operate",
+          "note": "io opera — present tense, infinitive minus -r.",
+          "ipa": "ˌoperˈar"
+        },
+        {
+          "target": "finger",
+          "roman": "finger",
+          "english": "to pretend",
+          "note": "io finge — present tense, infinitive minus -r.",
+          "ipa": "fiŋɡˈer"
+        },
+        {
+          "target": "imprimer",
+          "roman": "imprimer",
+          "english": "to print",
+          "note": "io imprime — present tense, infinitive minus -r.",
+          "ipa": "ˌimprimˈer"
+        },
+        {
+          "target": "attinger",
+          "roman": "attinger",
+          "english": "to reach",
+          "note": "io attinge — present tense, infinitive minus -r.",
+          "ipa": "ˌatiŋɡˈer"
+        },
+        {
+          "target": "Io oblida.",
+          "roman": "io oblida",
+          "english": "I forget.",
+          "ipa": "ˈio ˈoblida"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 4 2",
+      "teach": [
+        {
+          "target": "reducer",
+          "roman": "reducer",
+          "english": "to reduce",
+          "note": "io reduce — present tense, infinitive minus -r.",
+          "ipa": "rˌedutsˈer"
+        },
+        {
+          "target": "gauder",
+          "roman": "gauder",
+          "english": "to rejoice",
+          "note": "io gaude — present tense, infinitive minus -r.",
+          "ipa": "ɡaʊdˈer"
+        },
+        {
+          "target": "succuter",
+          "roman": "succuter",
+          "english": "to shake",
+          "note": "io succute — present tense, infinitive minus -r.",
+          "ipa": "sˌukutˈer"
+        },
+        {
+          "target": "sincer",
+          "roman": "sincer",
+          "english": "to sincere",
+          "note": "io since — present tense, infinitive minus -r.",
+          "ipa": "sintsˈer"
+        },
+        {
+          "target": "glutir",
+          "roman": "glutir",
+          "english": "to swallow",
+          "note": "io gluti — present tense, infinitive minus -r.",
+          "ipa": "ɡlutˈir"
+        },
+        {
+          "target": "tremer",
+          "roman": "tremer",
+          "english": "to tremble",
+          "note": "io treme — present tense, infinitive minus -r.",
+          "ipa": "tremˈer"
+        },
+        {
+          "target": "inverter",
+          "roman": "inverter",
+          "english": "to upset",
+          "note": "io inverte — present tense, infinitive minus -r.",
+          "ipa": "ˌinvertˈer"
+        },
+        {
+          "target": "apportar",
+          "roman": "apportar",
+          "english": "to bring",
+          "note": "io apporta — present tense, infinitive minus -r.",
+          "ipa": "ˌaportˈar"
+        },
+        {
+          "target": "Io reduce.",
+          "roman": "io reduce",
+          "english": "I reduce.",
+          "ipa": "ˈio redˈutse"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 4 3",
+      "teach": [
+        {
+          "target": "capturar",
+          "roman": "capturar",
+          "english": "to catch",
+          "note": "io captura — present tense, infinitive minus -r.",
+          "ipa": "kˌapturˈar"
+        },
+        {
+          "target": "acclamar",
+          "roman": "acclamar",
+          "english": "to cheer",
+          "note": "io acclama — present tense, infinitive minus -r.",
+          "ipa": "ˌaklamˈar"
+        },
+        {
+          "target": "educar",
+          "roman": "educar",
+          "english": "to educate",
+          "note": "io educa — present tense, infinitive minus -r.",
+          "ipa": "ˌedukˈar"
+        },
+        {
+          "target": "excitar",
+          "roman": "excitar",
+          "english": "to excite",
+          "note": "io excita — present tense, infinitive minus -r.",
+          "ipa": "ˌekstsitˈar"
+        },
+        {
+          "target": "suspender",
+          "roman": "suspender",
+          "english": "to hang",
+          "note": "io suspende — present tense, infinitive minus -r.",
+          "ipa": "sˌuspendˈer"
+        },
+        {
+          "target": "imitar",
+          "roman": "imitar",
+          "english": "to imitate",
+          "note": "io imita — present tense, infinitive minus -r.",
+          "ipa": "ˌimitˈar"
+        },
+        {
+          "target": "inseniar",
+          "roman": "inseniar",
+          "english": "to teach",
+          "note": "io insenia — present tense, infinitive minus -r.",
+          "ipa": "ˌinsenjˈar"
+        },
+        {
+          "target": "acceptar",
+          "roman": "acceptar",
+          "english": "to accept",
+          "note": "io accepta — present tense, infinitive minus -r.",
+          "ipa": "ˌatseptˈar"
+        },
+        {
+          "target": "Io captura.",
+          "roman": "io captura",
+          "english": "I catch.",
+          "ipa": "ˈio kaptˈura"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 4 4",
+      "teach": [
+        {
+          "target": "pertiner",
+          "roman": "pertiner",
+          "english": "to belong",
+          "note": "io pertine — present tense, infinitive minus -r.",
+          "ipa": "pˌertinˈer"
+        },
+        {
+          "target": "construer",
+          "roman": "construer",
+          "english": "to build",
+          "note": "io construe — present tense, infinitive minus -r.",
+          "ipa": "konstrwˈer"
+        },
+        {
+          "target": "applattar",
+          "roman": "applattar",
+          "english": "to crush",
+          "note": "io applatta — present tense, infinitive minus -r.",
+          "ipa": "ˌaplatˈar"
+        },
+        {
+          "target": "attachar",
+          "roman": "attachar",
+          "english": "to fasten",
+          "note": "io attacha — present tense, infinitive minus -r.",
+          "ipa": "ˌataʃˈar"
+        },
+        {
+          "target": "prohibir",
+          "roman": "prohibir",
+          "english": "to forbid",
+          "note": "io prohibi — present tense, infinitive minus -r.",
+          "ipa": "prˌohibˈir"
+        },
+        {
+          "target": "governar",
+          "roman": "governar",
+          "english": "to govern",
+          "note": "io governa — present tense, infinitive minus -r.",
+          "ipa": "ɡˌovernˈar"
+        },
+        {
+          "target": "informar",
+          "roman": "informar",
+          "english": "to inform",
+          "note": "io informa — present tense, infinitive minus -r.",
+          "ipa": "ˌinformˈar"
+        },
+        {
+          "target": "intender",
+          "roman": "intender",
+          "english": "to intend",
+          "note": "io intende — present tense, infinitive minus -r.",
+          "ipa": "ˌintendˈer"
+        },
+        {
+          "target": "Io pertine.",
+          "roman": "io pertine",
+          "english": "I belong.",
+          "ipa": "ˈio pertˈine"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B2-band vocabulary)"
+  ]
+}

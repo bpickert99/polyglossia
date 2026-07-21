@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-033",
+  "title": "Nomines 33",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 33 1",
+      "teach": [
+        {
+          "target": "le agricultura",
+          "roman": "le agricultura",
+          "english": "the agriculture",
+          "ipa": "le ˌaɡrikultˈura"
+        },
+        {
+          "target": "le fall addormir se",
+          "roman": "le fall addormir se",
+          "english": "the asleep",
+          "ipa": "le fˈal ˌadormˈir sˈe"
+        },
+        {
+          "target": "le association",
+          "roman": "le association",
+          "english": "the association",
+          "ipa": "le ˌasotsjatjˈon"
+        },
+        {
+          "target": "le facer prestar se",
+          "roman": "le facer prestar se",
+          "english": "the borrow",
+          "ipa": "le fatsˈer prestˈar sˈe"
+        },
+        {
+          "target": "le limite",
+          "roman": "le limite",
+          "english": "the limit / boundary",
+          "ipa": "le lˈimite"
+        },
+        {
+          "target": "le departimento",
+          "roman": "le departimento",
+          "english": "the department",
+          "ipa": "le dˌepartimˈento"
+        },
+        {
+          "target": "le description",
+          "roman": "le description",
+          "english": "the description",
+          "ipa": "le dˌeskriptjˈon"
+        },
+        {
+          "target": "le explication",
+          "roman": "le explication",
+          "english": "the explanation",
+          "ipa": "le ˌeksplikatjˈon"
+        },
+        {
+          "target": "Io vide le agricultura.",
+          "roman": "io vide le agricultura",
+          "english": "I see the agriculture.",
+          "ipa": "ˈio vˈide le ˌaɡrikultˈura"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 33 2",
+      "teach": [
+        {
+          "target": "le titulo",
+          "roman": "le titulo",
+          "english": "the title / headline",
+          "ipa": "le tˈitulo"
+        },
+        {
+          "target": "le imagination",
+          "roman": "le imagination",
+          "english": "the imagination",
+          "ipa": "le ˌimaɡˌinatjˈon"
+        },
+        {
+          "target": "le melioration",
+          "roman": "le melioration",
+          "english": "the improvement",
+          "ipa": "le mˌeljoratjˈon"
+        },
+        {
+          "target": "le manufactura",
+          "roman": "le manufactura",
+          "english": "the manufacture",
+          "ipa": "le mˌanufaktˈura"
+        },
+        {
+          "target": "le fabricante",
+          "roman": "le fabricante",
+          "english": "the manufacturer",
+          "ipa": "le fˌabrikˈante"
+        },
+        {
+          "target": "le popularitate",
+          "roman": "le popularitate",
+          "english": "the popularity",
+          "ipa": "le pˌopulˌaritˈate"
+        },
+        {
+          "target": "le publication",
+          "roman": "le publication",
+          "english": "the publication",
+          "ipa": "le pˌublikatjˈon"
+        },
+        {
+          "target": "le svedese",
+          "roman": "le svedese",
+          "english": "the swede / swedish",
+          "ipa": "le svedˈese"
+        },
+        {
+          "target": "Io vide le titulo.",
+          "roman": "io vide le titulo",
+          "english": "I see the title / headline.",
+          "ipa": "ˈio vˈide le tˈitulo"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 33 3",
+      "teach": [
+        {
+          "target": "le temperatura",
+          "roman": "le temperatura",
+          "english": "the temperature",
+          "ipa": "le tˌemperatˈura"
+        },
+        {
+          "target": "le conjunctemente",
+          "roman": "le conjunctemente",
+          "english": "the together",
+          "ipa": "le kˌonʒunktemˈente"
+        },
+        {
+          "target": "le vinti-novem",
+          "roman": "le vinti-novem",
+          "english": "the twenty-nine",
+          "ipa": "le vˈintinˈovem"
+        },
+        {
+          "target": "le universitate",
+          "roman": "le universitate",
+          "english": "the university",
+          "ipa": "le ˌunivˌersitˈate"
+        },
+        {
+          "target": "le Grande Britannia",
+          "roman": "le Grande Britannia",
+          "english": "the britain",
+          "ipa": "le ɡrˈande britˈanja"
+        },
+        {
+          "target": "le commerciante",
+          "roman": "le commerciante",
+          "english": "the businessman",
+          "ipa": "le kˌomertsjˈante"
+        },
+        {
+          "target": "le discontente",
+          "roman": "le discontente",
+          "english": "the discontented",
+          "ipa": "le dˌiskontˈente"
+        },
+        {
+          "target": "le perturbation",
+          "roman": "le perturbation",
+          "english": "the disturbance",
+          "ipa": "le pˌerturbatjˈon"
+        },
+        {
+          "target": "Io vide le temperatura.",
+          "roman": "io vide le temperatura",
+          "english": "I see the temperature.",
+          "ipa": "ˈio vˈide le tˌemperatˈura"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 33 4",
+      "teach": [
+        {
+          "target": "le independente",
+          "roman": "le independente",
+          "english": "the independent",
+          "ipa": "le ˌindependˈente"
+        },
+        {
+          "target": "le lingua",
+          "roman": "le lingua",
+          "english": "the tongue / language",
+          "ipa": "le lˈiŋɡwa"
+        },
+        {
+          "target": "le vicinitate",
+          "roman": "le vicinitate",
+          "english": "the neighbourhood",
+          "ipa": "le vˌitsinitˈate"
+        },
+        {
+          "target": "le exterior",
+          "roman": "le exterior",
+          "english": "the outer / outside",
+          "ipa": "le ˌeksterjˈor"
+        },
+        {
+          "target": "le provision",
+          "roman": "le provision",
+          "english": "the store / supply",
+          "ipa": "le prˌovisjˈon"
+        },
+        {
+          "target": "le Natal",
+          "roman": "le Natal",
+          "english": "the native / christmas",
+          "ipa": "le natˈal"
+        },
+        {
+          "target": "le anxietate",
+          "roman": "le anxietate",
+          "english": "the worry / anxiety",
+          "ipa": "le ˌanksjetˈate"
+        },
+        {
+          "target": "le alicuno",
+          "roman": "le alicuno",
+          "english": "the anybody / someone",
+          "ipa": "le ˌalikˈuno"
+        },
+        {
+          "target": "Io vide le independente.",
+          "roman": "io vide le independente",
+          "english": "I see the independent.",
+          "ipa": "ˈio vˈide le ˌindependˈente"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

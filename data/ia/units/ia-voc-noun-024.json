@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-024",
+  "title": "Nomines 24",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 24 1",
+      "teach": [
+        {
+          "target": "le securitate",
+          "roman": "le securitate",
+          "english": "the safety",
+          "ipa": "le sˌekuritˈate"
+        },
+        {
+          "target": "le inclination",
+          "roman": "le inclination",
+          "english": "the slope",
+          "ipa": "le ˌinklinatjˈon"
+        },
+        {
+          "target": "le precipitose",
+          "roman": "le precipitose",
+          "english": "the steep",
+          "ipa": "le prˌetsipitˈose"
+        },
+        {
+          "target": "le universo",
+          "roman": "le universo",
+          "english": "the universe",
+          "ipa": "le ˌunivˈerso"
+        },
+        {
+          "target": "le officina",
+          "roman": "le officina",
+          "english": "the workshop",
+          "ipa": "le ˌofitsˈina"
+        },
+        {
+          "target": "le adoration",
+          "roman": "le adoration",
+          "english": "the worship",
+          "ipa": "le ˌadoratjˈon"
+        },
+        {
+          "target": "le capacitate",
+          "roman": "le capacitate",
+          "english": "the ability",
+          "ipa": "le kˌapatsitˈate"
+        },
+        {
+          "target": "le accidente",
+          "roman": "le accidente",
+          "english": "the accident",
+          "ipa": "le ˌatsidˈente"
+        },
+        {
+          "target": "Io vide le securitate.",
+          "roman": "io vide le securitate",
+          "english": "I see the safety.",
+          "ipa": "ˈio vˈide le sˌekuritˈate"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 24 2",
+      "teach": [
+        {
+          "target": "le avantage",
+          "roman": "le avantage",
+          "english": "the advantage",
+          "ipa": "le ˌavantˈaʒe"
+        },
+        {
+          "target": "le aventura",
+          "roman": "le aventura",
+          "english": "the adventure",
+          "ipa": "le ˌaventˈura"
+        },
+        {
+          "target": "le argumento",
+          "roman": "le argumento",
+          "english": "the argument",
+          "ipa": "le ˌarɡumˈento"
+        },
+        {
+          "target": "le conducta",
+          "roman": "le conducta",
+          "english": "the behaviour",
+          "ipa": "le kondˈukta"
+        },
+        {
+          "target": "le curva",
+          "roman": "le curva",
+          "english": "the bend / curve",
+          "ipa": "le kˈurva"
+        },
+        {
+          "target": "le large",
+          "roman": "le large",
+          "english": "the wide / broad",
+          "ipa": "le lˈarɡe"
+        },
+        {
+          "target": "le campo",
+          "roman": "le campo",
+          "english": "the camp / field",
+          "ipa": "le kˈampo"
+        },
+        {
+          "target": "le corte",
+          "roman": "le corte",
+          "english": "the yard / court",
+          "ipa": "le kˈorte"
+        },
+        {
+          "target": "Io vide le avantage.",
+          "roman": "io vide le avantage",
+          "english": "I see the advantage.",
+          "ipa": "ˈio vˈide le ˌavantˈaʒe"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 24 3",
+      "teach": [
+        {
+          "target": "le distantia",
+          "roman": "le distantia",
+          "english": "the distance",
+          "ipa": "le distˈantja"
+        },
+        {
+          "target": "le districto",
+          "roman": "le districto",
+          "english": "the district",
+          "ipa": "le distrˈikto"
+        },
+        {
+          "target": "le dece-octo",
+          "roman": "le dece-octo",
+          "english": "the eighteen",
+          "ipa": "le dˈetseˈokto"
+        },
+        {
+          "target": "le empleator",
+          "roman": "le empleator",
+          "english": "the employer",
+          "ipa": "le ˌempleatˈor"
+        },
+        {
+          "target": "le anglese",
+          "roman": "le anglese",
+          "english": "the englishman",
+          "ipa": "le aŋɡlˈese"
+        },
+        {
+          "target": "le inveloppe",
+          "roman": "le inveloppe",
+          "english": "the envelope",
+          "ipa": "le ˌinvelˈope"
+        },
+        {
+          "target": "le fallimento",
+          "roman": "le fallimento",
+          "english": "the failure",
+          "ipa": "le fˌalimˈento"
+        },
+        {
+          "target": "le favorite",
+          "roman": "le favorite",
+          "english": "the favourite",
+          "ipa": "le fˌavorˈite"
+        },
+        {
+          "target": "Io vide le distantia.",
+          "roman": "io vide le distantia",
+          "english": "I see the distance.",
+          "ipa": "ˈio vˈide le distˈantja"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 24 4",
+      "teach": [
+        {
+          "target": "le adherente",
+          "roman": "le adherente",
+          "english": "the follower",
+          "ipa": "le ˌadherˈente"
+        },
+        {
+          "target": "le forma",
+          "roman": "le forma",
+          "english": "the form / shape",
+          "ipa": "le fˈorma"
+        },
+        {
+          "target": "le armatura",
+          "roman": "le armatura",
+          "english": "the framework",
+          "ipa": "le ˌarmatˈura"
+        },
+        {
+          "target": "le francese",
+          "roman": "le francese",
+          "english": "the frenchman",
+          "ipa": "le frantsˈese"
+        },
+        {
+          "target": "le frequente",
+          "roman": "le frequente",
+          "english": "the frequent",
+          "ipa": "le frekwˈente"
+        },
+        {
+          "target": "le fresc",
+          "roman": "le fresc",
+          "english": "the cool / fresh",
+          "ipa": "le frˈesk"
+        },
+        {
+          "target": "le crescimento",
+          "roman": "le crescimento",
+          "english": "the growth",
+          "ipa": "le krˌestsimˈento"
+        },
+        {
+          "target": "le industria",
+          "roman": "le industria",
+          "english": "the industry",
+          "ipa": "le indˈustrja"
+        },
+        {
+          "target": "Io vide le adherente.",
+          "roman": "io vide le adherente",
+          "english": "I see the follower.",
+          "ipa": "ˈio vˈide le ˌadherˈente"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

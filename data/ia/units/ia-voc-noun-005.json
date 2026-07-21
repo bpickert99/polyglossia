@@ -1,0 +1,245 @@
+{
+  "id": "ia-voc-noun-005",
+  "title": "Nomines 5",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 5 1",
+      "teach": [
+        {
+          "target": "le linea",
+          "roman": "le linea",
+          "english": "the line",
+          "ipa": "le linˈea"
+        },
+        {
+          "target": "le massa",
+          "roman": "le massa",
+          "english": "the mass",
+          "ipa": "le mˈasa"
+        },
+        {
+          "target": "le ungue",
+          "roman": "le ungue",
+          "english": "the nail",
+          "ipa": "le ˈuŋɡwe"
+        },
+        {
+          "target": "le pacco",
+          "roman": "le pacco",
+          "english": "the pack",
+          "ipa": "le pˈako"
+        },
+        {
+          "target": "le pace",
+          "roman": "le pace",
+          "english": "the peace",
+          "ipa": "le pˈatse"
+        },
+        {
+          "target": "le pumpa",
+          "roman": "le pumpa",
+          "english": "the pump",
+          "ipa": "le pˈumpa"
+        },
+        {
+          "target": "le toto",
+          "roman": "le toto",
+          "english": "the quite",
+          "ipa": "le tˈoto"
+        },
+        {
+          "target": "Io vide le minus.",
+          "roman": "io vide le minus",
+          "english": "I see the less.",
+          "ipa": "ˈio vˈide le mˈinus"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 5 2",
+      "teach": [
+        {
+          "target": "le triste",
+          "roman": "le triste",
+          "english": "the sad",
+          "ipa": "le trˈiste"
+        },
+        {
+          "target": "le mesme",
+          "roman": "le mesme",
+          "english": "the same",
+          "ipa": "le mˈesme"
+        },
+        {
+          "target": "le scoto",
+          "roman": "le scoto",
+          "english": "the scot",
+          "ipa": "le skˈoto"
+        },
+        {
+          "target": "le vite",
+          "roman": "le vite",
+          "english": "the screw",
+          "ipa": "le vˈite"
+        },
+        {
+          "target": "le choc",
+          "roman": "le choc",
+          "english": "the shock",
+          "ipa": "le ʃˈok"
+        },
+        {
+          "target": "le lente",
+          "roman": "le lente",
+          "english": "the slow",
+          "ipa": "le lˈente"
+        },
+        {
+          "target": "le odor",
+          "roman": "le odor",
+          "english": "the smell",
+          "ipa": "le odˈor"
+        },
+        {
+          "target": "le fumo",
+          "roman": "le fumo",
+          "english": "the smoke",
+          "ipa": "le fˈumo"
+        },
+        {
+          "target": "Io vide le triste.",
+          "roman": "io vide le triste",
+          "english": "I see the sad.",
+          "ipa": "ˈio vˈide le trˈiste"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 5 3",
+      "teach": [
+        {
+          "target": "le molle",
+          "roman": "le molle",
+          "english": "the soft",
+          "ipa": "le mˈole"
+        },
+        {
+          "target": "le canto",
+          "roman": "le canto",
+          "english": "the song",
+          "ipa": "le kˈanto"
+        },
+        {
+          "target": "le passo",
+          "roman": "le passo",
+          "english": "the step",
+          "ipa": "le pˈaso"
+        },
+        {
+          "target": "le marea",
+          "roman": "le marea",
+          "english": "the tide",
+          "ipa": "le marˈea"
+        },
+        {
+          "target": "le stanno",
+          "roman": "le stanno",
+          "english": "the tin",
+          "ipa": "le stˈano"
+        },
+        {
+          "target": "le troppo",
+          "roman": "le troppo",
+          "english": "the too",
+          "ipa": "le trˈopo"
+        },
+        {
+          "target": "le torno",
+          "roman": "le torno",
+          "english": "the turn",
+          "ipa": "le tˈorno"
+        },
+        {
+          "target": "le unir",
+          "roman": "le unir",
+          "english": "the unite",
+          "ipa": "le unˈir"
+        },
+        {
+          "target": "Io vide le molle.",
+          "roman": "io vide le molle",
+          "english": "I see the soft.",
+          "ipa": "ˈio vˈide le mˈole"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 5 4",
+      "teach": [
+        {
+          "target": "le guerra",
+          "roman": "le guerra",
+          "english": "the war",
+          "ipa": "le ɡwˈera"
+        },
+        {
+          "target": "le verme",
+          "roman": "le verme",
+          "english": "the worm",
+          "ipa": "le vˈerme"
+        },
+        {
+          "target": "le barba",
+          "roman": "le barba",
+          "english": "the beard",
+          "ipa": "le bˈarba"
+        },
+        {
+          "target": "le banco",
+          "roman": "le banco",
+          "english": "the bench",
+          "ipa": "le bˈanko"
+        },
+        {
+          "target": "le canal",
+          "roman": "le canal",
+          "english": "the canal",
+          "ipa": "le kanˈal"
+        },
+        {
+          "target": "le bonetto",
+          "roman": "le bonetto",
+          "english": "the cap",
+          "ipa": "le bonˈeto"
+        },
+        {
+          "target": "le munde",
+          "roman": "le munde",
+          "english": "the clean",
+          "ipa": "le mˈunde"
+        },
+        {
+          "target": "le carbon",
+          "roman": "le carbon",
+          "english": "the coal",
+          "ipa": "le karbˈon"
+        },
+        {
+          "target": "Io vide le guerra.",
+          "roman": "io vide le guerra",
+          "english": "I see the war.",
+          "ipa": "ˈio vˈide le ɡwˈera"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

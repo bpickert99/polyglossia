@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-015",
+  "title": "Nomines 15",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 15 1",
+      "teach": [
+        {
+          "target": "le ferrugine",
+          "roman": "le ferrugine",
+          "english": "the rust",
+          "ipa": "le ferˈuɡine"
+        },
+        {
+          "target": "le collection",
+          "roman": "le collection",
+          "english": "the set",
+          "ipa": "le kˌolektjˈon"
+        },
+        {
+          "target": "le colono",
+          "roman": "le colono",
+          "english": "the settler",
+          "ipa": "le kolˈono"
+        },
+        {
+          "target": "le silente",
+          "roman": "le silente",
+          "english": "the silent",
+          "ipa": "le silˈente"
+        },
+        {
+          "target": "le spirito",
+          "roman": "le spirito",
+          "english": "the spirit",
+          "ipa": "le spˈirito"
+        },
+        {
+          "target": "le despecto",
+          "roman": "le despecto",
+          "english": "the spite",
+          "ipa": "le despˈekto"
+        },
+        {
+          "target": "le lucta",
+          "roman": "le lucta",
+          "english": "the struggle",
+          "ipa": "le lˈukta"
+        },
+        {
+          "target": "le le lore",
+          "roman": "le le lore",
+          "english": "the theirs",
+          "ipa": "le le lˈore"
+        },
+        {
+          "target": "Io vide le ferrugine.",
+          "roman": "io vide le ferrugine",
+          "english": "I see the rust.",
+          "ipa": "ˈio vˈide le ferˈuɡine"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 15 2",
+      "teach": [
+        {
+          "target": "le superior",
+          "roman": "le superior",
+          "english": "the upper",
+          "ipa": "le sˌuperjˈor"
+        },
+        {
+          "target": "le urgente",
+          "roman": "le urgente",
+          "english": "the urgent",
+          "ipa": "le urɡˈente"
+        },
+        {
+          "target": "le virtute",
+          "roman": "le virtute",
+          "english": "the virtue",
+          "ipa": "le virtˈute"
+        },
+        {
+          "target": "le sibilo",
+          "roman": "le sibilo",
+          "english": "the whistle",
+          "ipa": "le sˈibilo"
+        },
+        {
+          "target": "le sagessa",
+          "roman": "le sagessa",
+          "english": "the wisdom",
+          "ipa": "le saʒˈesa"
+        },
+        {
+          "target": "le contra",
+          "roman": "le contra",
+          "english": "the against",
+          "ipa": "le kˈontra"
+        },
+        {
+          "target": "le agentia",
+          "roman": "le agentia",
+          "english": "the agency",
+          "ipa": "le aɡˈentja"
+        },
+        {
+          "target": "le attacco",
+          "roman": "le attacco",
+          "english": "the attack",
+          "ipa": "le atˈako"
+        },
+        {
+          "target": "Io vide le superior.",
+          "roman": "io vide le superior",
+          "english": "I see the upper.",
+          "ipa": "ˈio vˈide le sˌuperjˈor"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 15 3",
+      "teach": [
+        {
+          "target": "le essayo",
+          "roman": "le essayo",
+          "english": "the attempt",
+          "ipa": "le esˈajo"
+        },
+        {
+          "target": "le autumno",
+          "roman": "le autumno",
+          "english": "the autumn",
+          "ipa": "le aʊtˈumno"
+        },
+        {
+          "target": "le bestial",
+          "roman": "le bestial",
+          "english": "the cattle",
+          "ipa": "le bestjˈal"
+        },
+        {
+          "target": "le seculo",
+          "roman": "le seculo",
+          "english": "the century",
+          "ipa": "le sˈekulo"
+        },
+        {
+          "target": "le circulo",
+          "roman": "le circulo",
+          "english": "the circle",
+          "ipa": "le tsˈirkulo"
+        },
+        {
+          "target": "le durante",
+          "roman": "le durante",
+          "english": "the during",
+          "ipa": "le durˈante"
+        },
+        {
+          "target": "le effecto",
+          "roman": "le effecto",
+          "english": "the effect",
+          "ipa": "le efˈekto"
+        },
+        {
+          "target": "le excepte",
+          "roman": "le excepte",
+          "english": "the except",
+          "ipa": "le ekstsˈepte"
+        },
+        {
+          "target": "Io vide le essayo.",
+          "roman": "io vide le essayo",
+          "english": "I see the attempt.",
+          "ipa": "ˈio vˈide le esˈajo"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 15 4",
+      "teach": [
+        {
+          "target": "le excesso",
+          "roman": "le excesso",
+          "english": "the excess",
+          "ipa": "le ekstsˈeso"
+        },
+        {
+          "target": "le combatto",
+          "roman": "le combatto",
+          "english": "the fight",
+          "ipa": "le kombˈato"
+        },
+        {
+          "target": "le vestibulo",
+          "roman": "le vestibulo",
+          "english": "the hall",
+          "ipa": "le vestˈibulo"
+        },
+        {
+          "target": "le marito",
+          "roman": "le marito",
+          "english": "the husband",
+          "ipa": "le marˈito"
+        },
+        {
+          "target": "le serratura",
+          "roman": "le serratura",
+          "english": "the lock",
+          "ipa": "le sˌeratˈura"
+        },
+        {
+          "target": "le maestro",
+          "roman": "le maestro",
+          "english": "the master",
+          "ipa": "le maˈestro"
+        },
+        {
+          "target": "le mesura",
+          "roman": "le mesura",
+          "english": "the measure",
+          "ipa": "le mesˈura"
+        },
+        {
+          "target": "le moderne",
+          "roman": "le moderne",
+          "english": "the modern",
+          "ipa": "le modˈerne"
+        },
+        {
+          "target": "Io vide le excesso.",
+          "roman": "io vide le excesso",
+          "english": "I see the excess.",
+          "ipa": "ˈio vˈide le ekstsˈeso"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

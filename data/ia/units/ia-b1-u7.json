@@ -1,0 +1,73 @@
+{
+  "id": "ia-b1-u7",
+  "title": "Verbos reflexive",
+  "level": "B1",
+  "summary": "Things you do to yourself: se lavar, se vestir.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Se lavar",
+      "teach": [
+        {
+          "target": "se",
+          "roman": "se",
+          "english": "himself / herself / itself / themselves",
+          "note": "The reflexive pronoun — already seen in 'appellar se' (to be called, literally 'to call oneself').",
+          "ipa": "sˈe"
+        },
+        {
+          "target": "lavar",
+          "roman": "lavar",
+          "english": "to wash",
+          "ipa": "lavˈar"
+        },
+        {
+          "target": "Ille se lava.",
+          "roman": "ille se lava",
+          "english": "He washes himself.",
+          "ipa": "ˈile sˈe lˈava"
+        },
+        {
+          "target": "Illa se lava le manos.",
+          "roman": "illa se lava le manos",
+          "english": "She washes her hands.",
+          "note": "manos = hands.",
+          "ipa": "ˈila sˈe lˈava le mˈanos"
+        }
+      ],
+      "grammar": {
+        "title": "The reflexive se",
+        "body": "**se** marks a verb as done to oneself: lavar (to wash something) vs. lavar se (to wash oneself).\nOnly 3rd person has this special form — for 1st/2nd person, the regular object pronouns already do the job: io me lava (I wash myself), tu te lava (you wash yourself)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Se vestir",
+      "teach": [
+        {
+          "target": "vestir",
+          "roman": "vestir",
+          "english": "to dress",
+          "ipa": "vestˈir"
+        },
+        {
+          "target": "Io me vesti rapidemente.",
+          "roman": "io me vesti rapidemente",
+          "english": "I get dressed quickly.",
+          "ipa": "ˈio mˈe vˈesti rˌapidemˈente"
+        },
+        {
+          "target": "Le pueros se vesti pro le schola.",
+          "roman": "le pueros se vesti pro le schola",
+          "english": "The children get dressed for school.",
+          "note": "puero = child; pro = for.",
+          "ipa": "le pˈueros sˈe vˈesti pro le stʃˈola"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Talk about washing up and getting dressed",
+    "Use the reflexive se with an -ar/-ir verb"
+  ]
+}

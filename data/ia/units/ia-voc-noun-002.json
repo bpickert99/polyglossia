@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-002",
+  "title": "Nomines 2",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 2 1",
+      "teach": [
+        {
+          "target": "le gris",
+          "roman": "le gris",
+          "english": "the grey",
+          "ipa": "le ɡrˈis"
+        },
+        {
+          "target": "le cavo",
+          "roman": "le cavo",
+          "english": "the hole",
+          "ipa": "le kˈavo"
+        },
+        {
+          "target": "le croc",
+          "roman": "le croc",
+          "english": "the hook",
+          "ipa": "le krˈok"
+        },
+        {
+          "target": "le tinta",
+          "roman": "le tinta",
+          "english": "the ink",
+          "ipa": "le tˈinta"
+        },
+        {
+          "target": "le node",
+          "roman": "le node",
+          "english": "the knot",
+          "ipa": "le nˈode"
+        },
+        {
+          "target": "le folle",
+          "roman": "le folle",
+          "english": "the mad",
+          "ipa": "le fˈole"
+        },
+        {
+          "target": "le mina",
+          "roman": "le mina",
+          "english": "the mine",
+          "ipa": "le mˈina"
+        },
+        {
+          "target": "le nido",
+          "roman": "le nido",
+          "english": "the nest",
+          "ipa": "le nˈido"
+        },
+        {
+          "target": "Io vide le gris.",
+          "roman": "io vide le gris",
+          "english": "I see the grey.",
+          "ipa": "ˈio vˈide le ɡrˈis"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 2 2",
+      "teach": [
+        {
+          "target": "le note",
+          "roman": "le note",
+          "english": "the note",
+          "ipa": "le nˈote"
+        },
+        {
+          "target": "le ratto",
+          "roman": "le ratto",
+          "english": "the rat",
+          "ipa": "le rˈato"
+        },
+        {
+          "target": "le rata",
+          "roman": "le rata",
+          "english": "the rate",
+          "ipa": "le rˈata"
+        },
+        {
+          "target": "le crude",
+          "roman": "le crude",
+          "english": "the raw",
+          "ipa": "le krˈude"
+        },
+        {
+          "target": "le real",
+          "roman": "le real",
+          "english": "the real",
+          "ipa": "le reˈal"
+        },
+        {
+          "target": "le role",
+          "roman": "le role",
+          "english": "the roll",
+          "ipa": "le rˈole"
+        },
+        {
+          "target": "le tent",
+          "roman": "le tent",
+          "english": "the tent",
+          "ipa": "le tˈent"
+        },
+        {
+          "target": "le tour",
+          "roman": "le tour",
+          "english": "the tour",
+          "ipa": "le tˈur"
+        },
+        {
+          "target": "Io vide le note.",
+          "roman": "io vide le note",
+          "english": "I see the note.",
+          "ipa": "ˈio vˈide le nˈote"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 2 3",
+      "teach": [
+        {
+          "target": "le tram",
+          "roman": "le tram",
+          "english": "the tram",
+          "ipa": "le trˈam"
+        },
+        {
+          "target": "le vote",
+          "roman": "le vote",
+          "english": "the vote",
+          "ipa": "le vˈote"
+        },
+        {
+          "target": "le etate",
+          "roman": "le etate",
+          "english": "the age",
+          "ipa": "le etˈate"
+        },
+        {
+          "target": "le scopo",
+          "roman": "le scopo",
+          "english": "the aim",
+          "ipa": "le skˈopo"
+        },
+        {
+          "target": "le Asia",
+          "roman": "le Asia",
+          "english": "the asia",
+          "ipa": "le ˈasja"
+        },
+        {
+          "target": "le baby",
+          "roman": "le baby",
+          "english": "the baby",
+          "ipa": "le bˈeibi"
+        },
+        {
+          "target": "le sacco",
+          "roman": "le sacco",
+          "english": "the bag",
+          "ipa": "le sˈako"
+        },
+        {
+          "target": "le base",
+          "roman": "le base",
+          "english": "the base",
+          "ipa": "le bˈase"
+        },
+        {
+          "target": "Io vide le tram.",
+          "roman": "io vide le tram",
+          "english": "I see the tram.",
+          "ipa": "ˈio vˈide le trˈam"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 2 4",
+      "teach": [
+        {
+          "target": "le cec",
+          "roman": "le cec",
+          "english": "the blind",
+          "ipa": "le tsˈek"
+        },
+        {
+          "target": "le ambe",
+          "roman": "le ambe",
+          "english": "the both",
+          "ipa": "le ˈambe"
+        },
+        {
+          "target": "le cassa",
+          "roman": "le cassa",
+          "english": "the box",
+          "ipa": "le kˈasa"
+        },
+        {
+          "target": "le puero",
+          "roman": "le puero",
+          "english": "the boy",
+          "ipa": "le pˈuero"
+        },
+        {
+          "target": "le caso",
+          "roman": "le caso",
+          "english": "the case",
+          "ipa": "le kˈaso"
+        },
+        {
+          "target": "le osar",
+          "roman": "le osar",
+          "english": "the dare",
+          "ipa": "le osˈar"
+        },
+        {
+          "target": "le data",
+          "roman": "le data",
+          "english": "the date",
+          "ipa": "le dˈata"
+        },
+        {
+          "target": "le foco",
+          "roman": "le foco",
+          "english": "the fire",
+          "ipa": "le fˈoko"
+        },
+        {
+          "target": "Io vide le cec.",
+          "roman": "io vide le cec",
+          "english": "I see the blind.",
+          "ipa": "ˈio vˈide le tsˈek"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

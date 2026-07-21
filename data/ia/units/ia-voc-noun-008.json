@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-008",
+  "title": "Nomines 8",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 8 1",
+      "teach": [
+        {
+          "target": "le stagno",
+          "roman": "le stagno",
+          "english": "the pool",
+          "ipa": "le stˈaɡno"
+        },
+        {
+          "target": "le taverna",
+          "roman": "le taverna",
+          "english": "the pub",
+          "ipa": "le tavˈerna"
+        },
+        {
+          "target": "le tirada",
+          "roman": "le tirada",
+          "english": "the pull",
+          "ipa": "le tirˈada"
+        },
+        {
+          "target": "le scena",
+          "roman": "le scena",
+          "english": "the scene",
+          "ipa": "le stsˈena"
+        },
+        {
+          "target": "le dolo",
+          "roman": "le dolo",
+          "english": "the sorrow",
+          "ipa": "le dˈolo"
+        },
+        {
+          "target": "le state",
+          "roman": "le state",
+          "english": "the state",
+          "ipa": "le stˈate"
+        },
+        {
+          "target": "le stock",
+          "roman": "le stock",
+          "english": "the stock",
+          "ipa": "le stˈokk"
+        },
+        {
+          "target": "le rivo",
+          "roman": "le rivo",
+          "english": "the stream",
+          "ipa": "le rˈivo"
+        },
+        {
+          "target": "Io vide le stagno.",
+          "roman": "io vide le stagno",
+          "english": "I see the pool.",
+          "ipa": "ˈio vˈide le stˈaɡno"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 8 2",
+      "teach": [
+        {
+          "target": "le valvula",
+          "roman": "le valvula",
+          "english": "the tap",
+          "ipa": "le vˈalvula"
+        },
+        {
+          "target": "le gusto",
+          "roman": "le gusto",
+          "english": "the taste",
+          "ipa": "le ɡˈusto"
+        },
+        {
+          "target": "le per",
+          "roman": "le per",
+          "english": "the through",
+          "ipa": "le pˈer"
+        },
+        {
+          "target": "le tonna",
+          "roman": "le tonna",
+          "english": "the tonne",
+          "ipa": "le tˈona"
+        },
+        {
+          "target": "le torto",
+          "roman": "le torto",
+          "english": "the twist",
+          "ipa": "le tˈorto"
+        },
+        {
+          "target": "le oncle",
+          "roman": "le oncle",
+          "english": "the uncle",
+          "ipa": "le ˈonkle"
+        },
+        {
+          "target": "le union",
+          "roman": "le union",
+          "english": "the union",
+          "ipa": "le unjˈon"
+        },
+        {
+          "target": "le calide",
+          "roman": "le calide",
+          "english": "the warm",
+          "ipa": "le kˈalide"
+        },
+        {
+          "target": "Io vide le valvula.",
+          "roman": "io vide le valvula",
+          "english": "I see the tap.",
+          "ipa": "ˈio vˈide le vˈalvula"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 8 3",
+      "teach": [
+        {
+          "target": "le arma",
+          "roman": "le arma",
+          "english": "the weapon",
+          "ipa": "le ˈarma"
+        },
+        {
+          "target": "le peso",
+          "roman": "le peso",
+          "english": "the weight",
+          "ipa": "le pˈeso"
+        },
+        {
+          "target": "le parola",
+          "roman": "le parola",
+          "english": "the word",
+          "ipa": "le parˈola"
+        },
+        {
+          "target": "le carpo",
+          "roman": "le carpo",
+          "english": "the wrist",
+          "ipa": "le kˈarpo"
+        },
+        {
+          "target": "le trans",
+          "roman": "le trans",
+          "english": "the across",
+          "ipa": "le trˈans"
+        },
+        {
+          "target": "le circa",
+          "roman": "le circa",
+          "english": "the around",
+          "ipa": "le tsˈirka"
+        },
+        {
+          "target": "le flecha",
+          "roman": "le flecha",
+          "english": "the arrow",
+          "ipa": "le flˈeʃa"
+        },
+        {
+          "target": "le corbe",
+          "roman": "le corbe",
+          "english": "the basket",
+          "ipa": "le kˈorbe"
+        },
+        {
+          "target": "Io vide le arma.",
+          "roman": "io vide le arma",
+          "english": "I see the weapon.",
+          "ipa": "ˈio vˈide le ˈarma"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 8 4",
+      "teach": [
+        {
+          "target": "le campana",
+          "roman": "le campana",
+          "english": "the bell",
+          "ipa": "le kampˈana"
+        },
+        {
+          "target": "le extra",
+          "roman": "le extra",
+          "english": "the beyond",
+          "ipa": "le ˈekstra"
+        },
+        {
+          "target": "le Biblia",
+          "roman": "le Biblia",
+          "english": "the bible",
+          "ipa": "le bˈiblja"
+        },
+        {
+          "target": "le factura",
+          "roman": "le factura",
+          "english": "the bill",
+          "ipa": "le faktˈura"
+        },
+        {
+          "target": "le brossa",
+          "roman": "le brossa",
+          "english": "the brush",
+          "ipa": "le brˈosa"
+        },
+        {
+          "target": "le arbusto",
+          "roman": "le arbusto",
+          "english": "the bush",
+          "ipa": "le arbˈusto"
+        },
+        {
+          "target": "le appello",
+          "roman": "le appello",
+          "english": "the call",
+          "ipa": "le apˈelo"
+        },
+        {
+          "target": "le drappo",
+          "roman": "le drappo",
+          "english": "the cloth",
+          "ipa": "le drˈapo"
+        },
+        {
+          "target": "Io vide le campana.",
+          "roman": "io vide le campana",
+          "english": "I see the bell.",
+          "ipa": "ˈio vˈide le kampˈana"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

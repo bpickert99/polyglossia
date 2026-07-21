@@ -1,0 +1,102 @@
+{
+  "id": "ia-voc-animales",
+  "title": "Animales",
+  "level": "A2",
+  "summary": "Animals.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Animales 1",
+      "teach": [
+        {
+          "target": "le ove",
+          "roman": "le ove",
+          "english": "the sheep",
+          "ipa": "le ˈove"
+        },
+        {
+          "target": "le porco",
+          "roman": "le porco",
+          "english": "the pig",
+          "ipa": "le pˈorko"
+        },
+        {
+          "target": "le cavallo",
+          "roman": "le cavallo",
+          "english": "the horse",
+          "ipa": "le kavˈalo"
+        },
+        {
+          "target": "le vacca",
+          "roman": "le vacca",
+          "english": "the cow",
+          "ipa": "le vˈaka"
+        },
+        {
+          "target": "le conilio",
+          "roman": "le conilio",
+          "english": "the rabbit",
+          "ipa": "le konˈiljo"
+        },
+        {
+          "target": "porter",
+          "roman": "porter",
+          "english": "to bear",
+          "note": "io porte — present tense, infinitive minus -r.",
+          "ipa": "portˈer"
+        },
+        {
+          "target": "le simia",
+          "roman": "le simia",
+          "english": "the monkey",
+          "ipa": "le sˈimja"
+        },
+        {
+          "target": "Io porte.",
+          "roman": "io porte",
+          "english": "I bear.",
+          "ipa": "ˈio pˈorte"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Animales 2",
+      "teach": [
+        {
+          "target": "le serpente",
+          "roman": "le serpente",
+          "english": "the snake",
+          "ipa": "le serpˈente"
+        },
+        {
+          "target": "le pisce",
+          "roman": "le pisce",
+          "english": "the fish",
+          "ipa": "le pˈistse"
+        },
+        {
+          "target": "le ave",
+          "roman": "le ave",
+          "english": "the bird",
+          "ipa": "le ˈave"
+        },
+        {
+          "target": "le insecto",
+          "roman": "le insecto",
+          "english": "the insect",
+          "ipa": "le insˈekto"
+        },
+        {
+          "target": "Io vide le serpente.",
+          "roman": "io vide le serpente",
+          "english": "I see the snake.",
+          "ipa": "ˈio vˈide le serpˈente"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 11 more words about animals"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-030",
+  "title": "Nomines 30",
+  "level": "C1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 30 1",
+      "teach": [
+        {
+          "target": "le admiration",
+          "roman": "le admiration",
+          "english": "the admiration",
+          "ipa": "le ˌadmiratjˈon"
+        },
+        {
+          "target": "le angulo",
+          "roman": "le angulo",
+          "english": "the angle / corner",
+          "ipa": "le ˈanɡulo"
+        },
+        {
+          "target": "le apparentia",
+          "roman": "le apparentia",
+          "english": "the appearance",
+          "ipa": "le ˌaparˈentja"
+        },
+        {
+          "target": "le artificial",
+          "roman": "le artificial",
+          "english": "the artificial",
+          "ipa": "le ˌartifitsjˈal"
+        },
+        {
+          "target": "le cinctura",
+          "roman": "le cinctura",
+          "english": "the belt / waist",
+          "ipa": "le tsinktˈura"
+        },
+        {
+          "target": "le construction",
+          "roman": "le construction",
+          "english": "the building",
+          "ipa": "le kˌonstruktjˈon"
+        },
+        {
+          "target": "le fissura",
+          "roman": "le fissura",
+          "english": "the crack / split",
+          "ipa": "le fisˈura"
+        },
+        {
+          "target": "le remedio",
+          "roman": "le remedio",
+          "english": "the cure / remedy",
+          "ipa": "le remˈedjo"
+        },
+        {
+          "target": "Io vide le admiration.",
+          "roman": "io vide le admiration",
+          "english": "I see the admiration.",
+          "ipa": "ˈio vˈide le ˌadmiratjˈon"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 30 2",
+      "teach": [
+        {
+          "target": "le disciplina",
+          "roman": "le disciplina",
+          "english": "the discipline",
+          "ipa": "le dˌistsiplˈina"
+        },
+        {
+          "target": "le discussion",
+          "roman": "le discussion",
+          "english": "the discussion",
+          "ipa": "le dˌiskusjˈon"
+        },
+        {
+          "target": "le industrial",
+          "roman": "le industrial",
+          "english": "the industrial",
+          "ipa": "le ˌindustrjˈal"
+        },
+        {
+          "target": "le intra",
+          "roman": "le intra",
+          "english": "the inside / within",
+          "ipa": "le ˈintra"
+        },
+        {
+          "target": "le of in loco de",
+          "roman": "le of in loco de",
+          "english": "the instead",
+          "ipa": "le ˈof ˈin lˈoko dˈe"
+        },
+        {
+          "target": "le proprietario",
+          "roman": "le proprietario",
+          "english": "the landlord",
+          "ipa": "le prˌoprjetˈarjo"
+        },
+        {
+          "target": "le riso",
+          "roman": "le riso",
+          "english": "the laugh / laughter",
+          "ipa": "le rˈiso"
+        },
+        {
+          "target": "le millimetro",
+          "roman": "le millimetro",
+          "english": "the millimetre",
+          "ipa": "le milˈimetro"
+        },
+        {
+          "target": "Io vide le disciplina.",
+          "roman": "io vide le disciplina",
+          "english": "I see the discipline.",
+          "ipa": "ˈio vˈide le dˌistsiplˈina"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 30 3",
+      "teach": [
+        {
+          "target": "le alteremente",
+          "roman": "le alteremente",
+          "english": "the otherwise",
+          "ipa": "le ˌalteremˈente"
+        },
+        {
+          "target": "le prevention",
+          "roman": "le prevention",
+          "english": "the prevention",
+          "ipa": "le prˌeventjˈon"
+        },
+        {
+          "target": "le procession",
+          "roman": "le procession",
+          "english": "the procession",
+          "ipa": "le prˌotsesjˈon"
+        },
+        {
+          "target": "le profession",
+          "roman": "le profession",
+          "english": "the profession",
+          "ipa": "le prˌofesjˈon"
+        },
+        {
+          "target": "le orthographia",
+          "roman": "le orthographia",
+          "english": "the spelling",
+          "ipa": "le ˌortoɡrafˈia"
+        },
+        {
+          "target": "le suggestion",
+          "roman": "le suggestion",
+          "english": "the suggestion",
+          "ipa": "le sˌuɡestjˈon"
+        },
+        {
+          "target": "le levar del sol",
+          "roman": "le levar del sol",
+          "english": "the sunrise",
+          "ipa": "le levˈar del sˈol"
+        },
+        {
+          "target": "le ambiente",
+          "roman": "le ambiente",
+          "english": "the surroundings",
+          "ipa": "le ambjˈente"
+        },
+        {
+          "target": "Io vide le alteremente.",
+          "roman": "io vide le alteremente",
+          "english": "I see the otherwise.",
+          "ipa": "ˈio vˈide le ˌalteremˈente"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 30 4",
+      "teach": [
+        {
+          "target": "le verso",
+          "roman": "le verso",
+          "english": "the verse / towards",
+          "ipa": "le vˈerso"
+        },
+        {
+          "target": "le transistor",
+          "roman": "le transistor",
+          "english": "the transistor",
+          "ipa": "le trˌansistˈor"
+        },
+        {
+          "target": "le tractamento",
+          "roman": "le tractamento",
+          "english": "the treatment",
+          "ipa": "le trˌaktamˈento"
+        },
+        {
+          "target": "le quandocunque",
+          "roman": "le quandocunque",
+          "english": "the whenever",
+          "ipa": "le kwˌandokˈuŋkwe"
+        },
+        {
+          "target": "le ben disposite",
+          "roman": "le ben disposite",
+          "english": "the willing",
+          "ipa": "le bˈen dispˈosite"
+        },
+        {
+          "target": "le postmeridie",
+          "roman": "le postmeridie",
+          "english": "the afternoon",
+          "ipa": "le pˌostmerˈidje"
+        },
+        {
+          "target": "le anniversario",
+          "roman": "le anniversario",
+          "english": "the birthday",
+          "ipa": "le ˌaniversˈarjo"
+        },
+        {
+          "target": "le centimetro",
+          "roman": "le centimetro",
+          "english": "the centimetre",
+          "ipa": "le tsentˈimetro"
+        },
+        {
+          "target": "Io vide le verso.",
+          "roman": "io vide le verso",
+          "english": "I see the verse / towards.",
+          "ipa": "ˈio vˈide le vˈerso"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (C1-band vocabulary)"
+  ]
+}

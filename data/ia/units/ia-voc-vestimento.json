@@ -1,0 +1,107 @@
+{
+  "id": "ia-voc-vestimento",
+  "title": "Vestimento",
+  "level": "A2",
+  "summary": "Clothing.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Vestimento 1",
+      "teach": [
+        {
+          "target": "le mantello",
+          "roman": "le mantello",
+          "english": "the coat",
+          "ipa": "le mantˈelo"
+        },
+        {
+          "target": "le camisa",
+          "roman": "le camisa",
+          "english": "the shirt",
+          "ipa": "le kamˈisa"
+        },
+        {
+          "target": "le pantalones",
+          "roman": "le pantalones",
+          "english": "the trousers",
+          "ipa": "le pˌantalˈones"
+        },
+        {
+          "target": "le gonna",
+          "roman": "le gonna",
+          "english": "the skirt",
+          "ipa": "le ɡˈona"
+        },
+        {
+          "target": "le scarpa",
+          "roman": "le scarpa",
+          "english": "the shoe",
+          "ipa": "le skˈarpa"
+        },
+        {
+          "target": "le cappello",
+          "roman": "le cappello",
+          "english": "the hat",
+          "ipa": "le kapˈelo"
+        },
+        {
+          "target": "le tasca",
+          "roman": "le tasca",
+          "english": "the pocket",
+          "ipa": "le tˈaska"
+        },
+        {
+          "target": "Io vide le mantello.",
+          "roman": "io vide le mantello",
+          "english": "I see the coat.",
+          "ipa": "ˈio vˈide le mantˈelo"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Vestimento 2",
+      "teach": [
+        {
+          "target": "le cravata",
+          "roman": "le cravata",
+          "english": "the tie",
+          "ipa": "le kravˈata"
+        },
+        {
+          "target": "le jachetta",
+          "roman": "le jachetta",
+          "english": "the jacket",
+          "ipa": "le ʒatʃˈeta"
+        },
+        {
+          "target": "le calcetta",
+          "roman": "le calcetta",
+          "english": "the sock",
+          "ipa": "le kaltsˈeta"
+        },
+        {
+          "target": "le button",
+          "roman": "le button",
+          "english": "the button",
+          "ipa": "le butˈon"
+        },
+        {
+          "target": "le parapluvia",
+          "roman": "le parapluvia",
+          "english": "the umbrella",
+          "ipa": "le pˌaraplˈuvja"
+        },
+        {
+          "target": "Io vide le cravata.",
+          "roman": "io vide le cravata",
+          "english": "I see the tie.",
+          "ipa": "ˈio vˈide le kravˈata"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 12 more words about clothing"
+  ]
+}

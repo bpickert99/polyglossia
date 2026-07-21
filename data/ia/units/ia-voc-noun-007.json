@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-007",
+  "title": "Nomines 7",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 7 1",
+      "teach": [
+        {
+          "target": "le sete",
+          "roman": "le sete",
+          "english": "the thirst",
+          "ipa": "le sˈete"
+        },
+        {
+          "target": "le illos",
+          "roman": "le illos",
+          "english": "the those",
+          "ipa": "le ˈilos"
+        },
+        {
+          "target": "le tocco",
+          "roman": "le tocco",
+          "english": "the touch",
+          "ipa": "le tˈoko"
+        },
+        {
+          "target": "le turre",
+          "roman": "le turre",
+          "english": "the tower",
+          "ipa": "le tˈure"
+        },
+        {
+          "target": "le citate",
+          "roman": "le citate",
+          "english": "the town",
+          "ipa": "le tsitˈate"
+        },
+        {
+          "target": "le piste",
+          "roman": "le piste",
+          "english": "the track",
+          "ipa": "le pˈiste"
+        },
+        {
+          "target": "le trappa",
+          "roman": "le trappa",
+          "english": "the trap",
+          "ipa": "le trˈapa"
+        },
+        {
+          "target": "le tribe",
+          "roman": "le tribe",
+          "english": "the tribe",
+          "ipa": "le trˈibe"
+        },
+        {
+          "target": "Io vide le sete.",
+          "roman": "io vide le sete",
+          "english": "I see the thirst.",
+          "ipa": "ˈio vˈide le sˈete"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 7 2",
+      "teach": [
+        {
+          "target": "le usual",
+          "roman": "le usual",
+          "english": "the usual",
+          "ipa": "le uswˈal"
+        },
+        {
+          "target": "le vidua",
+          "roman": "le vidua",
+          "english": "the widow",
+          "ipa": "le vˈidwa"
+        },
+        {
+          "target": "le marita",
+          "roman": "le marita",
+          "english": "the wife",
+          "ipa": "le marˈita"
+        },
+        {
+          "target": "le amar",
+          "roman": "le amar",
+          "english": "the bitter",
+          "ipa": "le amˈar"
+        },
+        {
+          "target": "le causa",
+          "roman": "le causa",
+          "english": "the cause",
+          "ipa": "le kˈaʊsa"
+        },
+        {
+          "target": "le obscur",
+          "roman": "le obscur",
+          "english": "the dark",
+          "ipa": "le obskˈur"
+        },
+        {
+          "target": "le sonio",
+          "roman": "le sonio",
+          "english": "the dream",
+          "ipa": "le sˈonjo"
+        },
+        {
+          "target": "le sempre",
+          "roman": "le sempre",
+          "english": "the ever",
+          "ipa": "le sˈempre"
+        },
+        {
+          "target": "Io vide le usual.",
+          "roman": "io vide le usual",
+          "english": "I see the usual.",
+          "ipa": "ˈio vˈide le uswˈal"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 7 3",
+      "teach": [
+        {
+          "target": "le comic",
+          "roman": "le comic",
+          "english": "the funny",
+          "ipa": "le kˈomik"
+        },
+        {
+          "target": "le celo",
+          "roman": "le celo",
+          "english": "the heaven",
+          "ipa": "le tsˈelo"
+        },
+        {
+          "target": "le adjuta",
+          "roman": "le adjuta",
+          "english": "the help",
+          "ipa": "le adʒˈuta"
+        },
+        {
+          "target": "le hallo",
+          "roman": "le hallo",
+          "english": "the hullo",
+          "ipa": "le hˈalo"
+        },
+        {
+          "target": "le chassa",
+          "roman": "le chassa",
+          "english": "the hunt",
+          "ipa": "le ʃˈasa"
+        },
+        {
+          "target": "le otiose",
+          "roman": "le otiose",
+          "english": "the idle",
+          "ipa": "le otjˈose"
+        },
+        {
+          "target": "le joiel",
+          "roman": "le joiel",
+          "english": "the jewel",
+          "ipa": "le ʒoɪˈel"
+        },
+        {
+          "target": "le succo",
+          "roman": "le succo",
+          "english": "the juice",
+          "ipa": "le sˈuko"
+        },
+        {
+          "target": "Io vide le comic.",
+          "roman": "io vide le comic",
+          "english": "I see the funny.",
+          "ipa": "ˈio vˈide le kˈomik"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 7 4",
+      "teach": [
+        {
+          "target": "le litro",
+          "roman": "le litro",
+          "english": "the litre",
+          "ipa": "le lˈitro"
+        },
+        {
+          "target": "le local",
+          "roman": "le local",
+          "english": "the local",
+          "ipa": "le lokˈal"
+        },
+        {
+          "target": "le medio",
+          "roman": "le medio",
+          "english": "the means",
+          "ipa": "le mˈedjo"
+        },
+        {
+          "target": "le pagina",
+          "roman": "le pagina",
+          "english": "the page",
+          "ipa": "le pˈaɡina"
+        },
+        {
+          "target": "le patella",
+          "roman": "le patella",
+          "english": "the pan",
+          "ipa": "le patˈela"
+        },
+        {
+          "target": "le pausa",
+          "roman": "le pausa",
+          "english": "the pause",
+          "ipa": "le pˈaʊsa"
+        },
+        {
+          "target": "le perla",
+          "roman": "le perla",
+          "english": "the pearl",
+          "ipa": "le pˈerla"
+        },
+        {
+          "target": "le penny",
+          "roman": "le penny",
+          "english": "the penny",
+          "ipa": "le pˈeni"
+        },
+        {
+          "target": "Io vide le litro.",
+          "roman": "io vide le litro",
+          "english": "I see the litre.",
+          "ipa": "ˈio vˈide le lˈitro"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

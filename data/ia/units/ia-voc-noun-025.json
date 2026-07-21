@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-025",
+  "title": "Nomines 25",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 25 1",
+      "teach": [
+        {
+          "target": "le interesse",
+          "roman": "le interesse",
+          "english": "the interest",
+          "ipa": "le ˌinterˈese"
+        },
+        {
+          "target": "le seniora",
+          "roman": "le seniora",
+          "english": "the mrs / lady",
+          "ipa": "le senjˈora"
+        },
+        {
+          "target": "le terra",
+          "roman": "le terra",
+          "english": "the land / earth",
+          "ipa": "le tˈera"
+        },
+        {
+          "target": "le humanitate",
+          "roman": "le humanitate",
+          "english": "the mankind",
+          "ipa": "le hˌumanitˈate"
+        },
+        {
+          "target": "le membros",
+          "roman": "le membros",
+          "english": "the membership",
+          "ipa": "le mˈembros"
+        },
+        {
+          "target": "le monumento",
+          "roman": "le monumento",
+          "english": "the memorial",
+          "ipa": "le mˌonumˈento"
+        },
+        {
+          "target": "le vicin",
+          "roman": "le vicin",
+          "english": "the neighbouring",
+          "ipa": "le vitsˈin"
+        },
+        {
+          "target": "le ornamento",
+          "roman": "le ornamento",
+          "english": "the ornament",
+          "ipa": "le ˌornamˈento"
+        },
+        {
+          "target": "Io vide le interesse.",
+          "roman": "io vide le interesse",
+          "english": "I see the interest.",
+          "ipa": "ˈio vˈide le ˌinterˈese"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 25 2",
+      "teach": [
+        {
+          "target": "le dar super",
+          "roman": "le dar super",
+          "english": "the overlook",
+          "ipa": "le dˈar sˈuper"
+        },
+        {
+          "target": "le cumulo",
+          "roman": "le cumulo",
+          "english": "the pile / heap",
+          "ipa": "le kˈumulo"
+        },
+        {
+          "target": "le presentia",
+          "roman": "le presentia",
+          "english": "the presence",
+          "ipa": "le presˈentja"
+        },
+        {
+          "target": "le imprimitor",
+          "roman": "le imprimitor",
+          "english": "the printer",
+          "ipa": "le ˌimprimitˈor"
+        },
+        {
+          "target": "le progresso",
+          "roman": "le progresso",
+          "english": "the progress",
+          "ipa": "le proɡrˈeso"
+        },
+        {
+          "target": "le room salon",
+          "roman": "le room salon",
+          "english": "the sitting",
+          "ipa": "le roˈom salˈon"
+        },
+        {
+          "target": "le sclavitude",
+          "roman": "le sclavitude",
+          "english": "the slavery",
+          "ipa": "le sklˌavitˈude"
+        },
+        {
+          "target": "le splendide",
+          "roman": "le splendide",
+          "english": "the splendid",
+          "ipa": "le splˈendide"
+        },
+        {
+          "target": "Io vide le dar super.",
+          "roman": "io vide le dar super",
+          "english": "I see the overlook.",
+          "ipa": "ˈio vˈide le dˈar sˈuper"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 25 3",
+      "teach": [
+        {
+          "target": "le superficie",
+          "roman": "le superficie",
+          "english": "the surface",
+          "ipa": "le sˌuperfˈitsje"
+        },
+        {
+          "target": "le tendentia",
+          "roman": "le tendentia",
+          "english": "the tendency",
+          "ipa": "le tendˈentja"
+        },
+        {
+          "target": "le dece-tres",
+          "roman": "le dece-tres",
+          "english": "the thirteen",
+          "ipa": "le dˈetsetrˈes"
+        },
+        {
+          "target": "le minutiose",
+          "roman": "le minutiose",
+          "english": "the thorough",
+          "ipa": "le mˌinutjˈose"
+        },
+        {
+          "target": "le affliction",
+          "roman": "le affliction",
+          "english": "the trouble",
+          "ipa": "le ˌafliktjˈon"
+        },
+        {
+          "target": "le violentia",
+          "roman": "le violentia",
+          "english": "the violence",
+          "ipa": "le vjolˈentja"
+        },
+        {
+          "target": "le general",
+          "roman": "le general",
+          "english": "the widespread",
+          "ipa": "le ɡˌenerˈal"
+        },
+        {
+          "target": "le filo",
+          "roman": "le filo",
+          "english": "the wire / thread",
+          "ipa": "le fˈilo"
+        },
+        {
+          "target": "Io vide le superficie.",
+          "roman": "io vide le superficie",
+          "english": "I see the surface.",
+          "ipa": "ˈio vˈide le sˌuperfˈitsje"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 25 4",
+      "teach": [
+        {
+          "target": "le aviso",
+          "roman": "le aviso",
+          "english": "the tip / advice",
+          "ipa": "le avˈiso"
+        },
+        {
+          "target": "le Atlantico",
+          "roman": "le Atlantico",
+          "english": "the atlantic",
+          "ipa": "le atlˈantiko"
+        },
+        {
+          "target": "le auditorio",
+          "roman": "le auditorio",
+          "english": "the audience",
+          "ipa": "le ˌaʊditˈorjo"
+        },
+        {
+          "target": "le ceremonia",
+          "roman": "le ceremonia",
+          "english": "the ceremony",
+          "ipa": "le tsˌeremonˈia"
+        },
+        {
+          "target": "le interprisa",
+          "roman": "le interprisa",
+          "english": "the concern",
+          "ipa": "le ˌinterprˈisa"
+        },
+        {
+          "target": "le conquesta",
+          "roman": "le conquesta",
+          "english": "the conquest",
+          "ipa": "le koŋkwˈesta"
+        },
+        {
+          "target": "le commode",
+          "roman": "le commode",
+          "english": "the convenient",
+          "ipa": "le kˈomode"
+        },
+        {
+          "target": "le morte",
+          "roman": "le morte",
+          "english": "the dead / death",
+          "ipa": "le mˈorte"
+        },
+        {
+          "target": "Io vide le aviso.",
+          "roman": "io vide le aviso",
+          "english": "I see the tip / advice.",
+          "ipa": "ˈio vˈide le avˈiso"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

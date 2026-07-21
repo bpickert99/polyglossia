@@ -1,0 +1,143 @@
+{
+  "id": "ia-voc-natura-plus",
+  "title": "Natura plus",
+  "level": "B1",
+  "summary": "More nature and landscape.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Natura plus 1",
+      "teach": [
+        {
+          "target": "le laco",
+          "roman": "le laco",
+          "english": "the lake",
+          "ipa": "le lˈako"
+        },
+        {
+          "target": "le oceano",
+          "roman": "le oceano",
+          "english": "the ocean",
+          "ipa": "le otsˈeano"
+        },
+        {
+          "target": "le collina",
+          "roman": "le collina",
+          "english": "the hill",
+          "ipa": "le kolˈina"
+        },
+        {
+          "target": "le valle",
+          "roman": "le valle",
+          "english": "the valley",
+          "ipa": "le vˈale"
+        },
+        {
+          "target": "le deserto",
+          "roman": "le deserto",
+          "english": "the desert",
+          "ipa": "le desˈerto"
+        },
+        {
+          "target": "le stella",
+          "roman": "le stella",
+          "english": "the star",
+          "ipa": "le stˈela"
+        },
+        {
+          "target": "lunar",
+          "roman": "lunar",
+          "english": "moon",
+          "ipa": "lunˈar"
+        },
+        {
+          "target": "Le can es lunar.",
+          "roman": "le can es lunar",
+          "english": "The dog is moon.",
+          "ipa": "le kˈan es lunˈar"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Natura plus 2",
+      "teach": [
+        {
+          "target": "de petra",
+          "roman": "de petra",
+          "english": "stone",
+          "ipa": "de pˈetra"
+        },
+        {
+          "target": "le sablo",
+          "roman": "le sablo",
+          "english": "the sand",
+          "ipa": "le sˈablo"
+        },
+        {
+          "target": "le nube",
+          "roman": "le nube",
+          "english": "the cloud",
+          "ipa": "le nˈube"
+        },
+        {
+          "target": "le glacie",
+          "roman": "le glacie",
+          "english": "the ice",
+          "ipa": "le ɡlˈatsje"
+        },
+        {
+          "target": "le folio",
+          "roman": "le folio",
+          "english": "the leaf",
+          "ipa": "le fˈoljo"
+        },
+        {
+          "target": "le radice",
+          "roman": "le radice",
+          "english": "the root",
+          "ipa": "le radˈitse"
+        },
+        {
+          "target": "le branca",
+          "roman": "le branca",
+          "english": "the branch",
+          "ipa": "le brˈanka"
+        },
+        {
+          "target": "Le can es de petra.",
+          "roman": "le can es de petra",
+          "english": "The dog is stone.",
+          "ipa": "le kˈan es de pˈetra"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Natura plus 3",
+      "teach": [
+        {
+          "target": "le herba",
+          "roman": "le herba",
+          "english": "the grass",
+          "ipa": "le hˈerba"
+        },
+        {
+          "target": "le ligno",
+          "roman": "le ligno",
+          "english": "the wood",
+          "ipa": "le lˈiɡno"
+        },
+        {
+          "target": "Io vide le herba.",
+          "roman": "io vide le herba",
+          "english": "I see the grass.",
+          "ipa": "ˈio vˈide le hˈerba"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 16 more words about more nature and landscape"
+  ]
+}

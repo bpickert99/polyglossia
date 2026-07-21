@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-022",
+  "title": "Nomines 22",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 22 1",
+      "teach": [
+        {
+          "target": "le bonitate",
+          "roman": "le bonitate",
+          "english": "the goodness",
+          "ipa": "le bˌonitˈate"
+        },
+        {
+          "target": "le horizonte",
+          "roman": "le horizonte",
+          "english": "the horizon",
+          "ipa": "le hˌorizˈonte"
+        },
+        {
+          "target": "le in effecto",
+          "roman": "le in effecto",
+          "english": "the indeed",
+          "ipa": "le ˈin efˈekto"
+        },
+        {
+          "target": "le inventor",
+          "roman": "le inventor",
+          "english": "the inventor",
+          "ipa": "le ˌinventˈor"
+        },
+        {
+          "target": "le be mancar",
+          "roman": "le be mancar",
+          "english": "the lacking",
+          "ipa": "le bˈe mankˈar"
+        },
+        {
+          "target": "le marca",
+          "roman": "le marca",
+          "english": "the make / mark",
+          "ipa": "le mˈarka"
+        },
+        {
+          "target": "le mercator",
+          "roman": "le mercator",
+          "english": "the merchant",
+          "ipa": "le mˌerkatˈor"
+        },
+        {
+          "target": "le ministro",
+          "roman": "le ministro",
+          "english": "the minister",
+          "ipa": "le minˈistro"
+        },
+        {
+          "target": "Io vide le bonitate.",
+          "roman": "io vide le bonitate",
+          "english": "I see the goodness.",
+          "ipa": "ˈio vˈide le bˌonitˈate"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 22 2",
+      "teach": [
+        {
+          "target": "le ben ordinate",
+          "roman": "le ben ordinate",
+          "english": "the neat",
+          "ipa": "le bˈen ˌordinˈate"
+        },
+        {
+          "target": "le quaderno",
+          "roman": "le quaderno",
+          "english": "the notebook",
+          "ipa": "le kwadˈerno"
+        },
+        {
+          "target": "le ordinari",
+          "roman": "le ordinari",
+          "english": "the ordinary",
+          "ipa": "le ˌordinˈari"
+        },
+        {
+          "target": "le original",
+          "roman": "le original",
+          "english": "the original",
+          "ipa": "le ˌoriɡinˈal"
+        },
+        {
+          "target": "le super",
+          "roman": "le super",
+          "english": "the over / upon",
+          "ipa": "le sˈuper"
+        },
+        {
+          "target": "le placente",
+          "roman": "le placente",
+          "english": "the pleasant",
+          "ipa": "le platsˈente"
+        },
+        {
+          "target": "le abundantia",
+          "roman": "le abundantia",
+          "english": "the plenty",
+          "ipa": "le ˌabundˈantja"
+        },
+        {
+          "target": "le pression",
+          "roman": "le pression",
+          "english": "the pressure",
+          "ipa": "le presjˈon"
+        },
+        {
+          "target": "Io vide le ben ordinate.",
+          "roman": "io vide le ben ordinate",
+          "english": "I see the neat.",
+          "ipa": "ˈio vˈide le bˈen ˌordinˈate"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 22 3",
+      "teach": [
+        {
+          "target": "le pretexto",
+          "roman": "le pretexto",
+          "english": "the pretence",
+          "ipa": "le pretˈeksto"
+        },
+        {
+          "target": "le radio",
+          "roman": "le radio",
+          "english": "the ray / radio",
+          "ipa": "le rˈadjo"
+        },
+        {
+          "target": "le realitate",
+          "roman": "le realitate",
+          "english": "the reality",
+          "ipa": "le rˌealitˈate"
+        },
+        {
+          "target": "le reception",
+          "roman": "le reception",
+          "english": "the receipt",
+          "ipa": "le rˌetseptjˈon"
+        },
+        {
+          "target": "le rude",
+          "roman": "le rude",
+          "english": "the rude / rough",
+          "ipa": "le rˈude"
+        },
+        {
+          "target": "le domestico",
+          "roman": "le domestico",
+          "english": "the servant",
+          "ipa": "le domˈestiko"
+        },
+        {
+          "target": "le dormiente",
+          "roman": "le dormiente",
+          "english": "the sleeper",
+          "ipa": "le dormjˈente"
+        },
+        {
+          "target": "le espaniol",
+          "roman": "le espaniol",
+          "english": "the spaniard",
+          "ipa": "le ˌespanjˈol"
+        },
+        {
+          "target": "Io vide le pretexto.",
+          "roman": "io vide le pretexto",
+          "english": "I see the pretence.",
+          "ipa": "ˈio vˈide le pretˈeksto"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 22 4",
+      "teach": [
+        {
+          "target": "le surprisa",
+          "roman": "le surprisa",
+          "english": "the surprise",
+          "ipa": "le surprˈisa"
+        },
+        {
+          "target": "le cassero",
+          "roman": "le cassero",
+          "english": "the treasurer",
+          "ipa": "le kasˈero"
+        },
+        {
+          "target": "le cursa",
+          "roman": "le cursa",
+          "english": "the trip / race",
+          "ipa": "le kˈursa"
+        },
+        {
+          "target": "le varietate",
+          "roman": "le varietate",
+          "english": "the variety",
+          "ipa": "le vˌarjetˈate"
+        },
+        {
+          "target": "le visitator",
+          "roman": "le visitator",
+          "english": "the visitor",
+          "ipa": "le vˌisitatˈor"
+        },
+        {
+          "target": "le durante que",
+          "roman": "le durante que",
+          "english": "the while",
+          "ipa": "le durˈante kˈe"
+        },
+        {
+          "target": "le accordo",
+          "roman": "le accordo",
+          "english": "the agreement",
+          "ipa": "le akˈordo"
+        },
+        {
+          "target": "le vive",
+          "roman": "le vive",
+          "english": "the live / alive",
+          "ipa": "le vˈive"
+        },
+        {
+          "target": "Io vide le surprisa.",
+          "roman": "io vide le surprisa",
+          "english": "I see the surprise.",
+          "ipa": "ˈio vˈide le surprˈisa"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

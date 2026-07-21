@@ -95,12 +95,14 @@
         {
           "target": "bon",
           "roman": "bon",
-          "english": "good"
+          "english": "good",
+          "ipa": "bˈon"
         },
         {
           "target": "mal",
           "roman": "mal",
-          "english": "bad"
+          "english": "bad",
+          "ipa": "mˈal"
         }
       ]
     }

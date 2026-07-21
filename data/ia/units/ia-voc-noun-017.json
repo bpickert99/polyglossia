@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-017",
+  "title": "Nomines 17",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 17 1",
+      "teach": [
+        {
+          "target": "le gauder de",
+          "roman": "le gauder de",
+          "english": "the enjoy",
+          "ipa": "le ɡaʊdˈer dˈe"
+        },
+        {
+          "target": "le extreme",
+          "roman": "le extreme",
+          "english": "the extreme",
+          "ipa": "le ekstrˈeme"
+        },
+        {
+          "target": "le fabrica",
+          "roman": "le fabrica",
+          "english": "the factory",
+          "ipa": "le fˈabrika"
+        },
+        {
+          "target": "le phantasia",
+          "roman": "le phantasia",
+          "english": "the fancy",
+          "ipa": "le fˌantasˈia"
+        },
+        {
+          "target": "le anterior",
+          "roman": "le anterior",
+          "english": "the former",
+          "ipa": "le ˌanterjˈor"
+        },
+        {
+          "target": "le gradual",
+          "roman": "le gradual",
+          "english": "the gradual",
+          "ipa": "le ɡradwˈal"
+        },
+        {
+          "target": "le reunion",
+          "roman": "le reunion",
+          "english": "the meeting",
+          "ipa": "le reʊnjˈon"
+        },
+        {
+          "target": "le mention",
+          "roman": "le mention",
+          "english": "the mention",
+          "ipa": "le mentjˈon"
+        },
+        {
+          "target": "Io vide le gauder de.",
+          "roman": "io vide le gauder de",
+          "english": "I see the enjoy.",
+          "ipa": "ˈio vˈide le ɡaʊdˈer dˈe"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 17 2",
+      "teach": [
+        {
+          "target": "le senioretta",
+          "roman": "le senioretta",
+          "english": "the miss",
+          "ipa": "le sˌenjorˈeta"
+        },
+        {
+          "target": "le mixtura",
+          "roman": "le mixtura",
+          "english": "the mixture",
+          "ipa": "le mikstˈura"
+        },
+        {
+          "target": "le natural",
+          "roman": "le natural",
+          "english": "the natural",
+          "ipa": "le nˌaturˈal"
+        },
+        {
+          "target": "le gasolina",
+          "roman": "le gasolina",
+          "english": "the petrol",
+          "ipa": "le ɡˌasolˈina"
+        },
+        {
+          "target": "le preparate",
+          "roman": "le preparate",
+          "english": "the ready",
+          "ipa": "le prˌeparˈate"
+        },
+        {
+          "target": "le registro",
+          "roman": "le registro",
+          "english": "the record",
+          "ipa": "le reɡˈistro"
+        },
+        {
+          "target": "le reguardo",
+          "roman": "le reguardo",
+          "english": "the regard",
+          "ipa": "le reɡwˈardo"
+        },
+        {
+          "target": "le rarmente",
+          "roman": "le rarmente",
+          "english": "the seldom",
+          "ipa": "le rarmˈente"
+        },
+        {
+          "target": "Io vide le senioretta.",
+          "roman": "io vide le senioretta",
+          "english": "I see the miss.",
+          "ipa": "ˈio vˈide le sˌenjorˈeta"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 17 3",
+      "teach": [
+        {
+          "target": "le venditor",
+          "roman": "le venditor",
+          "english": "the seller",
+          "ipa": "le vˌenditˈor"
+        },
+        {
+          "target": "le experte",
+          "roman": "le experte",
+          "english": "the skilled",
+          "ipa": "le ekspˈerte"
+        },
+        {
+          "target": "le special",
+          "roman": "le special",
+          "english": "the special",
+          "ipa": "le spetsjˈal"
+        },
+        {
+          "target": "le linguage",
+          "roman": "le linguage",
+          "english": "the speech",
+          "ipa": "le linɡwˈaʒe"
+        },
+        {
+          "target": "le manual",
+          "roman": "le manual",
+          "english": "the textbook",
+          "ipa": "le manwˈal"
+        },
+        {
+          "target": "le tramvia",
+          "roman": "le tramvia",
+          "english": "the tramway",
+          "ipa": "le tramvˈia"
+        },
+        {
+          "target": "le tresor",
+          "roman": "le tresor",
+          "english": "the treasure",
+          "ipa": "le tresˈor"
+        },
+        {
+          "target": "le artificio",
+          "roman": "le artificio",
+          "english": "the trick",
+          "ipa": "le ˌartifˈitsjo"
+        },
+        {
+          "target": "Io vide le venditor.",
+          "roman": "io vide le venditor",
+          "english": "I see the seller.",
+          "ipa": "ˈio vˈide le vˌenditˈor"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 17 4",
+      "teach": [
+        {
+          "target": "le vascello",
+          "roman": "le vascello",
+          "english": "the vessel",
+          "ipa": "le vastsˈelo"
+        },
+        {
+          "target": "le village",
+          "roman": "le village",
+          "english": "the village",
+          "ipa": "le vilˈaʒe"
+        },
+        {
+          "target": "le servitor",
+          "roman": "le servitor",
+          "english": "the waiter",
+          "ipa": "le sˌervitˈor"
+        },
+        {
+          "target": "le up eveliar",
+          "roman": "le up eveliar",
+          "english": "the wake",
+          "ipa": "le ˈup ˌeveljˈar"
+        },
+        {
+          "target": "le susurro",
+          "roman": "le susurro",
+          "english": "the whisper",
+          "ipa": "le susˈuro"
+        },
+        {
+          "target": "le perverse",
+          "roman": "le perverse",
+          "english": "the wicked",
+          "ipa": "le pervˈerse"
+        },
+        {
+          "target": "le avion",
+          "roman": "le avion",
+          "english": "the aeroplane",
+          "ipa": "le avjˈon"
+        },
+        {
+          "target": "le America",
+          "roman": "le America",
+          "english": "the america",
+          "ipa": "le amˈerika"
+        },
+        {
+          "target": "Io vide le vascello.",
+          "roman": "io vide le vascello",
+          "english": "I see the vessel.",
+          "ipa": "ˈio vˈide le vastsˈelo"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

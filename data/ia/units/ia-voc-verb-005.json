@@ -1,0 +1,283 @@
+{
+  "id": "ia-voc-verb-005",
+  "title": "Verbos 5",
+  "level": "B2",
+  "summary": "More verbos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Verbos 5 1",
+      "teach": [
+        {
+          "target": "genicular",
+          "roman": "genicular",
+          "english": "to kneel",
+          "note": "io genicula — present tense, infinitive minus -r.",
+          "ipa": "ɡˌenikulˈar"
+        },
+        {
+          "target": "poner",
+          "roman": "poner",
+          "english": "to lay / put",
+          "note": "io pone — present tense, infinitive minus -r.",
+          "ipa": "ponˈer"
+        },
+        {
+          "target": "placer",
+          "roman": "placer",
+          "english": "to pleasure",
+          "note": "io place — present tense, infinitive minus -r.",
+          "ipa": "platsˈer"
+        },
+        {
+          "target": "preferer",
+          "roman": "preferer",
+          "english": "to prefer",
+          "note": "io prefere — present tense, infinitive minus -r.",
+          "ipa": "prˌeferˈer"
+        },
+        {
+          "target": "reciper",
+          "roman": "reciper",
+          "english": "to receive",
+          "note": "io recipe — present tense, infinitive minus -r.",
+          "ipa": "rˌetsipˈer"
+        },
+        {
+          "target": "regular",
+          "roman": "regular",
+          "english": "to regular",
+          "note": "io regula — present tense, infinitive minus -r.",
+          "ipa": "rˌeɡulˈar"
+        },
+        {
+          "target": "dispender",
+          "roman": "dispender",
+          "english": "to spend",
+          "note": "io dispende — present tense, infinitive minus -r.",
+          "ipa": "dˌispendˈer"
+        },
+        {
+          "target": "benedicer",
+          "roman": "benedicer",
+          "english": "to bless",
+          "note": "io benedice — present tense, infinitive minus -r.",
+          "ipa": "bˌeneditsˈer"
+        },
+        {
+          "target": "Io genicula.",
+          "roman": "io genicula",
+          "english": "I kneel.",
+          "ipa": "ˈio ɡenˈikula"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Verbos 5 2",
+      "teach": [
+        {
+          "target": "verificar",
+          "roman": "verificar",
+          "english": "to check",
+          "note": "io verifica — present tense, infinitive minus -r.",
+          "ipa": "vˌerifikˈar"
+        },
+        {
+          "target": "deciper",
+          "roman": "deciper",
+          "english": "to deceive",
+          "note": "io decipe — present tense, infinitive minus -r.",
+          "ipa": "dˌetsipˈer"
+        },
+        {
+          "target": "defender",
+          "roman": "defender",
+          "english": "to defend",
+          "note": "io defende — present tense, infinitive minus -r.",
+          "ipa": "dˌefendˈer"
+        },
+        {
+          "target": "liberar",
+          "roman": "liberar",
+          "english": "to deliver",
+          "note": "io libera — present tense, infinitive minus -r.",
+          "ipa": "lˌiberˈar"
+        },
+        {
+          "target": "meritar",
+          "roman": "meritar",
+          "english": "to deserve",
+          "note": "io merita — present tense, infinitive minus -r.",
+          "ipa": "mˌeritˈar"
+        },
+        {
+          "target": "expectar",
+          "roman": "expectar",
+          "english": "to expect",
+          "note": "io expecta — present tense, infinitive minus -r.",
+          "ipa": "ˌekspektˈar"
+        },
+        {
+          "target": "offender",
+          "roman": "offender",
+          "english": "to offend",
+          "note": "io offende — present tense, infinitive minus -r.",
+          "ipa": "ˌofendˈer"
+        },
+        {
+          "target": "popular",
+          "roman": "popular",
+          "english": "to popular",
+          "note": "io popula — present tense, infinitive minus -r.",
+          "ipa": "pˌopulˈar"
+        },
+        {
+          "target": "Io verifica.",
+          "roman": "io verifica",
+          "english": "I check.",
+          "ipa": "ˈio verˈifika"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Verbos 5 3",
+      "teach": [
+        {
+          "target": "predicar",
+          "roman": "predicar",
+          "english": "to preach",
+          "note": "io predica — present tense, infinitive minus -r.",
+          "ipa": "prˌedikˈar"
+        },
+        {
+          "target": "balanciar",
+          "roman": "balanciar",
+          "english": "to swing",
+          "note": "io balancia — present tense, infinitive minus -r.",
+          "ipa": "bˌalantsjˈar"
+        },
+        {
+          "target": "approbar",
+          "roman": "approbar",
+          "english": "to approve",
+          "note": "io approba — present tense, infinitive minus -r.",
+          "ipa": "ˌaprobˈar"
+        },
+        {
+          "target": "combinar",
+          "roman": "combinar",
+          "english": "to combine",
+          "note": "io combina — present tense, infinitive minus -r.",
+          "ipa": "kˌombinˈar"
+        },
+        {
+          "target": "comparar",
+          "roman": "comparar",
+          "english": "to compare",
+          "note": "io compara — present tense, infinitive minus -r.",
+          "ipa": "kˌomparˈar"
+        },
+        {
+          "target": "destruer",
+          "roman": "destruer",
+          "english": "to destroy",
+          "note": "io destrue — present tense, infinitive minus -r.",
+          "ipa": "destrwˈer"
+        },
+        {
+          "target": "discuter",
+          "roman": "discuter",
+          "english": "to discuss",
+          "note": "io discute — present tense, infinitive minus -r.",
+          "ipa": "dˌiskutˈer"
+        },
+        {
+          "target": "hesitar",
+          "roman": "hesitar",
+          "english": "to hesitate",
+          "note": "io hesita — present tense, infinitive minus -r.",
+          "ipa": "hˌesitˈar"
+        },
+        {
+          "target": "Io predica.",
+          "roman": "io predica",
+          "english": "I preach.",
+          "ipa": "ˈio prˈedika"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Verbos 5 4",
+      "teach": [
+        {
+          "target": "disserrar",
+          "roman": "disserrar",
+          "english": "to loosen",
+          "note": "io disserra — present tense, infinitive minus -r.",
+          "ipa": "dˌiserˈar"
+        },
+        {
+          "target": "negliger",
+          "roman": "negliger",
+          "english": "to neglect",
+          "note": "io neglige — present tense, infinitive minus -r.",
+          "ipa": "nˌeɡliɡˈer"
+        },
+        {
+          "target": "superar",
+          "roman": "superar",
+          "english": "to overcome",
+          "note": "io supera — present tense, infinitive minus -r.",
+          "ipa": "sˌuperˈar"
+        },
+        {
+          "target": "deber",
+          "roman": "deber",
+          "english": "to owe / must",
+          "note": "io debe — present tense, infinitive minus -r.",
+          "ipa": "debˈer"
+        },
+        {
+          "target": "preparar",
+          "roman": "preparar",
+          "english": "to prepare",
+          "note": "io prepara — present tense, infinitive minus -r.",
+          "ipa": "prˌeparˈar"
+        },
+        {
+          "target": "producer",
+          "roman": "producer",
+          "english": "to produce",
+          "note": "io produce — present tense, infinitive minus -r.",
+          "ipa": "prˌodutsˈer"
+        },
+        {
+          "target": "suggerer",
+          "roman": "suggerer",
+          "english": "to suggest",
+          "note": "io suggere — present tense, infinitive minus -r.",
+          "ipa": "sˌuɡerˈer"
+        },
+        {
+          "target": "supponer",
+          "roman": "supponer",
+          "english": "to suppose",
+          "note": "io suppone — present tense, infinitive minus -r.",
+          "ipa": "sˌuponˈer"
+        },
+        {
+          "target": "Io disserra.",
+          "roman": "io disserra",
+          "english": "I loosen.",
+          "ipa": "ˈio disˈera"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more verbos (B2-band vocabulary)"
+  ]
+}

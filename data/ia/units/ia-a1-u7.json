@@ -90,12 +90,14 @@
           "target": "Io ha fame.",
           "roman": "io ha fame",
           "english": "I am hungry.",
-          "note": "Literally 'I have hunger' — same pattern as haber sete (to be thirsty)."
+          "note": "Literally 'I have hunger' — same pattern as haber sete (to be thirsty).",
+          "ipa": "ˈio ha fˈame"
         },
         {
           "target": "Io ha sete.",
           "roman": "io ha sete",
-          "english": "I am thirsty."
+          "english": "I am thirsty.",
+          "ipa": "ˈio ha sˈete"
         }
       ],
       "grammar": {

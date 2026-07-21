@@ -52,16 +52,28 @@ async function currentCourse() {
   return code ? loadCourse(code) : null;
 }
 
+// Fetch every unit in a course concurrently (data.js caches by path, so this
+// is also what warms the cache for every other view that needs unit JSON —
+// with 100+ units, fetching them one at a time in sequence would otherwise
+// turn every course-map load into a slow request waterfall).
+async function loadAllUnits(course) {
+  const all = (course.sections || []).flatMap((s) => s.units || []);
+  const entries = await Promise.all(all.map(async (u) => {
+    try { return [u.id, await loadUnit(course.code, u.file)]; } catch { return [u.id, null]; }
+  }));
+  return new Map(entries);
+}
+
 // Progression gating: a unit unlocks once the previous one is done (see
 // lesson-builder.js's isUnitDone). Returns the set of unit ids still locked.
-async function computeLocked(course) {
+async function computeLocked(course, unitsData) {
   const locked = new Set();
   let prevDone = true;
+  const unitsMap = unitsData || await loadAllUnits(course);
   for (const section of course.sections) {
     if (section.locked) continue;
     for (const u of section.units || []) {
-      let data = null;
-      try { data = await loadUnit(course.code, u.file); } catch { /* missing */ }
+      const data = unitsMap.get(u.id);
       if (!data) continue;
       if (!prevDone) locked.add(u.id);
       prevDone = isUnitDone(course.code, data);
@@ -165,13 +177,8 @@ async function viewCourseMap() {
   primeTTS(); // warm up the audio engine while the map renders
 
   let html = "";
-  const unitsData = new Map();
-  for (const section of course.sections) {
-    for (const u of section.units || []) {
-      try { unitsData.set(u.id, await loadUnit(course.code, u.file)); } catch { /* missing */ }
-    }
-  }
-  const lockedUnits = await computeLocked(course);
+  const unitsData = await loadAllUnits(course);
+  const lockedUnits = await computeLocked(course, unitsData);
 
   for (const section of course.sections) {
     const locked = section.locked || !(section.units || []).length;

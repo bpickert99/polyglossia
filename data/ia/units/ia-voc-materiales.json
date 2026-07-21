@@ -1,0 +1,107 @@
+{
+  "id": "ia-voc-materiales",
+  "title": "Materiales",
+  "level": "B1",
+  "summary": "Materials.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Materiales 1",
+      "teach": [
+        {
+          "target": "le metallo",
+          "roman": "le metallo",
+          "english": "the metal",
+          "ipa": "le metˈalo"
+        },
+        {
+          "target": "de ferro",
+          "roman": "de ferro",
+          "english": "iron",
+          "ipa": "de fˈero"
+        },
+        {
+          "target": "le vitro",
+          "roman": "le vitro",
+          "english": "the glass",
+          "ipa": "le vˈitro"
+        },
+        {
+          "target": "le coton",
+          "roman": "le coton",
+          "english": "the cotton",
+          "ipa": "le kotˈon"
+        },
+        {
+          "target": "le lana",
+          "roman": "le lana",
+          "english": "the wool",
+          "ipa": "le lˈana"
+        },
+        {
+          "target": "le corio",
+          "roman": "le corio",
+          "english": "the leather",
+          "ipa": "le kˈorjo"
+        },
+        {
+          "target": "le auro",
+          "roman": "le auro",
+          "english": "the gold",
+          "ipa": "le ˈaʊro"
+        },
+        {
+          "target": "Le can es de ferro.",
+          "roman": "le can es de ferro",
+          "english": "The dog is iron.",
+          "ipa": "le kˈan es de fˈero"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Materiales 2",
+      "teach": [
+        {
+          "target": "de argento",
+          "roman": "de argento",
+          "english": "silver",
+          "ipa": "de arɡˈento"
+        },
+        {
+          "target": "de aciero",
+          "roman": "de aciero",
+          "english": "steel",
+          "ipa": "de atsjˈero"
+        },
+        {
+          "target": "le bricca",
+          "roman": "le bricca",
+          "english": "the brick",
+          "ipa": "le brˈika"
+        },
+        {
+          "target": "le papiro",
+          "roman": "le papiro",
+          "english": "the paper",
+          "ipa": "le papˈiro"
+        },
+        {
+          "target": "de gumma",
+          "roman": "de gumma",
+          "english": "rubber",
+          "ipa": "de ɡˈuma"
+        },
+        {
+          "target": "Le can es de argento.",
+          "roman": "le can es de argento",
+          "english": "The dog is silver.",
+          "ipa": "le kˈan es de arɡˈento"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 12 more words about materials"
+  ]
+}

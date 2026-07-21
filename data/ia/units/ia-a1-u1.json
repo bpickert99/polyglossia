@@ -100,23 +100,27 @@
         {
           "target": "le nomine",
           "roman": "le nomine",
-          "english": "the name"
+          "english": "the name",
+          "ipa": "le nˈomine"
         },
         {
           "target": "Como tu te appella?",
           "roman": "como tu te appella",
           "english": "What is your name?",
-          "note": "Literally 'how do you call yourself' — appellar se = to be called."
+          "note": "Literally 'how do you call yourself' — appellar se = to be called.",
+          "ipa": "kˈomo tˈu tˈe apˈela"
         },
         {
           "target": "Io me appella ...",
           "roman": "io me appella",
-          "english": "My name is..."
+          "english": "My name is...",
+          "ipa": "ˈio mˈe apˈela"
         },
         {
           "target": "Pardono!",
           "roman": "pardono",
-          "english": "Sorry! / Excuse me!"
+          "english": "Sorry! / Excuse me!",
+          "ipa": "pardˈono"
         }
       ]
     }

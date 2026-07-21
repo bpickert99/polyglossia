@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-adj-004",
+  "title": "Adjectivos 4",
+  "level": "B2",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 4 1",
+      "teach": [
+        {
+          "target": "correcte",
+          "roman": "correcte",
+          "english": "correct",
+          "ipa": "korˈekte"
+        },
+        {
+          "target": "europee",
+          "roman": "europee",
+          "english": "european",
+          "ipa": "ˌeuropˈee"
+        },
+        {
+          "target": "innocue",
+          "roman": "innocue",
+          "english": "harmless",
+          "ipa": "inˈokwe"
+        },
+        {
+          "target": "potente",
+          "roman": "potente",
+          "english": "powerful",
+          "ipa": "potˈente"
+        },
+        {
+          "target": "scotese",
+          "roman": "scotese",
+          "english": "scottish",
+          "ipa": "skotˈese"
+        },
+        {
+          "target": "minus que",
+          "roman": "minus que",
+          "english": "unless",
+          "ipa": "mˈinus kˈe"
+        },
+        {
+          "target": "prodige",
+          "roman": "prodige",
+          "english": "wasteful",
+          "ipa": "prˈodiɡe"
+        },
+        {
+          "target": "britannic",
+          "roman": "britannic",
+          "english": "british",
+          "ipa": "britˈannik"
+        },
+        {
+          "target": "Le casa es correcte.",
+          "roman": "le casa es correcte",
+          "english": "The house is correct.",
+          "ipa": "le kˈasa es korˈekte"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 4 2",
+      "teach": [
+        {
+          "target": "canadian",
+          "roman": "canadian",
+          "english": "canadian",
+          "ipa": "kˌanadjˈan"
+        },
+        {
+          "target": "attentive",
+          "roman": "attentive",
+          "english": "careful",
+          "ipa": "ˌatentˈive"
+        },
+        {
+          "target": "electric",
+          "roman": "electric",
+          "english": "electric",
+          "ipa": "elˈektrik"
+        },
+        {
+          "target": "plus longe",
+          "roman": "plus longe",
+          "english": "longer",
+          "ipa": "plˈus lˈoŋɡe"
+        },
+        {
+          "target": "opposite",
+          "roman": "opposite",
+          "english": "opposite",
+          "ipa": "opˈosite"
+        },
+        {
+          "target": "separate",
+          "roman": "separate",
+          "english": "separate",
+          "ipa": "sˌeparˈate"
+        },
+        {
+          "target": "disponibile",
+          "roman": "disponibile",
+          "english": "spare",
+          "ipa": "dˌisponˈibile"
+        },
+        {
+          "target": "american",
+          "roman": "american",
+          "english": "american",
+          "ipa": "ˌamerikˈan"
+        },
+        {
+          "target": "Le can es canadian.",
+          "roman": "le can es canadian",
+          "english": "The dog is canadian.",
+          "ipa": "le kˈan es kˌanadjˈan"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 4 3",
+      "teach": [
+        {
+          "target": "austriac",
+          "roman": "austriac",
+          "english": "austrian",
+          "ipa": "aʊstrˈiak"
+        },
+        {
+          "target": "complete",
+          "roman": "complete",
+          "english": "complete",
+          "ipa": "komplˈete"
+        },
+        {
+          "target": "generose",
+          "roman": "generose",
+          "english": "generous",
+          "ipa": "ɡˌenerˈose"
+        },
+        {
+          "target": "malade",
+          "roman": "malade",
+          "english": "ill / sick",
+          "ipa": "malˈade"
+        },
+        {
+          "target": "leve",
+          "roman": "leve",
+          "english": "left / light",
+          "ipa": "lˈeve"
+        },
+        {
+          "target": "verisimile",
+          "roman": "verisimile",
+          "english": "likely",
+          "ipa": "vˌerisˈimile"
+        },
+        {
+          "target": "moderate",
+          "roman": "moderate",
+          "english": "moderate",
+          "ipa": "mˌoderˈate"
+        },
+        {
+          "target": "numerose",
+          "roman": "numerose",
+          "english": "numerous",
+          "ipa": "nˌumerˈose"
+        },
+        {
+          "target": "Le citate es austriac.",
+          "roman": "le citate es austriac",
+          "english": "The city is austrian.",
+          "ipa": "le tsitˈate es aʊstrˈiak"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adjectivos 4 4",
+      "teach": [
+        {
+          "target": "official",
+          "roman": "official",
+          "english": "official",
+          "ipa": "ˌofitsjˈal"
+        },
+        {
+          "target": "pacibile",
+          "roman": "pacibile",
+          "english": "peaceful",
+          "ipa": "patsˈibile"
+        },
+        {
+          "target": "politic",
+          "roman": "politic",
+          "english": "political",
+          "ipa": "polˈitik"
+        },
+        {
+          "target": "benvenite",
+          "roman": "benvenite",
+          "english": "welcome",
+          "ipa": "bˌenvenˈite"
+        },
+        {
+          "target": "sufficiente",
+          "roman": "sufficiente",
+          "english": "enough",
+          "ipa": "sˌufitsjˈente"
+        },
+        {
+          "target": "desperate",
+          "roman": "desperate",
+          "english": "hopeless",
+          "ipa": "dˌesperˈate"
+        },
+        {
+          "target": "postal",
+          "roman": "postal",
+          "english": "mail / post",
+          "ipa": "postˈal"
+        },
+        {
+          "target": "probabile",
+          "roman": "probabile",
+          "english": "probable",
+          "ipa": "probˈabile"
+        },
+        {
+          "target": "Le libro es official.",
+          "roman": "le libro es official",
+          "english": "The book is official.",
+          "ipa": "le lˈibro es ˌofitsjˈal"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adjectivos (B2-band vocabulary)"
+  ]
+}

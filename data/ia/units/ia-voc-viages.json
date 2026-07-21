@@ -1,0 +1,115 @@
+{
+  "id": "ia-voc-viages",
+  "title": "Viages",
+  "level": "B1",
+  "summary": "Travel and transport.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Viages 1",
+      "teach": [
+        {
+          "target": "le automobile",
+          "roman": "le automobile",
+          "english": "the car",
+          "ipa": "le ˌaʊtomˈobile"
+        },
+        {
+          "target": "le autobus",
+          "roman": "le autobus",
+          "english": "the bus",
+          "ipa": "le ˌaʊtobˈus"
+        },
+        {
+          "target": "le traino",
+          "roman": "le traino",
+          "english": "the train",
+          "ipa": "le trˈaino"
+        },
+        {
+          "target": "le nave",
+          "roman": "le nave",
+          "english": "the ship",
+          "ipa": "le nˈave"
+        },
+        {
+          "target": "le barca",
+          "roman": "le barca",
+          "english": "the boat",
+          "ipa": "le bˈarka"
+        },
+        {
+          "target": "le bicycletta",
+          "roman": "le bicycletta",
+          "english": "the bicycle",
+          "ipa": "le bˌitsiklˈeta"
+        },
+        {
+          "target": "le billet",
+          "roman": "le billet",
+          "english": "the ticket",
+          "ipa": "le bilˈet"
+        },
+        {
+          "target": "Io vide le automobile.",
+          "roman": "io vide le automobile",
+          "english": "I see the car.",
+          "ipa": "ˈio vˈide le ˌaʊtomˈobile"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Viages 2",
+      "teach": [
+        {
+          "target": "le cammino",
+          "roman": "le cammino",
+          "english": "the road",
+          "ipa": "le kamˈino"
+        },
+        {
+          "target": "le aeroporto",
+          "roman": "le aeroporto",
+          "english": "the airport",
+          "ipa": "le ˌaeropˈorto"
+        },
+        {
+          "target": "le mappa",
+          "roman": "le mappa",
+          "english": "the map",
+          "ipa": "le mˈapa"
+        },
+        {
+          "target": "arrivar",
+          "roman": "arrivar",
+          "english": "to arrive",
+          "note": "io arriva — present tense, infinitive minus -r.",
+          "ipa": "ˌarivˈar"
+        },
+        {
+          "target": "partir",
+          "roman": "partir",
+          "english": "to depart",
+          "note": "io parti — present tense, infinitive minus -r.",
+          "ipa": "partˈir"
+        },
+        {
+          "target": "le rota",
+          "roman": "le rota",
+          "english": "the wheel",
+          "ipa": "le rˈota"
+        },
+        {
+          "target": "Io arriva.",
+          "roman": "io arriva",
+          "english": "I arrive.",
+          "ipa": "ˈio arˈiva"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 13 more words about travel and transport"
+  ]
+}

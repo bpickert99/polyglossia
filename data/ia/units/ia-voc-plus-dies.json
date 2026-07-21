@@ -1,0 +1,47 @@
+{
+  "id": "ia-voc-plus-dies",
+  "title": "Plus dies",
+  "level": "A2",
+  "summary": "The rest of the days of the week.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Plus dies 1",
+      "teach": [
+        {
+          "target": "le martedi",
+          "roman": "le martedi",
+          "english": "the tuesday",
+          "ipa": "le mˌartedˈi"
+        },
+        {
+          "target": "le jovedi",
+          "roman": "le jovedi",
+          "english": "the thursday",
+          "ipa": "le ʒˌovedˈi"
+        },
+        {
+          "target": "le sabbato",
+          "roman": "le sabbato",
+          "english": "the saturday",
+          "ipa": "le sˈabato"
+        },
+        {
+          "target": "le dominica",
+          "roman": "le dominica",
+          "english": "the sunday",
+          "ipa": "le domˈinika"
+        },
+        {
+          "target": "Io vide le martedi.",
+          "roman": "io vide le martedi",
+          "english": "I see the tuesday.",
+          "ipa": "ˈio vˈide le mˌartedˈi"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 4 more words about the rest of the days of the week"
+  ]
+}

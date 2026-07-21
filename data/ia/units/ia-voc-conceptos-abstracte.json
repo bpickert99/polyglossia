@@ -1,0 +1,89 @@
+{
+  "id": "ia-voc-conceptos-abstracte",
+  "title": "Conceptos abstracte",
+  "level": "C1",
+  "summary": "Abstract and academic ideas.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Conceptos abstracte 1",
+      "teach": [
+        {
+          "target": "le scientia",
+          "roman": "le scientia",
+          "english": "the science",
+          "ipa": "le stsjˈentja"
+        },
+        {
+          "target": "le litteratura",
+          "roman": "le litteratura",
+          "english": "the literature",
+          "ipa": "le lˌiteratˈura"
+        },
+        {
+          "target": "le justitia",
+          "roman": "le justitia",
+          "english": "the justice",
+          "ipa": "le ʒustˈitja"
+        },
+        {
+          "target": "le religion",
+          "roman": "le religion",
+          "english": "the religion",
+          "ipa": "le rˌeliɡjˈon"
+        },
+        {
+          "target": "le politica",
+          "roman": "le politica",
+          "english": "the politics",
+          "ipa": "le polˈitika"
+        },
+        {
+          "target": "le societate",
+          "roman": "le societate",
+          "english": "the society",
+          "ipa": "le sˌotsjetˈate"
+        },
+        {
+          "target": "le civilisation",
+          "roman": "le civilisation",
+          "english": "the civilization",
+          "ipa": "le tsˌivilˌisatjˈon"
+        },
+        {
+          "target": "Io vide le scientia.",
+          "roman": "io vide le scientia",
+          "english": "I see the science.",
+          "ipa": "ˈio vˈide le stsjˈentja"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Conceptos abstracte 2",
+      "teach": [
+        {
+          "target": "le historia",
+          "roman": "le historia",
+          "english": "the history",
+          "ipa": "le histˈorja"
+        },
+        {
+          "target": "le veritate",
+          "roman": "le veritate",
+          "english": "the truth",
+          "ipa": "le vˌeritˈate"
+        },
+        {
+          "target": "Io vide le historia.",
+          "roman": "io vide le historia",
+          "english": "I see the history.",
+          "ipa": "ˈio vˈide le histˈorja"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 9 more words about abstract and academic ideas"
+  ]
+}

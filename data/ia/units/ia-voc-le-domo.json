@@ -1,0 +1,169 @@
+{
+  "id": "ia-voc-le-domo",
+  "title": "Le domo",
+  "level": "A2",
+  "summary": "The house and furniture.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le domo 1",
+      "teach": [
+        {
+          "target": "le lecto",
+          "roman": "le lecto",
+          "english": "the bed",
+          "ipa": "le lˈekto"
+        },
+        {
+          "target": "le fenestra",
+          "roman": "le fenestra",
+          "english": "the window",
+          "ipa": "le fenˈestra"
+        },
+        {
+          "target": "le tecto",
+          "roman": "le tecto",
+          "english": "the roof",
+          "ipa": "le tˈekto"
+        },
+        {
+          "target": "le muro",
+          "roman": "le muro",
+          "english": "the wall",
+          "ipa": "le mˈuro"
+        },
+        {
+          "target": "le cocina",
+          "roman": "le cocina",
+          "english": "the kitchen",
+          "ipa": "le kotsˈina"
+        },
+        {
+          "target": "coclear",
+          "roman": "coclear",
+          "english": "to spoon",
+          "note": "io coclea — present tense, infinitive minus -r.",
+          "ipa": "kˌokleˈar"
+        },
+        {
+          "target": "le furca",
+          "roman": "le furca",
+          "english": "the fork",
+          "ipa": "le fˈurka"
+        },
+        {
+          "target": "Io coclea.",
+          "roman": "io coclea",
+          "english": "I spoon.",
+          "ipa": "ˈio koklˈea"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Le domo 2",
+      "teach": [
+        {
+          "target": "le cultello",
+          "roman": "le cultello",
+          "english": "the knife",
+          "ipa": "le kultˈelo"
+        },
+        {
+          "target": "le platta",
+          "roman": "le platta",
+          "english": "the plate",
+          "ipa": "le plˈata"
+        },
+        {
+          "target": "le marmita",
+          "roman": "le marmita",
+          "english": "the pot",
+          "ipa": "le marmˈita"
+        },
+        {
+          "target": "le speculo",
+          "roman": "le speculo",
+          "english": "the mirror",
+          "ipa": "le spˈekulo"
+        },
+        {
+          "target": "le horologio",
+          "roman": "le horologio",
+          "english": "the clock",
+          "ipa": "le hˌorolˈoɡjo"
+        },
+        {
+          "target": "le sapon",
+          "roman": "le sapon",
+          "english": "the soap",
+          "ipa": "le sapˈon"
+        },
+        {
+          "target": "le toalia",
+          "roman": "le toalia",
+          "english": "the towel",
+          "ipa": "le toˈalja"
+        },
+        {
+          "target": "Io vide le cultello.",
+          "roman": "io vide le cultello",
+          "english": "I see the knife.",
+          "ipa": "ˈio vˈide le kultˈelo"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Le domo 3",
+      "teach": [
+        {
+          "target": "declinar",
+          "roman": "declinar",
+          "english": "to sink",
+          "note": "io declina — present tense, infinitive minus -r.",
+          "ipa": "dˌeklinˈar"
+        },
+        {
+          "target": "le clave",
+          "roman": "le clave",
+          "english": "the key",
+          "ipa": "le klˈave"
+        },
+        {
+          "target": "le tapete",
+          "roman": "le tapete",
+          "english": "the carpet",
+          "ipa": "le tapˈete"
+        },
+        {
+          "target": "le jardin",
+          "roman": "le jardin",
+          "english": "the garden",
+          "ipa": "le ʒardˈin"
+        },
+        {
+          "target": "le barriera",
+          "roman": "le barriera",
+          "english": "the fence",
+          "ipa": "le barjˈera"
+        },
+        {
+          "target": "le porta",
+          "roman": "le porta",
+          "english": "the gate",
+          "ipa": "le pˈorta"
+        },
+        {
+          "target": "Io declina.",
+          "roman": "io declina",
+          "english": "I sink.",
+          "ipa": "ˈio deklˈina"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 20 more words about the house and furniture"
+  ]
+}

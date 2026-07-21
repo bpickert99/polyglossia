@@ -94,32 +94,38 @@
         {
           "target": "nove",
           "roman": "nove",
-          "english": "new"
+          "english": "new",
+          "ipa": "nˈove"
         },
         {
           "target": "vetule",
           "roman": "vetule",
-          "english": "old"
+          "english": "old",
+          "ipa": "vˈetule"
         },
         {
           "target": "longe",
           "roman": "longe",
-          "english": "long"
+          "english": "long",
+          "ipa": "lˈoŋɡe"
         },
         {
           "target": "curte",
           "roman": "curte",
-          "english": "short"
+          "english": "short",
+          "ipa": "kˈurte"
         },
         {
           "target": "alte",
           "roman": "alte",
-          "english": "tall"
+          "english": "tall",
+          "ipa": "ˈalte"
         },
         {
           "target": "Mi can es vetule ma mi catto es nove.",
           "roman": "mi can es vetule ma mi catto es nove",
-          "english": "My dog is old but my cat is new."
+          "english": "My dog is old but my cat is new.",
+          "ipa": "mi kˈan es vˈetule mˈa mi kˈato es nˈove"
         }
       ]
     }

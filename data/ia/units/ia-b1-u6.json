@@ -1,0 +1,78 @@
+{
+  "id": "ia-b1-u6",
+  "title": "Pronomines objective",
+  "level": "B1",
+  "summary": "Me, you, him, her, us, them — as objects.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Me, te, lo, la",
+      "teach": [
+        {
+          "target": "me",
+          "roman": "me",
+          "english": "me (object)",
+          "note": "Already seen in 'Da me le pan' — the object form of io.",
+          "ipa": "mˈe"
+        },
+        {
+          "target": "te",
+          "roman": "te",
+          "english": "you (object, informal)",
+          "ipa": "tˈe"
+        },
+        {
+          "target": "lo",
+          "roman": "lo",
+          "english": "him / it (masculine object)",
+          "ipa": "lˈo"
+        },
+        {
+          "target": "la",
+          "roman": "la",
+          "english": "her / it (feminine object)",
+          "ipa": "lˈa"
+        },
+        {
+          "target": "Io te vide.",
+          "roman": "io te vide",
+          "english": "I see you.",
+          "note": "Object pronouns usually go right before the verb, not after.",
+          "ipa": "ˈio tˈe vˈide"
+        }
+      ],
+      "grammar": {
+        "title": "Object pronouns",
+        "body": "Unlike subject pronouns, these go **before** the verb: io te vide (I see you), illa me ama (she loves me).\n**nos** and **vos** double as both subject and object — no new form needed there. Only the 3rd person splits: ille/illa (subject) becomes lo/la (object)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Los",
+      "teach": [
+        {
+          "target": "los",
+          "roman": "los",
+          "english": "them",
+          "ipa": "lˈos"
+        },
+        {
+          "target": "Nos los ama.",
+          "roman": "nos los ama",
+          "english": "We love them.",
+          "ipa": "nˈos lˈos ˈama"
+        },
+        {
+          "target": "Illa nos vide.",
+          "roman": "illa nos vide",
+          "english": "She sees us.",
+          "ipa": "ˈila nˈos vˈide"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Say 'me', 'you', 'him/her/it', and 'them' as objects",
+    "Put an object pronoun in the right place — before the verb"
+  ]
+}

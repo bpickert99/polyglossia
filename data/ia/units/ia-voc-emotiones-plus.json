@@ -1,0 +1,119 @@
+{
+  "id": "ia-voc-emotiones-plus",
+  "title": "Emotiones plus",
+  "level": "B1",
+  "summary": "More emotions.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Emotiones plus 1",
+      "teach": [
+        {
+          "target": "le irate",
+          "roman": "le irate",
+          "english": "the angry",
+          "ipa": "le irˈate"
+        },
+        {
+          "target": "le be timer",
+          "roman": "le be timer",
+          "english": "the afraid",
+          "ipa": "le bˈe timˈer"
+        },
+        {
+          "target": "le odio",
+          "roman": "le odio",
+          "english": "the hate",
+          "ipa": "le ˈodjo"
+        },
+        {
+          "target": "le orgoliose",
+          "roman": "le orgoliose",
+          "english": "the proud",
+          "ipa": "le ˌorɡoljˈose"
+        },
+        {
+          "target": "le vergonia",
+          "roman": "le vergonia",
+          "english": "the shame",
+          "ipa": "le verɡˈonja"
+        },
+        {
+          "target": "le be haber vergonia",
+          "roman": "le be haber vergonia",
+          "english": "the ashamed",
+          "ipa": "le bˈe habˈer verɡˈonja"
+        },
+        {
+          "target": "anxie",
+          "roman": "anxie",
+          "english": "anxious",
+          "ipa": "ˈanksje"
+        },
+        {
+          "target": "Le can es anxie.",
+          "roman": "le can es anxie",
+          "english": "The dog is anxious.",
+          "ipa": "le kˈan es ˈanksje"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Emotiones plus 2",
+      "teach": [
+        {
+          "target": "le despero",
+          "roman": "le despero",
+          "english": "the despair",
+          "ipa": "le despˈero"
+        },
+        {
+          "target": "le corage",
+          "roman": "le corage",
+          "english": "the courage",
+          "ipa": "le korˈaʒe"
+        },
+        {
+          "target": "le sperantia",
+          "roman": "le sperantia",
+          "english": "the hope",
+          "ipa": "le sperˈantja"
+        },
+        {
+          "target": "le pietate",
+          "roman": "le pietate",
+          "english": "the pity",
+          "ipa": "le pjetˈate"
+        },
+        {
+          "target": "le brave",
+          "roman": "le brave",
+          "english": "the brave",
+          "ipa": "le brˈave"
+        },
+        {
+          "target": "le cruel",
+          "roman": "le cruel",
+          "english": "the cruel",
+          "ipa": "le krwˈel"
+        },
+        {
+          "target": "amabile",
+          "roman": "amabile",
+          "english": "kind",
+          "ipa": "amˈabile"
+        },
+        {
+          "target": "Le citate es amabile.",
+          "roman": "le citate es amabile",
+          "english": "The city is kind.",
+          "ipa": "le tsitˈate es amˈabile"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 14 more words about more emotions"
+  ]
+}

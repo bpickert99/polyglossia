@@ -31,214 +31,775 @@
         {
           "id": "ia-a1-u1",
           "title": "Salutes",
+          "en": "Greetings",
           "icon": "👋",
-          "file": "units/ia-a1-u1.json",
-          "en": "Greetings"
+          "file": "units/ia-a1-u1.json"
         },
         {
           "id": "ia-a1-u2",
           "title": "To Be & Pronouns",
+          "en": "To Be & Pronouns",
           "icon": "🧍",
-          "file": "units/ia-a1-u2.json",
-          "en": "To Be & Pronouns"
+          "file": "units/ia-a1-u2.json"
         },
         {
           "id": "ia-a1-u3",
           "title": "Numeros 1–10",
+          "en": "Numbers 1-10",
           "icon": "🔢",
-          "file": "units/ia-a1-u3.json",
-          "en": "Numbers 1-10"
+          "file": "units/ia-a1-u3.json"
         },
         {
           "id": "ia-a1-u4",
           "title": "Numeros 11–100",
+          "en": "Numbers 11-100",
           "icon": "💯",
-          "file": "units/ia-a1-u4.json",
-          "en": "Numbers 11-100"
+          "file": "units/ia-a1-u4.json"
         },
         {
           "id": "ia-a1-u5",
           "title": "Conversation",
+          "en": "Conversation",
           "icon": "💬",
-          "file": "units/ia-a1-u5.json",
-          "en": "Conversation"
+          "file": "units/ia-a1-u5.json"
         },
         {
           "id": "ia-a1-u6",
           "title": "Le familia",
+          "en": "Family",
           "icon": "👪",
-          "file": "units/ia-a1-u6.json",
-          "en": "Family"
+          "file": "units/ia-a1-u6.json"
         },
         {
           "id": "ia-a1-u7",
           "title": "Mangiar e biber",
+          "en": "Food & Drink",
           "icon": "🍞",
-          "file": "units/ia-a1-u7.json",
-          "en": "Food & Drink"
+          "file": "units/ia-a1-u7.json"
         },
         {
           "id": "ia-a1-u8",
           "title": "Colores",
+          "en": "Colors",
           "icon": "🎨",
-          "file": "units/ia-a1-u8.json",
-          "en": "Colors"
+          "file": "units/ia-a1-u8.json"
         }
       ]
     },
     {
       "level": "A2",
       "title": "Elementary",
-      "description": "Verbs, commands, questions, daily life, time, weather, and work",
+      "description": "Verbs, commands, questions, daily life, time, weather, work, and everyday vocabulary",
       "units": [
         {
           "id": "ia-a2-u1",
           "title": "Verbos",
+          "en": "Verbs",
           "icon": "🏃",
-          "file": "units/ia-a2-u1.json",
-          "en": "Verbs"
+          "file": "units/ia-a2-u1.json"
         },
         {
           "id": "ia-a2-u2",
           "title": "Le imperativo",
+          "en": "Commands",
           "icon": "📣",
-          "file": "units/ia-a2-u2.json",
-          "en": "Commands"
+          "file": "units/ia-a2-u2.json"
         },
         {
           "id": "ia-a2-u3",
           "title": "Questiones",
+          "en": "Questions",
           "icon": "❓",
-          "file": "units/ia-a2-u3.json",
-          "en": "Questions"
+          "file": "units/ia-a2-u3.json"
         },
         {
           "id": "ia-a2-u4",
           "title": "Passato e futuro",
+          "en": "Past & Future",
           "icon": "⏳",
-          "file": "units/ia-a2-u4.json",
-          "en": "Past & Future"
+          "file": "units/ia-a2-u4.json"
         },
         {
           "id": "ia-a2-u5",
           "title": "Le vita quotidian",
+          "en": "Daily Life",
           "icon": "🏙️",
-          "file": "units/ia-a2-u5.json",
-          "en": "Daily Life"
+          "file": "units/ia-a2-u5.json"
         },
         {
           "id": "ia-a2-u6",
           "title": "Tempore e calendario",
+          "en": "Time & Calendar",
           "icon": "📅",
-          "file": "units/ia-a2-u6.json",
-          "en": "Time & Calendar"
+          "file": "units/ia-a2-u6.json"
         },
         {
           "id": "ia-a2-u7",
           "title": "Le tempore atmospheric",
+          "en": "Weather",
           "icon": "🌦️",
-          "file": "units/ia-a2-u7.json",
-          "en": "Weather"
+          "file": "units/ia-a2-u7.json"
         },
         {
           "id": "ia-a2-u8",
           "title": "Professiones",
+          "en": "Jobs",
           "icon": "💼",
-          "file": "units/ia-a2-u8.json",
-          "en": "Jobs"
+          "file": "units/ia-a2-u8.json"
         },
         {
           "id": "ia-a2-u9",
           "title": "Prepositiones",
+          "en": "Prepositions",
           "icon": "📍",
-          "file": "units/ia-a2-u9.json",
-          "en": "Prepositions"
+          "file": "units/ia-a2-u9.json"
+        },
+        {
+          "id": "ia-a2-u10",
+          "title": "Possessivos",
+          "en": "Possessives",
+          "icon": "👪",
+          "file": "units/ia-a2-u10.json"
+        },
+        {
+          "id": "ia-a2-u11",
+          "title": "Demonstrativos",
+          "en": "Demonstratives",
+          "icon": "👉",
+          "file": "units/ia-a2-u11.json"
+        },
+        {
+          "id": "ia-a2-u12",
+          "title": "Plus numeros",
+          "en": "More Numbers",
+          "icon": "🔢",
+          "file": "units/ia-a2-u12.json"
+        },
+        {
+          "id": "ia-voc-animales",
+          "title": "Animales",
+          "en": "Animals",
+          "icon": "🐾",
+          "file": "units/ia-voc-animales.json"
+        },
+        {
+          "id": "ia-voc-corpore",
+          "title": "Corpore",
+          "en": "Body",
+          "icon": "🫀",
+          "file": "units/ia-voc-corpore.json"
+        },
+        {
+          "id": "ia-voc-le-domo",
+          "title": "Le domo",
+          "en": "The House",
+          "icon": "🏠",
+          "file": "units/ia-voc-le-domo.json"
+        },
+        {
+          "id": "ia-voc-manciar-plus",
+          "title": "Manciar plus",
+          "en": "More Food",
+          "icon": "🍲",
+          "file": "units/ia-voc-manciar-plus.json"
+        },
+        {
+          "id": "ia-voc-menses",
+          "title": "Menses",
+          "en": "Months",
+          "icon": "📆",
+          "file": "units/ia-voc-menses.json"
+        },
+        {
+          "id": "ia-voc-plus-dies",
+          "title": "Plus dies",
+          "en": "More Days",
+          "icon": "🗓",
+          "file": "units/ia-voc-plus-dies.json"
+        },
+        {
+          "id": "ia-voc-vestimento",
+          "title": "Vestimento",
+          "en": "Clothing",
+          "icon": "👕",
+          "file": "units/ia-voc-vestimento.json"
         }
       ]
     },
     {
       "level": "B1",
       "title": "Intermediate",
-      "description": "Connected speech: experience, comparison, and the natural world",
+      "description": "Connected speech, more grammar, and broad everyday vocabulary",
       "units": [
         {
           "id": "ia-b1-u1",
           "title": "Le perfecto",
+          "en": "Present Perfect",
           "icon": "✅",
-          "file": "units/ia-b1-u1.json",
-          "en": "Present Perfect"
+          "file": "units/ia-b1-u1.json"
         },
         {
           "id": "ia-b1-u2",
           "title": "Comparationes",
+          "en": "Comparisons",
           "icon": "⚖️",
-          "file": "units/ia-b1-u2.json",
-          "en": "Comparisons"
+          "file": "units/ia-b1-u2.json"
         },
         {
           "id": "ia-b1-u3",
           "title": "Plus verbos",
+          "en": "More Verbs",
           "icon": "🏁",
-          "file": "units/ia-b1-u3.json",
-          "en": "More Verbs"
+          "file": "units/ia-b1-u3.json"
         },
         {
           "id": "ia-b1-u4",
           "title": "Plus adjectivos",
+          "en": "More Adjectives",
           "icon": "🆕",
-          "file": "units/ia-b1-u4.json",
-          "en": "More Adjectives"
+          "file": "units/ia-b1-u4.json"
         },
         {
           "id": "ia-b1-u5",
           "title": "Natura",
+          "en": "Nature",
           "icon": "🏔️",
-          "file": "units/ia-b1-u5.json",
-          "en": "Nature"
+          "file": "units/ia-b1-u5.json"
+        },
+        {
+          "id": "ia-b1-u6",
+          "title": "Pronomines objective",
+          "en": "Object Pronouns",
+          "icon": "🔁",
+          "file": "units/ia-b1-u6.json"
+        },
+        {
+          "id": "ia-b1-u7",
+          "title": "Verbos reflexive",
+          "en": "Reflexive Verbs",
+          "icon": "🚿",
+          "file": "units/ia-b1-u7.json"
+        },
+        {
+          "id": "ia-b1-u8",
+          "title": "Superlativos",
+          "en": "Superlatives",
+          "icon": "🏆",
+          "file": "units/ia-b1-u8.json"
+        },
+        {
+          "id": "ia-voc-communication",
+          "title": "Communication",
+          "en": "Communication",
+          "icon": "📣",
+          "file": "units/ia-voc-communication.json"
+        },
+        {
+          "id": "ia-voc-emotiones-plus",
+          "title": "Emotiones plus",
+          "en": "More Emotions",
+          "icon": "😌",
+          "file": "units/ia-voc-emotiones-plus.json"
+        },
+        {
+          "id": "ia-voc-materiales",
+          "title": "Materiales",
+          "en": "Materials",
+          "icon": "🧱",
+          "file": "units/ia-voc-materiales.json"
+        },
+        {
+          "id": "ia-voc-moneta-e-commercio",
+          "title": "Moneta e commercio",
+          "en": "Money & Business",
+          "icon": "💰",
+          "file": "units/ia-voc-moneta-e-commercio.json"
+        },
+        {
+          "id": "ia-voc-nationalitates",
+          "title": "Nationalitates",
+          "en": "Nationalities",
+          "icon": "🌍",
+          "file": "units/ia-voc-nationalitates.json"
+        },
+        {
+          "id": "ia-voc-natura-plus",
+          "title": "Natura plus",
+          "en": "More Nature",
+          "icon": "🏕",
+          "file": "units/ia-voc-natura-plus.json"
+        },
+        {
+          "id": "ia-voc-profession-plus",
+          "title": "Profession plus",
+          "en": "More Professions",
+          "icon": "👷",
+          "file": "units/ia-voc-profession-plus.json"
+        },
+        {
+          "id": "ia-voc-sanitate",
+          "title": "Sanitate",
+          "en": "Health",
+          "icon": "🩺",
+          "file": "units/ia-voc-sanitate.json"
+        },
+        {
+          "id": "ia-voc-sport-e-activitates",
+          "title": "Sport e activitates",
+          "en": "Sports & Leisure",
+          "icon": "⚽",
+          "file": "units/ia-voc-sport-e-activitates.json"
+        },
+        {
+          "id": "ia-voc-viages",
+          "title": "Viages",
+          "en": "Travel",
+          "icon": "✈️",
+          "file": "units/ia-voc-viages.json"
+        },
+        {
+          "id": "ia-voc-adj-001",
+          "title": "Adjectivos 1",
+          "en": "Adjectives 1",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-001.json"
+        },
+        {
+          "id": "ia-voc-adj-002",
+          "title": "Adjectivos 2",
+          "en": "Adjectives 2",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-002.json"
+        },
+        {
+          "id": "ia-voc-adv-001",
+          "title": "Adverbios 1",
+          "en": "Adverbs 1",
+          "icon": "📏",
+          "file": "units/ia-voc-adv-001.json"
+        },
+        {
+          "id": "ia-voc-func-001",
+          "title": "Parolas 1",
+          "en": "Words 1",
+          "icon": "🔗",
+          "file": "units/ia-voc-func-001.json"
+        },
+        {
+          "id": "ia-voc-noun-001",
+          "title": "Nomines 1",
+          "en": "Nouns 1",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-001.json"
+        },
+        {
+          "id": "ia-voc-noun-002",
+          "title": "Nomines 2",
+          "en": "Nouns 2",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-002.json"
+        },
+        {
+          "id": "ia-voc-noun-003",
+          "title": "Nomines 3",
+          "en": "Nouns 3",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-003.json"
+        },
+        {
+          "id": "ia-voc-noun-004",
+          "title": "Nomines 4",
+          "en": "Nouns 4",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-004.json"
+        },
+        {
+          "id": "ia-voc-noun-005",
+          "title": "Nomines 5",
+          "en": "Nouns 5",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-005.json"
+        },
+        {
+          "id": "ia-voc-noun-006",
+          "title": "Nomines 6",
+          "en": "Nouns 6",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-006.json"
+        },
+        {
+          "id": "ia-voc-noun-007",
+          "title": "Nomines 7",
+          "en": "Nouns 7",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-007.json"
+        },
+        {
+          "id": "ia-voc-noun-008",
+          "title": "Nomines 8",
+          "en": "Nouns 8",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-008.json"
+        },
+        {
+          "id": "ia-voc-noun-009",
+          "title": "Nomines 9",
+          "en": "Nouns 9",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-009.json"
+        },
+        {
+          "id": "ia-voc-noun-010",
+          "title": "Nomines 10",
+          "en": "Nouns 10",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-010.json"
+        },
+        {
+          "id": "ia-voc-noun-011",
+          "title": "Nomines 11",
+          "en": "Nouns 11",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-011.json"
+        },
+        {
+          "id": "ia-voc-noun-012",
+          "title": "Nomines 12",
+          "en": "Nouns 12",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-012.json"
+        },
+        {
+          "id": "ia-voc-noun-013",
+          "title": "Nomines 13",
+          "en": "Nouns 13",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-013.json"
+        },
+        {
+          "id": "ia-voc-noun-014",
+          "title": "Nomines 14",
+          "en": "Nouns 14",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-014.json"
+        },
+        {
+          "id": "ia-voc-verb-001",
+          "title": "Verbos 1",
+          "en": "Verbs 1",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-001.json"
+        },
+        {
+          "id": "ia-voc-verb-002",
+          "title": "Verbos 2",
+          "en": "Verbs 2",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-002.json"
+        },
+        {
+          "id": "ia-voc-verb-003",
+          "title": "Verbos 3",
+          "en": "Verbs 3",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-003.json"
         }
       ]
     },
     {
       "level": "B2",
       "title": "Upper Intermediate",
-      "description": "Opinion, argument, conditional, and passive voice",
+      "description": "Opinion, argument, conditional, passive voice, and wider vocabulary",
       "units": [
         {
           "id": "ia-b2-u1",
           "title": "Opiniones",
+          "en": "Opinions",
           "icon": "💭",
-          "file": "units/ia-b2-u1.json",
-          "en": "Opinions"
+          "file": "units/ia-b2-u1.json"
         },
         {
           "id": "ia-b2-u2",
           "title": "Le conditional",
+          "en": "Conditional",
           "icon": "🔮",
-          "file": "units/ia-b2-u2.json",
-          "en": "Conditional"
+          "file": "units/ia-b2-u2.json"
         },
         {
           "id": "ia-b2-u3",
           "title": "Le passivo",
+          "en": "Passive Voice",
           "icon": "🔄",
-          "file": "units/ia-b2-u3.json",
-          "en": "Passive Voice"
+          "file": "units/ia-b2-u3.json"
         },
         {
           "id": "ia-b2-u4",
           "title": "Argumentar",
+          "en": "Argument",
           "icon": "🔗",
-          "file": "units/ia-b2-u4.json",
-          "en": "Argument"
+          "file": "units/ia-b2-u4.json"
+        },
+        {
+          "id": "ia-b2-u5",
+          "title": "Pronomines relative",
+          "en": "Relative Pronouns",
+          "icon": "🔗",
+          "file": "units/ia-b2-u5.json"
+        },
+        {
+          "id": "ia-b2-u6",
+          "title": "Formation de parolas",
+          "en": "Word Formation",
+          "icon": "🧩",
+          "file": "units/ia-b2-u6.json"
+        },
+        {
+          "id": "ia-voc-technologia",
+          "title": "Technologia",
+          "en": "Technology",
+          "icon": "💻",
+          "file": "units/ia-voc-technologia.json"
+        },
+        {
+          "id": "ia-voc-adj-003",
+          "title": "Adjectivos 3",
+          "en": "Adjectives 3",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-003.json"
+        },
+        {
+          "id": "ia-voc-adj-004",
+          "title": "Adjectivos 4",
+          "en": "Adjectives 4",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-004.json"
+        },
+        {
+          "id": "ia-voc-noun-015",
+          "title": "Nomines 15",
+          "en": "Nouns 15",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-015.json"
+        },
+        {
+          "id": "ia-voc-noun-016",
+          "title": "Nomines 16",
+          "en": "Nouns 16",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-016.json"
+        },
+        {
+          "id": "ia-voc-noun-017",
+          "title": "Nomines 17",
+          "en": "Nouns 17",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-017.json"
+        },
+        {
+          "id": "ia-voc-noun-018",
+          "title": "Nomines 18",
+          "en": "Nouns 18",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-018.json"
+        },
+        {
+          "id": "ia-voc-noun-019",
+          "title": "Nomines 19",
+          "en": "Nouns 19",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-019.json"
+        },
+        {
+          "id": "ia-voc-noun-020",
+          "title": "Nomines 20",
+          "en": "Nouns 20",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-020.json"
+        },
+        {
+          "id": "ia-voc-noun-021",
+          "title": "Nomines 21",
+          "en": "Nouns 21",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-021.json"
+        },
+        {
+          "id": "ia-voc-noun-022",
+          "title": "Nomines 22",
+          "en": "Nouns 22",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-022.json"
+        },
+        {
+          "id": "ia-voc-noun-023",
+          "title": "Nomines 23",
+          "en": "Nouns 23",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-023.json"
+        },
+        {
+          "id": "ia-voc-noun-024",
+          "title": "Nomines 24",
+          "en": "Nouns 24",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-024.json"
+        },
+        {
+          "id": "ia-voc-noun-025",
+          "title": "Nomines 25",
+          "en": "Nouns 25",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-025.json"
+        },
+        {
+          "id": "ia-voc-noun-026",
+          "title": "Nomines 26",
+          "en": "Nouns 26",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-026.json"
+        },
+        {
+          "id": "ia-voc-noun-027",
+          "title": "Nomines 27",
+          "en": "Nouns 27",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-027.json"
+        },
+        {
+          "id": "ia-voc-verb-004",
+          "title": "Verbos 4",
+          "en": "Verbs 4",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-004.json"
+        },
+        {
+          "id": "ia-voc-verb-005",
+          "title": "Verbos 5",
+          "en": "Verbs 5",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-005.json"
+        },
+        {
+          "id": "ia-voc-verb-006",
+          "title": "Verbos 6",
+          "en": "Verbs 6",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-006.json"
         }
       ]
     },
     {
       "level": "C1",
       "title": "Advanced",
-      "description": "",
-      "locked": true,
-      "units": []
+      "description": "Abstract and academic vocabulary",
+      "locked": false,
+      "units": [
+        {
+          "id": "ia-voc-conceptos-abstracte",
+          "title": "Conceptos abstracte",
+          "en": "Abstract Concepts",
+          "icon": "💭",
+          "file": "units/ia-voc-conceptos-abstracte.json"
+        },
+        {
+          "id": "ia-voc-adj-005",
+          "title": "Adjectivos 5",
+          "en": "Adjectives 5",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-005.json"
+        },
+        {
+          "id": "ia-voc-adj-006",
+          "title": "Adjectivos 6",
+          "en": "Adjectives 6",
+          "icon": "🎨",
+          "file": "units/ia-voc-adj-006.json"
+        },
+        {
+          "id": "ia-voc-adv-002",
+          "title": "Adverbios 2",
+          "en": "Adverbs 2",
+          "icon": "📏",
+          "file": "units/ia-voc-adv-002.json"
+        },
+        {
+          "id": "ia-voc-noun-028",
+          "title": "Nomines 28",
+          "en": "Nouns 28",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-028.json"
+        },
+        {
+          "id": "ia-voc-noun-029",
+          "title": "Nomines 29",
+          "en": "Nouns 29",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-029.json"
+        },
+        {
+          "id": "ia-voc-noun-030",
+          "title": "Nomines 30",
+          "en": "Nouns 30",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-030.json"
+        },
+        {
+          "id": "ia-voc-noun-031",
+          "title": "Nomines 31",
+          "en": "Nouns 31",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-031.json"
+        },
+        {
+          "id": "ia-voc-noun-032",
+          "title": "Nomines 32",
+          "en": "Nouns 32",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-032.json"
+        },
+        {
+          "id": "ia-voc-noun-033",
+          "title": "Nomines 33",
+          "en": "Nouns 33",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-033.json"
+        },
+        {
+          "id": "ia-voc-noun-034",
+          "title": "Nomines 34",
+          "en": "Nouns 34",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-034.json"
+        },
+        {
+          "id": "ia-voc-noun-035",
+          "title": "Nomines 35",
+          "en": "Nouns 35",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-035.json"
+        },
+        {
+          "id": "ia-voc-noun-036",
+          "title": "Nomines 36",
+          "en": "Nouns 36",
+          "icon": "📖",
+          "file": "units/ia-voc-noun-036.json"
+        },
+        {
+          "id": "ia-voc-verb-007",
+          "title": "Verbos 7",
+          "en": "Verbs 7",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-007.json"
+        },
+        {
+          "id": "ia-voc-verb-008",
+          "title": "Verbos 8",
+          "en": "Verbs 8",
+          "icon": "🏃",
+          "file": "units/ia-voc-verb-008.json"
+        }
+      ]
     },
     {
       "level": "C2",

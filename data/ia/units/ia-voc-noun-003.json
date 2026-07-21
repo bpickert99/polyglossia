@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-003",
+  "title": "Nomines 3",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 3 1",
+      "teach": [
+        {
+          "target": "le plen",
+          "roman": "le plen",
+          "english": "the full",
+          "ipa": "le plˈen"
+        },
+        {
+          "target": "le dono",
+          "roman": "le dono",
+          "english": "the gift",
+          "ipa": "le dˈono"
+        },
+        {
+          "target": "le hora",
+          "roman": "le hora",
+          "english": "the hour",
+          "ipa": "le hˈora"
+        },
+        {
+          "target": "le idea",
+          "roman": "le idea",
+          "english": "the idea",
+          "ipa": "le idˈea"
+        },
+        {
+          "target": "le vita",
+          "roman": "le vita",
+          "english": "the life",
+          "ipa": "le vˈita"
+        },
+        {
+          "target": "le matta",
+          "roman": "le matta",
+          "english": "the mat",
+          "ipa": "le mˈata"
+        },
+        {
+          "target": "le fango",
+          "roman": "le fango",
+          "english": "the mud",
+          "ipa": "le fˈaŋɡo"
+        },
+        {
+          "target": "le penna",
+          "roman": "le penna",
+          "english": "the pen",
+          "ipa": "le pˈena"
+        },
+        {
+          "target": "Io vide le plen.",
+          "roman": "io vide le plen",
+          "english": "I see the full.",
+          "ipa": "ˈio vˈide le plˈen"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 3 2",
+      "teach": [
+        {
+          "target": "le palo",
+          "roman": "le palo",
+          "english": "the pole",
+          "ipa": "le pˈalo"
+        },
+        {
+          "target": "le vela",
+          "roman": "le vela",
+          "english": "the sail",
+          "ipa": "le vˈela"
+        },
+        {
+          "target": "le assi",
+          "roman": "le assi",
+          "english": "the thus",
+          "ipa": "le asˈi"
+        },
+        {
+          "target": "le typo",
+          "roman": "le typo",
+          "english": "the type",
+          "ipa": "le tˈipo"
+        },
+        {
+          "target": "le unda",
+          "roman": "le unda",
+          "english": "the wave",
+          "ipa": "le ˈunda"
+        },
+        {
+          "target": "le sage",
+          "roman": "le sage",
+          "english": "the wise",
+          "ipa": "le sˈaʒe"
+        },
+        {
+          "target": "le zero",
+          "roman": "le zero",
+          "english": "the zero",
+          "ipa": "le zˈero"
+        },
+        {
+          "target": "le armea",
+          "roman": "le armea",
+          "english": "the army",
+          "ipa": "le armˈea"
+        },
+        {
+          "target": "Io vide le palo.",
+          "roman": "io vide le palo",
+          "english": "I see the pole.",
+          "ipa": "ˈio vˈide le pˈalo"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 3 3",
+      "teach": [
+        {
+          "target": "le banio",
+          "roman": "le banio",
+          "english": "the bath",
+          "ipa": "le bˈanjo"
+        },
+        {
+          "target": "le torta",
+          "roman": "le torta",
+          "english": "the cake",
+          "ipa": "le tˈorta"
+        },
+        {
+          "target": "le carta",
+          "roman": "le carta",
+          "english": "the card",
+          "ipa": "le kˈarta"
+        },
+        {
+          "target": "le bucla",
+          "roman": "le bucla",
+          "english": "the curl",
+          "ipa": "le bˈukla"
+        },
+        {
+          "target": "le timor",
+          "roman": "le timor",
+          "english": "the fear",
+          "ipa": "le timˈor"
+        },
+        {
+          "target": "le plica",
+          "roman": "le plica",
+          "english": "the fold",
+          "ipa": "le plˈika"
+        },
+        {
+          "target": "le laxe",
+          "roman": "le laxe",
+          "english": "the loose",
+          "ipa": "le lˈakse"
+        },
+        {
+          "target": "le mente",
+          "roman": "le mente",
+          "english": "the mind",
+          "ipa": "le mˈente"
+        },
+        {
+          "target": "Io vide le banio.",
+          "roman": "io vide le banio",
+          "english": "I see the bath.",
+          "ipa": "ˈio vˈide le bˈanjo"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 3 4",
+      "teach": [
+        {
+          "target": "le nulle",
+          "roman": "le nulle",
+          "english": "the none",
+          "ipa": "le nˈule"
+        },
+        {
+          "target": "le se",
+          "roman": "le se",
+          "english": "the oneself",
+          "ipa": "le sˈe"
+        },
+        {
+          "target": "le loco",
+          "roman": "le loco",
+          "english": "the place",
+          "ipa": "le lˈoko"
+        },
+        {
+          "target": "le plano",
+          "roman": "le plano",
+          "english": "the plan",
+          "ipa": "le plˈano"
+        },
+        {
+          "target": "le poema",
+          "roman": "le poema",
+          "english": "the poem",
+          "ipa": "le poˈema"
+        },
+        {
+          "target": "le poeta",
+          "roman": "le poeta",
+          "english": "the poet",
+          "ipa": "le poˈeta"
+        },
+        {
+          "target": "le rondo",
+          "roman": "le rondo",
+          "english": "the ring",
+          "ipa": "le rˈondo"
+        },
+        {
+          "target": "le matur",
+          "roman": "le matur",
+          "english": "the ripe",
+          "ipa": "le matˈur"
+        },
+        {
+          "target": "Io vide le nulle.",
+          "roman": "io vide le nulle",
+          "english": "I see the none.",
+          "ipa": "ˈio vˈide le nˈule"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

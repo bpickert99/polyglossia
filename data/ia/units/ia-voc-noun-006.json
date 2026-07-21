@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-006",
+  "title": "Nomines 6",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 6 1",
+      "teach": [
+        {
+          "target": "le costa",
+          "roman": "le costa",
+          "english": "the coast",
+          "ipa": "le kˈosta"
+        },
+        {
+          "target": "le crema",
+          "roman": "le crema",
+          "english": "the cream",
+          "ipa": "le krˈema"
+        },
+        {
+          "target": "le cruce",
+          "roman": "le cruce",
+          "english": "the cross",
+          "ipa": "le krˈutse"
+        },
+        {
+          "target": "le turba",
+          "roman": "le turba",
+          "english": "the crowd",
+          "ipa": "le tˈurba"
+        },
+        {
+          "target": "le platto",
+          "roman": "le platto",
+          "english": "the dish",
+          "ipa": "le plˈato"
+        },
+        {
+          "target": "le equal",
+          "roman": "le equal",
+          "english": "the equal",
+          "ipa": "le ekwˈal"
+        },
+        {
+          "target": "le cadita",
+          "roman": "le cadita",
+          "english": "the fall",
+          "ipa": "le kadˈita"
+        },
+        {
+          "target": "le false",
+          "roman": "le false",
+          "english": "the false",
+          "ipa": "le fˈalse"
+        },
+        {
+          "target": "Io vide le costa.",
+          "roman": "io vide le costa",
+          "english": "I see the coast.",
+          "ipa": "ˈio vˈide le kˈosta"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 6 2",
+      "teach": [
+        {
+          "target": "le festa",
+          "roman": "le festa",
+          "english": "the feast",
+          "ipa": "le fˈesta"
+        },
+        {
+          "target": "le idiota",
+          "roman": "le idiota",
+          "english": "the fool",
+          "ipa": "le idjˈota"
+        },
+        {
+          "target": "le benes",
+          "roman": "le benes",
+          "english": "the goods",
+          "ipa": "le bˈenes"
+        },
+        {
+          "target": "le qramma",
+          "roman": "le qramma",
+          "english": "the gram",
+          "ipa": "le krˈama"
+        },
+        {
+          "target": "le guida",
+          "roman": "le guida",
+          "english": "the guide",
+          "ipa": "le ɡwˈida"
+        },
+        {
+          "target": "le le sue",
+          "roman": "le le sue",
+          "english": "the hers",
+          "ipa": "le le sˈue"
+        },
+        {
+          "target": "le hotel",
+          "roman": "le hotel",
+          "english": "the hotel",
+          "ipa": "le otˈel"
+        },
+        {
+          "target": "le India",
+          "roman": "le India",
+          "english": "the india",
+          "ipa": "le ˈindja"
+        },
+        {
+          "target": "Io vide le festa.",
+          "roman": "io vide le festa",
+          "english": "I see the feast.",
+          "ipa": "ˈio vˈide le fˈesta"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 6 3",
+      "teach": [
+        {
+          "target": "le plumbo",
+          "roman": "le plumbo",
+          "english": "the lead",
+          "ipa": "le plˈumbo"
+        },
+        {
+          "target": "le chef",
+          "roman": "le chef",
+          "english": "the leader",
+          "ipa": "le ʃˈef"
+        },
+        {
+          "target": "le molino",
+          "roman": "le molino",
+          "english": "the mill",
+          "ipa": "le molˈino"
+        },
+        {
+          "target": "le mixte",
+          "roman": "le mixte",
+          "english": "the mixed",
+          "ipa": "le mˈikste"
+        },
+        {
+          "target": "le nepta",
+          "roman": "le nepta",
+          "english": "the niece",
+          "ipa": "le nˈepta"
+        },
+        {
+          "target": "le nemo",
+          "roman": "le nemo",
+          "english": "the nobody",
+          "ipa": "le nˈemo"
+        },
+        {
+          "target": "le ruito",
+          "roman": "le ruito",
+          "english": "the noise",
+          "ipa": "le rwˈito"
+        },
+        {
+          "target": "le pecia",
+          "roman": "le pecia",
+          "english": "the piece",
+          "ipa": "le pˈetsja"
+        },
+        {
+          "target": "Io vide le plumbo.",
+          "roman": "io vide le plumbo",
+          "english": "I see the lead.",
+          "ipa": "ˈio vˈide le plˈumbo"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 6 4",
+      "teach": [
+        {
+          "target": "le spinula",
+          "roman": "le spinula",
+          "english": "the pin",
+          "ipa": "le spˈinula"
+        },
+        {
+          "target": "le rugito",
+          "roman": "le rugito",
+          "english": "the roar",
+          "ipa": "le ruɡˈito"
+        },
+        {
+          "target": "le camera",
+          "roman": "le camera",
+          "english": "the room",
+          "ipa": "le kˈamera"
+        },
+        {
+          "target": "le royal",
+          "roman": "le royal",
+          "english": "the royal",
+          "ipa": "le rojˈal"
+        },
+        {
+          "target": "le semine",
+          "roman": "le semine",
+          "english": "the seed",
+          "ipa": "le sˈemine"
+        },
+        {
+          "target": "le senso",
+          "roman": "le senso",
+          "english": "the sense",
+          "ipa": "le sˈenso"
+        },
+        {
+          "target": "le somno",
+          "roman": "le somno",
+          "english": "the sleep",
+          "ipa": "le sˈomno"
+        },
+        {
+          "target": "le macula",
+          "roman": "le macula",
+          "english": "the spot",
+          "ipa": "le mˈakula"
+        },
+        {
+          "target": "Io vide le spinula.",
+          "roman": "io vide le spinula",
+          "english": "I see the pin.",
+          "ipa": "ˈio vˈide le spˈinula"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

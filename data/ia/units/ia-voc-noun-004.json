@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-004",
+  "title": "Nomines 4",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 4 1",
+      "teach": [
+        {
+          "target": "le risco",
+          "roman": "le risco",
+          "english": "the risk",
+          "ipa": "le rˈisko"
+        },
+        {
+          "target": "le petra",
+          "roman": "le petra",
+          "english": "the rock",
+          "ipa": "le pˈetra"
+        },
+        {
+          "target": "le ruina",
+          "roman": "le ruina",
+          "english": "the ruin",
+          "ipa": "le rwˈina"
+        },
+        {
+          "target": "le viso",
+          "roman": "le viso",
+          "english": "the sight",
+          "ipa": "le vˈiso"
+        },
+        {
+          "target": "le signo",
+          "roman": "le signo",
+          "english": "the sign",
+          "ipa": "le sˈiɡno"
+        },
+        {
+          "target": "le anima",
+          "roman": "le anima",
+          "english": "the soul",
+          "ipa": "le ˈanima"
+        },
+        {
+          "target": "le sono",
+          "roman": "le sono",
+          "english": "the sound",
+          "ipa": "le sˈono"
+        },
+        {
+          "target": "le cauda",
+          "roman": "le cauda",
+          "english": "the tail",
+          "ipa": "le kˈaʊda"
+        },
+        {
+          "target": "Io vide le risco.",
+          "roman": "io vide le risco",
+          "english": "I see the risk.",
+          "ipa": "ˈio vˈide le rˈisko"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 4 2",
+      "teach": [
+        {
+          "target": "le texto",
+          "roman": "le texto",
+          "english": "the text",
+          "ipa": "le tˈeksto"
+        },
+        {
+          "target": "le alora",
+          "roman": "le alora",
+          "english": "the then",
+          "ipa": "le alˈora"
+        },
+        {
+          "target": "le tenue",
+          "roman": "le tenue",
+          "english": "the thin",
+          "ipa": "le tˈenwe"
+        },
+        {
+          "target": "le cosa",
+          "roman": "le cosa",
+          "english": "the thing",
+          "ipa": "le kˈosa"
+        },
+        {
+          "target": "le joculo",
+          "roman": "le joculo",
+          "english": "the toy",
+          "ipa": "le ʒˈokulo"
+        },
+        {
+          "target": "le vista",
+          "roman": "le vista",
+          "english": "the view",
+          "ipa": "le vˈista"
+        },
+        {
+          "target": "le voce",
+          "roman": "le voce",
+          "english": "the voice",
+          "ipa": "le vˈotse"
+        },
+        {
+          "target": "le page",
+          "roman": "le page",
+          "english": "the wages",
+          "ipa": "le pˈaʒe"
+        },
+        {
+          "target": "Io vide le texto.",
+          "roman": "io vide le texto",
+          "english": "I see the text.",
+          "ipa": "ˈio vˈide le tˈeksto"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 4 3",
+      "teach": [
+        {
+          "target": "le cuje",
+          "roman": "le cuje",
+          "english": "the whose",
+          "ipa": "le kˈuʒe"
+        },
+        {
+          "target": "le dar",
+          "roman": "le dar",
+          "english": "the afford",
+          "ipa": "le dˈar"
+        },
+        {
+          "target": "le cinere",
+          "roman": "le cinere",
+          "english": "the ash",
+          "ipa": "le tsinˈere"
+        },
+        {
+          "target": "le amita",
+          "roman": "le amita",
+          "english": "the aunt",
+          "ipa": "le ˈamita"
+        },
+        {
+          "target": "le banda",
+          "roman": "le banda",
+          "english": "the band",
+          "ipa": "le bˈanda"
+        },
+        {
+          "target": "le cento",
+          "roman": "le cento",
+          "english": "the cent",
+          "ipa": "le tsˈento"
+        },
+        {
+          "target": "le copia",
+          "roman": "le copia",
+          "english": "the copy",
+          "ipa": "le kˈopja"
+        },
+        {
+          "target": "le gutta",
+          "roman": "le gutta",
+          "english": "the drop",
+          "ipa": "le ɡˈuta"
+        },
+        {
+          "target": "Io vide le cuje.",
+          "roman": "io vide le cuje",
+          "english": "I see the whose.",
+          "ipa": "ˈio vˈide le kˈuʒe"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 4 4",
+      "teach": [
+        {
+          "target": "le fixe",
+          "roman": "le fixe",
+          "english": "the fixed",
+          "ipa": "le fˈikse"
+        },
+        {
+          "target": "le fluxo",
+          "roman": "le fluxo",
+          "english": "the flow",
+          "ipa": "le flˈukso"
+        },
+        {
+          "target": "le ganio",
+          "roman": "le ganio",
+          "english": "the gain",
+          "ipa": "le ɡˈanjo"
+        },
+        {
+          "target": "le puera",
+          "roman": "le puera",
+          "english": "the girl",
+          "ipa": "le pˈuera"
+        },
+        {
+          "target": "le burla",
+          "roman": "le burla",
+          "english": "the joke",
+          "ipa": "le bˈurla"
+        },
+        {
+          "target": "le gaudio",
+          "roman": "le gaudio",
+          "english": "the joy",
+          "ipa": "le ɡˈaʊdjo"
+        },
+        {
+          "target": "le salto",
+          "roman": "le salto",
+          "english": "the jump",
+          "ipa": "le sˈalto"
+        },
+        {
+          "target": "le basio",
+          "roman": "le basio",
+          "english": "the kiss",
+          "ipa": "le bˈasjo"
+        },
+        {
+          "target": "Io vide le fixe.",
+          "roman": "io vide le fixe",
+          "english": "I see the fixed.",
+          "ipa": "ˈio vˈide le fˈikse"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

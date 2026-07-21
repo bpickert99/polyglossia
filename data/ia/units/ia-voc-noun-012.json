@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-012",
+  "title": "Nomines 12",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 12 1",
+      "teach": [
+        {
+          "target": "le agulia",
+          "roman": "le agulia",
+          "english": "the needle",
+          "ipa": "le aɡˈulja"
+        },
+        {
+          "target": "le nunquam",
+          "roman": "le nunquam",
+          "english": "the never",
+          "ipa": "le nˈunkwam"
+        },
+        {
+          "target": "le ruitose",
+          "roman": "le ruitose",
+          "english": "the noisy",
+          "ipa": "le rwitˈose"
+        },
+        {
+          "target": "le deberea",
+          "roman": "le deberea",
+          "english": "the ought",
+          "ipa": "le dˌeberˈea"
+        },
+        {
+          "target": "le nos",
+          "roman": "le nos",
+          "english": "the ourselves",
+          "ipa": "le nˈos"
+        },
+        {
+          "target": "le populo",
+          "roman": "le populo",
+          "english": "the people",
+          "ipa": "le pˈopulo"
+        },
+        {
+          "target": "le aratro",
+          "roman": "le aratro",
+          "english": "the plough",
+          "ipa": "le arˈatro"
+        },
+        {
+          "target": "le poesia",
+          "roman": "le poesia",
+          "english": "the poetry",
+          "ipa": "le pˌoesˈia"
+        },
+        {
+          "target": "Io vide le agulia.",
+          "roman": "io vide le agulia",
+          "english": "I see the needle.",
+          "ipa": "ˈio vˈide le aɡˈulja"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 12 2",
+      "teach": [
+        {
+          "target": "le orgolio",
+          "roman": "le orgolio",
+          "english": "the pride",
+          "ipa": "le orɡˈoljo"
+        },
+        {
+          "target": "le rasorio",
+          "roman": "le rasorio",
+          "english": "the razor",
+          "ipa": "le rasˈorjo"
+        },
+        {
+          "target": "le lector",
+          "roman": "le lector",
+          "english": "the reader",
+          "ipa": "le lektˈor"
+        },
+        {
+          "target": "le ration",
+          "roman": "le ration",
+          "english": "the reason",
+          "ipa": "le ratjˈon"
+        },
+        {
+          "target": "le regret",
+          "roman": "le regret",
+          "english": "the regret",
+          "ipa": "le reɡrˈet"
+        },
+        {
+          "target": "le simple",
+          "roman": "le simple",
+          "english": "the simple",
+          "ipa": "le sˈimple"
+        },
+        {
+          "target": "le sexanta",
+          "roman": "le sexanta",
+          "english": "the sixty",
+          "ipa": "le seksˈanta"
+        },
+        {
+          "target": "le subite",
+          "roman": "le subite",
+          "english": "the sudden",
+          "ipa": "le sˈubite"
+        },
+        {
+          "target": "Io vide le orgolio.",
+          "roman": "io vide le orgolio",
+          "english": "I see the pride.",
+          "ipa": "ˈio vˈide le orɡˈoljo"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 12 3",
+      "teach": [
+        {
+          "target": "le utensile",
+          "roman": "le utensile",
+          "english": "the tool",
+          "ipa": "le utˈensile"
+        },
+        {
+          "target": "le viages",
+          "roman": "le viages",
+          "english": "the travel",
+          "ipa": "le vjˈaʒes"
+        },
+        {
+          "target": "le esque",
+          "roman": "le esque",
+          "english": "the whether",
+          "ipa": "le ˈeske"
+        },
+        {
+          "target": "le flagella",
+          "roman": "le flagella",
+          "english": "the whip",
+          "ipa": "le flaɡˈela"
+        },
+        {
+          "target": "le viduo",
+          "roman": "le viduo",
+          "english": "the widower",
+          "ipa": "le vˈidwo"
+        },
+        {
+          "target": "le Africa",
+          "roman": "le Africa",
+          "english": "the africa",
+          "ipa": "le ˈafrika"
+        },
+        {
+          "target": "le amonta",
+          "roman": "le amonta",
+          "english": "the amount",
+          "ipa": "le amˈonta"
+        },
+        {
+          "target": "le avenue",
+          "roman": "le avenue",
+          "english": "the avenue",
+          "ipa": "le ˌavenˈu"
+        },
+        {
+          "target": "Io vide le utensile.",
+          "roman": "io vide le utensile",
+          "english": "I see the tool.",
+          "ipa": "ˈio vˈide le utˈensile"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 12 4",
+      "teach": [
+        {
+          "target": "le barril",
+          "roman": "le barril",
+          "english": "the barrel",
+          "ipa": "le barˈil"
+        },
+        {
+          "target": "le bassino",
+          "roman": "le bassino",
+          "english": "the basin",
+          "ipa": "le basˈino"
+        },
+        {
+          "target": "le cerebro",
+          "roman": "le cerebro",
+          "english": "the brain",
+          "ipa": "le tserˈebro"
+        },
+        {
+          "target": "le Brasil",
+          "roman": "le Brasil",
+          "english": "the brazil",
+          "ipa": "le brasˈil"
+        },
+        {
+          "target": "le sufflo",
+          "roman": "le sufflo",
+          "english": "the breath",
+          "ipa": "le sˈuflo"
+        },
+        {
+          "target": "le centro",
+          "roman": "le centro",
+          "english": "the centre",
+          "ipa": "le tsˈentro"
+        },
+        {
+          "target": "le cambio",
+          "roman": "le cambio",
+          "english": "the change",
+          "ipa": "le kˈambjo"
+        },
+        {
+          "target": "le cheque",
+          "roman": "le cheque",
+          "english": "the cheque",
+          "ipa": "le tʃˈek"
+        },
+        {
+          "target": "Io vide le barril.",
+          "roman": "io vide le barril",
+          "english": "I see the barrel.",
+          "ipa": "ˈio vˈide le barˈil"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

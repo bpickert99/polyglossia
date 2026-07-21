@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-013",
+  "title": "Nomines 13",
+  "level": "B1",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 13 1",
+      "teach": [
+        {
+          "target": "le cigarro",
+          "roman": "le cigarro",
+          "english": "the cigar",
+          "ipa": "le tsiɡˈaro"
+        },
+        {
+          "target": "le computo",
+          "roman": "le computo",
+          "english": "the count",
+          "ipa": "le kˈomputo"
+        },
+        {
+          "target": "le profunde",
+          "roman": "le profunde",
+          "english": "the deep",
+          "ipa": "le profˈunde"
+        },
+        {
+          "target": "le retardo",
+          "roman": "le retardo",
+          "english": "the delay",
+          "ipa": "le retˈardo"
+        },
+        {
+          "target": "le serie",
+          "roman": "le serie",
+          "english": "the earnest",
+          "ipa": "le sˈerje"
+        },
+        {
+          "target": "le feroce",
+          "roman": "le feroce",
+          "english": "the fierce",
+          "ipa": "le ferˈotse"
+        },
+        {
+          "target": "le figura",
+          "roman": "le figura",
+          "english": "the figure",
+          "ipa": "le fiɡˈura"
+        },
+        {
+          "target": "le bandiera",
+          "roman": "le bandiera",
+          "english": "the flag",
+          "ipa": "le bandjˈera"
+        },
+        {
+          "target": "Io vide le cigarro.",
+          "roman": "io vide le cigarro",
+          "english": "I see the cigar.",
+          "ipa": "ˈio vˈide le tsiɡˈaro"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 13 2",
+      "teach": [
+        {
+          "target": "le fulgure",
+          "roman": "le fulgure",
+          "english": "the flash",
+          "ipa": "le fˈulɡure"
+        },
+        {
+          "target": "le manico",
+          "roman": "le manico",
+          "english": "the handle",
+          "ipa": "le mˈaniko"
+        },
+        {
+          "target": "le porto",
+          "roman": "le porto",
+          "english": "the harbour",
+          "ipa": "le pˈorto"
+        },
+        {
+          "target": "le pesante",
+          "roman": "le pesante",
+          "english": "the heavy",
+          "ipa": "le pesˈante"
+        },
+        {
+          "target": "le humile",
+          "roman": "le humile",
+          "english": "the humble",
+          "ipa": "le hˈumile"
+        },
+        {
+          "target": "le mandibula",
+          "roman": "le mandibula",
+          "english": "the jaw",
+          "ipa": "le mandˈibula"
+        },
+        {
+          "target": "le regno",
+          "roman": "le regno",
+          "english": "the kingdom",
+          "ipa": "le rˈeɡno"
+        },
+        {
+          "target": "le ascensor",
+          "roman": "le ascensor",
+          "english": "the lift",
+          "ipa": "le ˌastsensˈor"
+        },
+        {
+          "target": "Io vide le fulgure.",
+          "roman": "io vide le fulgure",
+          "english": "I see the flash.",
+          "ipa": "ˈio vˈide le fˈulɡure"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 13 3",
+      "teach": [
+        {
+          "target": "le motion",
+          "roman": "le motion",
+          "english": "the motion",
+          "ipa": "le motjˈon"
+        },
+        {
+          "target": "le nihil",
+          "roman": "le nihil",
+          "english": "the nothing",
+          "ipa": "le nˈihil"
+        },
+        {
+          "target": "le numero",
+          "roman": "le numero",
+          "english": "the number",
+          "ipa": "le nˈumero"
+        },
+        {
+          "target": "le obedir a",
+          "roman": "le obedir a",
+          "english": "the obey",
+          "ipa": "le ˌobedˈir ˈa"
+        },
+        {
+          "target": "le falta",
+          "roman": "le falta",
+          "english": "the offence",
+          "ipa": "le fˈalta"
+        },
+        {
+          "target": "le offerta",
+          "roman": "le offerta",
+          "english": "the offer",
+          "ipa": "le ofˈerta"
+        },
+        {
+          "target": "le partito",
+          "roman": "le partito",
+          "english": "the party",
+          "ipa": "le partˈito"
+        },
+        {
+          "target": "le sentiero",
+          "roman": "le sentiero",
+          "english": "the path",
+          "ipa": "le sentjˈero"
+        },
+        {
+          "target": "Io vide le motion.",
+          "roman": "io vide le motion",
+          "english": "I see the motion.",
+          "ipa": "ˈio vˈide le motjˈon"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 13 4",
+      "teach": [
+        {
+          "target": "le veneno",
+          "roman": "le veneno",
+          "english": "the poison",
+          "ipa": "le venˈeno"
+        },
+        {
+          "target": "le enigma",
+          "roman": "le enigma",
+          "english": "the puzzle",
+          "ipa": "le enˈiɡma"
+        },
+        {
+          "target": "le sedite",
+          "roman": "le sedite",
+          "english": "the seated",
+          "ipa": "le sedˈite"
+        },
+        {
+          "target": "le surriso",
+          "roman": "le surriso",
+          "english": "the smile",
+          "ipa": "le surˈiso"
+        },
+        {
+          "target": "le social",
+          "roman": "le social",
+          "english": "the social",
+          "ipa": "le sotsjˈal"
+        },
+        {
+          "target": "le strata",
+          "roman": "le strata",
+          "english": "the street",
+          "ipa": "le strˈata"
+        },
+        {
+          "target": "le Svedia",
+          "roman": "le Svedia",
+          "english": "the sweden",
+          "ipa": "le svˈedja"
+        },
+        {
+          "target": "le templo",
+          "roman": "le templo",
+          "english": "the temple",
+          "ipa": "le tˈemplo"
+        },
+        {
+          "target": "Io vide le veneno.",
+          "roman": "io vide le veneno",
+          "english": "I see the poison.",
+          "ipa": "ˈio vˈide le venˈeno"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B1-band vocabulary)"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-027",
+  "title": "Nomines 27",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 27 1",
+      "teach": [
+        {
+          "target": "le invention",
+          "roman": "le invention",
+          "english": "the invention",
+          "ipa": "le ˌinventjˈon"
+        },
+        {
+          "target": "le messagero",
+          "roman": "le messagero",
+          "english": "the messenger",
+          "ipa": "le mˌesaʒˈero"
+        },
+        {
+          "target": "le necessari",
+          "roman": "le necessari",
+          "english": "the necessary",
+          "ipa": "le nˌetsesˈari"
+        },
+        {
+          "target": "le dece-novem",
+          "roman": "le dece-novem",
+          "english": "the nineteen",
+          "ipa": "le dˈetsenˈovem"
+        },
+        {
+          "target": "le operation",
+          "roman": "le operation",
+          "english": "the operation",
+          "ipa": "le ˌoperatjˈon"
+        },
+        {
+          "target": "le opponer se a",
+          "roman": "le opponer se a",
+          "english": "the oppose",
+          "ipa": "le ˌoponˈer sˈe ˈa"
+        },
+        {
+          "target": "le to a causa de",
+          "roman": "le to a causa de",
+          "english": "the owing",
+          "ipa": "le tˈo a kˈaʊsa dˈe"
+        },
+        {
+          "target": "le impression",
+          "roman": "le impression",
+          "english": "the printing",
+          "ipa": "le ˌimpresjˈon"
+        },
+        {
+          "target": "Io vide le invention.",
+          "roman": "io vide le invention",
+          "english": "I see the invention.",
+          "ipa": "ˈio vˈide le ˌinventjˈon"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 27 2",
+      "teach": [
+        {
+          "target": "le prisionero",
+          "roman": "le prisionero",
+          "english": "the prisoner",
+          "ipa": "le prˌisjonˈero"
+        },
+        {
+          "target": "le programma",
+          "roman": "le programma",
+          "english": "the programme",
+          "ipa": "le proɡrˈama"
+        },
+        {
+          "target": "le reduction",
+          "roman": "le reduction",
+          "english": "the reduction",
+          "ipa": "le rˌeduktjˈon"
+        },
+        {
+          "target": "le corda",
+          "roman": "le corda",
+          "english": "the rope / string",
+          "ipa": "le kˈorda"
+        },
+        {
+          "target": "le situation",
+          "roman": "le situation",
+          "english": "the situation",
+          "ipa": "le sˌitwatjˈon"
+        },
+        {
+          "target": "le colpo",
+          "roman": "le colpo",
+          "english": "the blow / stroke",
+          "ipa": "le kˈolpo"
+        },
+        {
+          "target": "le suspicion",
+          "roman": "le suspicion",
+          "english": "the suspicion",
+          "ipa": "le sˌuspitsjˈon"
+        },
+        {
+          "target": "le valor",
+          "roman": "le valor",
+          "english": "the value / worth",
+          "ipa": "le valˈor"
+        },
+        {
+          "target": "Io vide le prisionero.",
+          "roman": "io vide le prisionero",
+          "english": "I see the prisoner.",
+          "ipa": "ˈio vˈide le prˌisjonˈero"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 27 3",
+      "teach": [
+        {
+          "target": "le ubicunque",
+          "roman": "le ubicunque",
+          "english": "the whereever",
+          "ipa": "le ˌubikˈuŋkwe"
+        },
+        {
+          "target": "le Australia",
+          "roman": "le Australia",
+          "english": "the australia",
+          "ipa": "le aʊstrˈalja"
+        },
+        {
+          "target": "le basso",
+          "roman": "le basso",
+          "english": "the down / bottom",
+          "ipa": "le bˈaso"
+        },
+        {
+          "target": "le jentaculo",
+          "roman": "le jentaculo",
+          "english": "the breakfast",
+          "ipa": "le ʒentˈakulo"
+        },
+        {
+          "target": "le condition",
+          "roman": "le condition",
+          "english": "the condition",
+          "ipa": "le kˌonditjˈon"
+        },
+        {
+          "target": "le equalitate",
+          "roman": "le equalitate",
+          "english": "the equality",
+          "ipa": "le ˌekwalitˈate"
+        },
+        {
+          "target": "le essential",
+          "roman": "le essential",
+          "english": "the essential",
+          "ipa": "le ˌesentjˈal"
+        },
+        {
+          "target": "le examine",
+          "roman": "le examine",
+          "english": "the examination",
+          "ipa": "le eksˈamine"
+        },
+        {
+          "target": "Io vide le ubicunque.",
+          "roman": "io vide le ubicunque",
+          "english": "I see the whereever.",
+          "ipa": "ˈio vˈide le ˌubikˈuŋkwe"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 27 4",
+      "teach": [
+        {
+          "target": "le exception",
+          "roman": "le exception",
+          "english": "the exception",
+          "ipa": "le ˌekstseptjˈon"
+        },
+        {
+          "target": "le explosion",
+          "roman": "le explosion",
+          "english": "the explosion",
+          "ipa": "le ˌeksplosjˈon"
+        },
+        {
+          "target": "le extension",
+          "roman": "le extension",
+          "english": "the extension",
+          "ipa": "le ˌekstensjˈon"
+        },
+        {
+          "target": "le dece-cinque",
+          "roman": "le dece-cinque",
+          "english": "the fifteen",
+          "ipa": "le dˈetsetsˈiŋkwe"
+        },
+        {
+          "target": "le digito",
+          "roman": "le digito",
+          "english": "the toe / finger",
+          "ipa": "le dˈiɡito"
+        },
+        {
+          "target": "le haste",
+          "roman": "le haste",
+          "english": "the haste / hurry",
+          "ipa": "le hˈaste"
+        },
+        {
+          "target": "le calor",
+          "roman": "le calor",
+          "english": "the heat / warmth",
+          "ipa": "le kalˈor"
+        },
+        {
+          "target": "le immediate",
+          "roman": "le immediate",
+          "english": "the immediate",
+          "ipa": "le ˌimedjˈate"
+        },
+        {
+          "target": "Io vide le exception.",
+          "roman": "io vide le exception",
+          "english": "I see the exception.",
+          "ipa": "ˈio vˈide le ˌekstseptjˈon"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-adj-002",
+  "title": "Adjectivos 2",
+  "level": "B1",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 2 1",
+      "teach": [
+        {
+          "target": "decime",
+          "roman": "decime",
+          "english": "tenth",
+          "ipa": "dˈetsime"
+        },
+        {
+          "target": "utile",
+          "roman": "utile",
+          "english": "useful",
+          "ipa": "ˈutile"
+        },
+        {
+          "target": "duple",
+          "roman": "duple",
+          "english": "double",
+          "ipa": "dˈuple"
+        },
+        {
+          "target": "del est",
+          "roman": "del est",
+          "english": "east",
+          "ipa": "del ˈest"
+        },
+        {
+          "target": "futur",
+          "roman": "futur",
+          "english": "future",
+          "ipa": "futˈur"
+        },
+        {
+          "target": "juncte",
+          "roman": "juncte",
+          "english": "joint",
+          "ipa": "ʒˈunkte"
+        },
+        {
+          "target": "passate",
+          "roman": "passate",
+          "english": "past",
+          "ipa": "pasˈate"
+        },
+        {
+          "target": "polac",
+          "roman": "polac",
+          "english": "polish",
+          "ipa": "polˈak"
+        },
+        {
+          "target": "Le casa es decime.",
+          "roman": "le casa es decime",
+          "english": "The house is tenth.",
+          "ipa": "le kˈasa es dˈetsime"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 2 2",
+      "teach": [
+        {
+          "target": "scalia",
+          "roman": "scalia",
+          "english": "shell",
+          "ipa": "skˈalja"
+        },
+        {
+          "target": "lisie",
+          "roman": "lisie",
+          "english": "smooth",
+          "ipa": "lˈisje"
+        },
+        {
+          "target": "solide",
+          "roman": "solide",
+          "english": "solid",
+          "ipa": "sˈolide"
+        },
+        {
+          "target": "switze",
+          "roman": "switze",
+          "english": "swiss",
+          "ipa": "swˈitze"
+        },
+        {
+          "target": "active",
+          "roman": "active",
+          "english": "active",
+          "ipa": "aktˈive"
+        },
+        {
+          "target": "belge",
+          "roman": "belge",
+          "english": "belgian",
+          "ipa": "bˈelɡe"
+        },
+        {
+          "target": "octave",
+          "roman": "octave",
+          "english": "eighth",
+          "ipa": "oktˈave"
+        },
+        {
+          "target": "agricole",
+          "roman": "agricole",
+          "english": "farm",
+          "ipa": "ˌaɡrikˈole"
+        },
+        {
+          "target": "Le can es scalia.",
+          "roman": "le can es scalia",
+          "english": "The dog is shell.",
+          "ipa": "le kˈan es skˈalja"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 2 3",
+      "teach": [
+        {
+          "target": "indian",
+          "roman": "indian",
+          "english": "indian",
+          "ipa": "indjˈan"
+        },
+        {
+          "target": "vegetal",
+          "roman": "vegetal",
+          "english": "plant",
+          "ipa": "vˌeɡetˈal"
+        },
+        {
+          "target": "russe",
+          "roman": "russe",
+          "english": "russian",
+          "ipa": "rˈuse"
+        },
+        {
+          "target": "plure",
+          "roman": "plure",
+          "english": "several",
+          "ipa": "plˈure"
+        },
+        {
+          "target": "del sud",
+          "roman": "del sud",
+          "english": "south",
+          "ipa": "del sˈud"
+        },
+        {
+          "target": "spatial",
+          "roman": "spatial",
+          "english": "space",
+          "ipa": "spatjˈal"
+        },
+        {
+          "target": "tenere",
+          "roman": "tenere",
+          "english": "tender",
+          "ipa": "tenˈere"
+        },
+        {
+          "target": "varie",
+          "roman": "varie",
+          "english": "various",
+          "ipa": "vˈarje"
+        },
+        {
+          "target": "Le citate es indian.",
+          "roman": "le citate es indian",
+          "english": "The city is indian.",
+          "ipa": "le tsitˈate es indjˈan"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adjectivos 2 4",
+      "teach": [
+        {
+          "target": "asiatic",
+          "roman": "asiatic",
+          "english": "asian",
+          "ipa": "asjˈatik"
+        },
+        {
+          "target": "precoce",
+          "roman": "precoce",
+          "english": "early",
+          "ipa": "prekˈotse"
+        },
+        {
+          "target": "public",
+          "roman": "public",
+          "english": "public",
+          "ipa": "pˈublik"
+        },
+        {
+          "target": "fusilate",
+          "roman": "fusilate",
+          "english": "shot",
+          "ipa": "fˌusilˈate"
+        },
+        {
+          "target": "del west",
+          "roman": "del west",
+          "english": "west",
+          "ipa": "del wˈest"
+        },
+        {
+          "target": "mundial",
+          "roman": "mundial",
+          "english": "world",
+          "ipa": "mundjˈal"
+        },
+        {
+          "target": "injuste",
+          "roman": "injuste",
+          "english": "wrong",
+          "ipa": "inʒˈuste"
+        },
+        {
+          "target": "le melior",
+          "roman": "le melior",
+          "english": "best",
+          "ipa": "le meljˈor"
+        },
+        {
+          "target": "Le libro es asiatic.",
+          "roman": "le libro es asiatic",
+          "english": "The book is asian.",
+          "ipa": "le lˈibro es asjˈatik"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adjectivos (B1-band vocabulary)"
+  ]
+}

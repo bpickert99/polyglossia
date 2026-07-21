@@ -1,0 +1,179 @@
+{
+  "id": "ia-voc-adj-006",
+  "title": "Adjectivos 6",
+  "level": "C1",
+  "summary": "More adjectivos vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adjectivos 6 1",
+      "teach": [
+        {
+          "target": "fidel",
+          "roman": "fidel",
+          "english": "loyal / faithful",
+          "ipa": "fidˈel"
+        },
+        {
+          "target": "dece-tertie",
+          "roman": "dece-tertie",
+          "english": "thirteenth",
+          "ipa": "dˈetsetˈertje"
+        },
+        {
+          "target": "delectabile",
+          "roman": "delectabile",
+          "english": "delightful",
+          "ipa": "dˌelektˈabile"
+        },
+        {
+          "target": "pena",
+          "roman": "pena",
+          "english": "hardly / scarcely",
+          "ipa": "pˈena"
+        },
+        {
+          "target": "remarcabile",
+          "roman": "remarcabile",
+          "english": "remarkable",
+          "ipa": "rˌemarkˈabile"
+        },
+        {
+          "target": "melior",
+          "roman": "melior",
+          "english": "better / improve",
+          "ipa": "meljˈor"
+        },
+        {
+          "target": "contente",
+          "roman": "contente",
+          "english": "glad / content",
+          "ipa": "kontˈente"
+        },
+        {
+          "target": "dolorose",
+          "roman": "dolorose",
+          "english": "sore / painful",
+          "ipa": "dˌolorˈose"
+        },
+        {
+          "target": "Le casa es fidel.",
+          "roman": "le casa es fidel",
+          "english": "The house is loyal / faithful.",
+          "ipa": "le kˈasa es fidˈel"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adjectivos 6 2",
+      "teach": [
+        {
+          "target": "confortabile",
+          "roman": "confortabile",
+          "english": "comfortable",
+          "ipa": "kˌonfortˈabile"
+        },
+        {
+          "target": "stupide",
+          "roman": "stupide",
+          "english": "stupid / foolish",
+          "ipa": "stˈupide"
+        },
+        {
+          "target": "dece-septime",
+          "roman": "dece-septime",
+          "english": "seventeenth",
+          "ipa": "dˈetsesˈeptime"
+        },
+        {
+          "target": "responsabile",
+          "roman": "responsabile",
+          "english": "responsible",
+          "ipa": "rˌesponsˈabile"
+        },
+        {
+          "target": "plen de sperantia",
+          "roman": "plen de sperantia",
+          "english": "hopeful",
+          "ipa": "plˈen de sperˈantja"
+        },
+        {
+          "target": "sol",
+          "roman": "sol",
+          "english": "only / alone / single",
+          "ipa": "sˈol"
+        },
+        {
+          "target": "plan",
+          "roman": "plan",
+          "english": "flat / plain / level",
+          "ipa": "plˈan"
+        },
+        {
+          "target": "satis grande",
+          "roman": "satis grande",
+          "english": "considerable",
+          "ipa": "sˈatis ɡrˈande"
+        },
+        {
+          "target": "Le can es confortabile.",
+          "roman": "le can es confortabile",
+          "english": "The dog is comfortable.",
+          "ipa": "le kˈan es kˌonfortˈabile"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adjectivos 6 3",
+      "teach": [
+        {
+          "target": "parte",
+          "roman": "parte",
+          "english": "part / apart / aside",
+          "ipa": "pˈarte"
+        },
+        {
+          "target": "ulterior",
+          "roman": "ulterior",
+          "english": "farther / further",
+          "ipa": "ˌulterjˈor"
+        },
+        {
+          "target": "preciose",
+          "roman": "preciose",
+          "english": "precious / valuable",
+          "ipa": "pretsjˈose"
+        },
+        {
+          "target": "practic",
+          "roman": "practic",
+          "english": "sensible / practical",
+          "ipa": "prˈaktik"
+        },
+        {
+          "target": "continue",
+          "roman": "continue",
+          "english": "steady / continuous",
+          "ipa": "kontˈinwe"
+        },
+        {
+          "target": "medie",
+          "roman": "medie",
+          "english": "half / middle / average",
+          "ipa": "mˈedje"
+        },
+        {
+          "target": "Le citate es parte.",
+          "roman": "le citate es parte",
+          "english": "The city is part / apart / aside.",
+          "ipa": "le tsitˈate es pˈarte"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 22 more adjectivos (C1-band vocabulary)"
+  ]
+}

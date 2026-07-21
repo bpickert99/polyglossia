@@ -11,28 +11,33 @@
         {
           "target": "le problema",
           "roman": "le problema",
-          "english": "the problem"
+          "english": "the problem",
+          "ipa": "le problˈema"
         },
         {
           "target": "le exemplo",
           "roman": "le exemplo",
-          "english": "the example"
+          "english": "the example",
+          "ipa": "le eksˈemplo"
         },
         {
           "target": "dunque",
           "roman": "dunque",
-          "english": "therefore, so"
+          "english": "therefore, so",
+          "ipa": "dˈuŋkwe"
         },
         {
           "target": "Le problema es que il pluve.",
           "roman": "le problema es que il pluve",
-          "english": "The problem is that it's raining."
+          "english": "The problem is that it's raining.",
+          "ipa": "le problˈema es kˈe il plˈuve"
         },
         {
           "target": "Io ha fame, dunque io vole mangiar.",
           "roman": "io ha fame dunque io vole mangiar",
           "english": "I'm hungry, so I want to eat.",
-          "note": "dunque connects a reason to its result."
+          "note": "dunque connects a reason to its result.",
+          "ipa": "ˈio ha fˈame dˈuŋkwe ˈio vˈole manʒˈar"
         }
       ],
       "grammar": {
@@ -47,29 +52,34 @@
         {
           "target": "nonobstante",
           "roman": "nonobstante",
-          "english": "however, nevertheless"
+          "english": "however, nevertheless",
+          "ipa": "nˌonobstˈante"
         },
         {
           "target": "totevia",
           "roman": "totevia",
           "english": "however, still",
-          "note": "Interchangeable with nonobstante."
+          "note": "Interchangeable with nonobstante.",
+          "ipa": "tˌotevˈia"
         },
         {
           "target": "per exemplo",
           "roman": "per exemplo",
           "english": "for example",
-          "note": "per = for/by (as in per favor); exemplo = example."
+          "note": "per = for/by (as in per favor); exemplo = example.",
+          "ipa": "pˈer eksˈemplo"
         },
         {
           "target": "Interlingua es facile. Le grammatica anglese, nonobstante, es difficile.",
           "roman": "interlingua es facile le grammatica anglese nonobstante es difficile",
-          "english": "Interlingua is easy. English grammar, however, is difficult."
+          "english": "Interlingua is easy. English grammar, however, is difficult.",
+          "ipa": "ˌinterlˈiŋɡwa es fˈatsile le ɡramˈatika aŋɡlˈese nˌonobstˈante es difˈitsile"
         },
         {
           "target": "Io ama le colores, per exemplo blau e verde.",
           "roman": "io ama le colores per exemplo blau e verde",
-          "english": "I love colors, for example blue and green."
+          "english": "I love colors, for example blue and green.",
+          "ipa": "ˈio ˈama le kolˈores pˈer eksˈemplo blˈaʊ e vˈerde"
         }
       ]
     }

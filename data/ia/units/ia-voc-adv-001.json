@@ -1,0 +1,227 @@
+{
+  "id": "ia-voc-adv-001",
+  "title": "Adverbios 1",
+  "level": "B1",
+  "summary": "More adverbios vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Adverbios 1 1",
+      "teach": [
+        {
+          "target": "jam",
+          "roman": "jam",
+          "english": "yet",
+          "ipa": "ʒˈam"
+        },
+        {
+          "target": "fede",
+          "roman": "fede",
+          "english": "ugly",
+          "ipa": "fˈede"
+        },
+        {
+          "target": "mesmo",
+          "roman": "mesmo",
+          "english": "even",
+          "ipa": "mˈesmo"
+        },
+        {
+          "target": "sancte",
+          "roman": "sancte",
+          "english": "holy",
+          "ipa": "sˈankte"
+        },
+        {
+          "target": "viril",
+          "roman": "viril",
+          "english": "manly",
+          "ipa": "virˈil"
+        },
+        {
+          "target": "postea",
+          "roman": "postea",
+          "english": "since",
+          "ipa": "postˈea"
+        },
+        {
+          "target": "un vice",
+          "roman": "un vice",
+          "english": "once",
+          "ipa": "un vˈitse"
+        },
+        {
+          "target": "annual",
+          "roman": "annual",
+          "english": "yearly",
+          "ipa": "anwˈal"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Adverbios 1 2",
+      "teach": [
+        {
+          "target": "via",
+          "roman": "via",
+          "english": "off / way",
+          "ipa": "vˈia"
+        },
+        {
+          "target": "in basso",
+          "roman": "in basso",
+          "english": "below",
+          "ipa": "ˈin bˈaso"
+        },
+        {
+          "target": "assatis",
+          "roman": "assatis",
+          "english": "fairly",
+          "ipa": "asˈatis"
+        },
+        {
+          "target": "vermente",
+          "roman": "vermente",
+          "english": "truly",
+          "ipa": "vermˈente"
+        },
+        {
+          "target": "quotidian",
+          "roman": "quotidian",
+          "english": "daily",
+          "ipa": "kwˌotidjˈan"
+        },
+        {
+          "target": "amical",
+          "roman": "amical",
+          "english": "friendly",
+          "ipa": "ˌamikˈal"
+        },
+        {
+          "target": "solitari",
+          "roman": "solitari",
+          "english": "lonely",
+          "ipa": "sˌolitˈari"
+        },
+        {
+          "target": "subito",
+          "roman": "subito",
+          "english": "suddenly",
+          "ipa": "sˈubito"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Adverbios 1 3",
+      "teach": [
+        {
+          "target": "mensual",
+          "roman": "mensual",
+          "english": "monthly",
+          "ipa": "menswˈal"
+        },
+        {
+          "target": "in parte",
+          "roman": "in parte",
+          "english": "partly",
+          "ipa": "ˈin pˈarte"
+        },
+        {
+          "target": "foras",
+          "roman": "foras",
+          "english": "out / away",
+          "ipa": "fˈoras"
+        },
+        {
+          "target": "realmente",
+          "roman": "realmente",
+          "english": "really",
+          "ipa": "rˌealmˈente"
+        },
+        {
+          "target": "con",
+          "roman": "con",
+          "english": "successfully",
+          "ipa": "kˈon"
+        },
+        {
+          "target": "celeste",
+          "roman": "celeste",
+          "english": "heavenly",
+          "ipa": "tselˈeste"
+        },
+        {
+          "target": "in pauco",
+          "roman": "in pauco",
+          "english": "shortly",
+          "ipa": "ˈin pˈawko"
+        },
+        {
+          "target": "largemente",
+          "roman": "largemente",
+          "english": "widely",
+          "ipa": "lˌarɡemˈente"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Adverbios 1 4",
+      "teach": [
+        {
+          "target": "con ardor",
+          "roman": "con ardor",
+          "english": "eagerly",
+          "ipa": "kˈon ardˈor"
+        },
+        {
+          "target": "al puncto",
+          "roman": "al puncto",
+          "english": "exactly",
+          "ipa": "al pˈunkto"
+        },
+        {
+          "target": "in general",
+          "roman": "in general",
+          "english": "mostly",
+          "ipa": "ˈin ɡˌenerˈal"
+        },
+        {
+          "target": "un pauco",
+          "roman": "un pauco",
+          "english": "slightly",
+          "ipa": "un pˈawko"
+        },
+        {
+          "target": "septimanal",
+          "roman": "septimanal",
+          "english": "weekly",
+          "ipa": "sˌeptimanˈal"
+        },
+        {
+          "target": "simplemente",
+          "roman": "simplemente",
+          "english": "simply",
+          "ipa": "sˌimplemˈente"
+        },
+        {
+          "target": "recentemente",
+          "roman": "recentemente",
+          "english": "lately",
+          "ipa": "rˌetsentemˈente"
+        },
+        {
+          "target": "previemente",
+          "roman": "previemente",
+          "english": "formerly",
+          "ipa": "prˌevjemˈente"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more adverbios (B1-band vocabulary)"
+  ]
+}

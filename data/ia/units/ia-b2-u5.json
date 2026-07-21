@@ -1,0 +1,60 @@
+{
+  "id": "ia-b2-u5",
+  "title": "Pronomines relative",
+  "level": "B2",
+  "summary": "The man who..., the book that... — joining ideas with who/that/which.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Qui e que",
+      "teach": [
+        {
+          "target": "qui",
+          "roman": "qui",
+          "english": "who (relative)",
+          "note": "For people: le homine qui labora = the man who works.",
+          "ipa": "kˈi"
+        },
+        {
+          "target": "Le homine qui labora in le officio es mi patre.",
+          "roman": "le homine qui labora in le officio es mi patre",
+          "english": "The man who works in the office is my father.",
+          "ipa": "le hˈomine kˈi labˈora ˈin le ofˈitsjo es mi pˈatre"
+        },
+        {
+          "target": "Le libro que io lege es interessante.",
+          "roman": "le libro que io lege es interessante",
+          "english": "The book that I'm reading is interesting.",
+          "note": "que here is 'that/which' — the same word already known as the 'que' in 'io pensa que...', just doing a different job.",
+          "ipa": "le lˈibro kˈe ˈio lˈeɡe es ˌinteresˈante"
+        }
+      ],
+      "grammar": {
+        "title": "Joining clauses with who/that/which",
+        "body": "**qui** links a clause about a person: le femina qui canta (the woman who sings).\n**que** links a clause about anything, person or thing: le libro que io lege (the book that I read), le homine que tu vide (the man that you see).\n**le qual** is a more formal alternative to either, common after a preposition: le persona con le qual io parlava (the person with whom I was speaking)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Le qual",
+      "teach": [
+        {
+          "target": "le qual",
+          "roman": "le qual",
+          "english": "who / which (formal, esp. after a preposition)",
+          "ipa": "le kwˈal"
+        },
+        {
+          "target": "Le amico con le qual io parlava es medico.",
+          "roman": "le amico con le qual io parlava es medico",
+          "english": "The friend with whom I was speaking is a doctor.",
+          "ipa": "le amˈiko kˈon le kwˈal ˈio parlˈava es mˈediko"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Say 'the man who...' or 'the book that...'",
+    "Use le qual after a preposition"
+  ]
+}

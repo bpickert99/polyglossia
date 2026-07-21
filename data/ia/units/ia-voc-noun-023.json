@@ -1,0 +1,251 @@
+{
+  "id": "ia-voc-noun-023",
+  "title": "Nomines 23",
+  "level": "B2",
+  "summary": "More nomines vocabulary.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nomines 23 1",
+      "teach": [
+        {
+          "target": "le ambition",
+          "roman": "le ambition",
+          "english": "the ambition",
+          "ipa": "le ˌambitjˈon"
+        },
+        {
+          "target": "le assister a",
+          "roman": "le assister a",
+          "english": "the attend",
+          "ipa": "le ˌasistˈer ˈa"
+        },
+        {
+          "target": "le contracto",
+          "roman": "le contracto",
+          "english": "the bargain",
+          "ipa": "le kontrˈakto"
+        },
+        {
+          "target": "le bloco",
+          "roman": "le bloco",
+          "english": "the log / block",
+          "ipa": "le blˈoko"
+        },
+        {
+          "target": "le sede",
+          "roman": "le sede",
+          "english": "the seat / chair",
+          "ipa": "le sˈede"
+        },
+        {
+          "target": "le persona",
+          "roman": "le persona",
+          "english": "the character",
+          "ipa": "le persˈona"
+        },
+        {
+          "target": "le contento",
+          "roman": "le contento",
+          "english": "the contents",
+          "ipa": "le kontˈento"
+        },
+        {
+          "target": "le decision",
+          "roman": "le decision",
+          "english": "the decision",
+          "ipa": "le dˌetsisjˈon"
+        },
+        {
+          "target": "Io vide le ambition.",
+          "roman": "io vide le ambition",
+          "english": "I see the ambition.",
+          "ipa": "ˈio vˈide le ˌambitjˈon"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Nomines 23 2",
+      "teach": [
+        {
+          "target": "le delicate",
+          "roman": "le delicate",
+          "english": "the delicate",
+          "ipa": "le dˌelikˈate"
+        },
+        {
+          "target": "le partita",
+          "roman": "le partita",
+          "english": "the departure",
+          "ipa": "le partˈita"
+        },
+        {
+          "target": "le inebriate",
+          "roman": "le inebriate",
+          "english": "the drunken",
+          "ipa": "le ˌinebrjˈate"
+        },
+        {
+          "target": "le ubique",
+          "roman": "le ubique",
+          "english": "the everywhere",
+          "ipa": "le ubˈikwe"
+        },
+        {
+          "target": "le excambio",
+          "roman": "le excambio",
+          "english": "the exchange",
+          "ipa": "le ekskˈambjo"
+        },
+        {
+          "target": "le mobiles",
+          "roman": "le mobiles",
+          "english": "the furniture",
+          "ipa": "le mˈobiles"
+        },
+        {
+          "target": "le joieles",
+          "roman": "le joieles",
+          "english": "the jewellery",
+          "ipa": "le ʒoɪˈeles"
+        },
+        {
+          "target": "le judicio",
+          "roman": "le judicio",
+          "english": "the judgement",
+          "ipa": "le ʒudˈitsjo"
+        },
+        {
+          "target": "Io vide le delicate.",
+          "roman": "io vide le delicate",
+          "english": "I see the delicate.",
+          "ipa": "ˈio vˈide le dˌelikˈate"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nomines 23 3",
+      "teach": [
+        {
+          "target": "le maritage",
+          "roman": "le maritage",
+          "english": "the marriage",
+          "ipa": "le mˌaritˈaʒe"
+        },
+        {
+          "target": "le interim",
+          "roman": "le interim",
+          "english": "the meanwhile",
+          "ipa": "le ˈinterim"
+        },
+        {
+          "target": "le in ultra",
+          "roman": "le in ultra",
+          "english": "the moreover",
+          "ipa": "le ˈin ˈultra"
+        },
+        {
+          "target": "le national",
+          "roman": "le national",
+          "english": "the national",
+          "ipa": "le nˌatjonˈal"
+        },
+        {
+          "target": "le molestia",
+          "roman": "le molestia",
+          "english": "the nuisance",
+          "ipa": "le molˈestja"
+        },
+        {
+          "target": "le pagamento",
+          "roman": "le pagamento",
+          "english": "the payment",
+          "ipa": "le pˌaɡamˈento"
+        },
+        {
+          "target": "le Portugal",
+          "roman": "le Portugal",
+          "english": "the portugal",
+          "ipa": "le pˌortuɡˈal"
+        },
+        {
+          "target": "le position",
+          "roman": "le position",
+          "english": "the position",
+          "ipa": "le pˌositjˈon"
+        },
+        {
+          "target": "Io vide le maritage.",
+          "roman": "io vide le maritage",
+          "english": "I see the marriage.",
+          "ipa": "ˈio vˈide le mˌaritˈaʒe"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "Nomines 23 4",
+      "teach": [
+        {
+          "target": "le practica",
+          "roman": "le practica",
+          "english": "the practice",
+          "ipa": "le prˈaktika"
+        },
+        {
+          "target": "le qualitate",
+          "roman": "le qualitate",
+          "english": "the quality",
+          "ipa": "le kwˌalitˈate"
+        },
+        {
+          "target": "le relation",
+          "roman": "le relation",
+          "english": "the relation",
+          "ipa": "le rˌelatjˈon"
+        },
+        {
+          "target": "le reparation",
+          "roman": "le reparation",
+          "english": "the repair",
+          "ipa": "le rˌeparatjˈon"
+        },
+        {
+          "target": "le salvamento",
+          "roman": "le salvamento",
+          "english": "the rescue",
+          "ipa": "le sˌalvamˈento"
+        },
+        {
+          "target": "le resister a",
+          "roman": "le resister a",
+          "english": "the resist",
+          "ipa": "le rˌesistˈer ˈa"
+        },
+        {
+          "target": "le retiro",
+          "roman": "le retiro",
+          "english": "the retirement",
+          "ipa": "le retˈiro"
+        },
+        {
+          "target": "le recompensa",
+          "roman": "le recompensa",
+          "english": "the reward",
+          "ipa": "le rˌekompˈensa"
+        },
+        {
+          "target": "Io vide le practica.",
+          "roman": "io vide le practica",
+          "english": "I see the practice.",
+          "ipa": "ˈio vˈide le prˈaktika"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Recognize and use 32 more nomines (B2-band vocabulary)"
+  ]
+}
