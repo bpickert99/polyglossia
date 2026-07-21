@@ -391,6 +391,9 @@ body {
 @media (prefers-color-scheme: dark) { .retry-chip { color: var(--gold); } }
 :root[data-theme="dark"] .retry-chip { color: var(--gold); }
 .leech-chip { background: color-mix(in srgb, var(--purple) 18%, transparent); color: var(--purple); }
+.composite-chip { background: color-mix(in srgb, var(--gold) 22%, transparent); color: #8a6300; margin-left: 6px; }
+@media (prefers-color-scheme: dark) { .composite-chip { color: var(--gold); } }
+:root[data-theme="dark"] .composite-chip { color: var(--gold); }
 
 .session-shape {
   text-align: center; color: var(--ink-soft); font-weight: 800; font-size: 0.78rem;

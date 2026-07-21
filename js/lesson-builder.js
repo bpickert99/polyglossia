@@ -14,6 +14,7 @@
 import { getItems, getAbility } from "./storage.js";
 import { predictP, newItemBudget, seedDifficulty } from "./birdbrain.js";
 import { generateExercise, matchExercise, shadowExercise, shuffled, hasWord } from "./exercises.js";
+import { buildCompositeSentence } from "./sentence-gen.js";
 import { reviewQueue, dueCount } from "./practice.js";
 import { strength, progress, isLeech } from "./srs.js";
 
@@ -179,6 +180,21 @@ export function buildLesson(course, unitData, size = 12) {
   // audio is available among this session's items.
   const shadow = shadowExercise(matchItems);
   if (shadow) interleaved.splice(Math.min(2, interleaved.length), 0, shadow);
+
+  // "Increasing complexity as you descend the tree": one extra composite
+  // sentence per session, chaining two already-known sentences with an
+  // already-taught connector (see sentence-gen.js). Naturally produces
+  // nothing until a connector unit has been reached, and gets richer as
+  // more connectors + sentences accumulate deeper in the course.
+  const composite = buildCompositeSentence(matchItems, distractorPool);
+  if (composite) {
+    const compositeEx = generateExercise(composite, distractorPool, 0.85);
+    if (compositeEx) {
+      const { key, ...rest } = compositeEx;
+      interleaved.splice(Math.min(4, interleaved.length), 0,
+        { ...rest, keys: composite.sourceKeys, composite: true });
+    }
+  }
 
   // Every grammar/culture note among the newly-introduced items — not just
   // the first. A session can genuinely introduce vocabulary from more than

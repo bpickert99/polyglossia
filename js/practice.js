@@ -8,6 +8,7 @@ import { getItems, getAbility } from "./storage.js";
 import { isDue, retrievability, accuracy, strength, isLeech } from "./srs.js";
 import { predictP, seedDifficulty } from "./birdbrain.js";
 import { generateExercise, matchExercise, shadowExercise, shuffled, hasWord } from "./exercises.js";
+import { buildCompositeSentence } from "./sentence-gen.js";
 
 // Items most worth reviewing right now, best-first.
 export function reviewQueue(lang, now = Date.now()) {
@@ -51,6 +52,19 @@ export function buildPracticeSession(lang, size = 12) {
   if (match) exercises.splice(Math.floor(exercises.length / 2), 0, match);
   const shadow = shadowExercise(picked);
   if (shadow) exercises.splice(Math.min(2, exercises.length), 0, shadow);
+
+  // See lesson-builder.js for the rationale — one extra composite sentence
+  // per session. Clauses come from this session's own picks (some chance of
+  // topical relevance); the connector can come from anywhere already taught.
+  const composite = buildCompositeSentence(picked, pool);
+  if (composite) {
+    const compositeEx = generateExercise(composite, pool, 0.85);
+    if (compositeEx) {
+      const { key, ...rest } = compositeEx;
+      exercises.splice(Math.min(4, exercises.length), 0,
+        { ...rest, keys: composite.sourceKeys, composite: true });
+    }
+  }
 
   return { id: `practice-${Date.now()}`, title: "Practice", teach: [], exercises };
 }
