@@ -13,13 +13,12 @@
     "engine": "piper",
     "voice": "ar",
     "rate": 0.85,
-    "note": "No eSpeak NG phonemizer reads Arabizi correctly, so live in-browser synthesis isn't accurate for this course — audio is meant to be pre-rendered only (Piper's Arabic voice, reading the real Arabic-script spelling behind each word, auto-diacritized by Piper's built-in tashkeel model — see each item's authoring-only \"arabic\" field and scripts/gen-audio.py). Until that generation step is run, Listen falls back to the browser's own system voice, which will likely mispronounce it.",
+    "note": "No eSpeak NG phonemizer reads Arabizi correctly, so live in-browser synthesis isn't accurate for this course — audio is pre-rendered only (Piper's Arabic voice, reading the real, hand-diacritized Arabic-script spelling behind each word — see each item's authoring-only \"arabic\" field and scripts/gen-audio.py). If an item ever lacks pre-rendered audio, Listen falls back to the browser's own system voice, which will likely mispronounce it.",
     "preferredLangs": [
       "ar"
     ],
     "substitutions": [],
     "piperVoice": "ar_JO-kareem-medium",
-    "phonemizer": "native",
     "speed": 1.0
   },
   "sections": [

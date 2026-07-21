@@ -11,7 +11,7 @@
         {
           "target": "Salam",
           "roman": "salam",
-          "arabic": "سلام",
+          "arabic": "سَلَام",
           "english": "hello / peace",
           "note": "Short for 'salamu alaykum' — works for anyone, any time of day.",
           "ipa": "salˌaːm",
@@ -20,7 +20,7 @@
         {
           "target": "Sbah lkhir",
           "roman": "sbah lkhir",
-          "arabic": "صباح الخير",
+          "arabic": "صْبَاح لْخِير",
           "english": "good morning",
           "ipa": "s̪ˈa.baːħˌu alχˈair",
           "audio": "audio/sbah-lkhir.wav"
@@ -28,7 +28,7 @@
         {
           "target": "Msa lkhir",
           "roman": "msa lkhir",
-          "arabic": "مسا الخير",
+          "arabic": "مْسَا لْخِير",
           "english": "good evening",
           "ipa": "mˈasaː alχˈair",
           "audio": "audio/msa-lkhir.wav"
@@ -36,7 +36,7 @@
         {
           "target": "Shukran",
           "roman": "shukran",
-          "arabic": "شكرا",
+          "arabic": "شُكْرًا",
           "english": "thank you",
           "ipa": "ʃˈakran",
           "audio": "audio/shukran.wav"
@@ -44,7 +44,7 @@
         {
           "target": "3afak",
           "roman": "3afak",
-          "arabic": "عفاك",
+          "arabic": "عَفَاكْ",
           "english": "please",
           "note": "The 3 stands for ع (ayn), a throat sound Latin script has no letter for — this Arabizi digit convention (2, 3, 7, 9...) is what Moroccans actually type.",
           "ipa": "ʕˈiffaːkˌa",
@@ -63,7 +63,7 @@
         {
           "target": "Ih",
           "roman": "ih",
-          "arabic": "إيه",
+          "arabic": "إِيه",
           "english": "yes",
           "note": "The everyday, casual yes — na3am exists too but sounds more formal.",
           "ipa": "ʔˈiːh",
@@ -72,7 +72,7 @@
         {
           "target": "La",
           "roman": "la",
-          "arabic": "لا",
+          "arabic": "لَا",
           "english": "no",
           "ipa": "lˈaː",
           "audio": "audio/la.wav"
@@ -80,7 +80,7 @@
         {
           "target": "Bslama",
           "roman": "bslama",
-          "arabic": "بسلامة",
+          "arabic": "بْسْلَامَا",
           "english": "goodbye",
           "ipa": "bisalˈaːmat",
           "audio": "audio/bslama.wav"
@@ -88,7 +88,7 @@
         {
           "target": "Smehli",
           "roman": "smehli",
-          "arabic": "سمحلي",
+          "arabic": "سْمَحْلِي",
           "english": "sorry / excuse me",
           "ipa": "samħˌaliː",
           "audio": "audio/smehli.wav"
@@ -96,7 +96,7 @@
         {
           "target": "Labas?",
           "roman": "labas",
-          "arabic": "لاباس",
+          "arabic": "لَابَاسْ",
           "english": "how are you? (lit. 'no harm?')",
           "note": "The standard how-are-you. Answer is usually the same word back: Labas, lhamdullah — 'fine, thank God'.",
           "ipa": "liˌaːbːaːs",
@@ -111,7 +111,7 @@
         {
           "target": "Smiti...",
           "roman": "smiti",
-          "arabic": "سميتي",
+          "arabic": "سْمِيتِي",
           "english": "my name is...",
           "ipa": "summˌiːatˌiː",
           "audio": "audio/smiti.wav"
@@ -119,7 +119,7 @@
         {
           "target": "Ash smitek?",
           "roman": "ash smitek",
-          "arabic": "أش سميتك",
+          "arabic": "آش سْمِيتَك",
           "english": "what's your name?",
           "ipa": "ʔˈaʃʃa simmˌiːatˌaka",
           "audio": "audio/ash-smitek.wav"
@@ -127,7 +127,7 @@
         {
           "target": "Mtsharfin",
           "roman": "mtsharfin",
-          "arabic": "متشرفين",
+          "arabic": "مْتْشَرْفِين",
           "english": "nice to meet you",
           "ipa": "mˌutaʃˈarrifˌiːn",
           "audio": "audio/mtsharfin.wav"
@@ -135,7 +135,7 @@
         {
           "target": "Wakha",
           "roman": "wakha",
-          "arabic": "واخا",
+          "arabic": "وَاخَا",
           "english": "okay",
           "ipa": "wˈaːχan",
           "audio": "audio/wakha.wav"

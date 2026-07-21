@@ -17,6 +17,18 @@ still getting Piper's natural neural voice. Same phonemes that get displayed
 as IPA in the app are the ones actually spoken — audio and IPA can't drift
 apart.
 
+For Arabic-script courses (e.g. Darija), the acoustic voice IS a real match
+for the phonemizer voice ("ar" both times) — no cross-language bridging
+needed — but items carry an authoring-only "arabic" field (real, HAND-
+DIACRITIZED Arabic-script spelling) that gets phonemized instead of the
+displayed target/roman (the Arabizi transliteration). Diacritics matter:
+undiacritized Arabic sent through espeak-ng's "ar" phonemizer, or through
+Piper's own bundled neural tashkeel auto-diacritizer, both tend to guess
+Modern Standard Arabic grammatical case endings that plain Darija words
+don't have (e.g. "3afak" → something like "ʕiffaːka" instead of "ʕafak").
+Full manual diacritics, verified locally against `espeak-ng --ipa -v ar`,
+avoid that — see data/ary/units/*.json for the pattern.
+
 Requires network access (downloads a Piper voice from Hugging Face on first
 run) — run this from GitHub Actions, not a network-restricted sandbox.
 
@@ -115,23 +127,13 @@ def main():
 
     print(f"Language: {args.lang} | eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name} | Speed: {speed}")
 
-    # "native" courses (currently: Arabic-script languages like Darija) skip
-    # the eSpeak phoneme-bridge trick entirely and let the Piper voice
-    # phonemize with its own bundled frontend instead — for Arabic that
-    # frontend includes a neural tashkeel (diacritization) pass ahead of
-    # espeak-ng's phonemizer, which does much better on undiacritized script
-    # than routing through a generic EspeakPhonemizer call would. The bridge
-    # trick exists specifically for languages with NO matching Piper voice
-    # (Interlingua, Luxembourgish); Arabic has a real one, so use it directly.
-    native = course.get("tts", {}).get("phonemizer") == "native"
-
     VOICE_CACHE.mkdir(parents=True, exist_ok=True)
     model_path = VOICE_CACHE / f"{piper_voice_name}.onnx"
     if not model_path.exists():
         print(f"Downloading Piper voice {piper_voice_name} ...")
         download_voice(piper_voice_name, VOICE_CACHE)
     voice_obj = PiperVoice.load(model_path)
-    phonemizer = None if native else EspeakPhonemizer()
+    phonemizer = EspeakPhonemizer()
     syn_config = SynthesisConfig(length_scale=1.0 / speed if speed else None)
 
     audio_dir = course_dir / "audio"
@@ -161,15 +163,12 @@ def main():
                 # every cached file, or a speed change would silently no-op.
                 key = f"{args.lang}:{speed}:{spoken_text}"
 
-                phoneme_lists = (
-                    voice_obj.phonemize(spoken_text) if native
-                    else phonemizer.phonemize(espeak_voice, spoken_text)
-                )
+                phoneme_lists = phonemizer.phonemize(espeak_voice, spoken_text)
                 phoneme_str = phonemes_to_str(phoneme_lists)
                 item["ipa"] = phoneme_str
                 # Filenames are always based on the displayed (Latin) form,
                 # never the Arabic-script spoken_text, so they stay readable
-                # ASCII on disk regardless of phonemizer mode.
+                # ASCII on disk regardless of the source text's script.
                 filename = f"{slug(item.get('roman') or target)}.wav"
                 rel_audio = f"audio/{filename}"
                 item["audio"] = rel_audio

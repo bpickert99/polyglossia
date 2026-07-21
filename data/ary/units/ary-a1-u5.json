@@ -11,7 +11,7 @@
         {
           "target": "atay",
           "roman": "atay",
-          "arabic": "أتاي",
+          "arabic": "أَتَاي",
           "english": "tea (mint tea)",
           "note": "Offered constantly and refusing three times is genuinely part of the ritual — 'atay' almost always means mint tea specifically.",
           "ipa": "ʔˈataːˌi",
@@ -20,7 +20,7 @@
         {
           "target": "qahwa",
           "roman": "qahwa",
-          "arabic": "قهوة",
+          "arabic": "قَهْوَا",
           "english": "coffee",
           "ipa": "qˈahwat",
           "audio": "audio/qahwa.wav"
@@ -28,7 +28,7 @@
         {
           "target": "khobz",
           "roman": "khobz",
-          "arabic": "خبز",
+          "arabic": "خُبْز",
           "english": "bread",
           "note": "Bread comes with nearly every meal and doubles as the eating utensil.",
           "ipa": "χˈabz",
@@ -37,7 +37,7 @@
         {
           "target": "ma",
           "roman": "ma",
-          "arabic": "ما",
+          "arabic": "مَا",
           "english": "water",
           "ipa": "mˈaː",
           "audio": "audio/ma.wav"
@@ -45,7 +45,7 @@
         {
           "target": "7lib",
           "roman": "7lib",
-          "arabic": "حليب",
+          "arabic": "حْلِيب",
           "english": "milk",
           "ipa": "ħˈaliːb",
           "audio": "audio/7lib.wav"
@@ -59,7 +59,7 @@
         {
           "target": "lham",
           "roman": "lham",
-          "arabic": "لحم",
+          "arabic": "لْحَم",
           "english": "meat",
           "ipa": "laħm",
           "audio": "audio/lham.wav"
@@ -67,7 +67,7 @@
         {
           "target": "hut",
           "roman": "hut",
-          "arabic": "حوت",
+          "arabic": "حُوت",
           "english": "fish",
           "ipa": "ħˈuːt",
           "audio": "audio/hut.wav"
@@ -75,7 +75,7 @@
         {
           "target": "khodra",
           "roman": "khodra",
-          "arabic": "خضرة",
+          "arabic": "خُضْرَا",
           "english": "vegetables",
           "ipa": "χadˤˈa.rat",
           "audio": "audio/khodra.wav"
@@ -83,7 +83,7 @@
         {
           "target": "fakia",
           "roman": "fakia",
-          "arabic": "فاكية",
+          "arabic": "فَاكِيَا",
           "english": "fruit",
           "ipa": "faːkˈiːat",
           "audio": "audio/fakia.wav"
@@ -91,7 +91,7 @@
         {
           "target": "3sel",
           "roman": "3sel",
-          "arabic": "عسل",
+          "arabic": "عْسَل",
           "english": "honey",
           "ipa": "ʕˈasal",
           "audio": "audio/3sel.wav"

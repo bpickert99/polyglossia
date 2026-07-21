@@ -11,7 +11,7 @@
         {
           "target": "7mer",
           "roman": "7mer",
-          "arabic": "حمر",
+          "arabic": "حْمَر",
           "english": "red",
           "ipa": "ħˈamr",
           "audio": "audio/7mer.wav"
@@ -19,7 +19,7 @@
         {
           "target": "khal",
           "roman": "khal",
-          "arabic": "خال",
+          "arabic": "خَال",
           "english": "black",
           "ipa": "χˈaːl",
           "audio": "audio/khal.wav"
@@ -27,7 +27,7 @@
         {
           "target": "byed",
           "roman": "byed",
-          "arabic": "بيض",
+          "arabic": "بْيَض",
           "english": "white",
           "ipa": "baˌidˤ",
           "audio": "audio/byed.wav"
@@ -35,7 +35,7 @@
         {
           "target": "khder",
           "roman": "khder",
-          "arabic": "خضر",
+          "arabic": "خْضَر",
           "english": "green",
           "ipa": "χˈadˤa.r",
           "audio": "audio/khder.wav"
@@ -43,7 +43,7 @@
         {
           "target": "zrq",
           "roman": "zrq",
-          "arabic": "زرق",
+          "arabic": "زْرَق",
           "english": "blue",
           "ipa": "zˈariq",
           "audio": "audio/zrq.wav"
@@ -57,7 +57,7 @@
         {
           "target": "sfer",
           "roman": "sfer",
-          "arabic": "صفر",
+          "arabic": "صْفَر",
           "english": "yellow",
           "ipa": "s̪ˈi.fr",
           "audio": "audio/sfer.wav"
@@ -65,7 +65,7 @@
         {
           "target": "werdi",
           "roman": "werdi",
-          "arabic": "وردي",
+          "arabic": "وَرْدِي",
           "english": "pink",
           "note": "From werda — 'rose flower'.",
           "ipa": "wˈaradˌiː",
@@ -74,7 +74,7 @@
         {
           "target": "brtqali",
           "roman": "brtqali",
-          "arabic": "برتقالي",
+          "arabic": "بْرْتْقَالِي",
           "english": "orange",
           "note": "From brtqal — the fruit itself, 'orange'.",
           "ipa": "burtˌuqaːlˌiː",

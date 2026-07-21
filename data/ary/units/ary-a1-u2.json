@@ -11,7 +11,7 @@
         {
           "target": "wahed",
           "roman": "wahed",
-          "arabic": "واحد",
+          "arabic": "وَاحِد",
           "english": "one",
           "ipa": "wˈaːħid",
           "audio": "audio/wahed.wav"
@@ -19,7 +19,7 @@
         {
           "target": "jouj",
           "roman": "jouj",
-          "arabic": "جوج",
+          "arabic": "جُوج",
           "english": "two",
           "note": "Not from Arabic 'ithnan' at all — jouj is a Darija-specific word.",
           "ipa": "dʒˈaudʒ",
@@ -28,7 +28,7 @@
         {
           "target": "tlata",
           "roman": "tlata",
-          "arabic": "تلاتة",
+          "arabic": "تْلَاتَا",
           "english": "three",
           "ipa": "talˈaːtat",
           "audio": "audio/tlata.wav"
@@ -36,7 +36,7 @@
         {
           "target": "rb3a",
           "roman": "rb3a",
-          "arabic": "ربعة",
+          "arabic": "رْبْعَا",
           "english": "four",
           "ipa": "rabˈaʕat",
           "audio": "audio/rb3a.wav"
@@ -44,7 +44,7 @@
         {
           "target": "khamsa",
           "roman": "khamsa",
-          "arabic": "خمسة",
+          "arabic": "خَمْسَا",
           "english": "five",
           "ipa": "χˈamsat",
           "audio": "audio/khamsa.wav"
@@ -62,7 +62,7 @@
         {
           "target": "stta",
           "roman": "stta",
-          "arabic": "ستة",
+          "arabic": "سْتْتَا",
           "english": "six",
           "ipa": "sitːˌat",
           "audio": "audio/stta.wav"
@@ -70,7 +70,7 @@
         {
           "target": "sb3a",
           "roman": "sb3a",
-          "arabic": "سبعة",
+          "arabic": "سْبْعَا",
           "english": "seven",
           "ipa": "sabʕˌat",
           "audio": "audio/sb3a.wav"
@@ -78,7 +78,7 @@
         {
           "target": "tmnya",
           "roman": "tmnya",
-          "arabic": "تمنية",
+          "arabic": "تْمْنِيَا",
           "english": "eight",
           "ipa": "timnˈiːat",
           "audio": "audio/tmnya.wav"
@@ -86,7 +86,7 @@
         {
           "target": "tsa3a",
           "roman": "tsa3a",
-          "arabic": "تسعة",
+          "arabic": "تْسْعَا",
           "english": "nine",
           "ipa": "tˈisʕat",
           "audio": "audio/tsa3a.wav"
@@ -94,7 +94,7 @@
         {
           "target": "3achra",
           "roman": "3achra",
-          "arabic": "عشرة",
+          "arabic": "عَشْرَا",
           "english": "ten",
           "ipa": "ʕaʃˈarat",
           "audio": "audio/3achra.wav"
