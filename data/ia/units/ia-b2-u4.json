@@ -1,0 +1,67 @@
+{
+  "id": "ia-b2-u4",
+  "title": "Natura",
+  "level": "B2",
+  "summary": "Mountains, rivers, and the natural world.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Montanias e fluvios",
+      "teach": [
+        {
+          "target": "le montania",
+          "roman": "le montania",
+          "english": "the mountain"
+        },
+        {
+          "target": "le fluvio",
+          "roman": "le fluvio",
+          "english": "the river"
+        },
+        {
+          "target": "le mar",
+          "roman": "le mar",
+          "english": "the sea"
+        },
+        {
+          "target": "le foreste",
+          "roman": "le foreste",
+          "english": "the forest"
+        },
+        {
+          "target": "Nos ha ascendite le montania e vidite le mar.",
+          "roman": "nos ha ascendite le montania e vidite le mar",
+          "english": "We climbed the mountain and saw the sea.",
+          "note": "ascender = to climb/ascend."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Le natura circa nos",
+      "teach": [
+        {
+          "target": "le arbore",
+          "roman": "le arbore",
+          "english": "the tree"
+        },
+        {
+          "target": "le flor",
+          "roman": "le flor",
+          "english": "the flower"
+        },
+        {
+          "target": "le insula",
+          "roman": "le insula",
+          "english": "the island"
+        },
+        {
+          "target": "Le insula ha multe arbores e flores belle.",
+          "roman": "le insula ha multe arbores e flores belle",
+          "english": "The island has many trees and beautiful flowers.",
+          "note": "multe = many; belle = beautiful."
+        }
+      ]
+    }
+  ]
+}

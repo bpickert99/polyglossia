@@ -1,0 +1,88 @@
+{
+  "id": "ia-b2-u5",
+  "title": "Prepositiones",
+  "level": "B2",
+  "summary": "In, on, under, between — locating things precisely.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "In, sur, sub",
+      "teach": [
+        {
+          "target": "sur",
+          "roman": "sur",
+          "english": "on, on top of"
+        },
+        {
+          "target": "sub",
+          "roman": "sub",
+          "english": "under"
+        },
+        {
+          "target": "inter",
+          "roman": "inter",
+          "english": "between, among"
+        },
+        {
+          "target": "Le catto es sub le tabula.",
+          "roman": "le catto es sub le tabula",
+          "english": "The cat is under the table.",
+          "note": "tabula = table."
+        },
+        {
+          "target": "Le libro es sur le tabula, inter le lampa e le taza.",
+          "roman": "le libro es sur le tabula inter le lampa e le taza",
+          "english": "The book is on the table, between the lamp and the cup.",
+          "note": "lampa = lamp; taza = cup."
+        }
+      ],
+      "grammar": {
+        "title": "Locating things precisely",
+        "body": "**sur** = on/on top of, **sub** = under, **inter** = between/among, **ante** = in front of/before, **detra** = behind, **presso** = near.\nThese combine cleanly with **al** (a + le) and **del** (de + le): **le can es presso del porta** (the dog is near the door)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Ante e detra",
+      "teach": [
+        {
+          "target": "ante",
+          "roman": "ante",
+          "english": "in front of, before"
+        },
+        {
+          "target": "detra",
+          "roman": "detra",
+          "english": "behind"
+        },
+        {
+          "target": "presso",
+          "roman": "presso",
+          "english": "near"
+        },
+        {
+          "target": "Le schola es ante le parco e detra le urbe vetule.",
+          "roman": "le schola es ante le parco e detra le urbe vetule",
+          "english": "The school is in front of the park and behind the old city."
+        }
+      ]
+    }
+  ],
+  "reading": {
+    "title": "Un die in le montania",
+    "passage": [
+      "Anna e Marco ha vadite al montania con lor amico.",
+      "Illes ha ascendite le montania e ha vidite un fluvio inter le arbores.",
+      "Le sol esseva calide, ma un vento frigide veniva del mar.",
+      "Sur un petra presso del fluvio, illes ha comenciate a mangiar.",
+      "\"Esserea agradabile vader ci cata septimana,\" ha dicite Anna.",
+      "Marco ha respondite: \"Si, ma le proxime vice, io vole trovar le mar!\""
+    ],
+    "questions": [
+      { "prompt": "Where did Anna and Marco go?", "choices": ["To the mountain", "To the sea", "To school", "To the city"], "answer": 0 },
+      { "prompt": "What did they see between the trees?", "choices": ["A river", "A lake", "A house", "A forest"], "answer": 0 },
+      { "prompt": "Where did they start eating?", "choices": ["On a rock near the river", "In a restaurant", "At school", "On the mountain top"], "answer": 0 },
+      { "prompt": "What does Marco want to find next time?", "choices": ["The sea", "A new mountain", "A river", "A forest"], "answer": 0 }
+    ]
+  }
+}

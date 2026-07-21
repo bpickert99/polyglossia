@@ -1,0 +1,76 @@
+{
+  "id": "ia-b1-u6",
+  "title": "Tempore e calendario",
+  "level": "B1",
+  "summary": "Days, months, and telling time.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le dies del septimana",
+      "teach": [
+        {
+          "target": "lunedi",
+          "roman": "lunedi",
+          "english": "Monday"
+        },
+        {
+          "target": "mercuridi",
+          "roman": "mercuridi",
+          "english": "Wednesday"
+        },
+        {
+          "target": "venerdi",
+          "roman": "venerdi",
+          "english": "Friday"
+        },
+        {
+          "target": "le septimana",
+          "roman": "le septimana",
+          "english": "the week"
+        },
+        {
+          "target": "Le lection es lunedi.",
+          "roman": "le lection es lunedi",
+          "english": "The lesson is on Monday.",
+          "note": "lection = lesson."
+        }
+      ],
+      "grammar": {
+        "title": "Days of the week",
+        "body": "All seven days end in **-di** (from *die*, day): lunedi, martedi, mercuridi, jovedi, venerdi, sabbato, dominica.\nNo preposition is needed for \"on\" a day — **le lection es lunedi** already means \"the lesson is on Monday.\""
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Le horas",
+      "teach": [
+        {
+          "target": "Que hora es il?",
+          "roman": "que hora es il",
+          "english": "What time is it?",
+          "note": "Literally 'what hour is it' — il here is a dummy subject, like English weather 'it'."
+        },
+        {
+          "target": "Il es tres horas.",
+          "roman": "il es tres horas",
+          "english": "It's three o'clock."
+        },
+        {
+          "target": "le minuta",
+          "roman": "le minuta",
+          "english": "the minute"
+        },
+        {
+          "target": "matino",
+          "roman": "matino",
+          "english": "morning"
+        },
+        {
+          "target": "vespere",
+          "roman": "vespere",
+          "english": "evening"
+        }
+      ]
+    }
+  ]
+}

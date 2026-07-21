@@ -1,0 +1,70 @@
+{
+  "id": "ia-b2-u1",
+  "title": "Le conditional",
+  "level": "B2",
+  "summary": "Say what would happen: the conditional tense.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "-erea",
+      "teach": [
+        {
+          "target": "parlarea",
+          "roman": "parlarea",
+          "english": "would speak",
+          "note": "Add -rea to the infinitive: parlar → parlarea."
+        },
+        {
+          "target": "haberea",
+          "roman": "haberea",
+          "english": "would have",
+          "note": "haber is the full infinitive of 'to have' (ha is the present tense)."
+        },
+        {
+          "target": "Si io haberea tempore, io parlarea plus interlingua.",
+          "roman": "si io haberea tempore io parlarea plus interlingua",
+          "english": "If I had time, I would speak more Interlingua.",
+          "note": "tempore = time."
+        },
+        {
+          "target": "Esserea agradabile vider te.",
+          "roman": "esserea agradabile vider te",
+          "english": "It would be nice to see you.",
+          "note": "esserea = would be (from esser); agradabile = pleasant/nice."
+        }
+      ],
+      "grammar": {
+        "title": "The conditional tense",
+        "body": "Add **-rea** to the infinitive for \"would\": parlar → **parlarea** (would speak), vader → **vaderea** (would go), esser → **esserea** (would be).\nOne form for every person, like every other Interlingua tense: io parlarea, tu parlarea, nos parlarea."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Condiciones",
+      "teach": [
+        {
+          "target": "vaderea",
+          "roman": "vaderea",
+          "english": "would go"
+        },
+        {
+          "target": "poterea",
+          "roman": "poterea",
+          "english": "could, would be able to"
+        },
+        {
+          "target": "Si io haberea plus moneta, io vaderea al Europa.",
+          "roman": "si io haberea plus moneta io vaderea al europa",
+          "english": "If I had more money, I would go to Europe.",
+          "note": "moneta = money."
+        },
+        {
+          "target": "Tu poterea apprender interlingua in poc menses.",
+          "roman": "tu poterea apprender interlingua in poc menses",
+          "english": "You could learn Interlingua in a few months.",
+          "note": "poc = few; mense = month."
+        }
+      ]
+    }
+  ]
+}

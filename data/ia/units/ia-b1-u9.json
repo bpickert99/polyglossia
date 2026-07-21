@@ -1,0 +1,71 @@
+{
+  "id": "ia-b1-u9",
+  "title": "Plus adjectivos",
+  "level": "B1",
+  "summary": "Describe things more precisely: new, old, easy, difficult.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Nove e vetule",
+      "teach": [
+        {
+          "target": "nove",
+          "roman": "nove",
+          "english": "new"
+        },
+        {
+          "target": "vetule",
+          "roman": "vetule",
+          "english": "old"
+        },
+        {
+          "target": "longe",
+          "roman": "longe",
+          "english": "long"
+        },
+        {
+          "target": "curte",
+          "roman": "curte",
+          "english": "short"
+        },
+        {
+          "target": "Mi can es vetule ma mi catto es nove.",
+          "roman": "mi can es vetule ma mi catto es nove",
+          "english": "My dog is old but my cat is new."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Facile e difficile",
+      "teach": [
+        {
+          "target": "facile",
+          "roman": "facile",
+          "english": "easy"
+        },
+        {
+          "target": "difficile",
+          "roman": "difficile",
+          "english": "difficult"
+        },
+        {
+          "target": "importante",
+          "roman": "importante",
+          "english": "important"
+        },
+        {
+          "target": "interessante",
+          "roman": "interessante",
+          "english": "interesting"
+        },
+        {
+          "target": "Interlingua es facile ma le grammatica anglese es difficile.",
+          "roman": "interlingua es facile ma le grammatica anglese es difficile",
+          "english": "Interlingua is easy but English grammar is difficult.",
+          "note": "grammatica = grammar; anglese = English."
+        }
+      ]
+    }
+  ]
+}

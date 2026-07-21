@@ -1,0 +1,72 @@
+{
+  "id": "ia-b1-u8",
+  "title": "Plus verbos",
+  "level": "B1",
+  "summary": "Common everyday verbs: start, finish, find, look for.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Comenciar e finir",
+      "teach": [
+        {
+          "target": "comenciar",
+          "roman": "comenciar",
+          "english": "to start, to begin"
+        },
+        {
+          "target": "finir",
+          "roman": "finir",
+          "english": "to finish"
+        },
+        {
+          "target": "continuar",
+          "roman": "continuar",
+          "english": "to continue"
+        },
+        {
+          "target": "Le lection comencia a novem horas.",
+          "roman": "le lection comencia a novem horas",
+          "english": "The lesson starts at nine o'clock."
+        },
+        {
+          "target": "Nos ha finite le labor.",
+          "roman": "nos ha finite le labor",
+          "english": "We have finished the work.",
+          "note": "finite = finished (past participle of finir)."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Trovar e perder",
+      "teach": [
+        {
+          "target": "trovar",
+          "roman": "trovar",
+          "english": "to find"
+        },
+        {
+          "target": "perder",
+          "roman": "perder",
+          "english": "to lose"
+        },
+        {
+          "target": "cercar",
+          "roman": "cercar",
+          "english": "to look for, to search"
+        },
+        {
+          "target": "Io cerca mi claves ma io non pote los trovar.",
+          "roman": "io cerca mi claves ma io non pote los trovar",
+          "english": "I'm looking for my keys but I can't find them.",
+          "note": "clave = key; los = them (object form of illos)."
+        },
+        {
+          "target": "Illa ha perdite su telephono.",
+          "roman": "illa ha perdite su telephono",
+          "english": "She has lost her phone."
+        }
+      ]
+    }
+  ]
+}

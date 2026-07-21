@@ -1,0 +1,76 @@
+{
+  "id": "ia-b1-u7",
+  "title": "Le tempore atmospheric",
+  "level": "B1",
+  "summary": "Talk about the weather and seasons.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Sol, pluvia, vento",
+      "teach": [
+        {
+          "target": "le sol",
+          "roman": "le sol",
+          "english": "the sun"
+        },
+        {
+          "target": "le pluvia",
+          "roman": "le pluvia",
+          "english": "the rain"
+        },
+        {
+          "target": "le vento",
+          "roman": "le vento",
+          "english": "the wind"
+        },
+        {
+          "target": "le nive",
+          "roman": "le nive",
+          "english": "the snow"
+        },
+        {
+          "target": "Hodie il pluve multo.",
+          "roman": "hodie il pluve multo",
+          "english": "Today it's raining a lot.",
+          "note": "pluver = to rain, an impersonal verb like English 'it rains'."
+        }
+      ],
+      "grammar": {
+        "title": "Weather verbs",
+        "body": "Weather uses the dummy subject **il**, like English \"it\": **il pluve** (it rains), **il nive** (it snows), **il face frigide** (it's cold — literally 'it makes cold').\nCommon weather adjectives: **calide** (hot), **frigide** (cold), **nubilose** (cloudy)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Le stationes",
+      "teach": [
+        {
+          "target": "le hiberno",
+          "roman": "le hiberno",
+          "english": "the winter"
+        },
+        {
+          "target": "le estate",
+          "roman": "le estate",
+          "english": "the summer"
+        },
+        {
+          "target": "calide",
+          "roman": "calide",
+          "english": "hot"
+        },
+        {
+          "target": "frigide",
+          "roman": "frigide",
+          "english": "cold"
+        },
+        {
+          "target": "In le estate il face calide, in le hiberno il face frigide.",
+          "roman": "in le estate il face calide in le hiberno il face frigide",
+          "english": "In summer it's hot, in winter it's cold.",
+          "note": "facer = to make/do; here used impersonally for weather."
+        }
+      ]
+    }
+  ]
+}

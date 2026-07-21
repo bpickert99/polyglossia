@@ -1,0 +1,72 @@
+{
+  "id": "ia-b2-u3",
+  "title": "Professiones",
+  "level": "B2",
+  "summary": "Jobs and workplaces.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le laboro de mi familia",
+      "teach": [
+        {
+          "target": "le medico",
+          "roman": "le medico",
+          "english": "the doctor"
+        },
+        {
+          "target": "le professor",
+          "roman": "le professor",
+          "english": "the teacher, the professor"
+        },
+        {
+          "target": "le studente",
+          "roman": "le studente",
+          "english": "the student"
+        },
+        {
+          "target": "le cocinero",
+          "roman": "le cocinero",
+          "english": "the cook"
+        },
+        {
+          "target": "Mi matre es medico e mi patre es professor.",
+          "roman": "mi matre es medico e mi patre es professor",
+          "english": "My mother is a doctor and my father is a teacher.",
+          "note": "No article before a profession after 'esser', like French/Spanish/Italian."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Ubi tu labora?",
+      "teach": [
+        {
+          "target": "le artista",
+          "roman": "le artista",
+          "english": "the artist"
+        },
+        {
+          "target": "le ingeniero",
+          "roman": "le ingeniero",
+          "english": "the engineer"
+        },
+        {
+          "target": "le officio",
+          "roman": "le officio",
+          "english": "the office"
+        },
+        {
+          "target": "Ubi tu labora?",
+          "roman": "ubi tu labora",
+          "english": "Where do you work?"
+        },
+        {
+          "target": "Io labora in un officio in le centro del urbe.",
+          "roman": "io labora in un officio in le centro del urbe",
+          "english": "I work in an office in the city center.",
+          "note": "centro = center; del = de + le (of the)."
+        }
+      ]
+    }
+  ]
+}

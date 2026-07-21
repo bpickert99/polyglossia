@@ -125,15 +125,75 @@
           "title": "Le imperativo",
           "icon": "📣",
           "file": "units/ia-b1-u4.json"
+        },
+        {
+          "id": "ia-b1-u5",
+          "title": "Numeros 11–100",
+          "icon": "💯",
+          "file": "units/ia-b1-u5.json"
+        },
+        {
+          "id": "ia-b1-u6",
+          "title": "Tempore e calendario",
+          "icon": "📅",
+          "file": "units/ia-b1-u6.json"
+        },
+        {
+          "id": "ia-b1-u7",
+          "title": "Le tempore atmospheric",
+          "icon": "🌦️",
+          "file": "units/ia-b1-u7.json"
+        },
+        {
+          "id": "ia-b1-u8",
+          "title": "Plus verbos",
+          "icon": "🏁",
+          "file": "units/ia-b1-u8.json"
+        },
+        {
+          "id": "ia-b1-u9",
+          "title": "Plus adjectivos",
+          "icon": "🆕",
+          "file": "units/ia-b1-u9.json"
         }
       ]
     },
     {
       "level": "B2",
       "title": "Upper Intermediate",
-      "description": "",
-      "locked": true,
-      "units": []
+      "description": "Conditional, passive voice, and richer vocabulary",
+      "units": [
+        {
+          "id": "ia-b2-u1",
+          "title": "Le conditional",
+          "icon": "🔮",
+          "file": "units/ia-b2-u1.json"
+        },
+        {
+          "id": "ia-b2-u2",
+          "title": "Le passivo",
+          "icon": "🔄",
+          "file": "units/ia-b2-u2.json"
+        },
+        {
+          "id": "ia-b2-u3",
+          "title": "Professiones",
+          "icon": "💼",
+          "file": "units/ia-b2-u3.json"
+        },
+        {
+          "id": "ia-b2-u4",
+          "title": "Natura",
+          "icon": "🏔️",
+          "file": "units/ia-b2-u4.json"
+        },
+        {
+          "id": "ia-b2-u5",
+          "title": "Prepositiones",
+          "icon": "📍",
+          "file": "units/ia-b2-u5.json"
+        }
+      ]
     },
     {
       "level": "C1",

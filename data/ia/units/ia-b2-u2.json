@@ -1,0 +1,63 @@
+{
+  "id": "ia-b2-u2",
+  "title": "Le passivo",
+  "level": "B2",
+  "summary": "The passive voice: esser + past participle.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Esser + participio",
+      "teach": [
+        {
+          "target": "Le libro es scribite per illa.",
+          "roman": "le libro es scribite per illa",
+          "english": "The book is written by her.",
+          "note": "per = by, in the passive."
+        },
+        {
+          "target": "Le porta es aperite.",
+          "roman": "le porta es aperite",
+          "english": "The door is open(ed).",
+          "note": "porta = door; aperir = to open, aperite = opened."
+        },
+        {
+          "target": "scribite",
+          "roman": "scribite",
+          "english": "written"
+        },
+        {
+          "target": "aperite",
+          "roman": "aperite",
+          "english": "opened"
+        }
+      ],
+      "grammar": {
+        "title": "The passive voice",
+        "body": "The passive uses **esser** (to be, in any tense) plus the past participle — exactly like English:\n**Le libro es scribite.** (The book is written.)\n**Le libro esseva scribite in 1950.** (The book was written in 1950.)\nUse **per** for the agent (\"by\"): **scribite per illa** (written by her)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Passato passive",
+      "teach": [
+        {
+          "target": "clause",
+          "roman": "clause",
+          "english": "closed",
+          "note": "from clauder, to close."
+        },
+        {
+          "target": "Le schola esseva clause heri.",
+          "roman": "le schola esseva clause heri",
+          "english": "The school was closed yesterday."
+        },
+        {
+          "target": "Iste pan es facite in nostre urbe.",
+          "roman": "iste pan es facite in nostre urbe",
+          "english": "This bread is made in our city.",
+          "note": "facite = made/done (from facer)."
+        }
+      ]
+    }
+  ]
+}
