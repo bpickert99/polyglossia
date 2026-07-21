@@ -65,7 +65,7 @@ export function distractorHardness(pCorrect) {
 
 // How many brand-new items to introduce this session. Duolingo throttles new
 // material when the learner is struggling or has a big review backlog; so do we.
-export function newItemBudget({ ability, dueCount, baseNew = 4 }) {
+export function newItemBudget({ ability, dueCount, baseNew = 5 }) {
   let budget = baseNew;
   if (dueCount > 12) budget -= 2;        // clear the backlog first
   else if (dueCount > 6) budget -= 1;

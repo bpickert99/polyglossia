@@ -61,7 +61,11 @@ async function computeLocked(course) {
 function unitStats(course, data) {
   const pool = poolFromUnit(data);
   const records = new Map(getItems(course.code).map((i) => [i.key, i]));
-  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.85; }).length;
+  // 0.6 = "solidly learned" (reachable within a session or two of practice),
+  // not FSRS's stricter long-term-retention bar (0.85+ needs several *spaced*
+  // successful reviews over real time) — this is a same-session progress
+  // indicator, not the scheduler itself.
+  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.6; }).length;
   const started = pool.filter((i) => records.get(i.key)?.reps).length;
   return { pool, mastered, started };
 }

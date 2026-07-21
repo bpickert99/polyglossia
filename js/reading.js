@@ -48,6 +48,22 @@ export function renderReadingSession(app, course, unitId, reading, onStatsChange
     app.querySelector("#continue").addEventListener("click", () => { qIndex = 0; showQuestion(); });
   }
 
+  function feedback(good, message, onNext) {
+    const el = document.createElement("div");
+    el.className = `feedback ${good ? "good" : "bad"}`;
+    el.innerHTML = `
+      <div class="fb-inner">
+        <h3>${good ? "Nicely done!" : "Not quite."}</h3>
+        <p>${esc(message || "")}</p>
+        <button class="btn wide ${good ? "" : "red"}" id="fb-next">Continue</button>
+      </div>`;
+    document.body.appendChild(el);
+    el.querySelector("#fb-next").addEventListener("click", () => {
+      el.remove();
+      onNext();
+    });
+  }
+
   function showQuestion() {
     const questions = reading.questions || [];
     if (qIndex >= questions.length) return finish();
@@ -66,7 +82,7 @@ export function renderReadingSession(app, course, unitId, reading, onStatsChange
       b.classList.add(good ? "correct" : "wrong");
       app.querySelectorAll(".choice").forEach((x) => (x.disabled = true));
       if (good) correct++;
-      setTimeout(() => { qIndex++; showQuestion(); }, 700);
+      feedback(good, good ? "" : `Correct answer: ${q.choices[q.answer]}`, () => { qIndex++; showQuestion(); });
     }));
   }
 

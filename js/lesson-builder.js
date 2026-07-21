@@ -65,7 +65,7 @@ export function unitMastery(lang, unitData) {
 // its mastery clears this bar. Also used to gate the reading-comprehension
 // passage — reading is worth attempting a bit earlier, once you'd actually
 // recognize most of the words on the page.
-export const UNIT_UNLOCK_THRESHOLD = 0.6;
+export const UNIT_UNLOCK_THRESHOLD = 0.4;
 export const READING_UNLOCK_THRESHOLD = 0.4;
 
 export function isUnitDone(lang, unitData) {
