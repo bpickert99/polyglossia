@@ -161,6 +161,14 @@ body {
 .unit-node:active .unit-bubble { transform: translateY(4px); box-shadow: 0 2px 0 var(--green-shadow); }
 .unit-bubble.done { background: var(--gold); box-shadow: 0 6px 0 #d9a800; }
 .unit-bubble.locked { background: var(--locked); box-shadow: 0 6px 0 color-mix(in srgb, var(--locked) 70%, black); filter: grayscale(0.4); }
+.reading-node { margin: 4px 0; }
+.reading-bubble {
+  width: 52px; height: 52px; font-size: 1.3rem;
+  background: var(--purple); box-shadow: 0 4px 0 #9a4fdc;
+}
+.reading-bubble.done { background: var(--gold); box-shadow: 0 4px 0 #d9a800; }
+.reading-bubble.locked { background: var(--locked); box-shadow: 0 4px 0 color-mix(in srgb, var(--locked) 70%, black); filter: grayscale(0.4); }
+.reading-node .unit-label { font-size: 0.76rem; margin-top: 8px; }
 .unit-ring { position: absolute; inset: -8px; }
 .unit-ring circle { fill: none; stroke-width: 6; }
 .unit-ring .track { stroke: var(--line); }

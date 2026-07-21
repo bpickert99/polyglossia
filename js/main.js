@@ -74,11 +74,9 @@ function unitStats(course, data) {
 function unitBoxHtml(course, section, data, unitId) {
   const { pool, mastered, started } = unitStats(course, data);
   const label = started === 0 ? "START" : "CONTINUE";
-  const hasReading = !!data.reading;
-  const readingReady = hasReading && readingUnlocked(course.code, data);
-  const readingDone = hasReading && isReadingComplete(course.code, unitId);
-  // Writing doesn't need authored content (unlike reading), so it's gated by
-  // the same mastery bar but available for every unit.
+  // Reading is its own path bubble now (see viewCourseMap) rather than a
+  // popup action — a distinct lesson-type bubble, not a sub-feature of the
+  // vocab unit. Writing has no authored content to break out, so it stays here.
   const writingReady = readingUnlocked(course.code, data);
   const writingDone = isWritingComplete(course.code, unitId);
   return `
@@ -88,9 +86,6 @@ function unitBoxHtml(course, section, data, unitId) {
     </div>
     <div class="popup-actions">
       <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
-      ${!hasReading ? "" : readingReady
-        ? `<a class="popup-icon-btn" href="#/reading/${esc(unitId)}" title="${readingDone ? "Read again" : "Reading practice"}">📖</a>`
-        : `<span class="popup-icon-btn disabled" title="Learn a few more words first">📖</span>`}
       ${writingReady
         ? `<a class="popup-icon-btn" href="#/writing/${esc(unitId)}" title="${writingDone ? "Write again" : "Writing practice"}">📝</a>`
         : `<span class="popup-icon-btn disabled" title="Learn a few more words first">📝</span>`}
@@ -208,7 +203,7 @@ async function viewCourseMap() {
       const circumference = 2 * Math.PI * 43;
       html += `
         <button type="button" class="unit-node ${isLocked ? "locked" : ""}" data-unit="${esc(u.id)}" ${isLocked ? "disabled" : ""}>
-          <span class="unit-bubble ${done ? "done" : ""}">
+          <span class="unit-bubble ${done ? "done" : ""} ${isLocked ? "locked" : ""}">
             ${isLocked ? "🔒" : esc(u.icon || "⭐")}
             <svg class="unit-ring" viewBox="0 0 94 94">
               <circle class="track" cx="47" cy="47" r="43"></circle>
@@ -219,18 +214,36 @@ async function viewCourseMap() {
           </span>
           <span class="unit-label">${esc(u.title)}${isLocked ? ' <small class="lock-hint">finish the previous unit</small>' : ""}</span>
         </button>`;
+
+      // Reading is its own lesson-type bubble, right after the unit it
+      // belongs to — not tucked inside the vocab unit's popup.
+      if (data?.reading) {
+        const readingLocked = isLocked || !readingUnlocked(course.code, data);
+        const readingDone = isReadingComplete(course.code, u.id);
+        html += `
+          <button type="button" class="unit-node reading-node ${readingLocked ? "locked" : ""}"
+                  data-reading="${esc(u.id)}" ${readingLocked ? "disabled" : ""}>
+            <span class="unit-bubble reading-bubble ${readingDone ? "done" : ""} ${readingLocked ? "locked" : ""}">
+              ${readingLocked ? "🔒" : "📖"}
+            </span>
+            <span class="unit-label">Reading${readingLocked && !isLocked ? ' <small class="lock-hint">learn a few more words</small>' : ""}</span>
+          </button>`;
+      }
     }
     html += `</div>`;
   }
   app.innerHTML = html;
 
-  app.querySelectorAll(".unit-node:not(.locked)").forEach((btn) => {
+  app.querySelectorAll(".unit-node:not(.reading-node):not(.locked)").forEach((btn) => {
     btn.addEventListener("click", () => {
       const unitId = btn.dataset.unit;
       const found = findUnit(course, unitId);
       const data = unitsData.get(unitId);
       if (found && data) openUnitPopup(btn, course, found.section, data, unitId);
     });
+  });
+  app.querySelectorAll(".reading-node:not(.locked)").forEach((btn) => {
+    btn.addEventListener("click", () => { location.hash = `#/reading/${btn.dataset.reading}`; });
   });
 }
 
