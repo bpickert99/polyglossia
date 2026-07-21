@@ -1,0 +1,109 @@
+{
+  "code": "ary",
+  "name": "Moroccan Arabic",
+  "nativeName": "الدارجة (Darija)",
+  "direction": "ltr",
+  "description": "Darija is the Arabic spoken every day across Morocco — distinct enough from Modern Standard Arabic that MSA speakers often can't follow it unaided. This course teaches it the way it's actually written day to day: in Arabizi, the Latin-plus-numerals chat alphabet Moroccans use to text, post, and message.",
+  "script": {
+    "name": "Arabizi (Latin chat alphabet)",
+    "nonLatin": false,
+    "note": "Darija is normally written in Arabic script, but everyday texting in Morocco overwhelmingly uses Arabizi: Latin letters plus a handful of digits standing in for sounds Latin script doesn't have — 3 for ع, 7 for ح, 9 for ق, and so on. This course teaches that form, since it's what you'll actually read and type."
+  },
+  "tts": {
+    "engine": "piper",
+    "voice": "ar",
+    "rate": 0.85,
+    "note": "No eSpeak NG phonemizer reads Arabizi correctly, so live in-browser synthesis isn't accurate for this course — audio is meant to be pre-rendered only (Piper's Arabic voice, reading the real Arabic-script spelling behind each word, auto-diacritized by Piper's built-in tashkeel model — see each item's authoring-only \"arabic\" field and scripts/gen-audio.py). Until that generation step is run, Listen falls back to the browser's own system voice, which will likely mispronounce it.",
+    "preferredLangs": ["ar"],
+    "substitutions": [],
+    "piperVoice": "ar_JO-kareem-medium",
+    "phonemizer": "native",
+    "speed": 1.0
+  },
+  "sections": [
+    {
+      "level": "A1",
+      "title": "Beginner",
+      "description": "Greetings, numbers, questions, and first everyday vocabulary",
+      "units": [
+        {
+          "id": "ary-a1-u1",
+          "title": "Salam",
+          "en": "Greetings",
+          "icon": "👋",
+          "file": "units/ary-a1-u1.json"
+        },
+        {
+          "id": "ary-a1-u2",
+          "title": "L-3dad",
+          "en": "Numbers 1-10",
+          "icon": "🔢",
+          "file": "units/ary-a1-u2.json"
+        },
+        {
+          "id": "ary-a1-u3",
+          "title": "Aswila",
+          "en": "Questions & Basics",
+          "icon": "❓",
+          "file": "units/ary-a1-u3.json"
+        },
+        {
+          "id": "ary-a1-u4",
+          "title": "L-3a'ila",
+          "en": "Family",
+          "icon": "👪",
+          "file": "units/ary-a1-u4.json"
+        },
+        {
+          "id": "ary-a1-u5",
+          "title": "L-makla",
+          "en": "Food & Drink",
+          "icon": "🍽️",
+          "file": "units/ary-a1-u5.json"
+        },
+        {
+          "id": "ary-a1-u6",
+          "title": "Loun",
+          "en": "Colors",
+          "icon": "🎨",
+          "file": "units/ary-a1-u6.json"
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "title": "Elementary",
+      "description": "Unlocks as the course grows",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "B1",
+      "title": "Intermediate",
+      "description": "Unlocks as the course grows",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "B2",
+      "title": "Upper Intermediate",
+      "description": "Unlocks as the course grows",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "C1",
+      "title": "Advanced",
+      "description": "Unlocks as the course grows",
+      "locked": true,
+      "units": []
+    },
+    {
+      "level": "C2",
+      "title": "Mastery",
+      "description": "Unlocks as the course grows",
+      "locked": true,
+      "units": []
+    }
+  ]
+}

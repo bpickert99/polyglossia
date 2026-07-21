@@ -1,0 +1,81 @@
+{
+  "id": "ary-a1-u6",
+  "title": "Loun",
+  "level": "A1",
+  "summary": "Basic colors.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Primary colors",
+      "teach": [
+        {
+          "target": "7mer",
+          "roman": "7mer",
+          "arabic": "حمر",
+          "english": "red",
+          "ipa": "ħmer"
+        },
+        {
+          "target": "khal",
+          "roman": "khal",
+          "arabic": "خال",
+          "english": "black",
+          "ipa": "xal"
+        },
+        {
+          "target": "byed",
+          "roman": "byed",
+          "arabic": "بيض",
+          "english": "white",
+          "ipa": "bjed"
+        },
+        {
+          "target": "khder",
+          "roman": "khder",
+          "arabic": "خضر",
+          "english": "green",
+          "ipa": "xder"
+        },
+        {
+          "target": "zrq",
+          "roman": "zrq",
+          "arabic": "زرق",
+          "english": "blue",
+          "ipa": "zrəq"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "More colors",
+      "teach": [
+        {
+          "target": "sfer",
+          "roman": "sfer",
+          "arabic": "صفر",
+          "english": "yellow",
+          "ipa": "sfer"
+        },
+        {
+          "target": "werdi",
+          "roman": "werdi",
+          "arabic": "وردي",
+          "english": "pink",
+          "note": "From werda — 'rose flower'.",
+          "ipa": "werˈdi"
+        },
+        {
+          "target": "brtqali",
+          "roman": "brtqali",
+          "arabic": "برتقالي",
+          "english": "orange",
+          "note": "From brtqal — the fruit itself, 'orange'.",
+          "ipa": "brtqaˈli"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Name the basic colors"
+  ]
+}

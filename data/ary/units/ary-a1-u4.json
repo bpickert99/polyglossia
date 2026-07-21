@@ -1,0 +1,95 @@
+{
+  "id": "ary-a1-u4",
+  "title": "L-3a'ila",
+  "level": "A1",
+  "summary": "Immediate and extended family words.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Parents and siblings",
+      "teach": [
+        {
+          "target": "baba",
+          "roman": "baba",
+          "arabic": "بابا",
+          "english": "dad",
+          "ipa": "ˈbaba"
+        },
+        {
+          "target": "mama",
+          "roman": "mama",
+          "arabic": "ماما",
+          "english": "mom",
+          "ipa": "ˈmama"
+        },
+        {
+          "target": "kho",
+          "roman": "kho",
+          "arabic": "خو",
+          "english": "brother",
+          "ipa": "xu"
+        },
+        {
+          "target": "khti",
+          "roman": "khti",
+          "arabic": "ختي",
+          "english": "sister",
+          "ipa": "ˈxti"
+        },
+        {
+          "target": "weld",
+          "roman": "weld",
+          "arabic": "ولد",
+          "english": "son / boy",
+          "ipa": "wld"
+        },
+        {
+          "target": "bnt",
+          "roman": "bnt",
+          "arabic": "بنت",
+          "english": "daughter / girl",
+          "ipa": "bnt"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Grandparents and aunts/uncles",
+      "teach": [
+        {
+          "target": "jedd",
+          "roman": "jedd",
+          "arabic": "جد",
+          "english": "grandfather",
+          "ipa": "ʒedd"
+        },
+        {
+          "target": "jedda",
+          "roman": "jedda",
+          "arabic": "جدة",
+          "english": "grandmother",
+          "ipa": "ˈʒedda"
+        },
+        {
+          "target": "3mmi",
+          "roman": "3mmi",
+          "arabic": "عمي",
+          "english": "uncle (father's brother)",
+          "note": "Darija distinguishes which side of the family an aunt/uncle is from — 3mmi is paternal, khalti (below) is maternal.",
+          "ipa": "ˈʕmmi"
+        },
+        {
+          "target": "khalti",
+          "roman": "khalti",
+          "arabic": "خالتي",
+          "english": "aunt (mother's sister)",
+          "ipa": "ˈxalti"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Name your immediate family members",
+    "Say grandfather, grandmother, uncle, and aunt"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "ary-a1-u5",
+  "title": "L-makla",
+  "level": "A1",
+  "summary": "Food and drink words, starting with the two you'll hear before anything else.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Atay and the basics",
+      "teach": [
+        {
+          "target": "atay",
+          "roman": "atay",
+          "arabic": "أتاي",
+          "english": "tea (mint tea)",
+          "note": "Offered constantly and refusing three times is genuinely part of the ritual — 'atay' almost always means mint tea specifically.",
+          "ipa": "aˈtaj"
+        },
+        {
+          "target": "qahwa",
+          "roman": "qahwa",
+          "arabic": "قهوة",
+          "english": "coffee",
+          "ipa": "ˈqahwa"
+        },
+        {
+          "target": "khobz",
+          "roman": "khobz",
+          "arabic": "خبز",
+          "english": "bread",
+          "note": "Bread comes with nearly every meal and doubles as the eating utensil.",
+          "ipa": "xubz"
+        },
+        {
+          "target": "ma",
+          "roman": "ma",
+          "arabic": "ما",
+          "english": "water",
+          "ipa": "ma"
+        },
+        {
+          "target": "7lib",
+          "roman": "7lib",
+          "arabic": "حليب",
+          "english": "milk",
+          "ipa": "ħlib"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Meat, fish, and produce",
+      "teach": [
+        {
+          "target": "lham",
+          "roman": "lham",
+          "arabic": "لحم",
+          "english": "meat",
+          "ipa": "lħam"
+        },
+        {
+          "target": "hut",
+          "roman": "hut",
+          "arabic": "حوت",
+          "english": "fish",
+          "ipa": "ħut"
+        },
+        {
+          "target": "khodra",
+          "roman": "khodra",
+          "arabic": "خضرة",
+          "english": "vegetables",
+          "ipa": "ˈxudra"
+        },
+        {
+          "target": "fakia",
+          "roman": "fakia",
+          "arabic": "فاكية",
+          "english": "fruit",
+          "ipa": "faˈkja"
+        },
+        {
+          "target": "3sel",
+          "roman": "3sel",
+          "arabic": "عسل",
+          "english": "honey",
+          "ipa": "ʕsel"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Order tea, coffee, or water",
+    "Name a handful of everyday foods"
+  ]
+}

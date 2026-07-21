@@ -45,6 +45,7 @@ VOICE_CACHE = ROOT / ".piper-voices"
 DEFAULT_PIPER_VOICE = {
     "ia": "es_ES-davefx-medium",  # Interlingua: pan-Romance, Spanish overlaps well
     "lb": "de_DE-thorsten-medium",  # Luxembourgish: Moselle Franconian, closest is German
+    "ar": "ar_JO-kareem-medium",  # Darija (and other Arabic-script courses): real Arabic voice
 }
 
 
@@ -114,13 +115,23 @@ def main():
 
     print(f"Language: {args.lang} | eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name} | Speed: {speed}")
 
+    # "native" courses (currently: Arabic-script languages like Darija) skip
+    # the eSpeak phoneme-bridge trick entirely and let the Piper voice
+    # phonemize with its own bundled frontend instead — for Arabic that
+    # frontend includes a neural tashkeel (diacritization) pass ahead of
+    # espeak-ng's phonemizer, which does much better on undiacritized script
+    # than routing through a generic EspeakPhonemizer call would. The bridge
+    # trick exists specifically for languages with NO matching Piper voice
+    # (Interlingua, Luxembourgish); Arabic has a real one, so use it directly.
+    native = course.get("tts", {}).get("phonemizer") == "native"
+
     VOICE_CACHE.mkdir(parents=True, exist_ok=True)
     model_path = VOICE_CACHE / f"{piper_voice_name}.onnx"
     if not model_path.exists():
         print(f"Downloading Piper voice {piper_voice_name} ...")
         download_voice(piper_voice_name, VOICE_CACHE)
     voice_obj = PiperVoice.load(model_path)
-    phonemizer = EspeakPhonemizer()
+    phonemizer = None if native else EspeakPhonemizer()
     syn_config = SynthesisConfig(length_scale=1.0 / speed if speed else None)
 
     audio_dir = course_dir / "audio"
@@ -140,15 +151,26 @@ def main():
                 if not target:
                     continue
                 total_words += 1
-                spoken_text = item.get("roman") or target
+                # "arabic" is an authoring-only field (real Arabic-script
+                # spelling) present on Arabic-script courses' items — it's
+                # what actually gets spoken, while target/roman (the Arabizi
+                # transliteration) stays what the app displays and never
+                # reaches the phonemizer.
+                spoken_text = item.get("arabic") or item.get("roman") or target
                 # Speed is part of the cache key: changing it must invalidate
                 # every cached file, or a speed change would silently no-op.
                 key = f"{args.lang}:{speed}:{spoken_text}"
 
-                phoneme_lists = phonemizer.phonemize(espeak_voice, spoken_text)
+                phoneme_lists = (
+                    voice_obj.phonemize(spoken_text) if native
+                    else phonemizer.phonemize(espeak_voice, spoken_text)
+                )
                 phoneme_str = phonemes_to_str(phoneme_lists)
                 item["ipa"] = phoneme_str
-                filename = f"{slug(spoken_text)}.wav"
+                # Filenames are always based on the displayed (Latin) form,
+                # never the Arabic-script spoken_text, so they stay readable
+                # ASCII on disk regardless of phonemizer mode.
+                filename = f"{slug(item.get('roman') or target)}.wav"
                 rel_audio = f"audio/{filename}"
                 item["audio"] = rel_audio
 

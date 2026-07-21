@@ -5,6 +5,12 @@
       "name": "Interlingua",
       "nativeName": "Interlingua",
       "icon": "🌐"
+    },
+    {
+      "code": "ary",
+      "name": "Moroccan Arabic",
+      "nativeName": "الدارجة",
+      "icon": "🇲🇦"
     }
   ]
 }

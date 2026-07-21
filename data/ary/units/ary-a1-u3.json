@@ -1,0 +1,98 @@
+{
+  "id": "ary-a1-u3",
+  "title": "Aswila",
+  "level": "A1",
+  "summary": "Question words and a few phrases you'll reach for in any conversation.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "What, where, who",
+      "teach": [
+        {
+          "target": "Ash / Shnu",
+          "roman": "ash / shnu",
+          "arabic": "آش / شنو",
+          "english": "what",
+          "note": "Both mean 'what' — ash is shorter and more common before a verb, shnu often stands alone.",
+          "ipa": "aʃ, ʃnu"
+        },
+        {
+          "target": "Fin",
+          "roman": "fin",
+          "arabic": "فين",
+          "english": "where",
+          "ipa": "fin"
+        },
+        {
+          "target": "Shkoun",
+          "roman": "shkoun",
+          "arabic": "شكون",
+          "english": "who",
+          "ipa": "ʃkun"
+        },
+        {
+          "target": "Fuqash",
+          "roman": "fuqash",
+          "arabic": "فوقاش",
+          "english": "when",
+          "ipa": "fuˈqaʃ"
+        },
+        {
+          "target": "3lash",
+          "roman": "3lash",
+          "arabic": "علاش",
+          "english": "why",
+          "ipa": "ʕlaʃ"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "How, and yes/no questions",
+      "teach": [
+        {
+          "target": "Kifash",
+          "roman": "kifash",
+          "arabic": "كيفاش",
+          "english": "how",
+          "ipa": "kiˈfaʃ"
+        },
+        {
+          "target": "Wash...?",
+          "roman": "wash",
+          "arabic": "واش",
+          "english": "(turns a statement into a yes/no question)",
+          "note": "Drop wash in front of a plain sentence to ask a yes/no question — Wash bghiti atay? = 'Do you want tea?' No word order change needed.",
+          "ipa": "waʃ"
+        },
+        {
+          "target": "Bghit...",
+          "roman": "bghit",
+          "arabic": "بغيت",
+          "english": "I want...",
+          "ipa": "bɣit"
+        },
+        {
+          "target": "Ma3reftsh",
+          "roman": "ma3reftsh",
+          "arabic": "ماعرفتش",
+          "english": "I don't know",
+          "note": "The ma...sh wrapped around a verb is how Darija negates — same pattern as Moroccan French's 'ne...pas'-style bracketing.",
+          "ipa": "maʕˈreftʃ"
+        },
+        {
+          "target": "Fhemt",
+          "roman": "fhemt",
+          "arabic": "فهمت",
+          "english": "got it / understood",
+          "ipa": "fhemt"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Ask what, where, who, when, why, and how",
+    "Turn a statement into a yes/no question with wash",
+    "Say what you want and say you don't know"
+  ]
+}

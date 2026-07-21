@@ -1,0 +1,99 @@
+{
+  "id": "ary-a1-u2",
+  "title": "L-3dad",
+  "level": "A1",
+  "summary": "Numbers 1-10 — you'll hear these constantly, for prices, time, and phone numbers.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Wahed to khamsa",
+      "teach": [
+        {
+          "target": "wahed",
+          "roman": "wahed",
+          "arabic": "واحد",
+          "english": "one",
+          "ipa": "ˈwaħed"
+        },
+        {
+          "target": "jouj",
+          "roman": "jouj",
+          "arabic": "جوج",
+          "english": "two",
+          "note": "Not from Arabic 'ithnan' at all — jouj is a Darija-specific word.",
+          "ipa": "ʒuʒ"
+        },
+        {
+          "target": "tlata",
+          "roman": "tlata",
+          "arabic": "تلاتة",
+          "english": "three",
+          "ipa": "tlaˈta"
+        },
+        {
+          "target": "rb3a",
+          "roman": "rb3a",
+          "arabic": "ربعة",
+          "english": "four",
+          "ipa": "ˈrbʕa"
+        },
+        {
+          "target": "khamsa",
+          "roman": "khamsa",
+          "arabic": "خمسة",
+          "english": "five",
+          "ipa": "ˈxamsa"
+        }
+      ],
+      "grammar": {
+        "title": "Reading the digit letters",
+        "body": "You'll see the same handful of digits standing in for Arabic sounds across every unit: **3** = ع (a throat sound, like a tight swallow), **7** = ح (a breathy h, further back than English h), **9** = ق (a k made deep in the throat). They're not arbitrary — Moroccans picked digits that visually resemble the Arabic letter they replace."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Stta to 3achra",
+      "teach": [
+        {
+          "target": "stta",
+          "roman": "stta",
+          "arabic": "ستة",
+          "english": "six",
+          "ipa": "ˈstta"
+        },
+        {
+          "target": "sb3a",
+          "roman": "sb3a",
+          "arabic": "سبعة",
+          "english": "seven",
+          "ipa": "ˈsbʕa"
+        },
+        {
+          "target": "tmnya",
+          "roman": "tmnya",
+          "arabic": "تمنية",
+          "english": "eight",
+          "ipa": "ˈtmnja"
+        },
+        {
+          "target": "tsa3a",
+          "roman": "tsa3a",
+          "arabic": "تسعة",
+          "english": "nine",
+          "ipa": "ˈtsʕa"
+        },
+        {
+          "target": "3achra",
+          "roman": "3achra",
+          "arabic": "عشرة",
+          "english": "ten",
+          "ipa": "ˈʕaʃra"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Count from one to ten",
+    "Recognize a price or phone number spoken slowly"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ary-a1-u1",
+  "title": "Salam",
+  "level": "A1",
+  "summary": "Greetings, politeness, and how to give your name.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Hello and thanks",
+      "teach": [
+        {
+          "target": "Salam",
+          "roman": "salam",
+          "arabic": "سلام",
+          "english": "hello / peace",
+          "note": "Short for 'salamu alaykum' — works for anyone, any time of day.",
+          "ipa": "saˈlam"
+        },
+        {
+          "target": "Sbah lkhir",
+          "roman": "sbah lkhir",
+          "arabic": "صباح الخير",
+          "english": "good morning",
+          "ipa": "sbaħ lˈxir"
+        },
+        {
+          "target": "Msa lkhir",
+          "roman": "msa lkhir",
+          "arabic": "مسا الخير",
+          "english": "good evening",
+          "ipa": "msa lˈxir"
+        },
+        {
+          "target": "Shukran",
+          "roman": "shukran",
+          "arabic": "شكرا",
+          "english": "thank you",
+          "ipa": "ʃukˈran"
+        },
+        {
+          "target": "3afak",
+          "roman": "3afak",
+          "arabic": "عفاك",
+          "english": "please",
+          "note": "The 3 stands for ع (ayn), a throat sound Latin script has no letter for — this Arabizi digit convention (2, 3, 7, 9...) is what Moroccans actually type.",
+          "ipa": "ʕaˈfak"
+        }
+      ],
+      "grammar": {
+        "title": "Darija has no 'to be' in the present",
+        "body": "Like other Arabic varieties, Darija just drops the present-tense verb 'to be' — *huwa m3llem* means 'he [is a] teacher', no verb needed. You'll see this constantly: describing, naming, and pointing things out never needs an extra word for 'is/am/are'."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Yes, no, goodbye",
+      "teach": [
+        {
+          "target": "Ih",
+          "roman": "ih",
+          "arabic": "إيه",
+          "english": "yes",
+          "note": "The everyday, casual yes — na3am exists too but sounds more formal.",
+          "ipa": "ih"
+        },
+        {
+          "target": "La",
+          "roman": "la",
+          "arabic": "لا",
+          "english": "no",
+          "ipa": "la"
+        },
+        {
+          "target": "Bslama",
+          "roman": "bslama",
+          "arabic": "بسلامة",
+          "english": "goodbye",
+          "ipa": "bslaˈma"
+        },
+        {
+          "target": "Smehli",
+          "roman": "smehli",
+          "arabic": "سمحلي",
+          "english": "sorry / excuse me",
+          "ipa": "smeħˈli"
+        },
+        {
+          "target": "Labas?",
+          "roman": "labas",
+          "arabic": "لاباس",
+          "english": "how are you? (lit. 'no harm?')",
+          "note": "The standard how-are-you. Answer is usually the same word back: Labas, lhamdullah — 'fine, thank God'.",
+          "ipa": "laˈbas"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Smiti — my name",
+      "teach": [
+        {
+          "target": "Smiti...",
+          "roman": "smiti",
+          "arabic": "سميتي",
+          "english": "my name is...",
+          "ipa": "smiˈti"
+        },
+        {
+          "target": "Ash smitek?",
+          "roman": "ash smitek",
+          "arabic": "أش سميتك",
+          "english": "what's your name?",
+          "ipa": "aʃ smiˈtek"
+        },
+        {
+          "target": "Mtsharfin",
+          "roman": "mtsharfin",
+          "arabic": "متشرفين",
+          "english": "nice to meet you",
+          "ipa": "mtʃarˈfin"
+        },
+        {
+          "target": "Wakha",
+          "roman": "wakha",
+          "arabic": "واخا",
+          "english": "okay",
+          "ipa": "waˈxa"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Greet someone and say goodbye",
+    "Ask and answer \"how are you?\"",
+    "Give your name and ask someone else's"
+  ]
+}

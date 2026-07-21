@@ -1,0 +1,19 @@
+{
+  "articles": [
+    {
+      "title": "What is Darija?",
+      "body": "Darija is the Arabic spoken in daily life across Morocco — at home, in markets, on the street. It shares its core with Modern Standard Arabic (MSA, the formal written language used across the Arab world) but has diverged enough in vocabulary, grammar, and pronunciation that the two aren't mutually intelligible without study. Darija also carries a heavy layer of Amazigh (Berber) and French vocabulary, plus some Spanish in the north — the result of Morocco's specific history, not present in Gulf or Levantine Arabic.\nNo Moroccan is formally taught to read or write Darija in school — that's MSA's job — which is part of why texting conventions like Arabizi became the de facto everyday script.",
+      "tags": ["overview"]
+    },
+    {
+      "title": "Why Arabizi instead of Arabic script?",
+      "body": "Arabic script is still how Darija appears in the rare cases it's written formally (song lyrics, some subtitling, dialect dictionaries). But phones and keyboards historically defaulted to Latin input, and Darija speakers responded by mapping their sounds onto Latin letters plus a handful of digits for sounds Latin lacks: **3** for ع (ayn), **7** for ح (ha), **9** for ق (qaf), among others. The result — Arabizi — is now the dominant way Darija gets typed on WhatsApp, Instagram, and text messages, arguably more common in daily digital life than the Arabic script it's standing in for.",
+      "tags": ["writing", "arabizi"]
+    },
+    {
+      "title": "Atay — the ritual, not just the drink",
+      "body": "Moroccan mint tea (atay) is less a beverage than a social institution. It's poured from height into small glasses to build foam, served to guests as a near-automatic gesture of hospitality, and refusing a first offer is expected — accepting immediately can read as impolite. Sugar is generous by default; asking for less is a real option, but the default is sweet.",
+      "tags": ["daily-life", "food"]
+    }
+  ]
+}
