@@ -11,29 +11,39 @@
         {
           "target": "sur",
           "roman": "sur",
-          "english": "on, on top of"
+          "english": "on, on top of",
+          "ipa": "sˈur",
+          "audio": "audio/sur.wav"
         },
         {
           "target": "sub",
           "roman": "sub",
-          "english": "under"
+          "english": "under",
+          "ipa": "sˈub",
+          "audio": "audio/sub.wav"
         },
         {
           "target": "inter",
           "roman": "inter",
-          "english": "between, among"
+          "english": "between, among",
+          "ipa": "ˈinter",
+          "audio": "audio/inter.wav"
         },
         {
           "target": "Le catto es sub le tabula.",
           "roman": "le catto es sub le tabula",
           "english": "The cat is under the table.",
-          "note": "tabula = table."
+          "note": "tabula = table.",
+          "ipa": "le kˈato es sˈub le tˈabula",
+          "audio": "audio/le-catto-es-sub-le-tabula.wav"
         },
         {
           "target": "Le libro es sur le tabula, inter le lampa e le taza.",
           "roman": "le libro es sur le tabula inter le lampa e le taza",
           "english": "The book is on the table, between the lamp and the cup.",
-          "note": "lampa = lamp; taza = cup."
+          "note": "lampa = lamp; taza = cup.",
+          "ipa": "le lˈibro es sˈur le tˈabula ˈinter le lˈampa e le tˈaza",
+          "audio": "audio/le-libro-es-sur-le-tabula-inter-le-lampa-e-le-taza.wav"
         }
       ],
       "grammar": {
@@ -48,22 +58,30 @@
         {
           "target": "ante",
           "roman": "ante",
-          "english": "in front of, before"
+          "english": "in front of, before",
+          "ipa": "ˈante",
+          "audio": "audio/ante.wav"
         },
         {
           "target": "detra",
           "roman": "detra",
-          "english": "behind"
+          "english": "behind",
+          "ipa": "dˈetra",
+          "audio": "audio/detra.wav"
         },
         {
           "target": "presso",
           "roman": "presso",
-          "english": "near"
+          "english": "near",
+          "ipa": "prˈeso",
+          "audio": "audio/presso.wav"
         },
         {
           "target": "Le schola es ante le parco e detra le urbe vetule.",
           "roman": "le schola es ante le parco e detra le urbe vetule",
-          "english": "The school is in front of the park and behind the old city."
+          "english": "The school is in front of the park and behind the old city.",
+          "ipa": "le stʃˈola es ˈante le pˈarko e dˈetra le ˈurbe vˈetule",
+          "audio": "audio/le-schola-es-ante-le-parco-e-detra-le-urbe-vetule.wav"
         }
       ]
     }
@@ -79,10 +97,46 @@
       "Marco ha respondite: \"Si, ma le proxime vice, io vole trovar le mar!\""
     ],
     "questions": [
-      { "prompt": "Where did Anna and Marco go?", "choices": ["To the mountain", "To the sea", "To school", "To the city"], "answer": 0 },
-      { "prompt": "What did they see between the trees?", "choices": ["A river", "A lake", "A house", "A forest"], "answer": 0 },
-      { "prompt": "Where did they start eating?", "choices": ["On a rock near the river", "In a restaurant", "At school", "On the mountain top"], "answer": 0 },
-      { "prompt": "What does Marco want to find next time?", "choices": ["The sea", "A new mountain", "A river", "A forest"], "answer": 0 }
+      {
+        "prompt": "Where did Anna and Marco go?",
+        "choices": [
+          "To the mountain",
+          "To the sea",
+          "To school",
+          "To the city"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What did they see between the trees?",
+        "choices": [
+          "A river",
+          "A lake",
+          "A house",
+          "A forest"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Where did they start eating?",
+        "choices": [
+          "On a rock near the river",
+          "In a restaurant",
+          "At school",
+          "On the mountain top"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What does Marco want to find next time?",
+        "choices": [
+          "The sea",
+          "A new mountain",
+          "A river",
+          "A forest"
+        ],
+        "answer": 0
+      }
     ]
   }
 }

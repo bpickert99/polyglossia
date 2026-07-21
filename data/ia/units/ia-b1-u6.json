@@ -11,28 +11,38 @@
         {
           "target": "lunedi",
           "roman": "lunedi",
-          "english": "Monday"
+          "english": "Monday",
+          "ipa": "lˌunedˈi",
+          "audio": "audio/lunedi.wav"
         },
         {
           "target": "mercuridi",
           "roman": "mercuridi",
-          "english": "Wednesday"
+          "english": "Wednesday",
+          "ipa": "mˌerkuridˈi",
+          "audio": "audio/mercuridi.wav"
         },
         {
           "target": "venerdi",
           "roman": "venerdi",
-          "english": "Friday"
+          "english": "Friday",
+          "ipa": "vˌenerdˈi",
+          "audio": "audio/venerdi.wav"
         },
         {
           "target": "le septimana",
           "roman": "le septimana",
-          "english": "the week"
+          "english": "the week",
+          "ipa": "le sˌeptimˈana",
+          "audio": "audio/le-septimana.wav"
         },
         {
           "target": "Le lection es lunedi.",
           "roman": "le lection es lunedi",
           "english": "The lesson is on Monday.",
-          "note": "lection = lesson."
+          "note": "lection = lesson.",
+          "ipa": "le lektjˈon es lˌunedˈi",
+          "audio": "audio/le-lection-es-lunedi.wav"
         }
       ],
       "grammar": {
@@ -48,27 +58,37 @@
           "target": "Que hora es il?",
           "roman": "que hora es il",
           "english": "What time is it?",
-          "note": "Literally 'what hour is it' — il here is a dummy subject, like English weather 'it'."
+          "note": "Literally 'what hour is it' — il here is a dummy subject, like English weather 'it'.",
+          "ipa": "kˈe hˈora es ˈil",
+          "audio": "audio/que-hora-es-il.wav"
         },
         {
           "target": "Il es tres horas.",
           "roman": "il es tres horas",
-          "english": "It's three o'clock."
+          "english": "It's three o'clock.",
+          "ipa": "il es trˈes hˈoras",
+          "audio": "audio/il-es-tres-horas.wav"
         },
         {
           "target": "le minuta",
           "roman": "le minuta",
-          "english": "the minute"
+          "english": "the minute",
+          "ipa": "le minˈuta",
+          "audio": "audio/le-minuta.wav"
         },
         {
           "target": "matino",
           "roman": "matino",
-          "english": "morning"
+          "english": "morning",
+          "ipa": "matˈino",
+          "audio": "audio/matino.wav"
         },
         {
           "target": "vespere",
           "roman": "vespere",
-          "english": "evening"
+          "english": "evening",
+          "ipa": "vˈespere",
+          "audio": "audio/vespere.wav"
         }
       ]
     }

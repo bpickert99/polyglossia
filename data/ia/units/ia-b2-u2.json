@@ -12,23 +12,31 @@
           "target": "Le libro es scribite per illa.",
           "roman": "le libro es scribite per illa",
           "english": "The book is written by her.",
-          "note": "per = by, in the passive."
+          "note": "per = by, in the passive.",
+          "ipa": "le lˈibro es skribˈite pˈer ˈila",
+          "audio": "audio/le-libro-es-scribite-per-illa.wav"
         },
         {
           "target": "Le porta es aperite.",
           "roman": "le porta es aperite",
           "english": "The door is open(ed).",
-          "note": "porta = door; aperir = to open, aperite = opened."
+          "note": "porta = door; aperir = to open, aperite = opened.",
+          "ipa": "le pˈorta es ˌaperˈite",
+          "audio": "audio/le-porta-es-aperite.wav"
         },
         {
           "target": "scribite",
           "roman": "scribite",
-          "english": "written"
+          "english": "written",
+          "ipa": "skribˈite",
+          "audio": "audio/scribite.wav"
         },
         {
           "target": "aperite",
           "roman": "aperite",
-          "english": "opened"
+          "english": "opened",
+          "ipa": "ˌaperˈite",
+          "audio": "audio/aperite.wav"
         }
       ],
       "grammar": {
@@ -44,18 +52,24 @@
           "target": "clause",
           "roman": "clause",
           "english": "closed",
-          "note": "from clauder, to close."
+          "note": "from clauder, to close.",
+          "ipa": "klˈaʊse",
+          "audio": "audio/clause.wav"
         },
         {
           "target": "Le schola esseva clause heri.",
           "roman": "le schola esseva clause heri",
-          "english": "The school was closed yesterday."
+          "english": "The school was closed yesterday.",
+          "ipa": "le stʃˈola esˌeva klˈaʊse hˈeri",
+          "audio": "audio/le-schola-esseva-clause-heri.wav"
         },
         {
           "target": "Iste pan es facite in nostre urbe.",
           "roman": "iste pan es facite in nostre urbe",
           "english": "This bread is made in our city.",
-          "note": "facite = made/done (from facer)."
+          "note": "facite = made/done (from facer).",
+          "ipa": "ˈiste pˈan es fatsˈite ˈin nˌostre ˈurbe",
+          "audio": "audio/iste-pan-es-facite-in-nostre-urbe.wav"
         }
       ]
     }

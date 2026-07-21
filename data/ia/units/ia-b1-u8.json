@@ -11,28 +11,38 @@
         {
           "target": "comenciar",
           "roman": "comenciar",
-          "english": "to start, to begin"
+          "english": "to start, to begin",
+          "ipa": "kˌomentsjˈar",
+          "audio": "audio/comenciar.wav"
         },
         {
           "target": "finir",
           "roman": "finir",
-          "english": "to finish"
+          "english": "to finish",
+          "ipa": "finˈir",
+          "audio": "audio/finir.wav"
         },
         {
           "target": "continuar",
           "roman": "continuar",
-          "english": "to continue"
+          "english": "to continue",
+          "ipa": "kˌontinwˈar",
+          "audio": "audio/continuar.wav"
         },
         {
           "target": "Le lection comencia a novem horas.",
           "roman": "le lection comencia a novem horas",
-          "english": "The lesson starts at nine o'clock."
+          "english": "The lesson starts at nine o'clock.",
+          "ipa": "le lektjˈon komˈentsja a nˈovem hˈoras",
+          "audio": "audio/le-lection-comencia-a-novem-horas.wav"
         },
         {
           "target": "Nos ha finite le labor.",
           "roman": "nos ha finite le labor",
           "english": "We have finished the work.",
-          "note": "finite = finished (past participle of finir)."
+          "note": "finite = finished (past participle of finir).",
+          "ipa": "nˈos ha finˈite le labˈor",
+          "audio": "audio/nos-ha-finite-le-labor.wav"
         }
       ]
     },
@@ -43,28 +53,38 @@
         {
           "target": "trovar",
           "roman": "trovar",
-          "english": "to find"
+          "english": "to find",
+          "ipa": "trovˈar",
+          "audio": "audio/trovar.wav"
         },
         {
           "target": "perder",
           "roman": "perder",
-          "english": "to lose"
+          "english": "to lose",
+          "ipa": "perdˈer",
+          "audio": "audio/perder.wav"
         },
         {
           "target": "cercar",
           "roman": "cercar",
-          "english": "to look for, to search"
+          "english": "to look for, to search",
+          "ipa": "tserkˈar",
+          "audio": "audio/cercar.wav"
         },
         {
           "target": "Io cerca mi claves ma io non pote los trovar.",
           "roman": "io cerca mi claves ma io non pote los trovar",
           "english": "I'm looking for my keys but I can't find them.",
-          "note": "clave = key; los = them (object form of illos)."
+          "note": "clave = key; los = them (object form of illos).",
+          "ipa": "ˈiʲo tsˈerka mi klˈaves mˈa ˈiʲo nˈon pˈote lˈos trovˈar",
+          "audio": "audio/io-cerca-mi-claves-ma-io-non-pote-los-trovar.wav"
         },
         {
           "target": "Illa ha perdite su telephono.",
           "roman": "illa ha perdite su telephono",
-          "english": "She has lost her phone."
+          "english": "She has lost her phone.",
+          "ipa": "ˈila ha perdˈite su telˈefono",
+          "audio": "audio/illa-ha-perdite-su-telephono.wav"
         }
       ]
     }

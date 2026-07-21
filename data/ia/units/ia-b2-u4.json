@@ -11,28 +11,38 @@
         {
           "target": "le montania",
           "roman": "le montania",
-          "english": "the mountain"
+          "english": "the mountain",
+          "ipa": "le montˈanja",
+          "audio": "audio/le-montania.wav"
         },
         {
           "target": "le fluvio",
           "roman": "le fluvio",
-          "english": "the river"
+          "english": "the river",
+          "ipa": "le flˈuvjo",
+          "audio": "audio/le-fluvio.wav"
         },
         {
           "target": "le mar",
           "roman": "le mar",
-          "english": "the sea"
+          "english": "the sea",
+          "ipa": "le mˈar",
+          "audio": "audio/le-mar.wav"
         },
         {
           "target": "le foreste",
           "roman": "le foreste",
-          "english": "the forest"
+          "english": "the forest",
+          "ipa": "le forˈeste",
+          "audio": "audio/le-foreste.wav"
         },
         {
           "target": "Nos ha ascendite le montania e vidite le mar.",
           "roman": "nos ha ascendite le montania e vidite le mar",
           "english": "We climbed the mountain and saw the sea.",
-          "note": "ascender = to climb/ascend."
+          "note": "ascender = to climb/ascend.",
+          "ipa": "nˈos ha ˌastsendˈite le montˈanja e vidˈite le mˈar",
+          "audio": "audio/nos-ha-ascendite-le-montania-e-vidite-le-mar.wav"
         }
       ]
     },
@@ -43,23 +53,31 @@
         {
           "target": "le arbore",
           "roman": "le arbore",
-          "english": "the tree"
+          "english": "the tree",
+          "ipa": "le ˈarbore",
+          "audio": "audio/le-arbore.wav"
         },
         {
           "target": "le flor",
           "roman": "le flor",
-          "english": "the flower"
+          "english": "the flower",
+          "ipa": "le flˈor",
+          "audio": "audio/le-flor.wav"
         },
         {
           "target": "le insula",
           "roman": "le insula",
-          "english": "the island"
+          "english": "the island",
+          "ipa": "le ˈinsula",
+          "audio": "audio/le-insula.wav"
         },
         {
           "target": "Le insula ha multe arbores e flores belle.",
           "roman": "le insula ha multe arbores e flores belle",
           "english": "The island has many trees and beautiful flowers.",
-          "note": "multe = many; belle = beautiful."
+          "note": "multe = many; belle = beautiful.",
+          "ipa": "le ˈinsula ha mˈulte ˈarbores e flˈores bˈele",
+          "audio": "audio/le-insula-ha-multe-arbores-e-flores-belle.wav"
         }
       ]
     }

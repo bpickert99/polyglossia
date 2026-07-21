@@ -12,25 +12,33 @@
           "target": "parlarea",
           "roman": "parlarea",
           "english": "would speak",
-          "note": "Add -rea to the infinitive: parlar → parlarea."
+          "note": "Add -rea to the infinitive: parlar → parlarea.",
+          "ipa": "pˌarlarˈea",
+          "audio": "audio/parlarea.wav"
         },
         {
           "target": "haberea",
           "roman": "haberea",
           "english": "would have",
-          "note": "haber is the full infinitive of 'to have' (ha is the present tense)."
+          "note": "haber is the full infinitive of 'to have' (ha is the present tense).",
+          "ipa": "hˌaberˈea",
+          "audio": "audio/haberea.wav"
         },
         {
           "target": "Si io haberea tempore, io parlarea plus interlingua.",
           "roman": "si io haberea tempore io parlarea plus interlingua",
           "english": "If I had time, I would speak more Interlingua.",
-          "note": "tempore = time."
+          "note": "tempore = time.",
+          "ipa": "sˈiʲ ˈiʲo hˌaberˈea tˈempore ˈiʲo pˌarlarˈea plˈus ˌinterlˈiŋɡwa",
+          "audio": "audio/si-io-haberea-tempore-io-parlarea-plus-interlingua.wav"
         },
         {
           "target": "Esserea agradabile vider te.",
           "roman": "esserea agradabile vider te",
           "english": "It would be nice to see you.",
-          "note": "esserea = would be (from esser); agradabile = pleasant/nice."
+          "note": "esserea = would be (from esser); agradabile = pleasant/nice.",
+          "ipa": "ˌeserˈea ˌaɡradˈabile vidˈer tˈe",
+          "audio": "audio/esserea-agradabile-vider-te.wav"
         }
       ],
       "grammar": {
@@ -45,24 +53,32 @@
         {
           "target": "vaderea",
           "roman": "vaderea",
-          "english": "would go"
+          "english": "would go",
+          "ipa": "vˌaderˈea",
+          "audio": "audio/vaderea.wav"
         },
         {
           "target": "poterea",
           "roman": "poterea",
-          "english": "could, would be able to"
+          "english": "could, would be able to",
+          "ipa": "pˌoterˈea",
+          "audio": "audio/poterea.wav"
         },
         {
           "target": "Si io haberea plus moneta, io vaderea al Europa.",
           "roman": "si io haberea plus moneta io vaderea al europa",
           "english": "If I had more money, I would go to Europe.",
-          "note": "moneta = money."
+          "note": "moneta = money.",
+          "ipa": "sˈiʲ ˈiʲo hˌaberˈea plˈus monˈeta ˈiʲo vˌaderˈea al eʊrˈopa",
+          "audio": "audio/si-io-haberea-plus-moneta-io-vaderea-al-europa.wav"
         },
         {
           "target": "Tu poterea apprender interlingua in poc menses.",
           "roman": "tu poterea apprender interlingua in poc menses",
           "english": "You could learn Interlingua in a few months.",
-          "note": "poc = few; mense = month."
+          "note": "poc = few; mense = month.",
+          "ipa": "tˈu pˌoterˈea ˌaprendˈer ˌinterlˈiŋɡwa ˈin pˈok mˈenses",
+          "audio": "audio/tu-poterea-apprender-interlingua-in-poc-menses.wav"
         }
       ]
     }

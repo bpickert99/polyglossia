@@ -11,28 +11,38 @@
         {
           "target": "le sol",
           "roman": "le sol",
-          "english": "the sun"
+          "english": "the sun",
+          "ipa": "le sˈol",
+          "audio": "audio/le-sol.wav"
         },
         {
           "target": "le pluvia",
           "roman": "le pluvia",
-          "english": "the rain"
+          "english": "the rain",
+          "ipa": "le plˈuvja",
+          "audio": "audio/le-pluvia.wav"
         },
         {
           "target": "le vento",
           "roman": "le vento",
-          "english": "the wind"
+          "english": "the wind",
+          "ipa": "le vˈento",
+          "audio": "audio/le-vento.wav"
         },
         {
           "target": "le nive",
           "roman": "le nive",
-          "english": "the snow"
+          "english": "the snow",
+          "ipa": "le nˈive",
+          "audio": "audio/le-nive.wav"
         },
         {
           "target": "Hodie il pluve multo.",
           "roman": "hodie il pluve multo",
           "english": "Today it's raining a lot.",
-          "note": "pluver = to rain, an impersonal verb like English 'it rains'."
+          "note": "pluver = to rain, an impersonal verb like English 'it rains'.",
+          "ipa": "hˈodje il plˈuve mˈulto",
+          "audio": "audio/hodie-il-pluve-multo.wav"
         }
       ],
       "grammar": {
@@ -47,28 +57,38 @@
         {
           "target": "le hiberno",
           "roman": "le hiberno",
-          "english": "the winter"
+          "english": "the winter",
+          "ipa": "le hibˈerno",
+          "audio": "audio/le-hiberno.wav"
         },
         {
           "target": "le estate",
           "roman": "le estate",
-          "english": "the summer"
+          "english": "the summer",
+          "ipa": "le estˈate",
+          "audio": "audio/le-estate.wav"
         },
         {
           "target": "calide",
           "roman": "calide",
-          "english": "hot"
+          "english": "hot",
+          "ipa": "kˈalide",
+          "audio": "audio/calide.wav"
         },
         {
           "target": "frigide",
           "roman": "frigide",
-          "english": "cold"
+          "english": "cold",
+          "ipa": "frˈiɡide",
+          "audio": "audio/frigide.wav"
         },
         {
           "target": "In le estate il face calide, in le hiberno il face frigide.",
           "roman": "in le estate il face calide in le hiberno il face frigide",
           "english": "In summer it's hot, in winter it's cold.",
-          "note": "facer = to make/do; here used impersonally for weather."
+          "note": "facer = to make/do; here used impersonally for weather.",
+          "ipa": "ˈin le estˈate il fˈatse kˈalide ˈin le hibˈerno il fˈatse frˈiɡide",
+          "audio": "audio/in-le-estate-il-face-calide-in-le-hiberno-il-face-frigide.wav"
         }
       ]
     }

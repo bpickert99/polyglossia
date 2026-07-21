@@ -11,29 +11,39 @@
         {
           "target": "dece-un",
           "roman": "dece-un",
-          "english": "eleven"
+          "english": "eleven",
+          "ipa": "dˈetseˈun",
+          "audio": "audio/dece-un.wav"
         },
         {
           "target": "dece-duo",
           "roman": "dece-duo",
-          "english": "twelve"
+          "english": "twelve",
+          "ipa": "dˈetsedˈuo",
+          "audio": "audio/dece-duo.wav"
         },
         {
           "target": "vinti",
           "roman": "vinti",
-          "english": "twenty"
+          "english": "twenty",
+          "ipa": "vˈinti",
+          "audio": "audio/vinti.wav"
         },
         {
           "target": "prime",
           "roman": "prime",
           "english": "first",
-          "note": "Ordinals: prime, secunde, tertie… mostly add -e to the number stem."
+          "note": "Ordinals: prime, secunde, tertie… mostly add -e to the number stem.",
+          "ipa": "prˈime",
+          "audio": "audio/prime.wav"
         },
         {
           "target": "Io es le prime in mi classe.",
           "roman": "io es le prime in mi classe",
           "english": "I am first in my class.",
-          "note": "classe = class."
+          "note": "classe = class.",
+          "ipa": "ˈiʲo es le prˈime ˈin mi klˈase",
+          "audio": "audio/io-es-le-prime-in-mi-classe.wav"
         }
       ],
       "grammar": {
@@ -48,28 +58,38 @@
         {
           "target": "trenta",
           "roman": "trenta",
-          "english": "thirty"
+          "english": "thirty",
+          "ipa": "trˈenta",
+          "audio": "audio/trenta.wav"
         },
         {
           "target": "cinquanta",
           "roman": "cinquanta",
-          "english": "fifty"
+          "english": "fifty",
+          "ipa": "tsiŋkwˈanta",
+          "audio": "audio/cinquanta.wav"
         },
         {
           "target": "cento",
           "roman": "cento",
-          "english": "hundred"
+          "english": "hundred",
+          "ipa": "tsˈento",
+          "audio": "audio/cento.wav"
         },
         {
           "target": "secunde",
           "roman": "secunde",
-          "english": "second (2nd)"
+          "english": "second (2nd)",
+          "ipa": "sekˈunde",
+          "audio": "audio/secunde.wav"
         },
         {
           "target": "Nos ha trenta studentes in le schola.",
           "roman": "nos ha trenta studentes in le schola",
           "english": "We have thirty students in the school.",
-          "note": "studente = student."
+          "note": "studente = student.",
+          "ipa": "nˈos ha trˈenta studˈentes ˈin le stʃˈola",
+          "audio": "audio/nos-ha-trenta-studentes-in-le-schola.wav"
         }
       ]
     }
