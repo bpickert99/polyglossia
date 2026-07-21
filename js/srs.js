@@ -89,9 +89,25 @@ export function accuracy(item) {
   return n ? (item.correct || 0) / n : 1;
 }
 
-// 0..1 bar for UI: how solid this memory currently is.
+// 0..1 bar for UI: how solid this memory currently is *right now*, accounting
+// for forgetting since the last review. This is deliberately time-gated: FSRS
+// only credits a review with real stability growth once some forgetting has
+// actually had a chance to happen (reviewing the same item twice in the same
+// sitting, with no elapsed time, correctly yields ~zero extra stability — that's
+// the whole point of spaced repetition). Great for "will I still remember this
+// in 3 weeks," wrong for "did I just do this unit's lessons."
 export function strength(item, now = Date.now()) {
   if (!item?.S) return 0;
   const maturity = Math.min(1, item.S / 21);
   return retrievability(item, now) * (0.4 + 0.6 * maturity);
+}
+
+// A session-friendly progress signal for unit completion/gating — unlike
+// strength(), it responds immediately to repeated correct answers regardless
+// of elapsed time, so grinding through lessons back-to-back in one sitting
+// actually moves it. Ramps up over the first few exposures, scaled by accuracy.
+export function progress(item) {
+  if (!item?.reps) return 0;
+  const repsFactor = Math.min(1, item.reps / 3);
+  return repsFactor * accuracy(item);
 }

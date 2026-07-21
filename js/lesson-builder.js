@@ -15,7 +15,7 @@ import { getItems, getAbility } from "./storage.js";
 import { predictP, newItemBudget, seedDifficulty } from "./birdbrain.js";
 import { generateExercise, matchExercise, shuffled, hasWord } from "./exercises.js";
 import { reviewQueue, dueCount } from "./practice.js";
-import { strength } from "./srs.js";
+import { strength, progress } from "./srs.js";
 
 // Flatten a unit's authored lessons into one item pool. Grammar/culture notes
 // ride along on the first item of the lesson they came from, so a note surfaces
@@ -49,14 +49,20 @@ export function poolKeys(unitData) {
   return poolFromUnit(unitData).map((i) => i.key);
 }
 
-// Fraction of a unit's pool the learner has a solid grip on (for path progress).
+// Fraction of a unit's pool the learner has a solid grip on (for path progress
+// and unlock gating). Uses progress() (reps + accuracy), not strength() —
+// strength() is time-gated by design (FSRS only credits real stability growth
+// once some forgetting could have happened), so it barely moves within a
+// single sitting no matter how well you're doing. Unit completion should
+// respond to "did you just answer this right, more than once," not "will you
+// still remember it in three weeks" — that's what ongoing Practice is for.
 export function unitMastery(lang, unitData) {
   const keys = poolKeys(unitData);
   if (!keys.length) return 0;
   const byKey = new Map(getItems(lang).map((i) => [i.key, i]));
   const total = keys.reduce((s, k) => {
     const item = byKey.get(k);
-    return s + (item ? Math.min(1, strength(item) * 1.15) : 0);
+    return s + (item ? progress(item) : 0);
   }, 0);
   return total / keys.length;
 }

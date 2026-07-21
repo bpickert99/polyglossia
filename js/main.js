@@ -6,7 +6,7 @@ import { renderCulture } from "./culture.js";
 import { renderStats } from "./stats.js";
 import { buildPracticeSession, dueCount } from "./practice.js";
 import { buildLesson, unitMastery, poolFromUnit, isUnitDone, readingUnlocked } from "./lesson-builder.js";
-import { strength } from "./srs.js";
+import { progress } from "./srs.js";
 import { initSync } from "./sync.js";
 import { ttsMode, primeTTS } from "./tts.js";
 import { renderReadingSession, isReadingComplete } from "./reading.js";
@@ -61,11 +61,11 @@ async function computeLocked(course) {
 function unitStats(course, data) {
   const pool = poolFromUnit(data);
   const records = new Map(getItems(course.code).map((i) => [i.key, i]));
-  // 0.6 = "solidly learned" (reachable within a session or two of practice),
-  // not FSRS's stricter long-term-retention bar (0.85+ needs several *spaced*
-  // successful reviews over real time) — this is a same-session progress
-  // indicator, not the scheduler itself.
-  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && strength(r) >= 0.6; }).length;
+  // progress() (reps + accuracy) rather than strength() — strength() is
+  // time-gated by FSRS design and won't move within a single sitting no
+  // matter how many times you answer correctly, since real stability growth
+  // requires some elapsed time between reviews. See srs.js.
+  const mastered = pool.filter((i) => { const r = records.get(i.key); return r && progress(r) >= 0.7; }).length;
   const started = pool.filter((i) => records.get(i.key)?.reps).length;
   return { pool, mastered, started };
 }
