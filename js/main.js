@@ -10,6 +10,7 @@ import { progress } from "./srs.js";
 import { initSync } from "./sync.js";
 import { ttsMode, primeTTS } from "./tts.js";
 import { renderReadingSession, isReadingComplete } from "./reading.js";
+import { renderWritingSession, isWritingComplete } from "./writing.js";
 
 const app = document.getElementById("app");
 
@@ -76,6 +77,10 @@ function unitBoxHtml(course, section, data, unitId) {
   const hasReading = !!data.reading;
   const readingReady = hasReading && readingUnlocked(course.code, data);
   const readingDone = hasReading && isReadingComplete(course.code, unitId);
+  // Writing doesn't need authored content (unlike reading), so it's gated by
+  // the same mastery bar but available for every unit.
+  const writingReady = readingUnlocked(course.code, data);
+  const writingDone = isWritingComplete(course.code, unitId);
   return `
     <div class="popup-stats">
       <div class="popup-stat"><span>Level</span><b>${esc(section.level)}</b></div>
@@ -86,6 +91,9 @@ function unitBoxHtml(course, section, data, unitId) {
       ${!hasReading ? "" : readingReady
         ? `<a class="popup-icon-btn" href="#/reading/${esc(unitId)}" title="${readingDone ? "Read again" : "Reading practice"}">📖</a>`
         : `<span class="popup-icon-btn disabled" title="Learn a few more words first">📖</span>`}
+      ${writingReady
+        ? `<a class="popup-icon-btn" href="#/writing/${esc(unitId)}" title="${writingDone ? "Write again" : "Writing practice"}">📝</a>`
+        : `<span class="popup-icon-btn disabled" title="Learn a few more words first">📝</span>`}
     </div>`;
 }
 
@@ -234,11 +242,17 @@ async function viewUnit(unitId) {
   if ((await computeLocked(course)).has(unitId)) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
 
+  const canDo = data.canDo || [];
   app.innerHTML = `
     <div class="lang-hero">
       <h1>${esc(found.unit.icon || "")} ${esc(data.title)}</h1>
       <p><b>${esc(found.section.level)}</b> · ${esc(data.summary || "")}</p>
     </div>
+    ${canDo.length ? `
+    <div class="article can-do">
+      <h2>By the end, you can:</h2>
+      <ul>${canDo.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>
+    </div>` : ""}
     <div class="unit-box">${unitBoxHtml(course, found.section, data, unitId)}</div>
     <p class="muted" style="text-align:center;margin:14px 0 4px">Each lesson is built fresh: new words and sentences, plus review of what you're about to forget.</p>
     <div style="margin-top:18px"><a class="btn ghost wide" href="#/">← Back to course</a></div>`;
@@ -250,7 +264,16 @@ async function viewReading(unitId) {
   if (!found) { location.hash = "#/"; return; }
   const data = await loadUnit(course.code, found.unit.file);
   if (!data.reading || !readingUnlocked(course.code, data)) { location.hash = `#/unit/${unitId}`; return; }
-  renderReadingSession(app, course, unitId, data.reading, updateStats, `#/unit/${esc(unitId)}`);
+  await renderReadingSession(app, course, unitId, data.reading, updateStats, `#/unit/${esc(unitId)}`);
+}
+
+async function viewWriting(unitId) {
+  const course = await currentCourse();
+  const found = findUnit(course, unitId);
+  if (!found) { location.hash = "#/"; return; }
+  const data = await loadUnit(course.code, found.unit.file);
+  if (!readingUnlocked(course.code, data)) { location.hash = `#/unit/${unitId}`; return; }
+  renderWritingSession(app, course, unitId, data, updateStats, `#/unit/${esc(unitId)}`);
 }
 
 async function viewLesson(unitId) {
@@ -345,6 +368,7 @@ async function route() {
     if (parts[0] === "unit") return await viewUnit(parts[1]);
     if (parts[0] === "lesson") return await viewLesson(parts[1]);
     if (parts[0] === "reading") return await viewReading(parts[1]);
+    if (parts[0] === "writing") return await viewWriting(parts[1]);
     if (parts[0] === "script") return await viewScript();
     if (parts[0] === "culture") return await viewCulture();
     if (parts[0] === "practice") return await viewPractice();

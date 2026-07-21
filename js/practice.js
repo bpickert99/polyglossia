@@ -5,9 +5,9 @@
 // - Birdbrain: each exercise's difficulty is aimed by predicted success.
 // - Interleaving: the queue deliberately mixes skills and topics.
 import { getItems, getAbility } from "./storage.js";
-import { isDue, retrievability, accuracy, strength } from "./srs.js";
+import { isDue, retrievability, accuracy, strength, isLeech } from "./srs.js";
 import { predictP, seedDifficulty } from "./birdbrain.js";
-import { generateExercise, matchExercise, shuffled, hasWord } from "./exercises.js";
+import { generateExercise, matchExercise, shadowExercise, shuffled, hasWord } from "./exercises.js";
 
 // Items most worth reviewing right now, best-first.
 export function reviewQueue(lang, now = Date.now()) {
@@ -27,6 +27,10 @@ export function dueCount(lang, now = Date.now()) {
 }
 
 function exerciseForReview(item, pool, lang) {
+  if (isLeech(item)) {
+    return { type: "reteach", key: item.key, target: item.target, roman: item.roman,
+      english: item.english, note: item.note, ipa: item.ipa, audio: item.audio };
+  }
   const p = predictP(getAbility(lang), item.bd ?? seedDifficulty(item.level));
   return generateExercise(item, pool, p);
 }
@@ -45,6 +49,8 @@ export function buildPracticeSession(lang, size = 12) {
   const exercises = picked.map((i) => exerciseForReview(i, pool, lang)).filter(Boolean);
   const match = matchExercise(picked);
   if (match) exercises.splice(Math.floor(exercises.length / 2), 0, match);
+  const shadow = shadowExercise(picked);
+  if (shadow) exercises.splice(Math.min(2, exercises.length), 0, shadow);
 
   return { id: `practice-${Date.now()}`, title: "Practice", teach: [], exercises };
 }

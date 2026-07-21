@@ -256,6 +256,9 @@ body {
 }
 .type-input:focus { outline: none; border-color: var(--blue); }
 
+.shadow-controls { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+#shadow-rate .btn.wide + .btn.wide { margin-top: 8px; }
+
 .feedback {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
   padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
@@ -270,6 +273,7 @@ body {
 .feedback .fb-inner { max-width: 640px; margin: 0 auto; }
 .feedback h3 { margin-bottom: 4px; }
 .feedback p { font-weight: 700; margin-bottom: 12px; }
+.feedback p.fb-note { font-weight: 600; font-size: 0.88rem; margin-top: -6px; opacity: 0.9; }
 .session-footer { margin-top: 26px; }
 
 .complete { text-align: center; padding: 40px 0; }
@@ -315,6 +319,18 @@ body {
 }
 .reading-card h1 { font-size: 1.25rem; margin-bottom: 12px; }
 .reading-card p { line-height: 1.7; margin: 10px 0; font-size: 1.02rem; }
+.writing-words { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.writing-input { resize: vertical; min-height: 110px; font-weight: 500; }
+.tap-word { border-bottom: 2px dotted var(--blue); cursor: pointer; }
+.gloss-popover {
+  position: absolute; z-index: 30; max-width: 240px;
+  background: var(--card); border: 2px solid var(--line); border-radius: 14px;
+  padding: 12px 14px; box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+.gloss-popover .gloss-word { font-weight: 900; font-size: 1.05rem; }
+.gloss-popover .gloss-eng { color: var(--ink-soft); font-weight: 700; margin: 2px 0 8px; }
+.gloss-popover .btn { padding: 8px 14px; font-size: 0.85rem; }
+.gloss-popover .gloss-tracked { display: inline-block; color: var(--blue); font-weight: 800; font-size: 0.85rem; }
 
 /* ---------- culture ---------- */
 .article {
@@ -324,6 +340,9 @@ body {
 .article h2 { margin-bottom: 8px; }
 .article p { line-height: 1.6; margin: 8px 0; font-size: 0.95rem; }
 .article .tags { margin-top: 8px; }
+.can-do ul { list-style: none; }
+.can-do li { position: relative; padding-left: 26px; font-size: 0.95rem; line-height: 1.5; margin: 8px 0; }
+.can-do li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 900; }
 .tag { display: inline-block; background: color-mix(in srgb, var(--gold) 25%, transparent); color: #a07800; font-size: 0.72rem; font-weight: 900; border-radius: 8px; padding: 2px 8px; margin-right: 6px; }
 
 /* ---------- about ---------- */
@@ -363,6 +382,7 @@ body {
 }
 @media (prefers-color-scheme: dark) { .retry-chip { color: var(--gold); } }
 :root[data-theme="dark"] .retry-chip { color: var(--gold); }
+.leech-chip { background: color-mix(in srgb, var(--purple) 18%, transparent); color: var(--purple); }
 
 .session-shape {
   text-align: center; color: var(--ink-soft); font-weight: 800; font-size: 0.78rem;

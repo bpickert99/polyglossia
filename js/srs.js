@@ -84,6 +84,15 @@ export function isMastered(item) {
   return (item?.S || 0) >= 21;
 }
 
+// A "leech" (Anki's term) — an item that's failed several reviews in a row
+// with no success in between. Quizzing it again the same way rarely helps;
+// the caller should re-teach it instead (see lesson.js's reteach step) and
+// reset the streak once it has been.
+export const LEECH_STREAK = 3;
+export function isLeech(item) {
+  return (item?.lapseStreak || 0) >= LEECH_STREAK;
+}
+
 export function accuracy(item) {
   const n = (item?.correct || 0) + (item?.wrong || 0);
   return n ? (item.correct || 0) / n : 1;

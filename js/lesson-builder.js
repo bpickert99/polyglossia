@@ -13,9 +13,9 @@
 // Start the same skill twice and you get two different lessons.
 import { getItems, getAbility } from "./storage.js";
 import { predictP, newItemBudget, seedDifficulty } from "./birdbrain.js";
-import { generateExercise, matchExercise, shuffled, hasWord } from "./exercises.js";
+import { generateExercise, matchExercise, shadowExercise, shuffled, hasWord } from "./exercises.js";
 import { reviewQueue, dueCount } from "./practice.js";
-import { strength, progress } from "./srs.js";
+import { strength, progress, isLeech } from "./srs.js";
 
 // Flatten a unit's authored lessons into one item pool. Grammar/culture notes
 // ride along on the first item of the lesson they came from, so a note surfaces
@@ -136,6 +136,12 @@ export function buildLesson(course, unitData, size = 12) {
   ].filter(hasWord);
 
   const makeReviewExercise = (item) => {
+    // A leech (failed several reviews running) gets re-taught instead of
+    // quizzed again the same way — see srs.js isLeech / lesson.js showReteachCard.
+    if (isLeech(item)) {
+      return { type: "reteach", key: item.key, target: item.target, roman: item.roman,
+        english: item.english, note: item.note, ipa: item.ipa, audio: item.audio, review: true };
+    }
     const p = predictP(ability, item.bd ?? seedDifficulty(item.level));
     const ex = generateExercise(item, distractorPool, p);
     return ex ? { ...ex, review: true } : null;
@@ -168,6 +174,11 @@ export function buildLesson(course, unitData, size = 12) {
   const matchItems = [...newItems, ...reviewItems].filter(hasWord);
   const match = matchExercise(matchItems);
   if (match) interleaved.splice(Math.floor(interleaved.length / 2), 0, match);
+
+  // One shadow-and-compare speaking rep per session, if a phrase with real
+  // audio is available among this session's items.
+  const shadow = shadowExercise(matchItems);
+  if (shadow) interleaved.splice(Math.min(2, interleaved.length), 0, shadow);
 
   // Every grammar/culture note among the newly-introduced items — not just
   // the first. A session can genuinely introduce vocabulary from more than

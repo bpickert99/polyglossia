@@ -119,6 +119,10 @@ export function touchItem(lang, key, display = {}) {
 export function recordResult(lang, key, correct, display = {}) {
   const item = touchItem(lang, key, display);
   review(item, correct);
+  // Consecutive-wrong streak, independent of srs.js's lapses (which never
+  // resets) — this is what marks an item a "leech" worth re-teaching instead
+  // of re-quizzing. See srs.js isLeech / resetLapseStreak below.
+  item.lapseStreak = correct ? 0 : (item.lapseStreak || 0) + 1;
   // Birdbrain: seed item difficulty from its CEFR level on first sight, then
   // nudge both the item's difficulty and the learner's ability.
   if (item.bd === undefined) item.bd = seedDifficulty(item.level);
@@ -127,6 +131,17 @@ export function recordResult(lang, key, correct, display = {}) {
   item.bd = next.difficulty;
   save();
   return item;
+}
+
+// Called after a leech has been re-taught (see lesson.js showReteachCard):
+// clears the wrong-streak so the item gets a normal graded rep next time
+// it's due, instead of an immediate second reteach.
+export function resetLapseStreak(lang, key) {
+  const item = state.items[`${lang}:${key}`];
+  if (item) {
+    item.lapseStreak = 0;
+    save();
+  }
 }
 
 export function getItems(lang) {

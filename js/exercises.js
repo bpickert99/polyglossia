@@ -59,6 +59,7 @@ function mc(item, pool, direction, hardness) {
     tts: direction === "t2e" ? spoken(item) : undefined,
     audio: direction === "t2e" ? item.audio : undefined,
     ipa: direction === "t2e" ? item.ipa : undefined,
+    note: item.note,
   };
 }
 
@@ -74,6 +75,7 @@ function listen(item, pool, hardness) {
     audio: item.audio,
     choices,
     answer: choices.indexOf(item.target),
+    note: item.note,
   };
 }
 
@@ -89,6 +91,28 @@ function produce(item) {
     tts: spoken(item),
     audio: item.audio,
     ipa: item.ipa,
+    note: item.note,
+  };
+}
+
+// Dictation: play audio, type the whole sentence from what you hear. Only
+// eligible for phrase items (a single word is just produce() by ear) — this
+// is the harder, "spelling from listening" rung research consistently backs
+// for listening comprehension, one step up from listen()'s multiple choice.
+function dictate(item) {
+  if (tokensOf(item).length < 2) return null;
+  const answer = item.roman || item.target;
+  const accept = [item.target].filter((x) => x && x !== answer);
+  return {
+    type: "dictation",
+    key: item.key,
+    prompt: "Type what you hear",
+    answer,
+    accept,
+    tts: spoken(item),
+    audio: item.audio,
+    ipa: item.ipa,
+    note: item.note,
   };
 }
 
@@ -120,6 +144,7 @@ function order(item, pool, hardness = 0.5) {
     tts: spoken(item),
     audio: item.audio,
     ipa: item.ipa,
+    note: item.note,
   };
 }
 
@@ -130,13 +155,35 @@ export function generateExercise(item, pool, pCorrect) {
   const ladder = {
     recognize: [() => mc(item, pool, "t2e", hardness), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
     listen: [() => listen(item, pool, hardness), () => mc(item, pool, "e2t", hardness), () => order(item, pool, hardness), () => produce(item)],
-    produce: [() => order(item, pool, hardness), () => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
+    produce: [() => order(item, pool, hardness), () => dictate(item), () => produce(item), () => mc(item, pool, "e2t", hardness), () => listen(item, pool, hardness)],
   }[demand];
   for (const make of ladder) {
     const ex = make();
     if (ex) return ex;
   }
   return mc(item, pool, "t2e", 0) || produce(item);
+}
+
+// One shadow-and-compare speaking rep per session: listen, record yourself,
+// play both back to back, self-rate. No ASR — Interlingua isn't a language
+// the Web Speech API recognizes, and even where it is, real pronunciation
+// scoring is a different (harder) problem than this app takes on. Self-
+// comparison is the low-tech version of the same shadowing-technique research.
+// Needs real pre-rendered audio: there's nothing worth mimicking in a live
+// eSpeak fallback voice.
+export function shadowExercise(items) {
+  const candidates = shuffled(items.filter((i) => hasWord(i) && i.audio && tokensOf(i).length >= 2));
+  const item = candidates[0];
+  if (!item) return null;
+  return {
+    type: "shadow",
+    key: item.key,
+    prompt: "Shadow it: listen, then record yourself saying it",
+    english: item.english,
+    tts: spoken(item),
+    audio: item.audio,
+    ipa: item.ipa,
+  };
 }
 
 // A matching block over several items (forces discrimination between them).
