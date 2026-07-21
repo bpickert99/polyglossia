@@ -5,7 +5,7 @@ import { renderScriptPractice } from "./script-practice.js";
 import { renderCulture } from "./culture.js";
 import { renderStats } from "./stats.js";
 import { buildPracticeSession, dueCount } from "./practice.js";
-import { buildLesson, unitMastery, poolFromUnit, isUnitDone, readingUnlocked } from "./lesson-builder.js";
+import { buildLesson, unitMastery, poolFromUnit, isUnitDone, readingUnlocked, UNIT_UNLOCK_THRESHOLD } from "./lesson-builder.js";
 import { progress } from "./srs.js";
 import { initSync } from "./sync.js";
 import { primeTTS } from "./tts.js";
@@ -191,8 +191,13 @@ async function viewCourseMap() {
     html += `<div class="unit-path">`;
     for (const u of section.units) {
       const data = unitsData.get(u.id);
-      const prog = data ? unitMastery(course.code, data) : 0;
-      const done = prog >= 0.95;
+      const rawProg = data ? unitMastery(course.code, data) : 0;
+      // Ring visually closes exactly when the unit actually unlocks the next
+      // one (UNIT_UNLOCK_THRESHOLD), not at some stricter mastery bar the
+      // learner would rarely reach — raw mastery keeps climbing after that
+      // via Practice, but the ring itself is already "done".
+      const prog = Math.min(1, rawProg / UNIT_UNLOCK_THRESHOLD);
+      const done = prog >= 1;
       const isLocked = lockedUnits.has(u.id);
       const circumference = 2 * Math.PI * 43;
       html += `
