@@ -16,13 +16,6 @@
           "audio": "audio/grande.wav"
         },
         {
-          "target": "le catto",
-          "roman": "le catto",
-          "english": "the cat",
-          "ipa": "le kˈato",
-          "audio": "audio/le-catto.wav"
-        },
-        {
           "target": "Le can es plus grande que le catto.",
           "roman": "le can es plus grande que le catto",
           "english": "The dog is bigger than the cat.",
@@ -48,27 +41,6 @@
       "id": "l2",
       "title": "Tanto como",
       "teach": [
-        {
-          "target": "alte",
-          "roman": "alte",
-          "english": "tall",
-          "ipa": "ˈalte",
-          "audio": "audio/alte.wav"
-        },
-        {
-          "target": "bon",
-          "roman": "bon",
-          "english": "good",
-          "ipa": "bˈon",
-          "audio": "audio/bon.wav"
-        },
-        {
-          "target": "mal",
-          "roman": "mal",
-          "english": "bad",
-          "ipa": "mˈal",
-          "audio": "audio/mal.wav"
-        },
         {
           "target": "Mi soror es tanto alte como mi fratre.",
           "roman": "mi soror es tanto alte como mi fratre",

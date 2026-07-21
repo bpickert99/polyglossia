@@ -1,101 +1,185 @@
 {
   "id": "ia-a2-u5",
-  "title": "Tempore e calendario",
+  "title": "Le vita quotidian",
   "level": "A2",
-  "summary": "Days, months, and telling time.",
+  "summary": "Daily life: home, work, town, and time words.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Le dies del septimana",
+      "title": "Casa e labor",
       "teach": [
         {
-          "target": "lunedi",
-          "roman": "lunedi",
-          "english": "Monday",
-          "ipa": "lˌunedˈi",
-          "audio": "audio/lunedi.wav"
+          "target": "le casa",
+          "roman": "le casa",
+          "english": "the house / home",
+          "ipa": "le kˈasa",
+          "audio": "audio/le-casa.wav"
         },
         {
-          "target": "mercuridi",
-          "roman": "mercuridi",
-          "english": "Wednesday",
-          "ipa": "mˌerkuridˈi",
-          "audio": "audio/mercuridi.wav"
+          "target": "le labor",
+          "roman": "le labor",
+          "english": "the work / job",
+          "ipa": "le labˈor",
+          "audio": "audio/le-labor.wav"
         },
         {
-          "target": "venerdi",
-          "roman": "venerdi",
-          "english": "Friday",
-          "ipa": "vˌenerdˈi",
-          "audio": "audio/venerdi.wav"
+          "target": "le schola",
+          "roman": "le schola",
+          "english": "the school",
+          "ipa": "le stʃˈola",
+          "audio": "audio/le-schola.wav"
         },
         {
-          "target": "le septimana",
-          "roman": "le septimana",
-          "english": "the week",
-          "ipa": "le sˌeptimˈana",
-          "audio": "audio/le-septimana.wav"
+          "target": "le urbe",
+          "roman": "le urbe",
+          "english": "the city",
+          "ipa": "le ˈurbe",
+          "audio": "audio/le-urbe.wav"
         },
         {
-          "target": "Le lection es lunedi.",
-          "roman": "le lection es lunedi",
-          "english": "The lesson is on Monday.",
-          "note": "lection = lesson.",
-          "ipa": "le lektjˈon es lˌunedˈi",
-          "audio": "audio/le-lection-es-lunedi.wav"
+          "target": "Io vade al labor omne die.",
+          "roman": "io vade al labor omne die",
+          "english": "I go to work every day.",
+          "note": "omne die = every day.",
+          "ipa": "ˈiʲo vˈade al labˈor ˈomne dˈiʲe",
+          "audio": "audio/io-vade-al-labor-omne-die.wav"
         }
-      ],
-      "grammar": {
-        "title": "Days of the week",
-        "body": "All seven days end in **-di** (from *die*, day): lunedi, martedi, mercuridi, jovedi, venerdi, sabbato, dominica.\nNo preposition is needed for \"on\" a day — **le lection es lunedi** already means \"the lesson is on Monday.\""
-      }
+      ]
     },
     {
       "id": "l2",
-      "title": "Le horas",
+      "title": "Tempore",
       "teach": [
         {
-          "target": "Que hora es il?",
-          "roman": "que hora es il",
-          "english": "What time is it?",
-          "note": "Literally 'what hour is it' — il here is a dummy subject, like English weather 'it'.",
-          "ipa": "kˈe hˈora es ˈil",
-          "audio": "audio/que-hora-es-il.wav"
+          "target": "hodie",
+          "roman": "hodie",
+          "english": "today",
+          "ipa": "hˈodje",
+          "audio": "audio/hodie.wav"
         },
         {
-          "target": "Il es tres horas.",
-          "roman": "il es tres horas",
-          "english": "It's three o'clock.",
-          "ipa": "il es trˈes hˈoras",
-          "audio": "audio/il-es-tres-horas.wav"
+          "target": "le die",
+          "roman": "le die",
+          "english": "the day",
+          "ipa": "le dˈiʲe",
+          "audio": "audio/le-die.wav"
         },
         {
-          "target": "le minuta",
-          "roman": "le minuta",
-          "english": "the minute",
-          "ipa": "le minˈuta",
-          "audio": "audio/le-minuta.wav"
+          "target": "le nocte",
+          "roman": "le nocte",
+          "english": "the night",
+          "ipa": "le nˈokte",
+          "audio": "audio/le-nocte.wav"
         },
         {
-          "target": "matino",
-          "roman": "matino",
-          "english": "morning",
-          "ipa": "matˈino",
-          "audio": "audio/matino.wav"
+          "target": "sempre",
+          "roman": "sempre",
+          "english": "always",
+          "ipa": "sˈempre",
+          "audio": "audio/sempre.wav"
         },
         {
-          "target": "vespere",
-          "roman": "vespere",
-          "english": "evening",
-          "ipa": "vˈespere",
-          "audio": "audio/vespere.wav"
+          "target": "Hodie es un bon die.",
+          "roman": "hodie es un bon die",
+          "english": "Today is a good day.",
+          "ipa": "hˈodje es un bˈon dˈiʲe",
+          "audio": "audio/hodie-es-un-bon-die.wav"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Nove, vetule, alte",
+      "teach": [
+        {
+          "target": "nove",
+          "roman": "nove",
+          "english": "new"
+        },
+        {
+          "target": "vetule",
+          "roman": "vetule",
+          "english": "old"
+        },
+        {
+          "target": "longe",
+          "roman": "longe",
+          "english": "long"
+        },
+        {
+          "target": "curte",
+          "roman": "curte",
+          "english": "short"
+        },
+        {
+          "target": "alte",
+          "roman": "alte",
+          "english": "tall"
+        },
+        {
+          "target": "Mi can es vetule ma mi catto es nove.",
+          "roman": "mi can es vetule ma mi catto es nove",
+          "english": "My dog is old but my cat is new."
         }
       ]
     }
   ],
+  "reading": {
+    "title": "Un die in le vita de Anna",
+    "passage": [
+      "Anna vade al schola omne die.",
+      "Heri illa parlava con su amico Marco.",
+      "Deman illa apprendera interlingua in le schola.",
+      "Illa ama apprender linguas.",
+      "Proque? Proque illa ama isto!"
+    ],
+    "questions": [
+      {
+        "prompt": "Where does Anna go every day?",
+        "choices": [
+          "School",
+          "Work",
+          "The city",
+          "Home"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Who did she speak with yesterday?",
+        "choices": [
+          "Her friend Marco",
+          "Her mother",
+          "Her brother",
+          "A stranger"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What will she do tomorrow?",
+        "choices": [
+          "Learn Interlingua at school",
+          "Go to work",
+          "Travel",
+          "Sleep"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Why does she love it?",
+        "choices": [
+          "Because she loves learning",
+          "Because it's easy",
+          "Because of money",
+          "No reason given"
+        ],
+        "answer": 0
+      }
+    ]
+  },
   "canDo": [
-    "Name the days of the week",
-    "Ask and tell the time",
-    "Talk about morning and evening"
+    "Talk about your home, job, and school",
+    "Describe your daily routine",
+    "Say what today is like",
+    "Describe things as new, old, long, or short"
   ]
 }

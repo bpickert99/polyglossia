@@ -1,0 +1,155 @@
+{
+  "id": "ia-a2-u9",
+  "title": "Prepositiones",
+  "level": "A2",
+  "summary": "In, on, under, between — locating things precisely.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "In, sur, sub",
+      "teach": [
+        {
+          "target": "sur",
+          "roman": "sur",
+          "english": "on, on top of",
+          "ipa": "sˈur",
+          "audio": "audio/sur.wav"
+        },
+        {
+          "target": "sub",
+          "roman": "sub",
+          "english": "under",
+          "ipa": "sˈub",
+          "audio": "audio/sub.wav"
+        },
+        {
+          "target": "inter",
+          "roman": "inter",
+          "english": "between, among",
+          "ipa": "ˈinter",
+          "audio": "audio/inter.wav"
+        },
+        {
+          "target": "Le catto es sub le tabula.",
+          "roman": "le catto es sub le tabula",
+          "english": "The cat is under the table.",
+          "note": "tabula = table.",
+          "ipa": "le kˈato es sˈub le tˈabula",
+          "audio": "audio/le-catto-es-sub-le-tabula.wav"
+        },
+        {
+          "target": "Le libro es sur le tabula, inter le lampa e le taza.",
+          "roman": "le libro es sur le tabula inter le lampa e le taza",
+          "english": "The book is on the table, between the lamp and the cup.",
+          "note": "lampa = lamp; taza = cup.",
+          "ipa": "le lˈibro es sˈur le tˈabula ˈinter le lˈampa e le tˈaza",
+          "audio": "audio/le-libro-es-sur-le-tabula-inter-le-lampa-e-le-taza.wav"
+        }
+      ],
+      "grammar": {
+        "title": "Locating things precisely",
+        "body": "**sur** = on/on top of, **sub** = under, **inter** = between/among, **ante** = in front of/before, **detra** = behind, **presso** = near.\nThese combine cleanly with **al** (a + le) and **del** (de + le): **le can es presso del porta** (the dog is near the door)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Ante e detra",
+      "teach": [
+        {
+          "target": "ante",
+          "roman": "ante",
+          "english": "in front of, before",
+          "ipa": "ˈante",
+          "audio": "audio/ante.wav"
+        },
+        {
+          "target": "detra",
+          "roman": "detra",
+          "english": "behind",
+          "ipa": "dˈetra",
+          "audio": "audio/detra.wav"
+        },
+        {
+          "target": "presso",
+          "roman": "presso",
+          "english": "near",
+          "ipa": "prˈeso",
+          "audio": "audio/presso.wav"
+        },
+        {
+          "target": "Le schola es ante le parco e detra le urbe vetule.",
+          "roman": "le schola es ante le parco e detra le urbe vetule",
+          "english": "The school is in front of the park and behind the old city.",
+          "ipa": "le stʃˈola es ˈante le pˈarko e dˈetra le ˈurbe vˈetule",
+          "audio": "audio/le-schola-es-ante-le-parco-e-detra-le-urbe-vetule.wav"
+        },
+        {
+          "target": "hic",
+          "roman": "hic",
+          "english": "here"
+        },
+        {
+          "target": "ibi",
+          "roman": "ibi",
+          "english": "there"
+        }
+      ]
+    }
+  ],
+  "reading": {
+    "title": "Le casa de Marco",
+    "passage": [
+      "Le catto de Marco es sur le tabula. Le can es sub le tabula.",
+      "Le lampa es inter le catto e le can.",
+      "Le schola es ante le parco, e le officio es detra le schola.",
+      "Le medico labora in le officio, presso del parco."
+    ],
+    "questions": [
+      {
+        "prompt": "Where is the cat?",
+        "choices": [
+          "On the table",
+          "Under the table",
+          "Behind the table",
+          "Near the table"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Where is the lamp?",
+        "choices": [
+          "Between the cat and the dog",
+          "On the table",
+          "Under the school",
+          "Near the park"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What is behind the school?",
+        "choices": [
+          "The office",
+          "The park",
+          "The table",
+          "The house"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Where does the doctor work?",
+        "choices": [
+          "In the office, near the park",
+          "At the school",
+          "At home",
+          "In the park"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "canDo": [
+    "Say what's on, under, or between things",
+    "Describe where something is, in front of or behind",
+    "Give simple directions using near/behind/in front of"
+  ]
+}

@@ -1,91 +1,82 @@
 {
   "id": "ia-b2-u1",
-  "title": "Le conditional",
+  "title": "Opiniones",
   "level": "B2",
-  "summary": "Say what would happen: the conditional tense.",
+  "summary": "Say what you think, and whether you agree.",
   "lessons": [
     {
       "id": "l1",
-      "title": "-erea",
+      "title": "Pensar e creder",
       "teach": [
         {
-          "target": "parlarea",
-          "roman": "parlarea",
-          "english": "would speak",
-          "note": "Add -rea to the infinitive: parlar → parlarea.",
-          "ipa": "pˌarlarˈea",
-          "audio": "audio/parlarea.wav"
+          "target": "pensar",
+          "roman": "pensar",
+          "english": "to think"
         },
         {
-          "target": "haberea",
-          "roman": "haberea",
-          "english": "would have",
-          "note": "haber is the full infinitive of 'to have' (ha is the present tense).",
-          "ipa": "hˌaberˈea",
-          "audio": "audio/haberea.wav"
+          "target": "creder",
+          "roman": "creder",
+          "english": "to believe"
         },
         {
-          "target": "Si io haberea tempore, io parlarea plus interlingua.",
-          "roman": "si io haberea tempore io parlarea plus interlingua",
-          "english": "If I had time, I would speak more Interlingua.",
-          "note": "tempore = time.",
-          "ipa": "sˈiʲ ˈiʲo hˌaberˈea tˈempore ˈiʲo pˌarlarˈea plˈus ˌinterlˈiŋɡwa",
-          "audio": "audio/si-io-haberea-tempore-io-parlarea-plus-interlingua.wav"
+          "target": "le opinion",
+          "roman": "le opinion",
+          "english": "the opinion"
         },
         {
-          "target": "Esserea agradabile vider te.",
-          "roman": "esserea agradabile vider te",
-          "english": "It would be nice to see you.",
-          "note": "esserea = would be (from esser); agradabile = pleasant/nice.",
-          "ipa": "ˌeserˈea ˌaɡradˈabile vidˈer tˈe",
-          "audio": "audio/esserea-agradabile-vider-te.wav"
+          "target": "Io pensa que Interlingua es facile.",
+          "roman": "io pensa que interlingua es facile",
+          "english": "I think that Interlingua is easy.",
+          "note": "que introduces a clause, like English 'that' — Interlingua just uses the normal verb form here, no subjunctive."
+        },
+        {
+          "target": "Secundo me, ...",
+          "roman": "secundo me",
+          "english": "In my opinion, ...",
+          "note": "secundo = according to."
         }
       ],
       "grammar": {
-        "title": "The conditional tense",
-        "body": "Add **-rea** to the infinitive for \"would\": parlar → **parlarea** (would speak), vader → **vaderea** (would go), esser → **esserea** (would be).\nOne form for every person, like every other Interlingua tense: io parlarea, tu parlarea, nos parlarea."
+        "title": "Saying what you think",
+        "body": "**Io pensa que...** / **Io crede que...** (I think/believe that...) work exactly like English — no special mood needed after que.\n**Secundo me** (in my opinion) can open a sentence on its own: Secundo me, isto es un bon idea."
       }
     },
     {
       "id": "l2",
-      "title": "Condiciones",
+      "title": "Accordo e disaccordo",
       "teach": [
         {
-          "target": "vaderea",
-          "roman": "vaderea",
-          "english": "would go",
-          "ipa": "vˌaderˈea",
-          "audio": "audio/vaderea.wav"
+          "target": "esser de accordo",
+          "roman": "esser de accordo",
+          "english": "to agree"
         },
         {
-          "target": "poterea",
-          "roman": "poterea",
-          "english": "could, would be able to",
-          "ipa": "pˌoterˈea",
-          "audio": "audio/poterea.wav"
+          "target": "Io es de accordo.",
+          "roman": "io es de accordo",
+          "english": "I agree."
         },
         {
-          "target": "Si io haberea plus moneta, io vaderea al Europa.",
-          "roman": "si io haberea plus moneta io vaderea al europa",
-          "english": "If I had more money, I would go to Europe.",
-          "note": "moneta = money.",
-          "ipa": "sˈiʲ ˈiʲo hˌaberˈea plˈus monˈeta ˈiʲo vˌaderˈea al eʊrˈopa",
-          "audio": "audio/si-io-haberea-plus-moneta-io-vaderea-al-europa.wav"
+          "target": "Io non es de accordo.",
+          "roman": "io non es de accordo",
+          "english": "I disagree."
         },
         {
-          "target": "Tu poterea apprender interlingua in poc menses.",
-          "roman": "tu poterea apprender interlingua in poc menses",
-          "english": "You could learn Interlingua in a few months.",
-          "note": "poc = few; mense = month.",
-          "ipa": "tˈu pˌoterˈea ˌaprendˈer ˌinterlˈiŋɡwa ˈin pˈok mˈenses",
-          "audio": "audio/tu-poterea-apprender-interlingua-in-poc-menses.wav"
+          "target": "possibile",
+          "roman": "possibile",
+          "english": "possible"
+        },
+        {
+          "target": "Es possibile que ille ha ration.",
+          "roman": "es possibile que ille ha ration",
+          "english": "It's possible that he's right.",
+          "note": "haber ration = to be right, literally 'to have reason' — the same haber-idiom as haber fame/haber sete."
         }
       ]
     }
   ],
   "canDo": [
-    "Say what you would do in a hypothetical situation",
-    "Talk about what would be nice",
-    "Make a polite hypothetical suggestion"
+    "Say what you think or believe",
+    "Give your opinion on something",
+    "Say whether you agree or disagree"
   ]
 }

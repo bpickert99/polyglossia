@@ -1,98 +1,103 @@
 {
   "id": "ia-a2-u2",
-  "title": "Questiones",
+  "title": "Le imperativo",
   "level": "A2",
-  "summary": "Ask anything: where, when, what, who, why.",
+  "summary": "Give commands and make polite requests.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Ubi, que, qui",
+      "title": "Commandos simple",
       "teach": [
         {
-          "target": "ubi",
-          "roman": "ubi",
-          "english": "where",
-          "ipa": "ˈubi",
-          "audio": "audio/ubi.wav"
+          "target": "Veni!",
+          "roman": "veni",
+          "english": "Come!",
+          "note": "The imperative is the infinitive minus -r, no pronoun: venir → veni.",
+          "ipa": "vˈeni",
+          "audio": "audio/veni.wav"
         },
         {
-          "target": "que",
-          "roman": "que",
-          "english": "what",
-          "ipa": "kˈe",
-          "audio": "audio/que.wav"
+          "target": "Audi!",
+          "roman": "audi",
+          "english": "Listen!",
+          "ipa": "ˈaʊdi",
+          "audio": "audio/audi.wav"
         },
         {
-          "target": "qui",
-          "roman": "qui",
-          "english": "who",
-          "ipa": "kˈi",
-          "audio": "audio/qui.wav"
+          "target": "rapide",
+          "roman": "rapide",
+          "english": "fast",
+          "ipa": "rˈapide",
+          "audio": "audio/rapide.wav"
         },
         {
-          "target": "Ubi es le station?",
-          "roman": "ubi es le station",
-          "english": "Where is the station?",
-          "ipa": "ˈubiʲ es le statjˈon",
-          "audio": "audio/ubi-es-le-station.wav"
+          "target": "Parla plus lente, per favor.",
+          "roman": "parla plus lente per favor",
+          "english": "Speak more slowly, please.",
+          "note": "lente = slow(ly).",
+          "ipa": "pˈarla plˈus lˈente pˈer favˈor",
+          "audio": "audio/parla-plus-lente-per-favor.wav"
         },
         {
-          "target": "Que es isto?",
-          "roman": "que es isto",
-          "english": "What is this?",
-          "note": "isto = this (thing).",
-          "ipa": "kˈe es ˈisto",
-          "audio": "audio/que-es-isto.wav"
+          "target": "Non parla tanto rapide!",
+          "roman": "non parla tanto rapide",
+          "english": "Don't speak so fast!",
+          "note": "Negate a command the same way as any verb: non before it.",
+          "ipa": "nˈon pˈarla tˈanto rˈapide",
+          "audio": "audio/non-parla-tanto-rapide.wav"
         }
-      ]
+      ],
+      "grammar": {
+        "title": "Giving commands",
+        "body": "The imperative is just the infinitive with its **-r** dropped — no pronoun needed, one form for everyone you're talking to:\nparlar → **Parla!** (Speak!), venir → **Veni!** (Come!), audir → **Audi!** (Listen!)\nNegate it exactly like any other verb: **Non parla!** (Don't speak!)."
+      }
     },
     {
       "id": "l2",
-      "title": "Quando, proque, como",
+      "title": "Requestas politie",
       "teach": [
         {
-          "target": "quando",
-          "roman": "quando",
-          "english": "when",
-          "ipa": "kwˈando",
-          "audio": "audio/quando.wav"
+          "target": "intrar",
+          "roman": "intrar",
+          "english": "to enter, to come in",
+          "ipa": "intrˈar",
+          "audio": "audio/intrar.wav"
         },
         {
-          "target": "proque",
-          "roman": "proque",
-          "english": "why (also: because)",
-          "note": "One word does both jobs — context decides.",
-          "ipa": "prokˈe",
-          "audio": "audio/proque.wav"
+          "target": "Intra, per favor!",
+          "roman": "intra per favor",
+          "english": "Come in, please!",
+          "ipa": "ˈintra pˈer favˈor",
+          "audio": "audio/intra-per-favor.wav"
         },
         {
-          "target": "como",
-          "roman": "como",
-          "english": "how",
-          "ipa": "kˈomo",
-          "audio": "audio/como.wav"
+          "target": "prender",
+          "roman": "prender",
+          "english": "to take",
+          "ipa": "prendˈer",
+          "audio": "audio/prender.wav"
         },
         {
-          "target": "Quando veni tu?",
-          "roman": "quando veni tu",
-          "english": "When are you coming?",
-          "note": "venir = to come.",
-          "ipa": "kwˈando vˈeni tˈu",
-          "audio": "audio/quando-veni-tu.wav"
+          "target": "Da me le pan, per favor.",
+          "roman": "da me le pan per favor",
+          "english": "Give me the bread, please.",
+          "note": "da = give (imperative of dar); me = me, the object form of io.",
+          "ipa": "dˈa mˈe le pˈan pˈer favˈor",
+          "audio": "audio/da-me-le-pan-per-favor.wav"
         },
         {
-          "target": "Proque? Proque io ama isto!",
-          "roman": "proque proque io ama isto",
-          "english": "Why? Because I love it!",
-          "ipa": "prokˈe prokˈe ˈiʲo ˈama ˈisto",
-          "audio": "audio/proque-proque-io-ama-isto.wav"
+          "target": "Prende un pomo, si tu vole.",
+          "roman": "prende un pomo si tu vole",
+          "english": "Take an apple, if you want.",
+          "ipa": "prˈende un pˈomo sˈi tˈu vˈole",
+          "audio": "audio/prende-un-pomo-si-tu-vole.wav"
         }
       ]
     }
   ],
   "canDo": [
-    "Ask where, what, who, when, why, and how",
-    "Ask for a location",
-    "Answer a “why” question"
+    "Give a simple command or instruction",
+    "Ask someone to slow down or come in",
+    "Make a polite request"
   ]
 }

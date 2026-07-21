@@ -99,6 +99,11 @@
           "english": "We have a dog.",
           "ipa": "nˈos ha un kˈan",
           "audio": "audio/nos-ha-un-can.wav"
+        },
+        {
+          "target": "le catto",
+          "roman": "le catto",
+          "english": "the cat"
         }
       ]
     }

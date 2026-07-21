@@ -1,96 +1,143 @@
 {
   "id": "ia-b1-u5",
-  "title": "Plus adjectivos",
+  "title": "Natura",
   "level": "B1",
-  "summary": "Describe things more precisely: new, old, easy, difficult.",
+  "summary": "Mountains, rivers, and the natural world.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Nove e vetule",
+      "title": "Montanias e fluvios",
       "teach": [
         {
-          "target": "nove",
-          "roman": "nove",
-          "english": "new",
-          "ipa": "nˈove",
-          "audio": "audio/nove.wav"
+          "target": "le montania",
+          "roman": "le montania",
+          "english": "the mountain",
+          "ipa": "le montˈanja",
+          "audio": "audio/le-montania.wav"
         },
         {
-          "target": "vetule",
-          "roman": "vetule",
-          "english": "old",
-          "ipa": "vˈetule",
-          "audio": "audio/vetule.wav"
+          "target": "le fluvio",
+          "roman": "le fluvio",
+          "english": "the river",
+          "ipa": "le flˈuvjo",
+          "audio": "audio/le-fluvio.wav"
         },
         {
-          "target": "longe",
-          "roman": "longe",
-          "english": "long",
-          "ipa": "lˈoŋɡe",
-          "audio": "audio/longe.wav"
+          "target": "le mar",
+          "roman": "le mar",
+          "english": "the sea",
+          "ipa": "le mˈar",
+          "audio": "audio/le-mar.wav"
         },
         {
-          "target": "curte",
-          "roman": "curte",
-          "english": "short",
-          "ipa": "kˈurte",
-          "audio": "audio/curte.wav"
+          "target": "le foreste",
+          "roman": "le foreste",
+          "english": "the forest",
+          "ipa": "le forˈeste",
+          "audio": "audio/le-foreste.wav"
         },
         {
-          "target": "Mi can es vetule ma mi catto es nove.",
-          "roman": "mi can es vetule ma mi catto es nove",
-          "english": "My dog is old but my cat is new.",
-          "ipa": "mi kˈan es vˈetule mˈa mi kˈato es nˈove",
-          "audio": "audio/mi-can-es-vetule-ma-mi-catto-es-nove.wav"
+          "target": "Nos ha ascendite le montania e vidite le mar.",
+          "roman": "nos ha ascendite le montania e vidite le mar",
+          "english": "We climbed the mountain and saw the sea.",
+          "note": "ascender = to climb/ascend.",
+          "ipa": "nˈos ha ˌastsendˈite le montˈanja e vidˈite le mˈar",
+          "audio": "audio/nos-ha-ascendite-le-montania-e-vidite-le-mar.wav"
         }
       ]
     },
     {
       "id": "l2",
-      "title": "Facile e difficile",
+      "title": "Le natura circa nos",
       "teach": [
         {
-          "target": "facile",
-          "roman": "facile",
-          "english": "easy",
-          "ipa": "fˈatsile",
-          "audio": "audio/facile.wav"
+          "target": "le arbore",
+          "roman": "le arbore",
+          "english": "the tree",
+          "ipa": "le ˈarbore",
+          "audio": "audio/le-arbore.wav"
         },
         {
-          "target": "difficile",
-          "roman": "difficile",
-          "english": "difficult",
-          "ipa": "difˈitsile",
-          "audio": "audio/difficile.wav"
+          "target": "le flor",
+          "roman": "le flor",
+          "english": "the flower",
+          "ipa": "le flˈor",
+          "audio": "audio/le-flor.wav"
         },
         {
-          "target": "importante",
-          "roman": "importante",
-          "english": "important",
-          "ipa": "ˌimportˈante",
-          "audio": "audio/importante.wav"
+          "target": "le insula",
+          "roman": "le insula",
+          "english": "the island",
+          "ipa": "le ˈinsula",
+          "audio": "audio/le-insula.wav"
         },
         {
-          "target": "interessante",
-          "roman": "interessante",
-          "english": "interesting",
-          "ipa": "ˌinteresˈante",
-          "audio": "audio/interessante.wav"
-        },
-        {
-          "target": "Interlingua es facile ma le grammatica anglese es difficile.",
-          "roman": "interlingua es facile ma le grammatica anglese es difficile",
-          "english": "Interlingua is easy but English grammar is difficult.",
-          "note": "grammatica = grammar; anglese = English.",
-          "ipa": "ˌinterlˈiŋɡwa es fˈatsile mˈa le ɡramˈatika aŋɡlˈese es difˈitsile",
-          "audio": "audio/interlingua-es-facile-ma-le-grammatica-anglese-es-difficile.wav"
+          "target": "Le insula ha multe arbores e flores belle.",
+          "roman": "le insula ha multe arbores e flores belle",
+          "english": "The island has many trees and beautiful flowers.",
+          "note": "multe = many; belle = beautiful.",
+          "ipa": "le ˈinsula ha mˈulte ˈarbores e flˈores bˈele",
+          "audio": "audio/le-insula-ha-multe-arbores-e-flores-belle.wav"
         }
       ]
     }
   ],
+  "reading": {
+    "title": "Un die in le montania",
+    "passage": [
+      "Anna e Marco ha vadite al montania con lor amico.",
+      "Illes ha ascendite le montania e ha vidite un fluvio inter le arbores.",
+      "Le sol esseva calide, ma un vento frigide veniva del mar.",
+      "Sur un petra presso del fluvio, illes ha comenciate a mangiar.",
+      "\"Esserea agradabile vader ci cata septimana,\" ha dicite Anna.",
+      "Marco ha respondite: \"Si, ma le proxime vice, io vole trovar le mar!\""
+    ],
+    "questions": [
+      {
+        "prompt": "Where did Anna and Marco go?",
+        "choices": [
+          "To the mountain",
+          "To the sea",
+          "To school",
+          "To the city"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What did they see between the trees?",
+        "choices": [
+          "A river",
+          "A lake",
+          "A house",
+          "A forest"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Where did they start eating?",
+        "choices": [
+          "On a rock near the river",
+          "In a restaurant",
+          "At school",
+          "On the mountain top"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What does Marco want to find next time?",
+        "choices": [
+          "The sea",
+          "A new mountain",
+          "A river",
+          "A forest"
+        ],
+        "answer": 0
+      }
+    ]
+  },
   "canDo": [
-    "Describe something as easy or difficult",
-    "Say something is important or interesting",
-    "Give a more nuanced description of something"
+    "Talk about mountains, rivers, and the sea",
+    "Describe a natural landscape",
+    "Talk about trees, flowers, and islands"
   ]
 }

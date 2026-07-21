@@ -1,97 +1,101 @@
 {
   "id": "ia-a2-u7",
-  "title": "Professiones",
+  "title": "Le tempore atmospheric",
   "level": "A2",
-  "summary": "Jobs and workplaces.",
+  "summary": "Talk about the weather and seasons.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Le laboro de mi familia",
+      "title": "Sol, pluvia, vento",
       "teach": [
         {
-          "target": "le medico",
-          "roman": "le medico",
-          "english": "the doctor",
-          "ipa": "le mˈediko",
-          "audio": "audio/le-medico.wav"
+          "target": "le sol",
+          "roman": "le sol",
+          "english": "the sun",
+          "ipa": "le sˈol",
+          "audio": "audio/le-sol.wav"
         },
         {
-          "target": "le professor",
-          "roman": "le professor",
-          "english": "the teacher, the professor",
-          "ipa": "le prˌofesˈor",
-          "audio": "audio/le-professor.wav"
+          "target": "le pluvia",
+          "roman": "le pluvia",
+          "english": "the rain",
+          "ipa": "le plˈuvja",
+          "audio": "audio/le-pluvia.wav"
         },
         {
-          "target": "le studente",
-          "roman": "le studente",
-          "english": "the student",
-          "ipa": "le studˈente",
-          "audio": "audio/le-studente.wav"
+          "target": "le vento",
+          "roman": "le vento",
+          "english": "the wind",
+          "ipa": "le vˈento",
+          "audio": "audio/le-vento.wav"
         },
         {
-          "target": "le cocinero",
-          "roman": "le cocinero",
-          "english": "the cook",
-          "ipa": "le kˌotsinˈero",
-          "audio": "audio/le-cocinero.wav"
+          "target": "le nive",
+          "roman": "le nive",
+          "english": "the snow",
+          "ipa": "le nˈive",
+          "audio": "audio/le-nive.wav"
         },
         {
-          "target": "Mi matre es medico e mi patre es professor.",
-          "roman": "mi matre es medico e mi patre es professor",
-          "english": "My mother is a doctor and my father is a teacher.",
-          "note": "No article before a profession after 'esser', like French/Spanish/Italian.",
-          "ipa": "mi mˈatre es mˈediko e mi pˈatre es prˌofesˈor",
-          "audio": "audio/mi-matre-es-medico-e-mi-patre-es-professor.wav"
+          "target": "Hodie il pluve multo.",
+          "roman": "hodie il pluve multo",
+          "english": "Today it's raining a lot.",
+          "note": "pluver = to rain, an impersonal verb like English 'it rains'.",
+          "ipa": "hˈodje il plˈuve mˈulto",
+          "audio": "audio/hodie-il-pluve-multo.wav"
         }
-      ]
+      ],
+      "grammar": {
+        "title": "Weather verbs",
+        "body": "Weather uses the dummy subject **il**, like English \"it\": **il pluve** (it rains), **il nive** (it snows), **il face frigide** (it's cold — literally 'it makes cold').\nCommon weather adjectives: **calide** (hot), **frigide** (cold), **nubilose** (cloudy)."
+      }
     },
     {
       "id": "l2",
-      "title": "Ubi tu labora?",
+      "title": "Le stationes",
       "teach": [
         {
-          "target": "le artista",
-          "roman": "le artista",
-          "english": "the artist",
-          "ipa": "le artˈista",
-          "audio": "audio/le-artista.wav"
+          "target": "le hiberno",
+          "roman": "le hiberno",
+          "english": "the winter",
+          "ipa": "le hibˈerno",
+          "audio": "audio/le-hiberno.wav"
         },
         {
-          "target": "le ingeniero",
-          "roman": "le ingeniero",
-          "english": "the engineer",
-          "ipa": "le ˌiŋɡenjˈero",
-          "audio": "audio/le-ingeniero.wav"
+          "target": "le estate",
+          "roman": "le estate",
+          "english": "the summer",
+          "ipa": "le estˈate",
+          "audio": "audio/le-estate.wav"
         },
         {
-          "target": "le officio",
-          "roman": "le officio",
-          "english": "the office",
-          "ipa": "le ofˈitsjo",
-          "audio": "audio/le-officio.wav"
+          "target": "calide",
+          "roman": "calide",
+          "english": "hot",
+          "ipa": "kˈalide",
+          "audio": "audio/calide.wav"
         },
         {
-          "target": "Ubi tu labora?",
-          "roman": "ubi tu labora",
-          "english": "Where do you work?",
-          "ipa": "ˈubi tˈu labˈora",
-          "audio": "audio/ubi-tu-labora.wav"
+          "target": "frigide",
+          "roman": "frigide",
+          "english": "cold",
+          "ipa": "frˈiɡide",
+          "audio": "audio/frigide.wav"
         },
         {
-          "target": "Io labora in un officio in le centro del urbe.",
-          "roman": "io labora in un officio in le centro del urbe",
-          "english": "I work in an office in the city center.",
-          "note": "centro = center; del = de + le (of the).",
-          "ipa": "ˈiʲo labˈora ˈin un ofˈitsjo ˈin le tsˈentro del ˈurbe",
-          "audio": "audio/io-labora-in-un-officio-in-le-centro-del-urbe.wav"
+          "target": "In le estate il face calide, in le hiberno il face frigide.",
+          "roman": "in le estate il face calide in le hiberno il face frigide",
+          "english": "In summer it's hot, in winter it's cold.",
+          "note": "facer = to make/do; here used impersonally for weather.",
+          "ipa": "ˈin le estˈate il fˈatse kˈalide ˈin le hibˈerno il fˈatse frˈiɡide",
+          "audio": "audio/in-le-estate-il-face-calide-in-le-hiberno-il-face-frigide.wav"
         }
       ]
     }
   ],
   "canDo": [
-    "Name common jobs",
-    "Say what you or a family member does for work",
-    "Ask where someone works"
+    "Talk about sun, rain, wind, and snow",
+    "Describe hot and cold weather",
+    "Talk about summer and winter"
   ]
 }

@@ -1,101 +1,101 @@
 {
   "id": "ia-a2-u6",
-  "title": "Le tempore atmospheric",
+  "title": "Tempore e calendario",
   "level": "A2",
-  "summary": "Talk about the weather and seasons.",
+  "summary": "Days, months, and telling time.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Sol, pluvia, vento",
+      "title": "Le dies del septimana",
       "teach": [
         {
-          "target": "le sol",
-          "roman": "le sol",
-          "english": "the sun",
-          "ipa": "le sˈol",
-          "audio": "audio/le-sol.wav"
+          "target": "lunedi",
+          "roman": "lunedi",
+          "english": "Monday",
+          "ipa": "lˌunedˈi",
+          "audio": "audio/lunedi.wav"
         },
         {
-          "target": "le pluvia",
-          "roman": "le pluvia",
-          "english": "the rain",
-          "ipa": "le plˈuvja",
-          "audio": "audio/le-pluvia.wav"
+          "target": "mercuridi",
+          "roman": "mercuridi",
+          "english": "Wednesday",
+          "ipa": "mˌerkuridˈi",
+          "audio": "audio/mercuridi.wav"
         },
         {
-          "target": "le vento",
-          "roman": "le vento",
-          "english": "the wind",
-          "ipa": "le vˈento",
-          "audio": "audio/le-vento.wav"
+          "target": "venerdi",
+          "roman": "venerdi",
+          "english": "Friday",
+          "ipa": "vˌenerdˈi",
+          "audio": "audio/venerdi.wav"
         },
         {
-          "target": "le nive",
-          "roman": "le nive",
-          "english": "the snow",
-          "ipa": "le nˈive",
-          "audio": "audio/le-nive.wav"
+          "target": "le septimana",
+          "roman": "le septimana",
+          "english": "the week",
+          "ipa": "le sˌeptimˈana",
+          "audio": "audio/le-septimana.wav"
         },
         {
-          "target": "Hodie il pluve multo.",
-          "roman": "hodie il pluve multo",
-          "english": "Today it's raining a lot.",
-          "note": "pluver = to rain, an impersonal verb like English 'it rains'.",
-          "ipa": "hˈodje il plˈuve mˈulto",
-          "audio": "audio/hodie-il-pluve-multo.wav"
+          "target": "Le lection es lunedi.",
+          "roman": "le lection es lunedi",
+          "english": "The lesson is on Monday.",
+          "note": "lection = lesson.",
+          "ipa": "le lektjˈon es lˌunedˈi",
+          "audio": "audio/le-lection-es-lunedi.wav"
         }
       ],
       "grammar": {
-        "title": "Weather verbs",
-        "body": "Weather uses the dummy subject **il**, like English \"it\": **il pluve** (it rains), **il nive** (it snows), **il face frigide** (it's cold — literally 'it makes cold').\nCommon weather adjectives: **calide** (hot), **frigide** (cold), **nubilose** (cloudy)."
+        "title": "Days of the week",
+        "body": "All seven days end in **-di** (from *die*, day): lunedi, martedi, mercuridi, jovedi, venerdi, sabbato, dominica.\nNo preposition is needed for \"on\" a day — **le lection es lunedi** already means \"the lesson is on Monday.\""
       }
     },
     {
       "id": "l2",
-      "title": "Le stationes",
+      "title": "Le horas",
       "teach": [
         {
-          "target": "le hiberno",
-          "roman": "le hiberno",
-          "english": "the winter",
-          "ipa": "le hibˈerno",
-          "audio": "audio/le-hiberno.wav"
+          "target": "Que hora es il?",
+          "roman": "que hora es il",
+          "english": "What time is it?",
+          "note": "Literally 'what hour is it' — il here is a dummy subject, like English weather 'it'.",
+          "ipa": "kˈe hˈora es ˈil",
+          "audio": "audio/que-hora-es-il.wav"
         },
         {
-          "target": "le estate",
-          "roman": "le estate",
-          "english": "the summer",
-          "ipa": "le estˈate",
-          "audio": "audio/le-estate.wav"
+          "target": "Il es tres horas.",
+          "roman": "il es tres horas",
+          "english": "It's three o'clock.",
+          "ipa": "il es trˈes hˈoras",
+          "audio": "audio/il-es-tres-horas.wav"
         },
         {
-          "target": "calide",
-          "roman": "calide",
-          "english": "hot",
-          "ipa": "kˈalide",
-          "audio": "audio/calide.wav"
+          "target": "le minuta",
+          "roman": "le minuta",
+          "english": "the minute",
+          "ipa": "le minˈuta",
+          "audio": "audio/le-minuta.wav"
         },
         {
-          "target": "frigide",
-          "roman": "frigide",
-          "english": "cold",
-          "ipa": "frˈiɡide",
-          "audio": "audio/frigide.wav"
+          "target": "matino",
+          "roman": "matino",
+          "english": "morning",
+          "ipa": "matˈino",
+          "audio": "audio/matino.wav"
         },
         {
-          "target": "In le estate il face calide, in le hiberno il face frigide.",
-          "roman": "in le estate il face calide in le hiberno il face frigide",
-          "english": "In summer it's hot, in winter it's cold.",
-          "note": "facer = to make/do; here used impersonally for weather.",
-          "ipa": "ˈin le estˈate il fˈatse kˈalide ˈin le hibˈerno il fˈatse frˈiɡide",
-          "audio": "audio/in-le-estate-il-face-calide-in-le-hiberno-il-face-frigide.wav"
+          "target": "vespere",
+          "roman": "vespere",
+          "english": "evening",
+          "ipa": "vˈespere",
+          "audio": "audio/vespere.wav"
         }
       ]
     }
   ],
   "canDo": [
-    "Talk about sun, rain, wind, and snow",
-    "Describe hot and cold weather",
-    "Talk about summer and winter"
+    "Name the days of the week",
+    "Ask and tell the time",
+    "Talk about morning and evening"
   ]
 }

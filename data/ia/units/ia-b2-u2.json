@@ -1,82 +1,91 @@
 {
   "id": "ia-b2-u2",
-  "title": "Le passivo",
+  "title": "Le conditional",
   "level": "B2",
-  "summary": "The passive voice: esser + past participle.",
+  "summary": "Say what would happen: the conditional tense.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Esser + participio",
+      "title": "-erea",
       "teach": [
         {
-          "target": "Le libro es scribite per illa.",
-          "roman": "le libro es scribite per illa",
-          "english": "The book is written by her.",
-          "note": "per = by, in the passive.",
-          "ipa": "le lˈibro es skribˈite pˈer ˈila",
-          "audio": "audio/le-libro-es-scribite-per-illa.wav"
+          "target": "parlarea",
+          "roman": "parlarea",
+          "english": "would speak",
+          "note": "Add -rea to the infinitive: parlar → parlarea.",
+          "ipa": "pˌarlarˈea",
+          "audio": "audio/parlarea.wav"
         },
         {
-          "target": "Le porta es aperite.",
-          "roman": "le porta es aperite",
-          "english": "The door is open(ed).",
-          "note": "porta = door; aperir = to open, aperite = opened.",
-          "ipa": "le pˈorta es ˌaperˈite",
-          "audio": "audio/le-porta-es-aperite.wav"
+          "target": "haberea",
+          "roman": "haberea",
+          "english": "would have",
+          "note": "haber is the full infinitive of 'to have' (ha is the present tense).",
+          "ipa": "hˌaberˈea",
+          "audio": "audio/haberea.wav"
         },
         {
-          "target": "scribite",
-          "roman": "scribite",
-          "english": "written",
-          "ipa": "skribˈite",
-          "audio": "audio/scribite.wav"
+          "target": "Si io haberea tempore, io parlarea plus interlingua.",
+          "roman": "si io haberea tempore io parlarea plus interlingua",
+          "english": "If I had time, I would speak more Interlingua.",
+          "note": "tempore = time.",
+          "ipa": "sˈiʲ ˈiʲo hˌaberˈea tˈempore ˈiʲo pˌarlarˈea plˈus ˌinterlˈiŋɡwa",
+          "audio": "audio/si-io-haberea-tempore-io-parlarea-plus-interlingua.wav"
         },
         {
-          "target": "aperite",
-          "roman": "aperite",
-          "english": "opened",
-          "ipa": "ˌaperˈite",
-          "audio": "audio/aperite.wav"
+          "target": "Esserea agradabile vider te.",
+          "roman": "esserea agradabile vider te",
+          "english": "It would be nice to see you.",
+          "note": "esserea = would be (from esser); agradabile = pleasant/nice.",
+          "ipa": "ˌeserˈea ˌaɡradˈabile vidˈer tˈe",
+          "audio": "audio/esserea-agradabile-vider-te.wav"
         }
       ],
       "grammar": {
-        "title": "The passive voice",
-        "body": "The passive uses **esser** (to be, in any tense) plus the past participle — exactly like English:\n**Le libro es scribite.** (The book is written.)\n**Le libro esseva scribite in 1950.** (The book was written in 1950.)\nUse **per** for the agent (\"by\"): **scribite per illa** (written by her)."
+        "title": "The conditional tense",
+        "body": "Add **-rea** to the infinitive for \"would\": parlar → **parlarea** (would speak), vader → **vaderea** (would go), esser → **esserea** (would be).\nOne form for every person, like every other Interlingua tense: io parlarea, tu parlarea, nos parlarea."
       }
     },
     {
       "id": "l2",
-      "title": "Passato passive",
+      "title": "Condiciones",
       "teach": [
         {
-          "target": "clause",
-          "roman": "clause",
-          "english": "closed",
-          "note": "from clauder, to close.",
-          "ipa": "klˈaʊse",
-          "audio": "audio/clause.wav"
+          "target": "vaderea",
+          "roman": "vaderea",
+          "english": "would go",
+          "ipa": "vˌaderˈea",
+          "audio": "audio/vaderea.wav"
         },
         {
-          "target": "Le schola esseva clause heri.",
-          "roman": "le schola esseva clause heri",
-          "english": "The school was closed yesterday.",
-          "ipa": "le stʃˈola esˌeva klˈaʊse hˈeri",
-          "audio": "audio/le-schola-esseva-clause-heri.wav"
+          "target": "poterea",
+          "roman": "poterea",
+          "english": "could, would be able to",
+          "ipa": "pˌoterˈea",
+          "audio": "audio/poterea.wav"
         },
         {
-          "target": "Iste pan es facite in nostre urbe.",
-          "roman": "iste pan es facite in nostre urbe",
-          "english": "This bread is made in our city.",
-          "note": "facite = made/done (from facer).",
-          "ipa": "ˈiste pˈan es fatsˈite ˈin nˌostre ˈurbe",
-          "audio": "audio/iste-pan-es-facite-in-nostre-urbe.wav"
+          "target": "Si io haberea plus moneta, io vaderea al Europa.",
+          "roman": "si io haberea plus moneta io vaderea al europa",
+          "english": "If I had more money, I would go to Europe.",
+          "note": "moneta = money.",
+          "ipa": "sˈiʲ ˈiʲo hˌaberˈea plˈus monˈeta ˈiʲo vˌaderˈea al eʊrˈopa",
+          "audio": "audio/si-io-haberea-plus-moneta-io-vaderea-al-europa.wav"
+        },
+        {
+          "target": "Tu poterea apprender interlingua in poc menses.",
+          "roman": "tu poterea apprender interlingua in poc menses",
+          "english": "You could learn Interlingua in a few months.",
+          "note": "poc = few; mense = month.",
+          "ipa": "tˈu pˌoterˈea ˌaprendˈer ˌinterlˈiŋɡwa ˈin pˈok mˈenses",
+          "audio": "audio/tu-poterea-apprender-interlingua-in-poc-menses.wav"
         }
       ]
     }
   ],
   "canDo": [
-    "Say something was done, without saying who did it",
-    "Describe an object using the passive voice",
-    "Talk about when something was closed or made"
+    "Say what you would do in a hypothetical situation",
+    "Talk about what would be nice",
+    "Make a polite hypothetical suggestion"
   ]
 }

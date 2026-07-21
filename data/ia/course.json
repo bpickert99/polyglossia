@@ -81,7 +81,7 @@
     {
       "level": "A2",
       "title": "Elementary",
-      "description": "Verbs, questions, daily life, time, weather, and work",
+      "description": "Verbs, commands, questions, daily life, time, weather, and work",
       "units": [
         {
           "id": "ia-a2-u1",
@@ -91,52 +91,58 @@
         },
         {
           "id": "ia-a2-u2",
-          "title": "Questiones",
-          "icon": "❓",
+          "title": "Le imperativo",
+          "icon": "📣",
           "file": "units/ia-a2-u2.json"
         },
         {
           "id": "ia-a2-u3",
-          "title": "Passato e futuro",
-          "icon": "⏳",
+          "title": "Questiones",
+          "icon": "❓",
           "file": "units/ia-a2-u3.json"
         },
         {
           "id": "ia-a2-u4",
-          "title": "Le vita quotidian",
-          "icon": "🏙️",
+          "title": "Passato e futuro",
+          "icon": "⏳",
           "file": "units/ia-a2-u4.json"
         },
         {
           "id": "ia-a2-u5",
-          "title": "Tempore e calendario",
-          "icon": "📅",
+          "title": "Le vita quotidian",
+          "icon": "🏙️",
           "file": "units/ia-a2-u5.json"
         },
         {
           "id": "ia-a2-u6",
-          "title": "Le tempore atmospheric",
-          "icon": "🌦️",
+          "title": "Tempore e calendario",
+          "icon": "📅",
           "file": "units/ia-a2-u6.json"
         },
         {
           "id": "ia-a2-u7",
-          "title": "Professiones",
-          "icon": "💼",
+          "title": "Le tempore atmospheric",
+          "icon": "🌦️",
           "file": "units/ia-a2-u7.json"
         },
         {
           "id": "ia-a2-u8",
+          "title": "Professiones",
+          "icon": "💼",
+          "file": "units/ia-a2-u8.json"
+        },
+        {
+          "id": "ia-a2-u9",
           "title": "Prepositiones",
           "icon": "📍",
-          "file": "units/ia-a2-u8.json"
+          "file": "units/ia-a2-u9.json"
         }
       ]
     },
     {
       "level": "B1",
       "title": "Intermediate",
-      "description": "Connected speech: experience, comparison, and instructions",
+      "description": "Connected speech: experience, comparison, and the natural world",
       "units": [
         {
           "id": "ia-b1-u1",
@@ -152,20 +158,20 @@
         },
         {
           "id": "ia-b1-u3",
-          "title": "Le imperativo",
-          "icon": "📣",
+          "title": "Plus verbos",
+          "icon": "🏁",
           "file": "units/ia-b1-u3.json"
         },
         {
           "id": "ia-b1-u4",
-          "title": "Plus verbos",
-          "icon": "🏁",
+          "title": "Plus adjectivos",
+          "icon": "🆕",
           "file": "units/ia-b1-u4.json"
         },
         {
           "id": "ia-b1-u5",
-          "title": "Plus adjectivos",
-          "icon": "🆕",
+          "title": "Natura",
+          "icon": "🏔️",
           "file": "units/ia-b1-u5.json"
         }
       ]
@@ -173,25 +179,31 @@
     {
       "level": "B2",
       "title": "Upper Intermediate",
-      "description": "Conditional, passive voice, and the natural world",
+      "description": "Opinion, argument, conditional, and passive voice",
       "units": [
         {
           "id": "ia-b2-u1",
-          "title": "Le conditional",
-          "icon": "🔮",
+          "title": "Opiniones",
+          "icon": "💭",
           "file": "units/ia-b2-u1.json"
         },
         {
           "id": "ia-b2-u2",
-          "title": "Le passivo",
-          "icon": "🔄",
+          "title": "Le conditional",
+          "icon": "🔮",
           "file": "units/ia-b2-u2.json"
         },
         {
           "id": "ia-b2-u3",
-          "title": "Natura",
-          "icon": "🏔️",
+          "title": "Le passivo",
+          "icon": "🔄",
           "file": "units/ia-b2-u3.json"
+        },
+        {
+          "id": "ia-b2-u4",
+          "title": "Argumentar",
+          "icon": "🔗",
+          "file": "units/ia-b2-u4.json"
         }
       ]
     },

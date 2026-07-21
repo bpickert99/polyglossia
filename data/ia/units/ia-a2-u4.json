@@ -1,148 +1,104 @@
 {
   "id": "ia-a2-u4",
-  "title": "Le vita quotidian",
+  "title": "Passato e futuro",
   "level": "A2",
-  "summary": "Daily life: home, work, town, and time words.",
+  "summary": "Past with -va, future with -ra. Two endings, all of time.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Casa e labor",
+      "title": "Le passato: -va",
       "teach": [
         {
-          "target": "le casa",
-          "roman": "le casa",
-          "english": "the house / home",
-          "ipa": "le kˈasa",
-          "audio": "audio/le-casa.wav"
+          "target": "parlava",
+          "roman": "parlava",
+          "english": "spoke / was speaking",
+          "note": "parlar → parlava, for all persons.",
+          "ipa": "parlˈava",
+          "audio": "audio/parlava.wav"
         },
         {
-          "target": "le labor",
-          "roman": "le labor",
-          "english": "the work / job",
-          "ipa": "le labˈor",
-          "audio": "audio/le-labor.wav"
+          "target": "esseva",
+          "roman": "esseva",
+          "english": "was / were",
+          "note": "from esser.",
+          "ipa": "esˈeva",
+          "audio": "audio/esseva.wav"
         },
         {
-          "target": "le schola",
-          "roman": "le schola",
-          "english": "the school",
-          "ipa": "le stʃˈola",
-          "audio": "audio/le-schola.wav"
+          "target": "habeva",
+          "roman": "habeva",
+          "english": "had",
+          "ipa": "habˈeva",
+          "audio": "audio/habeva.wav"
         },
         {
-          "target": "le urbe",
-          "roman": "le urbe",
-          "english": "the city",
-          "ipa": "le ˈurbe",
-          "audio": "audio/le-urbe.wav"
+          "target": "Heri io mangiava un pomo.",
+          "roman": "heri io mangiava un pomo",
+          "english": "Yesterday I ate an apple.",
+          "note": "heri = yesterday.",
+          "ipa": "hˈeriʲ ˈiʲo maŋɡjˈava un pˈomo",
+          "audio": "audio/heri-io-mangiava-un-pomo.wav"
         },
         {
-          "target": "Io vade al labor omne die.",
-          "roman": "io vade al labor omne die",
-          "english": "I go to work every day.",
-          "note": "omne die = every day.",
-          "ipa": "ˈiʲo vˈade al labˈor ˈomne dˈiʲe",
-          "audio": "audio/io-vade-al-labor-omne-die.wav"
+          "target": "Illa esseva felice.",
+          "roman": "illa esseva felice",
+          "english": "She was happy.",
+          "ipa": "ˈila esˌeva felˈitse",
+          "audio": "audio/illa-esseva-felice.wav"
         }
-      ]
+      ],
+      "grammar": {
+        "title": "Past tense: add -va",
+        "body": "Drop the -r of the infinitive and add **-va**:\n| parlar | parlava | spoke |\n| vider | videva | saw |\n| audir | audiva | heard |\nSame form for every person: io parlava, nos parlava, illes parlava."
+      }
     },
     {
       "id": "l2",
-      "title": "Tempore",
+      "title": "Le futuro: -ra",
       "teach": [
         {
-          "target": "hodie",
-          "roman": "hodie",
-          "english": "today",
-          "ipa": "hˈodje",
-          "audio": "audio/hodie.wav"
+          "target": "parlara",
+          "roman": "parlara",
+          "english": "will speak",
+          "note": "Stress the final a: parla-RA.",
+          "ipa": "parlˈara",
+          "audio": "audio/parlara.wav"
         },
         {
-          "target": "le die",
-          "roman": "le die",
-          "english": "the day",
-          "ipa": "le dˈiʲe",
-          "audio": "audio/le-die.wav"
+          "target": "essera",
+          "roman": "essera",
+          "english": "will be",
+          "ipa": "esˈera",
+          "audio": "audio/essera.wav"
         },
         {
-          "target": "le nocte",
-          "roman": "le nocte",
-          "english": "the night",
-          "ipa": "le nˈokte",
-          "audio": "audio/le-nocte.wav"
+          "target": "deman",
+          "roman": "deman",
+          "english": "tomorrow",
+          "ipa": "demˈan",
+          "audio": "audio/deman.wav"
         },
         {
-          "target": "sempre",
-          "roman": "sempre",
-          "english": "always",
-          "ipa": "sˈempre",
-          "audio": "audio/sempre.wav"
+          "target": "Deman io parlara con te.",
+          "roman": "deman io parlara con te",
+          "english": "Tomorrow I will speak with you.",
+          "note": "con te = with you.",
+          "ipa": "demˈan ˈiʲo parlˈara kˈon tˈe",
+          "audio": "audio/deman-io-parlara-con-te.wav"
         },
         {
-          "target": "Hodie es un bon die.",
-          "roman": "hodie es un bon die",
-          "english": "Today is a good day.",
-          "ipa": "hˈodje es un bˈon dˈiʲe",
-          "audio": "audio/hodie-es-un-bon-die.wav"
+          "target": "Tote essera ben.",
+          "roman": "tote essera ben",
+          "english": "Everything will be fine.",
+          "ipa": "tˈote esˈera bˈen",
+          "audio": "audio/tote-essera-ben.wav"
         }
       ]
     }
   ],
-  "reading": {
-    "title": "Un die in le vita de Anna",
-    "passage": [
-      "Anna vade al schola omne die.",
-      "Heri illa parlava con su amico Marco.",
-      "Deman illa apprendera interlingua in le schola.",
-      "Illa ama apprender linguas.",
-      "Proque? Proque illa ama isto!"
-    ],
-    "questions": [
-      {
-        "prompt": "Where does Anna go every day?",
-        "choices": [
-          "School",
-          "Work",
-          "The city",
-          "Home"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "Who did she speak with yesterday?",
-        "choices": [
-          "Her friend Marco",
-          "Her mother",
-          "Her brother",
-          "A stranger"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "What will she do tomorrow?",
-        "choices": [
-          "Learn Interlingua at school",
-          "Go to work",
-          "Travel",
-          "Sleep"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "Why does she love it?",
-        "choices": [
-          "Because she loves learning",
-          "Because it's easy",
-          "Because of money",
-          "No reason given"
-        ],
-        "answer": 0
-      }
-    ]
-  },
   "canDo": [
-    "Talk about your home, job, and school",
-    "Describe your daily routine",
-    "Say what today is like"
+    "Talk about something that happened yesterday",
+    "Talk about something that will happen tomorrow",
+    "Use simple past and future tense"
   ]
 }

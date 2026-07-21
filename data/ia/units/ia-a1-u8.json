@@ -91,6 +91,16 @@
           "note": "celo = sky. Answer: Le celo es blau!",
           "ipa": "kˈe kolˈor es le tsˈelo",
           "audio": "audio/que-color-es-le-celo.wav"
+        },
+        {
+          "target": "bon",
+          "roman": "bon",
+          "english": "good"
+        },
+        {
+          "target": "mal",
+          "roman": "mal",
+          "english": "bad"
         }
       ]
     }

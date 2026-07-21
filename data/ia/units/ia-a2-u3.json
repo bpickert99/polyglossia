@@ -1,104 +1,98 @@
 {
   "id": "ia-a2-u3",
-  "title": "Passato e futuro",
+  "title": "Questiones",
   "level": "A2",
-  "summary": "Past with -va, future with -ra. Two endings, all of time.",
+  "summary": "Ask anything: where, when, what, who, why.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Le passato: -va",
+      "title": "Ubi, que, qui",
       "teach": [
         {
-          "target": "parlava",
-          "roman": "parlava",
-          "english": "spoke / was speaking",
-          "note": "parlar → parlava, for all persons.",
-          "ipa": "parlˈava",
-          "audio": "audio/parlava.wav"
+          "target": "ubi",
+          "roman": "ubi",
+          "english": "where",
+          "ipa": "ˈubi",
+          "audio": "audio/ubi.wav"
         },
         {
-          "target": "esseva",
-          "roman": "esseva",
-          "english": "was / were",
-          "note": "from esser.",
-          "ipa": "esˈeva",
-          "audio": "audio/esseva.wav"
+          "target": "que",
+          "roman": "que",
+          "english": "what",
+          "ipa": "kˈe",
+          "audio": "audio/que.wav"
         },
         {
-          "target": "habeva",
-          "roman": "habeva",
-          "english": "had",
-          "ipa": "habˈeva",
-          "audio": "audio/habeva.wav"
+          "target": "qui",
+          "roman": "qui",
+          "english": "who",
+          "ipa": "kˈi",
+          "audio": "audio/qui.wav"
         },
         {
-          "target": "Heri io mangiava un pomo.",
-          "roman": "heri io mangiava un pomo",
-          "english": "Yesterday I ate an apple.",
-          "note": "heri = yesterday.",
-          "ipa": "hˈeriʲ ˈiʲo maŋɡjˈava un pˈomo",
-          "audio": "audio/heri-io-mangiava-un-pomo.wav"
+          "target": "Ubi es le station?",
+          "roman": "ubi es le station",
+          "english": "Where is the station?",
+          "ipa": "ˈubiʲ es le statjˈon",
+          "audio": "audio/ubi-es-le-station.wav"
         },
         {
-          "target": "Illa esseva felice.",
-          "roman": "illa esseva felice",
-          "english": "She was happy.",
-          "ipa": "ˈila esˌeva felˈitse",
-          "audio": "audio/illa-esseva-felice.wav"
+          "target": "Que es isto?",
+          "roman": "que es isto",
+          "english": "What is this?",
+          "note": "isto = this (thing).",
+          "ipa": "kˈe es ˈisto",
+          "audio": "audio/que-es-isto.wav"
         }
-      ],
-      "grammar": {
-        "title": "Past tense: add -va",
-        "body": "Drop the -r of the infinitive and add **-va**:\n| parlar | parlava | spoke |\n| vider | videva | saw |\n| audir | audiva | heard |\nSame form for every person: io parlava, nos parlava, illes parlava."
-      }
+      ]
     },
     {
       "id": "l2",
-      "title": "Le futuro: -ra",
+      "title": "Quando, proque, como",
       "teach": [
         {
-          "target": "parlara",
-          "roman": "parlara",
-          "english": "will speak",
-          "note": "Stress the final a: parla-RA.",
-          "ipa": "parlˈara",
-          "audio": "audio/parlara.wav"
+          "target": "quando",
+          "roman": "quando",
+          "english": "when",
+          "ipa": "kwˈando",
+          "audio": "audio/quando.wav"
         },
         {
-          "target": "essera",
-          "roman": "essera",
-          "english": "will be",
-          "ipa": "esˈera",
-          "audio": "audio/essera.wav"
+          "target": "proque",
+          "roman": "proque",
+          "english": "why (also: because)",
+          "note": "One word does both jobs — context decides.",
+          "ipa": "prokˈe",
+          "audio": "audio/proque.wav"
         },
         {
-          "target": "deman",
-          "roman": "deman",
-          "english": "tomorrow",
-          "ipa": "demˈan",
-          "audio": "audio/deman.wav"
+          "target": "como",
+          "roman": "como",
+          "english": "how",
+          "ipa": "kˈomo",
+          "audio": "audio/como.wav"
         },
         {
-          "target": "Deman io parlara con te.",
-          "roman": "deman io parlara con te",
-          "english": "Tomorrow I will speak with you.",
-          "note": "con te = with you.",
-          "ipa": "demˈan ˈiʲo parlˈara kˈon tˈe",
-          "audio": "audio/deman-io-parlara-con-te.wav"
+          "target": "Quando veni tu?",
+          "roman": "quando veni tu",
+          "english": "When are you coming?",
+          "note": "venir = to come.",
+          "ipa": "kwˈando vˈeni tˈu",
+          "audio": "audio/quando-veni-tu.wav"
         },
         {
-          "target": "Tote essera ben.",
-          "roman": "tote essera ben",
-          "english": "Everything will be fine.",
-          "ipa": "tˈote esˈera bˈen",
-          "audio": "audio/tote-essera-ben.wav"
+          "target": "Proque? Proque io ama isto!",
+          "roman": "proque proque io ama isto",
+          "english": "Why? Because I love it!",
+          "ipa": "prokˈe prokˈe ˈiʲo ˈama ˈisto",
+          "audio": "audio/proque-proque-io-ama-isto.wav"
         }
       ]
     }
   ],
   "canDo": [
-    "Talk about something that happened yesterday",
-    "Talk about something that will happen tomorrow",
-    "Use simple past and future tense"
+    "Ask where, what, who, when, why, and how",
+    "Ask for a location",
+    "Answer a “why” question"
   ]
 }

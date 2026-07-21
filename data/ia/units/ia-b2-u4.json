@@ -1,0 +1,82 @@
+{
+  "id": "ia-b2-u4",
+  "title": "Argumentar",
+  "level": "B2",
+  "summary": "Connect ideas: reasons, examples, and however.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Motivos e ration",
+      "teach": [
+        {
+          "target": "le problema",
+          "roman": "le problema",
+          "english": "the problem"
+        },
+        {
+          "target": "le exemplo",
+          "roman": "le exemplo",
+          "english": "the example"
+        },
+        {
+          "target": "dunque",
+          "roman": "dunque",
+          "english": "therefore, so"
+        },
+        {
+          "target": "Le problema es que il pluve.",
+          "roman": "le problema es que il pluve",
+          "english": "The problem is that it's raining."
+        },
+        {
+          "target": "Io ha fame, dunque io vole mangiar.",
+          "roman": "io ha fame dunque io vole mangiar",
+          "english": "I'm hungry, so I want to eat.",
+          "note": "dunque connects a reason to its result."
+        }
+      ],
+      "grammar": {
+        "title": "Reasons and results",
+        "body": "**proque** (because) gives a reason; **dunque**/**ergo** (therefore, so) gives a result. Put them together and you can explain yourself: Io ha fame proque io non ha mangiate — dunque io va mangiar nunc."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "Nonobstante",
+      "teach": [
+        {
+          "target": "nonobstante",
+          "roman": "nonobstante",
+          "english": "however, nevertheless"
+        },
+        {
+          "target": "totevia",
+          "roman": "totevia",
+          "english": "however, still",
+          "note": "Interchangeable with nonobstante."
+        },
+        {
+          "target": "per exemplo",
+          "roman": "per exemplo",
+          "english": "for example",
+          "note": "per = for/by (as in per favor); exemplo = example."
+        },
+        {
+          "target": "Interlingua es facile. Le grammatica anglese, nonobstante, es difficile.",
+          "roman": "interlingua es facile le grammatica anglese nonobstante es difficile",
+          "english": "Interlingua is easy. English grammar, however, is difficult."
+        },
+        {
+          "target": "Io ama le colores, per exemplo blau e verde.",
+          "roman": "io ama le colores per exemplo blau e verde",
+          "english": "I love colors, for example blue and green."
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Connect ideas with however, therefore, and because",
+    "Explain a problem and a possible reason",
+    "Build a short, connected argument"
+  ]
+}
