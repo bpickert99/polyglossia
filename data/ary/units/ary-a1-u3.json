@@ -14,35 +14,40 @@
           "arabic": "آش / شنو",
           "english": "what",
           "note": "Both mean 'what' — ash is shorter and more common before a verb, shnu often stands alone.",
-          "ipa": "aʃ, ʃnu"
+          "ipa": "ʔˈaːʃ slˈaʃ ʃˈunw",
+          "audio": "audio/ash-shnu.wav"
         },
         {
           "target": "Fin",
           "roman": "fin",
           "arabic": "فين",
           "english": "where",
-          "ipa": "fin"
+          "ipa": "fiːn",
+          "audio": "audio/fin.wav"
         },
         {
           "target": "Shkoun",
           "roman": "shkoun",
           "arabic": "شكون",
           "english": "who",
-          "ipa": "ʃkun"
+          "ipa": "ʃˈukuːn",
+          "audio": "audio/shkoun.wav"
         },
         {
           "target": "Fuqash",
           "roman": "fuqash",
           "arabic": "فوقاش",
           "english": "when",
-          "ipa": "fuˈqaʃ"
+          "ipa": "faˌuaqˌaːʃ",
+          "audio": "audio/fuqash.wav"
         },
         {
           "target": "3lash",
           "roman": "3lash",
           "arabic": "علاش",
           "english": "why",
-          "ipa": "ʕlaʃ"
+          "ipa": "ʕˈilaːʃ",
+          "audio": "audio/3lash.wav"
         }
       ]
     },
@@ -55,7 +60,8 @@
           "roman": "kifash",
           "arabic": "كيفاش",
           "english": "how",
-          "ipa": "kiˈfaʃ"
+          "ipa": "kiːfˌaːʃ",
+          "audio": "audio/kifash.wav"
         },
         {
           "target": "Wash...?",
@@ -63,14 +69,16 @@
           "arabic": "واش",
           "english": "(turns a statement into a yes/no question)",
           "note": "Drop wash in front of a plain sentence to ask a yes/no question — Wash bghiti atay? = 'Do you want tea?' No word order change needed.",
-          "ipa": "waʃ"
+          "ipa": "wˈaːʃ",
+          "audio": "audio/wash.wav"
         },
         {
           "target": "Bghit...",
           "roman": "bghit",
           "arabic": "بغيت",
           "english": "I want...",
-          "ipa": "bɣit"
+          "ipa": "buɣˌait",
+          "audio": "audio/bghit.wav"
         },
         {
           "target": "Ma3reftsh",
@@ -78,14 +86,16 @@
           "arabic": "ماعرفتش",
           "english": "I don't know",
           "note": "The ma...sh wrapped around a verb is how Darija negates — same pattern as Moroccan French's 'ne...pas'-style bracketing.",
-          "ipa": "maʕˈreftʃ"
+          "ipa": "mˈaːʕrafˌatʃ",
+          "audio": "audio/ma3reftsh.wav"
         },
         {
           "target": "Fhemt",
           "roman": "fhemt",
           "arabic": "فهمت",
           "english": "got it / understood",
-          "ipa": "fhemt"
+          "ipa": "fahˌumt",
+          "audio": "audio/fhemt.wav"
         }
       ]
     }

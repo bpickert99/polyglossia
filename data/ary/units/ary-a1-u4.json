@@ -13,42 +13,48 @@
           "roman": "baba",
           "arabic": "بابا",
           "english": "dad",
-          "ipa": "ˈbaba"
+          "ipa": "baːbˌaː",
+          "audio": "audio/baba.wav"
         },
         {
           "target": "mama",
           "roman": "mama",
           "arabic": "ماما",
           "english": "mom",
-          "ipa": "ˈmama"
+          "ipa": "mˈaːman",
+          "audio": "audio/mama.wav"
         },
         {
           "target": "kho",
           "roman": "kho",
           "arabic": "خو",
           "english": "brother",
-          "ipa": "xu"
+          "ipa": "χˈau",
+          "audio": "audio/kho.wav"
         },
         {
           "target": "khti",
           "roman": "khti",
           "arabic": "ختي",
           "english": "sister",
-          "ipa": "ˈxti"
+          "ipa": "χˈatiː",
+          "audio": "audio/khti.wav"
         },
         {
           "target": "weld",
           "roman": "weld",
           "arabic": "ولد",
           "english": "son / boy",
-          "ipa": "wld"
+          "ipa": "wˈalid",
+          "audio": "audio/weld.wav"
         },
         {
           "target": "bnt",
           "roman": "bnt",
           "arabic": "بنت",
           "english": "daughter / girl",
-          "ipa": "bnt"
+          "ipa": "bint",
+          "audio": "audio/bnt.wav"
         }
       ]
     },
@@ -61,14 +67,16 @@
           "roman": "jedd",
           "arabic": "جد",
           "english": "grandfather",
-          "ipa": "ʒedd"
+          "ipa": "dʒˈad",
+          "audio": "audio/jedd.wav"
         },
         {
           "target": "jedda",
           "roman": "jedda",
           "arabic": "جدة",
           "english": "grandmother",
-          "ipa": "ˈʒedda"
+          "ipa": "dʒˈudːat",
+          "audio": "audio/jedda.wav"
         },
         {
           "target": "3mmi",
@@ -76,14 +84,16 @@
           "arabic": "عمي",
           "english": "uncle (father's brother)",
           "note": "Darija distinguishes which side of the family an aunt/uncle is from — 3mmi is paternal, khalti (below) is maternal.",
-          "ipa": "ˈʕmmi"
+          "ipa": "ʕˈammiː",
+          "audio": "audio/3mmi.wav"
         },
         {
           "target": "khalti",
           "roman": "khalti",
           "arabic": "خالتي",
           "english": "aunt (mother's sister)",
-          "ipa": "ˈxalti"
+          "ipa": "χˈaːllatˌiː",
+          "audio": "audio/khalti.wav"
         }
       ]
     }

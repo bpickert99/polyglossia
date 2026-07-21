@@ -13,35 +13,40 @@
           "roman": "7mer",
           "arabic": "حمر",
           "english": "red",
-          "ipa": "ħmer"
+          "ipa": "ħˈamr",
+          "audio": "audio/7mer.wav"
         },
         {
           "target": "khal",
           "roman": "khal",
           "arabic": "خال",
           "english": "black",
-          "ipa": "xal"
+          "ipa": "χˈaːl",
+          "audio": "audio/khal.wav"
         },
         {
           "target": "byed",
           "roman": "byed",
           "arabic": "بيض",
           "english": "white",
-          "ipa": "bjed"
+          "ipa": "baˌidˤ",
+          "audio": "audio/byed.wav"
         },
         {
           "target": "khder",
           "roman": "khder",
           "arabic": "خضر",
           "english": "green",
-          "ipa": "xder"
+          "ipa": "χˈadˤa.r",
+          "audio": "audio/khder.wav"
         },
         {
           "target": "zrq",
           "roman": "zrq",
           "arabic": "زرق",
           "english": "blue",
-          "ipa": "zrəq"
+          "ipa": "zˈariq",
+          "audio": "audio/zrq.wav"
         }
       ]
     },
@@ -54,7 +59,8 @@
           "roman": "sfer",
           "arabic": "صفر",
           "english": "yellow",
-          "ipa": "sfer"
+          "ipa": "s̪ˈi.fr",
+          "audio": "audio/sfer.wav"
         },
         {
           "target": "werdi",
@@ -62,7 +68,8 @@
           "arabic": "وردي",
           "english": "pink",
           "note": "From werda — 'rose flower'.",
-          "ipa": "werˈdi"
+          "ipa": "wˈaradˌiː",
+          "audio": "audio/werdi.wav"
         },
         {
           "target": "brtqali",
@@ -70,7 +77,8 @@
           "arabic": "برتقالي",
           "english": "orange",
           "note": "From brtqal — the fruit itself, 'orange'.",
-          "ipa": "brtqaˈli"
+          "ipa": "burtˌuqaːlˌiː",
+          "audio": "audio/brtqali.wav"
         }
       ]
     }
