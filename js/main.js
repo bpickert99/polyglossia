@@ -8,7 +8,7 @@ import { buildPracticeSession, dueCount } from "./practice.js";
 import { buildLesson, unitMastery, poolFromUnit, isUnitDone, readingUnlocked } from "./lesson-builder.js";
 import { progress } from "./srs.js";
 import { initSync } from "./sync.js";
-import { ttsMode, primeTTS } from "./tts.js";
+import { primeTTS } from "./tts.js";
 import { renderReadingSession, isReadingComplete } from "./reading.js";
 import { renderWritingSession, isWritingComplete } from "./writing.js";
 
@@ -17,6 +17,15 @@ const app = document.getElementById("app");
 export function updateStats() {
   document.querySelector("#stat-xp b").textContent = getXP();
   document.querySelector("#stat-streak b").textContent = getStreak();
+  // Due-review count on the Practice nav tab — synchronous (localStorage
+  // only), so it doesn't need to wait for the course JSON to load.
+  const lang = getLang();
+  const badge = document.getElementById("nav-practice-badge");
+  if (badge) {
+    const due = lang ? dueCount(lang) : 0;
+    badge.hidden = !due;
+    badge.textContent = due;
+  }
 }
 
 function setNav(name) {
@@ -36,6 +45,10 @@ async function currentCourse() {
     code = langs.languages[0]?.code;
     if (code) setLang(code);
   }
+  // The bottom-nav language tab shows the current course's own icon (a
+  // stand-in for a flag) instead of the generic globe once we know it.
+  const icoEl = document.getElementById("nav-lang-ico");
+  if (icoEl) icoEl.textContent = langs.languages.find((l) => l.code === code)?.icon || "🌐";
   return code ? loadCourse(code) : null;
 }
 
@@ -123,6 +136,7 @@ function openUnitPopup(nodeEl, course, section, data, unitId) {
 // ---------- views ----------
 
 async function viewLanguagePicker() {
+  setNav("languages");
   const langs = await loadLanguages();
   app.innerHTML = `
     <div class="lang-hero"><h1>Choose a language</h1>
@@ -131,7 +145,7 @@ async function viewLanguagePicker() {
     <div class="lang-picker">
       ${langs.languages.map((l) => `
         <a class="lesson-card" href="#/" data-pick="${esc(l.code)}">
-          <span class="lc-ico">🌍</span>
+          <span class="lc-ico">${esc(l.icon || "🌍")}</span>
           <span>${esc(l.name)} <span class="lc-sub">${esc(l.nativeName || "")}</span></span>
         </a>`).join("")}
     </div>`;
@@ -150,34 +164,7 @@ async function viewCourseMap() {
   }
   primeTTS(); // warm up the audio engine while the map renders
 
-  const mode = ttsMode(course);
-  const ttsNote = mode === "natural"
-    ? `<p>🔊 Audio is a natural neural voice (Piper), driven by real phonemic transcription — words without pre-rendered audio fall back to phonemic (robotic but correct) speech. Every word shows its IPA.</p>`
-    : mode === "accurate"
-    ? `<p>🔊 Audio is phonemic (eSpeak) — it sounds robotic but pronounces the actual sounds, and every word shows its IPA.</p>`
-    : mode === "approximate"
-    ? `<p>🔊 Audio uses your browser's closest available voice — approximate pronunciation.</p>`
-    : "";
-
-  const multiLang = (await loadLanguages()).languages.length > 1;
-  const due = dueCount(course.code);
-  let html = `
-    <div class="lang-hero">
-      <h1>${esc(course.name)} <span class="native">${esc(course.nativeName || "")}</span></h1>
-      <p>${esc(course.description || "")}</p>
-      ${ttsNote}
-      ${multiLang ? `<p><a href="#/languages" class="switch-link">🌍 Switch language</a></p>` : ""}
-    </div>
-    <a class="practice-banner ${due ? "hot" : ""}" href="#/practice">
-      <span class="pb-ico">🏋️</span>
-      <span><b>Practice</b>
-        <span class="lc-sub">${due
-          ? `${due} word${due === 1 ? "" : "s"} due for review — the algorithm says now is the time`
-          : "Smart review of your weakest words"}</span>
-      </span>
-      ${due ? `<span class="due-badge">${due}</span>` : ""}
-    </a>`;
-
+  let html = "";
   const unitsData = new Map();
   for (const section of course.sections) {
     for (const u of section.units || []) {
@@ -212,7 +199,7 @@ async function viewCourseMap() {
                 stroke-dashoffset="${circumference * (1 - prog)}"></circle>
             </svg>
           </span>
-          <span class="unit-label">${esc(u.title)}${isLocked ? ' <small class="lock-hint">finish the previous unit</small>' : ""}</span>
+          <span class="unit-label">${esc(u.en || u.title)}${isLocked ? ' <small class="lock-hint">finish the previous unit</small>' : ""}</span>
         </button>`;
 
       // Reading is its own lesson-type bubble, right after the unit it
@@ -259,7 +246,7 @@ async function viewUnit(unitId) {
   app.innerHTML = `
     <div class="lang-hero">
       <h1>${esc(found.unit.icon || "")} ${esc(data.title)}</h1>
-      <p><b>${esc(found.section.level)}</b> · ${esc(data.summary || "")}</p>
+      <p>${found.unit.en ? `<b>${esc(found.unit.en)}</b> · ` : ""}<b>${esc(found.section.level)}</b> · ${esc(data.summary || "")}</p>
     </div>
     ${canDo.length ? `
     <div class="article can-do">
@@ -307,6 +294,7 @@ async function viewLesson(unitId) {
 }
 
 async function viewPractice() {
+  setNav("practice");
   const course = await currentCourse();
   if (!course) { location.hash = "#/"; return; }
   const session = buildPracticeSession(course.code);
@@ -341,34 +329,6 @@ async function viewCulture() {
   await renderCulture(app, course);
 }
 
-function viewAbout() {
-  setNav("about");
-  app.innerHTML = `
-    <div class="lang-hero about">
-      <h1>About Polyglossia</h1>
-      <p>Polyglossia is an open, Duolingo-style platform for languages the mainstream apps
-      overlook. It's built around a genuine adaptive engine rather than fixed lesson scripts.</p>
-      <ul>
-        <li><b>Lessons built on the fly</b> — nothing is pre-scripted. Each time you start a skill,
-        the app assembles a fresh lesson: a few new words (throttled when you're struggling or
-        behind), interleaved with review of what you're about to forget.</li>
-        <li><b>Adaptive difficulty (Birdbrain-style)</b> — like Duolingo's Birdbrain, the app tracks
-        your ability and each word's difficulty, and aims every exercise at roughly an 80% success
-        rate — the sweet spot for learning. Weak words get gentle recognition; solid words get
-        harder production and trickier choices.</li>
-        <li><b>Spaced repetition (FSRS)</b> — every answer reschedules that word for review right
-        before you'd forget it.</li>
-        <li><b>Accurate pronunciation + IPA</b> — audio comes from a phonemic synthesizer (eSpeak NG)
-        that pronounces the actual target sounds, and every word shows its IPA transcription. It
-        sounds robotic, but it's correct — accuracy over polish.</li>
-        <li><b>Cultural notes</b> and a <b>script-drawing tab</b> for languages with non-Latin writing.</li>
-        <li><b>Optional accounts</b> — progress lives in your browser by default; sign in from the
-        Stats tab to back it up and sync across devices.</li>
-      </ul>
-      <p class="muted">Course content is authored with Claude and can be extended at any time.</p>
-    </div>`;
-}
-
 // ---------- router ----------
 
 async function route() {
@@ -386,7 +346,6 @@ async function route() {
     if (parts[0] === "culture") return await viewCulture();
     if (parts[0] === "practice") return await viewPractice();
     if (parts[0] === "stats") return await viewStats();
-    if (parts[0] === "about") return viewAbout();
     return await viewCourseMap();
   } catch (err) {
     console.error(err);

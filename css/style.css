@@ -68,7 +68,15 @@ body {
   font-size: 0.72rem; font-weight: 800; padding: 4px 14px; border-radius: 12px;
 }
 .bottomnav a.active { color: var(--blue); background: color-mix(in srgb, var(--blue) 12%, transparent); }
+.bottomnav a { position: relative; }
 .nav-ico { font-size: 1.35rem; }
+.nav-badge {
+  position: absolute; top: 2px; right: 10px;
+  background: var(--red); color: #fff; font-weight: 900; font-size: 0.62rem;
+  border-radius: 999px; min-width: 16px; height: 16px; padding: 0 4px;
+  display: flex; align-items: center; justify-content: center;
+}
+.nav-badge[hidden] { display: none; }
 
 .app { max-width: 640px; margin: 0 auto; padding: 18px 16px 40px; }
 .loading { text-align: center; color: var(--ink-soft); padding: 60px 0; font-weight: 700; }
@@ -267,22 +275,14 @@ body {
 .shadow-controls { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
 #shadow-rate .btn.wide + .btn.wide { margin-top: 8px; }
 
-.feedback {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
-  padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
-  border-top-left-radius: 20px; border-top-right-radius: 20px;
-}
-.feedback.good { background: #d7ffb8; color: #46a302; }
-.feedback.bad { background: #ffdfe0; color: #ea2b2b; }
-@media (prefers-color-scheme: dark) {
-  .feedback.good { background: #20361a; }
-  .feedback.bad { background: #3d1f22; }
-}
-.feedback .fb-inner { max-width: 640px; margin: 0 auto; }
-.feedback h3 { margin-bottom: 4px; }
-.feedback p { font-weight: 700; margin-bottom: 12px; }
-.feedback p.fb-note { font-weight: 600; font-size: 0.88rem; margin-top: -6px; opacity: 0.9; }
 .session-footer { margin-top: 26px; }
+.check-msg { font-weight: 800; margin-bottom: 4px; }
+.check-msg.good { color: var(--green-dark); }
+.check-msg.bad { color: var(--red); }
+.check-note { font-weight: 600; font-size: 0.88rem; opacity: 0.85; margin-bottom: 10px; }
+.type-input.correct { border-color: var(--green); }
+.type-input.wrong { border-color: var(--red); }
+.choice:disabled { cursor: default; }
 
 .complete { text-align: center; padding: 40px 0; }
 .complete .big-emoji { font-size: 4rem; }
