@@ -1,102 +1,102 @@
 {
   "id": "ia-a1-u4",
-  "title": "Le familia",
+  "title": "Numeros 11–100",
   "level": "A1",
-  "summary": "Family words, plus articles and plurals.",
+  "summary": "Count past ten, and use ordinals.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Matre e patre",
+      "title": "Dece-un a vinti",
       "teach": [
         {
-          "target": "le matre",
-          "roman": "le matre",
-          "english": "the mother",
-          "ipa": "le mˈatre",
-          "audio": "audio/le-matre.wav"
+          "target": "dece-un",
+          "roman": "dece-un",
+          "english": "eleven",
+          "ipa": "dˈetseˈun",
+          "audio": "audio/dece-un.wav"
         },
         {
-          "target": "le patre",
-          "roman": "le patre",
-          "english": "the father",
-          "ipa": "le pˈatre",
-          "audio": "audio/le-patre.wav"
+          "target": "dece-duo",
+          "roman": "dece-duo",
+          "english": "twelve",
+          "ipa": "dˈetsedˈuo",
+          "audio": "audio/dece-duo.wav"
         },
         {
-          "target": "le fratre",
-          "roman": "le fratre",
-          "english": "the brother",
-          "ipa": "le frˈatre",
-          "audio": "audio/le-fratre.wav"
+          "target": "vinti",
+          "roman": "vinti",
+          "english": "twenty",
+          "ipa": "vˈinti",
+          "audio": "audio/vinti.wav"
         },
         {
-          "target": "le soror",
-          "roman": "le soror",
-          "english": "the sister",
-          "ipa": "le sorˈor",
-          "audio": "audio/le-soror.wav"
+          "target": "prime",
+          "roman": "prime",
+          "english": "first",
+          "note": "Ordinals: prime, secunde, tertie… mostly add -e to the number stem.",
+          "ipa": "prˈime",
+          "audio": "audio/prime.wav"
         },
         {
-          "target": "un infante",
-          "roman": "un infante",
-          "english": "a child",
-          "ipa": "un infˈante",
-          "audio": "audio/un-infante.wav"
+          "target": "Io es le prime in mi classe.",
+          "roman": "io es le prime in mi classe",
+          "english": "I am first in my class.",
+          "note": "classe = class.",
+          "ipa": "ˈiʲo es le prˈime ˈin mi klˈase",
+          "audio": "audio/io-es-le-prime-in-mi-classe.wav"
         }
       ],
       "grammar": {
-        "title": "Two articles, one plural rule",
-        "body": "**le** = the, **un** = a/an — invariable, for every noun.\nPlural: add **-s** (after a vowel) or **-es** (after a consonant):\n| le matre | le matres | the mothers |\n| le soror | le sorores | the sisters |\nNo gender agreement, no der/die/das, no el/la. That's the entire article-and-plural system."
+        "title": "Numbers past ten",
+        "body": "Interlingua counts like a Romance language: **dece-un** (11), **dece-duo** (12), up to **vinti** (20). Bigger numbers keep composing: **vinti-un** (21), **trenta** (30), **quaranta** (40), **cinquanta** (50), and so on to **cento** (100).\nOrdinals mostly just add **-e**: prime (1st), secunde (2nd), tertie (3rd), quarte (4th)."
       }
     },
     {
       "id": "l2",
-      "title": "Filios e amicos",
+      "title": "Trenta a cento",
       "teach": [
         {
-          "target": "le filio",
-          "roman": "le filio",
-          "english": "the son",
-          "ipa": "le fˈiljo",
-          "audio": "audio/le-filio.wav"
+          "target": "trenta",
+          "roman": "trenta",
+          "english": "thirty",
+          "ipa": "trˈenta",
+          "audio": "audio/trenta.wav"
         },
         {
-          "target": "le filia",
-          "roman": "le filia",
-          "english": "the daughter",
-          "ipa": "le fˈilja",
-          "audio": "audio/le-filia.wav"
+          "target": "cinquanta",
+          "roman": "cinquanta",
+          "english": "fifty",
+          "ipa": "tsiŋkwˈanta",
+          "audio": "audio/cinquanta.wav"
         },
         {
-          "target": "le granpatre",
-          "roman": "le granpatre",
-          "english": "the grandfather",
-          "ipa": "le ɡranpˈatre",
-          "audio": "audio/le-granpatre.wav"
+          "target": "cento",
+          "roman": "cento",
+          "english": "hundred",
+          "ipa": "tsˈento",
+          "audio": "audio/cento.wav"
         },
         {
-          "target": "le granmatre",
-          "roman": "le granmatre",
-          "english": "the grandmother",
-          "ipa": "le ɡranmˈatre",
-          "audio": "audio/le-granmatre.wav"
+          "target": "secunde",
+          "roman": "secunde",
+          "english": "second (2nd)",
+          "ipa": "sekˈunde",
+          "audio": "audio/secunde.wav"
         },
         {
-          "target": "le amico",
-          "roman": "le amico",
-          "english": "the friend",
-          "note": "amica for a female friend.",
-          "ipa": "le amˈiko",
-          "audio": "audio/le-amico.wav"
-        },
-        {
-          "target": "Mi familia es grande.",
-          "roman": "mi familia es grande",
-          "english": "My family is big.",
-          "ipa": "mi famˈilja es ɡrˈande",
-          "audio": "audio/mi-familia-es-grande.wav"
+          "target": "Nos ha trenta studentes in le schola.",
+          "roman": "nos ha trenta studentes in le schola",
+          "english": "We have thirty students in the school.",
+          "note": "studente = student.",
+          "ipa": "nˈos ha trˈenta studˈentes ˈin le stʃˈola",
+          "audio": "audio/nos-ha-trenta-studentes-in-le-schola.wav"
         }
       ]
     }
+  ],
+  "canDo": [
+    "Count from eleven to a hundred",
+    "Put things in order — first, second…",
+    "Give a simple count or quantity"
   ]
 }

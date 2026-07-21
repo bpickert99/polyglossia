@@ -95,5 +95,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Talk about something that happened yesterday",
+    "Talk about something that will happen tomorrow",
+    "Use simple past and future tense"
   ]
 }

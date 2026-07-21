@@ -1,97 +1,96 @@
 {
   "id": "ia-b1-u5",
-  "title": "Numeros 11–100",
+  "title": "Plus adjectivos",
   "level": "B1",
-  "summary": "Count past ten, and use ordinals.",
+  "summary": "Describe things more precisely: new, old, easy, difficult.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Dece-un a vinti",
+      "title": "Nove e vetule",
       "teach": [
         {
-          "target": "dece-un",
-          "roman": "dece-un",
-          "english": "eleven",
-          "ipa": "dˈetseˈun",
-          "audio": "audio/dece-un.wav"
+          "target": "nove",
+          "roman": "nove",
+          "english": "new",
+          "ipa": "nˈove",
+          "audio": "audio/nove.wav"
         },
         {
-          "target": "dece-duo",
-          "roman": "dece-duo",
-          "english": "twelve",
-          "ipa": "dˈetsedˈuo",
-          "audio": "audio/dece-duo.wav"
+          "target": "vetule",
+          "roman": "vetule",
+          "english": "old",
+          "ipa": "vˈetule",
+          "audio": "audio/vetule.wav"
         },
         {
-          "target": "vinti",
-          "roman": "vinti",
-          "english": "twenty",
-          "ipa": "vˈinti",
-          "audio": "audio/vinti.wav"
+          "target": "longe",
+          "roman": "longe",
+          "english": "long",
+          "ipa": "lˈoŋɡe",
+          "audio": "audio/longe.wav"
         },
         {
-          "target": "prime",
-          "roman": "prime",
-          "english": "first",
-          "note": "Ordinals: prime, secunde, tertie… mostly add -e to the number stem.",
-          "ipa": "prˈime",
-          "audio": "audio/prime.wav"
+          "target": "curte",
+          "roman": "curte",
+          "english": "short",
+          "ipa": "kˈurte",
+          "audio": "audio/curte.wav"
         },
         {
-          "target": "Io es le prime in mi classe.",
-          "roman": "io es le prime in mi classe",
-          "english": "I am first in my class.",
-          "note": "classe = class.",
-          "ipa": "ˈiʲo es le prˈime ˈin mi klˈase",
-          "audio": "audio/io-es-le-prime-in-mi-classe.wav"
+          "target": "Mi can es vetule ma mi catto es nove.",
+          "roman": "mi can es vetule ma mi catto es nove",
+          "english": "My dog is old but my cat is new.",
+          "ipa": "mi kˈan es vˈetule mˈa mi kˈato es nˈove",
+          "audio": "audio/mi-can-es-vetule-ma-mi-catto-es-nove.wav"
         }
-      ],
-      "grammar": {
-        "title": "Numbers past ten",
-        "body": "Interlingua counts like a Romance language: **dece-un** (11), **dece-duo** (12), up to **vinti** (20). Bigger numbers keep composing: **vinti-un** (21), **trenta** (30), **quaranta** (40), **cinquanta** (50), and so on to **cento** (100).\nOrdinals mostly just add **-e**: prime (1st), secunde (2nd), tertie (3rd), quarte (4th)."
-      }
+      ]
     },
     {
       "id": "l2",
-      "title": "Trenta a cento",
+      "title": "Facile e difficile",
       "teach": [
         {
-          "target": "trenta",
-          "roman": "trenta",
-          "english": "thirty",
-          "ipa": "trˈenta",
-          "audio": "audio/trenta.wav"
+          "target": "facile",
+          "roman": "facile",
+          "english": "easy",
+          "ipa": "fˈatsile",
+          "audio": "audio/facile.wav"
         },
         {
-          "target": "cinquanta",
-          "roman": "cinquanta",
-          "english": "fifty",
-          "ipa": "tsiŋkwˈanta",
-          "audio": "audio/cinquanta.wav"
+          "target": "difficile",
+          "roman": "difficile",
+          "english": "difficult",
+          "ipa": "difˈitsile",
+          "audio": "audio/difficile.wav"
         },
         {
-          "target": "cento",
-          "roman": "cento",
-          "english": "hundred",
-          "ipa": "tsˈento",
-          "audio": "audio/cento.wav"
+          "target": "importante",
+          "roman": "importante",
+          "english": "important",
+          "ipa": "ˌimportˈante",
+          "audio": "audio/importante.wav"
         },
         {
-          "target": "secunde",
-          "roman": "secunde",
-          "english": "second (2nd)",
-          "ipa": "sekˈunde",
-          "audio": "audio/secunde.wav"
+          "target": "interessante",
+          "roman": "interessante",
+          "english": "interesting",
+          "ipa": "ˌinteresˈante",
+          "audio": "audio/interessante.wav"
         },
         {
-          "target": "Nos ha trenta studentes in le schola.",
-          "roman": "nos ha trenta studentes in le schola",
-          "english": "We have thirty students in the school.",
-          "note": "studente = student.",
-          "ipa": "nˈos ha trˈenta studˈentes ˈin le stʃˈola",
-          "audio": "audio/nos-ha-trenta-studentes-in-le-schola.wav"
+          "target": "Interlingua es facile ma le grammatica anglese es difficile.",
+          "roman": "interlingua es facile ma le grammatica anglese es difficile",
+          "english": "Interlingua is easy but English grammar is difficult.",
+          "note": "grammatica = grammar; anglese = English.",
+          "ipa": "ˌinterlˈiŋɡwa es fˈatsile mˈa le ɡramˈatika aŋɡlˈese es difˈitsile",
+          "audio": "audio/interlingua-es-facile-ma-le-grammatica-anglese-es-difficile.wav"
         }
       ]
     }
+  ],
+  "canDo": [
+    "Describe something as easy or difficult",
+    "Say something is important or interesting",
+    "Give a more nuanced description of something"
   ]
 }

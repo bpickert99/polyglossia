@@ -43,6 +43,16 @@
           "english": "I am happy.",
           "ipa": "ˈiʲo es felˈitse",
           "audio": "audio/io-es-felice.wav"
+        },
+        {
+          "target": "le homine",
+          "roman": "le homine",
+          "english": "the man"
+        },
+        {
+          "target": "le femina",
+          "roman": "le femina",
+          "english": "the woman"
         }
       ],
       "grammar": {
@@ -92,5 +102,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Say who someone is, using “to be”",
+    "Use I/you/he/she/we/they",
+    "Say what you or someone else has"
   ]
 }

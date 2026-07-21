@@ -1,152 +1,103 @@
 {
   "id": "ia-b1-u1",
-  "title": "Conversation",
+  "title": "Le perfecto",
   "level": "B1",
-  "summary": "Connect your sentences: but, and, or, if — and keep a conversation going.",
+  "summary": "Say what you've done: the perfect tense (ha + past participle).",
   "lessons": [
     {
       "id": "l1",
-      "title": "Ma, e, o",
+      "title": "Le participio passate",
       "teach": [
         {
-          "target": "e",
-          "roman": "e",
-          "english": "and",
-          "ipa": "ˈe",
-          "audio": "audio/e.wav"
+          "target": "parlate",
+          "roman": "parlate",
+          "english": "spoken",
+          "note": "-ar verbs form the past participle with -ate: parlar → parlate.",
+          "ipa": "parlˈate",
+          "audio": "audio/parlate.wav"
         },
         {
-          "target": "ma",
-          "roman": "ma",
-          "english": "but",
-          "ipa": "mˈa",
-          "audio": "audio/ma.wav"
+          "target": "vidite",
+          "roman": "vidite",
+          "english": "seen",
+          "note": "-er/-ir verbs use -ite: vider → vidite, audir → audite.",
+          "ipa": "vidˈite",
+          "audio": "audio/vidite.wav"
         },
         {
-          "target": "o",
-          "roman": "o",
-          "english": "or",
-          "ipa": "ˈo",
-          "audio": "audio/o.wav"
+          "target": "mangiate",
+          "roman": "mangiate",
+          "english": "eaten",
+          "ipa": "maŋɡjˈate",
+          "audio": "audio/mangiate.wav"
         },
         {
-          "target": "si",
-          "roman": "si",
-          "english": "if",
-          "note": "Same spelling as 'yes' — context makes it clear, like 'si' in Spanish/Italian.",
-          "ipa": "sˈi",
-          "audio": "audio/si.wav"
+          "target": "Io ha parlate con illa.",
+          "roman": "io ha parlate con illa",
+          "english": "I have spoken with her.",
+          "note": "The perfect tense: ha (have) + past participle, same pattern as English.",
+          "ipa": "ˈiʲo ha parlˈate kˈon ˈila",
+          "audio": "audio/io-ha-parlate-con-illa.wav"
         },
         {
-          "target": "Io parla interlingua, ma io ancora apprende.",
-          "roman": "io parla interlingua ma io ancora apprende",
-          "english": "I speak Interlingua, but I'm still learning.",
-          "note": "ancora = still/yet.",
-          "ipa": "ˈiʲo pˈarla ˌinterlˈiŋɡwa mˈa ˈiʲo ankˈora aprˈende",
-          "audio": "audio/io-parla-interlingua-ma-io-ancora-apprende.wav"
-        }
-      ]
-    },
-    {
-      "id": "l2",
-      "title": "Keeping it going",
-      "teach": [
-        {
-          "target": "Io non comprende.",
-          "roman": "io non comprende",
-          "english": "I don't understand.",
-          "note": "non before the verb negates it.",
-          "ipa": "ˈiʲo nˈon komprˈende",
-          "audio": "audio/io-non-comprende.wav"
-        },
-        {
-          "target": "Pote tu repeter?",
-          "roman": "pote tu repeter",
-          "english": "Can you repeat?",
-          "note": "poter = to be able; pote = can.",
-          "ipa": "pˈote tˈu rˌepetˈer",
-          "audio": "audio/pote-tu-repeter.wav"
-        },
-        {
-          "target": "Como se dice ... in interlingua?",
-          "roman": "como se dice in interlingua",
-          "english": "How do you say ... in Interlingua?",
-          "ipa": "kˈomo sˈe dˈitse ˈin ˌinterlˈiŋɡwa",
-          "audio": "audio/como-se-dice-in-interlingua.wav"
-        },
-        {
-          "target": "Naturalmente!",
-          "roman": "naturalmente",
-          "english": "Of course!",
-          "note": "Adverbs end in -mente, like Romance languages.",
-          "ipa": "nˌaturalmˈente",
-          "audio": "audio/naturalmente.wav"
-        },
-        {
-          "target": "Multo ben!",
-          "roman": "multo ben",
-          "english": "Very good!",
-          "ipa": "mˈulto bˈen",
-          "audio": "audio/multo-ben.wav"
+          "target": "Nos ha mangiate le pan.",
+          "roman": "nos ha mangiate le pan",
+          "english": "We have eaten the bread.",
+          "ipa": "nˈos ha maŋɡjˈate le pˈan",
+          "audio": "audio/nos-ha-mangiate-le-pan.wav"
         }
       ],
       "grammar": {
-        "title": "Negation and adverbs",
-        "body": "Negate any verb with **non** before it: io comprende → io **non** comprende.\nMake adverbs with **-mente** on the adjective: natural → natural**mente** (naturally), felice → felice**mente** (happily).\nWith connectors, questions, three tenses, and negation, you can now improvise real conversations — the rest is vocabulary."
+        "title": "The perfect tense",
+        "body": "Interlingua's perfect tense works just like English \"have done\": the auxiliary **ha** plus a past participle.\nForm the past participle from the infinitive: **-ar → -ate**, **-er/-ir → -ite**.\nparlar → parlate, mangiar → mangiate, vider → vidite, audir → audite.\nOne form for every person: io ha parlate, tu ha parlate, nos ha parlate — the auxiliary never changes."
       }
+    },
+    {
+      "id": "l2",
+      "title": "Ja e ancora",
+      "teach": [
+        {
+          "target": "ja",
+          "roman": "ja",
+          "english": "already",
+          "ipa": "ʒˈa",
+          "audio": "audio/ja.wav"
+        },
+        {
+          "target": "audite",
+          "roman": "audite",
+          "english": "heard",
+          "ipa": "aʊdˈite",
+          "audio": "audio/audite.wav"
+        },
+        {
+          "target": "Io ha ja vidite isto.",
+          "roman": "io ha ja vidite isto",
+          "english": "I have already seen this.",
+          "ipa": "ˈiʲo ha ʒˈa vidˈite ˈisto",
+          "audio": "audio/io-ha-ja-vidite-isto.wav"
+        },
+        {
+          "target": "Illa ha audite le musica.",
+          "roman": "illa ha audite le musica",
+          "english": "She has heard the music.",
+          "ipa": "ˈila ha aʊdˈite le mˈusika",
+          "audio": "audio/illa-ha-audite-le-musica.wav"
+        },
+        {
+          "target": "Tu ha ja apprendite multo!",
+          "roman": "tu ha ja apprendite multo",
+          "english": "You've already learned a lot!",
+          "note": "apprender is -er, so its participle is apprendite.",
+          "ipa": "tˈu ha ʒˈa ˌaprendˈite mˈulto",
+          "audio": "audio/tu-ha-ja-apprendite-multo.wav"
+        }
+      ]
     }
   ],
-  "reading": {
-    "title": "In le tren",
-    "passage": [
-      "Anna: Bon die! Como sta tu?",
-      "Marco: Io sta ben, gratias! E tu?",
-      "Anna: Io es felice hodie.",
-      "Marco: Proque?",
-      "Anna: Proque deman io vadera al parco con mi amico.",
-      "Marco: Multo ben! Ma io non pote vader — io ha labor deman."
-    ],
-    "questions": [
-      {
-        "prompt": "How does Marco say he's doing?",
-        "choices": [
-          "Well",
-          "Bad",
-          "Tired",
-          "Sick"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "Why is Anna happy today?",
-        "choices": [
-          "She's going to the park with her friend tomorrow",
-          "She got a new job",
-          "It's her birthday",
-          "She's on vacation"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "Why can't Marco go?",
-        "choices": [
-          "He has work tomorrow",
-          "He's sick",
-          "He doesn't like parks",
-          "He's busy today"
-        ],
-        "answer": 0
-      },
-      {
-        "prompt": "What does \"Multo ben!\" mean?",
-        "choices": [
-          "Very good!",
-          "Very bad",
-          "See you later",
-          "I'm sorry"
-        ],
-        "answer": 0
-      }
-    ]
-  }
+  "canDo": [
+    "Talk about something you have done",
+    "Say what you've already seen, heard, or eaten",
+    "Talk about recent experience"
+  ]
 }

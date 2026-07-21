@@ -82,5 +82,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Say what you would do in a hypothetical situation",
+    "Talk about what would be nice",
+    "Make a polite hypothetical suggestion"
   ]
 }

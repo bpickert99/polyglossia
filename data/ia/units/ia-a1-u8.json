@@ -1,0 +1,154 @@
+{
+  "id": "ia-a1-u8",
+  "title": "Colores",
+  "level": "A1",
+  "summary": "Colors and how adjectives work (spoiler: they don't change either).",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "First colors",
+      "teach": [
+        {
+          "target": "rubie",
+          "roman": "rubie",
+          "english": "red",
+          "note": "Think 'ruby'.",
+          "ipa": "rˈubje",
+          "audio": "audio/rubie.wav"
+        },
+        {
+          "target": "blau",
+          "roman": "blau",
+          "english": "blue",
+          "ipa": "blˈaʊ",
+          "audio": "audio/blau.wav"
+        },
+        {
+          "target": "verde",
+          "roman": "verde",
+          "english": "green",
+          "ipa": "vˈerde",
+          "audio": "audio/verde.wav"
+        },
+        {
+          "target": "jalne",
+          "roman": "jalne",
+          "english": "yellow",
+          "note": "j sounds like the s in 'measure'.",
+          "ipa": "ʒˈalne",
+          "audio": "audio/jalne.wav"
+        },
+        {
+          "target": "un pomo rubie",
+          "roman": "un pomo rubie",
+          "english": "a red apple",
+          "note": "Adjectives usually follow the noun.",
+          "ipa": "un pˈomo rˈubje",
+          "audio": "audio/un-pomo-rubie.wav"
+        }
+      ],
+      "grammar": {
+        "title": "Invariable adjectives",
+        "body": "Adjectives never change for gender or number:\n| un pomo rubie | a red apple |\n| duo pomos rubie | two red apples |\n| un casa rubie | a red house |\nThey normally follow the noun (pomo rubie), though short common ones may precede it (un bon idea)."
+      }
+    },
+    {
+      "id": "l2",
+      "title": "More colors",
+      "teach": [
+        {
+          "target": "blanc",
+          "roman": "blanc",
+          "english": "white",
+          "ipa": "blˈank",
+          "audio": "audio/blanc.wav"
+        },
+        {
+          "target": "nigre",
+          "roman": "nigre",
+          "english": "black",
+          "ipa": "nˈiɡre",
+          "audio": "audio/nigre.wav"
+        },
+        {
+          "target": "brun",
+          "roman": "brun",
+          "english": "brown",
+          "ipa": "brˈun",
+          "audio": "audio/brun.wav"
+        },
+        {
+          "target": "Le nocte es nigre.",
+          "roman": "le nocte es nigre",
+          "english": "The night is black.",
+          "ipa": "le nˈokte es nˈiɡre",
+          "audio": "audio/le-nocte-es-nigre.wav"
+        },
+        {
+          "target": "Que color es le celo?",
+          "roman": "que color es le celo",
+          "english": "What color is the sky?",
+          "note": "celo = sky. Answer: Le celo es blau!",
+          "ipa": "kˈe kolˈor es le tsˈelo",
+          "audio": "audio/que-color-es-le-celo.wav"
+        }
+      ]
+    }
+  ],
+  "reading": {
+    "title": "Mi familia",
+    "passage": [
+      "Io ha un familia. Mi patre es Marco e mi matre es Anna.",
+      "Io ha un fratre e un soror. Mi fratre ha octo annos e mi soror ha dece annos.",
+      "Nos ha un can brun. Le can se appella Rex.",
+      "Nos es felice."
+    ],
+    "questions": [
+      {
+        "prompt": "How old is the sister in the story?",
+        "choices": [
+          "Ten",
+          "Eight",
+          "Five",
+          "Two"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What color is the dog?",
+        "choices": [
+          "Brown",
+          "Blue",
+          "Red",
+          "Green"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What is the dog's name?",
+        "choices": [
+          "Rex",
+          "Marco",
+          "Anna",
+          "Leo"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Who is Marco?",
+        "choices": [
+          "The father",
+          "The brother",
+          "The dog",
+          "A friend"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "canDo": [
+    "Name the main colors",
+    "Describe an object's color",
+    "Ask what color something is"
+  ]
+}

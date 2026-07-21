@@ -1,98 +1,95 @@
 {
   "id": "ia-b1-u2",
-  "title": "Le perfecto",
+  "title": "Comparationes",
   "level": "B1",
-  "summary": "Say what you've done: the perfect tense (ha + past participle).",
+  "summary": "Bigger, smaller, as good as — comparing things.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Le participio passate",
+      "title": "Plus e minus",
       "teach": [
         {
-          "target": "parlate",
-          "roman": "parlate",
-          "english": "spoken",
-          "note": "-ar verbs form the past participle with -ate: parlar → parlate.",
-          "ipa": "parlˈate",
-          "audio": "audio/parlate.wav"
+          "target": "grande",
+          "roman": "grande",
+          "english": "big",
+          "ipa": "ɡrˈande",
+          "audio": "audio/grande.wav"
         },
         {
-          "target": "vidite",
-          "roman": "vidite",
-          "english": "seen",
-          "note": "-er/-ir verbs use -ite: vider → vidite, audir → audite.",
-          "ipa": "vidˈite",
-          "audio": "audio/vidite.wav"
+          "target": "le catto",
+          "roman": "le catto",
+          "english": "the cat",
+          "ipa": "le kˈato",
+          "audio": "audio/le-catto.wav"
         },
         {
-          "target": "mangiate",
-          "roman": "mangiate",
-          "english": "eaten",
-          "ipa": "maŋɡjˈate",
-          "audio": "audio/mangiate.wav"
+          "target": "Le can es plus grande que le catto.",
+          "roman": "le can es plus grande que le catto",
+          "english": "The dog is bigger than the cat.",
+          "note": "plus ... que = more ... than. minus ... que = less ... than.",
+          "ipa": "le kˈan es plˈus ɡrˈande kˈe le kˈato",
+          "audio": "audio/le-can-es-plus-grande-que-le-catto.wav"
         },
         {
-          "target": "Io ha parlate con illa.",
-          "roman": "io ha parlate con illa",
-          "english": "I have spoken with her.",
-          "note": "The perfect tense: ha (have) + past participle, same pattern as English.",
-          "ipa": "ˈiʲo ha parlˈate kˈon ˈila",
-          "audio": "audio/io-ha-parlate-con-illa.wav"
-        },
-        {
-          "target": "Nos ha mangiate le pan.",
-          "roman": "nos ha mangiate le pan",
-          "english": "We have eaten the bread.",
-          "ipa": "nˈos ha maŋɡjˈate le pˈan",
-          "audio": "audio/nos-ha-mangiate-le-pan.wav"
+          "target": "Le catto es plus parve que le can.",
+          "roman": "le catto es plus parve que le can",
+          "english": "The cat is smaller than the dog.",
+          "note": "parve = small.",
+          "ipa": "le kˈato es plˈus pˈarve kˈe le kˈan",
+          "audio": "audio/le-catto-es-plus-parve-que-le-can.wav"
         }
       ],
       "grammar": {
-        "title": "The perfect tense",
-        "body": "Interlingua's perfect tense works just like English \"have done\": the auxiliary **ha** plus a past participle.\nForm the past participle from the infinitive: **-ar → -ate**, **-er/-ir → -ite**.\nparlar → parlate, mangiar → mangiate, vider → vidite, audir → audite.\nOne form for every person: io ha parlate, tu ha parlate, nos ha parlate — the auxiliary never changes."
+        "title": "Comparing things",
+        "body": "**plus ... que** = more ... than: Marco es plus alte que Anna (Marco is taller than Anna).\n**minus ... que** = less ... than: Le catto es minus grande que le can.\n**tanto ... como** = as ... as: Illa es tanto felice como ille (she's as happy as he is).\nAdjectives stay invariable in comparisons too — no special comparative form to memorize."
       }
     },
     {
       "id": "l2",
-      "title": "Ja e ancora",
+      "title": "Tanto como",
       "teach": [
         {
-          "target": "ja",
-          "roman": "ja",
-          "english": "already",
-          "ipa": "ʒˈa",
-          "audio": "audio/ja.wav"
+          "target": "alte",
+          "roman": "alte",
+          "english": "tall",
+          "ipa": "ˈalte",
+          "audio": "audio/alte.wav"
         },
         {
-          "target": "audite",
-          "roman": "audite",
-          "english": "heard",
-          "ipa": "aʊdˈite",
-          "audio": "audio/audite.wav"
+          "target": "bon",
+          "roman": "bon",
+          "english": "good",
+          "ipa": "bˈon",
+          "audio": "audio/bon.wav"
         },
         {
-          "target": "Io ha ja vidite isto.",
-          "roman": "io ha ja vidite isto",
-          "english": "I have already seen this.",
-          "ipa": "ˈiʲo ha ʒˈa vidˈite ˈisto",
-          "audio": "audio/io-ha-ja-vidite-isto.wav"
+          "target": "mal",
+          "roman": "mal",
+          "english": "bad",
+          "ipa": "mˈal",
+          "audio": "audio/mal.wav"
         },
         {
-          "target": "Illa ha audite le musica.",
-          "roman": "illa ha audite le musica",
-          "english": "She has heard the music.",
-          "ipa": "ˈila ha aʊdˈite le mˈusika",
-          "audio": "audio/illa-ha-audite-le-musica.wav"
+          "target": "Mi soror es tanto alte como mi fratre.",
+          "roman": "mi soror es tanto alte como mi fratre",
+          "english": "My sister is as tall as my brother.",
+          "ipa": "mi sorˈor es tˈanto ˈalte kˈomo mi frˈatre",
+          "audio": "audio/mi-soror-es-tanto-alte-como-mi-fratre.wav"
         },
         {
-          "target": "Tu ha ja apprendite multo!",
-          "roman": "tu ha ja apprendite multo",
-          "english": "You've already learned a lot!",
-          "note": "apprender is -er, so its participle is apprendite.",
-          "ipa": "tˈu ha ʒˈa ˌaprendˈite mˈulto",
-          "audio": "audio/tu-ha-ja-apprendite-multo.wav"
+          "target": "Iste caffe es bon, ma iste pan es mal.",
+          "roman": "iste caffe es bon ma iste pan es mal",
+          "english": "This coffee is good, but this bread is bad.",
+          "note": "iste = this.",
+          "ipa": "ˈiste kˈafe es bˈon mˈa ˈiste pˈan es mˈal",
+          "audio": "audio/iste-caffe-es-bon-ma-iste-pan-es-mal.wav"
         }
       ]
     }
+  ],
+  "canDo": [
+    "Compare two things (bigger, smaller)",
+    "Say something is as good as another",
+    "Make simple comparisons"
   ]
 }

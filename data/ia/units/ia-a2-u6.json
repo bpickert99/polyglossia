@@ -1,7 +1,7 @@
 {
-  "id": "ia-b1-u7",
+  "id": "ia-a2-u6",
   "title": "Le tempore atmospheric",
-  "level": "B1",
+  "level": "A2",
   "summary": "Talk about the weather and seasons.",
   "lessons": [
     {
@@ -92,5 +92,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Talk about sun, rain, wind, and snow",
+    "Describe hot and cold weather",
+    "Talk about summer and winter"
   ]
 }

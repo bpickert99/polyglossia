@@ -92,6 +92,38 @@
           "audio": "audio/io-sta-ben-gratias.wav"
         }
       ]
+    },
+    {
+      "id": "l3",
+      "title": "Le nomine",
+      "teach": [
+        {
+          "target": "le nomine",
+          "roman": "le nomine",
+          "english": "the name"
+        },
+        {
+          "target": "Como tu te appella?",
+          "roman": "como tu te appella",
+          "english": "What is your name?",
+          "note": "Literally 'how do you call yourself' — appellar se = to be called."
+        },
+        {
+          "target": "Io me appella ...",
+          "roman": "io me appella",
+          "english": "My name is..."
+        },
+        {
+          "target": "Pardono!",
+          "roman": "pardono",
+          "english": "Sorry! / Excuse me!"
+        }
+      ]
     }
+  ],
+  "canDo": [
+    "Greet someone and say goodbye",
+    "Ask and answer “how are you?”",
+    "Say please and thank you"
   ]
 }

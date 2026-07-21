@@ -89,5 +89,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Ask where, what, who, when, why, and how",
+    "Ask for a location",
+    "Answer a “why” question"
   ]
 }

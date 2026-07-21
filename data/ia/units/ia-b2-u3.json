@@ -1,92 +1,143 @@
 {
   "id": "ia-b2-u3",
-  "title": "Professiones",
+  "title": "Natura",
   "level": "B2",
-  "summary": "Jobs and workplaces.",
+  "summary": "Mountains, rivers, and the natural world.",
   "lessons": [
     {
       "id": "l1",
-      "title": "Le laboro de mi familia",
+      "title": "Montanias e fluvios",
       "teach": [
         {
-          "target": "le medico",
-          "roman": "le medico",
-          "english": "the doctor",
-          "ipa": "le mˈediko",
-          "audio": "audio/le-medico.wav"
+          "target": "le montania",
+          "roman": "le montania",
+          "english": "the mountain",
+          "ipa": "le montˈanja",
+          "audio": "audio/le-montania.wav"
         },
         {
-          "target": "le professor",
-          "roman": "le professor",
-          "english": "the teacher, the professor",
-          "ipa": "le prˌofesˈor",
-          "audio": "audio/le-professor.wav"
+          "target": "le fluvio",
+          "roman": "le fluvio",
+          "english": "the river",
+          "ipa": "le flˈuvjo",
+          "audio": "audio/le-fluvio.wav"
         },
         {
-          "target": "le studente",
-          "roman": "le studente",
-          "english": "the student",
-          "ipa": "le studˈente",
-          "audio": "audio/le-studente.wav"
+          "target": "le mar",
+          "roman": "le mar",
+          "english": "the sea",
+          "ipa": "le mˈar",
+          "audio": "audio/le-mar.wav"
         },
         {
-          "target": "le cocinero",
-          "roman": "le cocinero",
-          "english": "the cook",
-          "ipa": "le kˌotsinˈero",
-          "audio": "audio/le-cocinero.wav"
+          "target": "le foreste",
+          "roman": "le foreste",
+          "english": "the forest",
+          "ipa": "le forˈeste",
+          "audio": "audio/le-foreste.wav"
         },
         {
-          "target": "Mi matre es medico e mi patre es professor.",
-          "roman": "mi matre es medico e mi patre es professor",
-          "english": "My mother is a doctor and my father is a teacher.",
-          "note": "No article before a profession after 'esser', like French/Spanish/Italian.",
-          "ipa": "mi mˈatre es mˈediko e mi pˈatre es prˌofesˈor",
-          "audio": "audio/mi-matre-es-medico-e-mi-patre-es-professor.wav"
+          "target": "Nos ha ascendite le montania e vidite le mar.",
+          "roman": "nos ha ascendite le montania e vidite le mar",
+          "english": "We climbed the mountain and saw the sea.",
+          "note": "ascender = to climb/ascend.",
+          "ipa": "nˈos ha ˌastsendˈite le montˈanja e vidˈite le mˈar",
+          "audio": "audio/nos-ha-ascendite-le-montania-e-vidite-le-mar.wav"
         }
       ]
     },
     {
       "id": "l2",
-      "title": "Ubi tu labora?",
+      "title": "Le natura circa nos",
       "teach": [
         {
-          "target": "le artista",
-          "roman": "le artista",
-          "english": "the artist",
-          "ipa": "le artˈista",
-          "audio": "audio/le-artista.wav"
+          "target": "le arbore",
+          "roman": "le arbore",
+          "english": "the tree",
+          "ipa": "le ˈarbore",
+          "audio": "audio/le-arbore.wav"
         },
         {
-          "target": "le ingeniero",
-          "roman": "le ingeniero",
-          "english": "the engineer",
-          "ipa": "le ˌiŋɡenjˈero",
-          "audio": "audio/le-ingeniero.wav"
+          "target": "le flor",
+          "roman": "le flor",
+          "english": "the flower",
+          "ipa": "le flˈor",
+          "audio": "audio/le-flor.wav"
         },
         {
-          "target": "le officio",
-          "roman": "le officio",
-          "english": "the office",
-          "ipa": "le ofˈitsjo",
-          "audio": "audio/le-officio.wav"
+          "target": "le insula",
+          "roman": "le insula",
+          "english": "the island",
+          "ipa": "le ˈinsula",
+          "audio": "audio/le-insula.wav"
         },
         {
-          "target": "Ubi tu labora?",
-          "roman": "ubi tu labora",
-          "english": "Where do you work?",
-          "ipa": "ˈubi tˈu labˈora",
-          "audio": "audio/ubi-tu-labora.wav"
-        },
-        {
-          "target": "Io labora in un officio in le centro del urbe.",
-          "roman": "io labora in un officio in le centro del urbe",
-          "english": "I work in an office in the city center.",
-          "note": "centro = center; del = de + le (of the).",
-          "ipa": "ˈiʲo labˈora ˈin un ofˈitsjo ˈin le tsˈentro del ˈurbe",
-          "audio": "audio/io-labora-in-un-officio-in-le-centro-del-urbe.wav"
+          "target": "Le insula ha multe arbores e flores belle.",
+          "roman": "le insula ha multe arbores e flores belle",
+          "english": "The island has many trees and beautiful flowers.",
+          "note": "multe = many; belle = beautiful.",
+          "ipa": "le ˈinsula ha mˈulte ˈarbores e flˈores bˈele",
+          "audio": "audio/le-insula-ha-multe-arbores-e-flores-belle.wav"
         }
       ]
     }
+  ],
+  "reading": {
+    "title": "Un die in le montania",
+    "passage": [
+      "Anna e Marco ha vadite al montania con lor amico.",
+      "Illes ha ascendite le montania e ha vidite un fluvio inter le arbores.",
+      "Le sol esseva calide, ma un vento frigide veniva del mar.",
+      "Sur un petra presso del fluvio, illes ha comenciate a mangiar.",
+      "\"Esserea agradabile vader ci cata septimana,\" ha dicite Anna.",
+      "Marco ha respondite: \"Si, ma le proxime vice, io vole trovar le mar!\""
+    ],
+    "questions": [
+      {
+        "prompt": "Where did Anna and Marco go?",
+        "choices": [
+          "To the mountain",
+          "To the sea",
+          "To school",
+          "To the city"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What did they see between the trees?",
+        "choices": [
+          "A river",
+          "A lake",
+          "A house",
+          "A forest"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "Where did they start eating?",
+        "choices": [
+          "On a rock near the river",
+          "In a restaurant",
+          "At school",
+          "On the mountain top"
+        ],
+        "answer": 0
+      },
+      {
+        "prompt": "What does Marco want to find next time?",
+        "choices": [
+          "The sea",
+          "A new mountain",
+          "A river",
+          "A forest"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "canDo": [
+    "Talk about mountains, rivers, and the sea",
+    "Describe a natural landscape",
+    "Talk about trees, flowers, and islands"
   ]
 }

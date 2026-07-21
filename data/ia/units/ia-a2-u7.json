@@ -1,0 +1,97 @@
+{
+  "id": "ia-a2-u7",
+  "title": "Professiones",
+  "level": "A2",
+  "summary": "Jobs and workplaces.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "Le laboro de mi familia",
+      "teach": [
+        {
+          "target": "le medico",
+          "roman": "le medico",
+          "english": "the doctor",
+          "ipa": "le mˈediko",
+          "audio": "audio/le-medico.wav"
+        },
+        {
+          "target": "le professor",
+          "roman": "le professor",
+          "english": "the teacher, the professor",
+          "ipa": "le prˌofesˈor",
+          "audio": "audio/le-professor.wav"
+        },
+        {
+          "target": "le studente",
+          "roman": "le studente",
+          "english": "the student",
+          "ipa": "le studˈente",
+          "audio": "audio/le-studente.wav"
+        },
+        {
+          "target": "le cocinero",
+          "roman": "le cocinero",
+          "english": "the cook",
+          "ipa": "le kˌotsinˈero",
+          "audio": "audio/le-cocinero.wav"
+        },
+        {
+          "target": "Mi matre es medico e mi patre es professor.",
+          "roman": "mi matre es medico e mi patre es professor",
+          "english": "My mother is a doctor and my father is a teacher.",
+          "note": "No article before a profession after 'esser', like French/Spanish/Italian.",
+          "ipa": "mi mˈatre es mˈediko e mi pˈatre es prˌofesˈor",
+          "audio": "audio/mi-matre-es-medico-e-mi-patre-es-professor.wav"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Ubi tu labora?",
+      "teach": [
+        {
+          "target": "le artista",
+          "roman": "le artista",
+          "english": "the artist",
+          "ipa": "le artˈista",
+          "audio": "audio/le-artista.wav"
+        },
+        {
+          "target": "le ingeniero",
+          "roman": "le ingeniero",
+          "english": "the engineer",
+          "ipa": "le ˌiŋɡenjˈero",
+          "audio": "audio/le-ingeniero.wav"
+        },
+        {
+          "target": "le officio",
+          "roman": "le officio",
+          "english": "the office",
+          "ipa": "le ofˈitsjo",
+          "audio": "audio/le-officio.wav"
+        },
+        {
+          "target": "Ubi tu labora?",
+          "roman": "ubi tu labora",
+          "english": "Where do you work?",
+          "ipa": "ˈubi tˈu labˈora",
+          "audio": "audio/ubi-tu-labora.wav"
+        },
+        {
+          "target": "Io labora in un officio in le centro del urbe.",
+          "roman": "io labora in un officio in le centro del urbe",
+          "english": "I work in an office in the city center.",
+          "note": "centro = center; del = de + le (of the).",
+          "ipa": "ˈiʲo labˈora ˈin un ofˈitsjo ˈin le tsˈentro del ˈurbe",
+          "audio": "audio/io-labora-in-un-officio-in-le-centro-del-urbe.wav"
+        }
+      ]
+    }
+  ],
+  "canDo": [
+    "Name common jobs",
+    "Say what you or a family member does for work",
+    "Ask where someone works"
+  ]
+}

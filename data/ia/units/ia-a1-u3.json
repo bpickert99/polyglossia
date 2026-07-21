@@ -109,5 +109,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Count from one to ten",
+    "Say your age",
+    "Say someone else's age"
   ]
 }

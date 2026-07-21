@@ -73,5 +73,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Say something was done, without saying who did it",
+    "Describe an object using the passive voice",
+    "Talk about when something was closed or made"
   ]
 }

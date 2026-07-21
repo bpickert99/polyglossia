@@ -139,5 +139,10 @@
         "answer": 0
       }
     ]
-  }
+  },
+  "canDo": [
+    "Talk about your home, job, and school",
+    "Describe your daily routine",
+    "Say what today is like"
+  ]
 }

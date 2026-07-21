@@ -1,7 +1,7 @@
 {
-  "id": "ia-b2-u5",
+  "id": "ia-a2-u8",
   "title": "Prepositiones",
-  "level": "B2",
+  "level": "A2",
   "summary": "In, on, under, between — locating things precisely.",
   "lessons": [
     {
@@ -82,61 +82,74 @@
           "english": "The school is in front of the park and behind the old city.",
           "ipa": "le stʃˈola es ˈante le pˈarko e dˈetra le ˈurbe vˈetule",
           "audio": "audio/le-schola-es-ante-le-parco-e-detra-le-urbe-vetule.wav"
+        },
+        {
+          "target": "hic",
+          "roman": "hic",
+          "english": "here"
+        },
+        {
+          "target": "ibi",
+          "roman": "ibi",
+          "english": "there"
         }
       ]
     }
   ],
   "reading": {
-    "title": "Un die in le montania",
+    "title": "Le casa de Marco",
     "passage": [
-      "Anna e Marco ha vadite al montania con lor amico.",
-      "Illes ha ascendite le montania e ha vidite un fluvio inter le arbores.",
-      "Le sol esseva calide, ma un vento frigide veniva del mar.",
-      "Sur un petra presso del fluvio, illes ha comenciate a mangiar.",
-      "\"Esserea agradabile vader ci cata septimana,\" ha dicite Anna.",
-      "Marco ha respondite: \"Si, ma le proxime vice, io vole trovar le mar!\""
+      "Le catto de Marco es sur le tabula. Le can es sub le tabula.",
+      "Le lampa es inter le catto e le can.",
+      "Le schola es ante le parco, e le officio es detra le schola.",
+      "Le medico labora in le officio, presso del parco."
     ],
     "questions": [
       {
-        "prompt": "Where did Anna and Marco go?",
+        "prompt": "Where is the cat?",
         "choices": [
-          "To the mountain",
-          "To the sea",
-          "To school",
-          "To the city"
+          "On the table",
+          "Under the table",
+          "Behind the table",
+          "Near the table"
         ],
         "answer": 0
       },
       {
-        "prompt": "What did they see between the trees?",
+        "prompt": "Where is the lamp?",
         "choices": [
-          "A river",
-          "A lake",
-          "A house",
-          "A forest"
+          "Between the cat and the dog",
+          "On the table",
+          "Under the school",
+          "Near the park"
         ],
         "answer": 0
       },
       {
-        "prompt": "Where did they start eating?",
+        "prompt": "What is behind the school?",
         "choices": [
-          "On a rock near the river",
-          "In a restaurant",
-          "At school",
-          "On the mountain top"
+          "The office",
+          "The park",
+          "The table",
+          "The house"
         ],
         "answer": 0
       },
       {
-        "prompt": "What does Marco want to find next time?",
+        "prompt": "Where does the doctor work?",
         "choices": [
-          "The sea",
-          "A new mountain",
-          "A river",
-          "A forest"
+          "In the office, near the park",
+          "At the school",
+          "At home",
+          "In the park"
         ],
         "answer": 0
       }
     ]
-  }
+  },
+  "canDo": [
+    "Say what's on, under, or between things",
+    "Describe where something is, in front of or behind",
+    "Give simple directions using near/behind/in front of"
+  ]
 }

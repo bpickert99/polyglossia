@@ -1,0 +1,112 @@
+{
+  "id": "ia-a1-u7",
+  "title": "Mangiar e biber",
+  "level": "A1",
+  "summary": "Food, drink, and saying what you want.",
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "At the table",
+      "teach": [
+        {
+          "target": "le aqua",
+          "roman": "le aqua",
+          "english": "the water",
+          "ipa": "le ˈakwa",
+          "audio": "audio/le-aqua.wav"
+        },
+        {
+          "target": "le pan",
+          "roman": "le pan",
+          "english": "the bread",
+          "ipa": "le pˈan",
+          "audio": "audio/le-pan.wav"
+        },
+        {
+          "target": "le lacte",
+          "roman": "le lacte",
+          "english": "the milk",
+          "ipa": "le lˈakte",
+          "audio": "audio/le-lacte.wav"
+        },
+        {
+          "target": "le caffe",
+          "roman": "le caffe",
+          "english": "the coffee",
+          "ipa": "le kˈafe",
+          "audio": "audio/le-caffe.wav"
+        },
+        {
+          "target": "Io vole aqua, per favor.",
+          "roman": "io vole aqua per favor",
+          "english": "I want water, please.",
+          "note": "vole = want(s) — invariable like every verb.",
+          "ipa": "ˈiʲo vˈole ˈakwa pˈer favˈor",
+          "audio": "audio/io-vole-aqua-per-favor.wav"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Mangiar",
+      "teach": [
+        {
+          "target": "mangiar",
+          "roman": "mangiar",
+          "english": "to eat",
+          "ipa": "manʒˈar",
+          "audio": "audio/mangiar.wav"
+        },
+        {
+          "target": "biber",
+          "roman": "biber",
+          "english": "to drink",
+          "ipa": "bibˈer",
+          "audio": "audio/biber.wav"
+        },
+        {
+          "target": "le pomo",
+          "roman": "le pomo",
+          "english": "the apple",
+          "ipa": "le pˈomo",
+          "audio": "audio/le-pomo.wav"
+        },
+        {
+          "target": "le caseo",
+          "roman": "le caseo",
+          "english": "the cheese",
+          "ipa": "le kasˈeo",
+          "audio": "audio/le-caseo.wav"
+        },
+        {
+          "target": "Io mangia un pomo.",
+          "roman": "io mangia un pomo",
+          "english": "I am eating an apple.",
+          "note": "Present tense = infinitive minus -r: mangiar → mangia.",
+          "ipa": "ˈiʲo mˈaŋɡja un pˈomo",
+          "audio": "audio/io-mangia-un-pomo.wav"
+        },
+        {
+          "target": "Io ha fame.",
+          "roman": "io ha fame",
+          "english": "I am hungry.",
+          "note": "Literally 'I have hunger' — same pattern as haber sete (to be thirsty)."
+        },
+        {
+          "target": "Io ha sete.",
+          "roman": "io ha sete",
+          "english": "I am thirsty."
+        }
+      ],
+      "grammar": {
+        "title": "Every verb, one rule",
+        "body": "Take the infinitive, drop the final **-r**, and you have the present tense for all persons:\n| mangiar (to eat) | io mangia, tu mangia, nos mangia |\n| biber (to drink) | io bibe, illa bibe |\n| voler (to want) | io vole |\nYou now know how to conjugate every verb in the language."
+      }
+    }
+  ],
+  "canDo": [
+    "Order water, bread, coffee, or milk",
+    "Say what you want to eat or drink",
+    "Talk about a piece of fruit or cheese"
+  ]
+}

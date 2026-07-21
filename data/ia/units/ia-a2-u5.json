@@ -1,7 +1,7 @@
 {
-  "id": "ia-b1-u6",
+  "id": "ia-a2-u5",
   "title": "Tempore e calendario",
-  "level": "B1",
+  "level": "A2",
   "summary": "Days, months, and telling time.",
   "lessons": [
     {
@@ -92,5 +92,10 @@
         }
       ]
     }
+  ],
+  "canDo": [
+    "Name the days of the week",
+    "Ask and tell the time",
+    "Talk about morning and evening"
   ]
 }
