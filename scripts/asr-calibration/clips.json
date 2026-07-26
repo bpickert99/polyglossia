@@ -1,0 +1,17 @@
+{
+  "_comment": "Record yourself saying each Darija phrase and save the audio as <id>.<ext> in ./clips/ (wav, mp3, m4a, ogg, webm, flac all work). Speak naturally, the way you would to a person — this is a test of how well speech-to-text handles a real learner speaking Darija, so don't over-enunciate. The 'arabic' field is what we compare the transcription against; the script strips diacritics before comparing.",
+  "items": [
+    { "id": "salam", "roman": "salam", "arabic": "سلام", "english": "hello" },
+    { "id": "shukran", "roman": "shukran", "arabic": "شكرا", "english": "thank you" },
+    { "id": "3afak", "roman": "3afak", "arabic": "عفاك", "english": "please" },
+    { "id": "labas", "roman": "labas", "arabic": "لاباس", "english": "how are you" },
+    { "id": "smiti", "roman": "smiti", "arabic": "سميتي", "english": "my name is" },
+    { "id": "bghit-atay", "roman": "bghit atay", "arabic": "بغيت أتاي", "english": "I want tea" },
+    { "id": "fin-lhammam", "roman": "fin l7ammam", "arabic": "فين الحمام", "english": "where is the bathroom" },
+    { "id": "shhal", "roman": "shhal hada", "arabic": "شحال هادا", "english": "how much is this" },
+    { "id": "ma3reftsh", "roman": "ma3reftsh", "arabic": "ماعرفتش", "english": "I don't know" },
+    { "id": "3tini-lma", "roman": "3tini lma 3afak", "arabic": "عطيني الما عفاك", "english": "give me water please" },
+    { "id": "ma-fhemtsh", "roman": "ma fhemtsh", "arabic": "ما فهمتش", "english": "I didn't understand" },
+    { "id": "bshwiya", "roman": "bshwiya 3afak", "arabic": "بشوية عفاك", "english": "slowly please" }
+  ]
+}
