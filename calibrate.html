@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darija ASR Calibration</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0; padding: 16px; max-width: 640px; margin-inline: auto;
+    line-height: 1.5; background: #faf9f7; color: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) { body { background: #14140f; color: #ece9e2; } }
+  h1 { font-size: 1.35rem; margin: 0 0 4px; }
+  .sub { color: #77736c; font-size: .9rem; margin: 0 0 16px; }
+  .card { background: rgba(127,127,127,.09); border-radius: 14px; padding: 14px; margin-bottom: 12px; }
+  label { font-weight: 600; font-size: .9rem; display: block; margin-bottom: 6px; }
+  input[type=password] {
+    width: 100%; padding: 11px; border-radius: 10px; border: 1px solid #ccc;
+    font-size: 1rem; background: #fff; color: #000;
+  }
+  .keynote { font-size: .78rem; color: #77736c; margin-top: 6px; }
+  .phrase { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+  .roman { font-weight: 700; font-size: 1.05rem; }
+  .eng { color: #77736c; font-size: .9rem; }
+  .arabic { font-size: 1.3rem; margin: 4px 0 10px; direction: rtl; }
+  button {
+    font-size: 1rem; padding: 11px 16px; border-radius: 10px; border: none;
+    background: #c05a2e; color: #fff; font-weight: 600; cursor: pointer;
+  }
+  button:disabled { opacity: .5; }
+  button.ghost { background: rgba(127,127,127,.2); color: inherit; }
+  button.rec-on { background: #b3261e; }
+  .result { margin-top: 10px; font-size: .92rem; }
+  .result .line { display: flex; gap: 8px; align-items: center; margin-top: 4px; flex-wrap: wrap; }
+  .model { font-weight: 600; min-width: 150px; }
+  .heard { direction: rtl; }
+  .pct { font-variant-numeric: tabular-nums; font-weight: 700; }
+  .status { color: #77736c; font-size: .85rem; margin-top: 6px; }
+  .summary { position: sticky; bottom: 0; margin-top: 20px; }
+  .summary-inner { background: #1f2a20; color: #eafaef; border-radius: 14px; padding: 16px; }
+  @media (prefers-color-scheme: light) { .summary-inner { background: #1f2a20; } }
+  .summary h2 { margin: 0 0 8px; font-size: 1.05rem; }
+  .summary .row { display: flex; justify-content: space-between; margin: 4px 0; }
+  .verdict { font-size: .82rem; opacity: .85; }
+  .warn { color: #b3261e; font-size: .85rem; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>Darija speech-to-text check</h1>
+  <p class="sub">Record yourself saying each Darija phrase. It sends the audio to OpenAI and scores how well it was understood, so we know whether to build voice practice on it.</p>
+
+  <div class="card">
+    <label for="key">OpenAI API key</label>
+    <input id="key" type="password" placeholder="sk-..." autocomplete="off" autocapitalize="off" spellcheck="false">
+    <p class="keynote">Used only in this browser to call OpenAI directly. Never saved, never sent anywhere else. Revoke it afterward if you like.</p>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="summary" id="summary" style="display:none">
+    <div class="summary-inner">
+      <h2>Results so far</h2>
+      <div id="summary-rows"></div>
+      <button class="ghost" id="copy" style="margin-top:12px;width:100%">📋 Copy results to send back</button>
+      <p class="verdict" id="copied" style="display:none">Copied — paste it into the chat.</p>
+    </div>
+  </div>
+
+<script>
+const ITEMS = [
+  { id: "salam", roman: "salam", arabic: "سلام", english: "hello" },
+  { id: "shukran", roman: "shukran", arabic: "شكرا", english: "thank you" },
+  { id: "3afak", roman: "3afak", arabic: "عفاك", english: "please" },
+  { id: "labas", roman: "labas", arabic: "لاباس", english: "how are you" },
+  { id: "smiti", roman: "smiti", arabic: "سميتي", english: "my name is" },
+  { id: "bghit-atay", roman: "bghit atay", arabic: "بغيت أتاي", english: "I want tea" },
+  { id: "fin-lhammam", roman: "fin l7ammam", arabic: "فين الحمام", english: "where is the bathroom" },
+  { id: "shhal", roman: "shhal hada", arabic: "شحال هادا", english: "how much is this" },
+  { id: "ma3reftsh", roman: "ma3reftsh", arabic: "ماعرفتش", english: "I don't know" },
+  { id: "3tini-lma", roman: "3tini lma 3afak", arabic: "عطيني الما عفاك", english: "give me water please" },
+  { id: "ma-fhemtsh", roman: "ma fhemtsh", arabic: "ما فهمتش", english: "I didn't understand" },
+  { id: "bshwiya", roman: "bshwiya 3afak", arabic: "بشوية عفاك", english: "slowly please" },
+];
+const MODELS = ["gpt-4o-transcribe", "whisper-1"];
+const results = {}; // id -> { model -> {text, score} }
+
+function normArabic(s) {
+  return String(s).normalize("NFC")
+    .replace(/[ً-ْٰـ]/g, "")
+    .replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
+    .replace(/[\s\p{P}]/gu, "");
+}
+function lev(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n; if (!n) return m;
+  const row = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    let prev = row[0]; row[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const tmp = row[j];
+      row[j] = a[i-1] === b[j-1] ? prev : 1 + Math.min(prev, row[j], row[j-1]);
+      prev = tmp;
+    }
+  }
+  return row[n];
+}
+function similarity(exp, act) {
+  const x = normArabic(exp), y = normArabic(act);
+  if (!x && !y) return 1;
+  return Math.max(0, 1 - lev(x, y) / Math.max(x.length, y.length, 1));
+}
+function extFor(mime) {
+  if (!mime) return "webm";
+  if (mime.includes("mp4")) return "mp4";
+  if (mime.includes("webm")) return "webm";
+  if (mime.includes("ogg")) return "ogg";
+  if (mime.includes("mpeg")) return "mp3";
+  if (mime.includes("wav")) return "wav";
+  return "webm";
+}
+
+async function transcribe(model, blob, filename) {
+  const key = document.getElementById("key").value.trim();
+  if (!key) throw new Error("Enter your OpenAI key first");
+  const form = new FormData();
+  form.append("model", model);
+  form.append("language", "ar");
+  form.append("file", blob, filename);
+  const res = await fetch("https://api.openai.com/v1/audio/transcriptions", {
+    method: "POST",
+    headers: { Authorization: "Bearer " + key },
+    body: form,
+  });
+  if (!res.ok) {
+    const t = await res.text();
+    throw new Error(res.status + " — " + t.slice(0, 200));
+  }
+  const j = await res.json();
+  return (j.text || "").trim();
+}
+
+function verdict(avg) {
+  return avg >= 0.8 ? "strong" : avg >= 0.55 ? "usable (tolerant eval)"
+    : avg >= 0.35 ? "weak — try another vendor" : "poor";
+}
+
+function renderSummary() {
+  const box = document.getElementById("summary");
+  const rows = document.getElementById("summary-rows");
+  const done = Object.keys(results).length;
+  if (!done) { box.style.display = "none"; return; }
+  box.style.display = "block";
+  rows.innerHTML = "";
+  for (const model of MODELS) {
+    const scores = [];
+    for (const id in results) if (results[id][model]) scores.push(results[id][model].score);
+    if (!scores.length) continue;
+    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = `<span>${model} <span class="verdict">(${scores.length} clips)</span></span>` +
+      `<span><b>${Math.round(avg*100)}%</b> <span class="verdict">${verdict(avg)}</span></span>`;
+    rows.appendChild(row);
+  }
+}
+
+function buildSummaryText() {
+  let out = "Darija ASR calibration results:\n";
+  for (const it of ITEMS) {
+    if (!results[it.id]) continue;
+    out += `\n${it.roman} ("${it.english}") — expected ${it.arabic}\n`;
+    for (const model of MODELS) {
+      const r = results[it.id][model];
+      if (r) out += `  ${model}: ${Math.round(r.score*100)}%  «${r.text || "(empty)"}»\n`;
+    }
+  }
+  out += "\nAVERAGES:\n";
+  for (const model of MODELS) {
+    const scores = [];
+    for (const id in results) if (results[id][model]) scores.push(results[id][model].score);
+    if (!scores.length) continue;
+    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+    out += `  ${model}: ${Math.round(avg*100)}% (${scores.length} clips) — ${verdict(avg)}\n`;
+  }
+  return out;
+}
+
+function makeRow(it) {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML =
+    `<div class="phrase"><span class="roman">${it.roman}</span><span class="eng">— ${it.english}</span></div>` +
+    `<div class="arabic">${it.arabic}</div>` +
+    `<button class="rec">● Record</button> <button class="play ghost" disabled>▶︎ Play</button>` +
+    `<div class="status"></div><div class="result"></div>`;
+  const recBtn = card.querySelector(".rec");
+  const playBtn = card.querySelector(".play");
+  const status = card.querySelector(".status");
+  const resultEl = card.querySelector(".result");
+  let recorder = null, chunks = [], url = null, recording = false, blob = null;
+
+  recBtn.addEventListener("click", async () => {
+    if (!recording) {
+      if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+        status.textContent = "Recording not supported in this browser."; return;
+      }
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        chunks = [];
+        recorder = new MediaRecorder(stream);
+        recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+        recorder.onstop = async () => {
+          stream.getTracks().forEach((t) => t.stop());
+          const mime = recorder.mimeType || "audio/webm";
+          blob = new Blob(chunks, { type: mime });
+          if (url) URL.revokeObjectURL(url);
+          url = URL.createObjectURL(blob);
+          playBtn.disabled = false;
+          await runTranscription(mime);
+        };
+        recorder.start();
+        recording = true;
+        recBtn.textContent = "■ Stop";
+        recBtn.classList.add("rec-on");
+        status.textContent = "Recording… tap Stop when done.";
+      } catch (e) {
+        status.textContent = "Mic unavailable — allow microphone access. (" + e.message + ")";
+      }
+    } else {
+      recorder.stop();
+      recording = false;
+      recBtn.textContent = "● Re-record";
+      recBtn.classList.remove("rec-on");
+    }
+  });
+
+  playBtn.addEventListener("click", () => { if (url) new Audio(url).play(); });
+
+  async function runTranscription(mime) {
+    resultEl.innerHTML = "";
+    status.textContent = "Transcribing…";
+    const filename = it.id + "." + extFor(mime);
+    results[it.id] = results[it.id] || {};
+    for (const model of MODELS) {
+      const line = document.createElement("div");
+      line.className = "line";
+      line.innerHTML = `<span class="model">${model}</span><span>…</span>`;
+      resultEl.appendChild(line);
+      try {
+        const text = await transcribe(model, blob, filename);
+        const score = similarity(it.arabic, text);
+        results[it.id][model] = { text, score };
+        line.innerHTML = `<span class="model">${model}</span>` +
+          `<span class="pct">${Math.round(score*100)}%</span>` +
+          `<span class="heard">${text || "(empty)"}</span>`;
+      } catch (e) {
+        line.innerHTML = `<span class="model">${model}</span><span class="warn">${e.message}</span>`;
+      }
+      renderSummary();
+    }
+    status.textContent = "";
+  }
+
+  return card;
+}
+
+const list = document.getElementById("list");
+ITEMS.forEach((it) => list.appendChild(makeRow(it)));
+
+document.getElementById("copy").addEventListener("click", async () => {
+  const text = buildSummaryText();
+  try { await navigator.clipboard.writeText(text); }
+  catch { /* fall through to prompt */ }
+  const note = document.getElementById("copied");
+  note.style.display = "block";
+  note.textContent = "Copied — paste it into the chat. (If nothing copied, screenshot this page instead.)";
+});
+</script>
+</body>
+</html>
