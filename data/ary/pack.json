@@ -1,0 +1,36 @@
+{
+  "code": "ary",
+  "name": "Morocco (Darija)",
+  "destination": "Morocco",
+  "nativeName": "الدارجة المغربية",
+  "flag": "🇲🇦",
+  "description": "Everything you need to get around Morocco — order food, find your way, handle money and emergencies — in the month before you go. Built to make you understood, and to help you understand what comes back.",
+  "scripts": {
+    "default": "arabizi",
+    "options": [
+      { "id": "arabizi", "name": "Arabizi (Latin chat script)", "verbal": true, "helper": false },
+      { "id": "arabic", "name": "Arabic script", "verbal": false, "helper": true }
+    ]
+  },
+  "grammarSpine": [
+    "Verb-first, dropped subject: the verb prefix carries 'I/you/he', so a sentence is often just Verb + Object (bghit atay = 'want tea'). Adjectives follow the noun (atay skhun = 'tea hot').",
+    "Present tense = ka- + person: kan- (I), kat- (you), kay- (he/it). kanakol = I eat, katakol = you eat, kayakol = he eats.",
+    "Negation wraps the verb: ma ... sh. ma kanfhemsh = I don't understand.",
+    "Four power-words (fixed): bghit (I want), khessni (I need), 3andi (I have), kayn (there is).",
+    "Questions: front a question word (fin/shhal/ash/fuqash/kifash/shkun), or put 'wash' before a statement for yes/no.",
+    "Possession with dyal (l-flus dyali = my money); this/that = had / hadak.",
+    "Numbers — and the Moroccan money reality (dirham vs. rial)."
+  ],
+  "modules": [
+    { "id": "greetings", "title": "Greetings & politeness", "tier": 0, "icon": "👋", "frame": "No 'to be' in the present", "file": "modules/greetings.json" },
+    { "id": "repair", "title": "Getting unstuck", "tier": 0, "icon": "🆘", "frame": "Negation: ma ... sh", "file": "modules/repair.json" },
+    { "id": "numbers-money", "title": "Numbers & money", "tier": 0, "icon": "💵", "frame": "shhal ___ ? (how much)", "file": "modules/numbers-money.json" },
+    { "id": "emergencies", "title": "Emergencies & health", "tier": 0, "icon": "🚑", "frame": "khessni ___ (I need)", "file": "modules/emergencies.json" },
+    { "id": "verbs", "title": "Saying what you do", "tier": 1, "icon": "🗣️", "frame": "Present tense: ka- + verb", "file": "modules/verbs.json" },
+    { "id": "directions", "title": "Directions & transport", "tier": 1, "icon": "🧭", "frame": "fin ___ ? (where is)", "file": "modules/directions.json" },
+    { "id": "food", "title": "Food & drink", "tier": 1, "icon": "🍽️", "frame": "bghit ___ (I want)", "file": "modules/food.json" },
+    { "id": "accommodation", "title": "Where you're staying", "tier": 2, "icon": "🛏️", "frame": "wash kayn ___ ? (is there)", "file": "modules/accommodation.json" },
+    { "id": "souk", "title": "Shopping & the souk", "tier": 2, "icon": "🛍️", "frame": "Bargaining", "file": "modules/souk.json" },
+    { "id": "smalltalk", "title": "Small talk & connection", "tier": 2, "icon": "💬", "frame": "menin nta? (where are you from)", "file": "modules/smalltalk.json" }
+  ]
+}

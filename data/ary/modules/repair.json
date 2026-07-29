@@ -1,0 +1,30 @@
+{
+  "id": "repair",
+  "title": "Getting unstuck",
+  "tier": 0,
+  "grammar": {
+    "title": "Negation: wrap the verb in ma ... sh",
+    "body": "To make a verb negative, put **ma** before it and **sh** after it:\n| verb | negative |\n| --- | --- |\n| kanfhem (I understand) | **ma** kanfhem**sh** (I don't understand) |\n| 3reft (I knew) | **ma** 3reft**sh** (I don't know) |\n| bghit (I want) | **ma** bghit**sh** (I don't want) |\nThis is the single most useful pattern for rescuing yourself — 'I don't...' anything."
+  },
+  "canDo": [
+    "Say you didn't understand and ask someone to slow down or repeat",
+    "Ask how to say something, or what a word means",
+    "Ask if someone speaks English or French"
+  ],
+  "items": [
+    { "target": "ma fhemtsh", "roman": "ma fhemtsh", "arabic": "ما فهمتش", "english": "I didn't understand", "role": "produce", "note": "Your #1 rescue phrase." },
+    { "target": "3awd 3afak", "roman": "3awd 3afak", "arabic": "عاود عفاك", "english": "again / repeat, please", "role": "produce" },
+    { "target": "bshwiya 3afak", "roman": "bshwiya 3afak", "arabic": "بشوية عفاك", "english": "slowly, please", "role": "produce" },
+    { "target": "wash kat3ref l'ingliziya?", "roman": "wash kat3ref l'ingliziya", "arabic": "واش كتعرف الإنجليزية", "english": "do you speak English?", "role": "produce", "note": "'wash' turns a statement into a yes/no question." },
+    { "target": "wash kat3ref l'fransawiya?", "roman": "wash kat3ref l'fransawiya", "arabic": "واش كتعرف الفرنسية", "english": "do you speak French?", "role": "produce", "note": "French is widely spoken in Morocco — a useful fallback." },
+    { "target": "kifash kancolo hadi b darija?", "roman": "kifash kancolo hadi b darija", "arabic": "كيفاش كنقولو هادي بالدارجة", "english": "how do you say this in Darija?", "role": "produce" },
+    { "target": "ash ma3na hadi?", "roman": "ash ma3na hadi", "arabic": "أش معنى هادي", "english": "what does this mean?", "role": "produce" },
+    { "target": "ktebha liya 3afak", "roman": "ktebha liya 3afak", "arabic": "كتبها ليا عفاك", "english": "write it for me, please", "role": "produce", "note": "Great for numbers, prices, and addresses." },
+    { "target": "fhemt", "roman": "fhemt", "arabic": "فهمت", "english": "I understand / got it", "role": "produce" },
+    { "target": "ma3reftsh", "roman": "ma3reftsh", "arabic": "ماعرفتش", "english": "I don't know", "role": "produce" },
+    { "target": "kanhder shwiya dyal darija", "roman": "kanhder shwiya dyal darija", "arabic": "كنهضر شوية ديال الدارجة", "english": "I speak a little Darija", "role": "produce", "note": "Disarms people instantly — they'll slow down for you." },
+    { "target": "shwiya", "roman": "shwiya", "arabic": "شوية", "english": "a little / a bit", "role": "produce" },
+    { "target": "wa3ra", "roman": "wa3ra", "arabic": "وعرة", "english": "hard / difficult", "role": "recognize", "note": "You might hear it about the language — 'darija wa3ra!'" },
+    { "target": "safi", "roman": "safi", "arabic": "صافي", "english": "enough / that's it / done", "role": "recognize", "note": "Extremely common filler: 'okay, done, that's all'." }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "directions",
+  "title": "Directions & transport",
+  "tier": 1,
+  "grammar": {
+    "title": "fin ___ ? — asking where",
+    "body": "Put **fin** ('where') in front of what you're looking for:\n*fin twalet?* (where's the bathroom?) · *fin l-mahatta?* (where's the station?) · *fin l-farmasian?* (where's the pharmacy?)\nThe hard part is the **answer** — so this module drills the direction words that come back at you, not just the question. You mostly need to *recognize* those, plus a pointed hand."
+  },
+  "canDo": [
+    "Ask where something is, and where you want to go",
+    "Understand a spoken reply: left/right/straight, near/far, next to the...",
+    "Take a taxi: ask the fare, ask for the meter, say where to stop"
+  ],
+  "items": [
+    { "target": "fin twalet 3afak?", "roman": "fin twalet 3afak", "arabic": "فين تواليت عفاك", "english": "where's the bathroom, please?", "role": "produce", "note": "Say 'twalet' — 'l7ammam' can mean the traditional bathhouse." },
+    { "target": "fin l-farmasian?", "roman": "fin l-farmasian", "arabic": "فين الفارماسيان", "english": "where's the pharmacy?", "role": "produce" },
+    { "target": "fin l-mahatta?", "roman": "fin l-mahatta", "arabic": "فين المحطة", "english": "where's the station?", "role": "produce" },
+    { "target": "bghit nemshi l ___", "roman": "bghit nemshi l", "arabic": "بغيت نمشي ل", "english": "I want to go to ___", "role": "produce", "note": "bghit (I want) + nemshi (I go). Slot in a place." },
+    { "target": "compteur 3afak", "roman": "compteur 3afak", "arabic": "كونتور عفاك", "english": "the meter, please", "role": "produce", "note": "Petit taxis often skip it — ask for the 'compteur' (French word, used everywhere)." },
+    { "target": "wqef hna 3afak", "roman": "wqef hna 3afak", "arabic": "وقف هنا عفاك", "english": "stop here, please", "role": "produce" },
+    { "target": "shhal l ___?", "roman": "shhal l", "arabic": "شحال ل", "english": "how much to ___? (a fare)", "role": "produce" },
+    { "target": "petit taxi", "roman": "petit taxi", "arabic": "بتي طاكسي", "english": "petit taxi (in-city, small)", "role": "recognize", "note": "In-city, shared, metered-ish. Grand taxi = shared, between cities." },
+    { "target": "limen", "roman": "limen", "arabic": "اليمن", "english": "(on the) right", "role": "recognize" },
+    { "target": "lisar", "roman": "lisar", "arabic": "ليسار", "english": "(on the) left", "role": "recognize" },
+    { "target": "nishan", "roman": "nishan", "arabic": "نيشان", "english": "straight ahead", "role": "recognize" },
+    { "target": "qddam", "roman": "qddam", "arabic": "قدام", "english": "ahead / in front", "role": "recognize" },
+    { "target": "mura", "roman": "mura", "arabic": "مورا", "english": "behind", "role": "recognize" },
+    { "target": "7da", "roman": "7da", "arabic": "حدا", "english": "next to", "role": "recognize", "note": "'7da l-qahwa' = next to the café." },
+    { "target": "qrib", "roman": "qrib", "arabic": "قريب", "english": "near / close", "role": "recognize" },
+    { "target": "b3id", "roman": "b3id", "arabic": "بعيد", "english": "far", "role": "recognize" },
+    { "target": "fuq", "roman": "fuq", "arabic": "فوق", "english": "up / upstairs", "role": "recognize" },
+    { "target": "ta7t", "roman": "ta7t", "arabic": "تحت", "english": "down / downstairs", "role": "recognize" },
+    { "target": "temma", "roman": "temma", "arabic": "تما", "english": "there / over there", "role": "recognize" },
+    { "target": "sir", "roman": "sir", "arabic": "سير", "english": "go (said to you)", "role": "recognize", "note": "A command you'll hear in replies: 'sir nishan' = go straight." },
+    { "target": "dor", "roman": "dor", "arabic": "دور", "english": "turn (said to you)", "role": "recognize" },
+    { "target": "ma kaynsh", "roman": "ma kaynsh", "arabic": "ما كاينش", "english": "there isn't / we don't have", "role": "recognize", "note": "So you don't stand waiting for something that isn't there." }
+  ],
+  "comprehension": [
+    {
+      "ask": "fin twalet 3afak?",
+      "reply": "sir nishan, men be3d dor 3l limen, 7da l-qahwa",
+      "replyArabic": "سير نيشان، من بعد دور على اليمن، حدا القهوة",
+      "english": "Go straight, then turn right — next to the café.",
+      "question": "Which way is the bathroom?",
+      "choices": ["Straight, then right — next to the café", "Left at the mosque", "Upstairs", "Back the way you came"],
+      "answer": 0
+    },
+    {
+      "ask": "fin l-farmasian?",
+      "reply": "qrib, hna 3l lisar",
+      "replyArabic": "قريب، هنا على ليسار",
+      "english": "Close — here on the left.",
+      "question": "Where's the pharmacy?",
+      "choices": ["Nearby, on the left", "Far, on the right", "Behind the station", "There isn't one"],
+      "answer": 0
+    },
+    {
+      "ask": "fin l-mahatta?",
+      "reply": "b3ida shwiya, khod taxi",
+      "replyArabic": "بعيدة شوية، خود طاكسي",
+      "english": "A bit far — take a taxi.",
+      "question": "How far is the station?",
+      "choices": ["A bit far — take a taxi", "Right next door", "Straight ahead, upstairs", "It's closed"],
+      "answer": 0
+    },
+    {
+      "ask": "wash kayn twalet hna?",
+      "reply": "ma kaynsh hna, temma f-lfuq",
+      "replyArabic": "ما كاينش هنا، تما فالفوق",
+      "english": "Not here — over there, upstairs.",
+      "question": "Is there a bathroom here?",
+      "choices": ["No — upstairs over there", "Yes, right here", "Yes, to the left", "No, it's too far"],
+      "answer": 0
+    }
+  ]
+}

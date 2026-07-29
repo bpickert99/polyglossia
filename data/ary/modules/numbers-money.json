@@ -1,0 +1,39 @@
+{
+  "id": "numbers-money",
+  "title": "Numbers & money",
+  "tier": 0,
+  "grammar": {
+    "title": "The dirham / rial trap",
+    "body": "Prices are officially in **dirham** (درهم), but Moroccans — especially in souks and older folks — often quote in **rial**. The conversion: **1 dirham = 20 rial**. So '*meya*' (100) can mean 100 rial = **5 dirham**. If a price sounds wildly high, they're probably speaking rial — divide by 20. When in doubt: *b'dirham 3afak?* ('in dirham, please?').\nTo ask a price: **shhal?** (how much) or **shhal hada?** (how much is this)."
+  },
+  "canDo": [
+    "Count to ten and recognize bigger prices (20, 50, 100)",
+    "Ask how much something costs",
+    "Handle the dirham-vs-rial confusion",
+    "Start a friendly bargain"
+  ],
+  "items": [
+    { "target": "wahed", "roman": "wahed", "arabic": "واحد", "english": "one", "role": "produce" },
+    { "target": "jouj", "roman": "jouj", "arabic": "جوج", "english": "two", "role": "produce", "note": "A Darija-specific word, not from standard Arabic." },
+    { "target": "tlata", "roman": "tlata", "arabic": "تلاتة", "english": "three", "role": "produce" },
+    { "target": "rb3a", "roman": "rb3a", "arabic": "ربعة", "english": "four", "role": "produce" },
+    { "target": "khamsa", "roman": "khamsa", "arabic": "خمسة", "english": "five", "role": "produce" },
+    { "target": "stta", "roman": "stta", "arabic": "ستة", "english": "six", "role": "produce" },
+    { "target": "sb3a", "roman": "sb3a", "arabic": "سبعة", "english": "seven", "role": "produce" },
+    { "target": "tmnya", "roman": "tmnya", "arabic": "تمنية", "english": "eight", "role": "produce" },
+    { "target": "ts3a", "roman": "ts3a", "arabic": "تسعة", "english": "nine", "role": "produce" },
+    { "target": "3achra", "roman": "3achra", "arabic": "عشرة", "english": "ten", "role": "produce" },
+    { "target": "3achrin", "roman": "3achrin", "arabic": "عشرين", "english": "twenty", "role": "recognize" },
+    { "target": "khamsin", "roman": "khamsin", "arabic": "خمسين", "english": "fifty", "role": "recognize" },
+    { "target": "meya", "roman": "meya", "arabic": "مية", "english": "a hundred", "role": "recognize", "note": "Watch out — 'meya' in rial is only 5 dirham." },
+    { "target": "drhem", "roman": "drhem", "arabic": "درهم", "english": "dirham (the currency)", "role": "produce" },
+    { "target": "rial", "roman": "rial", "arabic": "ريال", "english": "rial (20 = 1 dirham)", "role": "recognize", "note": "Locals quote prices in this constantly." },
+    { "target": "shhal?", "roman": "shhal", "arabic": "شحال", "english": "how much?", "role": "produce" },
+    { "target": "shhal hada?", "roman": "shhal hada", "arabic": "شحال هادا", "english": "how much is this?", "role": "produce" },
+    { "target": "ghali bezzaf", "roman": "ghali bezzaf", "arabic": "غالي بزاف", "english": "(that's) too expensive", "role": "produce" },
+    { "target": "naqqes shwiya", "roman": "naqqes shwiya", "arabic": "نقص شوية", "english": "lower it a bit", "role": "produce", "note": "The polite opening to a bargain." },
+    { "target": "ghadi nakhod", "roman": "ghadi nakhod", "arabic": "غادي ناخد", "english": "I'll take it", "role": "produce" },
+    { "target": "l7sab 3afak", "roman": "l7sab 3afak", "arabic": "الحساب عفاك", "english": "the bill, please", "role": "produce" },
+    { "target": "srf", "roman": "srf", "arabic": "صرف", "english": "change (small money)", "role": "produce", "note": "'3andek srf?' — do you have change? Vendors often don't." }
+  ]
+}

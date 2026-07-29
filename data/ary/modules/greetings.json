@@ -1,0 +1,33 @@
+{
+  "id": "greetings",
+  "title": "Greetings & politeness",
+  "tier": 0,
+  "grammar": {
+    "title": "The social glue of Darija",
+    "body": "Two words you'll hear constantly aren't just religious — they're woven into everyday speech. **l7amdulillah** ('thank God') is the normal answer to 'how are you'. **inshallah** ('God willing') stands in for the future — 'see you tomorrow, inshallah'. Using them naturally builds instant warmth.\nAlso: Darija drops the verb 'to be' in the present. *huwa mzyan* = 'he [is] good' — no word for 'is'."
+  },
+  "canDo": [
+    "Greet someone at any time of day and say goodbye",
+    "Ask and answer \"how are you?\" the way locals do",
+    "Be polite: please, thank you, excuse me"
+  ],
+  "items": [
+    { "target": "salam", "roman": "salam", "arabic": "سلام", "english": "hi / hello", "role": "produce", "note": "Works anytime, with anyone. Short for 'salamu 3likom'." },
+    { "target": "salamu 3likom", "roman": "salamu 3likom", "arabic": "السلام عليكم", "english": "hello (respectful)", "role": "produce", "note": "The fuller, warmer greeting. Reply you'll hear back: w3likom salam." },
+    { "target": "sba7 lkhir", "roman": "sba7 lkhir", "arabic": "صباح الخير", "english": "good morning", "role": "produce" },
+    { "target": "msa lkhir", "roman": "msa lkhir", "arabic": "مسا الخير", "english": "good evening", "role": "produce" },
+    { "target": "labas?", "roman": "labas", "arabic": "لاباس", "english": "how are you? (lit. 'no harm?')", "role": "produce", "note": "The everyday how-are-you." },
+    { "target": "labas, l7amdulillah", "roman": "labas l7amdulillah", "arabic": "لاباس الحمد لله", "english": "fine, thank God", "role": "produce", "note": "The standard reply — say it back, then ask 'w nta?' (and you?)." },
+    { "target": "bikhir", "roman": "bikhir", "arabic": "بخير", "english": "well / good", "role": "produce" },
+    { "target": "shukran", "roman": "shukran", "arabic": "شكرا", "english": "thank you", "role": "produce" },
+    { "target": "barakallahu fik", "roman": "barakallahu fik", "arabic": "بارك الله فيك", "english": "thank you (warmer)", "role": "recognize", "note": "A heartfelt thanks you'll hear often — good to recognize." },
+    { "target": "3afak", "roman": "3afak", "arabic": "عفاك", "english": "please", "role": "produce" },
+    { "target": "sme7 liya", "roman": "sme7 liya", "arabic": "سمح ليا", "english": "excuse me / sorry", "role": "produce", "note": "To get past someone or apologize." },
+    { "target": "bslama", "roman": "bslama", "arabic": "بسلامة", "english": "goodbye", "role": "produce" },
+    { "target": "wakha", "roman": "wakha", "arabic": "واخا", "english": "okay / alright", "role": "produce" },
+    { "target": "inshallah", "roman": "inshallah", "arabic": "إن شاء الله", "english": "God willing (= 'hopefully / re: the future')", "role": "produce", "note": "Used for anything not-yet-happened, not only in a religious sense." },
+    { "target": "l7amdulillah", "roman": "l7amdulillah", "arabic": "الحمد لله", "english": "thank God / all good", "role": "produce" },
+    { "target": "iyeh", "roman": "iyeh", "arabic": "إيه", "english": "yes", "role": "produce", "note": "Casual yes; 'na3am' is more formal." },
+    { "target": "la", "roman": "la", "arabic": "لا", "english": "no", "role": "produce" }
+  ]
+}
