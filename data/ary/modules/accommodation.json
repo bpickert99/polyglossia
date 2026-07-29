@@ -1,0 +1,41 @@
+{
+  "id": "accommodation",
+  "title": "Where you're staying",
+  "tier": 2,
+  "grammar": {
+    "title": "wash kayn ___ ? — is there…?",
+    "body": "Put **wash kayn** in front of a thing to ask if it's available:\n*wash kayn wifi?* (is there wifi?) · *wash kayn lma skhun?* (is there hot water?)\nThe answers you'll hear: **kayn** (there is) or **ma kaynsh** (there isn't). A **riad** is a traditional courtyard house turned guesthouse — the classic Moroccan stay."
+  },
+  "canDo": [
+    "Check in and find your room",
+    "Ask if there's wifi, hot water, and AC",
+    "Ask the nightly price and how long you'll stay"
+  ],
+  "items": [
+    { "target": "l-otel", "roman": "l-otel", "arabic": "الأوطيل", "english": "the hotel", "role": "produce" },
+    { "target": "riad", "roman": "riad", "arabic": "رياض", "english": "riad (courtyard guesthouse)", "role": "recognize" },
+    { "target": "3andi reservation", "roman": "3andi reservation", "arabic": "عندي ريزيرفاسيون", "english": "I have a reservation", "role": "produce" },
+    { "target": "l-bit", "roman": "l-bit", "arabic": "البيت", "english": "the room", "role": "produce" },
+    { "target": "fin l-bit dyali?", "roman": "fin l-bit dyali", "arabic": "فين البيت ديالي", "english": "where's my room?", "role": "produce", "note": "dyali = 'mine' (of me)." },
+    { "target": "sarut", "roman": "sarut", "arabic": "ساروت", "english": "key", "role": "produce" },
+    { "target": "wash kayn wifi?", "roman": "wash kayn wifi", "arabic": "واش كاين ويفي", "english": "is there wifi?", "role": "produce" },
+    { "target": "lma skhun", "roman": "lma skhun", "arabic": "الما سخون", "english": "hot water", "role": "produce", "note": "Not always guaranteed — worth asking." },
+    { "target": "duch", "roman": "duch", "arabic": "دوش", "english": "shower", "role": "produce" },
+    { "target": "klima", "roman": "klima", "arabic": "كليما", "english": "air conditioning", "role": "recognize" },
+    { "target": "shhal l-lila?", "roman": "shhal l-lila", "arabic": "شحال الليلة", "english": "how much per night?", "role": "produce" },
+    { "target": "ghadi nbqa jouj lyali", "roman": "ghadi nbqa jouj lyali", "arabic": "غادي نبقى جوج ليالي", "english": "I'll stay two nights", "role": "produce", "note": "Swap the number: tlata lyali (three nights)." },
+    { "target": "nadi", "roman": "nadi", "arabic": "ناضي", "english": "ready / clean", "role": "recognize", "note": "You'll hear 'l-bit nadi' — the room is ready." },
+    { "target": "mzyan", "roman": "mzyan", "arabic": "مزيان", "english": "good / fine", "role": "produce" }
+  ],
+  "comprehension": [
+    {
+      "ask": "wash kayn lma skhun?",
+      "reply": "iyeh, kayn, f-sba7 w f-l3shiya",
+      "replyArabic": "إيه، كاين، فالصباح وفالعشية",
+      "english": "Yes, there is — in the morning and the evening.",
+      "question": "Is there hot water?",
+      "choices": ["Yes — mornings and evenings", "No, never", "Only if you pay extra", "Only downstairs"],
+      "answer": 0
+    }
+  ]
+}

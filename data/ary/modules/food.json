@@ -1,0 +1,57 @@
+{
+  "id": "food",
+  "title": "Food & drink",
+  "tier": 1,
+  "grammar": {
+    "title": "bghit ___ — ordering",
+    "body": "**bghit** ('I want') + what you want is how you order: *bghit atay* (I want tea), *bghit tajine dyal djaj* (I want a chicken tajine).\nTwo Morocco-specific must-knows: mint tea is served **very sweet** by default — say **bla sukkar** (no sugar) or **shwiya dyal sukkar** (a little). And food is halal by default; for vegetarian, **bla l7am** (without meat) or **makanakolsh l7am** (I don't eat meat)."
+  },
+  "canDo": [
+    "Order tea, coffee, and a meal",
+    "Ask for no sugar / no meat and flag an allergy",
+    "Understand what the waiter asks you, and ask for the bill"
+  ],
+  "items": [
+    { "target": "atay", "roman": "atay", "arabic": "أتاي", "english": "mint tea", "role": "produce", "note": "Offered constantly — a symbol of hospitality." },
+    { "target": "bla sukkar", "roman": "bla sukkar", "arabic": "بلا سكر", "english": "without sugar", "role": "produce", "note": "Tea is intensely sweet by default." },
+    { "target": "shwiya dyal sukkar", "roman": "shwiya dyal sukkar", "arabic": "شوية ديال السكر", "english": "a little sugar", "role": "produce" },
+    { "target": "qahwa", "roman": "qahwa", "arabic": "قهوة", "english": "coffee", "role": "produce" },
+    { "target": "nous-nous", "roman": "nous-nous", "arabic": "نص نص", "english": "half coffee, half milk", "role": "produce", "note": "The classic Moroccan coffee order." },
+    { "target": "3asir", "roman": "3asir", "arabic": "عصير", "english": "juice", "role": "produce", "note": "Fresh orange juice is everywhere." },
+    { "target": "lma", "roman": "lma", "arabic": "الما", "english": "water", "role": "produce" },
+    { "target": "khobz", "roman": "khobz", "arabic": "خبز", "english": "bread", "role": "produce", "note": "Comes with every meal — and doubles as a utensil." },
+    { "target": "tajine", "roman": "tajine", "arabic": "طاجين", "english": "tajine (slow-cooked stew)", "role": "produce" },
+    { "target": "seksu", "roman": "seksu", "arabic": "سكسو", "english": "couscous", "role": "produce", "note": "Traditionally the Friday meal." },
+    { "target": "7rira", "roman": "7rira", "arabic": "حريرة", "english": "harira (tomato-lentil soup)", "role": "produce" },
+    { "target": "l7am", "roman": "l7am", "arabic": "لحم", "english": "meat", "role": "produce" },
+    { "target": "djaj", "roman": "djaj", "arabic": "دجاج", "english": "chicken", "role": "produce" },
+    { "target": "hut", "roman": "hut", "arabic": "حوت", "english": "fish", "role": "produce" },
+    { "target": "khodra", "roman": "khodra", "arabic": "خضرة", "english": "vegetables", "role": "produce" },
+    { "target": "bla l7am", "roman": "bla l7am", "arabic": "بلا لحم", "english": "without meat", "role": "produce" },
+    { "target": "makanakolsh l7am", "roman": "makanakolsh l7am", "arabic": "ماكناكلش اللحم", "english": "I don't eat meat", "role": "produce" },
+    { "target": "3andi 7asasiya dyal kawkaw", "roman": "3andi 7asasiya dyal kawkaw", "arabic": "عندي حساسية ديال الكاوكاو", "english": "I'm allergic to peanuts", "role": "produce", "note": "kawkaw = peanuts. Also common: louz (almonds), jenjlan (sesame)." },
+    { "target": "bnin", "roman": "bnin", "arabic": "بنين", "english": "delicious", "role": "produce", "note": "A compliment cooks love to hear." },
+    { "target": "7arr", "roman": "7arr", "arabic": "حار", "english": "spicy / hot", "role": "recognize", "note": "Harissa is the fiery condiment on the side." },
+    { "target": "l7sab 3afak", "roman": "l7sab 3afak", "arabic": "الحساب عفاك", "english": "the bill, please", "role": "produce" }
+  ],
+  "comprehension": [
+    {
+      "ask": "(you sit down at a café)",
+      "reply": "shnu bghiti tshreb?",
+      "replyArabic": "شنو بغيتي تشرب",
+      "english": "What would you like to drink?",
+      "question": "What's the waiter asking?",
+      "choices": ["What do you want to drink?", "Do you want the bill?", "Where are you from?", "Is the food good?"],
+      "answer": 0
+    },
+    {
+      "ask": "bghit atay bla sukkar",
+      "reply": "wakha, wa7ed atay bla sukkar. shi 7aja okhra?",
+      "replyArabic": "واخا، واحد أتاي بلا سكر. شي حاجة أخرى",
+      "english": "Okay, one tea without sugar. Anything else?",
+      "question": "After confirming your tea, what does the waiter ask?",
+      "choices": ["Anything else?", "Where's your room?", "Cash or card?", "Is it too sweet?"],
+      "answer": 0
+    }
+  ]
+}

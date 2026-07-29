@@ -1,0 +1,32 @@
+{
+  "id": "verbs",
+  "title": "Saying what you do",
+  "tier": 1,
+  "grammar": {
+    "title": "Present tense: ka- + person prefix",
+    "body": "Regular present-tense verbs take **ka-** plus a person prefix. Learn one pattern, get every verb:\n| person | prefix | eat (akol) | drink (shreb) |\n| --- | --- | --- | --- |\n| I | kan- | kanakol | kanshreb |\n| you | kat- | katakol | katshreb |\n| he/it | kay- | kayakol | kayshreb |\nMake it negative by wrapping it: **ma** kanakol**sh** (I don't eat).\nFour words break the pattern but do the heavy lifting — memorize them as-is: **bghit** (I want), **khessni** (I need), **3andi** (I have), **kayn** (there is)."
+  },
+  "canDo": [
+    "Form regular present-tense verbs for I, you, and he/it",
+    "Say what you eat, drink, want, need, and are looking for",
+    "Negate anything with ma...sh"
+  ],
+  "items": [
+    { "target": "kanakol", "roman": "kanakol", "arabic": "كناكل", "english": "I eat", "role": "produce", "note": "you: katakol · he: kayakol" },
+    { "target": "kanshreb", "roman": "kanshreb", "arabic": "كنشرب", "english": "I drink", "role": "produce" },
+    { "target": "kanmshi", "roman": "kanmshi", "arabic": "كنمشي", "english": "I go", "role": "produce" },
+    { "target": "kanfhem", "roman": "kanfhem", "arabic": "كنفهم", "english": "I understand", "role": "produce", "note": "negative: ma kanfhemsh (I don't understand)" },
+    { "target": "kanhder", "roman": "kanhder", "arabic": "كنهضر", "english": "I speak / talk", "role": "produce" },
+    { "target": "kanshri", "roman": "kanshri", "arabic": "كنشري", "english": "I buy", "role": "produce" },
+    { "target": "kanqelleb 3la", "roman": "kanqelleb 3la", "arabic": "كنقلب على", "english": "I'm looking for", "role": "produce", "note": "kanqelleb 3la l-otel = I'm looking for the hotel." },
+    { "target": "kanbghi", "roman": "kanbghi", "arabic": "كنبغي", "english": "I like / love", "role": "produce", "note": "Note: 'bghit' (below) means 'I want'." },
+    { "target": "katakol", "roman": "katakol", "arabic": "كتاكل", "english": "you eat", "role": "recognize", "note": "The 'you' form — recognize it in questions." },
+    { "target": "kayakol", "roman": "kayakol", "arabic": "كياكل", "english": "he/it eats", "role": "recognize" },
+    { "target": "bghit", "roman": "bghit", "arabic": "بغيت", "english": "I want", "role": "produce", "note": "Fixed form. + noun or verb: bghit atay / bghit nemshi (I want to go)." },
+    { "target": "khessni", "roman": "khessni", "arabic": "خصني", "english": "I need", "role": "produce" },
+    { "target": "3andi", "roman": "3andi", "arabic": "عندي", "english": "I have", "role": "produce", "note": "Question form you'll hear: wash 3andek...? (do you have...?)" },
+    { "target": "kayn", "roman": "kayn", "arabic": "كاين", "english": "there is / there are", "role": "produce", "note": "wash kayn...? (is there...?) · ma kaynsh (there isn't)." },
+    { "target": "nqder", "roman": "nqder", "arabic": "نقدر", "english": "I can", "role": "produce", "note": "wash nqder...? — can I...?" },
+    { "target": "khassek", "roman": "khassek", "arabic": "خاصك", "english": "you need / you should", "role": "recognize", "note": "You'll hear it as advice: 'khassek taxi' — you need a taxi." }
+  ]
+}

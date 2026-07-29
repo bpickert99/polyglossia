@@ -1,0 +1,44 @@
+{
+  "id": "emergencies",
+  "title": "Emergencies & health",
+  "tier": 0,
+  "grammar": {
+    "title": "khessni ___ — I need",
+    "body": "**khessni** ('I need') + a noun or verb is your fastest way to ask for help:\n*khessni tbib* (I need a doctor) · *khessni dwa* (I need medicine) · *khessni n3ayyet* (I need to call).\nIn Morocco the **pharmacy (farmasian)** is the first stop for minor issues — pharmacists advise and dispense a lot without a doctor's visit."
+  },
+  "canDo": [
+    "Ask for help and call a doctor or the police",
+    "Say you're sick, in pain, or allergic",
+    "Get medicine from a pharmacy"
+  ],
+  "items": [
+    { "target": "3awnni 3afak", "roman": "3awnni 3afak", "arabic": "عاوني عفاك", "english": "help me, please", "role": "produce" },
+    { "target": "3afak fissa3", "roman": "3afak fissa3", "arabic": "عفاك فيسع", "english": "please, quickly", "role": "produce" },
+    { "target": "khessni tbib", "roman": "khessni tbib", "arabic": "خصني طبيب", "english": "I need a doctor", "role": "produce" },
+    { "target": "3ayyet l tbib", "roman": "3ayyet l tbib", "arabic": "عيط للطبيب", "english": "call a doctor", "role": "produce", "note": "3ayyet = call / shout for." },
+    { "target": "3ayyet l bolis", "roman": "3ayyet l bolis", "arabic": "عيط للبوليس", "english": "call the police", "role": "produce" },
+    { "target": "tbib", "roman": "tbib", "arabic": "طبيب", "english": "doctor", "role": "produce" },
+    { "target": "farmasian", "roman": "farmasian", "arabic": "فارماسيان", "english": "pharmacy", "role": "produce", "note": "Your first stop for minor problems." },
+    { "target": "sbitar", "roman": "sbitar", "arabic": "سبيطار", "english": "hospital", "role": "produce" },
+    { "target": "bolis", "roman": "bolis", "arabic": "بوليس", "english": "police", "role": "produce" },
+    { "target": "ana mrid", "roman": "ana mrid", "arabic": "أنا مريض", "english": "I'm sick", "role": "produce", "note": "Woman: 'ana mrida'." },
+    { "target": "3andi lwje3", "roman": "3andi lwje3", "arabic": "عندي الوجع", "english": "I'm in pain", "role": "produce" },
+    { "target": "kaydrni rasi", "roman": "kaydrni rasi", "arabic": "كيضرني راسي", "english": "my head hurts", "role": "produce", "note": "kaydrni ___ = my ___ hurts. Swap rasi (head) for krshi (stomach)." },
+    { "target": "krshi", "roman": "krshi", "arabic": "كرشي", "english": "my stomach", "role": "produce" },
+    { "target": "3andi s5ana", "roman": "3andi s5ana", "arabic": "عندي سخانة", "english": "I have a fever", "role": "produce" },
+    { "target": "3andi 7asasiya", "roman": "3andi 7asasiya", "arabic": "عندي حساسية", "english": "I have an allergy", "role": "produce", "note": "Add 'dyal ___' for what: 3andi 7asasiya dyal kawkaw (allergic to peanuts)." },
+    { "target": "dwa", "roman": "dwa", "arabic": "دوا", "english": "medicine", "role": "produce" },
+    { "target": "sifara", "roman": "sifara", "arabic": "سفارة", "english": "embassy", "role": "recognize" }
+  ],
+  "comprehension": [
+    {
+      "ask": "khessni tbib, fin?",
+      "reply": "sir l sbitar, qrib men hna",
+      "replyArabic": "سير للسبيطار، قريب من هنا",
+      "english": "Go to the hospital — it's near here.",
+      "question": "What are they telling you?",
+      "choices": ["Go to the hospital, it's nearby", "There's no doctor", "Come back tomorrow", "Take a taxi far away"],
+      "answer": 0
+    }
+  ]
+}

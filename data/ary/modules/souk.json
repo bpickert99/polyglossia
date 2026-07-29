@@ -1,0 +1,50 @@
+{
+  "id": "souk",
+  "title": "Shopping & the souk",
+  "tier": 2,
+  "grammar": {
+    "title": "Bargaining is expected — in the souk",
+    "body": "In the souk (market), haggling is normal and friendly; in cafés and supermarkets, prices are fixed. The rhythm: ask **shhal?** → hear a high number → smile, say **ghali bezzaf** → counter with **naqqes shwiya** → settle, or walk with **safi, shukran**. Walking away often gets you the real price. Stay warm — it's a game, not a fight."
+  },
+  "canDo": [
+    "Browse without committing, and haggle politely",
+    "Ask for the last price, a different one, or a different color",
+    "Close the deal or walk away gracefully"
+  ],
+  "items": [
+    { "target": "had l7aja", "roman": "had l7aja", "arabic": "هاد الحاجة", "english": "this thing / this one", "role": "produce", "note": "had = this. Point and say it." },
+    { "target": "ghir kanshuf", "roman": "ghir kanshuf", "arabic": "غير كنشوف", "english": "just looking", "role": "produce", "note": "Polite way to wave off an eager seller." },
+    { "target": "bghit nshuf hadak", "roman": "bghit nshuf hadak", "arabic": "بغيت نشوف هاداك", "english": "I want to see that one", "role": "produce", "note": "hadak = that one." },
+    { "target": "shhal akhir?", "roman": "shhal akhir", "arabic": "شحال آخر", "english": "what's your last price?", "role": "produce" },
+    { "target": "bezzaf", "roman": "bezzaf", "arabic": "بزاف", "english": "a lot / too much", "role": "produce" },
+    { "target": "zwin", "roman": "zwin", "arabic": "زوين", "english": "nice / beautiful", "role": "produce", "note": "Vendors use it constantly about their goods." },
+    { "target": "kbir", "roman": "kbir", "arabic": "كبير", "english": "big", "role": "produce" },
+    { "target": "sghir", "roman": "sghir", "arabic": "صغير", "english": "small", "role": "produce" },
+    { "target": "akhor", "roman": "akhor", "arabic": "آخور", "english": "another / a different one", "role": "produce", "note": "For a different color or size: 'bghit akhor'." },
+    { "target": "3tini", "roman": "3tini", "arabic": "عطيني", "english": "give me", "role": "produce" },
+    { "target": "ma bghitsh", "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want (it)", "role": "produce", "note": "Firm but polite decline." },
+    { "target": "safi, shukran", "roman": "safi shukran", "arabic": "صافي شكرا", "english": "that's all, thanks", "role": "produce", "note": "Your graceful exit line." },
+    { "target": "wesh 3andek akhor?", "roman": "wesh 3andek akhor", "arabic": "واش عندك آخور", "english": "do you have another?", "role": "produce" },
+    { "target": "ghadi nakhod hadi", "roman": "ghadi nakhod hadi", "arabic": "غادي ناخد هادي", "english": "I'll take this one", "role": "produce" }
+  ],
+  "comprehension": [
+    {
+      "ask": "shhal had l7aja?",
+      "reply": "hadi meya w khamsin drhem, ghir liik",
+      "replyArabic": "هادي مية وخمسين درهم، غير ليك",
+      "english": "This is 150 dirham — a special price just for you.",
+      "question": "What price did the vendor give?",
+      "choices": ["150 dirham", "50 dirham", "15 dirham", "It's not for sale"],
+      "answer": 0
+    },
+    {
+      "ask": "ghali bezzaf, naqqes shwiya",
+      "reply": "wakha, khod b meya w 3achrin",
+      "replyArabic": "واخا، خود بمية وعشرين",
+      "english": "Okay, take it for 120.",
+      "question": "What's the vendor's new offer?",
+      "choices": ["120", "100", "220", "They refused"],
+      "answer": 0
+    }
+  ]
+}
