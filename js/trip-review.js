@@ -1,0 +1,146 @@
+// The Review tab — self-serve practice, separate from the prescribed daily
+// lesson. Two modes: word flashcards (flip + self-rate) and grammar quizzes
+// (MC over the rungs you've climbed). Both write to the same FSRS memory model,
+// so a review session here lightens tomorrow's warm-up automatically.
+import { getItems, recordResult } from "./storage.js";
+import { retrievability } from "./srs.js";
+import { speak, primeTTS } from "./tts.js";
+import { renderLessonSession } from "./lesson.js";
+import { isRungKey, introducedRungIds, rungExercises } from "./grammar.js";
+import { shuffled } from "./exercises.js";
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// Started vocabulary for this pack (grammar-rung records excluded), most-faded
+// first so review time lands where memory is weakest.
+function reviewWords(code) {
+  const now = Date.now();
+  return getItems(code)
+    .filter((i) => i.reps > 0 && !isRungKey(i.key))
+    .map((i) => ({ ...i, ret: i.S ? retrievability(i, now) : 0 }))
+    .sort((a, b) => a.ret - b.ret);
+}
+
+export function renderReview(ctx) {
+  const { app } = ctx;
+  const mode = ctx.reviewMode || "cards";
+  const words = reviewWords(ctx.code);
+  const introduced = introducedRungIds(new Map(getItems(ctx.code).map((i) => [i.key, i])));
+
+  app.innerHTML = `
+    <div class="trip-review">
+      <h1 class="rv-title">Review</h1>
+      <div class="rv-seg">
+        <button class="rv-tab ${mode === "cards" ? "on" : ""}" data-mode="cards">🃏 Words</button>
+        <button class="rv-tab ${mode === "grammar" ? "on" : ""}" data-mode="grammar">📐 Grammar</button>
+      </div>
+      <div id="rv-body"></div>
+    </div>
+    ${ctx.tabbar || ""}`;
+
+  app.querySelectorAll(".rv-tab").forEach((b) =>
+    b.addEventListener("click", () => { ctx.reviewMode = b.dataset.mode; renderReview(ctx); }));
+
+  if (mode === "cards") renderFlashcards(ctx, words);
+  else renderGrammar(ctx, introduced);
+}
+
+// ---------- word flashcards ----------
+
+function renderFlashcards(ctx, words) {
+  const body = ctx.app.querySelector("#rv-body");
+  if (!words.length) {
+    body.innerHTML = `<p class="rv-empty">No words to review yet — do a daily lesson first, and words you've started will show up here.</p>`;
+    return;
+  }
+  primeTTS();
+  let i = 0;
+  let flipped = false;
+
+  function draw() {
+    const w = words[i];
+    body.innerHTML = `
+      <div class="rv-count">${i + 1} / ${words.length}</div>
+      <div class="rv-card" id="card">
+        <div class="rv-front">${esc(w.target || w.roman)}</div>
+        ${flipped ? `
+          <div class="rv-back">
+            <div class="rv-eng">${esc(w.english || "")}</div>
+            ${w.note ? `<div class="rv-note">${esc(w.note)}</div>` : ""}
+            <button class="speak-btn" id="say">🔊 Listen</button>
+          </div>` : `<div class="rv-hint">tap to reveal</div>`}
+      </div>
+      ${flipped ? `
+        <div class="rv-rate">
+          <button class="btn ghost rv-miss" id="miss">Missed it</button>
+          <button class="btn rv-got" id="got">Got it</button>
+        </div>` : ""}`;
+
+    body.querySelector("#card").addEventListener("click", (e) => {
+      if (e.target.closest("#say") || e.target.closest(".rv-rate")) return;
+      if (!flipped) { flipped = true; draw(); }
+    });
+    body.querySelector("#say")?.addEventListener("click", () =>
+      speak(w.roman || w.target, ctx.course, w.audio ? `data/${ctx.code}/${w.audio}` : undefined));
+    body.querySelector("#got")?.addEventListener("click", () => rate(true));
+    body.querySelector("#miss")?.addEventListener("click", () => rate(false));
+    if (flipped) speak(w.roman || w.target, ctx.course, w.audio ? `data/${ctx.code}/${w.audio}` : undefined);
+  }
+
+  function rate(good) {
+    const w = words[i];
+    recordResult(ctx.code, w.key, good);
+    i++;
+    flipped = false;
+    if (i >= words.length) {
+      body.innerHTML = `
+        <div class="rv-done">
+          <div class="big-emoji">💪</div>
+          <p>Reviewed ${words.length} ${words.length === 1 ? "word" : "words"}. Nice.</p>
+          <button class="btn wide" id="again">Review again</button>
+        </div>`;
+      body.querySelector("#again").addEventListener("click", () => renderReview(ctx));
+      return;
+    }
+    draw();
+  }
+
+  draw();
+}
+
+// ---------- grammar quizzes ----------
+
+function renderGrammar(ctx, introduced) {
+  const body = ctx.app.querySelector("#rv-body");
+  const rungs = (ctx.grammar.rungs || []).filter((r) => introduced.has(r.id));
+  if (!rungs.length) {
+    body.innerHTML = `<p class="rv-empty">No grammar to quiz yet — the daily lesson introduces grammar a little at a time. Come back once you've learned a rule or two.</p>`;
+    return;
+  }
+  body.innerHTML = `
+    <p class="rv-lead">Test yourself on the grammar you've learned so far.</p>
+    <div class="rv-rungs">
+      ${rungs.map((r) => `
+        <div class="rv-rung">
+          <span class="rv-rung-name">${esc(r.title)}</span>
+          <button class="btn small" data-rung="${esc(r.id)}">Quiz</button>
+        </div>`).join("")}
+    </div>
+    <button class="btn wide" id="quiz-all">Quiz me on everything</button>`;
+
+  const start = (pool) => {
+    const exercises = shuffled(pool.flatMap((r) => rungExercises(r)));
+    if (!exercises.length) return;
+    const lesson = {
+      id: "review-grammar", title: "Grammar review",
+      warmup: [], teach: [], grammar: [], culture: [],
+      exercises, newCount: 0, reviewCount: exercises.length,
+    };
+    primeTTS();
+    renderLessonSession(ctx.app, ctx.course, "review", lesson, () => {}, { isPractice: true, backHref: "#review" });
+  };
+
+  body.querySelectorAll("[data-rung]").forEach((b) =>
+    b.addEventListener("click", () => start(rungs.filter((r) => r.id === b.dataset.rung))));
+  body.querySelector("#quiz-all").addEventListener("click", () => start(rungs));
+}

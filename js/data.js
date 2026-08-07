@@ -40,6 +40,11 @@ export function loadModule(code, file) {
   return fetchJSON(`data/${code}/${file}`);
 }
 
+// The grammar spine (rungs). Optional — packs without one just teach vocab.
+export function loadGrammar(code) {
+  return fetchJSON(`data/${code}/grammar.json`).catch(() => ({ rungs: [], structures: {} }));
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(

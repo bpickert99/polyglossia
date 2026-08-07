@@ -1,0 +1,97 @@
+/* Trip app: bottom tabs, dual readiness rings, review, account. Layers on top
+   of style.css (which owns --bg, --muted, .btn, etc.). */
+
+body { padding-bottom: 76px; } /* clear the fixed tab bar */
+
+/* ---------- bottom tab bar ---------- */
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  display: flex; justify-content: space-around; align-items: stretch;
+  background: var(--bg, #faf9f7);
+  border-top: 1px solid rgba(127, 127, 127, .18);
+  padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+}
+@media (prefers-color-scheme: dark) { .tabbar { background: #14140f; } }
+.tabx {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  text-decoration: none; color: var(--muted, #77736c); font-size: .72rem; padding: 4px 0;
+}
+.tabx.on { color: inherit; }
+.tabx-i { font-size: 20px; line-height: 1; filter: grayscale(.4); }
+.tabx.on .tabx-i { filter: none; }
+
+/* ---------- dual readiness rings ---------- */
+.rings { display: flex; justify-content: center; gap: 28px; margin: 6px 0 4px; }
+.ring-wrap { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ring-label { font-size: .8rem; color: var(--muted, #77736c); font-weight: 600; }
+.ready-ring {
+  --pct: 0; --ring: #2e9e5b;
+  width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center;
+  font-weight: 800; font-size: 1.25rem;
+  background: conic-gradient(var(--ring) calc(var(--pct) * 1%), rgba(127, 127, 127, .18) 0);
+}
+.ready-ring span {
+  background: var(--bg, #faf9f7); width: 72px; height: 72px; border-radius: 50%;
+  display: grid; place-items: center;
+}
+@media (prefers-color-scheme: dark) { .ready-ring span { background: #14140f; } }
+.phase-note { text-align: center; color: var(--muted, #77736c); font-size: .88rem; margin: 6px 0 18px; }
+.trip-dest { font-weight: 700; color: var(--muted, #77736c); }
+
+/* ---------- can-do ---------- */
+.cando { margin-top: 20px; background: rgba(46, 158, 91, .08); border-radius: 14px; padding: 12px 16px; }
+.cando h3 { margin: 0 0 6px; font-size: .9rem; }
+.cando ul { margin: 0; padding: 0; list-style: none; }
+.cando li { font-size: .9rem; padding: 2px 0; }
+
+/* ---------- review ---------- */
+.trip-review, .trip-account { max-width: 460px; margin: 0 auto; padding: 16px 20px 24px; }
+.rv-title { margin: 6px 0 14px; }
+.rv-seg { display: flex; gap: 8px; margin-bottom: 18px; }
+.rv-tab {
+  flex: 1; padding: 10px; border-radius: 12px; border: 1px solid rgba(127, 127, 127, .25);
+  background: none; color: inherit; font-weight: 600; cursor: pointer;
+}
+.rv-tab.on { background: rgba(127, 127, 127, .12); border-color: transparent; }
+.rv-empty, .rv-lead { color: var(--muted, #77736c); text-align: center; margin: 24px 0; }
+.rv-lead { margin: 8px 0 18px; }
+
+.rv-count { text-align: center; color: var(--muted, #77736c); font-size: .85rem; margin-bottom: 10px; }
+.rv-card {
+  min-height: 200px; border-radius: 18px; border: 1px solid rgba(127, 127, 127, .22);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: 28px 20px; cursor: pointer; text-align: center;
+}
+.rv-front { font-size: 2rem; font-weight: 700; }
+.rv-hint { color: var(--muted, #77736c); font-size: .82rem; }
+.rv-back { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.rv-eng { font-size: 1.3rem; }
+.rv-note { color: var(--muted, #77736c); font-size: .88rem; }
+.rv-rate { display: flex; gap: 10px; margin-top: 16px; }
+.rv-rate .btn { flex: 1; }
+.rv-got { background: #2e9e5b; color: #fff; }
+.rv-done { text-align: center; padding: 30px 0; }
+
+.rv-rungs { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.rv-rung {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 10px 14px; border-radius: 12px; background: rgba(127, 127, 127, .08);
+}
+.rv-rung-name { font-size: .92rem; }
+.btn.small { padding: 6px 14px; font-size: .85rem; }
+
+/* ---------- account ---------- */
+.acct-section { margin-bottom: 26px; }
+.acct-section h3 { margin: 0 0 10px; font-size: .95rem; }
+.acct-course {
+  display: flex; align-items: center; gap: 8px; padding: 12px 14px; margin-bottom: 8px;
+  border-radius: 12px; border: 1px solid rgba(127, 127, 127, .2);
+}
+.acct-course.on { border-color: #2e9e5b; background: rgba(46, 158, 91, .06); }
+.acct-course-main { flex: 1; display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.acct-course-main > span { display: flex; flex-direction: column; }
+.acct-flag { font-size: 28px; }
+.acct-sub { color: var(--muted, #77736c); font-size: .8rem; }
+.acct-del { background: none; border: none; font-size: 18px; cursor: pointer; opacity: .6; }
+.acct-del:hover { opacity: 1; }
+.acct-note { color: var(--muted, #77736c); font-size: .82rem; text-align: center; }

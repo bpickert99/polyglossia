@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Morocco in 30 days</title>
+  <title>TripTalk</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/trip.css">
   <style>
     .trip-onboard { max-width: 460px; margin: 0 auto; padding: 32px 20px; text-align: center; }
     .trip-flag { font-size: 64px; line-height: 1; }
@@ -30,17 +31,6 @@
     .countdown { text-align: center; margin: 8px 0 20px; }
     .count-num { font-size: 84px; font-weight: 800; line-height: 1; }
     .count-label { color: var(--muted, #77736c); font-size: 1rem; margin-top: 2px; }
-    .ready-card { display: flex; align-items: center; gap: 18px; background: rgba(127,127,127,.08);
-      border-radius: 18px; padding: 18px; margin-bottom: 20px; }
-    .ready-ring { --pct: 0; flex: 0 0 88px; width: 88px; height: 88px; border-radius: 50%;
-      display: grid; place-items: center; font-weight: 800; font-size: 1.3rem;
-      background: conic-gradient(#2e9e5b calc(var(--pct) * 1%), rgba(127,127,127,.2) 0); }
-    .ready-ring span { background: var(--bg, #faf9f7); width: 68px; height: 68px; border-radius: 50%;
-      display: grid; place-items: center; }
-    @media (prefers-color-scheme: dark) { .ready-ring span { background: #14140f; } }
-    .ready-text b { font-size: 1rem; }
-    .ready-text p { margin: 3px 0 0; color: var(--muted, #77736c); font-size: .85rem; }
-    .ready-text .phase { color: inherit; font-style: italic; margin-top: 6px; }
     .done-today { text-align: center; background: rgba(46,158,91,.14); border-radius: 12px;
       padding: 14px; font-weight: 600; margin-bottom: 12px; }
     .mod-list { margin-top: 26px; display: flex; flex-direction: column; gap: 10px; }

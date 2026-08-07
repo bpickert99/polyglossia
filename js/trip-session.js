@@ -7,6 +7,7 @@
 import { getAbility } from "./storage.js";
 import { predictP } from "./birdbrain.js";
 import { generateExercise, shuffled, hasWord } from "./exercises.js";
+import { nextRung, dueRungs, rungExercises } from "./grammar.js";
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "x";
 const audioPath = (it) => `audio/${slug(it.roman || it.target)}.wav`;
@@ -59,6 +60,16 @@ function comprehensionExercise(entry) {
   };
 }
 
+// A grammar rung as a teaching note the lesson renderer shows before practice:
+// the rule text plus a couple of worked examples.
+function rungNote(rung) {
+  const ex = (rung.examples || [])
+    .map((e) => `• ${e.roman}${e.english ? ` — ${e.english}` : ""}`)
+    .join("\n");
+  const body = ex ? `${rung.teach}\n\n${ex}` : rung.teach;
+  return { title: rung.title, body };
+}
+
 export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   const lang = pack.code;
   const scriptMode = opts.scriptMode || "arabizi";
@@ -86,15 +97,29 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   const warmup = reviewItems.slice(0, warmupN).map((i) => ({ ...drill(i, pool, ability), review: true })).filter((x) => x.type);
   const restReview = reviewItems.slice(warmupN);
 
-  // Step 2 — teach: the day's new items + this module's grammar frame(s).
+  // Step 2 — teach: the day's new items + one grammar rung.
   const teach = plan.todayNew.map((it) => teachCard(it, scriptMode));
+
+  // Grammar: introduce the next sequenced rung (unless we're tapering — no new
+  // material in the final days), plus drills for any earlier rungs now due.
+  const sequence = opts.sequence || [];
+  const now = opts.now ?? Date.now();
+  const departure = opts.departure ?? Infinity;
   const grammar = [];
-  const seen = new Set();
-  for (const it of plan.todayNew) {
-    if (seen.has(it.moduleId)) continue;
-    seen.add(it.moduleId);
-    const mod = moduleItems.get(it.moduleId);
-    if (mod && mod.grammar) grammar.push(mod.grammar);
+  const newRungExercises = [];
+  const reviewRungExercises = [];
+  let newRung = null;
+  if (sequence.length && plan.phase !== "taper") {
+    newRung = nextRung(sequence, records);
+    if (newRung) {
+      grammar.push(rungNote(newRung));
+      newRungExercises.push(...rungExercises(newRung, { limit: 2 }));
+    }
+  }
+  for (const r of dueRungs(sequence, records, now, departure)) {
+    if (newRung && r.id === newRung.id) continue;
+    const ex = rungExercises(r, { limit: 1 })[0];
+    if (ex) reviewRungExercises.push({ ...ex, review: true });
   }
 
   // Step 3 — put to work: a gentle first retrieval of each new item, the rest
@@ -108,13 +133,23 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
     const ex = drill(it, pool, ability);
     if (ex) exercises.push({ ...ex, review: true });
   }
-  const interleaved = shuffled(exercises);
+  // The just-taught rung is drilled right after its note; word practice and
+  // due-rung review shuffle together after it.
+  const interleaved = [...newRungExercises, ...shuffled([...exercises, ...reviewRungExercises])];
 
   // Pull a comprehension entry from the day's module (or any in-scope module
   // that has one) and place it near the end — the rehearsal of the real moment.
   const compModuleId = (plan.module && plan.module.id) || (plan.todayNew[0] || {}).moduleId;
   const compMod = moduleItems.get(compModuleId);
-  const comps = (compMod && compMod.comprehension) || [];
+  let comps = (compMod && compMod.comprehension) || [];
+  if (!comps.length) {
+    // Fall back to any in-scope module that has a comprehension drill, so the
+    // "understand the reply" rehearsal happens even when today's module lacks one.
+    const scopeIds = new Set(plan.scope.map((i) => i.moduleId));
+    for (const [mid, mod] of moduleItems) {
+      if (scopeIds.has(mid) && mod.comprehension && mod.comprehension.length) { comps = mod.comprehension; break; }
+    }
+  }
   if (comps.length) {
     const entry = comps[Math.floor(Math.random() * comps.length)];
     interleaved.push(comprehensionExercise(entry));
