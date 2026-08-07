@@ -165,6 +165,21 @@ export function setLang(code) {
   save();
 }
 
+// ---------- trip settings (travel-tool redesign) ----------
+
+// { packCode, departureDate (ISO yyyy-mm-dd), scriptMode ('arabizi'|'arabic'),
+//   helper (bool), lastLesson (yyyy-mm-dd) }
+state.trip = state.trip || {};
+
+export function getTrip() {
+  return state.trip;
+}
+
+export function setTrip(patch) {
+  Object.assign(state.trip, patch);
+  save();
+}
+
 // ---------- sync support ----------
 
 export function exportState() {

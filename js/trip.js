@@ -35,7 +35,10 @@ export function syllabus(pack, moduleItems) {
   const out = [];
   const mods = [...(pack.modules || [])].sort((a, b) => a.tier - b.tier);
   for (const m of mods) {
-    (moduleItems.get(m.id) || []).forEach((it, idx) =>
+    // moduleItems value may be a bare items[] (tests) or a full module {items}.
+    const mod = moduleItems.get(m.id);
+    const items = Array.isArray(mod) ? mod : (mod && mod.items) || [];
+    items.forEach((it, idx) =>
       out.push({ ...it, key: keyOf(it), moduleId: m.id, tier: m.tier, order: idx }));
   }
   return out;

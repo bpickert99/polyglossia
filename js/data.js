@@ -40,12 +40,12 @@ export function loadModule(code, file) {
   return fetchJSON(`data/${code}/${file}`);
 }
 
-// Load every module of a pack concurrently → Map(moduleId -> items[]).
+// Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(
     (pack.modules || []).map(async (m) => {
-      try { return [m.id, (await loadModule(code, m.file)).items || []]; }
-      catch { return [m.id, []]; }
+      try { return [m.id, await loadModule(code, m.file)]; }
+      catch { return [m.id, { id: m.id, items: [] }]; }
     })
   );
   return new Map(entries);
