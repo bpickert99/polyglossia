@@ -13,7 +13,7 @@ import { sequenceRungs, grammarReadiness, introducedRungIds, isRungKey } from ".
 import { renderLessonSession } from "./lesson.js";
 import { renderReview } from "./trip-review.js";
 import { renderScenario } from "./trip-scenario.js";
-import { generateScenario, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
+import { generateScenario, generatePractice, evaluateAnswer, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
 import { initSync, getUser, signOut, renderSyncCard } from "./sync.js";
 import { primeTTS } from "./tts.js";
 
@@ -83,7 +83,7 @@ function tabbar(active) {
 async function renderToday() {
   const trip = getActiveTrip();
   if (!trip) return renderStart();
-  const { pack, moduleItems, grammar, sequence, course } = await ensureLoaded(trip.packCode);
+  const { pack, moduleItems, grammar, sequence, foundations, course } = await ensureLoaded(trip.packCode);
 
   const departure = departureTs(trip.departureDate);
   const now = Date.now();
@@ -151,8 +151,8 @@ async function renderToday() {
     </div>
     ${tabbar("today")}`;
 
-  app.querySelector("#start")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, course }));
-  app.querySelector("#again")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, course }));
+  app.querySelector("#start")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, foundations, course }));
+  app.querySelector("#again")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, foundations, course }));
 }
 
 function ring(pct, label, color) {
@@ -162,7 +162,7 @@ function ring(pct, label, color) {
   </div>`;
 }
 
-function startLesson(trip, ld) {
+async function startLesson(trip, ld) {
   const departure = departureTs(trip.departureDate);
   const records = recordsFor(trip.packCode);
   const plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now() });
@@ -177,6 +177,11 @@ function startLesson(trip, ld) {
   // locked, the learner isn't signed in, or the call fails.
   const scenarioP = maybeScenario(trip, ld, records, plan);
 
+  // Enrich today's practice with a few fresh AI drills (from day one, ungated).
+  // Brief spinner, hard timeout, silent fallback — never blocks the lesson.
+  app.innerHTML = `<div class="scn-prep">Preparing today's lesson…</div>`;
+  await injectPractice(session, ld, records, plan);
+
   const finishToday = () => { location.hash = ""; renderToday(); };
   renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
     backHref: "#", isPractice: false, noAutoplay: true,
@@ -184,29 +189,56 @@ function startLesson(trip, ld) {
     onDone: async () => {
       app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
       const scenario = await scenarioP;
-      if (scenario) renderScenario(app, scenario, { course: ld.course, onDone: finishToday });
-      else finishToday();
+      if (scenario) {
+        renderScenario(app, scenario, {
+          course: ld.course,
+          onEvaluate: async (text) => evaluateAnswer({
+            destination: ld.pack.destination, task: scenario.task, userText: text,
+            known: knownWords(records), rungs: knownRungs(records, ld),
+          }),
+          onDone: finishToday,
+        });
+      } else finishToday();
     },
   });
 }
 
-// Build the payload from what the learner actually knows and ask the model for
-// a scenario. Every failure path returns null so the caller falls back cleanly.
+// ---- AI payload helpers ----
+function knownWords(records) {
+  const out = [];
+  for (const [k, rec] of records) {
+    if (rec?.reps > 0 && !isRungKey(k)) out.push({ roman: rec.roman || rec.target || k, english: rec.english || "" });
+  }
+  return out;
+}
+function knownRungs(records, ld) {
+  const done = introducedRungIds(records);
+  return (ld.grammar.rungs || []).filter((r) => done.has(r.id)).map((r) => ({ title: r.title, teach: r.teach }));
+}
+const withTimeout = (p, ms) => Promise.race([p, new Promise((res) => setTimeout(() => res(null), ms))]);
+
+async function injectPractice(session, ld, records, plan) {
+  try {
+    if (!(await isSignedIn())) return;
+    const known = knownWords(records);
+    if (known.length < 6) return; // too little to recombine meaningfully
+    const items = await withTimeout(generatePractice({
+      destination: ld.pack.destination, moduleTitle: plan.module?.title || "",
+      known, rungs: knownRungs(records, ld), count: 3,
+    }), 9000);
+    if (Array.isArray(items) && items.length) session.exercises.push(...items);
+  } catch { /* silent fallback to the static lesson */ }
+}
+
 async function maybeScenario(trip, ld, records, plan) {
   try {
     if (!scenarioUnlocked(records)) return null;
     if (!(await isSignedIn())) return null;
-    const known = [];
-    for (const [k, rec] of records) {
-      if (rec?.reps > 0 && !isRungKey(k)) known.push({ roman: rec.roman || rec.target || k, english: rec.english || "" });
-    }
-    const done = introducedRungIds(records);
-    const rungs = (ld.grammar.rungs || []).filter((r) => done.has(r.id)).map((r) => ({ title: r.title, teach: r.teach }));
     return await generateScenario({
       destination: ld.pack.destination,
       moduleTitle: plan.module?.title || "",
       scriptMode: trip.scriptMode,
-      known, rungs,
+      known: knownWords(records), rungs: knownRungs(records, ld),
     });
   } catch {
     return null;

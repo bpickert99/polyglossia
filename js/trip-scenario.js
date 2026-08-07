@@ -43,6 +43,15 @@ export function renderScenario(app, scenario, opts = {}) {
       ${scenario.setting ? `<p class="scn-setting">${esc(scenario.setting)}</p>` : ""}
       <div class="scn-lines">${scenario.lines.map(lineHtml).join("")}</div>
       ${scenario.task ? `<div class="scn-task"><b>Your turn:</b> ${esc(scenario.task)}</div>` : ""}
+      ${opts.onEvaluate ? `
+        <div class="scn-try">
+          <input id="scn-input" class="trip-input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your reply…">
+          <div class="scn-try-row">
+            <button class="btn small ghost" id="scn-mic" title="Speak your reply">🎤 Speak</button>
+            <button class="btn small" id="scn-check">Check my reply</button>
+          </div>
+          <div class="scn-fb" id="scn-fb" hidden></div>
+        </div>` : ""}
       <p class="scn-fine">Tap any coloured word to see how it's built.</p>
     </div>
     <div class="session-footer"><button class="btn wide" id="scn-done">Done</button></div>`;
@@ -65,6 +74,40 @@ export function renderScenario(app, scenario, opts = {}) {
       });
     });
   });
+
+  // Writing practice: type a reply, AI coach evaluates it against known grammar.
+  if (opts.onEvaluate) {
+    const input = app.querySelector("#scn-input");
+    const check = app.querySelector("#scn-check");
+    const fb = app.querySelector("#scn-fb");
+    const run = async () => {
+      const text = input.value.trim();
+      if (!text) return;
+      check.disabled = true; check.textContent = "Checking…";
+      const res = await opts.onEvaluate(text);
+      check.disabled = false; check.textContent = "Check my reply";
+      if (!res) {
+        fb.hidden = false;
+        fb.innerHTML = `<div class="scn-fb-line">Couldn't reach the coach right now — sign in on Account, or try again.</div>`;
+        return;
+      }
+      const emoji = res.verdict === "good" ? "✅" : res.verdict === "close" ? "🟡" : "🔴";
+      fb.hidden = false;
+      fb.className = `scn-fb v-${esc(res.verdict)}`;
+      fb.innerHTML = `
+        <div class="scn-fb-line">${emoji} ${esc(res.feedback)}</div>
+        ${res.better ? `<div class="scn-fb-better">A natural way: <b>${esc(res.better)}</b>
+          <button class="scn-say" id="scn-better-say" title="Listen">🔊</button></div>` : ""}`;
+      fb.querySelector("#scn-better-say")?.addEventListener("click", () => speak(res.better, opts.course));
+    };
+    check.addEventListener("click", run);
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
+    app.querySelector("#scn-mic")?.addEventListener("click", () => {
+      const fb2 = app.querySelector("#scn-fb");
+      fb2.hidden = false; fb2.className = "scn-fb";
+      fb2.innerHTML = `<div class="scn-fb-line">🎤 Speaking practice is coming soon — type your reply for now.</div>`;
+    });
+  }
 
   app.querySelector("#scn-done").addEventListener("click", () => opts.onDone?.());
 }

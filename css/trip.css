@@ -123,6 +123,18 @@ body { padding-bottom: 76px; } /* clear the fixed tab bar */
 .scn-task { margin-top: 18px; padding: 12px 14px; border-radius: 12px; background: rgba(58, 123, 213, .1); }
 .scn-fine { color: var(--muted, #77736c); font-size: .8rem; text-align: center; margin-top: 12px; }
 
+/* interactive writing practice inside the scenario */
+.scn-try { margin-top: 16px; }
+.scn-try .trip-input { width: 100%; }
+.scn-try-row { display: flex; gap: 8px; margin-top: 8px; }
+.scn-try-row .btn { flex: 1; }
+.scn-fb { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: rgba(127, 127, 127, .1); }
+.scn-fb.v-good { background: rgba(46, 158, 91, .14); }
+.scn-fb.v-close { background: rgba(184, 134, 11, .14); }
+.scn-fb.v-off { background: rgba(192, 57, 43, .12); }
+.scn-fb-line { font-size: .95rem; }
+.scn-fb-better { margin-top: 8px; font-size: .95rem; }
+
 /* scenario-unlock hint on Today */
 .scn-lock { margin-top: 18px; text-align: center; color: var(--muted, #77736c); font-size: .85rem;
   background: rgba(127, 127, 127, .08); border-radius: 12px; padding: 12px; }

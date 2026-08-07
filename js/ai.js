@@ -75,6 +75,42 @@ export async function generateScenario(payload) {
   }
 }
 
+// Fresh recombinant production drills for the daily lesson (works from day one,
+// not gated). Returns typed-exercise objects ready for the lesson renderer, or
+// [] on any failure. keys:[] so they don't corrupt FSRS — pure extra practice.
+export async function generatePractice(payload) {
+  try {
+    const c = await client();
+    if (!c) return [];
+    const { data, error } = await c.functions.invoke("generate-lesson", { body: { mode: "practice", ...payload } });
+    if (error) { console.warn("practice generation failed:", error.message || error); return []; }
+    return (Array.isArray(data?.items) ? data.items : [])
+      .filter((it) => it && it.instruction && it.answer)
+      .slice(0, 4)
+      .map((it) => ({
+        type: "type", prompt: String(it.instruction), answer: String(it.answer),
+        accept: Array.isArray(it.accept) ? it.accept.map(String) : [], keys: [], ai: true,
+      }));
+  } catch (e) {
+    console.warn("practice generation error:", e);
+    return [];
+  }
+}
+
+// Judge a free typed/spoken attempt at a scenario task. Returns
+// { verdict, feedback, better } or null (caller shows a gentle fallback).
+export async function evaluateAnswer(payload) {
+  try {
+    const c = await client();
+    if (!c) return null;
+    const { data, error } = await c.functions.invoke("generate-lesson", { body: { mode: "evaluate", ...payload } });
+    if (error || !data?.verdict) return null;
+    return { verdict: data.verdict, feedback: String(data.feedback || ""), better: String(data.better || "") };
+  } catch {
+    return null;
+  }
+}
+
 // Light structural guard. The server prompt already constrains vocabulary; this
 // just drops anything malformed so the renderer never sees a half-built line.
 // (Deliberately lenient on tokens — conjugated forms like "kanakol" legitimately
