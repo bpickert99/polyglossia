@@ -107,7 +107,7 @@ function unitBoxHtml(course, section, data, unitId) {
   return `
     <div class="popup-stats">
       <div class="popup-stat"><span>Level</span><b>${esc(section.level)}</b></div>
-      <div class="popup-stat"><span>Completed</span><b>${mastered}/${pool.length}</b></div>
+      <div class="popup-stat"><span>Mastered</span><b>${mastered}/${pool.length}</b></div>
     </div>
     <div class="popup-actions">
       <a class="btn wide" href="#/lesson/${esc(unitId)}">${label}</a>
