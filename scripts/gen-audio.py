@@ -43,10 +43,9 @@ import sys
 import wave
 from pathlib import Path
 
-from piper.config import SynthesisConfig
-from piper.download_voices import download_voice
-from piper.phonemize_espeak import EspeakPhonemizer
-from piper.voice import PiperVoice
+# Piper is imported lazily (inside the generation path) so that content-only
+# operations — like `--dry-run`, which just enumerates what needs audio — work
+# in environments where Piper/eSpeak aren't installed.
 
 ROOT = Path(__file__).resolve().parent.parent
 VOICE_CACHE = ROOT / ".piper-voices"
@@ -80,6 +79,65 @@ def collect_units(course_dir, course):
             if path.exists():
                 files.append(path)
     return files
+
+
+# Common Arabic diacritics (tashkeel) + superscript alef + tatweel. Their
+# presence is how we tell a hand-diacritized authoring form from a bare one.
+TASHKEEL = set("ًٌٍَُِّْٰـ")
+
+
+def is_diacritized(text):
+    return any(ch in TASHKEEL for ch in (text or ""))
+
+
+def collect_pack_items(pack_dir):
+    """Every audible form in a travel pack: module items + comprehension replies,
+    grammar-rung examples, foundations examples. Each entry is
+    {roman, arabic, spoken, diacritized}; `spoken` is the diacritized Arabic when
+    present, else the roman (Arabizi). Deduped by roman slug."""
+    out, seen = [], set()
+
+    def add(roman, arabic):
+        roman = (roman or "").strip()
+        if not roman:
+            return
+        s = slug(roman)
+        if s in seen:
+            return
+        seen.add(s)
+        arabic = (arabic or "").strip()
+        out.append({"roman": roman, "arabic": arabic, "spoken": arabic or roman,
+                    "diacritized": is_diacritized(arabic)})
+
+    pack = json.loads((pack_dir / "pack.json").read_text())
+    for m in pack.get("modules", []):
+        mod = json.loads((pack_dir / m["file"]).read_text())
+        for it in mod.get("items", []):
+            add(it.get("roman") or it.get("target"), it.get("arabic"))
+        for c in mod.get("comprehension", []):
+            add(c.get("reply"), c.get("replyArabic"))
+
+    gpath = pack_dir / "grammar.json"
+    if gpath.exists():
+        for rung in json.loads(gpath.read_text()).get("rungs", []):
+            for ex in rung.get("examples", []):
+                add(ex.get("roman"), ex.get("arabic"))
+
+    fpath = pack_dir / "foundations.json"
+    if fpath.exists():
+        for sym in json.loads(fpath.read_text()).get("symbols", []):
+            add((sym.get("example", "").split("=")[0]).strip(), None)
+
+    return out
+
+
+def load_piper():
+    """Import Piper/eSpeak lazily so content-only ops don't require them."""
+    from piper.config import SynthesisConfig
+    from piper.download_voices import download_voice
+    from piper.phonemize_espeak import EspeakPhonemizer
+    from piper.voice import PiperVoice
+    return SynthesisConfig, download_voice, EspeakPhonemizer, PiperVoice
 
 
 def phonemes_to_str(phoneme_lists):
@@ -116,9 +174,20 @@ def main():
                      help="length_scale multiplier override; <1 = faster, >1 = slower. "
                           "Persists to course.json['tts']['speed'] once set, so future runs keep it "
                           "without needing to pass it again.")
+    ap.add_argument("--dry-run", action="store_true",
+                     help="List every form that needs audio (and, for packs, which lack "
+                          "diacritized Arabic) without loading Piper or writing anything.")
     args = ap.parse_args()
 
-    course_dir, course = load_course(args.lang)
+    course_dir = ROOT / "data" / args.lang
+
+    # Travel packs (pack.json + modules) use a different content model than the
+    # legacy CEFR courses (course.json + units). A pack takes precedence — some
+    # dirs still carry a stale legacy course.json alongside the pack.
+    if (course_dir / "pack.json").exists():
+        return run_pack(course_dir, args)
+
+    _, course = load_course(args.lang)
     espeak_voice = course.get("tts", {}).get("voice", args.lang)
     piper_voice_name = args.voice or course.get("tts", {}).get("piperVoice") or DEFAULT_PIPER_VOICE.get(espeak_voice)
     if not piper_voice_name:
@@ -127,6 +196,7 @@ def main():
 
     print(f"Language: {args.lang} | eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name} | Speed: {speed}")
 
+    SynthesisConfig, download_voice, EspeakPhonemizer, PiperVoice = load_piper()
     VOICE_CACHE.mkdir(parents=True, exist_ok=True)
     model_path = VOICE_CACHE / f"{piper_voice_name}.onnx"
     if not model_path.exists():
@@ -195,6 +265,63 @@ def main():
     (course_dir / "course.json").write_text(json.dumps(course, indent=2, ensure_ascii=False) + "\n")
 
     print(f"Done. {total_words} words seen, {generated} audio files (re)generated, {changed_units} unit files updated.")
+
+
+def run_pack(pack_dir, args):
+    """Generate (or, with --dry-run, just report) audio for a travel pack.
+    Filenames are the roman slug — exactly what the app requests at
+    audio/<slug>.wav. Spoken source is the diacritized Arabic when present."""
+    items = collect_pack_items(pack_dir)
+    dia = sum(1 for i in items if i["diacritized"])
+    print(f"Pack '{args.lang}': {len(items)} audible forms — "
+          f"{dia} with diacritized Arabic, {len(items) - dia} without.")
+
+    if args.dry_run:
+        for i in items:
+            flag = "AR " if i["diacritized"] else "romn"  # romn = will phonemize the Arabizi (lower quality)
+            src = i["arabic"] if i["diacritized"] else i["roman"]
+            print(f"  [{flag}] {slug(i['roman'])}.wav  <-  {src}")
+        if dia < len(items):
+            print(f"\n⚠️  {len(items) - dia} forms lack diacritized Arabic. Diacritize the "
+                  f"`arabic` fields (see data/ary/units/*.json for the pattern) before a real "
+                  f"run, or they'll be mispronounced.")
+        return
+
+    espeak_voice = "ar"
+    piper_voice_name = args.voice or DEFAULT_PIPER_VOICE.get(espeak_voice)
+    speed = args.speed if args.speed is not None else 1.0
+    print(f"eSpeak phonemizer: {espeak_voice} | Piper voice: {piper_voice_name} | Speed: {speed}")
+
+    SynthesisConfig, download_voice, EspeakPhonemizer, PiperVoice = load_piper()
+    VOICE_CACHE.mkdir(parents=True, exist_ok=True)
+    model_path = VOICE_CACHE / f"{piper_voice_name}.onnx"
+    if not model_path.exists():
+        print(f"Downloading Piper voice {piper_voice_name} ...")
+        download_voice(piper_voice_name, VOICE_CACHE)
+    voice_obj = PiperVoice.load(model_path)
+    phonemizer = EspeakPhonemizer()
+    syn_config = SynthesisConfig(length_scale=1.0 / speed if speed else None)
+
+    audio_dir = pack_dir / "audio"
+    manifest_path = pack_dir / "audio-manifest.json"
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+    generated = 0
+
+    for i in items:
+        spoken = i["spoken"]
+        key = f"{args.lang}:{speed}:{spoken}"
+        phoneme_lists = phonemizer.phonemize(espeak_voice, spoken)
+        phoneme_str = phonemes_to_str(phoneme_lists)
+        filename = f"{slug(i['roman'])}.wav"
+        if manifest.get(key) == phoneme_str and (audio_dir / filename).exists():
+            continue
+        audio = synthesize(voice_obj, phoneme_lists[0] if phoneme_lists else [], syn_config)
+        write_wav(audio_dir / filename, audio, voice_obj.config.sample_rate)
+        manifest[key] = phoneme_str
+        generated += 1
+
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
+    print(f"Done. {len(items)} forms seen, {generated} audio files (re)generated.")
 
 
 if __name__ == "__main__":
