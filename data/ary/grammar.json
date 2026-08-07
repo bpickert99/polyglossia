@@ -40,7 +40,7 @@
       "examples": [
         { "roman": "fin l-ħammam?", "arabic": "فين الحمام؟", "english": "where's the bathroom?" },
         { "roman": "shhal hada?", "arabic": "شحال هادا؟", "english": "how much is this?" },
-        { "roman": "wash 3andek?", "arabic": "واش عندك؟", "english": "do you have (it)?" }
+        { "roman": "wash 3andek?", "arabic": "واش عندك؟", "english": "do you have it?" }
       ],
       "quiz": [
         { "type": "mc", "prompt": "Which word asks “where”?", "choices": ["fin", "shhal", "ash", "shkun"], "answer": 0 },
@@ -58,7 +58,7 @@
       "teach": "To negate a verb, **wrap** it: **ma** before, **sh** after.\n\n• kanfhem = I understand → **ma** kanfhem**sh** = I don't understand\n• bghit = I want → **ma** bghit**sh** = I don't want\n\nThis one line — ma kanfhemsh — is your most useful sentence in the country.",
       "examples": [
         { "roman": "ma kanfhemsh", "arabic": "ما كنفهمش", "english": "I don't understand" },
-        { "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want (it)" },
+        { "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want it" },
         { "roman": "ma kaynsh", "arabic": "ما كاينش", "english": "there isn't / there's none" }
       ],
       "quiz": [
@@ -78,7 +78,7 @@
       "examples": [
         { "roman": "bghit atay skhun", "arabic": "بغيت أتاي سخون", "english": "I want hot tea" },
         { "roman": "kanqelleb 3la lotel", "arabic": "كنقلب على لوطيل", "english": "I'm looking for the hotel" },
-        { "roman": "l-makla bnina", "arabic": "الماكلة بنينة", "english": "the food (is) delicious" }
+        { "roman": "l-makla bnina", "arabic": "الماكلة بنينة", "english": "the food is delicious" }
       ],
       "quiz": [
         { "type": "mc", "prompt": "Put it in Darija order: “hot tea”", "choices": ["atay skhun", "skhun atay", "atay l-skhun", "skhun l-atay"], "answer": 0 },

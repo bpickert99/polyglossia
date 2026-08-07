@@ -164,9 +164,12 @@ function startLesson(trip, ld) {
     scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence,
   });
   if (session.empty) return renderCaughtUp();
-  updateTrip(trip.id, { lastLesson: today() });
   primeTTS();
-  renderLessonSession(app, ld.course, "trip-day", session, () => {}, { backHref: "#", isPractice: false });
+  renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
+    backHref: "#", isPractice: false, noAutoplay: true,
+    onComplete: () => updateTrip(trip.id, { lastLesson: today() }),
+    onDone: () => { location.hash = ""; renderToday(); },
+  });
 }
 
 function renderCaughtUp() {

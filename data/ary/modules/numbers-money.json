@@ -30,7 +30,7 @@
     { "target": "rial", "roman": "rial", "arabic": "ريال", "english": "rial (20 = 1 dirham)", "role": "recognize", "note": "Locals quote prices in this constantly." },
     { "target": "shhal?", "roman": "shhal", "arabic": "شحال", "english": "how much?", "role": "produce" },
     { "target": "shhal hada?", "roman": "shhal hada", "arabic": "شحال هادا", "english": "how much is this?", "role": "produce" },
-    { "target": "ghali bezzaf", "roman": "ghali bezzaf", "arabic": "غالي بزاف", "english": "(that's) too expensive", "role": "produce" },
+    { "target": "ghali bezzaf", "roman": "ghali bezzaf", "arabic": "غالي بزاف", "english": "too expensive", "role": "produce" },
     { "target": "naqqes shwiya", "roman": "naqqes shwiya", "arabic": "نقص شوية", "english": "lower it a bit", "role": "produce", "note": "The polite opening to a bargain." },
     { "target": "ghadi nakhod", "roman": "ghadi nakhod", "arabic": "غادي ناخد", "english": "I'll take it", "role": "produce" },
     { "target": "l7sab 3afak", "roman": "l7sab 3afak", "arabic": "الحساب عفاك", "english": "the bill, please", "role": "produce" },

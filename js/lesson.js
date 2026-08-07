@@ -186,7 +186,7 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       `<button class="btn wide" id="continue">Continue</button>`);
     wireSpeech();
     fillIPA();
-    speak(item.roman || item.target, course, audio);
+    if (!opts.noAutoplay) speak(item.roman || item.target, course, audio);
     app.querySelector("#continue").addEventListener("click", next);
   }
 
@@ -644,15 +644,26 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   function finish() {
     addXP(XP_LESSON_BONUS);
     onStatsChanged();
+    opts.onComplete?.(); // mark the day done only on a real finish, never on quit
     const acc = exercisesDone ? Math.round((correctCount / exercisesDone) * 100) : 100;
+    const missed = Math.max(0, exercisesDone - correctCount);
+    const sub = missed > 0
+      ? `${acc}% accuracy — the ${missed === 1 ? "one you missed is" : `${missed} you missed are`} queued for extra review`
+      : `${acc}% — no mistakes. Nicely done.`;
+    const href = opts.isPractice ? "#/" : backHref;
     app.innerHTML = `
       <div class="complete">
         <div class="big-emoji">${opts.isPractice ? "💪" : "🎉"}</div>
         <h1>${opts.isPractice ? "Practice complete!" : "Lesson complete!"}</h1>
-        <p>${acc}% accuracy — the words you missed are queued for extra review</p>
+        <p>${sub}</p>
         <div class="xp-chip">+${correctCount * XP_PER_EXERCISE + XP_LESSON_BONUS} XP</div>
-        <div><a class="btn wide" href="${opts.isPractice ? "#/" : backHref}">Continue</a></div>
+        <div><a class="btn wide" id="lesson-continue" href="${href}">Continue</a></div>
       </div>`;
+    // A plain href to "#" doesn't re-route when we're already at "#", so let the
+    // caller decide what "done" navigates to.
+    app.querySelector("#lesson-continue")?.addEventListener("click", (e) => {
+      if (opts.onDone) { e.preventDefault(); opts.onDone(); }
+    });
   }
 
   if (!steps.length) {

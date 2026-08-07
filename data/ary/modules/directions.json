@@ -20,8 +20,8 @@
     { "target": "wqef hna 3afak", "roman": "wqef hna 3afak", "arabic": "وقف هنا عفاك", "english": "stop here, please", "role": "produce" },
     { "target": "shhal l ___?", "roman": "shhal l", "arabic": "شحال ل", "english": "how much to ___? (a fare)", "role": "produce" },
     { "target": "petit taxi", "roman": "petit taxi", "arabic": "بتي طاكسي", "english": "petit taxi (in-city, small)", "role": "recognize", "note": "In-city, shared, metered-ish. Grand taxi = shared, between cities." },
-    { "target": "limen", "roman": "limen", "arabic": "اليمن", "english": "(on the) right", "role": "recognize" },
-    { "target": "lisar", "roman": "lisar", "arabic": "ليسار", "english": "(on the) left", "role": "recognize" },
+    { "target": "limen", "roman": "limen", "arabic": "اليمن", "english": "right", "role": "recognize" },
+    { "target": "lisar", "roman": "lisar", "arabic": "ليسار", "english": "left", "role": "recognize" },
     { "target": "nishan", "roman": "nishan", "arabic": "نيشان", "english": "straight ahead", "role": "recognize" },
     { "target": "qddam", "roman": "qddam", "arabic": "قدام", "english": "ahead / in front", "role": "recognize" },
     { "target": "mura", "roman": "mura", "arabic": "مورا", "english": "behind", "role": "recognize" },
@@ -31,8 +31,8 @@
     { "target": "fuq", "roman": "fuq", "arabic": "فوق", "english": "up / upstairs", "role": "recognize" },
     { "target": "ta7t", "roman": "ta7t", "arabic": "تحت", "english": "down / downstairs", "role": "recognize" },
     { "target": "temma", "roman": "temma", "arabic": "تما", "english": "there / over there", "role": "recognize" },
-    { "target": "sir", "roman": "sir", "arabic": "سير", "english": "go (said to you)", "role": "recognize", "note": "A command you'll hear in replies: 'sir nishan' = go straight." },
-    { "target": "dor", "roman": "dor", "arabic": "دور", "english": "turn (said to you)", "role": "recognize" },
+    { "target": "sir", "roman": "sir", "arabic": "سير", "english": "go", "role": "recognize", "note": "A command you'll hear in replies: 'sir nishan' = go straight." },
+    { "target": "dor", "roman": "dor", "arabic": "دور", "english": "turn", "role": "recognize" },
     { "target": "ma kaynsh", "roman": "ma kaynsh", "arabic": "ما كاينش", "english": "there isn't / we don't have", "role": "recognize", "note": "So you don't stand waiting for something that isn't there." }
   ],
   "comprehension": [

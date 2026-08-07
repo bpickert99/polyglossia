@@ -12,8 +12,8 @@ import { retrievability } from "./srs.js";
 
 export const DAY = 86400000;
 export const DEFAULTS = {
-  newPerDay: 8,       // gentle daily intake when there's plenty of runway
-  cramPerDay: 12,     // heavier intake when the trip is close
+  newPerDay: 5,       // gentle daily intake when there's plenty of runway
+  cramPerDay: 8,      // heavier intake when the trip is close
   cramUnderDays: 10,  // "close" threshold
   taperDays: 3,       // final N days: consolidate, no new material...
   panicDays: 2,       // ...unless you started this late, then keep teaching essentials

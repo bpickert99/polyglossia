@@ -22,7 +22,7 @@
     { "target": "sghir", "roman": "sghir", "arabic": "صغير", "english": "small", "role": "produce" },
     { "target": "akhor", "roman": "akhor", "arabic": "آخور", "english": "another / a different one", "role": "produce", "note": "For a different color or size: 'bghit akhor'." },
     { "target": "3tini", "roman": "3tini", "arabic": "عطيني", "english": "give me", "role": "produce" },
-    { "target": "ma bghitsh", "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want (it)", "role": "produce", "note": "Firm but polite decline." },
+    { "target": "ma bghitsh", "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want it", "role": "produce", "note": "Firm but polite decline." },
     { "target": "safi, shukran", "roman": "safi shukran", "arabic": "صافي شكرا", "english": "that's all, thanks", "role": "produce", "note": "Your graceful exit line." },
     { "target": "wesh 3andek akhor?", "roman": "wesh 3andek akhor", "arabic": "واش عندك آخور", "english": "do you have another?", "role": "produce" },
     { "target": "ghadi nakhod hadi", "roman": "ghadi nakhod hadi", "arabic": "غادي ناخد هادي", "english": "I'll take this one", "role": "produce" }

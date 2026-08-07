@@ -63,11 +63,9 @@ function comprehensionExercise(entry) {
 // A grammar rung as a teaching note the lesson renderer shows before practice:
 // the rule text plus a couple of worked examples.
 function rungNote(rung) {
-  const ex = (rung.examples || [])
-    .map((e) => `• ${e.roman}${e.english ? ` — ${e.english}` : ""}`)
-    .join("\n");
-  const body = ex ? `${rung.teach}\n\n${ex}` : rung.teach;
-  return { title: rung.title, body };
+  // The rung's teach text already carries its worked examples inline; don't
+  // repeat them. (Rich, listenable, colour-coded examples come as their own step.)
+  return { title: rung.title, body: rung.teach };
 }
 
 export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
@@ -139,15 +137,19 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
 
   // Pull a comprehension entry from the day's module (or any in-scope module
   // that has one) and place it near the end — the rehearsal of the real moment.
+  // Only ever quiz comprehension for a module the learner has actually STARTED —
+  // otherwise you get a reply built from words never taught (the day-1 trap).
+  const startedInModule = (mid) =>
+    (moduleItems.get(mid)?.items || []).some((it) => (records.get(it.roman || it.target)?.reps || 0) > 0);
   const compModuleId = (plan.module && plan.module.id) || (plan.todayNew[0] || {}).moduleId;
   const compMod = moduleItems.get(compModuleId);
-  let comps = (compMod && compMod.comprehension) || [];
-  if (!comps.length) {
-    // Fall back to any in-scope module that has a comprehension drill, so the
-    // "understand the reply" rehearsal happens even when today's module lacks one.
-    const scopeIds = new Set(plan.scope.map((i) => i.moduleId));
-    for (const [mid, mod] of moduleItems) {
-      if (scopeIds.has(mid) && mod.comprehension && mod.comprehension.length) { comps = mod.comprehension; break; }
+  let comps = [];
+  if (compMod && compMod.comprehension?.length && startedInModule(compModuleId)) {
+    comps = compMod.comprehension;
+  } else {
+    for (const mid of [...new Set(plan.scope.map((i) => i.moduleId))]) {
+      const mod = moduleItems.get(mid);
+      if (mod?.comprehension?.length && startedInModule(mid)) { comps = mod.comprehension; break; }
     }
   }
   if (comps.length) {
