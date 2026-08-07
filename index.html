@@ -1,44 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Polyglossia — learn the languages the big apps forgot</title>
-  <meta name="description" content="A free, open, document-driven language learning platform for under-served languages. CEFR-aligned lessons, script practice, and cultural notes.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <title>TripTalk — learn enough to travel</title>
+  <meta name="description" content="Learn the critical words and grammar for your trip in the weeks before you go — a deadline-aware daily lesson, tuned to peak the day you land.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧳</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Non-render-blocking font load: the page must never stall waiting on
-       Google Fonts (blocked/slow networks, corporate firewalls, offline-first
-       use) — load it async and swap in once/if it arrives. -->
-  <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Noto+Sans+Cherokee:wght@400;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Noto+Sans+Cherokee:wght@400;700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Noto+Sans+Cherokee:wght@400;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/trip.css">
+  <style>
+    .trip-onboard { max-width: 460px; margin: 0 auto; padding: 32px 20px; text-align: center; }
+    .trip-flag { font-size: 64px; line-height: 1; }
+    .trip-onboard h1 { margin: 12px 0 6px; }
+    .trip-sub { color: var(--muted, #77736c); margin: 0 0 24px; }
+    .trip-label { display: block; text-align: left; font-weight: 700; margin: 18px 0 8px; }
+    .trip-input { width: 100%; padding: 13px; font-size: 1.1rem; border-radius: 12px;
+      border: 1px solid rgba(127,127,127,.35); background: rgba(127,127,127,.06); color: inherit; }
+    .trip-choices { display: flex; flex-direction: column; gap: 10px; }
+    .trip-choice { display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+      border: 1px solid rgba(127,127,127,.3); border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+    .trip-choice input { margin-right: 8px; }
+    .trip-choice span { color: var(--muted, #77736c); font-size: .85rem; }
+    .trip-choice b { font-weight: 700; }
+    .btn.wide.big { font-size: 1.15rem; padding: 16px; margin-top: 22px; }
+    .trip-fine { color: var(--muted, #77736c); font-size: .82rem; margin-top: 10px; }
+
+    .trip-dash { max-width: 460px; margin: 0 auto; padding: 16px 20px 40px; }
+    .trip-top { display: flex; justify-content: space-between; align-items: center; }
+    .trip-flag-sm { font-size: 32px; }
+    .trip-settings { background: none; border: none; font-size: 22px; cursor: pointer; }
+    .countdown { text-align: center; margin: 8px 0 20px; }
+    .count-num { font-size: 84px; font-weight: 800; line-height: 1; }
+    .count-label { color: var(--muted, #77736c); font-size: 1rem; margin-top: 2px; }
+    .done-today { text-align: center; background: rgba(46,158,91,.14); border-radius: 12px;
+      padding: 14px; font-weight: 600; margin-bottom: 12px; }
+    .mod-list { margin-top: 26px; display: flex; flex-direction: column; gap: 10px; }
+    .mod-row { display: flex; align-items: center; gap: 12px; }
+    .mod-name { flex: 0 0 46%; font-size: .9rem; }
+    .mod-bar { flex: 1; height: 9px; border-radius: 6px; background: rgba(127,127,127,.2); overflow: hidden; }
+    .mod-bar span { display: block; height: 100%; background: #2e9e5b; border-radius: 6px; }
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#/">🌐 <span>Polyglossia</span></a>
-    <div class="topbar-stats">
-      <span class="stat" id="stat-streak" title="Day streak">🔥 <b>0</b></span>
-      <span class="stat" id="stat-xp" title="Total XP">⭐ <b>0</b></span>
-    </div>
-  </header>
-
-  <main id="app" class="app">
-    <div class="loading">Loading course…</div>
-  </main>
-
-  <nav class="bottomnav" id="bottomnav">
-    <a href="#/" data-nav="learn"><span class="nav-ico">📚</span>Learn</a>
-    <a href="#/practice" data-nav="practice"><span class="nav-ico">🏋️</span>Practice<span class="nav-badge" id="nav-practice-badge" hidden></span></a>
-    <a href="#/culture" data-nav="culture"><span class="nav-ico">🏛️</span>Culture</a>
-    <a href="#/stats" data-nav="stats"><span class="nav-ico">📊</span>Stats</a>
-    <a href="#/languages" data-nav="languages"><span class="nav-ico" id="nav-lang-ico">🌐</span>Language</a>
-  </nav>
-
-  <script type="module" src="js/main.js"></script>
+  <div id="app"></div>
+  <script type="module" src="js/trip-app.js"></script>
 </body>
 </html>

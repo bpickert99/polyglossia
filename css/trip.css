@@ -95,3 +95,35 @@ body { padding-bottom: 76px; } /* clear the fixed tab bar */
 .acct-del { background: none; border: none; font-size: 18px; cursor: pointer; opacity: .6; }
 .acct-del:hover { opacity: 1; }
 .acct-note { color: var(--muted, #77736c); font-size: .82rem; text-align: center; }
+
+/* ---------- in-the-wild scenario (Mango-style colour coding) ---------- */
+.scn { max-width: 560px; margin: 0 auto; padding: 8px 20px 24px; }
+.scn-head { font-weight: 800; font-size: 1.1rem; margin: 6px 0; }
+.scn-setting { color: var(--muted, #77736c); margin: 0 0 18px; }
+.scn-lines { display: flex; flex-direction: column; gap: 14px; }
+.scn-line { display: flex; flex-direction: column; }
+.scn-line.you { align-items: flex-end; }
+.scn-who { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted, #77736c); margin-bottom: 3px; }
+.scn-bubble {
+  position: relative; max-width: 88%; padding: 12px 14px; border-radius: 16px;
+  background: rgba(127, 127, 127, .1);
+}
+.scn-line.you .scn-bubble { background: rgba(46, 158, 91, .12); }
+.scn-target { font-size: 1.15rem; font-weight: 700; line-height: 1.5; }
+.scn-english { margin-top: 4px; font-size: .92rem; line-height: 1.5; opacity: .95; }
+.scn-chunk { background: none; border: none; padding: 0 1px; margin: 0; font: inherit; cursor: pointer; font-weight: inherit; }
+.scn-chunk:hover { text-decoration: underline; }
+.scn-say { background: none; border: none; cursor: pointer; font-size: 1rem; margin-top: 6px; padding: 0; opacity: .8; }
+.scn-morph { margin-top: 6px; padding: 8px 12px; border-radius: 12px; background: rgba(127, 127, 127, .1); font-size: .9rem; }
+.scn-morph-word { font-weight: 700; margin-bottom: 4px; }
+.scn-segs { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; }
+.scn-seg { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 6px; border-radius: 8px; background: rgba(127, 127, 127, .14); }
+.scn-seg em { font-style: normal; font-size: .68rem; color: var(--muted, #77736c); margin-top: 1px; }
+.scn-plus { color: var(--muted, #77736c); margin: 0 2px; }
+.scn-task { margin-top: 18px; padding: 12px 14px; border-radius: 12px; background: rgba(58, 123, 213, .1); }
+.scn-fine { color: var(--muted, #77736c); font-size: .8rem; text-align: center; margin-top: 12px; }
+
+/* scenario-unlock hint on Today */
+.scn-lock { margin-top: 18px; text-align: center; color: var(--muted, #77736c); font-size: .85rem;
+  background: rgba(127, 127, 127, .08); border-radius: 12px; padding: 12px; }
+.scn-prep { text-align: center; padding: 60px 20px; color: var(--muted, #77736c); }

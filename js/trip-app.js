@@ -9,9 +9,11 @@ import {
 } from "./storage.js";
 import { buildDailyPlan } from "./trip.js";
 import { buildTripSession } from "./trip-session.js";
-import { sequenceRungs, grammarReadiness } from "./grammar.js";
+import { sequenceRungs, grammarReadiness, introducedRungIds, isRungKey } from "./grammar.js";
 import { renderLessonSession } from "./lesson.js";
 import { renderReview } from "./trip-review.js";
+import { renderScenario } from "./trip-scenario.js";
+import { generateScenario, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
 import { initSync, getUser, signOut, renderSyncCard } from "./sync.js";
 import { primeTTS } from "./tts.js";
 
@@ -141,6 +143,10 @@ async function renderToday() {
         <ul>${canDos.map((c) => `<li>✓ ${esc(c)}</li>`).join("")}</ul>
       </div>` : ""}
 
+      ${scenarioUnlocked(records)
+        ? `<div class="scn-lock">🎬 In-the-wild practice is on — finish today's lesson to rehearse a real scene. Sign in on <b>Account</b> to enable it.</div>`
+        : `<div class="scn-lock">🎬 In-the-wild scenarios unlock as you learn — <b>${Math.round(scenarioProgress(records) * 100)}%</b> of the way there.</div>`}
+
       <div class="mod-list">${bars || ""}</div>
     </div>
     ${tabbar("today")}`;
@@ -165,11 +171,46 @@ function startLesson(trip, ld) {
   });
   if (session.empty) return renderCaughtUp();
   primeTTS();
+
+  // Kick off the AI in-the-wild scenario in the background while the learner
+  // works through the graded lesson. Resolves to null (→ static finish) if it's
+  // locked, the learner isn't signed in, or the call fails.
+  const scenarioP = maybeScenario(trip, ld, records, plan);
+
+  const finishToday = () => { location.hash = ""; renderToday(); };
   renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
     backHref: "#", isPractice: false, noAutoplay: true,
     onComplete: () => updateTrip(trip.id, { lastLesson: today() }),
-    onDone: () => { location.hash = ""; renderToday(); },
+    onDone: async () => {
+      app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
+      const scenario = await scenarioP;
+      if (scenario) renderScenario(app, scenario, { course: ld.course, onDone: finishToday });
+      else finishToday();
+    },
   });
+}
+
+// Build the payload from what the learner actually knows and ask the model for
+// a scenario. Every failure path returns null so the caller falls back cleanly.
+async function maybeScenario(trip, ld, records, plan) {
+  try {
+    if (!scenarioUnlocked(records)) return null;
+    if (!(await isSignedIn())) return null;
+    const known = [];
+    for (const [k, rec] of records) {
+      if (rec?.reps > 0 && !isRungKey(k)) known.push({ roman: rec.roman || rec.target || k, english: rec.english || "" });
+    }
+    const done = introducedRungIds(records);
+    const rungs = (ld.grammar.rungs || []).filter((r) => done.has(r.id)).map((r) => ({ title: r.title, teach: r.teach }));
+    return await generateScenario({
+      destination: ld.pack.destination,
+      moduleTitle: plan.module?.title || "",
+      scriptMode: trip.scriptMode,
+      known, rungs,
+    });
+  } catch {
+    return null;
+  }
 }
 
 function renderCaughtUp() {
