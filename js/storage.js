@@ -165,19 +165,88 @@ export function setLang(code) {
   save();
 }
 
-// ---------- trip settings (travel-tool redesign) ----------
+// ---------- trips / courses (travel-tool redesign) ----------
 
-// { packCode, departureDate (ISO yyyy-mm-dd), scriptMode ('arabizi'|'arabic'),
-//   helper (bool), lastLesson (yyyy-mm-dd) }
-state.trip = state.trip || {};
+// A trip is one course-with-a-deadline the learner is working:
+//   { id, packCode, packName, flag, destination,
+//     departureDate (ISO yyyy-mm-dd), scriptMode ('arabizi'|'arabic'),
+//     helper (bool), createdAt, lastLesson (yyyy-mm-dd) }
+// We keep a list (you can plan more than one trip) plus which one is active.
+state.trips = state.trips || [];
+state.activeTripId = state.activeTripId || null;
 
+// Migrate the old singular state.trip (pre-multi-trip) into the list, once.
+if (state.trip && state.trip.departureDate && !state.trips.length) {
+  const migrated = { id: genTripId(), createdAt: Date.now(), ...state.trip };
+  state.trips.push(migrated);
+  state.activeTripId = migrated.id;
+  delete state.trip;
+  save();
+}
+if (!state.activeTripId && state.trips.length) state.activeTripId = state.trips[0].id;
+
+function genTripId() {
+  return "t" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+}
+
+export function listTrips() {
+  return state.trips;
+}
+
+export function getActiveTrip() {
+  return state.trips.find((t) => t.id === state.activeTripId) || null;
+}
+
+export function setActiveTrip(id) {
+  if (state.trips.some((t) => t.id === id)) {
+    state.activeTripId = id;
+    save();
+  }
+}
+
+export function addTrip(trip) {
+  const t = { id: genTripId(), createdAt: Date.now(), lastLesson: null, ...trip };
+  state.trips.push(t);
+  state.activeTripId = t.id;
+  save();
+  return t;
+}
+
+export function updateTrip(id, patch) {
+  const t = state.trips.find((x) => x.id === id);
+  if (t) {
+    Object.assign(t, patch);
+    save();
+  }
+  return t;
+}
+
+// Remove a trip and — unless another trip still uses the same pack — purge all
+// of that language's learned progress (words, grammar rungs, ability). Lets you
+// wipe a course and start it clean.
+export function deleteTrip(id) {
+  const t = state.trips.find((x) => x.id === id);
+  if (!t) return;
+  state.trips = state.trips.filter((x) => x.id !== id);
+  const stillUsed = state.trips.some((x) => x.packCode === t.packCode);
+  if (!stillUsed) {
+    for (const k of Object.keys(state.items)) {
+      if (state.items[k].lang === t.packCode) delete state.items[k];
+    }
+    delete state.ability[t.packCode];
+  }
+  if (state.activeTripId === id) state.activeTripId = state.trips[0]?.id ?? null;
+  save();
+}
+
+// Back-compat shims: the trip app still reads/writes "the current trip".
 export function getTrip() {
-  return state.trip;
+  return getActiveTrip() || {};
 }
 
 export function setTrip(patch) {
-  Object.assign(state.trip, patch);
-  save();
+  const t = getActiveTrip();
+  return t ? updateTrip(t.id, patch) : null;
 }
 
 // ---------- sync support ----------
@@ -210,6 +279,15 @@ export function mergeRemoteState(remote) {
   for (const [id, item] of Object.entries(remote.items || {})) {
     const mine = state.items[id];
     if (!mine || (item.last || 0) > (mine.last || 0)) state.items[id] = item;
+  }
+  // Trips: union by id (remote adds any we don't have); newest lastLesson wins.
+  for (const rt of remote.trips || []) {
+    const mine = state.trips.find((t) => t.id === rt.id);
+    if (!mine) state.trips.push(rt);
+    else if ((rt.lastLesson || "") > (mine.lastLesson || "")) Object.assign(mine, rt);
+  }
+  if (!state.activeTripId && (remote.activeTripId || state.trips[0])) {
+    state.activeTripId = remote.activeTripId || state.trips[0].id;
   }
   if (!state.lang && remote.lang) state.lang = remote.lang;
   save();

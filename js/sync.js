@@ -65,6 +65,19 @@ async function startSession(u) {
   renderSyncCard(cardEl);
 }
 
+// The signed-in user (or null). Lets other screens (e.g. the Account tab) show
+// who you are without owning the auth state.
+export function getUser() {
+  return user;
+}
+
+export async function signOut() {
+  const sb = await client();
+  await sb?.auth.signOut();
+  user = null;
+  unsubscribe?.();
+}
+
 export async function initSync() {
   const sb = await client();
   if (!sb) return;
