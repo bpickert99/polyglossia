@@ -45,6 +45,11 @@ export function loadGrammar(code) {
   return fetchJSON(`data/${code}/grammar.json`).catch(() => ({ rungs: [], structures: {} }));
 }
 
+// Foundational reading rules (e.g. Arabizi number-letters). Optional.
+export function loadFoundations(code) {
+  return fetchJSON(`data/${code}/foundations.json`).catch(() => null);
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(

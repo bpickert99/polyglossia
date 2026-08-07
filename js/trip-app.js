@@ -3,7 +3,7 @@
 //   • Today   — countdown, readiness (words + grammar), one "start" button
 //   • Review  — self-serve flashcards + grammar quizzes
 //   • Account — who you are, sign out, and manage/delete courses
-import { loadPack, loadPackModules, loadGrammar } from "./data.js";
+import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.js";
 import {
   getItems, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip,
 } from "./storage.js";
@@ -32,14 +32,14 @@ const reviewCtx = { reviewMode: "cards" };
 
 async function ensureLoaded(code) {
   if (loaded.has(code)) return loaded.get(code);
-  const [pack, grammar] = await Promise.all([loadPack(code), loadGrammar(code)]);
+  const [pack, grammar, foundations] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code)]);
   const moduleItems = await loadPackModules(code, pack);
   const sequence = sequenceRungs(grammar.rungs || []);
   const course = {
     code, name: pack.name,
     tts: { engine: "piper", voice: "ar", piperVoice: "ar_JO-kareem-medium", preferredLangs: ["ar"], substitutions: [] },
   };
-  const entry = { pack, moduleItems, grammar, sequence, course };
+  const entry = { pack, moduleItems, grammar, sequence, foundations, course };
   loaded.set(code, entry);
   return entry;
 }
@@ -167,7 +167,7 @@ function startLesson(trip, ld) {
   const records = recordsFor(trip.packCode);
   const plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now() });
   const session = buildTripSession(ld.pack, plan, ld.moduleItems, records, {
-    scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence,
+    scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence, foundations: ld.foundations,
   });
   if (session.empty) return renderCaughtUp();
   primeTTS();

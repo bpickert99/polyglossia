@@ -68,6 +68,15 @@ function rungNote(rung) {
   return { title: rung.title, body: rung.teach };
 }
 
+// Foundational reading rules as a teaching note: the intro plus each symbol,
+// its sound, and an example.
+function foundationNote(fnd) {
+  const lines = (fnd.symbols || [])
+    .map((s) => `**${s.sym}** — ${s.sound}${s.example ? `  (${s.example})` : ""}`)
+    .join("\n");
+  return { title: fnd.title, body: `${fnd.intro}\n\n${lines}` };
+}
+
 export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   const lang = pack.code;
   const scriptMode = opts.scriptMode || "arabizi";
@@ -94,6 +103,18 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   const warmupN = plan.todayNew.length ? Math.min(3, reviewItems.length) : 0;
   const warmup = reviewItems.slice(0, warmupN).map((i) => ({ ...drill(i, pool, ability), review: true })).filter((x) => x.type);
   const restReview = reviewItems.slice(warmupN);
+
+  // Step 0 — foundations: the unskippable "how to read this" beat, shown up
+  // front until the learner has answered it once (so it lands on day one).
+  const fnd = opts.foundations;
+  const foundations = [];
+  const foundationEx = [];
+  if (fnd && !(records.get(fnd.key)?.reps > 0)) {
+    foundations.push(foundationNote(fnd));
+    for (const q of fnd.quiz || []) {
+      foundationEx.push({ type: "mc", keys: [fnd.key], prompt: q.prompt, choices: q.choices, answer: q.answer, foundation: true });
+    }
+  }
 
   // Step 2 — teach: the day's new items + one grammar rung.
   const teach = plan.todayNew.map((it) => teachCard(it, scriptMode));
@@ -157,16 +178,18 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
     interleaved.push(comprehensionExercise(entry));
   }
 
+  const allExercises = [...foundationEx, ...interleaved];
   return {
     id: `trip-${Date.now()}`,
     title: plan.module ? plan.module.title : "Today",
+    foundations,
     teach,
     grammar,
     culture: [],
     warmup,
-    exercises: interleaved,
+    exercises: allExercises,
     newCount: teach.length,
     reviewCount: warmup.length + interleaved.filter((e) => e.review).length,
-    empty: !teach.length && !warmup.length && !interleaved.length,
+    empty: !foundations.length && !teach.length && !warmup.length && !interleaved.length,
   };
 }

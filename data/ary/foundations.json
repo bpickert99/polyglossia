@@ -1,0 +1,20 @@
+{
+  "id": "arabizi",
+  "key": "f:arabizi",
+  "title": "How to read this",
+  "intro": "Moroccans text in Latin letters, borrowing a few numbers for sounds English doesn't have. This is foundational — learn these six and you can read everything else in the course. The numbers were chosen because they *look* like the Arabic letter they stand for.",
+  "symbols": [
+    { "sym": "3", "sound": "a throaty 'a', pushed from deep in the throat", "example": "3afak = please" },
+    { "sym": "7", "sound": "a breathy H, like fogging up a mirror", "example": "l7em = meat" },
+    { "sym": "9", "sound": "a deep K, further back than an English k", "example": "9hwa = coffee" },
+    { "sym": "2", "sound": "a catch in the voice, the stop in 'uh-oh'", "example": "sma2 = sky" },
+    { "sym": "kh / 5", "sound": "like gently clearing your throat", "example": "khobz = bread" },
+    { "sym": "gh", "sound": "a soft gargle, like a French R", "example": "ghali = expensive" }
+  ],
+  "quiz": [
+    { "type": "mc", "prompt": "In “3afak” (please), the 3 stands for…", "choices": ["a throaty 'a' sound", "the number three", "a silent letter", "an English K"], "answer": 0 },
+    { "type": "mc", "prompt": "Which stands for a breathy H from the throat?", "choices": ["7", "3", "9", "2"], "answer": 0 },
+    { "type": "mc", "prompt": "“9hwa” (coffee) begins with…", "choices": ["a deep K", "a soft g", "a silent 9", "a Q-U sound"], "answer": 0 },
+    { "type": "mc", "prompt": "The 2 in Darija texting is…", "choices": ["a catch/stop in the voice", "a B sound", "the number two", "a long ee"], "answer": 0 }
+  ]
+}

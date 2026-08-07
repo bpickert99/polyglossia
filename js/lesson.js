@@ -108,6 +108,7 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   // with something familiar, not a wall of new material), then teach cards,
   // notes, and the rest of the lesson's exercises.
   const steps = [];
+  for (const note of lesson.foundations || []) steps.push({ kind: "foundations", note });
   for (const ex of lesson.warmup || []) steps.push({ kind: "exercise", ex });
   for (const item of lesson.teach || []) steps.push({ kind: "teach", item });
   for (const note of lesson.grammar || []) steps.push({ kind: "grammar", note });
@@ -161,6 +162,7 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
 
   function show(step) {
     if (step.kind === "teach") return showTeach(step.item);
+    if (step.kind === "foundations") return showNote(step.note, "grammar-box", "📖 How to read this");
     if (step.kind === "grammar") return showNote(step.note, "grammar-box", "📐 Grammar");
     if (step.kind === "culture") return showNote(step.note, "culture-box", "🏛️ Culture note");
     return showExercise(step.ex);
