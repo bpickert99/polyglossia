@@ -1,0 +1,143 @@
+{
+  "code": "ary",
+  "note": "The critical grammar spine for Darija, decomposed into rungs. Each rung is one day's teaching beat. The sequencer (js/grammar.js) orders them by leverage, respecting prereqs and rotating between structures so a learner never grinds one paradigm. Rungs ride the same FSRS + taper machinery as vocabulary, keyed 'g:<id>'.",
+  "structures": {
+    "present": { "title": "Present tense (ka-)", "about": "How Darija says what's happening now." },
+    "questions": { "title": "Asking questions", "about": "Getting information out of people." },
+    "negation": { "title": "Saying no / not", "about": "Refusing, correcting, and half of getting unstuck." },
+    "order": { "title": "Word order", "about": "How to put a sentence together." },
+    "future": { "title": "Talking about later", "about": "Intentions and what's about to happen." },
+    "possession": { "title": "Whose is it (dyal)", "about": "Mine, yours, this one, that one." }
+  },
+  "rungs": [
+    {
+      "id": "present-1",
+      "structure": "present",
+      "role": "produce",
+      "leverage": 95,
+      "prereqs": [],
+      "title": "Present tense: I & you",
+      "teach": "Darija builds the present with a **ka-** prefix, and the prefix already says who: **kan-** = I, **kat-** = you. So the pronoun is optional — the verb carries it.\n\n• kanakol = I eat\n• katakol = you eat\n\nTake any verb you know and put kan-/kat- on the front.",
+      "examples": [
+        { "roman": "kanakol", "arabic": "كناكل", "english": "I eat" },
+        { "roman": "katakol", "arabic": "كتاكل", "english": "you eat" },
+        { "roman": "kanshreb atay", "arabic": "كنشرب أتاي", "english": "I drink tea" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Say: “I eat”", "choices": ["kanakol", "katakol", "kayakol", "akol"], "answer": 0 },
+        { "type": "mc", "prompt": "Say: “you drink”", "choices": ["katshreb", "kanshreb", "shreb", "kayshreb"], "answer": 0 },
+        { "type": "mc", "prompt": "“kanmshi” means…", "choices": ["I go", "you go", "he goes", "go!"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "questions-1",
+      "structure": "questions",
+      "role": "produce",
+      "leverage": 88,
+      "prereqs": [],
+      "title": "Asking questions",
+      "teach": "Two ways to ask:\n\n1. **Front a question word:** fin (where), shhal (how much/many), ash (what), fuqash (when), kifash (how), shkun (who).\n\n2. **Yes/no?** Put **wash** at the front of a statement.\n\n• fin l-ħammam? = where's the bathroom?\n• wash kayn atay? = is there tea?",
+      "examples": [
+        { "roman": "fin l-ħammam?", "arabic": "فين الحمام؟", "english": "where's the bathroom?" },
+        { "roman": "shhal hada?", "arabic": "شحال هادا؟", "english": "how much is this?" },
+        { "roman": "wash 3andek?", "arabic": "واش عندك؟", "english": "do you have (it)?" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Which word asks “where”?", "choices": ["fin", "shhal", "ash", "shkun"], "answer": 0 },
+        { "type": "mc", "prompt": "Turn “kayn atay” (there is tea) into “is there tea?”", "choices": ["wash kayn atay?", "fin kayn atay?", "kayn atay wash?", "shhal kayn atay?"], "answer": 0 },
+        { "type": "mc", "prompt": "“shhal” asks about…", "choices": ["how much / how many", "where", "who", "when"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "negation-1",
+      "structure": "negation",
+      "role": "produce",
+      "leverage": 82,
+      "prereqs": ["present-1"],
+      "title": "Saying not: ma … sh",
+      "teach": "To negate a verb, **wrap** it: **ma** before, **sh** after.\n\n• kanfhem = I understand → **ma** kanfhem**sh** = I don't understand\n• bghit = I want → **ma** bghit**sh** = I don't want\n\nThis one line — ma kanfhemsh — is your most useful sentence in the country.",
+      "examples": [
+        { "roman": "ma kanfhemsh", "arabic": "ما كنفهمش", "english": "I don't understand" },
+        { "roman": "ma bghitsh", "arabic": "ما بغيتش", "english": "I don't want (it)" },
+        { "roman": "ma kaynsh", "arabic": "ما كاينش", "english": "there isn't / there's none" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Say: “I don't understand”", "choices": ["ma kanfhemsh", "kanfhem", "ma kanfhem", "kanfhemsh"], "answer": 0 },
+        { "type": "mc", "prompt": "Negate “bghit” (I want)", "choices": ["ma bghitsh", "ma bghit", "bghitsh", "la bghit"], "answer": 0 },
+        { "type": "mc", "prompt": "“ma kaynsh” means…", "choices": ["there isn't any", "there is", "I don't know", "not yet"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "order-1",
+      "structure": "order",
+      "role": "produce",
+      "leverage": 78,
+      "prereqs": ["present-1"],
+      "title": "Word order: verb first, adjective after",
+      "teach": "Two habits and you can build sentences:\n\n1. **Drop the subject** and lead with the verb: bghit atay = (I) want tea.\n2. **Adjectives follow the noun:** atay skhun = tea hot (= hot tea), l-bit kbir = the room big.\n\nSo: verb + thing, and describe the thing *after* it.",
+      "examples": [
+        { "roman": "bghit atay skhun", "arabic": "بغيت أتاي سخون", "english": "I want hot tea" },
+        { "roman": "kanqelleb 3la lotel", "arabic": "كنقلب على لوطيل", "english": "I'm looking for the hotel" },
+        { "roman": "l-makla bnina", "arabic": "الماكلة بنينة", "english": "the food (is) delicious" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Put it in Darija order: “hot tea”", "choices": ["atay skhun", "skhun atay", "atay l-skhun", "skhun l-atay"], "answer": 0 },
+        { "type": "mc", "prompt": "“I want a big room” — pick the natural order", "choices": ["bghit bit kbir", "bghit kbir bit", "kbir bit bghit", "bit kbir bghit"], "answer": 0 },
+        { "type": "mc", "prompt": "In “l-makla bnina”, which word describes the food?", "choices": ["bnina (delicious)", "l-makla (the food)", "both", "neither"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "future-1",
+      "structure": "future",
+      "role": "produce",
+      "leverage": 66,
+      "prereqs": ["present-1"],
+      "title": "Talking about later: ghadi",
+      "teach": "For “going to / will”, put **ghadi** in front of the verb (still with its kan-/kat- prefix, or just the bare verb).\n\n• ghadi nmshi = I'm going to go\n• ghadi nakhod hada = I'll take this one\n\nOne little word buys you the whole future. No tense to memorize.",
+      "examples": [
+        { "roman": "ghadi nmshi l-marrakech", "arabic": "غادي نمشي لمراكش", "english": "I'm going to Marrakech" },
+        { "roman": "ghadi nakhod hada", "arabic": "غادي ناخد هادا", "english": "I'll take this one" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Which word makes it future (“going to”)?", "choices": ["ghadi", "ka", "ma", "dyal"], "answer": 0 },
+        { "type": "mc", "prompt": "Say: “I'll take this”", "choices": ["ghadi nakhod hada", "kanakhod hada", "ma nakhodsh hada", "nakhod ghadi"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "present-2",
+      "structure": "present",
+      "role": "recognize",
+      "leverage": 60,
+      "prereqs": ["present-1"],
+      "title": "Understanding “he/she/it”: kay- / kat-",
+      "teach": "You mostly need to *recognize* this, to follow what people tell you. The same ka- present, other people:\n\n• **kay-** = he/it → kayn = there is (lit. “it exists”)\n• **kat-** = she → katmshi = she goes\n\nYou won't produce these much — but you'll hear them constantly in answers.",
+      "examples": [
+        { "roman": "kayn / ma kaynsh", "arabic": "كاين / ما كاينش", "english": "there is / there isn't" },
+        { "roman": "kayji men temma", "arabic": "كيجي من تما", "english": "he/it comes from over there" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "You hear “kayn”. It means…", "choices": ["there is / it exists", "I want", "go away", "how much"], "answer": 0 },
+        { "type": "mc", "prompt": "“kat-” on a verb points to…", "choices": ["you or she", "I", "they", "we"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "possession-1",
+      "structure": "possession",
+      "role": "produce",
+      "leverage": 55,
+      "prereqs": [],
+      "title": "Whose is it: dyal, had, hadak",
+      "teach": "**dyal** = “of”. Stick it after the thing:\n\n• l-flus **dyali** = my money · l-bit **dyalek** = your room\n\nAnd to point: **had** = this, **hadak** = that.\n\n• had l-ħaja = this thing · hadak = that one",
+      "examples": [
+        { "roman": "l-flus dyali", "arabic": "الفلوس ديالي", "english": "my money" },
+        { "roman": "had l-ħaja", "arabic": "هاد الحاجة", "english": "this thing" },
+        { "roman": "bghit hadak", "arabic": "بغيت هاداك", "english": "I want that one" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Say: “my money”", "choices": ["l-flus dyali", "l-flus dyalek", "dyali l-flus", "flus had"], "answer": 0 },
+        { "type": "mc", "prompt": "“had” means…", "choices": ["this", "that", "mine", "there"], "answer": 0 },
+        { "type": "mc", "prompt": "Point at something across the room and say “that one”", "choices": ["hadak", "had", "dyali", "hna"], "answer": 0 }
+      ]
+    }
+  ]
+}
