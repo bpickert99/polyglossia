@@ -108,12 +108,12 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   // with something familiar, not a wall of new material), then teach cards,
   // notes, and the rest of the lesson's exercises.
   const steps = [];
-  for (const note of lesson.foundations || []) steps.push({ kind: "foundations", note });
-  for (const ex of lesson.warmup || []) steps.push({ kind: "exercise", ex });
-  for (const item of lesson.teach || []) steps.push({ kind: "teach", item });
-  for (const note of lesson.grammar || []) steps.push({ kind: "grammar", note });
-  for (const note of lesson.culture || []) steps.push({ kind: "culture", note });
-  for (const ex of lesson.exercises || []) steps.push({ kind: "exercise", ex });
+  for (const note of lesson.foundations || []) steps.push({ kind: "foundations", note, section: "Read" });
+  for (const ex of lesson.warmup || []) steps.push({ kind: "exercise", ex, section: "Warm-up" });
+  for (const item of lesson.teach || []) steps.push({ kind: "teach", item, section: "Words" });
+  for (const note of lesson.grammar || []) steps.push({ kind: "grammar", note, section: "Grammar" });
+  for (const note of lesson.culture || []) steps.push({ kind: "culture", note, section: "Culture" });
+  for (const ex of lesson.exercises || []) steps.push({ kind: "exercise", ex, section: "Practice" });
 
   const totalPlanned = steps.length;
   let stepIndex = 0;
@@ -122,6 +122,34 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
 
   function progressPct() {
     return Math.min(100, Math.round((stepIndex / Math.max(totalPlanned, steps.length)) * 100));
+  }
+
+  // The named sections in order, each with its step range — for the segmented
+  // progress rail (a learner sees where they are across the whole lesson, and
+  // how far in overall, not just one anonymous bar).
+  const sections = [];
+  steps.forEach((s, i) => {
+    const last = sections[sections.length - 1];
+    if (last && last.name === s.section) last.end = i + 1;
+    else sections.push({ name: s.section, start: i, end: i + 1 });
+  });
+
+  function railHtml() {
+    if (sections.length < 2) return `<div class="progressbar"><div style="width:${progressPct()}%"></div></div>`;
+    const segs = sections.map((sec) => {
+      const span = Math.max(1, sec.end - sec.start);
+      const fill = Math.max(0, Math.min(1, (stepIndex - sec.start) / span));
+      const active = stepIndex >= sec.start && stepIndex < sec.end;
+      return `<div class="rail-seg ${active ? "active" : ""}" title="${esc(sec.name)}">
+        <span class="rail-fill" style="width:${Math.round(fill * 100)}%"></span></div>`;
+    }).join("");
+    return `<div class="section-rail">${segs}</div>`;
+  }
+
+  function railLabel() {
+    if (sections.length < 2) return "";
+    const current = sections.find((s) => stepIndex >= s.start && stepIndex < s.end) || sections[sections.length - 1];
+    return `<div class="rail-label"><span>${esc(current.name)}</span><span>${progressPct()}%</span></div>`;
   }
 
   // "5 new · 7 review" — shown once, up front, so the session's shape isn't a
@@ -136,8 +164,11 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   function frame(inner, footer) {
     app.innerHTML = `
       <div class="session-top">
-        <a class="session-quit" href="${backHref}" title="Quit">✕</a>
-        <div class="progressbar"><div style="width:${progressPct()}%"></div></div>
+        <div class="session-top-row">
+          <a class="session-quit" href="${backHref}" title="Quit">✕</a>
+          ${railHtml()}
+        </div>
+        ${railLabel()}
       </div>
       ${stepIndex === 0 ? sessionShape : ""}
       ${inner}

@@ -428,3 +428,13 @@ body {
 
 .sync-row { display: flex; gap: 8px; margin-top: 10px; }
 .sync-row .type-input { margin-bottom: 0; flex: 1; }
+
+/* Segmented lesson progress rail (Read → Warm-up → Words → Grammar → Practice) */
+.session-top { flex-direction: column; align-items: stretch; gap: 6px; }
+.session-top-row { display: flex; align-items: center; gap: 12px; }
+.section-rail { flex: 1; display: flex; gap: 4px; align-items: center; }
+.rail-seg { flex: 1; height: 10px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.rail-seg.active { box-shadow: 0 0 0 2px rgba(46, 158, 91, .35); }
+.rail-fill { display: block; height: 100%; background: var(--green); border-radius: 6px; transition: width .25s; }
+.rail-label { display: flex; justify-content: space-between; font-size: .74rem; color: var(--ink-soft); padding: 0 2px; }
+.rail-label span:first-child { font-weight: 700; }
