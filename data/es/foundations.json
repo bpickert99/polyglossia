@@ -1,0 +1,20 @@
+{
+  "id": "sounds",
+  "key": "f:es-sounds",
+  "title": "How Spanish sounds",
+  "intro": "Spanish spelling is wonderfully consistent — once you know a few rules, you can pronounce almost any word on sight. Learn these six and you're reading Spanish out loud.",
+  "symbols": [
+    { "sym": "a e i o u", "sound": "five pure vowels, always the same (ah, eh, ee, oh, oo)", "example": "taco = TAH-koh" },
+    { "sym": "ñ", "sound": "'ny', like the middle of 'canyon'", "example": "mañana = mah-NYAH-nah" },
+    { "sym": "j (and g before e/i)", "sound": "a throaty H, from the back of the mouth", "example": "jamón = ha-MON" },
+    { "sym": "ll / y", "sound": "like English 'y' in yes", "example": "tortilla = tor-TEE-yah" },
+    { "sym": "h", "sound": "always silent", "example": "hola = OH-lah" },
+    { "sym": "accent (´)", "sound": "stress THIS syllable", "example": "café = ka-FEH" }
+  ],
+  "quiz": [
+    { "type": "mc", "prompt": "How is the 'h' in “hola” pronounced?", "choices": ["silent", "like English h", "like a K", "like a throaty h"], "answer": 0 },
+    { "type": "mc", "prompt": "“ñ” sounds like…", "choices": ["'ny' (canyon)", "plain n", "an m", "a silent letter"], "answer": 0 },
+    { "type": "mc", "prompt": "In “tortilla”, the 'll' sounds like…", "choices": ["English 'y'", "a double L", "a J", "silent"], "answer": 0 },
+    { "type": "mc", "prompt": "The accent in “café” tells you to…", "choices": ["stress that syllable", "make it silent", "add an h sound", "make it plural"], "answer": 0 }
+  ]
+}

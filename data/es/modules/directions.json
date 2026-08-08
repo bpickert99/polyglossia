@@ -1,0 +1,39 @@
+{
+  "id": "directions",
+  "title": "Directions & transport",
+  "tier": 1,
+  "grammar": {
+    "title": "Asking the way — and understanding the answer",
+    "body": "Ask **¿dónde está ___?** and then catch the key words: **derecha** (right), **izquierda** (left), **derecho** (straight). For taxis, agree the fare first or ask for the meter; apps like Uber/DiDi work well in cities."
+  },
+  "canDo": ["Ask where something is", "Understand left / right / straight", "Take a taxi and ask the fare"],
+  "items": [
+    { "target": "¿dónde está ___?", "roman": "¿dónde está", "english": "where is ___?", "role": "produce" },
+    { "target": "a la derecha", "roman": "a la derecha", "english": "to the right", "role": "recognize" },
+    { "target": "a la izquierda", "roman": "a la izquierda", "english": "to the left", "role": "recognize" },
+    { "target": "derecho", "roman": "derecho", "english": "straight ahead", "role": "recognize", "note": "Careful: 'derecho' = straight, 'derecha' = right." },
+    { "target": "aquí / allá", "roman": "aquí / allá", "english": "here / over there", "role": "produce" },
+    { "target": "cerca / lejos", "roman": "cerca / lejos", "english": "near / far", "role": "recognize" },
+    { "target": "un taxi", "roman": "un taxi", "english": "a taxi", "role": "produce" },
+    { "target": "¿cuánto al centro?", "roman": "¿cuánto al centro?", "english": "how much to downtown?", "role": "produce", "note": "Agree the fare before getting in." },
+    { "target": "la parada", "roman": "la parada", "english": "the stop (bus)", "role": "recognize" }
+  ],
+  "comprehension": [
+    {
+      "ask": "¿dónde está el baño?",
+      "reply": "está al fondo, a la derecha",
+      "english": "It's at the back, on the right.",
+      "question": "Where's the bathroom?",
+      "choices": ["At the back, on the right", "Upstairs, on the left", "Outside, across the street", "There isn't one"],
+      "answer": 0
+    },
+    {
+      "ask": "¿está cerca el mercado?",
+      "reply": "no, está un poco lejos, mejor un taxi",
+      "english": "No, it's a bit far — better take a taxi.",
+      "question": "How should you get to the market?",
+      "choices": ["Take a taxi — it's far", "Walk — it's close", "It's next door", "It's closed"],
+      "answer": 0
+    }
+  ]
+}

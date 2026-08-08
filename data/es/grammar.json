@@ -1,0 +1,139 @@
+{
+  "code": "es",
+  "note": "Critical grammar spine for travel Spanish (Mexico). Decomposed into rungs, ordered by the sequencer (leverage + prereqs + structure rotation). Rungs ride the same FSRS + taper machinery as vocabulary.",
+  "structures": {
+    "present": { "title": "Present tense", "about": "Regular verb endings for who's doing it." },
+    "formality": { "title": "tú vs usted", "about": "Which 'you' to use." },
+    "gender": { "title": "Gender & agreement", "about": "el/la, un/una, and matching adjectives." },
+    "order": { "title": "Word order & no", "about": "Building and negating a sentence." },
+    "future": { "title": "Talking about later", "about": "The going-to future." },
+    "copula": { "title": "ser vs estar", "about": "The two ways to say 'to be'." }
+  },
+  "rungs": [
+    {
+      "id": "present-1",
+      "structure": "present",
+      "role": "produce",
+      "leverage": 95,
+      "prereqs": [],
+      "title": "Present tense: I & you",
+      "teach": "Regular verbs change their ending to say who. For **I**, use **-o**; for **you**, **-as** (-ar verbs) or **-es** (-er/-ir verbs).\n\n• hablar → hablo / hablas (I speak / you speak)\n• comer → como / comes (I eat / you eat)\n\nDrop the pronoun — the ending already says who.",
+      "examples": [
+        { "roman": "hablo un poco", "english": "I speak a little" },
+        { "roman": "¿hablas inglés?", "english": "do you speak English?" },
+        { "roman": "como aquí", "english": "I eat here" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "“I speak” (hablar) is…", "choices": ["hablo", "hablas", "habla", "hablar"], "answer": 0 },
+        { "type": "mc", "prompt": "Say “you eat” (comer)", "choices": ["comes", "como", "come", "comer"], "answer": 0 },
+        { "type": "mc", "prompt": "The -o ending means…", "choices": ["I", "you", "he/she", "we"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "formality-1",
+      "structure": "formality",
+      "role": "produce",
+      "leverage": 88,
+      "prereqs": [],
+      "title": "tú vs usted",
+      "teach": "Spanish has two “you”s. Use **tú** with friends, kids, and peers. Use **usted** — the polite one — with strangers, elders, and anyone serving you.\n\nUsted takes the “he/she” verb form:\n• ¿cómo estás? (tú) → **¿cómo está?** (usted)\n• ¿hablas inglés? → **¿habla inglés?**\n\nWhen in doubt, use usted.",
+      "examples": [
+        { "roman": "¿cómo está?", "english": "how are you? (polite)" },
+        { "roman": "¿habla inglés?", "english": "do you speak English? (polite)" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Talking to a shopkeeper you just met, use…", "choices": ["usted", "tú", "either — it's the same", "nosotros"], "answer": 0 },
+        { "type": "mc", "prompt": "Polite “how are you?”", "choices": ["¿cómo está?", "¿cómo estás?", "¿cómo estoy?", "¿cómo están?"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "gender-1",
+      "structure": "gender",
+      "role": "produce",
+      "leverage": 82,
+      "prereqs": [],
+      "title": "el / la and matching words",
+      "teach": "Nouns are masculine (**el / un**) or feminine (**la / una**) — usually **-o** vs **-a**.\n\n• el taxi, un café  ·  la cuenta, una cerveza\n\nAdjectives agree and usually come **after** the noun: agua frí**a**, café calien**te**.",
+      "examples": [
+        { "roman": "la cuenta, por favor", "english": "the check, please" },
+        { "roman": "un café, por favor", "english": "a coffee, please" },
+        { "roman": "agua fría", "english": "cold water" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "“the check” (cuenta) — which article?", "choices": ["la cuenta", "el cuenta", "un cuenta", "los cuenta"], "answer": 0 },
+        { "type": "mc", "prompt": "Put it in Spanish order: “cold water”", "choices": ["agua fría", "fría agua", "el agua fría", "agua el fría"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "order-1",
+      "structure": "order",
+      "role": "produce",
+      "leverage": 78,
+      "prereqs": ["present-1"],
+      "title": "Word order & saying “no”",
+      "teach": "Order is like English: subject–verb–object, and you can drop the subject — **quiero café** (I want coffee).\n\nTo say **not**, put **no** right before the verb:\n• no entiendo (I don't understand)\n• no quiero (I don't want)",
+      "examples": [
+        { "roman": "quiero un café", "english": "I want a coffee" },
+        { "roman": "no entiendo", "english": "I don't understand" },
+        { "roman": "no hablo español", "english": "I don't speak Spanish" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Say “I don't want”", "choices": ["no quiero", "quiero no", "no quiere", "quiero not"], "answer": 0 },
+        { "type": "mc", "prompt": "Where does “no” go?", "choices": ["before the verb", "after the verb", "at the end", "before the subject"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "future-1",
+      "structure": "future",
+      "role": "produce",
+      "leverage": 70,
+      "prereqs": ["present-1"],
+      "title": "The going-to future: voy a",
+      "teach": "For what you're about to do, use **voy a** + a verb (its plain -ar/-er/-ir form):\n\n• voy a comer (I'm going to eat)\n• voy a pagar (I'm going to pay)\n\nOne little phrase buys you the whole future — no new endings.",
+      "examples": [
+        { "roman": "voy a comer aquí", "english": "I'm going to eat here" },
+        { "roman": "voy a pagar con tarjeta", "english": "I'm going to pay by card" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "Say “I'm going to eat”", "choices": ["voy a comer", "voy comer", "voy a como", "voy como"], "answer": 0 },
+        { "type": "mc", "prompt": "After “voy a”, the verb is…", "choices": ["the plain -ar/-er/-ir form", "the -o form", "the -as form", "a noun"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "present-2",
+      "structure": "present",
+      "role": "recognize",
+      "leverage": 62,
+      "prereqs": ["present-1"],
+      "title": "Understanding he/she/we",
+      "teach": "You'll hear these in answers. Same regular verbs, other people:\n\n• **-a / -e** = he, she, or polite “you” → habla, come\n• **-amos / -emos** = we → hablamos, comemos\n\nMostly you just need to recognize them.",
+      "examples": [
+        { "roman": "está a la derecha", "english": "it's on the right" },
+        { "roman": "no hablamos inglés", "english": "we don't speak English" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "You hear “come”. It means…", "choices": ["he/she eats", "I eat", "we eat", "eat!"], "answer": 0 },
+        { "type": "mc", "prompt": "The -amos ending points to…", "choices": ["we", "I", "you", "they"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "copula-1",
+      "structure": "copula",
+      "role": "produce",
+      "leverage": 58,
+      "prereqs": [],
+      "title": "ser vs estar (both “to be”)",
+      "teach": "Two verbs mean “to be”. Simple rule of thumb:\n\n• **ser** — who or what something *is*: soy turista, es café.\n• **estar** — *where* it is and *how you feel*: está aquí, estoy bien, estoy cansado.\n\nLocation & feelings → estar.",
+      "examples": [
+        { "roman": "soy turista", "english": "I'm a tourist" },
+        { "roman": "estoy bien", "english": "I'm fine" },
+        { "roman": "¿dónde está?", "english": "where is it?" }
+      ],
+      "quiz": [
+        { "type": "mc", "prompt": "“I'm fine” uses…", "choices": ["estoy (estar)", "soy (ser)", "either", "hay"], "answer": 0 },
+        { "type": "mc", "prompt": "“Where is it?” uses…", "choices": ["está (estar)", "es (ser)", "hay", "va"], "answer": 0 },
+        { "type": "mc", "prompt": "“I'm a tourist” uses…", "choices": ["soy (ser)", "estoy (estar)", "tengo", "voy"], "answer": 0 }
+      ]
+    }
+  ]
+}

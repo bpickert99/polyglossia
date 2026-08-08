@@ -1,0 +1,21 @@
+{
+  "id": "repair",
+  "title": "Getting unstuck",
+  "tier": 0,
+  "grammar": {
+    "title": "The phrases that rescue any conversation",
+    "body": "You won't understand everything — nobody does at first. These lines buy you time and keep people helping you. **No entiendo** and **más despacio, por favor** are your lifelines."
+  },
+  "canDo": ["Ask someone to slow down or repeat", "Say you don't understand", "Ask how to say something, or whether they speak English"],
+  "items": [
+    { "target": "no entiendo", "roman": "no entiendo", "english": "I don't understand", "role": "produce", "note": "Your single most useful sentence." },
+    { "target": "¿puede repetir?", "roman": "¿puede repetir?", "english": "can you repeat that?", "role": "produce" },
+    { "target": "más despacio, por favor", "roman": "más despacio, por favor", "english": "slower, please", "role": "produce" },
+    { "target": "¿cómo se dice ___?", "roman": "¿cómo se dice", "english": "how do you say ___?", "role": "produce" },
+    { "target": "¿qué significa?", "roman": "¿qué significa?", "english": "what does it mean?", "role": "produce" },
+    { "target": "¿habla inglés?", "roman": "¿habla inglés?", "english": "do you speak English?", "role": "produce" },
+    { "target": "no hablo español", "roman": "no hablo español", "english": "I don't speak Spanish", "role": "produce", "note": "…yet! Say it with a smile." },
+    { "target": "¿mande?", "roman": "¿mande?", "english": "sorry, what? (Mexican)", "role": "produce", "note": "The polite Mexican way to say 'what?' — softer than '¿qué?'." },
+    { "target": "un momento", "roman": "un momento", "english": "one moment", "role": "recognize" }
+  ]
+}

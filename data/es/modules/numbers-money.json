@@ -1,0 +1,39 @@
+{
+  "id": "numbers-money",
+  "title": "Numbers & money",
+  "tier": 0,
+  "grammar": {
+    "title": "Prices, pesos, and the tip",
+    "body": "Mexico uses **pesos**. Ask **¿cuánto cuesta?** and listen for the number. Cards work in cities but carry **efectivo** (cash) for markets and taxis. A tip (**propina**) of ~10–15% is normal in restaurants."
+  },
+  "canDo": ["Ask how much something costs", "Understand a price in pesos", "Ask for the check and pay by card or cash"],
+  "items": [
+    { "target": "uno, dos, tres", "roman": "uno, dos, tres", "english": "one, two, three", "role": "produce" },
+    { "target": "cuatro, cinco", "roman": "cuatro, cinco", "english": "four, five", "role": "produce" },
+    { "target": "diez", "roman": "diez", "english": "ten", "role": "produce", "note": "veinte = 20, cincuenta = 50, cien = 100." },
+    { "target": "¿cuánto cuesta?", "roman": "¿cuánto cuesta?", "english": "how much is it?", "role": "produce" },
+    { "target": "pesos", "roman": "pesos", "english": "pesos", "role": "recognize" },
+    { "target": "la cuenta, por favor", "roman": "la cuenta, por favor", "english": "the check, please", "role": "produce" },
+    { "target": "¿tarjeta o efectivo?", "roman": "¿tarjeta o efectivo?", "english": "card or cash?", "role": "recognize", "note": "You'll be asked this constantly." },
+    { "target": "caro", "roman": "caro", "english": "expensive", "role": "produce" },
+    { "target": "la propina", "roman": "la propina", "english": "the tip", "role": "recognize", "note": "~10–15% in restaurants." }
+  ],
+  "comprehension": [
+    {
+      "ask": "¿cuánto cuesta?",
+      "reply": "son cincuenta pesos",
+      "english": "That's fifty pesos.",
+      "question": "What's the price?",
+      "choices": ["50 pesos", "15 pesos", "500 pesos", "It's free"],
+      "answer": 0
+    },
+    {
+      "ask": "la cuenta, por favor",
+      "reply": "¿va a pagar con tarjeta o efectivo?",
+      "english": "Are you paying by card or cash?",
+      "question": "What are they asking?",
+      "choices": ["How you'll pay", "If you want dessert", "Your room number", "If you're leaving a tip"],
+      "answer": 0
+    }
+  ]
+}

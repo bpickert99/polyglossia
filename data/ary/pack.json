@@ -2,6 +2,7 @@
   "code": "ary",
   "name": "Morocco (Darija)",
   "destination": "Morocco",
+  "tts": { "engine": "piper", "voice": "ar", "piperVoice": "ar_JO-kareem-medium", "preferredLangs": ["ar"], "substitutions": [] },
   "nativeName": "الدارجة المغربية",
   "flag": "🇲🇦",
   "description": "Everything you need to get around Morocco — order food, find your way, handle money and emergencies — in the month before you go. Built to make you understood, and to help you understand what comes back.",

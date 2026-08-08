@@ -1,0 +1,31 @@
+{
+  "id": "food",
+  "title": "Food & drink",
+  "tier": 1,
+  "grammar": {
+    "title": "Ordering like a local",
+    "body": "To order, point and say **para mí ___** (for me ___) or **quiero ___**. Ask **¿qué me recomienda?** for the house pick. **Picante** means spicy — in Mexico, always ask **¿con o sin chile?** Street tacos are ordered by the piece; **para llevar** = to go."
+  },
+  "canDo": ["Order food and drinks", "Say with/without something and handle spice", "Ask for a recommendation and the check"],
+  "items": [
+    { "target": "para mí ___", "roman": "para mí", "english": "for me ___ (ordering)", "role": "produce" },
+    { "target": "agua", "roman": "agua", "english": "water", "role": "produce", "note": "'agua fresca' = fruit water; 'sin hielo' = no ice." },
+    { "target": "una cerveza", "roman": "una cerveza", "english": "a beer", "role": "produce" },
+    { "target": "un café", "roman": "un café", "english": "a coffee", "role": "produce" },
+    { "target": "con / sin", "roman": "con / sin", "english": "with / without", "role": "produce", "note": "sin cebolla = without onion." },
+    { "target": "picante", "roman": "picante", "english": "spicy", "role": "produce", "note": "Ask: '¿es muy picante?'" },
+    { "target": "¿qué me recomienda?", "roman": "¿qué me recomienda?", "english": "what do you recommend?", "role": "produce" },
+    { "target": "para llevar", "roman": "para llevar", "english": "to go / takeaway", "role": "produce", "note": "To eat in: 'para aquí'." },
+    { "target": "una mesa para dos", "roman": "una mesa para dos", "english": "a table for two", "role": "produce" }
+  ],
+  "comprehension": [
+    {
+      "ask": "quiero los tacos",
+      "reply": "¿los quiere con o sin chile?",
+      "english": "Do you want them with or without chili?",
+      "question": "What are they asking?",
+      "choices": ["Whether you want them spicy", "How many you want", "If it's to go", "Your table number"],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "code": "es",
+  "name": "Mexico (Spanish)",
+  "destination": "Mexico",
+  "nativeName": "Español",
+  "flag": "🇲🇽",
+  "description": "The Spanish you need for a week or two in Mexico — order food, get around, handle money, ask for help — plus enough grammar to build your own sentences, not just recite phrases.",
+  "tts": { "engine": "espeak", "voice": "es", "preferredLangs": ["es-419", "es"], "substitutions": [] },
+  "scripts": {
+    "default": "latin",
+    "options": [ { "id": "latin", "name": "Latin letters", "verbal": false, "helper": false } ]
+  },
+  "grammarSpine": [
+    "Regular present tense, I & you first: -ar/-er/-ir verbs take -o (I) and -as/-es (you). hablo/hablas, como/comes.",
+    "Tú vs usted: use usted (polite) with strangers; it takes the 'he/she' verb form (habla, ¿cómo está?).",
+    "Gender & articles: el/la, un/una; adjectives agree (-o/-a) and usually follow the noun (agua fría).",
+    "Word order is like English (subject-verb-object); to negate, put 'no' before the verb (no entiendo).",
+    "Future = voy a + verb (voy a comer = I'm going to eat). No new tense to memorize.",
+    "Power-words (fixed): quiero (I want), necesito (I need), tengo (I have), hay (there is), me gusta (I like).",
+    "ser vs estar (both 'to be'): ser for who/what something is; estar for where it is and how you feel."
+  ],
+  "modules": [
+    { "id": "greetings", "title": "Greetings & politeness", "tier": 0, "icon": "👋", "frame": "por favor / gracias", "file": "modules/greetings.json" },
+    { "id": "repair", "title": "Getting unstuck", "tier": 0, "icon": "🆘", "frame": "no entiendo", "file": "modules/repair.json" },
+    { "id": "numbers-money", "title": "Numbers & money", "tier": 0, "icon": "💵", "frame": "¿cuánto cuesta?", "file": "modules/numbers-money.json" },
+    { "id": "emergencies", "title": "Emergencies & health", "tier": 0, "icon": "🚑", "frame": "necesito ___", "file": "modules/emergencies.json" },
+    { "id": "verbs", "title": "Saying what you do", "tier": 1, "icon": "🗣️", "frame": "quiero / voy a ___", "file": "modules/verbs.json" },
+    { "id": "directions", "title": "Directions & transport", "tier": 1, "icon": "🧭", "frame": "¿dónde está ___?", "file": "modules/directions.json" },
+    { "id": "food", "title": "Food & drink", "tier": 1, "icon": "🌮", "frame": "para mí ___", "file": "modules/food.json" }
+  ]
+}

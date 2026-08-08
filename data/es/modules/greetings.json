@@ -1,0 +1,23 @@
+{
+  "id": "greetings",
+  "title": "Greetings & politeness",
+  "tier": 0,
+  "grammar": {
+    "title": "A little politeness goes far",
+    "body": "Mexicans are warm and formal with strangers. Lead with **buenos días** and **por favor / gracias** and you'll be treated kindly. Use **usted** (the polite 'you') with people you don't know — more on that soon."
+  },
+  "canDo": ["Greet people at the right time of day", "Say please, thank you, and excuse me", "Introduce yourself politely"],
+  "items": [
+    { "target": "hola", "roman": "hola", "english": "hi / hello", "role": "produce" },
+    { "target": "buenos días", "roman": "buenos días", "english": "good morning", "role": "produce", "note": "Afternoon: buenas tardes. Evening/night: buenas noches." },
+    { "target": "gracias", "roman": "gracias", "english": "thank you", "role": "produce" },
+    { "target": "de nada", "roman": "de nada", "english": "you're welcome", "role": "recognize" },
+    { "target": "por favor", "roman": "por favor", "english": "please", "role": "produce" },
+    { "target": "sí / no", "roman": "sí / no", "english": "yes / no", "role": "produce" },
+    { "target": "perdón", "roman": "perdón", "english": "excuse me / sorry", "role": "produce", "note": "To get past someone or apologize. 'Con permiso' to squeeze by." },
+    { "target": "¿cómo está?", "roman": "¿cómo está?", "english": "how are you? (polite)", "role": "produce", "note": "Informal, to a friend: ¿cómo estás?" },
+    { "target": "bien, gracias", "roman": "bien, gracias", "english": "fine, thanks", "role": "produce" },
+    { "target": "mucho gusto", "roman": "mucho gusto", "english": "nice to meet you", "role": "produce" },
+    { "target": "adiós", "roman": "adiós", "english": "goodbye", "role": "produce", "note": "Casual: 'nos vemos' (see you)." }
+  ]
+}

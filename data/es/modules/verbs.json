@@ -1,0 +1,21 @@
+{
+  "id": "verbs",
+  "title": "Saying what you do",
+  "tier": 1,
+  "grammar": {
+    "title": "Five power-words that do everything",
+    "body": "You don't need to conjugate much to get by. Master these fixed forms and add a noun or an infinitive: **quiero** (I want), **necesito** (I need), **tengo** (I have), **hay** (there is/are), **voy a** (I'm going to). 'Quiero un café', 'voy a comer'."
+  },
+  "canDo": ["Say what you want, need, and have", "Ask if something exists or is available", "Say what you're going to do next"],
+  "items": [
+    { "target": "quiero ___", "roman": "quiero", "english": "I want ___", "role": "produce", "note": "Softer/politer: 'quisiera' (I'd like)." },
+    { "target": "necesito ___", "roman": "necesito", "english": "I need ___", "role": "produce" },
+    { "target": "tengo ___", "roman": "tengo", "english": "I have ___", "role": "produce" },
+    { "target": "hay ___", "roman": "hay", "english": "there is / there are ___", "role": "produce", "note": "Question: '¿hay ___?' = is there ___?" },
+    { "target": "voy a ___", "roman": "voy a", "english": "I'm going to ___", "role": "produce", "note": "Add a verb: voy a comer, voy a pagar." },
+    { "target": "me gusta ___", "roman": "me gusta", "english": "I like ___", "role": "produce" },
+    { "target": "¿tiene ___?", "roman": "¿tiene", "english": "do you have ___?", "role": "produce", "note": "To a shop/waiter (polite 'you have')." },
+    { "target": "puedo ___", "roman": "puedo", "english": "I can / may I ___", "role": "produce", "note": "'¿puedo pagar con tarjeta?' = may I pay by card?" },
+    { "target": "comer / beber / ir", "roman": "comer / beber / ir", "english": "to eat / drink / go", "role": "recognize", "note": "Infinitives — the form you use after 'voy a' and 'quiero'." }
+  ]
+}

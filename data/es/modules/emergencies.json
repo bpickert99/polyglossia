@@ -1,0 +1,31 @@
+{
+  "id": "emergencies",
+  "title": "Emergencies & health",
+  "tier": 0,
+  "grammar": {
+    "title": "The words you hope not to need",
+    "body": "Learn these cold. **Ayuda** (help), **necesito un doctor**, and **¿dónde está el baño?** are the ones you'll actually use. Mexico's emergency number is **911**. A **farmacia** can help with minor things fast."
+  },
+  "canDo": ["Ask for help, a doctor, or the police", "Find the bathroom", "Say you're sick or allergic to something"],
+  "items": [
+    { "target": "ayuda", "roman": "ayuda", "english": "help", "role": "produce", "note": "Shout it if you need to: '¡Ayuda!'" },
+    { "target": "necesito un doctor", "roman": "necesito un doctor", "english": "I need a doctor", "role": "produce" },
+    { "target": "estoy enfermo", "roman": "estoy enfermo", "english": "I'm sick", "role": "produce", "note": "A woman says: estoy enferma." },
+    { "target": "el hospital", "roman": "el hospital", "english": "the hospital", "role": "produce" },
+    { "target": "la policía", "roman": "la policía", "english": "the police", "role": "produce" },
+    { "target": "¿dónde está el baño?", "roman": "¿dónde está el baño?", "english": "where's the bathroom?", "role": "produce" },
+    { "target": "soy alérgico a ___", "roman": "soy alérgico a", "english": "I'm allergic to ___", "role": "produce", "note": "Woman: soy alérgica. e.g. …a los cacahuates (peanuts)." },
+    { "target": "me duele aquí", "roman": "me duele aquí", "english": "it hurts here", "role": "produce", "note": "Point as you say it." },
+    { "target": "la farmacia", "roman": "la farmacia", "english": "the pharmacy", "role": "recognize" }
+  ],
+  "comprehension": [
+    {
+      "ask": "¿dónde está el hospital?",
+      "reply": "está muy cerca, a dos calles",
+      "english": "It's very close, two streets away.",
+      "question": "How far is the hospital?",
+      "choices": ["Two streets away", "Very far", "Next country over", "There isn't one"],
+      "answer": 0
+    }
+  ]
+}

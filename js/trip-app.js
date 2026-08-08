@@ -19,8 +19,8 @@ import { primeTTS } from "./tts.js";
 
 const app = document.getElementById("app");
 
-// The pack catalog. One for now; adding a language = adding a code here + data.
-const CATALOG = ["ary"];
+// The pack catalog. Adding a language = adding a code here + a data/<code> pack.
+const CATALOG = ["es", "ary"];
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const today = () => new Date().toISOString().slice(0, 10);
@@ -35,9 +35,11 @@ async function ensureLoaded(code) {
   const [pack, grammar, foundations] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code)]);
   const moduleItems = await loadPackModules(code, pack);
   const sequence = sequenceRungs(grammar.rungs || []);
+  // Each pack carries its own TTS config; fall back to a plain eSpeak voice
+  // named after the code (fine for Latin-script languages like Spanish).
   const course = {
     code, name: pack.name,
-    tts: { engine: "piper", voice: "ar", piperVoice: "ar_JO-kareem-medium", preferredLangs: ["ar"], substitutions: [] },
+    tts: pack.tts || { engine: "espeak", voice: code, preferredLangs: [code], substitutions: [] },
   };
   const entry = { pack, moduleItems, grammar, sequence, foundations, course };
   loaded.set(code, entry);
@@ -258,6 +260,18 @@ function renderCaughtUp() {
 
 // ---------- Start / onboarding ----------
 
+// Script picker for the selected pack. A single-script (Latin) language needs
+// no choice; a pack with options (Darija: Arabizi vs Arabic) renders radios.
+function scriptChoices(code) {
+  const opts = catalogPacks.get(code)?.scripts?.options || [];
+  if (opts.length <= 1) return "";
+  const desc = { arabizi: "how locals text", arabic: "with a Latin helper line" };
+  return `<label class="trip-label">How do you want to read it?</label>
+    <div class="trip-choices">${opts.map((o, i) => `
+      <label class="trip-choice"><input type="radio" name="script" value="${esc(o.id)}" ${i === 0 ? "checked" : ""}>
+        <b>${esc(o.name)}</b>${desc[o.id] ? `<span>${esc(desc[o.id])}</span>` : ""}</label>`).join("")}</div>`;
+}
+
 function renderStart() {
   const min = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
   const def = new Date(Date.now() + 21 * 86400000).toISOString().slice(0, 10);
@@ -278,24 +292,24 @@ function renderStart() {
       <label class="trip-label">When do you leave?</label>
       <input type="date" id="depart" min="${min}" value="${def}" class="trip-input">
 
-      <label class="trip-label">How do you want to read it?</label>
-      <div class="trip-choices">
-        <label class="trip-choice"><input type="radio" name="script" value="arabizi" checked>
-          <b>Latin letters</b><span>salam, shukran — how locals text</span></label>
-        <label class="trip-choice"><input type="radio" name="script" value="arabic">
-          <b>Native script</b><span>with a Latin helper line</span></label>
-      </div>
+      <div id="script-slot">${scriptChoices(CATALOG[0])}</div>
 
       <button class="btn wide big" id="go">Start my countdown</button>
     </div>
     ${listTrips().length ? tabbar("today") : ""}`;
 
+  // Script options depend on the destination — a Latin-script language (Spanish)
+  // has nothing to choose; Darija offers Arabizi vs Arabic script.
+  const slot = app.querySelector("#script-slot");
+  app.querySelector("#pack").addEventListener("change", (e) => { slot.innerHTML = scriptChoices(e.target.value); });
+
   app.querySelector("#go").addEventListener("click", async () => {
     const packCode = app.querySelector("#pack").value;
     const departureDate = app.querySelector("#depart").value;
     if (!departureDate) return;
-    const scriptMode = app.querySelector('input[name="script"]:checked').value;
+    const picked = app.querySelector('input[name="script"]:checked');
     const p = catalogPacks.get(packCode);
+    const scriptMode = picked ? picked.value : (p.scripts?.default || "latin");
     addTrip({
       packCode, packName: p.name, flag: p.flag, destination: p.destination,
       departureDate, scriptMode, helper: scriptMode === "arabic",
