@@ -49,6 +49,30 @@ async function ensureLoaded(code) {
 
 const recordsFor = (code) => new Map(getItems(code).map((i) => [i.key, i]));
 
+// ---- destination tinting: the whole app takes the active pack's accent ----
+function tintFor(pack) {
+  const dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return (dark && pack?.accentDark) || pack?.accent || "#c9720a";
+}
+function applyTint(pack) {
+  const a = tintFor(pack);
+  const root = document.documentElement.style;
+  root.setProperty("--accent", a);
+  root.setProperty("--accent-soft", `color-mix(in srgb, ${a} 14%, transparent)`);
+}
+
+// A split-flap countdown: the days-to-go as two hinged departure-board digits.
+function splitFlap(n) {
+  const s = String(Math.max(0, n)).padStart(2, "0");
+  return `<div class="flaps flip">${[...s].map((d) => `<span class="flap-d">${esc(d)}</span>`).join("")}</div>`;
+}
+
+const shortDate = (iso) => {
+  try { return new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" }).toUpperCase(); }
+  catch { return ""; }
+};
+const airportOf = (code) => catalogPacks.get(code)?.airport || (catalogPacks.get(code)?.destination || code || "").slice(0, 3).toUpperCase();
+
 async function boot() {
   await Promise.all(CATALOG.map(async (c) => catalogPacks.set(c, await loadPack(c))));
   initSync().catch(() => {});
@@ -71,13 +95,18 @@ async function route() {
 }
 
 function tabbar(active) {
-  const tab = (id, icon, label) =>
-    `<a class="tabx ${active === id ? "on" : ""}" href="#${id === "today" ? "" : id}">
-       <span class="tabx-i">${icon}</span><span class="tabx-l">${label}</span></a>`;
+  const icons = {
+    today: '<svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/></svg>',
+    review: '<svg viewBox="0 0 24 24"><rect x="4" y="6" width="12" height="14" rx="2"/><path d="M8 4h12v14"/></svg>',
+    account: '<svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="17" r="2"/><path d="M8 7h6a4 4 0 0 1 0 8h-4"/></svg>',
+  };
+  const tab = (id, href, label) =>
+    `<a class="tabx ${active === id ? "on" : ""}" href="#${href}">
+       <span class="tabx-i">${icons[id]}</span><span class="tabx-l">${label}</span></a>`;
   return `<nav class="tabbar">
-    ${tab("today", "📅", "Today")}
-    ${tab("review", "🔁", "Review")}
-    ${tab("account", "👤", "Account")}
+    ${tab("today", "", "Today")}
+    ${tab("review", "review", "Practice")}
+    ${tab("account", "account", "Trip")}
   </nav>`;
 }
 
@@ -88,6 +117,8 @@ async function renderToday() {
   if (!trip) return renderStart();
   const { pack, moduleItems, grammar, sequence, foundations, course } = await ensureLoaded(trip.packCode);
 
+  applyTint(pack); // whole app takes this destination's colour
+
   const departure = departureTs(trip.departureDate);
   const now = Date.now();
   const records = recordsFor(trip.packCode);
@@ -97,17 +128,11 @@ async function renderToday() {
   const gramPct = Math.round(gram.overall * 100);
   const doneToday = trip.lastLesson === today();
 
-  const phaseNote = {
-    ramp: "Learning new words and grammar, and locking them in.",
-    taper: "Final days — no new material, just making everything stick.",
-    panic: "Not much time — drilling the essentials hard.",
-  }[plan.phase] || "";
-
   const inScope = pack.modules.filter((m) => plan.scope.some((i) => i.moduleId === m.id));
   const bars = inScope.map((m) => {
     const frac = plan.readiness.byModule[m.id] || 0;
     return `<div class="mod-row">
-      <span class="mod-name">${esc(m.icon)} ${esc(m.title)}</span>
+      <span class="mod-name">${esc(m.title)}</span>
       <span class="mod-bar"><span style="width:${Math.round(frac * 100)}%"></span></span>
     </div>`;
   }).join("");
@@ -122,40 +147,58 @@ async function renderToday() {
   canDoItems.sort((a, b) => (b.done - a.done)); // achieved first
   const canDoDone = canDoItems.filter((c) => c.done).length;
 
+  // Itinerary rail — the whole trip previewed as legs (shown only when there's
+  // more than one). The active leg's node is lit in the destination's colour.
+  const legs = listTrips();
+  const legIdx = legs.findIndex((t) => t.id === trip.id);
+  const rail = legs.length > 1
+    ? `<div class="trip-rail"><span>${esc(airportOf(legs[0].packCode))}</span>${legs.map((t, i) =>
+        `${i ? '<span class="line"></span>' : ""}<span class="node ${t.id === trip.id ? "on" : ""}" title="${esc(t.destination || "")}"></span>`).join("")}<span>${esc(airportOf(legs[legs.length - 1].packCode))}</span></div>`
+    : "";
+
   app.innerHTML = `
     <div class="trip-dash">
-      <div class="trip-top">
-        <span class="trip-topleft"><span class="trip-flag-sm">${pack.flag || "🌍"}</span> <span class="trip-dest">${esc(pack.destination)}</span></span>
-        ${trip.streak ? `<span class="trip-streak" title="${trip.streak}-day streak">🔥 ${trip.streak}</span>` : ""}
+      ${rail}
+      <div class="pass">
+        <div class="pass-top">
+          <div>
+            <div class="pass-label">Boarding prep${legs.length > 1 ? ` · Leg ${legIdx + 1}` : ""}</div>
+            <div class="dest">${esc(pack.destination)}</div>
+            <div class="dest-sub">${esc(pack.nativeName || pack.name)}</div>
+          </div>
+          <div class="code">${esc(airportOf(trip.packCode))}<small>${shortDate(trip.departureDate)}</small></div>
+        </div>
+        <div class="perf"></div>
+        <div class="pass-bottom">
+          <div><div>${splitFlap(plan.daysLeft)}</div><div class="flap-cap">${plan.daysLeft === 1 ? "day" : "days"} to go</div></div>
+          <div class="readouts">
+            <div class="rlabel"><span>Readiness</span><b>${wordsPct}%</b></div>
+            <div class="rbar"><i style="width:${wordsPct}%"></i></div>
+            <div class="rlabel"><span>Grammar</span><b>${gramPct}%</b></div>
+            <div class="rbar"><i style="width:${gramPct}%"></i></div>
+          </div>
+        </div>
       </div>
-
-      <div class="countdown">
-        <div class="count-num">${plan.daysLeft}</div>
-        <div class="count-label">${plan.daysLeft === 1 ? "day" : "days"} to go</div>
-      </div>
-
-      <div class="rings">
-        ${ring(wordsPct, "Words", "#2e9e5b")}
-        ${ring(gramPct, "Grammar", "#3a7bd5")}
-      </div>
-      <p class="phase-note">${esc(phaseNote)}</p>
 
       ${doneToday
-        ? `<div class="done-today">✅ Today's lesson done — come back tomorrow.</div>
+        ? `<div class="done-today">Today’s briefing cleared — back tomorrow.</div>
            <button class="btn wide ghost" id="again">Practice again anyway</button>`
-        : `<button class="btn wide big" id="start">Start today's lesson</button>
-           <button class="btn wide ghost" id="express">⏱️ Short on time? Quick 10 min</button>
-           <p class="trip-fine">${plan.newCount} new · ${plan.reviewCount} to review</p>`}
+        : `<div class="trip-cta"><button class="btn wide big" id="start">Begin today’s briefing →</button></div>
+           <button class="btn wide ghost" id="express">Short on time? Quick 10 min</button>
+           <p class="trip-fine">${plan.newCount} NEW · ${plan.reviewCount} TO REVIEW</p>`}
+
+      ${plan.module ? `<p class="trip-brief">Today: <b>${esc(plan.module.title)}</b></p>` : ""}
 
       ${canDoItems.length ? `<div class="cando">
         <h3>Trip checklist <span class="cando-count">${canDoDone} / ${canDoItems.length}</span></h3>
-        <ul>${canDoItems.map((c) => `<li class="${c.done ? "done" : "pending"}">${c.done ? "✓" : "○"} ${esc(c.text)}</li>`).join("")}</ul>
+        <ul>${canDoItems.map((c) => `<li class="${c.done ? "done" : "pending"}">${esc(c.text)}</li>`).join("")}</ul>
       </div>` : ""}
 
       ${scenarioUnlocked(records)
-        ? `<div class="scn-lock">🎬 In-the-wild practice is on — finish today's lesson to rehearse a real scene. Sign in on <b>Account</b> to enable it.</div>`
-        : `<div class="scn-lock">🎬 In-the-wild scenarios unlock as you learn — <b>${Math.round(scenarioProgress(records) * 100)}%</b> of the way there.</div>`}
+        ? `<div class="scn-lock">In-the-wild practice is on — finish today’s briefing to rehearse a real scene. Sign in on <b>Trip</b> to enable it.</div>`
+        : `<div class="scn-lock">In-the-wild scenarios unlock as you learn — <b>${Math.round(scenarioProgress(records) * 100)}%</b> of the way there.</div>`}
 
+      <span class="sec-label">Readiness by area</span>
       <div class="mod-list">${bars || ""}</div>
     </div>
     ${tabbar("today")}`;
@@ -164,13 +207,6 @@ async function renderToday() {
   app.querySelector("#start")?.addEventListener("click", () => startLesson(trip, ld));
   app.querySelector("#again")?.addEventListener("click", () => startLesson(trip, ld));
   app.querySelector("#express")?.addEventListener("click", () => startLesson(trip, ld, { express: true }));
-}
-
-function ring(pct, label, color) {
-  return `<div class="ring-wrap">
-    <div class="ready-ring" style="--pct:${pct};--ring:${color}"><span>${pct}%</span></div>
-    <div class="ring-label">${esc(label)}</div>
-  </div>`;
 }
 
 const EXPRESS_NEW = 2; // new words in a quick lesson
@@ -198,6 +234,7 @@ async function startLesson(trip, ld, opts = {}) {
   if (express) {
     return renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
       backHref: "#", isPractice: false, noAutoplay: true, onComplete: markDone, onDone: finishToday,
+      terminal: true, stampCode: airportOf(trip.packCode),
     });
   }
 
@@ -209,6 +246,7 @@ async function startLesson(trip, ld, opts = {}) {
 
   renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
     backHref: "#", isPractice: false, noAutoplay: true,
+    terminal: true, stampCode: airportOf(trip.packCode),
     onComplete: markDone,
     onExhausted: dayExtender(trip, ld, plan),
     explain: (ctx) => explainMistake({
@@ -400,8 +438,12 @@ function renderStart() {
 
   // Script options depend on the destination — a Latin-script language (Spanish)
   // has nothing to choose; Darija offers Arabizi vs Arabic script.
+  applyTint(catalogPacks.get(CATALOG[0]));
   const slot = app.querySelector("#script-slot");
-  app.querySelector("#pack").addEventListener("change", (e) => { slot.innerHTML = scriptChoices(e.target.value); });
+  app.querySelector("#pack").addEventListener("change", (e) => {
+    slot.innerHTML = scriptChoices(e.target.value);
+    applyTint(catalogPacks.get(e.target.value));
+  });
 
   app.querySelector("#go").addEventListener("click", async () => {
     const packCode = app.querySelector("#pack").value;
@@ -422,6 +464,7 @@ function renderStart() {
 // scope, daily load, and the taper — so the plan is visible before day one.
 async function renderPlanSummary(trip) {
   const ld = await ensureLoaded(trip.packCode);
+  applyTint(ld.pack);
   const departure = departureTs(trip.departureDate);
   const plan = buildDailyPlan(ld.pack, ld.moduleItems, recordsFor(trip.packCode), { departure, now: Date.now() });
   const words = plan.scopeCount;
@@ -456,6 +499,7 @@ async function renderReviewTab() {
   const trip = getActiveTrip();
   if (!trip) { location.hash = ""; return route(); }
   const ld = await ensureLoaded(trip.packCode);
+  applyTint(ld.pack);
   Object.assign(reviewCtx, {
     app, code: trip.packCode, course: ld.course, pack: ld.pack,
     moduleItems: ld.moduleItems, grammar: ld.grammar, sequence: ld.sequence,
@@ -471,28 +515,29 @@ function renderAccount() {
   const activeId = getActiveTrip()?.id;
   const user = getUser();
 
-  const rows = trips.map((t) => {
+  const rows = trips.map((t, i) => {
     const d = t.departureDate ? Math.max(0, Math.ceil((departureTs(t.departureDate) - Date.now()) / 86400000)) : 0;
-    return `<div class="acct-course ${t.id === activeId ? "on" : ""}">
+    const accent = tintFor(catalogPacks.get(t.packCode));
+    return `<div class="acct-course ${t.id === activeId ? "on" : ""}" style="--accent:${accent}">
       <div class="acct-course-main" data-activate="${t.id}">
         <span class="acct-flag">${esc(t.flag || "🌍")}</span>
         <span>
           <b>${esc(t.destination || t.packName || t.packCode)}</b>
-          <span class="acct-sub">${d} ${d === 1 ? "day" : "days"} to go${t.id === activeId ? " · active" : ""}</span>
+          <span class="acct-sub">${esc(airportOf(t.packCode))} · ${d} ${d === 1 ? "day" : "days"} to go${t.id === activeId ? " · leg active" : ""}</span>
         </span>
       </div>
-      <button class="acct-del" data-delete="${t.id}" title="Delete course">🗑️</button>
+      <button class="acct-del" data-delete="${t.id}" title="Remove this leg">✕</button>
     </div>`;
   }).join("");
 
   app.innerHTML = `
     <div class="trip-account">
-      <h1 class="rv-title">Account</h1>
+      <h1 class="rv-title">Your itinerary</h1>
 
       <div class="acct-section">
-        <h3>Your courses</h3>
-        ${rows || `<p class="rv-empty">No courses yet.</p>`}
-        <a class="btn ghost wide" href="#" id="add">+ Plan another trip</a>
+        <h3>Legs of your trip</h3>
+        ${rows || `<p class="rv-empty">No destinations yet.</p>`}
+        <a class="btn ghost wide" href="#" id="add">+ Add a destination</a>
       </div>
 
       <div class="acct-section" id="sync-card"></div>

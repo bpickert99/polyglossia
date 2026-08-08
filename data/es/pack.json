@@ -4,6 +4,9 @@
   "destination": "Mexico",
   "nativeName": "Español",
   "flag": "🇲🇽",
+  "airport": "MEX",
+  "accent": "#c0397b",
+  "accentDark": "#e05f9c",
   "description": "The Spanish you need for a week or two in Mexico — order food, get around, handle money, ask for help — plus enough grammar to build your own sentences, not just recite phrases.",
   "tts": { "engine": "espeak", "voice": "es", "preferredLangs": ["es-419", "es"], "substitutions": [] },
   "scripts": {

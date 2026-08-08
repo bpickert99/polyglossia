@@ -769,14 +769,30 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       ? `${acc}% accuracy — the ${missed === 1 ? "one you missed is" : `${missed} you missed are`} queued for extra review`
       : `${acc}% — no mistakes. Nicely done.`;
     const href = opts.isPractice ? "#/" : backHref;
-    app.innerHTML = `
-      <div class="complete">
-        <div class="big-emoji">${opts.isPractice ? "💪" : "🎉"}</div>
-        <h1>${opts.isPractice ? "Practice complete!" : "Lesson complete!"}</h1>
-        <p>${sub}</p>
-        <div class="xp-chip">+${correctCount * XP_PER_EXERCISE + XP_LESSON_BONUS} XP</div>
-        <div><a class="btn wide" id="lesson-continue" href="${href}">Continue</a></div>
-      </div>`;
+    // Terminal identity (trip app): the day is stamped cleared — real movement,
+    // not confetti and XP. The classic app keeps the celebration screen.
+    if (opts.terminal) {
+      const moved = missed > 0
+        ? `${missed} ${missed === 1 ? "item" : "items"} flagged to revisit tomorrow.`
+        : "No mistakes — everything held.";
+      app.innerHTML = `
+        <div class="complete">
+          <span class="eyebrow">Briefing cleared</span>
+          <h1>Nicely done.</h1>
+          <div class="stamp"><span class="xl">Cleared</span>${esc(opts.stampCode || "")} · ${acc}%</div>
+          <p class="delta">${esc(moved)}</p>
+          <a class="btn wide ghost" id="lesson-continue" href="${href}">Back to the terminal</a>
+        </div>`;
+    } else {
+      app.innerHTML = `
+        <div class="complete">
+          <div class="big-emoji">${opts.isPractice ? "💪" : "🎉"}</div>
+          <h1>${opts.isPractice ? "Practice complete!" : "Lesson complete!"}</h1>
+          <p>${sub}</p>
+          <div class="xp-chip">+${correctCount * XP_PER_EXERCISE + XP_LESSON_BONUS} XP</div>
+          <div><a class="btn wide" id="lesson-continue" href="${href}">Continue</a></div>
+        </div>`;
+    }
     // A plain href to "#" doesn't re-route when we're already at "#", so let the
     // caller decide what "done" navigates to.
     app.querySelector("#lesson-continue")?.addEventListener("click", (e) => {

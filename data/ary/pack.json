@@ -5,6 +5,9 @@
   "tts": { "engine": "piper", "voice": "ar", "piperVoice": "ar_JO-kareem-medium", "preferredLangs": ["ar"], "substitutions": [] },
   "nativeName": "الدارجة المغربية",
   "flag": "🇲🇦",
+  "airport": "RAK",
+  "accent": "#c9720a",
+  "accentDark": "#e8930c",
   "description": "Everything you need to get around Morocco — order food, find your way, handle money and emergencies — in the month before you go. Built to make you understood, and to help you understand what comes back.",
   "scripts": {
     "default": "arabizi",
