@@ -128,7 +128,7 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   const newRungExercises = [];
   const reviewRungExercises = [];
   let newRung = null;
-  if (sequence.length && plan.phase !== "taper") {
+  if (sequence.length && plan.phase !== "taper" && !opts.noNewGrammar) {
     newRung = nextRung(sequence, records);
     if (newRung) {
       grammar.push(rungNote(newRung));

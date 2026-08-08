@@ -82,7 +82,13 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   const approx = ttsMode(course) === "approximate";
   const ttsBadge = approx ? `<span class="tts-badge">≈ approx.</span>` : "";
   const backHref = opts.backHref || `#/unit/${esc(unitId)}`;
-  const resolveKeys = makeKeyResolver(lesson.teach);
+  // teachAll accumulates every taught item — the initial lesson plus anything an
+  // extension segment adds mid-session — so the key resolver keeps mapping
+  // exercises to items after the day is lengthened. Rebound by pushParts().
+  const teachAll = [...(lesson.teach || [])];
+  let resolveKeys = makeKeyResolver(teachAll);
+  const startedAt = Date.now(); // for the time-budgeted day (see day-engine.js)
+  let extendRounds = 0, consolidations = 0;
   primeTTS(); // start loading the phonemic engine so the first word is ready (fallback path)
 
   // A pre-rendered natural-audio path, resolved relative to the course's data dir.
@@ -108,31 +114,47 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   // with something familiar, not a wall of new material), then teach cards,
   // notes, and the rest of the lesson's exercises.
   const steps = [];
-  for (const note of lesson.foundations || []) steps.push({ kind: "foundations", note, section: "Read" });
-  for (const ex of lesson.warmup || []) steps.push({ kind: "exercise", ex, section: "Warm-up" });
-  for (const item of lesson.teach || []) steps.push({ kind: "teach", item, section: "Words" });
-  for (const note of lesson.grammar || []) steps.push({ kind: "grammar", note, section: "Grammar" });
-  for (const note of lesson.culture || []) steps.push({ kind: "culture", note, section: "Culture" });
-  for (const ex of lesson.exercises || []) steps.push({ kind: "exercise", ex, section: "Practice" });
-
-  const totalPlanned = steps.length;
+  let sections = [];
   let stepIndex = 0;
   let correctCount = 0;
   let exercisesDone = 0;
 
+  // Turn a lesson (or an extension segment with the same shape) into steps and
+  // append them. Used for the initial lesson and again each time the day is
+  // lengthened, so one code path builds every segment. An optional banner note
+  // leads the segment to explain why the lesson kept going.
+  function pushParts(parts) {
+    const before = steps.length;
+    if (parts.banner) steps.push({ kind: "note", note: parts.banner, section: parts.banner.section || "More" });
+    for (const note of parts.foundations || []) steps.push({ kind: "foundations", note, section: "Read" });
+    for (const ex of parts.warmup || []) steps.push({ kind: "exercise", ex, section: "Warm-up" });
+    for (const item of parts.teach || []) { steps.push({ kind: "teach", item, section: "Words" }); teachAll.push(item); }
+    for (const note of parts.grammar || []) steps.push({ kind: "grammar", note, section: "Grammar" });
+    for (const note of parts.culture || []) steps.push({ kind: "culture", note, section: "Culture" });
+    for (const ex of parts.exercises || []) steps.push({ kind: "exercise", ex, section: "Practice" });
+    resolveKeys = makeKeyResolver(teachAll);
+    rebuildSections();
+    return steps.length - before;
+  }
+
   function progressPct() {
-    return Math.min(100, Math.round((stepIndex / Math.max(totalPlanned, steps.length)) * 100));
+    return Math.min(100, Math.round((stepIndex / Math.max(1, steps.length)) * 100));
   }
 
   // The named sections in order, each with its step range — for the segmented
   // progress rail (a learner sees where they are across the whole lesson, and
-  // how far in overall, not just one anonymous bar).
-  const sections = [];
-  steps.forEach((s, i) => {
-    const last = sections[sections.length - 1];
-    if (last && last.name === s.section) last.end = i + 1;
-    else sections.push({ name: s.section, start: i, end: i + 1 });
-  });
+  // how far in overall, not just one anonymous bar). Recomputed whenever steps
+  // change (a missed-item requeue, or a mid-session extension).
+  function rebuildSections() {
+    sections = [];
+    steps.forEach((s, i) => {
+      const last = sections[sections.length - 1];
+      if (last && last.name === s.section) last.end = i + 1;
+      else sections.push({ name: s.section, start: i, end: i + 1 });
+    });
+  }
+
+  pushParts(lesson);
 
   function railHtml() {
     if (sections.length < 2) return `<div class="progressbar"><div style="width:${progressPct()}%"></div></div>`;
@@ -185,14 +207,36 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       b.addEventListener("click", () => speak(b.dataset.say, course, b.dataset.audio || undefined)));
   }
 
-  function next() {
+  async function next() {
     stepIndex++;
-    if (stepIndex >= steps.length) return finish();
+    if (stepIndex >= steps.length) return maybeExtendOrFinish();
     show(steps[stepIndex]);
+  }
+
+  // When the planned steps run out, ask the caller (which owns the BirdBrain
+  // gate — see day-engine.js) whether to lengthen the day. It returns a segment
+  // of the same shape as a lesson, or null to finish. lesson.js stays dumb about
+  // the decision: it just renders whatever comes back and keeps time.
+  async function maybeExtendOrFinish() {
+    if (!opts.onExhausted) return finish();
+    let seg = null;
+    try {
+      seg = await opts.onExhausted({
+        elapsedMs: Date.now() - startedAt,
+        exercisesDone, correctCount, extendRounds, consolidations,
+      });
+    } catch { seg = null; }
+    if (!seg || !seg.parts) return finish();
+    if (seg.move === "consolidate") consolidations++;
+    else if (seg.move === "extend") extendRounds++;
+    const added = pushParts(seg.parts);
+    if (added <= 0 || stepIndex >= steps.length) return finish();
+    return show(steps[stepIndex]);
   }
 
   function show(step) {
     if (step.kind === "teach") return showTeach(step.item);
+    if (step.kind === "note") return showNote(step.note, step.note.cls || "grammar-box", step.note.tag || "");
     if (step.kind === "foundations") return showNote(step.note, "grammar-box", "📖 How to read this");
     if (step.kind === "grammar") return showNote(step.note, "grammar-box", "📐 Grammar");
     if (step.kind === "culture") return showNote(step.note, "culture-box", "🏛️ Culture note");
@@ -253,7 +297,8 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       // second try does NOT requeue again — without this cap, a learner (or
       // exercise) that keeps missing the same item could keep the session
       // growing forever with no guaranteed end.
-      steps.push({ kind: "exercise", ex: { ...ex, retry: true } });
+      steps.push({ kind: "exercise", ex: { ...ex, retry: true }, section: "Practice" });
+      rebuildSections();
     }
     // A wrong answer is exactly when the item's authored note (why this word
     // works the way it does) is worth showing — not at teach time, when the

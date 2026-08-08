@@ -7,9 +7,10 @@ import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.
 import {
   getItems, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
-import { buildDailyPlan } from "./trip.js";
+import { buildDailyPlan, syllabus } from "./trip.js";
 import { buildTripSession } from "./trip-session.js";
-import { sequenceRungs, grammarReadiness, introducedRungIds, isRungKey } from "./grammar.js";
+import { sequenceRungs, grammarReadiness, introducedRungIds, isRungKey, nextRung, rungKey } from "./grammar.js";
+import { nextMove, todayConfidence, weakKeys } from "./day-engine.js";
 import { renderLessonSession } from "./lesson.js";
 import { renderReview } from "./trip-review.js";
 import { renderScenario } from "./trip-scenario.js";
@@ -209,6 +210,7 @@ async function startLesson(trip, ld, opts = {}) {
   renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
     backHref: "#", isPractice: false, noAutoplay: true,
     onComplete: markDone,
+    onExhausted: dayExtender(trip, ld, plan),
     onDone: async () => {
       app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
       const scenario = await scenarioP;
@@ -266,6 +268,75 @@ async function maybeScenario(trip, ld, records, plan) {
   } catch {
     return null;
   }
+}
+
+// The time-budgeted day (see docs/learning-loop.md). Returns an onExhausted
+// callback for the lesson renderer: when the planned steps run out, the
+// BirdBrain gate (day-engine.js) reads time-spent + confidence in today's
+// material and decides to EXTEND (teach the next increment), CONSOLIDATE
+// (reinforce today's weak items), or wrap (return null). Pure scheduling — no
+// AI is involved in this decision.
+function dayExtender(trip, ld, plan) {
+  const syl = syllabus(ld.pack, ld.moduleItems);
+  const todayKeys = new Set(plan.todayNew.map((i) => i.key)); // grows as we extend
+  const departure = departureTs(trip.departureDate);
+
+  return async (stats) => {
+    const fresh = recordsFor(trip.packCode);
+    const isStarted = (k) => (fresh.get(k)?.reps || 0) > 0;
+    const startedRungKeys = [...introducedRungIds(fresh)].map(rungKey);
+    const confKeys = [...todayKeys, ...startedRungKeys];
+    const confidence = todayConfidence(fresh, confKeys);
+
+    const nextNew = syl.filter((i) => !isStarted(i.key));
+    const hasMore = nextNew.length > 0 || !!nextRung(ld.sequence, fresh);
+    const move = nextMove({
+      elapsedMs: stats.elapsedMs, confidence, hasMore, consolidations: stats.consolidations,
+    });
+    if (move === "wrap") return null;
+
+    const sessOpts = {
+      scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence,
+      foundations: ld.foundations, now: Date.now(), departure,
+    };
+    const startedScope = syl.filter((i) => isStarted(i.key));
+
+    if (move === "extend") {
+      const add = nextNew.slice(0, 3);
+      const plan2 = {
+        phase: "ramp", daysLeft: plan.daysLeft, todayNew: add, todayReview: [],
+        scope: [...startedScope, ...add],
+        module: (ld.pack.modules || []).find((m) => m.id === (add[0] || {}).moduleId) || plan.module,
+        readiness: { overall: 0, byModule: {} },
+      };
+      const seg = buildTripSession(ld.pack, plan2, ld.moduleItems, fresh, sessOpts);
+      if (seg.empty) return null;
+      add.forEach((i) => todayKeys.add(i.key));
+      seg.banner = {
+        tag: "🚀 Bonus", title: "You're ahead — one more",
+        body: "You've got today's material down, so let's use the time to push a little further.",
+        section: "Bonus",
+      };
+      return { move, parts: seg };
+    }
+
+    // consolidate: reinforce today's weakest items only — no new words, no new rung.
+    const weak = weakKeys(fresh, confKeys).filter((k) => !isRungKey(k));
+    const reviewItems = startedScope.filter((i) => weak.includes(i.key));
+    if (!reviewItems.length) return null;
+    const plan2 = {
+      phase: "ramp", daysLeft: plan.daysLeft, todayNew: [], todayReview: reviewItems,
+      scope: startedScope, module: plan.module, readiness: { overall: 0, byModule: {} },
+    };
+    const seg = buildTripSession(ld.pack, plan2, ld.moduleItems, fresh, { ...sessOpts, noNewGrammar: true });
+    if (seg.empty) return null;
+    seg.banner = {
+      tag: "🔁 Lock it in", title: "A little more on today's tricky bits",
+      body: "Before we stop, a quick pass over the pieces that aren't quite solid yet.",
+      section: "Reinforce",
+    };
+    return { move, parts: seg };
+  };
 }
 
 function renderCaughtUp() {
