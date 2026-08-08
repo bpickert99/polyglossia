@@ -65,13 +65,16 @@ export function distractorHardness(pCorrect) {
 
 // How many brand-new items to introduce this session. Duolingo throttles new
 // material when the learner is struggling or has a big review backlog; so do we.
-export function newItemBudget({ ability, dueCount, baseNew = 5 }) {
+// maxNew caps the result — in the trip planner it's set to the deadline-driven
+// daily quota, so ability/backlog can only pull today's dose DOWN toward comfort
+// (the upside for a confident learner is handled by extending the day instead).
+export function newItemBudget({ ability, dueCount, baseNew = 5, maxNew = 6 }) {
   let budget = baseNew;
   if (dueCount > 12) budget -= 2;        // clear the backlog first
   else if (dueCount > 6) budget -= 1;
   if ((ability ?? 0) < -0.5) budget -= 1; // shaky learner: slow down
   if ((ability ?? 0) > 1.2) budget += 1;  // confident learner: a bit faster
-  return Math.max(1, Math.min(6, budget));
+  return Math.max(1, Math.min(maxNew, budget));
 }
 
 // A rough CEFR-ish descriptor of current ability, for the stats page.

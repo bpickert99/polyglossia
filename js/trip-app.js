@@ -5,7 +5,7 @@
 //   • Account — who you are, sign out, and manage/delete courses
 import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.js";
 import {
-  getItems, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
+  getItems, getAbility, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
 import { buildDailyPlan, syllabus } from "./trip.js";
 import { buildTripSession } from "./trip-session.js";
@@ -91,7 +91,7 @@ async function renderToday() {
   const departure = departureTs(trip.departureDate);
   const now = Date.now();
   const records = recordsFor(trip.packCode);
-  const plan = buildDailyPlan(pack, moduleItems, records, { departure, now });
+  const plan = buildDailyPlan(pack, moduleItems, records, { departure, now, ability: getAbility(trip.packCode) });
   const wordsPct = Math.round(plan.readiness.overall * 100);
   const gram = grammarReadiness(sequence, records, now);
   const gramPct = Math.round(gram.overall * 100);
@@ -179,7 +179,7 @@ async function startLesson(trip, ld, opts = {}) {
   const express = !!opts.express;
   const departure = departureTs(trip.departureDate);
   const records = recordsFor(trip.packCode);
-  let plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now() });
+  let plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now(), ability: getAbility(trip.packCode) });
   // Express: keep the deadline scope intact, just cap what's introduced today so
   // it fits ~10 minutes (fewer new words → fewer new-word drills).
   if (express) plan = { ...plan, todayNew: plan.todayNew.slice(0, EXPRESS_NEW) };

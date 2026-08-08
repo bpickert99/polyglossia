@@ -9,6 +9,7 @@
 // nothing's freshly-shaky when you land, and (c) recompute the plan every day,
 // so a missed day just reflows against the (now closer) deadline.
 import { retrievability } from "./srs.js";
+import { newItemBudget } from "./birdbrain.js";
 
 export const DAY = 86400000;
 export const DEFAULTS = {
@@ -92,14 +93,21 @@ export function buildDailyPlan(pack, moduleItems, records, opts = {}) {
   const phase = inTaperWindow && essentialsCovered ? "taper"
     : daysLeft <= cfg.panicDays ? "panic" : "ramp";
 
-  const todayNew = teachNew ? newlyScoped.slice(0, perDay) : [];
-
   // Review: started, in-scope items whose effective-due has arrived, most urgent first.
   const reviewCap = phase === "ramp" ? cfg.reviewCapRamp : cfg.reviewCapFinal;
   const todayReview = scope
     .filter((i) => started(rec(i.key)) && effectiveDue(rec(i.key), departure) <= now)
     .sort((a, b) => effectiveDue(rec(a.key), departure) - effectiveDue(rec(b.key), departure))
     .slice(0, reviewCap);
+
+  // Today's NEW dose: the deadline sets the quota (perDay); BirdBrain then only
+  // throttles it DOWN for a shaky learner or a big review backlog. The upside
+  // for a confident learner is handled by extending the day (see day-engine.js),
+  // so maxNew is pinned to perDay — the planner never pushes past the plan.
+  const newBudget = opts.ability != null
+    ? newItemBudget({ ability: opts.ability, dueCount: todayReview.length, baseNew: perDay, maxNew: perDay })
+    : perDay;
+  const todayNew = teachNew ? newlyScoped.slice(0, newBudget) : [];
 
   const readiness = scopeReadiness(scope, records, now);
 

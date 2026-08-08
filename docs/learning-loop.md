@@ -70,6 +70,7 @@ unavailable: **AI is never load-bearing.**
 
 - [x] `day-engine.js` — time budget + extend/consolidate/wrap gate (BirdBrain-only)
 - [x] session-time instrumentation + dynamic segment appending in `lesson.js`
-- [ ] wire BirdBrain `newItemBudget` into the daily planner
+- [x] wire BirdBrain `newItemBudget` into the daily planner (throttles today's
+      new dose down for a shaky/backlogged learner; the upside is EXTEND's job)
 - [ ] learner-snapshot sync + graded, target-declaring AI drills
 - [ ] AI error-explanations + leech remediation
