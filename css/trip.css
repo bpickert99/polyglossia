@@ -38,6 +38,11 @@ body { padding-bottom: 76px; } /* clear the fixed tab bar */
 .phase-note { text-align: center; color: var(--muted, #77736c); font-size: .88rem; margin: 6px 0 18px; }
 .trip-dest { font-weight: 700; color: var(--muted, #77736c); }
 .trip-topleft { display: inline-flex; align-items: center; gap: 8px; }
+.plan-card { text-align: left; background: rgba(127, 127, 127, .07); border-radius: 16px; padding: 8px 18px; margin: 20px 0; }
+.plan-row { display: flex; align-items: baseline; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(127, 127, 127, .12); }
+.plan-row:last-child { border-bottom: none; }
+.plan-big { font-size: 1.8rem; font-weight: 800; min-width: 56px; text-align: right; color: #2e9e5b; }
+.plan-row span:last-child { color: var(--muted, #77736c); font-size: .92rem; }
 .trip-streak { font-weight: 800; font-size: 1.05rem; }
 
 /* ---------- can-do ---------- */

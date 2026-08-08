@@ -331,13 +331,44 @@ function renderStart() {
     const picked = app.querySelector('input[name="script"]:checked');
     const p = catalogPacks.get(packCode);
     const scriptMode = picked ? picked.value : (p.scripts?.default || "latin");
-    addTrip({
+    const t = addTrip({
       packCode, packName: p.name, flag: p.flag, destination: p.destination,
       departureDate, scriptMode, helper: scriptMode === "arabic",
     });
-    location.hash = "";
-    route();
+    renderPlanSummary(t);
   });
+}
+
+// Shown once, right after planning a trip: what the site worked out for you —
+// scope, daily load, and the taper — so the plan is visible before day one.
+async function renderPlanSummary(trip) {
+  const ld = await ensureLoaded(trip.packCode);
+  const departure = departureTs(trip.departureDate);
+  const plan = buildDailyPlan(ld.pack, ld.moduleItems, recordsFor(trip.packCode), { departure, now: Date.now() });
+  const words = plan.scopeCount;
+  const total = plan.targetCount;
+  const rungs = ld.sequence.length;
+  const perDay = plan.newCount || 5;
+  const taperDays = 3;
+  const triaged = words < total;
+
+  app.innerHTML = `
+    <div class="trip-onboard">
+      <div class="trip-flag">${ld.pack.flag || "🧳"}</div>
+      <h1>Your ${esc(ld.pack.destination)} plan</h1>
+      <p class="trip-sub">${plan.daysLeft} days to go. Here's what we'll cover, timed to peak the day you land.</p>
+
+      <div class="plan-card">
+        <div class="plan-row"><span class="plan-big">${words}</span><span>essential words${triaged ? ` (the most useful of ${total})` : ""}</span></div>
+        <div class="plan-row"><span class="plan-big">${rungs}</span><span>grammar points, one built on the last</span></div>
+        <div class="plan-row"><span class="plan-big">~${perDay}</span><span>new words a day — never a wall</span></div>
+        <div class="plan-row"><span class="plan-big">${taperDays}</span><span>final days to lock it in (no new material)</span></div>
+      </div>
+
+      <p class="trip-fine">One short lesson a day. Miss a day and the plan reflows against the new deadline.</p>
+      <button class="btn wide big" id="plan-go">Start day 1</button>
+    </div>`;
+  app.querySelector("#plan-go").addEventListener("click", () => { location.hash = ""; renderToday(); });
 }
 
 // ---------- Review ----------
