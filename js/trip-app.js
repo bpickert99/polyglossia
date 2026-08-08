@@ -111,10 +111,15 @@ async function renderToday() {
     </div>`;
   }).join("");
 
-  // Can-do: what a learner can now claim (module readiness past a threshold).
-  const canDos = inScope
-    .filter((m) => (plan.readiness.byModule[m.id] || 0) >= 0.6)
-    .flatMap((m) => (moduleItems.get(m.id)?.canDo || []).slice(0, 1));
+  // Can-do checklist: every capability in scope, checked once that module is
+  // solid (readiness past a threshold) — the motivating "am I trip-ready?" view.
+  const canDoItems = [];
+  for (const m of inScope) {
+    const done = (plan.readiness.byModule[m.id] || 0) >= 0.6;
+    for (const c of (moduleItems.get(m.id)?.canDo || [])) canDoItems.push({ text: c, done });
+  }
+  canDoItems.sort((a, b) => (b.done - a.done)); // achieved first
+  const canDoDone = canDoItems.filter((c) => c.done).length;
 
   app.innerHTML = `
     <div class="trip-dash">
@@ -140,9 +145,9 @@ async function renderToday() {
         : `<button class="btn wide big" id="start">Start today's lesson</button>
            <p class="trip-fine">${plan.newCount} new · ${plan.reviewCount} to review</p>`}
 
-      ${canDos.length ? `<div class="cando">
-        <h3>You can now</h3>
-        <ul>${canDos.map((c) => `<li>✓ ${esc(c)}</li>`).join("")}</ul>
+      ${canDoItems.length ? `<div class="cando">
+        <h3>Trip checklist <span class="cando-count">${canDoDone} / ${canDoItems.length}</span></h3>
+        <ul>${canDoItems.map((c) => `<li class="${c.done ? "done" : "pending"}">${c.done ? "✓" : "○"} ${esc(c.text)}</li>`).join("")}</ul>
       </div>` : ""}
 
       ${scenarioUnlocked(records)

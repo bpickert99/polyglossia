@@ -39,10 +39,13 @@ body { padding-bottom: 76px; } /* clear the fixed tab bar */
 .trip-dest { font-weight: 700; color: var(--muted, #77736c); }
 
 /* ---------- can-do ---------- */
-.cando { margin-top: 20px; background: rgba(46, 158, 91, .08); border-radius: 14px; padding: 12px 16px; }
-.cando h3 { margin: 0 0 6px; font-size: .9rem; }
+.cando { margin-top: 20px; background: rgba(127, 127, 127, .07); border-radius: 14px; padding: 12px 16px; }
+.cando h3 { margin: 0 0 8px; font-size: .9rem; display: flex; justify-content: space-between; align-items: baseline; }
+.cando-count { font-size: .82rem; color: var(--muted, #77736c); font-weight: 700; }
 .cando ul { margin: 0; padding: 0; list-style: none; }
-.cando li { font-size: .9rem; padding: 2px 0; }
+.cando li { font-size: .9rem; padding: 3px 0; }
+.cando li.done { color: inherit; }
+.cando li.pending { color: var(--muted, #77736c); }
 
 /* ---------- review ---------- */
 .trip-review, .trip-account { max-width: 460px; margin: 0 auto; padding: 16px 20px 24px; }
