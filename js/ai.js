@@ -77,20 +77,32 @@ export async function generateScenario(payload) {
 
 // Fresh recombinant production drills for the daily lesson (works from day one,
 // not gated). Returns typed-exercise objects ready for the lesson renderer, or
-// [] on any failure. keys:[] so they don't corrupt FSRS — pure extra practice.
+// [] on any failure.
+//
+// Each drill declares the ONE known word it primarily trains (its "target").
+// We validate that target against the taught set and, when it matches, key the
+// exercise to it so the grade feeds FSRS — closing the loop so AI tutoring moves
+// the same confidence ledger the scheduler runs on. A drill whose target we
+// can't verify stays ungraded (keys:[]) rather than corrupting a wrong item.
 export async function generatePractice(payload) {
   try {
     const c = await client();
     if (!c) return [];
     const { data, error } = await c.functions.invoke("generate-lesson", { body: { mode: "practice", ...payload } });
     if (error) { console.warn("practice generation failed:", error.message || error); return []; }
+    const knownRomans = new Set((payload.known || []).map((w) => w.roman));
     return (Array.isArray(data?.items) ? data.items : [])
       .filter((it) => it && it.instruction && it.answer)
       .slice(0, 4)
-      .map((it) => ({
-        type: "type", prompt: String(it.instruction), answer: String(it.answer),
-        accept: Array.isArray(it.accept) ? it.accept.map(String) : [], keys: [], ai: true,
-      }));
+      .map((it) => {
+        const target = typeof it.target === "string" ? it.target.trim() : "";
+        const graded = target && knownRomans.has(target);
+        return {
+          type: "type", prompt: String(it.instruction), answer: String(it.answer),
+          accept: Array.isArray(it.accept) ? it.accept.map(String) : [],
+          keys: graded ? [target] : [], ai: true,
+        };
+      });
   } catch (e) {
     console.warn("practice generation error:", e);
     return [];

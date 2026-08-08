@@ -1,7 +1,7 @@
 // Progress persistence — localStorage first, optionally synced to the cloud
 // (see sync.js). All reads/writes go through this module; anything that
 // changes state notifies subscribers so the sync layer can push.
-import { review } from "./srs.js";
+import { review, strength, isLeech } from "./srs.js";
 import { updateRatings, seedDifficulty } from "./birdbrain.js";
 
 const KEY = "polyglossia.v1";
@@ -146,6 +146,27 @@ export function resetLapseStreak(lang, key) {
 
 export function getItems(lang) {
   return Object.values(state.items).filter((i) => i.lang === lang);
+}
+
+// A distilled, compact view of the learner's confidence for the AI tutor:
+// current ability (θ) plus the words they're shakiest on, so the model can aim
+// fresh practice at what's actually weak instead of at random known words.
+// Grammar rungs (keyed "g:*") are excluded — this feeds vocabulary recombination.
+// Deliberately small (top-N weak items) to keep the AI payload cheap.
+export function learnerSnapshot(lang, { max = 8, weakBelow = 0.6 } = {}) {
+  const now = Date.now();
+  const words = getItems(lang).filter((i) => (i.reps || 0) > 0 && !String(i.key).startsWith("g:"));
+  const weak = words
+    .map((i) => ({
+      roman: i.roman || i.target || i.key,
+      english: i.english || "",
+      strength: Math.round(strength(i, now) * 100) / 100,
+      leech: isLeech(i),
+    }))
+    .filter((s) => s.leech || s.strength < weakBelow)
+    .sort((a, b) => a.strength - b.strength)
+    .slice(0, max);
+  return { ability: Math.round((state.ability[lang] ?? 0) * 100) / 100, weak };
 }
 
 // ---------- Birdbrain ability ----------

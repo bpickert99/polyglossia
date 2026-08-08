@@ -72,5 +72,9 @@ unavailable: **AI is never load-bearing.**
 - [x] session-time instrumentation + dynamic segment appending in `lesson.js`
 - [x] wire BirdBrain `newItemBudget` into the daily planner (throttles today's
       new dose down for a shaky/backlogged learner; the upside is EXTEND's job)
-- [ ] learner-snapshot sync + graded, target-declaring AI drills
+- [x] learner-snapshot + graded, target-declaring AI drills — the AI receives
+      the learner's weak spots and each drill declares the word it trains, so its
+      grade feeds FSRS (client-side live; activates fully once the Edge Function
+      redeploys — until then drills stay safely ungraded as before)
+- [ ] cross-device snapshot sync (durability layer) — snapshot is built locally today
 - [ ] AI error-explanations + leech remediation

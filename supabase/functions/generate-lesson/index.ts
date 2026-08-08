@@ -64,8 +64,15 @@ const PRACTICE_SCHEMA = {
       type: "array",
       items: {
         type: "object", additionalProperties: false,
-        properties: { instruction: { type: "string" }, answer: { type: "string" }, accept: { type: "array", items: { type: "string" } } },
-        required: ["instruction", "answer", "accept"],
+        properties: {
+          instruction: { type: "string" }, answer: { type: "string" },
+          accept: { type: "array", items: { type: "string" } },
+          // The ONE known word this drill primarily trains, copied verbatim from
+          // the known list — the client keys the exercise to it so the grade
+          // feeds that word's spaced-repetition schedule.
+          target: { type: "string" },
+        },
+        required: ["instruction", "answer", "accept", "target"],
       },
     },
   },
@@ -110,10 +117,16 @@ function scenario(body: any) {
   return callClaude(system, user, SCENARIO_SCHEMA, 3000).then((s) => ({ scenario: s }));
 }
 
+function weakBlock(body: any) {
+  const weak: { roman: string; english: string }[] = body.weak || [];
+  if (!weak.length) return "";
+  return `\n\nWEAK SPOTS — the learner is shakiest on these; favour drills that put these words to work:\n${weak.map((w) => `${w.roman} = ${w.english}`).join("\n")}`;
+}
+
 function practice(body: any) {
   const n = Math.min(4, Math.max(1, body.count || 3));
-  const system = `You write ${n} short "say it" production drills for a traveler. ${KNOWN_RULE}\n\nEach drill: an English "instruction" like "Say: I want tea", the correct romanized "answer", and an "accept" array of other acceptable spellings/word-orders (can be empty). Prefer combining known words in NEW ways (recombination), not repeating a single taught phrase. Keep answers 2–5 words.`;
-  const user = `Destination: ${body.destination || "your destination"}\nTheme: ${body.moduleTitle || "everyday situations"}\n\n${knownBlock(body)}\n\nWrite the ${n} drills now.`;
+  const system = `You write ${n} short "say it" production drills for a traveler. ${KNOWN_RULE}\n\nEach drill: an English "instruction" like "Say: I want tea", the correct romanized "answer", an "accept" array of other acceptable spellings/word-orders (can be empty), and "target" — the ONE word from the known list this drill mainly trains, copied EXACTLY as it appears there (same spelling). Prefer combining known words in NEW ways (recombination), not repeating a single taught phrase, and lean toward the weak spots below. Keep answers 2–5 words.`;
+  const user = `Destination: ${body.destination || "your destination"}\nTheme: ${body.moduleTitle || "everyday situations"}\n\n${knownBlock(body)}${weakBlock(body)}\n\nWrite the ${n} drills now.`;
   return callClaude(system, user, PRACTICE_SCHEMA, 1500);
 }
 

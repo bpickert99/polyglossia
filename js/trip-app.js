@@ -5,7 +5,7 @@
 //   • Account — who you are, sign out, and manage/delete courses
 import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.js";
 import {
-  getItems, getAbility, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
+  getItems, getAbility, learnerSnapshot, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
 import { buildDailyPlan, syllabus } from "./trip.js";
 import { buildTripSession } from "./trip-session.js";
@@ -247,9 +247,13 @@ async function injectPractice(session, ld, records, plan) {
     if (!(await isSignedIn())) return;
     const known = knownWords(records);
     if (known.length < 6) return; // too little to recombine meaningfully
+    // Hand the AI the learner's weak spots so it aims practice at what's shaky,
+    // not at random known words. The drills come back keyed to the word they
+    // train, so answering them updates the same FSRS confidence the gate reads.
+    const snap = learnerSnapshot(ld.pack.code);
     const items = await withTimeout(generatePractice({
       destination: ld.pack.destination, moduleTitle: plan.module?.title || "",
-      known, rungs: knownRungs(records, ld), count: 3,
+      known, rungs: knownRungs(records, ld), weak: snap.weak, ability: snap.ability, count: 3,
     }), 9000);
     if (Array.isArray(items) && items.length) session.exercises.push(...items);
   } catch { /* silent fallback to the static lesson */ }
