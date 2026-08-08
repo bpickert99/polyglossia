@@ -177,6 +177,9 @@ def main():
     ap.add_argument("--dry-run", action="store_true",
                      help="List every form that needs audio (and, for packs, which lack "
                           "diacritized Arabic) without loading Piper or writing anything.")
+    ap.add_argument("--allow-undiacritized", action="store_true",
+                     help="Pack mode: also render forms whose Arabic isn't diacritized "
+                          "(lower quality). Off by default so runs never ship bad audio.")
     args = ap.parse_args()
 
     course_dir = ROOT / "data" / args.lang
@@ -307,7 +310,15 @@ def run_pack(pack_dir, args):
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     generated = 0
 
+    skipped = 0
     for i in items:
+        # Never ship known-bad audio: an undiacritized Arabic form sent through
+        # Piper's Arabic voice mispronounces (MSA case-ending guessing). Skip it
+        # and let the browser's eSpeak fallback handle that word until its
+        # `arabic` field is diacritized. Override with --allow-undiacritized.
+        if not i["diacritized"] and not args.allow_undiacritized:
+            skipped += 1
+            continue
         spoken = i["spoken"]
         key = f"{args.lang}:{speed}:{spoken}"
         phoneme_lists = phonemizer.phonemize(espeak_voice, spoken)
@@ -321,7 +332,7 @@ def run_pack(pack_dir, args):
         generated += 1
 
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
-    print(f"Done. {len(items)} forms seen, {generated} audio files (re)generated.")
+    print(f"Done. {len(items)} forms seen, {generated} generated, {skipped} skipped (not diacritized).")
 
 
 if __name__ == "__main__":
