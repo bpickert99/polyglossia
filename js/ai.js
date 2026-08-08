@@ -123,6 +123,26 @@ export async function evaluateAnswer(payload) {
   }
 }
 
+// Diagnose a hard case and re-teach it: a leech (a word missed several times in
+// a row) or a grammar miss. Best-effort — returns { why, tip, example } or null,
+// and the caller shows the existing static help when it's null. Called only for
+// the hard cases (never routine slips), so it stays cheap.
+export async function explainMistake(payload) {
+  try {
+    const c = await client();
+    if (!c) return null;
+    const { data, error } = await c.functions.invoke("generate-lesson", { body: { mode: "explain", ...payload } });
+    if (error || !data) return null;
+    const why = String(data.why || "").trim();
+    const tip = String(data.tip || "").trim();
+    const example = String(data.example || "").trim();
+    if (!why && !tip) return null;
+    return { why, tip, example };
+  } catch {
+    return null;
+  }
+}
+
 // Light structural guard. The server prompt already constrains vocabulary; this
 // just drops anything malformed so the renderer never sees a half-built line.
 // (Deliberately lenient on tokens — conjugated forms like "kanakol" legitimately

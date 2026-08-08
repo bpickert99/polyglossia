@@ -6,6 +6,7 @@
 // and lesson renderer, so every exercise type and the polished UX come for free.
 import { getAbility } from "./storage.js";
 import { predictP } from "./birdbrain.js";
+import { isLeech } from "./srs.js";
 import { generateExercise, shuffled, hasWord } from "./exercises.js";
 import { nextRung, dueRungs, rungExercises } from "./grammar.js";
 
@@ -33,7 +34,16 @@ function teachCard(it, scriptMode) {
 }
 
 // One graded exercise for a review/new item, aimed near the success sweet spot.
+// A leech (missed several reviews running) is re-taught instead of re-quizzed —
+// breaking the fail-the-same-quiz loop — and the reteach card is where the AI
+// tutor diagnoses why it won't stick (see lesson.js opts.explain).
 function drill(item, pool, ability, floor) {
+  if (isLeech(item)) {
+    return {
+      type: "reteach", key: item.key, target: item.target, roman: item.roman,
+      english: item.english, note: item.note, audio: audioPath(item), ipa: item.ipa,
+    };
+  }
   const p = floor != null ? floor : predictP(ability, item.bd ?? 0);
   return generateExercise(item, pool, p);
 }

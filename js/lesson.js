@@ -280,7 +280,22 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   // Grades the exercise and turns the same bottom button into "Continue" in
   // place — no separate slide-up panel. Bookkeeping happens immediately;
   // Continue just advances.
-  function showResult(ex, good, message) {
+  // Hard-case tutoring: ask the caller's AI (if wired) to diagnose a miss and
+  // inject the answer above Continue when it arrives — best-effort, non-blocking,
+  // and discarded if the learner has already advanced. lesson.js stays decoupled:
+  // it only calls opts.explain, which the trip app points at the AI proxy.
+  function requestExplanation(ctx, footer, beforeSel) {
+    if (!opts.explain || !footer) return;
+    Promise.resolve(opts.explain(ctx)).then((r) => {
+      if (!r || (!r.why && !r.tip) || !footer.isConnected) return;
+      const p = document.createElement("p");
+      p.className = "check-note ai-explain";
+      p.innerHTML = `💡 ${esc(r.why || "")}${r.tip ? ` ${esc(r.tip)}` : ""}${r.example ? ` <b>${esc(r.example)}</b>` : ""}`;
+      footer.insertBefore(p, footer.querySelector(beforeSel));
+    }).catch(() => {});
+  }
+
+  function showResult(ex, good, message, info = {}) {
     exercisesDone++;
     // Feed the learner model — this drives spacing and error targeting.
     for (const key of resolveKeys(ex)) {
@@ -310,6 +325,15 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       ${note ? `<p class="check-note">${esc(note)}</p>` : ""}
       <button class="btn wide ${good ? "" : "red"}" id="main-action">Continue</button>`;
     footer.querySelector("#main-action").addEventListener("click", next);
+    // Grammar is where a "why" pays off most; routine vocab slips stay the
+    // scheduler's job (no AI call) — this keeps the tutor to the hard cases.
+    if (!good && ex.grammar) {
+      requestExplanation({
+        kind: "grammar", prompt: ex.prompt,
+        correct: info.correct ?? (ex.choices ? ex.choices[ex.answer] : ex.answer),
+        chosen: info.chosen, rung: ex.rungId,
+      }, footer, "#main-action");
+    }
   }
 
   function reviewChip(ex) {
@@ -508,7 +532,8 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
         if (i === ex.answer) b.classList.add("correct");
         else if (i === selected) b.classList.add("wrong");
       });
-      showResult(ex, good, good ? "" : wrongMessage);
+      showResult(ex, good, good ? "" : wrongMessage,
+        { correct: ex.choices[ex.answer], chosen: ex.choices[selected] });
     });
   }
 
@@ -671,6 +696,21 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
       resetLapseStreak(course.code, ex.key);
       next();
     });
+    // This card only appears for a genuine leech (missed several times running),
+    // so it's the right, rare moment to spend an AI call diagnosing why it won't
+    // stick and re-teaching it. Best-effort; the static card stands on its own.
+    if (opts.explain) {
+      const card = app.querySelector(".teach-card");
+      Promise.resolve(opts.explain({
+        kind: "leech", target: ex.target, roman: ex.roman, english: ex.english, note: ex.note,
+      })).then((r) => {
+        if (!r || (!r.why && !r.tip) || !card?.isConnected) return;
+        const box = document.createElement("div");
+        box.className = "ai-explain reteach-ai";
+        box.innerHTML = `💡 ${esc(r.why || "")}${r.tip ? ` ${esc(r.tip)}` : ""}${r.example ? `<div class="ai-eg">${esc(r.example)}</div>` : ""}`;
+        card.appendChild(box);
+      }).catch(() => {});
+    }
   }
 
   function showMatch(ex) {

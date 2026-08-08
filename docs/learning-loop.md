@@ -76,5 +76,9 @@ unavailable: **AI is never load-bearing.**
       the learner's weak spots and each drill declares the word it trains, so its
       grade feeds FSRS (client-side live; activates fully once the Edge Function
       redeploys — until then drills stay safely ungraded as before)
+- [x] AI error-explanations + leech remediation — a leech (missed several times
+      running) is re-taught, not re-quizzed, in the trip flow, and both the
+      reteach card and grammar misses ask the AI to diagnose *why* and re-teach
+      (hard cases only — routine vocab slips stay the scheduler's job; static
+      fallback when AI is unavailable). Activates fully on the Edge Function redeploy.
 - [ ] cross-device snapshot sync (durability layer) — snapshot is built locally today
-- [ ] AI error-explanations + leech remediation

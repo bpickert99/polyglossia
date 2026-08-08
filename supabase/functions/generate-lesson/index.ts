@@ -89,6 +89,16 @@ const EVALUATE_SCHEMA = {
   required: ["verdict", "feedback", "better"],
 };
 
+const EXPLAIN_SCHEMA = {
+  type: "object", additionalProperties: false,
+  properties: {
+    why: { type: "string" },      // what the confusion likely is, plainly
+    tip: { type: "string" },      // the rule or a concrete memory hook
+    example: { type: "string" },  // one short correct phrase, known words only
+  },
+  required: ["why", "tip", "example"],
+};
+
 const KNOWN_RULE =
   "Hard rule: use ONLY words the learner has already been taught (listed below). Never introduce a new word — if you'd need one, rephrase to avoid it. Keep it short and natural.";
 
@@ -136,6 +146,20 @@ function evaluate(body: any) {
   return callClaude(system, user, EVALUATE_SCHEMA, 700);
 }
 
+// Diagnose a hard case — a leech (a word missed several times running) or a
+// grammar miss — and re-teach it. Kept for the hard cases only (the client
+// never calls this on routine slips), so call volume stays low.
+function explain(body: any) {
+  const leech = body.kind === "leech";
+  const system = leech
+    ? `You are a warm, concise language tutor helping a traveler who keeps forgetting ONE word. Give three short sentences: "why" (a plausible reason it won't stick — a false friend, a near-homophone of another word they know, an unusual sound), "tip" (one concrete memory hook), "example" (a natural short phrase that USES the word). ${KNOWN_RULE}`
+    : `You are a warm, concise language tutor. The learner just missed a grammar exercise. Give three short sentences: "why" (what the mistake most likely was, in plain English), "tip" (the one rule to remember), "example" (a correct short phrase showing it). ${KNOWN_RULE}`;
+  const user = leech
+    ? `WORD THEY KEEP MISSING: ${body.roman || body.target || ""} = ${body.english || ""}\n\n${knownBlock(body)}\n\nExplain now.`
+    : `EXERCISE PROMPT: ${body.prompt || ""}\nCORRECT ANSWER: ${body.correct || ""}\nTHEIR WRONG ANSWER: ${body.chosen || "(unknown)"}\n\n${knownBlock(body)}\n\nExplain now.`;
+  return callClaude(system, user, EXPLAIN_SCHEMA, 500);
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "method_not_allowed" }, 405);
@@ -156,6 +180,7 @@ Deno.serve(async (req) => {
     const result =
       mode === "practice" ? await practice(body) :
       mode === "evaluate" ? await evaluate(body) :
+      mode === "explain" ? await explain(body) :
       await scenario(body);
 
     await admin.from("ai_usage").upsert({ user_id: user.id, day, count: count + 1, updated_at: new Date().toISOString() }, { onConflict: "user_id,day" });
