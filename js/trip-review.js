@@ -8,6 +8,7 @@ import { speak, primeTTS } from "./tts.js";
 import { renderLessonSession } from "./lesson.js";
 import { isRungKey, introducedRungIds, rungExercises } from "./grammar.js";
 import { shuffled } from "./exercises.js";
+import { generatePractice, isSignedIn } from "./ai.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -33,6 +34,7 @@ export function renderReview(ctx) {
       <div class="rv-seg">
         <button class="rv-tab ${mode === "cards" ? "on" : ""}" data-mode="cards">🃏 Words</button>
         <button class="rv-tab ${mode === "grammar" ? "on" : ""}" data-mode="grammar">📐 Grammar</button>
+        <button class="rv-tab ${mode === "ai" ? "on" : ""}" data-mode="ai">🤖 AI</button>
       </div>
       <div id="rv-body"></div>
     </div>
@@ -42,7 +44,50 @@ export function renderReview(ctx) {
     b.addEventListener("click", () => { ctx.reviewMode = b.dataset.mode; renderReview(ctx); }));
 
   if (mode === "cards") renderFlashcards(ctx, words);
+  else if (mode === "ai") renderAIPractice(ctx);
   else renderGrammar(ctx, introduced);
+}
+
+// ---------- AI practice (fresh recombinant drills, on demand) ----------
+
+function renderAIPractice(ctx) {
+  const body = ctx.app.querySelector("#rv-body");
+  const records = new Map(getItems(ctx.code).map((i) => [i.key, i]));
+  const known = getItems(ctx.code)
+    .filter((i) => i.reps > 0 && !isRungKey(i.key))
+    .map((i) => ({ roman: i.roman || i.target || i.key, english: i.english || "" }));
+
+  if (known.length < 6) {
+    body.innerHTML = `<p class="rv-empty">Learn a few more words first — AI practice needs a small vocabulary to recombine.</p>`;
+    return;
+  }
+  body.innerHTML = `
+    <p class="rv-lead">Fresh drills built from the words you know — a new set every time.</p>
+    <button class="btn wide" id="rv-ai-go">Generate practice</button>
+    <div id="rv-ai-msg"></div>`;
+
+  body.querySelector("#rv-ai-go").addEventListener("click", async () => {
+    const msg = body.querySelector("#rv-ai-msg");
+    if (!(await isSignedIn())) {
+      msg.innerHTML = `<p class="rv-empty">Sign in on the <b>Account</b> tab to use AI practice.</p>`;
+      return;
+    }
+    body.querySelector("#rv-ai-go").disabled = true;
+    msg.innerHTML = `<p class="scn-prep">Building fresh practice…</p>`;
+    const done = introducedRungIds(records);
+    const rungs = (ctx.grammar?.rungs || []).filter((r) => done.has(r.id)).map((r) => ({ title: r.title }));
+    const items = await generatePractice({ destination: ctx.pack?.destination || "", moduleTitle: "review", known, rungs, count: 4 });
+    if (!items.length) {
+      msg.innerHTML = `<p class="rv-empty">Couldn't reach the coach — try again in a moment.</p>`;
+      body.querySelector("#rv-ai-go").disabled = false;
+      return;
+    }
+    primeTTS();
+    renderLessonSession(ctx.app, ctx.course, "review", {
+      id: "review-ai", title: "AI practice", warmup: [], teach: [], grammar: [], culture: [],
+      exercises: items, newCount: 0, reviewCount: items.length,
+    }, () => {}, { isPractice: true, backHref: "#review", noAutoplay: true });
+  });
 }
 
 // ---------- word flashcards ----------
