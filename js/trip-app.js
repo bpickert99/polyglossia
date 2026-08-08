@@ -143,6 +143,7 @@ async function renderToday() {
         ? `<div class="done-today">✅ Today's lesson done — come back tomorrow.</div>
            <button class="btn wide ghost" id="again">Practice again anyway</button>`
         : `<button class="btn wide big" id="start">Start today's lesson</button>
+           <button class="btn wide ghost" id="express">⏱️ Short on time? Quick 10 min</button>
            <p class="trip-fine">${plan.newCount} new · ${plan.reviewCount} to review</p>`}
 
       ${canDoItems.length ? `<div class="cando">
@@ -158,8 +159,10 @@ async function renderToday() {
     </div>
     ${tabbar("today")}`;
 
-  app.querySelector("#start")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, foundations, course }));
-  app.querySelector("#again")?.addEventListener("click", () => startLesson(trip, { pack, moduleItems, grammar, sequence, foundations, course }));
+  const ld = { pack, moduleItems, grammar, sequence, foundations, course };
+  app.querySelector("#start")?.addEventListener("click", () => startLesson(trip, ld));
+  app.querySelector("#again")?.addEventListener("click", () => startLesson(trip, ld));
+  app.querySelector("#express")?.addEventListener("click", () => startLesson(trip, ld, { express: true }));
 }
 
 function ring(pct, label, color) {
@@ -169,30 +172,43 @@ function ring(pct, label, color) {
   </div>`;
 }
 
-async function startLesson(trip, ld) {
+const EXPRESS_NEW = 2; // new words in a quick lesson
+
+async function startLesson(trip, ld, opts = {}) {
+  const express = !!opts.express;
   const departure = departureTs(trip.departureDate);
   const records = recordsFor(trip.packCode);
-  const plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now() });
+  let plan = buildDailyPlan(ld.pack, ld.moduleItems, records, { departure, now: Date.now() });
+  // Express: keep the deadline scope intact, just cap what's introduced today so
+  // it fits ~10 minutes (fewer new words → fewer new-word drills).
+  if (express) plan = { ...plan, todayNew: plan.todayNew.slice(0, EXPRESS_NEW) };
+
   const session = buildTripSession(ld.pack, plan, ld.moduleItems, records, {
     scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence, foundations: ld.foundations,
   });
   if (session.empty) return renderCaughtUp();
+  if (express) session.exercises = session.exercises.slice(0, 12); // trim practice to keep it short
   primeTTS();
 
-  // Kick off the AI in-the-wild scenario in the background while the learner
-  // works through the graded lesson. Resolves to null (→ static finish) if it's
-  // locked, the learner isn't signed in, or the call fails.
-  const scenarioP = maybeScenario(trip, ld, records, plan);
+  const finishToday = () => { location.hash = ""; renderToday(); };
+  const markDone = () => updateTrip(trip.id, { lastLesson: today() });
 
-  // Enrich today's practice with a few fresh AI drills (from day one, ungated).
-  // Brief spinner, hard timeout, silent fallback — never blocks the lesson.
+  // Express skips the AI steps entirely — no spinner, no scenario — for speed.
+  if (express) {
+    return renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
+      backHref: "#", isPractice: false, noAutoplay: true, onComplete: markDone, onDone: finishToday,
+    });
+  }
+
+  // Full lesson: kick off the AI in-the-wild scenario in the background, and
+  // enrich practice with a few fresh AI drills (brief spinner, silent fallback).
+  const scenarioP = maybeScenario(trip, ld, records, plan);
   app.innerHTML = `<div class="scn-prep">Preparing today's lesson…</div>`;
   await injectPractice(session, ld, records, plan);
 
-  const finishToday = () => { location.hash = ""; renderToday(); };
   renderLessonSession(app, ld.course, "trip-day", session, () => {}, {
     backHref: "#", isPractice: false, noAutoplay: true,
-    onComplete: () => updateTrip(trip.id, { lastLesson: today() }),
+    onComplete: markDone,
     onDone: async () => {
       app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
       const scenario = await scenarioP;
