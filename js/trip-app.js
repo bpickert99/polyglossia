@@ -5,7 +5,7 @@
 //   • Account — who you are, sign out, and manage/delete courses
 import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.js";
 import {
-  getItems, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip,
+  getItems, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
 import { buildDailyPlan } from "./trip.js";
 import { buildTripSession } from "./trip-session.js";
@@ -124,8 +124,8 @@ async function renderToday() {
   app.innerHTML = `
     <div class="trip-dash">
       <div class="trip-top">
-        <span class="trip-flag-sm">${pack.flag || "🌍"}</span>
-        <span class="trip-dest">${esc(pack.destination)}</span>
+        <span class="trip-topleft"><span class="trip-flag-sm">${pack.flag || "🌍"}</span> <span class="trip-dest">${esc(pack.destination)}</span></span>
+        ${trip.streak ? `<span class="trip-streak" title="${trip.streak}-day streak">🔥 ${trip.streak}</span>` : ""}
       </div>
 
       <div class="countdown">
@@ -191,7 +191,7 @@ async function startLesson(trip, ld, opts = {}) {
   primeTTS();
 
   const finishToday = () => { location.hash = ""; renderToday(); };
-  const markDone = () => updateTrip(trip.id, { lastLesson: today() });
+  const markDone = () => completeLesson(trip.id);
 
   // Express skips the AI steps entirely — no spinner, no scenario — for speed.
   if (express) {

@@ -239,6 +239,22 @@ export function deleteTrip(id) {
   save();
 }
 
+// Mark today's lesson done for a trip and update its day-streak: +1 if the last
+// lesson was yesterday, reset to 1 after a gap, unchanged if already done today.
+// Returns the current streak.
+export function completeLesson(id) {
+  const t = state.trips.find((x) => x.id === id);
+  if (!t) return 0;
+  const today = new Date().toISOString().slice(0, 10);
+  if (t.lastLesson !== today) {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    t.streak = t.lastLesson === yesterday ? (t.streak || 0) + 1 : 1;
+    t.lastLesson = today;
+    save();
+  }
+  return t.streak || 0;
+}
+
 // Back-compat shims: the trip app still reads/writes "the current trip".
 export function getTrip() {
   return getActiveTrip() || {};
