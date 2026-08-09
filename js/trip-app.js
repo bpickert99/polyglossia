@@ -3,7 +3,7 @@
 //   • Today   — countdown, readiness (words + grammar), one "start" button
 //   • Review  — self-serve flashcards + grammar quizzes
 //   • Account — who you are, sign out, and manage/delete courses
-import { loadPack, loadPackModules, loadGrammar, loadFoundations } from "./data.js";
+import { loadPack, loadPackModules, loadGrammar, loadFoundations, loadMorphemes } from "./data.js";
 import {
   getItems, getAbility, learnerSnapshot, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
@@ -33,7 +33,7 @@ const reviewCtx = { reviewMode: "cards" };
 
 async function ensureLoaded(code) {
   if (loaded.has(code)) return loaded.get(code);
-  const [pack, grammar, foundations] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code)]);
+  const [pack, grammar, foundations, morphemes] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code), loadMorphemes(code)]);
   const moduleItems = await loadPackModules(code, pack);
   const sequence = sequenceRungs(grammar.rungs || []);
   // Each pack carries its own TTS config; fall back to a plain eSpeak voice
@@ -42,7 +42,7 @@ async function ensureLoaded(code) {
     code, name: pack.name,
     tts: pack.tts || { engine: "espeak", voice: code, preferredLangs: [code], substitutions: [] },
   };
-  const entry = { pack, moduleItems, grammar, sequence, foundations, course };
+  const entry = { pack, moduleItems, grammar, sequence, foundations, morphemes, course };
   loaded.set(code, entry);
   return entry;
 }
@@ -503,7 +503,7 @@ async function renderReviewTab() {
   Object.assign(reviewCtx, {
     app, code: trip.packCode, course: ld.course, pack: ld.pack,
     moduleItems: ld.moduleItems, grammar: ld.grammar, sequence: ld.sequence,
-    scriptMode: trip.scriptMode, tabbar: tabbar("review"),
+    morphemes: ld.morphemes, scriptMode: trip.scriptMode, tabbar: tabbar("review"),
   });
   renderReview(reviewCtx);
 }

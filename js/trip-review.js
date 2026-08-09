@@ -9,6 +9,7 @@ import { renderLessonSession } from "./lesson.js";
 import { isRungKey, introducedRungIds, rungExercises } from "./grammar.js";
 import { shuffled } from "./exercises.js";
 import { generatePractice, isSignedIn } from "./ai.js";
+import { classColorVar } from "./morphemes.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -30,11 +31,12 @@ export function renderReview(ctx) {
 
   app.innerHTML = `
     <div class="trip-review">
-      <h1 class="rv-title">Review</h1>
+      <h1 class="rv-title">Practice</h1>
       <div class="rv-seg">
-        <button class="rv-tab ${mode === "cards" ? "on" : ""}" data-mode="cards">🃏 Words</button>
-        <button class="rv-tab ${mode === "grammar" ? "on" : ""}" data-mode="grammar">📐 Grammar</button>
-        <button class="rv-tab ${mode === "ai" ? "on" : ""}" data-mode="ai">🤖 AI</button>
+        <button class="rv-tab ${mode === "cards" ? "on" : ""}" data-mode="cards">Words</button>
+        <button class="rv-tab ${mode === "grammar" ? "on" : ""}" data-mode="grammar">Grammar</button>
+        ${ctx.morphemes ? `<button class="rv-tab ${mode === "build" ? "on" : ""}" data-mode="build">Build</button>` : ""}
+        <button class="rv-tab ${mode === "ai" ? "on" : ""}" data-mode="ai">AI</button>
       </div>
       <div id="rv-body"></div>
     </div>
@@ -45,7 +47,45 @@ export function renderReview(ctx) {
 
   if (mode === "cards") renderFlashcards(ctx, words);
   else if (mode === "ai") renderAIPractice(ctx);
+  else if (mode === "build") renderMorphemeKey(ctx);
   else renderGrammar(ctx, introduced);
+}
+
+// ---------- the morpheme colour key (how words are built) ----------
+
+const CLASS_LABEL = { tense: "time", person: "who", neg: "not", q: "question", poss: "whose", root: "meaning" };
+
+function renderMorphemeKey(ctx) {
+  const body = ctx.app.querySelector("#rv-body");
+  const inv = ctx.morphemes;
+  const list = inv?.morphemes || [];
+  if (!list.length) {
+    body.innerHTML = `<p class="rv-empty">No decoder key for this course yet.</p>`;
+    return;
+  }
+  // Legend: which colour means what — the key the learner internalizes.
+  const usedClasses = [...new Set(list.map((m) => m.cls || "root"))];
+  const legend = usedClasses.map((c) =>
+    `<span><i style="background:var(${classColorVar(c)})"></i>${esc(CLASS_LABEL[c] || c)}</span>`).join("");
+
+  const cards = list.map((m) => {
+    const cls = m.cls || "root";
+    const egs = (m.examples || []).map((e) =>
+      `<span class="mph-eg"><b>${esc(e.w)}</b> <span>${esc(e.m)}</span></span>`).join("");
+    return `<div class="mph-card" style="--mc:var(${classColorVar(cls)})">
+      <div class="mph-card-top">
+        <span class="mph-surface">${esc(m.surface)}</span>
+        <span class="mph-role ${m.role === "produce" ? "produce" : ""}">${m.role === "produce" ? "use it" : "spot it"}</span>
+      </div>
+      <div class="mph-gloss">${esc(m.gloss)}</div>
+      ${egs ? `<div class="mph-egs">${egs}</div>` : ""}
+    </div>`;
+  }).join("");
+
+  body.innerHTML = `
+    <p class="mph-intro">${esc(inv.note || "Learn these decoders and you can gist words you were never taught.")}</p>
+    <div class="mph-legend">${legend}</div>
+    <div class="mph-list">${cards}</div>`;
 }
 
 // ---------- AI practice (fresh recombinant drills, on demand) ----------

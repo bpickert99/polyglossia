@@ -1,0 +1,24 @@
+{
+  "code": "ary",
+  "note": "The decoders. Learn these few and you can gist words you were never taught — that's the point. Each meaning-class has its own colour, and that colour is the same everywhere in the app, so a word's colours tell you its grammar at a glance. Per data/ary/blueprint.md: produce the affixes, recognize the roots, never try to build the patterns.",
+  "morphemes": [
+    { "surface": "ka-", "cls": "tense", "gloss": "happening now (present)", "role": "produce",
+      "examples": [ { "w": "kanakol", "m": "I eat" }, { "w": "katmshi", "m": "you go" } ] },
+    { "surface": "n-", "cls": "person", "gloss": "I (on a present verb)", "role": "produce",
+      "examples": [ { "w": "kanakol", "m": "I eat" }, { "w": "kanshreb", "m": "I drink" } ] },
+    { "surface": "t-", "cls": "person", "gloss": "you", "role": "produce",
+      "examples": [ { "w": "katakol", "m": "you eat" } ] },
+    { "surface": "y-", "cls": "person", "gloss": "he / it — you'll mostly just hear this", "role": "recognize",
+      "examples": [ { "w": "kayakol", "m": "he eats" }, { "w": "kayn", "m": "there is" } ] },
+    { "surface": "ma … sh", "cls": "neg", "gloss": "not — it wraps around the verb", "role": "produce",
+      "examples": [ { "w": "ma kanfhemsh", "m": "I don't understand" }, { "w": "ma kaynsh", "m": "there isn't any" } ] },
+    { "surface": "ghadi", "cls": "tense", "gloss": "going to / will (put it before the verb)", "role": "produce",
+      "examples": [ { "w": "ghadi nmshi", "m": "I'm going to go" } ] },
+    { "surface": "wash", "cls": "q", "gloss": "turns a statement into a yes/no question", "role": "produce",
+      "examples": [ { "w": "wash kayn atay?", "m": "is there tea?" } ] },
+    { "surface": "dyal", "cls": "poss", "gloss": "of / belonging to", "role": "produce",
+      "examples": [ { "w": "l-flus dyali", "m": "my money" }, { "w": "l-bit dyalek", "m": "your room" } ] },
+    { "surface": "the root (consonants)", "cls": "root", "gloss": "the word's core meaning lives in its consonants. You won't build these, but spotting the skeleton helps you guess an unheard word — k·t·b words are about writing, k·l about eating.", "role": "recognize",
+      "examples": [ { "w": "kteb · ktab · mektub", "m": "write · book · written" } ] }
+  ]
+}

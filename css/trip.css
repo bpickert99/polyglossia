@@ -16,6 +16,10 @@
   --ok: #2f8a55;
   /* aligned-meaning chunk palette (Mango colour-coding) */
   --c1: #b8503a; --c2: #2b7f79; --c3: #7057a0; --c4: #9c7400;
+  /* morpheme meaning-class key — one stable colour per grammatical role,
+     used identically everywhere so colour reads as grammar-at-a-glance */
+  --mph-tense: #2b7f79; --mph-person: #7057a0; --mph-neg: #b8503a;
+  --mph-q: #9c7400; --mph-poss: #356ea6; --mph-root: #5c636d;
   /* destination tint (default; overridden inline per active trip) */
   --accent: #c9720a;
   --accent-soft: rgba(201, 114, 10, .14);
@@ -36,6 +40,8 @@
     --ground: #0d1013; --panel: #161a1f; --panel-2: #1e242a;
     --board: #05070a; --board-dim: #8a929c;
     --c1: #e07a63; --c2: #4bb3aa; --c3: #a488d8; --c4: #d0a520;
+    --mph-tense: #4bb3aa; --mph-person: #a488d8; --mph-neg: #e07a63;
+    --mph-q: #d0a520; --mph-poss: #6aa6db; --mph-root: #98a0aa;
     --ink: #e8ebee; --ink-soft: #98a0aa; --line: rgba(255, 255, 255, .12);
     --bg: var(--ground); --card: var(--panel);
   }
@@ -249,6 +255,29 @@ body { font-family: var(--sans); background: var(--ground); color: var(--ink); p
 .rv-rung { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 11px 14px; border-radius: 12px; background: var(--panel-2); }
 .rv-rung-name { font-size: .92rem; }
 .btn.small { padding: 8px 14px; font-size: .82rem; }
+
+/* ---------- morpheme chips + the colour key (Review › Build) ---------- */
+.mph { display: inline-flex; flex-wrap: wrap; align-items: flex-end; gap: 2px; }
+.mph-seg { display: inline-flex; flex-direction: column; align-items: center; padding: 1px 5px; }
+.mph-t { font-family: var(--mono); font-weight: 700; font-size: 1.05rem; }
+.mph-g { font-size: .62rem; color: var(--ink-soft); margin-top: 1px; }
+.mph-plus { color: var(--ink-soft); align-self: center; padding: 0 1px 8px; }
+
+.mph-intro { color: var(--ink-soft); font-size: .9rem; margin: 4px 0 18px; line-height: 1.5; }
+.mph-list { display: flex; flex-direction: column; gap: 10px; }
+.mph-card { border: 1px solid var(--line); border-radius: 14px; padding: 13px 15px; border-left: 4px solid var(--mc, var(--mph-root)); }
+.mph-card-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mph-surface { font-family: var(--mono); font-weight: 700; font-size: 1.15rem; color: var(--mc, var(--ink)); }
+.mph-role { font-family: var(--mono); font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; padding: 3px 7px; border-radius: 999px; background: var(--panel-2); color: var(--ink-soft); white-space: nowrap; }
+.mph-role.produce { background: color-mix(in srgb, var(--mc, var(--mph-root)) 16%, transparent); color: var(--mc, var(--ink)); }
+.mph-gloss { font-size: .9rem; color: var(--ink-soft); margin: 7px 0 9px; line-height: 1.5; }
+.mph-egs { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.mph-eg { font-size: .86rem; }
+.mph-eg b { font-family: var(--mono); color: var(--mc, var(--ink)); font-weight: 700; }
+.mph-eg span { color: var(--ink-soft); }
+.mph-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 2px 0 16px; }
+.mph-legend span { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; color: var(--ink-soft); }
+.mph-legend i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
 
 /* ---------- in-the-wild scenario (Mango colour-coding) ---------- */
 .scn { max-width: 560px; margin: 0 auto; padding: 8px 20px 24px; }

@@ -1,0 +1,22 @@
+{
+  "code": "es",
+  "note": "The decoders. Learn these few and you can gist words you were never taught. Each meaning-class has its own colour, the same everywhere in the app, so a word's colours tell you its grammar at a glance. Spanish gives English speakers a huge free-recognition bonus through cognates and endings.",
+  "morphemes": [
+    { "surface": "-o", "cls": "person", "gloss": "I (present verb ending)", "role": "produce",
+      "examples": [ { "w": "hablo", "m": "I speak" }, { "w": "como", "m": "I eat" } ] },
+    { "surface": "-as / -es", "cls": "person", "gloss": "you (present verb ending)", "role": "produce",
+      "examples": [ { "w": "hablas", "m": "you speak" }, { "w": "comes", "m": "you eat" } ] },
+    { "surface": "-a / -e", "cls": "person", "gloss": "he/she/it — and the polite 'usted' you", "role": "produce",
+      "examples": [ { "w": "habla", "m": "he/she speaks" }, { "w": "come", "m": "he/she eats" } ] },
+    { "surface": "no …", "cls": "neg", "gloss": "not — goes right before the verb", "role": "produce",
+      "examples": [ { "w": "no entiendo", "m": "I don't understand" } ] },
+    { "surface": "-o / -a", "cls": "poss", "gloss": "masculine / feminine ending — you mainly need to recognize it", "role": "recognize",
+      "examples": [ { "w": "frío / fría", "m": "cold (m / f)" } ] },
+    { "surface": "-ito / -ita", "cls": "root", "gloss": "little, or softer/friendlier (diminutive)", "role": "produce",
+      "examples": [ { "w": "poquito", "m": "a little bit" }, { "w": "ahorita", "m": "right now / in a bit" } ] },
+    { "surface": "-ción", "cls": "root", "gloss": "= English '-tion' — a whole family you understand for free", "role": "recognize",
+      "examples": [ { "w": "información", "m": "information" }, { "w": "estación", "m": "station" } ] },
+    { "surface": "¿ … ?", "cls": "q", "gloss": "a question — Spanish also opens it with an upside-down ¿", "role": "recognize",
+      "examples": [ { "w": "¿cuánto?", "m": "how much?" } ] }
+  ]
+}

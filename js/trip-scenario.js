@@ -4,6 +4,7 @@
 // present·I·eat). This is the rehearsal of the real moment, built from only what
 // you've been taught.
 import { speak, primeTTS } from "./tts.js";
+import { classForRole, classColorVar } from "./morphemes.js";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -65,8 +66,12 @@ export function renderScenario(app, scenario, opts = {}) {
       btn.addEventListener("click", () => {
         const chunk = line.chunks[+btn.dataset.ci];
         const morph = el.querySelector(".scn-morph");
-        const parts = (chunk.morphemes || []).map((m) =>
-          `<span class="scn-seg">${esc(m.seg)}<em>${esc(m.role)}</em></span>`).join(`<span class="scn-plus">+</span>`);
+        // Colour each morpheme by its stable meaning-class (the same key used in
+        // Review › Build), so the scenario reinforces the decoder colours.
+        const parts = (chunk.morphemes || []).map((m) => {
+          const col = `var(${classColorVar(classForRole(m.role))})`;
+          return `<span class="scn-seg"><span style="color:${col};font-weight:700">${esc(m.seg)}</span><em>${esc(m.role)}</em></span>`;
+        }).join(`<span class="scn-plus">+</span>`);
         morph.innerHTML = parts
           ? `<div class="scn-morph-word" style="color:${colorFor(chunk.group)}">${esc(chunk.roman)} — ${esc(chunk.en)}</div><div class="scn-segs">${parts}</div>`
           : `<div class="scn-morph-word">${esc(chunk.roman)} — ${esc(chunk.en)}</div>`;

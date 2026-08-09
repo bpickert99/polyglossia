@@ -50,6 +50,11 @@ export function loadFoundations(code) {
   return fetchJSON(`data/${code}/foundations.json`).catch(() => null);
 }
 
+// The morpheme inventory — the decoders + their colour classes. Optional.
+export function loadMorphemes(code) {
+  return fetchJSON(`data/${code}/morphemes.json`).catch(() => null);
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(
