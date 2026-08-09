@@ -60,6 +60,11 @@ export function loadChallenges(code) {
   return fetchJSON(`data/${code}/challenges.json`).catch(() => null);
 }
 
+// The traveler-facing world atlas — 50 languages with map + scoring metadata.
+export function loadWorldLanguages() {
+  return fetchJSON("data/world-languages.json").catch(() => ({ languages: [] }));
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(

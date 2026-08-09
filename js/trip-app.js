@@ -16,6 +16,7 @@ import { renderReview } from "./trip-review.js";
 import { renderScenario } from "./trip-scenario.js";
 import { generateScenario, generatePractice, evaluateAnswer, explainMistake, scoreGist, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
 import { initSync, getUser, signOut, renderSyncCard } from "./sync.js";
+import { renderPlanner } from "./planner.js";
 import { primeTTS } from "./tts.js";
 
 const app = document.getElementById("app");
@@ -402,67 +403,17 @@ function renderCaughtUp() {
     ${tabbar("today")}`;
 }
 
-// ---------- Start / onboarding ----------
+// ---------- Start / onboarding: the trip planner ----------
 
-// Script picker for the selected pack. A single-script (Latin) language needs
-// no choice; a pack with options (Darija: Arabizi vs Arabic) renders radios.
-function scriptChoices(code) {
-  const opts = catalogPacks.get(code)?.scripts?.options || [];
-  if (opts.length <= 1) return "";
-  const desc = { arabizi: "how locals text", arabic: "with a Latin helper line" };
-  return `<label class="trip-label">How do you want to read it?</label>
-    <div class="trip-choices">${opts.map((o, i) => `
-      <label class="trip-choice"><input type="radio" name="script" value="${esc(o.id)}" ${i === 0 ? "checked" : ""}>
-        <b>${esc(o.name)}</b>${desc[o.id] ? `<span>${esc(desc[o.id])}</span>` : ""}</label>`).join("")}</div>`;
-}
-
+// The onboarding is now the planner (js/planner.js): build an itinerary on a
+// world atlas and pick languages by their coverage of your trip. Creating a plan
+// adds one trip per chosen (available) language; the multi-trip model shows them
+// as legs. Landing on the first new trip's plan summary.
 function renderStart() {
-  const min = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
-  const def = new Date(Date.now() + 21 * 86400000).toISOString().slice(0, 10);
-  const options = CATALOG.map((c) => {
-    const p = catalogPacks.get(c);
-    return `<option value="${c}">${esc(p.flag || "")} ${esc(p.name)}</option>`;
-  }).join("");
-
-  app.innerHTML = `
-    <div class="trip-onboard">
-      <div class="trip-flag">🧳</div>
-      <h1>Plan a trip</h1>
-      <p class="trip-sub">Pick where you're going and when you leave — we'll build a daily plan that peaks the day you land.</p>
-
-      <label class="trip-label">Destination</label>
-      <select id="pack" class="trip-input">${options}</select>
-
-      <label class="trip-label">When do you leave?</label>
-      <input type="date" id="depart" min="${min}" value="${def}" class="trip-input">
-
-      <div id="script-slot">${scriptChoices(CATALOG[0])}</div>
-
-      <button class="btn wide big" id="go">Start my countdown</button>
-    </div>
-    ${listTrips().length ? tabbar("today") : ""}`;
-
-  // Script options depend on the destination — a Latin-script language (Spanish)
-  // has nothing to choose; Darija offers Arabizi vs Arabic script.
-  applyTint(catalogPacks.get(CATALOG[0]));
-  const slot = app.querySelector("#script-slot");
-  app.querySelector("#pack").addEventListener("change", (e) => {
-    slot.innerHTML = scriptChoices(e.target.value);
-    applyTint(catalogPacks.get(e.target.value));
-  });
-
-  app.querySelector("#go").addEventListener("click", async () => {
-    const packCode = app.querySelector("#pack").value;
-    const departureDate = app.querySelector("#depart").value;
-    if (!departureDate) return;
-    const picked = app.querySelector('input[name="script"]:checked');
-    const p = catalogPacks.get(packCode);
-    const scriptMode = picked ? picked.value : (p.scripts?.default || "latin");
-    const t = addTrip({
-      packCode, packName: p.name, flag: p.flag, destination: p.destination,
-      departureDate, scriptMode, helper: scriptMode === "arabic",
-    });
-    renderPlanSummary(t);
+  document.documentElement.style.removeProperty("--accent"); // neutral chrome while planning
+  renderPlanner(app, {
+    catalogPacks,
+    onDone: (firstTrip) => { if (firstTrip) renderPlanSummary(firstTrip); else { location.hash = ""; renderToday(); } },
   });
 }
 
