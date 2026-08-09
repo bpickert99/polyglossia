@@ -351,6 +351,7 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
   function showExercise(ex) {
     if (ex.type === "reteach") return showReteachCard(ex);
     if (ex.type === "gist") return showGist(ex);
+    if (ex.type === "getby") return showGetby(ex);
     if (ex.type === "shadow") return showShadow(ex);
     if (ex.type === "match") return showMatch(ex);
     if (ex.type === "type") return showType(ex);
@@ -421,6 +422,62 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
           <div class="gist-rate">
             <button class="btn" id="g-yes">I got it</button>
             <button class="btn ghost" id="g-no">Missed it</button>
+          </div>`;
+        footer.querySelector("#g-yes").addEventListener("click", () => { recordGist(true); next(); });
+        footer.querySelector("#g-no").addEventListener("click", () => { recordGist(false); next(); });
+      }
+    };
+    check.addEventListener("click", run);
+  }
+
+  // Get-by challenge (strategic competence): a real communicative goal you must
+  // accomplish with the words you already know — not the perfect word. Graded on
+  // being UNDERSTOOD, forgivingly (the design principle that protects willingness
+  // to communicate). Reuses the evaluate AI mode via opts.getbyEval; when AI is
+  // unavailable it reveals a model workaround and the learner self-assesses.
+  // Ungraded against vocabulary (keys:[]) — it exercises strategy, not one item.
+  function showGetby(ex) {
+    frame(`
+      <div class="exercise">
+        <span class="eyebrow">Make yourself understood</span>
+        <h2>${esc(ex.goal || ex.prompt || "")}</h2>
+        ${ex.hint ? `<p class="gist-ask">💡 ${esc(ex.hint)}</p>` : ""}
+        <textarea class="type-input gist-input" id="getby" rows="2" autocomplete="off" autocapitalize="off"
+          spellcheck="false" placeholder="Say it with the words you know — you don't need the perfect one."></textarea>
+      </div>`,
+      `<button class="btn wide" id="check" disabled>Check</button>`);
+    const input = app.querySelector("#getby");
+    const check = app.querySelector("#check");
+    input.focus();
+    input.addEventListener("input", () => { check.disabled = !input.value.trim(); });
+    const run = async () => {
+      if (check.disabled) return;
+      check.disabled = true;
+      input.disabled = true;
+      const text = input.value.trim();
+      let scored = null;
+      if (opts.getbyEval) {
+        check.textContent = "Checking…";
+        try { scored = await opts.getbyEval({ task: ex.goal || ex.prompt, userText: text }); } catch { scored = null; }
+      }
+      const footer = app.querySelector(".session-footer");
+      if (scored && scored.verdict) {
+        const good = scored.verdict === "good" || scored.verdict === "close";
+        recordGist(good); // same bookkeeping: counts toward accuracy, no FSRS key
+        footer.innerHTML = `
+          <div class="scn-fb v-${scored.verdict}">
+            <div class="scn-fb-line">${esc(scored.feedback || "")}</div>
+            ${scored.better ? `<div class="scn-fb-better">One way: <b>${esc(scored.better)}</b></div>` : ""}
+          </div>
+          <button class="btn wide ${good ? "" : "red"}" id="main-action">Continue</button>`;
+        footer.querySelector("#main-action").addEventListener("click", next);
+      } else {
+        footer.innerHTML = `
+          ${ex.model ? `<p class="check-note">One way to say it: <b>${esc(ex.model)}</b></p>` : ""}
+          <p class="gist-self">Would that have been understood?</p>
+          <div class="gist-rate">
+            <button class="btn" id="g-yes">Yes, got it across</button>
+            <button class="btn ghost" id="g-no">Not really</button>
           </div>`;
         footer.querySelector("#g-yes").addEventListener("click", () => { recordGist(true); next(); });
         footer.querySelector("#g-no").addEventListener("click", () => { recordGist(false); next(); });

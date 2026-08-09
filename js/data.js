@@ -55,6 +55,11 @@ export function loadMorphemes(code) {
   return fetchJSON(`data/${code}/morphemes.json`).catch(() => null);
 }
 
+// Get-by challenges — strategic-competence tasks. Optional.
+export function loadChallenges(code) {
+  return fetchJSON(`data/${code}/challenges.json`).catch(() => null);
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(

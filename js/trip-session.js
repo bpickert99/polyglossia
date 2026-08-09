@@ -13,6 +13,8 @@ import { nextRung, dueRungs, rungExercises } from "./grammar.js";
 // Below this many started words, the comprehension slot stays multiple-choice;
 // at or above it, it upgrades to an open "gist in English" (see gistExercise).
 const GIST_MIN_VOCAB = 12;
+// Strategic-competence "get-by" challenges need enough vocabulary to improvise.
+const GETBY_MIN_VOCAB = 15;
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "x";
 const audioPath = (it) => `audio/${slug(it.roman || it.target)}.wav`;
@@ -214,6 +216,19 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
     for (const [k, r] of records) if ((r?.reps || 0) > 0 && !String(k).startsWith("g:")) startedVocab++;
     const useGist = startedVocab >= GIST_MIN_VOCAB && entry.reply && entry.english;
     interleaved.push(useGist ? gistExercise(entry) : comprehensionExercise(entry));
+  }
+
+  // Strategic competence: once there's enough vocabulary to improvise, close with
+  // a "get-by" challenge — accomplish a real goal with the words you know, not
+  // the perfect one. The realistic survival skill, and it lowers speaking anxiety.
+  const challengeList = opts.challenges?.challenges || [];
+  if (challengeList.length) {
+    let startedVocab = 0;
+    for (const [k, r] of records) if ((r?.reps || 0) > 0 && !String(k).startsWith("g:")) startedVocab++;
+    if (startedVocab >= GETBY_MIN_VOCAB) {
+      const c = challengeList[Math.floor(Math.random() * challengeList.length)];
+      interleaved.push({ type: "getby", keys: [], goal: c.goal, hint: c.hint || "", model: c.model || "" });
+    }
   }
 
   const allExercises = [...foundationEx, ...interleaved];

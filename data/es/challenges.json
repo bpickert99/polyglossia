@@ -1,0 +1,16 @@
+{
+  "code": "es",
+  "note": "Get-by challenges — strategic competence. A real communicative goal you accomplish with the words you already know, not the 'perfect' word. Success is being understood. Models use only early, high-frequency vocabulary; the AI grades against the learner's actual taught set.",
+  "challenges": [
+    { "goal": "Tell the waiter you don't eat meat — no fancy word needed.",
+      "hint": "no + a verb you know.", "model": "no como carne, por favor" },
+    { "goal": "You didn't catch the price. Ask them to repeat it clearly.",
+      "hint": "Say you don't understand, then ask how much.", "model": "perdón, no entiendo — ¿cuánto es?" },
+    { "goal": "You feel sick and need a doctor. Make that understood.",
+      "hint": "necesito = I need.", "model": "necesito un doctor, por favor" },
+    { "goal": "They're speaking too fast. Ask them to slow down and say it again.",
+      "hint": "Two short rescue phrases.", "model": "más despacio, por favor. ¿otra vez?" },
+    { "goal": "You want a coffee with no milk, but blank on the word for 'milk'. Get the idea across.",
+      "hint": "Name what you want and wave off the rest.", "model": "un café, sin leche, por favor" }
+  ]
+}

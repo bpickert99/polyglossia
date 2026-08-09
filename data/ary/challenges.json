@@ -1,0 +1,16 @@
+{
+  "code": "ary",
+  "note": "Get-by challenges — strategic competence (Canale & Swain). Each gives a real communicative goal you must accomplish with the words you already know, not the 'perfect' word. Success is being understood, not being correct. The model uses only early, high-frequency vocabulary; the AI grades against the learner's actual taught set.",
+  "challenges": [
+    { "goal": "Tell a waiter you don't eat meat — you don't need the exact word for it.",
+      "hint": "Lean on ma … sh (not) plus a verb you know.", "model": "ma kanakolsh l7am, 3afak" },
+    { "goal": "You didn't catch the price. Get them to write it down for you.",
+      "hint": "You've learned a phrase for exactly this.", "model": "ktebha liya 3afak" },
+    { "goal": "You feel sick and need a doctor. Make that understood.",
+      "hint": "khessni = I need.", "model": "khessni tbib, 3afak" },
+    { "goal": "A shopkeeper is talking too fast. Ask them to slow down and say it again.",
+      "hint": "Two short rescue phrases, back to back.", "model": "bshwiya 3afak, 3awd 3afak" },
+    { "goal": "You want tea with no sugar, but forget the word for 'sugar'. Get the idea across.",
+      "hint": "You can name what you DO want and wave off the rest.", "model": "bghit atay, bla sukkar 3afak" }
+  ]
+}

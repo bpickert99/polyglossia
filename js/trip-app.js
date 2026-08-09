@@ -3,7 +3,7 @@
 //   • Today   — countdown, readiness (words + grammar), one "start" button
 //   • Review  — self-serve flashcards + grammar quizzes
 //   • Account — who you are, sign out, and manage/delete courses
-import { loadPack, loadPackModules, loadGrammar, loadFoundations, loadMorphemes } from "./data.js";
+import { loadPack, loadPackModules, loadGrammar, loadFoundations, loadMorphemes, loadChallenges } from "./data.js";
 import {
   getItems, getAbility, learnerSnapshot, listTrips, getActiveTrip, setActiveTrip, addTrip, updateTrip, deleteTrip, completeLesson,
 } from "./storage.js";
@@ -33,7 +33,7 @@ const reviewCtx = { reviewMode: "cards" };
 
 async function ensureLoaded(code) {
   if (loaded.has(code)) return loaded.get(code);
-  const [pack, grammar, foundations, morphemes] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code), loadMorphemes(code)]);
+  const [pack, grammar, foundations, morphemes, challenges] = await Promise.all([loadPack(code), loadGrammar(code), loadFoundations(code), loadMorphemes(code), loadChallenges(code)]);
   const moduleItems = await loadPackModules(code, pack);
   const sequence = sequenceRungs(grammar.rungs || []);
   // Each pack carries its own TTS config; fall back to a plain eSpeak voice
@@ -42,7 +42,7 @@ async function ensureLoaded(code) {
     code, name: pack.name,
     tts: pack.tts || { engine: "espeak", voice: code, preferredLangs: [code], substitutions: [] },
   };
-  const entry = { pack, moduleItems, grammar, sequence, foundations, morphemes, course };
+  const entry = { pack, moduleItems, grammar, sequence, foundations, morphemes, challenges, course };
   loaded.set(code, entry);
   return entry;
 }
@@ -221,7 +221,8 @@ async function startLesson(trip, ld, opts = {}) {
   if (express) plan = { ...plan, todayNew: plan.todayNew.slice(0, EXPRESS_NEW) };
 
   const session = buildTripSession(ld.pack, plan, ld.moduleItems, records, {
-    scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence, foundations: ld.foundations,
+    scriptMode: trip.scriptMode, grammar: ld.grammar, sequence: ld.sequence,
+    foundations: ld.foundations, challenges: ld.challenges,
   });
   if (session.empty) return renderCaughtUp();
   if (express) session.exercises = session.exercises.slice(0, 12); // trim practice to keep it short
@@ -254,6 +255,10 @@ async function startLesson(trip, ld, opts = {}) {
       known: knownWords(records), rungs: knownRungs(records, ld),
     }),
     gistEval: (ctx) => scoreGist({ destination: ld.pack.destination, ...ctx }),
+    getbyEval: (ctx) => evaluateAnswer({
+      destination: ld.pack.destination, ...ctx,
+      known: knownWords(records), rungs: knownRungs(records, ld),
+    }),
     onDone: async () => {
       app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
       const scenario = await scenarioP;
