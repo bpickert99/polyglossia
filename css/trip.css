@@ -346,6 +346,38 @@ body { font-family: var(--sans); background: var(--ground); color: var(--ink); p
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .plan .btn.big { --accent: #4ca6ce; } }
 :root[data-theme="dark"] .plan .btn.big { --accent: #4ca6ce; }
 
+/* planner: place search (typeahead) */
+.plan-search { position: relative; padding: 14px 18px 6px; }
+.plan-search .trip-input { width: 100%; }
+.plan-suggest { position: absolute; left: 18px; right: 18px; top: 58px; z-index: 8; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 14px 40px -14px var(--shadow); overflow: hidden; }
+.plan-suggest-i { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 100%; text-align: left; background: none; border: none; border-bottom: 1px solid var(--line); padding: 11px 14px; cursor: pointer; color: var(--ink); }
+.plan-suggest-i:last-child { border-bottom: none; }
+.plan-suggest-i:hover { background: var(--panel-2); }
+.plan-suggest-name { font-family: var(--cond); text-transform: uppercase; letter-spacing: .02em; font-weight: 700; font-size: 1.05rem; }
+.plan-suggest-cc { font-family: var(--mono); font-size: .62rem; letter-spacing: .06em; color: var(--ink-soft); text-transform: uppercase; }
+.plan-suggest-none { padding: 12px 14px; color: var(--ink-soft); font-size: .86rem; }
+
+/* planner: itinerary stops (place + dates) */
+.plan-stop { display: flex; align-items: flex-start; gap: 10px; padding: 12px 18px; border-top: 1px solid var(--line); }
+.plan-stop-name { font-family: var(--cond); text-transform: uppercase; letter-spacing: .02em; font-weight: 700; font-size: 1.35rem; line-height: 1; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.plan-stop-cc { font-family: var(--mono); font-size: .58rem; letter-spacing: .1em; color: var(--ink-soft); text-transform: uppercase; }
+.plan-stop-lang { font-size: .82rem; color: var(--accent, #1f6a8c); font-weight: 600; margin-top: 4px; }
+.plan-stop-fields { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; margin-top: 8px; }
+.plan-stop-fields label { font-family: var(--mono); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); display: flex; flex-direction: column; gap: 3px; }
+.plan-date { font-family: var(--sans); font-size: .88rem; padding: 6px 8px; border: 1px solid var(--line); border-radius: 9px; background: var(--panel); color: var(--ink); }
+.plan-stop-days { font-family: var(--mono); font-size: .7rem; color: var(--ink-soft); padding-bottom: 6px; }
+.plan-stop-main { flex: 1; }
+.plan-stop-x { background: none; border: none; color: var(--ink-soft); font-size: 15px; cursor: pointer; padding: 4px; }
+
+/* planner: the route map (real land now) */
+.wm-land { fill: #262b31; stroke: rgba(255,255,255,.06); stroke-width: .4; }
+.wm-soft { fill: #4a3a1c; stroke: rgba(255,255,255,.05); stroke-width: .4; }
+.wm-visited { fill: #d98a2b; stroke: #f4f0e6; stroke-width: .5; }
+.plan-pin { fill: #f4f0e6; stroke: #14181c; stroke-width: 1.4; }
+.plan-legend .lg-visited { width: 11px; height: 11px; border-radius: 3px; background: #d98a2b; }
+.plan-legend .lg-soft { width: 11px; height: 11px; border-radius: 3px; background: #4a3a1c; }
+.plan-english { background: color-mix(in srgb, var(--ok) 12%, transparent); border-radius: 12px; padding: 11px 14px; font-size: .86rem; color: var(--ink); }
+
 /* ---------- morpheme chips + the colour key (Review › Build) ---------- */
 .mph { display: inline-flex; flex-wrap: wrap; align-items: flex-end; gap: 2px; }
 .mph-seg { display: inline-flex; flex-direction: column; align-items: center; padding: 1px 5px; }

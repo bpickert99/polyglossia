@@ -65,6 +65,21 @@ export function loadWorldLanguages() {
   return fetchJSON("data/world-languages.json").catch(() => ({ languages: [] }));
 }
 
+// Projected country outlines for the planner map (equirectangular paths).
+export function loadWorldMap() {
+  return fetchJSON("data/world-map.json").catch(() => ({ countries: [] }));
+}
+
+// Curated travel cities for place recognition (name → country + coords).
+export function loadPlaces() {
+  return fetchJSON("data/places.json").catch(() => ({ places: [] }));
+}
+
+// Country (ISO-2) → catalog language code(s) a traveler would learn there.
+export function loadCountryLanguages() {
+  return fetchJSON("data/country-languages.json").catch(() => ({ map: {} }));
+}
+
 // Load every module of a pack concurrently → Map(moduleId -> full module).
 export async function loadPackModules(code, pack) {
   const entries = await Promise.all(

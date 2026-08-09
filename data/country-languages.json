@@ -1,0 +1,19 @@
+{
+  "note": "Maps a country (ISO-3166 alpha-2) to the catalog language code(s) a traveler would most usefully learn there. Codes reference data/world-languages.json. An empty list means English is widely spoken enough that no local course is essential (we tell the traveler so). This is a planning heuristic, not a claim about a country's full linguistic makeup.",
+  "map": {
+    "GB": [], "IE": [], "US": [], "AU": [], "NZ": [],
+    "FR": ["fr"], "IT": ["it"], "ES": ["es"], "AD": ["ca"], "PT": ["pt"],
+    "NL": ["nl"], "DE": ["de"], "AT": ["de"], "CH": ["de", "fr", "it"], "BE": ["nl", "fr"],
+    "CZ": ["cs"], "HU": ["hu"], "GR": ["el"], "TR": ["tr"], "PL": ["pl"], "HR": ["hr"],
+    "RO": ["ro"], "BG": ["bg"], "UA": ["uk"], "RU": ["ru"], "GE": ["ka"], "AM": ["hy"],
+    "DK": ["da"], "SE": ["sv"], "NO": ["no"], "FI": ["fi"], "IS": ["is"],
+    "MA": ["ary"], "EG": ["ar"], "JO": ["ar"], "AE": ["ar"], "QA": ["ar"], "SA": ["ar"], "IQ": ["ar"],
+    "IL": ["he"], "KE": ["sw"], "TZ": ["sw"], "UG": ["sw"], "ZA": ["af", "zu"], "ET": ["am"], "IR": ["fa"],
+    "JP": ["ja"], "TH": ["th"], "VN": ["vi"], "KH": ["km"], "LA": ["lo"], "MM": ["my"],
+    "ID": ["id"], "MY": ["ms"], "SG": ["ms", "zh"], "BN": ["ms"], "KR": ["ko"],
+    "CN": ["zh"], "HK": ["zh"], "TW": ["zh"], "NP": ["ne"], "IN": ["hi"], "LK": ["si", "ta"],
+    "BD": ["bn"], "MN": ["mn"], "PH": ["tl"],
+    "MX": ["es"], "AR": ["es"], "BR": ["pt"], "PE": ["es"], "CO": ["es"], "CL": ["es"],
+    "EC": ["es"], "BO": ["es"], "CU": ["es"], "PR": ["es"], "CA": ["fr"]
+  }
+}
