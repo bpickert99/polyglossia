@@ -117,12 +117,12 @@ expression of this — treating "landing day" as a feature, not an afterthought.
 
 ## Part II — Roadmap
 
-Ordered by leverage. None built yet. "Ties to" points back to the principle each serves.
+Ordered by leverage. "Ties to" points back to the principle each serves. **✓ = built.**
 
 | Feature | What it is | Ties to | Notes / dependencies |
 |---|---|---|---|
-| **Gist comprehension exercise** | Hear a spoken reply; restate the **gist in English** (not a literal translation); AI scores forgivingly for actionable meaning. | §3 ear, §1 morphemes | Reuses the `evaluate` AI mode. **Sidesteps ASR** — answer is in English. Gate like scenarios; fall back to MC comprehension when AI is down. Should test decoding an *untaught* word from known morphemes. |
-| **Morpheme inventory + colour key** | A first-class per-pack artifact: each decoder with meaning, colour, produce/recognize role, examples. Colours assigned by meaning, app-wide. | §1, §2 | New artifact beside `grammar.json`/vocab. Sharpens the Blueprint's leverage reasoning (morphemes = top recombination). Needs the fluent-speaker accuracy gate. |
+| **✓ Morpheme inventory + colour key** | A first-class per-pack artifact: each decoder with meaning, colour, produce/recognize role, examples. Colours assigned by meaning, app-wide. | §1, §2 | **Built** — `data/<code>/morphemes.json` + `js/morphemes.js` (stable class→colour key), surfaced in Review › Build and reinforced in the scenario. Still needs a fluent-speaker accuracy pass. |
+| **✓ Gist comprehension exercise** | Hear a spoken reply; restate the **gist in English** (not a literal translation); AI scores forgivingly for actionable meaning. | §3 ear, §1 morphemes | **Built** — new `gist` Edge Function mode (v4); upgrades the comprehension slot once vocab is deep enough; **sidesteps ASR**; self-assesses when AI is down. TODO: an audio-only variant (currently shows the reply text too) and a version that tests decoding an *untaught* word from known morphemes. |
 | **Vocab expansion to budget + recognition layer** | Grow productive core toward ~150–200; add the understand-only recognition tier. | §4, §3 | Per-language, derived from the Feasibility Budget (not a flat number). Recognition items are cheap in FSRS (recognize-role). |
 | **Fast-learner handling** | 1) depth over breadth (harder work with known words); 2) overflow tier unlocks for the proven-fast; 3) later, AI vocab overflow within Blueprint scope, added to the personal deck. | §4 | The day-engine already EXTENDs a *day*; this deepens the *course pool* so a quick learner doesn't stall. Build 1+2 first; 3 needs guardrails. |
 | **Ear-training family** | Number/price/time listening, speed & accent variation — the stuff most often missed by ear. | §3 | Depends on better audio to be worthwhile. |
