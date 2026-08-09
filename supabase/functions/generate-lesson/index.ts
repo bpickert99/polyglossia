@@ -1,8 +1,9 @@
-// TripTalk lesson-construction proxy. Three modes, all constrained to the
+// TripTalk lesson-construction proxy. Four modes, all constrained to the
 // learner's taught word-set:
 //   • scenario  — a colour-coded in-the-wild dialogue (gated by critical mass)
 //   • practice  — fresh recombinant production drills for the daily lesson
 //   • evaluate  — judge a free typed/spoken attempt against known grammar
+//   • explain   — diagnose a hard case (a leech or a grammar miss) and re-teach
 //
 // The static spine owns the curriculum; this only fills the generative long-tail.
 // Keys live here, never in the static site; verify_jwt gates access to a
