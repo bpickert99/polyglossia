@@ -123,6 +123,21 @@ export async function evaluateAnswer(payload) {
   }
 }
 
+// Score a listening-gist attempt: did the learner's English capture what a heard
+// reply means? Best-effort — returns { verdict, feedback, better } or null (the
+// caller then falls back to self-assessment against the revealed meaning).
+export async function scoreGist(payload) {
+  try {
+    const c = await client();
+    if (!c) return null;
+    const { data, error } = await c.functions.invoke("generate-lesson", { body: { mode: "gist", ...payload } });
+    if (error || !data?.verdict) return null;
+    return { verdict: data.verdict, feedback: String(data.feedback || ""), better: String(data.better || "") };
+  } catch {
+    return null;
+  }
+}
+
 // Diagnose a hard case and re-teach it: a leech (a word missed several times in
 // a row) or a grammar miss. Best-effort — returns { why, tip, example } or null,
 // and the caller shows the existing static help when it's null. Called only for

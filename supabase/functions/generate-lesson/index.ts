@@ -1,9 +1,10 @@
-// TripTalk lesson-construction proxy. Four modes, all constrained to the
+// TripTalk lesson-construction proxy. Five modes, all constrained to the
 // learner's taught word-set:
 //   • scenario  — a colour-coded in-the-wild dialogue (gated by critical mass)
 //   • practice  — fresh recombinant production drills for the daily lesson
 //   • evaluate  — judge a free typed/spoken attempt against known grammar
 //   • explain   — diagnose a hard case (a leech or a grammar miss) and re-teach
+//   • gist      — score an English gist of a heard reply (listening comprehension)
 //
 // The static spine owns the curriculum; this only fills the generative long-tail.
 // Keys live here, never in the static site; verify_jwt gates access to a
@@ -147,6 +148,16 @@ function evaluate(body: any) {
   return callClaude(system, user, EVALUATE_SCHEMA, 700);
 }
 
+// Score a listening-comprehension attempt: the learner heard a reply in the
+// local language and wrote what they think it MEANS, in English (the gist, not a
+// word-for-word translation). Judge whether they caught the actionable meaning,
+// generously. Reuses the evaluate schema (better = the accurate gist).
+function gist(body: any) {
+  const system = `You are a warm listening coach. The learner heard a short reply in the local language and wrote what they think it MEANS in plain English — the GIST, not a word-for-word translation. Judge whether they caught the actionable meaning, and be generous: "bathroom, upstairs on the left" for "it's on the second floor, on your left" is a "good". Catching the main point loosely is "close". Missing the point or guessing is "off". Return: "verdict" (good | close | off), one short encouraging "feedback" sentence naming what they got or missed, and "better" — the accurate gist in plain English.`;
+  const user = `THEY HEARD: ${body.reply || ""}\nWHAT IT ACTUALLY MEANS: ${body.meaning || ""}\nTHE LEARNER'S GIST: ${body.userText || ""}\n\nJudge now.`;
+  return callClaude(system, user, EVALUATE_SCHEMA, 500);
+}
+
 // Diagnose a hard case — a leech (a word missed several times running) or a
 // grammar miss — and re-teach it. Kept for the hard cases only (the client
 // never calls this on routine slips), so call volume stays low.
@@ -182,6 +193,7 @@ Deno.serve(async (req) => {
       mode === "practice" ? await practice(body) :
       mode === "evaluate" ? await evaluate(body) :
       mode === "explain" ? await explain(body) :
+      mode === "gist" ? await gist(body) :
       await scenario(body);
 
     await admin.from("ai_usage").upsert({ user_id: user.id, day, count: count + 1, updated_at: new Date().toISOString() }, { onConflict: "user_id,day" });

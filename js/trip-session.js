@@ -10,6 +10,10 @@ import { isLeech } from "./srs.js";
 import { generateExercise, shuffled, hasWord } from "./exercises.js";
 import { nextRung, dueRungs, rungExercises } from "./grammar.js";
 
+// Below this many started words, the comprehension slot stays multiple-choice;
+// at or above it, it upgrades to an open "gist in English" (see gistExercise).
+const GIST_MIN_VOCAB = 12;
+
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "x";
 const audioPath = (it) => `audio/${slug(it.roman || it.target)}.wav`;
 const tierLevel = (t) => (t === 0 ? "A1" : t === 1 ? "A1" : "A2");
@@ -46,6 +50,24 @@ function drill(item, pool, ability, floor) {
   }
   const p = floor != null ? floor : predictP(ability, item.bd ?? 0);
   return generateExercise(item, pool, p);
+}
+
+// A gist drill: hear the reply and say what it MEANS in English (the gist, not a
+// literal translation). The receptive counterpart to production — trains
+// "understand what comes back". Ungraded against vocabulary; AI-scored when
+// available, else self-assessed. Reserved for learners with enough vocabulary to
+// parse a real reply (see GIST_MIN_VOCAB).
+function gistExercise(entry) {
+  return {
+    type: "gist",
+    keys: [],
+    prompt: "Get the gist of their reply.",
+    ask: entry.ask || "",
+    reply: entry.reply,
+    tts: entry.reply,
+    english: entry.english || "",
+    comprehension: true,
+  };
 }
 
 // A comprehension drill: the other person's reply is shown (and, once audio is
@@ -185,7 +207,13 @@ export function buildTripSession(pack, plan, moduleItems, records, opts = {}) {
   }
   if (comps.length) {
     const entry = comps[Math.floor(Math.random() * comps.length)];
-    interleaved.push(comprehensionExercise(entry));
+    // Once the learner has enough vocabulary to actually parse a reply, upgrade
+    // the comprehension slot from multiple-choice to an open gist (harder, and
+    // the realistic version of understanding a stranger).
+    let startedVocab = 0;
+    for (const [k, r] of records) if ((r?.reps || 0) > 0 && !String(k).startsWith("g:")) startedVocab++;
+    const useGist = startedVocab >= GIST_MIN_VOCAB && entry.reply && entry.english;
+    interleaved.push(useGist ? gistExercise(entry) : comprehensionExercise(entry));
   }
 
   const allExercises = [...foundationEx, ...interleaved];

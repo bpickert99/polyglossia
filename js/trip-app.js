@@ -14,7 +14,7 @@ import { nextMove, todayConfidence, weakKeys } from "./day-engine.js";
 import { renderLessonSession } from "./lesson.js";
 import { renderReview } from "./trip-review.js";
 import { renderScenario } from "./trip-scenario.js";
-import { generateScenario, generatePractice, evaluateAnswer, explainMistake, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
+import { generateScenario, generatePractice, evaluateAnswer, explainMistake, scoreGist, isSignedIn, scenarioUnlocked, scenarioProgress } from "./ai.js";
 import { initSync, getUser, signOut, renderSyncCard } from "./sync.js";
 import { primeTTS } from "./tts.js";
 
@@ -253,6 +253,7 @@ async function startLesson(trip, ld, opts = {}) {
       destination: ld.pack.destination, ...ctx,
       known: knownWords(records), rungs: knownRungs(records, ld),
     }),
+    gistEval: (ctx) => scoreGist({ destination: ld.pack.destination, ...ctx }),
     onDone: async () => {
       app.innerHTML = `<div class="scn-prep">Setting the scene…</div>`;
       const scenario = await scenarioP;

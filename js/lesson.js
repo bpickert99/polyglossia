@@ -350,6 +350,7 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
 
   function showExercise(ex) {
     if (ex.type === "reteach") return showReteachCard(ex);
+    if (ex.type === "gist") return showGist(ex);
     if (ex.type === "shadow") return showShadow(ex);
     if (ex.type === "match") return showMatch(ex);
     if (ex.type === "type") return showType(ex);
@@ -357,6 +358,75 @@ export function renderLessonSession(app, course, unitId, lesson, onStatsChanged,
     if (ex.type === "listen") return showListen(ex);
     if (ex.type === "order") return showOrder(ex);
     return showMC(ex);
+  }
+
+  // Gist comprehension: hear a reply in the target language and say what it
+  // MEANS in English — the gist, not a literal translation. This trains the
+  // receptive half of travel (understanding what comes back). Ungraded against
+  // vocabulary (keys:[]), like the MC comprehension. When the caller wires an AI
+  // scorer it judges the gist; otherwise the true meaning is revealed and the
+  // learner self-assesses. Deliberately sidesteps ASR — the answer is in English.
+  function recordGist(good) {
+    exercisesDone++;
+    if (good) { correctCount++; addXP(XP_PER_EXERCISE); onStatsChanged(); }
+  }
+
+  function showGist(ex) {
+    const audio = resolveAudio(ex.audio);
+    frame(`
+      <div class="exercise">
+        <span class="eyebrow">Listen · get the gist</span>
+        <h2>${esc(ex.prompt || "What are they telling you?")}</h2>
+        ${ex.ask ? `<p class="gist-ask">You ask: “${esc(ex.ask)}”</p>` : ""}
+        <div class="gist-reply">
+          <div class="gist-target">${esc(ex.reply)}</div>
+          ${speakBtn(ex.tts || ex.reply, audio, "🔊 Hear it")}
+        </div>
+        <textarea class="type-input gist-input" id="gist" rows="2" autocomplete="off"
+          placeholder="In English — what do they mean? Just the gist, not every word."></textarea>
+      </div>`,
+      `<button class="btn wide" id="check" disabled>Check</button>`);
+    wireSpeech();
+    speak(ex.tts || ex.reply, course, audio);
+    const input = app.querySelector("#gist");
+    const check = app.querySelector("#check");
+    input.focus();
+    input.addEventListener("input", () => { check.disabled = !input.value.trim(); });
+    const run = async () => {
+      if (check.disabled) return;
+      check.disabled = true;
+      input.disabled = true;
+      const text = input.value.trim();
+      let scored = null;
+      if (opts.gistEval) {
+        check.textContent = "Checking…";
+        try { scored = await opts.gistEval({ reply: ex.reply, meaning: ex.english, userText: text }); } catch { scored = null; }
+      }
+      const footer = app.querySelector(".session-footer");
+      if (scored && scored.verdict) {
+        const good = scored.verdict === "good" || scored.verdict === "close";
+        recordGist(good);
+        footer.innerHTML = `
+          <div class="scn-fb v-${scored.verdict}">
+            <div class="scn-fb-line">${esc(scored.feedback || "")}</div>
+            <div class="scn-fb-better">It means: <b>${esc(scored.better || ex.english || "")}</b></div>
+          </div>
+          <button class="btn wide ${good ? "" : "red"}" id="main-action">Continue</button>`;
+        footer.querySelector("#main-action").addEventListener("click", next);
+      } else {
+        // No AI (or it failed): reveal the meaning and let the learner self-assess.
+        footer.innerHTML = `
+          <p class="check-note">It means: <b>${esc(ex.english || "")}</b></p>
+          <p class="gist-self">Did you catch the gist?</p>
+          <div class="gist-rate">
+            <button class="btn" id="g-yes">I got it</button>
+            <button class="btn ghost" id="g-no">Missed it</button>
+          </div>`;
+        footer.querySelector("#g-yes").addEventListener("click", () => { recordGist(true); next(); });
+        footer.querySelector("#g-no").addEventListener("click", () => { recordGist(false); next(); });
+      }
+    };
+    check.addEventListener("click", run);
   }
 
   // Shadowing: listen, record yourself, play both back to back, self-rate.

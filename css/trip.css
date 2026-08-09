@@ -210,8 +210,20 @@ body { font-family: var(--sans); background: var(--ground); color: var(--ink); p
 .choice.wrong { border-color: var(--red); color: var(--red); box-shadow: none; }
 .tile { box-shadow: none; border-radius: 10px; }
 
+/* gist (listening comprehension) exercise */
+.exercise .eyebrow { display: block; margin-bottom: 6px; }
+.gist-ask { color: var(--ink-soft); font-size: .9rem; margin: 2px 0 12px; }
+.gist-reply { background: var(--panel-2); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-bottom: 14px; }
+.gist-target { font-size: 1.25rem; font-weight: 700; line-height: 1.4; }
+.gist-input { width: 100%; resize: vertical; min-height: 60px; font-family: var(--sans); }
+.gist-self { text-align: center; color: var(--ink-soft); font-size: .9rem; margin: 12px 0 8px; }
+.gist-rate { display: flex; gap: 10px; }
+.gist-rate .btn { flex: 1; }
+
 .teach-card .big { font-family: var(--cond); font-size: 2.8rem; }
 .teach-card .roman { color: var(--accent); }
+/* listen buttons on-brand, not Duolingo blue */
+.speak-btn { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
 .grammar-box, .culture-box { border-radius: 14px; background: var(--panel-2); }
 .check-msg.good { color: var(--ok); }
 
